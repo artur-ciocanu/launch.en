@@ -1,11 +1,21 @@
 ---
-title: Adobe Target Release Notes
-seo-title: Adobe Target Release Notes in Adobe Experience Platform Launch
-description: Release notes for Adobe Target extension in Adobe Experience Platform Launch
-seo-description: Release notes for Adobe Target extension in Adobe Experience Platform Launch
+title: Release Notes for the Adobe Target Extension
+description: The latest release notes for the Adobe Target extension in Adobe Experience Platform Launch.
 ---
 
-# Adobe Target Release Notes
+# Adobe Target release notes
+
+## July 24, 2020
+
+### Adobe Target Extension 0.11.3
+
+* Fixed a bug when the extension fails if a script or code adds `default` property to the `window` or `document`
+
+## June 15, 2020
+
+### Adobe Target Extension 0.11.2
+
+* Fixed an issue when using CNAME and edge override, where at.js 1.x might incorrectly create the server domain, resulting in the Target request failing
 
 ## March 25, 2020
 
@@ -23,13 +33,13 @@ seo-description: Release notes for Adobe Target extension in Adobe Experience Pl
 * Previously, the ECID library made two blocking calls before at.js could fetch experiences. This has been reduced to a single call, which significantly improves performance.
 
 >[!NOTE]
->Please upgrade your ECID Launch Extension to v4.4.1 to take advantage of this performance enhancement.
+>Please upgrade your ECID extension for Adobe Experience Platform Launch to v4.4.1 to take advantage of this performance enhancement.
 
 ## July 31, 2019
 
 ### Adobe Target Extension 0.10.1
 
-* Hotfix for parameters handling for Adobe Target Launch Extension
+* Hotfix for parameters handling for Adobe Target extension for Platform Launch
 
 ## May 4, 2019
 
@@ -55,7 +65,7 @@ seo-description: Release notes for Adobe Target extension in Adobe Experience Pl
 
 #### **Features**
 
-* Updated Extension to use at.js 1.7.0 that has Opt-in privacy functionality supported via Adobe Experience Platform Launch to control how and when the Target tag is fired. Please check Launch Documentation on how to setup your implementation of Opt-in. Added possibility to customize if an mbox parameter that has an empty value should be sent to Target or not.
+* Updated Extension to use at.js 1.7.0 that has Opt-in privacy functionality supported via Adobe Experience Platform Launch to control how and when the Target tag is fired. Please check Platform Launch documentation on how to setup your implementation of Opt-in. Added possibility to customize if an mbox parameter that has an empty value should be sent to Target or not.
 
 ## January 23, 2019
 
@@ -121,7 +131,7 @@ seo-description: Release notes for Adobe Target extension in Adobe Experience Pl
 
 #### **Bug fixes**
 
-* Fixed an error in the Adobe Target Extension that prevented the Visual Experience Composer from unhiding the page when deployed through Launch.
+* Fixed an error in the Adobe Target Extension that prevented the Visual Experience Composer from unhiding the page when deployed through Platform Launch.
 
 ## February 8, 2018
 

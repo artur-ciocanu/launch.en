@@ -14,15 +14,15 @@ How you contribute depends on who you are and the sort of changes you'd like to 
 
 ### Minor changes or requests
 
-To submit a request, click the **Log an issue** link in an article, which opens an issue in GitHub. Specify a title and a description, and then click **Submit new issue**.
+To submit a request, select the **Log an issue** link in an article, which opens an issue in GitHub. Specify a title and a description, and then select **Submit new issue**.
 
-To request minor updates, click the **Edit this page** link in an article, which opens the source article in GitHub. Use the GitHub UI to make your updates. See the general [Adobe Docs contributor guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) for more information.
+To request minor updates, select the **Edit this page** link in an article, which opens the source article in GitHub. Use the GitHub UI to make your updates. See the general [Adobe Docs contributor guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) for more information.
 
 Minor corrections or clarifications you submit for documentation and code examples in this repo are covered by the Adobe terms of use.
 
 ### Major changes or new articles from community members
 
-If you're part of the Adobe community and want to create an article or submit major changes, click the **Issues** tab in the GitHub repository to submit an issue. This submission starts a conversation with the documentation team. You will need to work with the writer (or other Adobe employee) to publish new content.
+If you're part of the Adobe community and want to create an article or submit major changes, select the **Issues** tab in the GitHub repository to submit an issue. This submission starts a conversation with the documentation team. You will need to work with the writer (or other Adobe employee) to publish new content.
 
 <!--
 If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). You must complete the online form before we can review your pull request.

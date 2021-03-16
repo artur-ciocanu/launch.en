@@ -1,8 +1,6 @@
 ---
 title: Builds
-seo-title: Builds in Adobe Experience Platform Launch
-description: Adobe Experience Platform Launch builds
-seo-description: Adobe Experience Platform Launch builds
+description: Learn about the concept of builds and how they function within Adobe Experience Platform Launch.
 ---
 
 # Builds
@@ -15,7 +13,7 @@ The build consists of client-side code files that reference each other. These fi
 
 ## File Contents
 
-A Library defines a discreet set of Launch resources (Extensions, Rules, and Data Elements) that should be included within it.
+A Library defines a discreet set of Adobe Experience Platform Launch resources (Extensions, Rules, and Data Elements) that should be included within it.
 
 A Build contains all the module code (provided by the extension developers) and the configuration (entered by you) that is needed to power the resources contained within the Library. For example, if an extension provides actions that are not used within your rules, then the code to perform those actions is not contained within the Build.
 
@@ -34,27 +32,31 @@ The smaller files contain code and configuration for individual Actions that are
 
 The default file format for builds is a package of files that contain all the required code for your extensions, data elements, and rules to run in the way that you want them to.
 
-However, in certain cases, you might prefer a .zip archive of the files rather than the executable client-side code file. For example, you might want to create an archive if you host your build yourself and want to use the build in another deployment. If you provide anything in the self-hosted path to library field, you can save your environment. Along with your new code, a link to the archived download becomes available. Launch still builds your library and deploys it, but instead of deploying a bunch of code files, you can deploy a zip file to Akamai, and download it from `assets.adobedtm.com/...`
+However, in certain cases, you might prefer a .zip archive of the files rather than the executable client-side code file. For example, you might want to create an archive if you host your build yourself and want to use the build in another deployment. If you provide anything in the self-hosted path to library field, you can save your environment. Along with your new code, a link to the archived download becomes available. Platform Launch still builds your library and deploys it, but instead of deploying a bunch of code files, you can deploy a zip file to Akamai, and download it from `assets.adobedtm.com/...`
 
->[!NOTE]  Nothing exists in that location until you make a build.
+>[!NOTE]
+>
+>Nothing exists in that location until you make a build.
 
 Regardless of file format, the build is always delivered to the location specified by the Host.
 
-To complete a build, select a library and click the Build option that is available at that level of the publishing process (Build for Development, Build for Staging, and so on.
+To complete a build, select a library and select the Build option that is available at that level of the publishing process (Build for Development, Build for Staging, and so on.
 
 ## Minification
 
 Minification lowers bandwidth costs and improves speed by stripping data that isn't required for execution from a file.
 
-To increase performance, Launch minifies everything, including:
+To increase performance, Platform Launch minifies everything, including:
 
-* The main Launch library
+* The main Platform Launch library
 * Module code provided by extension developers as part of an extension
-* Custom code provided by Launch users
+* Custom code provided by Platform Launch users
 
->[!NOTE]  If your module code and custom code are already minified, Launch minifies it again. This second minification doesn't provide additional benefits, but it doesn't cause any harm and it makes Launch less complex and easier to maintain.
+>[!NOTE]
+>
+>If your module code and custom code are already minified, Platform Launch minifies it again. This second minification doesn't provide additional benefits, but it doesn't cause any harm and it makes Platform Launch less complex and easier to maintain.
 
-Any client-side code provided in Launch points to the minified version of code, as seen in the file names, which follow the standard naming convention for minified files:
+Any client-side code provided in Platform Launch points to the minified version of code, as seen in the file names, which follow the standard naming convention for minified files:
 
 `launch-%environment_id%.min.js`
 
@@ -62,8 +64,8 @@ If you want to see the unminified code, remove .min from the file name:
 
 `launch-%environment_id%.js`
 
-If an extension developer provides minified code with their extension, Launch does not provide unminified code in the unminified build. Launch only provides what the extension developer delivers to Adobe. Similarly, if a Launch user puts minified code into a custom code box, that code is still minified in unminified builds. Launch does not maxify anything.
+If an extension developer provides minified code with their extension, Platform Launch does not provide unminified code in the unminified build. Platform Launch only provides what the extension developer delivers to Adobe. Similarly, if a Platform Launch user puts minified code into a custom code box, that code is still minified in unminified builds. Platform Launch does not maxify anything.
 
 For more information about minification, see [https://blog.stackpath.com/glossary/minification/](https://blog.stackpath.com/glossary/minification/).
 
-When performing a build, Launch will construct the unminified library first, then minify the entire library all at once.
+When performing a build, Platform Launch will construct the unminified library first, then minify the entire library all at once.

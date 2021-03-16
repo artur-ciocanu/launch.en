@@ -1,19 +1,17 @@
 ---
-title: Upgrade From DTM to Launch
-seo-title: Upgrade From DTM to Launch in Adobe Experience Platform Launch
-description: Upgrade From DTM to Adobe Experience Platform Launch
-seo-description: Upgrade From DTM to Adobe Experience Platform Launch
+title: Upgrade From DTM to Adobe Experience Platform Launch
+description: Learn how to upgrade from Dynamic Tag Management (DTM) to Adobe Experience Platform Launch.
 ---
 
-# Upgrade From DTM to Launch
+# Upgrade From DTM to Adobe Experience Platform Launch
 
 * [Upgrade FAQ](upgrade-faq.md)
 
-  A list of common questions people have about the DTM to Launch upgrade process.
+  A list of common questions people have about the DTM to [!DNL Platform Launch]  upgrade process.
 
 * [Upgrade Preparation Guide](upgrade-preparation-guide.md)
 
-  Details about the differences between your DTM property and the upgraded version in Launch.[​](upgrade-faq.md)
+  Details about the differences between your DTM property and the upgraded version in [!DNL Platform Launch] .[​](upgrade-faq.md)
 
 * [Link DTM Embed Code](link-dtm-embed-code.md)
 

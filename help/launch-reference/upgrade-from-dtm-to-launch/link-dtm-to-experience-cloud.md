@@ -1,19 +1,17 @@
 ---
 title: Link DTM to Experience Cloud
-seo-title: Link DTM to Experience Cloud in Adobe Experience Platform Launch
-description: Link DTM to Experience Cloud using Adobe Experience Platform Launch
-seo-description: Link DTM to Experience Cloud using Adobe Experience Platform Launch
+description: Learn how to link Dynamic Tag Management (DTM) to Adobe Experience Cloud using Adobe Experience Platform Launch.
 ---
 
 # Link DTM to Experience Cloud
 
-If you've been using DTM for a while, it's possible that your company's account is older than the Experience Cloud (or even the Marketing Cloud). Unless you've already gone through the process to link your DTM account to the Experience Cloud, this work still lies ahead of you.
+If you've been using Dynamic Tag Management (DTM) for a while, it's possible that your company's account is older than the Experience Cloud (or even the Marketing Cloud). Unless you've already gone through the process to link your DTM account to the Experience Cloud, this work still lies ahead of you.
 
 This document explains the reasons you may want to do that work and what you need to know about linking to the Experience Cloud.
 
 ## Why would I link to Experience Cloud?
 
-The most common reason to link your DTM account to the Experience Cloud is in preparation for a [migration to Launch](/help/launch-reference/upgrade-from-dtm-to-launch/overview.md). Launch permissions are managed through the Experience Cloud and migrations can only be performed between DTM and Launch when company accounts are linked to the same Experience Cloud _Organization_.
+The most common reason to link your DTM account to the Experience Cloud is in preparation for a [migration to Adobe Experience Platform Launch](/help/launch-reference/upgrade-from-dtm-to-launch/overview.md). [!DNL Platform Launch]  permissions are managed through the Experience Cloud and migrations can only be performed between DTM and [!DNL Platform Launch]  when company accounts are linked to the same Experience Cloud _Organization_.
 
 Linking can also be a good idea if you want to improve your governance. When linked to the Experience Cloud, all permissions for Adobe products are managed in a central place. If you have a new employee (or need to remove permissions for an old one), there's a single place to take care of that for all Adobe products.
 
@@ -25,7 +23,9 @@ Once the accounts are linked, DTM will rely on the Experience Cloud to tell it w
 
 Depending on how many users you have and the complexity of your permissions structure, this can either go very quickly or take you some time.
 
->[!NOTE] For users who belong to multiple DTM companies, please note that an individual email can only be associated with one type of account (linked DTM accounts or standalone DTM accounts). If you need to access one or more linked DTM companies and one or more standalone DTM companies, you'll need to use different email addresses.
+>[!NOTE]
+>
+>For users who belong to multiple DTM companies, please note that an individual email can only be associated with one type of account (linked DTM accounts or standalone DTM accounts). If you need to access one or more linked DTM companies and one or more standalone DTM companies, you'll need to use different email addresses.
 
 ## How do I link my company's DTM account to Experience Cloud?
 

@@ -1,8 +1,6 @@
 ---
-title: Compare resource revisions
-seo-title: Compare resource revisions in Adobe Experience Platform Launch
-description: Compare resource revisions in Adobe Experience Platform Launch
-seo-description: Compare resource revisions in Adobe Experience Platform Launch
+title: Compare Resource Revisions
+description: Learn how to to view the history of revisions for a resource in Adobe Experience Platform Launch.
 ---
 
 # Compare resource revisions
@@ -15,7 +13,7 @@ Initiating a comparison is the same for all resource types.  Open the Edit view 
 
 ![Initiate a comparison for an extension](/help/assets/compare-initiate-extension.png)
 
-For extensions, access the detail view by clicking the **[!UICONTROL Configure]** button when viewing your list of installed extensions.  For data elements and rules, select one from the list.
+For extensions, access the detail view by selecting  the **[!UICONTROL Configure]** button when viewing your list of installed extensions.  For data elements and rules, select one from the list.
 
 ## Using the Compare view
 
@@ -25,7 +23,7 @@ On the left, you can choose from any existing revisions to compare to "Latest."
 
 ![Comparing versions of the Analytics extension](/help/assets/compare-interpret-extension.png)
 
-Click **[!UICONTROL Use These Changes]** to copy the settings from your selected revision (left) to the latest version (right).  This copies the settings from the old revision to the latest unsaved changes.  If you want these changes to stick, be sure to **[!UICONTROL Save]** after exiting the Compare view.
+Select **[!UICONTROL Use These Changes]** to copy the settings from your selected revision (left) to the latest version (right).  This copies the settings from the old revision to the latest unsaved changes.  If you want these changes to stick, be sure to **[!UICONTROL Save]** after exiting the Compare view.
 
 >[!TIP]
 >Individual resources can have both attributes and settings.  These settings are stored as a JSON block, which is a structured way to store data, but flexible enough that extension developers can put whatever they need to make their extensions do what they want.
@@ -77,9 +75,9 @@ Above, you can see the following changes:
 * The "[!DNL Adobe Analytics] - Set Variables" action was modified, indicated by the orange line between the versions of the component on the left and right sides. This line is straight if the component order has not changed.
 * The "[!DNL Adobe Analytics] - Set Variables" action and the "[!DNL Adobe Analytics] - Send Beacon" action order has changed, indicated by the curved lines connecting the different versions of the components on the left and right sides
 
-To view the specific modifications to one of the rule components, click the specific component you'd like to view.  The line changes to blue when you mouse over.
+To view the specific modifications to one of the rule components, select the specific component you'd like to view.  The line changes to blue when you mouse over.
 
-![Click on the component you&apos;d like to see in more detail](/help/assets/compare-rule-component-click.png)
+![Select the component you&apos;d like to see in more detail](/help/assets/compare-rule-component-click.png)
 
 The comparison for an individual rule component behaves the same as the comparison for a data element.
 

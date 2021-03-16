@@ -1,15 +1,15 @@
 ---
-title: Remove resources from a library
-seo-title: Remove resources from a library in Adobe Experience Platform Launch
-description: Remove resources from an Adobe Experience Platform Launch library
-seo-description: Remove resources from an Adobe Experience Platform Launch library
+title: Remove Resources from a Library
+description: Learn how to remove resources from an Adobe Experience Platform Launch library.
 ---
 
 # Remove resources from a library
 
 When you no longer want a resource to have an effect inside a build, you must remove it from the library that contains that resource and create a new build.
 
->[!IMPORTANT]  Resources in libraries are interdependent. Removing a resource from a build may change the behavior of other resources in the build.
+>[!IMPORTANT]
+>
+>Resources in libraries are interdependent. Removing a resource from a build may change the behavior of other resources in the build.
 
 The removal process works a little differently depending on which state the library is in.
 
@@ -37,7 +37,7 @@ Instead, you must disable the resource. This disabling is a change that you then
 
 1. Disable the resource.
    1. Select the resource from the list view.
-   2. Click **[!UICONTROL Disable]**.
+   2. Select **[!UICONTROL Disable]**.
 1. Create a new Development library.
 1. Add the `latest` version of the disabled resource.
 1. Save and Build.

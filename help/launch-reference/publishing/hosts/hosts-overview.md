@@ -1,11 +1,9 @@
 ---
-title: Hosts
-seo-title: Hosts in Adobe Experience Platform Launch
-description: Adobe Experience Platform Launch hosts
-seo-description: Adobe Experience Platform Launch hosts
+title: Hosts Overview
+description: Learn about the different hosting options available in Adobe Experience Platform Launch.
 ---
 
-# Hosts
+# Hosts overview
 
 Extensions, rules, and data elements are building blocks. When you want to make your application do something, these building blocks are added to libraries and then a library is "built" into a build. Those builds are delivered to a hosted location.
 

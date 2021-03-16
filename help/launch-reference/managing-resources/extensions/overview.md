@@ -1,17 +1,17 @@
 ---
 title: Extensions
-seo-title: Extensions in Adobe Experience Platform Launch
-description: Adobe Experience Platform Launch extensions
-seo-description: Adobe Experience Platform Launch extensions
+description: Learn how extensions function in Adobe Experience Platform Launch.
 ---
 
 # Extensions
 
-An extension is a packaged set of code that extends the [!DNL Launch] interface and the library functionality. [!DNL Launch] is the platform, and extensions are like apps that run on the platform.
+An extension is a packaged set of code that extends the [!DNL Adobe Experience Platform Launch] interface and the library functionality. [!DNL Platform Launch] is the platform, and extensions are like apps that run on the platform.
 
 Adding an extension adds new data elements and new options for creating rules.
 
->[!NOTE] Extensions are similar to _tools_ in the previous [!DNL Dynamic Tag Management].
+>[!NOTE]
+>
+>Extensions are similar to _tools_ in the previous [!DNL Dynamic Tag Management].
 
 Extensions determine the elements that are available when building properties, rules, and data elements. They provide:
 
@@ -21,11 +21,13 @@ Extensions determine the elements that are available when building properties, r
 
 Use the links at the top of the Extensions list to view installed extensions, the extensions catalog, or updates.
 
-Select an extension, then click [!UICONTROL Configure] to view and change the extension's settings. See [Add a new extension](#add-a-new-extension) for information about extension options.
+Select an extension, then select [!UICONTROL Configure] to view and change the extension's settings. See [Add a new extension](#add-a-new-extension) for information about extension options.
 
->[!IMPORTANT] Changes do not take effect until they are [published](/help/launch-reference/publishing/overview.md).
+>[!IMPORTANT]
+>
+>Changes do not take effect until they are [published](/help/launch-reference/publishing/overview.md).
 
-By default, [!DNL Adobe] provides extensions that support common integrations. Extensions can be modified with custom configurations. Configurations are provided through the extensions. To create a configuration, click the extension card, then click [!UICONTROL Add New Configuration].
+By default, [!DNL Adobe] provides extensions that support common integrations. Extensions can be modified with custom configurations. Configurations are provided through the extensions. To create a configuration, select the extension card, then select **[!UICONTROL Add New Configuration]**.
 
 For a video introduction, see [Extensions](../../../quick-start/videos.md).
 
@@ -45,17 +47,17 @@ The Extensions page provides three views:
 
   Shows updates to installed extensions.
 
-Click [!UICONTROL Extensions] to see all your installed extensions. You can also use the catalog to see a list of all available extensions and which extensions have updates available.
+Select **[!UICONTROL Extensions]** to see all your installed extensions. You can also use the catalog to see a list of all available extensions and which extensions have updates available.
 
 See [Extensions Reference](/help/extension-reference/web/overview.md) for details about the [!DNL Adobe]-owned extensions.
 
 ## Add a new extension {#add-a-new-extension}
 
-[!DNL Launch] is highly extendible. Extensions add core functionality to [!DNL Launch].
+[!DNL Platform Launch] is highly extendible. Extensions add core functionality to [!DNL Platform Launch].
 
-A common use of extensions is to create integrations with other applications. In the predecessor of [!DNL Launch], known as [!DNL Dynamic Tag Management], extensions were called _tools_.
+A common use of extensions is to create integrations with other applications. In the predecessor of [!DNL Platform Launch], known as [!DNL Dynamic Tag Management], extensions were called _tools_.
 
-1. From a property's overview page, open the [!UICONTROL Extensions] tab.
+1. From a property's overview page, open the **[!UICONTROL Extensions]** tab.
 1. Select an extension.
 
    ![](/help/assets/extensions.png)
@@ -76,8 +78,10 @@ When creating or editing elements, you can save and build to your [active librar
 
 ## Configure an extension
 
-Mouse over an installed extension and click [!UICONTROL Configure].
+Mouse over an installed extension and select **[!UICONTROL Configure]**.
 
->[!NOTE] Some extensions do not require configuration and do not offer configuration options.
+>[!NOTE]
+>
+>Some extensions do not require configuration and do not offer configuration options.
 
 Each configurable extension has unique options. Refer to [Extensions Reference](../../../extension-reference/web/overview.md) for information about the options available for each [!DNL Adobe] extension.

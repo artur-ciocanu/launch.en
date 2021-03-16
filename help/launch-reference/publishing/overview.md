@@ -1,44 +1,32 @@
 ---
-title: Publishing
-seo-title: Publishing in Adobe Experience Platform Launch
-description: Publishing in Adobe Experience Platform Launch
-seo-description: Publishing in Adobe Experience Platform Launch
+title: Publishing Overview
+description: Learn about the process of publishing changes to your tag-management code libraries in Adobe Experience Platform Launch.
 ---
 
-# Publishing
+# Publishing overview
 
-This section contains information to help you understand the publishing process for Web extensions.
+Adobe Experience Platform Launch allows you to encapsulate changes to your tag-management code within individual libraries. Since Platform Launch provides the flexibility for multiple libraries to be developed in parallel by different teams, these libraries must follow a deliberate, permissioned process for merging changes together before being pushed to your production environment.
 
-For an introductory video, see [Publishing workflow](https://www.youtube.com/embed/Pe-YSn26_xI).
+At a basic level, each library undergoes the following publishing process:
 
-There are a few components and relationships that are important to understand in order to take full advantage of the publishing workflow. These are:
+1. Create a new library (or edit an existing library) in a development environment.
+1. Test the functionality of the library in a staging environment where required.
+1. Deploy the library to your production environment.
 
-* [Libraries](libraries.md)
+Consider a situation where you create a new "checkout" event, create a revenue data element related to that event, and make a change to the Adobe Analytics extension configuration to support the new event and data element. You can include all of these changes in a new library, and use the publishing process to test, approve, and publish them as a single unit.
 
-  A library is a set of instructions for how extensions, data elements, and rules will interact with one another and with your website. Libraries are compiled into builds. A library can contain as many changes as you are comfortable making or testing at once.
+For a high-level overview of the library publishing workflow, including details on how libraries inherit resources from upstream builds depending on their publishing state, see the [publishing flow guide](./publishing-flow.md).
 
-* [Builds](builds.md)
+In addition to the publishing flow, there are several components and relationships that are important to understand in order to effectively develop and publish your libraries. The following table outlines each of these key concepts, and provides links to documentation to help you learn more about each:
 
-  A build is the actual set of files containing the code that is delivered to each user's browser when that user views your site.
+| Component | Description |
+| --- | --- |
+| Libraries | A library is a set of instructions for how extensions, data elements, and rules should interact with one another and with your website. When a library is compiled to be deployed to an environment, that library becomes a build.<br><br>See the overview on [libraries](./libraries.md) for more information on how to create, manage, and activate libraries in the UI. |
+| Builds | A build is a compiled library. When deployed in an environment, a build provides the actual set of files containing the code that is delivered to each user's browser when they view your site.<br><br>See the overview on [builds](./builds.md) for more information on the contents and format of builds. |
+| Environments | An environment is a set of deployment instructions that tells Platform Launch what format you'd like your build in and where you'd like that build delivered.<br><br>See the overview on [environments](./environments.md) for more information on the different types of environments, how to install and configure existing environments, and how to create new environments. |
+| Hosts | A host represents the connection details for an environment to deliver a build to your website. You can choose to let Adobe manage the hosting of your build, or you can provide information for your own host servers instead.<br><br>See the overview on [hosts](./hosts/hosts-overview.md) for more information about each hosting option. |
+| Client-side code  | The client-side code is the set of scripts that you place in the source code for your site or application that tells each client device where to retrieve the build. The code is attached to an environment and can change when you alter your environment configuration.<br><br>See the section on [installing environments](../upgrade-from-dtm-to-launch/link-dtm-embed-code.md) in the environments overview to learn how to generate the client-side code for both web- and mobile-based properties. |
 
-* [Environments](environments.md)
+## Next steps
 
-  An environment is a set of deployment instructions that tells Launch what format you'd like your build in and where you'd like that build delivered.
-
-* [Hosts](/help/launch-reference/publishing/hosts/hosts-overview.md)
-
-  A host represents the connection details for the environment to deliver the build. You can choose to let Launch manage the hosting of your build, or you can provide information for your own host servers.
-
-* [Client-side code](../upgrade-from-dtm-to-launch/link-dtm-embed-code.md)
-
-  The client-side code is the set of script code that you place on your site or in your application. This code tells each client device where to retrieve the build. The code is attached to an environment and can change when you make changes to your environment configuration.
-
-The publishing process consists of:
-
-1. Creating and editing libraries.
-1. Testing the functionality of those libraries where you need to test them.
-1. Deploying those libraries to your production environment.
-
-![](/help/assets/publishing.jpg)
-
-For example, if you create a new checkout event, create a revenue data element related to that event, and make a change to the Adobe Analytics extension configuration to support the new event and data element, you can save them all at once to a checkout library, then test, approve, and publish them as a group.
+This document provided an overview of the various components involved with publishing libraries in Platform Launch. Refer to the documentation linked to throughout this guide to learn more about the publishing process in detail.

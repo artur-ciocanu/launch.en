@@ -1,27 +1,27 @@
 ---
-title: Adobe Target Extension
-seo-title: Adobe Target Extension in Adobe Experience Platform Launch
-description: Information about the options available when using the Adobe Target extension to build a rule
-seo-description: Adobe Target Extension in Adobe Experience Platform Launch
+title: Adobe Target Extension Overview
+description: Learn about the Adobe Target extension in Adobe Experience Platform Launch.
 ---
 
-# Adobe Target Extension
+# Adobe Target extension overview
 
 Use this reference for information about the options available when using this extension to build a rule.
 
 ## Configure the Adobe Target extension
 
->[!IMPORTANT]  The Adobe Target extension requires at.js. It does not support mbox.js.
+>[!IMPORTANT]
+>
+> The Adobe Target extension requires at.js. It does not support mbox.js.
 
-If the Adobe Target extension is not yet installed, open your property, then click **[!UICONTROL Extensions > Catalog]**, hover over the Target extension, and click **[!UICONTROL Install]**.
+If the Adobe Target extension is not yet installed, open your property, then select **[!UICONTROL Extensions > Catalog]**, hover over the Target extension, and select **[!UICONTROL Install]**.
 
-To configure the extension, open the [!UICONTROL Extensions] tab, hover over the extension, and then click **[!UICONTROL Configure]**.
+To configure the extension, open the [!UICONTROL Extensions] tab, hover over the extension, and then select **[!UICONTROL Configure]**.
 
 ![](/help/assets/ext-target-config.png)
 
 ### at.js Settings
 
-All of your at.js settings, with the exception of the Timeout. are automatically retrieved from your at.js configuration in the Target user interface. The extension only retrieves settings from the Target user interface when it is first added, so all settings should be managed in the Launch interface if additional updates are needed.
+All of your at.js settings, with the exception of the Timeout. are automatically retrieved from your at.js configuration in the Target user interface. The extension only retrieves settings from the Target user interface when it is first added, so all settings should be managed in the Adobe Experience Platform Launch interface if additional updates are needed.
 
 The following configuration options are available:
 
@@ -76,7 +76,7 @@ The Target extension provides the following actions in the Then portion of a rul
 
 ### Load Target
 
-Add this action to your Launch rule where it makes sense to load Target in the context of your rule. This loads the at.js library into the page. In most implementations, Target should be loaded on every page of your site.
+Add this action to your Platform Launch rule where it makes sense to load Target in the context of your rule. This loads the at.js library into the page. In most implementations, Target should be loaded on every page of your site.
 
 No configuration is needed.
 
@@ -85,14 +85,14 @@ No configuration is needed.
 Add parameters to all mbox requests. The Load Target action must be used earlier.
 
 1. Specify the name and value of any parameter you want to add.
-1. Click the Plus icon to add more parameters.
+1. Select the **plus (+)** icon to add more parameters.
 
 ### Add Global Mbox Params
 
 Add parameters only to your global mbox requests. The Load Target action must be used earlier.
 
 1. Specify the name and value of any parameter you want to add.
-1. Click the Plus icon to add more parameters.
+1. Select the **plus (+)** icon to add more parameters.
 
 ### Fire Global Mbox
 
@@ -119,14 +119,14 @@ Once you have saved this rule, you'll need to add it to a Library and build/depl
 
 ## Adobe Target extension with an asynchronous deployment
 
-Launch can be deployed asynchronously. If you are loading the Launch library asynchronously with Target inside it, then Target will also be loaded asynchronously. This is a fully supported scenario, but there is one additional consideration that must be handled.
+Platform Launch can be deployed asynchronously. If you are loading the Platform Launch library asynchronously with Target inside it, then Target will also be loaded asynchronously. This is a fully supported scenario, but there is one additional consideration that must be handled.
 
-In asynchronous deployments, it is possible for the page to finish rendering the default content before the Target library is fully loaded and has performed the content swap. This can lead to what is known as "flicker" where the default content shows up briefly before being replaced by the personalized content specified by Target. If you want to avoid this flicker, we suggest you use a pre-hiding snippet and load the Launch bundle asynchronously to avoid any content flicker.
+In asynchronous deployments, it is possible for the page to finish rendering the default content before the Target library is fully loaded and has performed the content swap. This can lead to what is known as "flicker" where the default content shows up briefly before being replaced by the personalized content specified by Target. If you want to avoid this flicker, we suggest you use a pre-hiding snippet and load the Platform Launch bundle asynchronously to avoid any content flicker.
 
 Here are some things to keep in mind when using the pre-hiding snippet:
 
-* The snippet must be added before loading the Launch header embed code.
-* This code can't be managed by Launch, so it must be added to the page directly.
+* The snippet must be added before loading the Platform Launch header embed code.
+* This code can't be managed by Platform Launch, so it must be added to the page directly.
 * The page will be displayed when the earliest of the following events occur:
   * When the global mbox response has been received
   * When the global mbox request times out

@@ -1,8 +1,6 @@
 ---
 title: Libraries
-seo-title: Libraries in Adobe Experience Platform Launch
-description: Adobe Experience Platform Launch libraries
-seo-description: Adobe Experience Platform Launch libraries
+description: Learn about the concept of libraries and how they function within Adobe Experience Platform Launch.
 ---
 
 # Libraries
@@ -31,14 +29,14 @@ A library moves between several environments as it makes its way through the pub
 
    The [!UICONTROL Publishing] page lists the Dev libraries and provides the means to submit them for approval, move them to staging, or publish them to production.
 
-1. Click **[!UICONTROL Add New Library]**.
+1. Select **[!UICONTROL Add New Library]**.
 
    ![](/help/assets/library-create.jpg)
 
 1. Name the library.
 1. Assign the library to a Dev environment.
 1. Add a change to the library.
-   To add an item, click **[!UICONTROL Add a Change]**, then choose the items you want to add. Any item that has been edited or deleted is available to add to the chosen library.
+   To add an item, select **[!UICONTROL Add a Change]**, then choose the items you want to add. Any item that has been edited or deleted is available to add to the chosen library.
 
    ![](/help/assets/library-add-change.jpg)
 
@@ -48,8 +46,8 @@ A library moves between several environments as it makes its way through the pub
    * Data elements
    * Extension configurations
 
-1. To add any resources that have changed, click **[!UICONTROL Add All Changed Resources]**.
-1. Click **[!UICONTROL Save]** or **[!UICONTROL Save and Build for Development]**.
+1. To add any resources that have changed, select **[!UICONTROL Add All Changed Resources]**.
+1. Select **[!UICONTROL Save]** or **[!UICONTROL Save and Build for Development]**.
 
    Deploying compiles a build and deploys it to the assigned environment.
 
@@ -78,13 +76,15 @@ Once a library is created, use the drop down menu for that library to select one
 1. Install the [extensions](../managing-resources/extensions/overview.md) you want to add.
 1. Create the [data elements](../managing-resources/data-elements.md) and rules you want to add.
 1. Open the [!UICONTROL Publishing] tab.
-1. Select the [library](libraries.md) you want to change, then click **[!UICONTROL Edit]**.
+1. Select the [library](libraries.md) you want to change, then select **[!UICONTROL Edit]**.
 1. Use the rules, data elements, and extensions buttons to select the items you want to add to the library.
 1. Save.
 
 Changes to the library are shown in the Library Contents change log.
 
->[!NOTE]  Data elements can depend upon extensions. Rules can depend on both data elements and extensions. If you do not include all the necessary components in your library, the build will fail at build time and you'll need to add the necessary components before you complete a successful build. A future release will check dependencies when making changes to a library.
+>[!NOTE]
+>
+>Data elements can depend upon extensions. Rules can depend on both data elements and extensions. If you do not include all the necessary components in your library, the build will fail at build time and you'll need to add the necessary components before you complete a successful build. A future release will check dependencies when making changes to a library.
 
 ## Remove from a library
 
@@ -99,17 +99,17 @@ To remove something from a library, you must deactivate it and then publish the 
 
 ## Manage library changes
 
-1. Click on a library and select **[!UICONTROL Edit]** to view library changes. All changes are shown in the [!UICONTROL Library Contents] list.
+1. Choose a library and select **[!UICONTROL Edit]** to view library changes. All changes are shown in the [!UICONTROL Library Contents] list.
 
    ![](/help/assets/library-contents.jpg)
 
-1. Click a change to view and select a revision.
+1. Select a change to view and select a revision.
 
    ![](/help/assets/library-contents-revision.jpg)
 
 1. Select whether to show all items or changed items.
-1. Click the revision, then click **[!UICONTROL Select Revision]**.
-1. Click either **[!UICONTROL Add a Change]** or **[!UICONTROL Add All Changed Resources]**.
+1. Select the revision, then select **[!UICONTROL Select Revision]**.
+1. Select either **[!UICONTROL Add a Change]** or **[!UICONTROL Add All Changed Resources]**.
 
 ## Active Library {#active-library}
 

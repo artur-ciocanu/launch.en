@@ -1,16 +1,14 @@
 ---
-title: Managing Resources
-seo-title: Managing Resources in Adobe Experience Platform Launch
-description: Managing Adobe Experience Platform Launch Resources
-seo-description: Managing Adobe Experience Platform Launch Resources
+title: Manage Resources
+description: Learn how to manage various resources in Adobe Experience Platform Launch, including extensions, data elements, and rules.
 ---
 
-# Managing Resources
+# Manage resources
 
-In [!DNL Launch], the word "resources" refers to any of the following:
+In [!DNL Adobe Experience Platform Launch], the word "resources" refers to any of the following:
 
 * [Extensions](extensions/overview.md) - Extensions provide data element types and rules for you to work with
 * [Data Elements](data-elements.md) - Data elements are an easy way to reference any data that exists elsewhere.  They create shortcuts that can be used within rules and extension configurations.  When the location of the underlying data changes, they can be updated to point to the new location without having to update individual rules or extensions.
 * [Rules](rules.md) - Rules are a collection of rule components (events, conditions, and actions) that control the behavior of the deployed tags.
 
-You can learn more about each of these resource types by clicking the links above.
+You can learn more about each of these resource types by selecting  the links above.

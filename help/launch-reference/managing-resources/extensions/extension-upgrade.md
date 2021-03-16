@@ -1,13 +1,11 @@
 ---
-title: Extension Upgrade
-seo-title: Extension Upgrade in Adobe Experience Platform Launch
-description: Upgrade extensions in Adobe Experience Platform Launch
-seo-description: Upgrade extensions in Adobe Experience Platform Launch
+title: Extension Upgrades
+description: Learn how extension upgrades are packaged and represented in the Adobe Experience Platform Launch catalog.
 ---
 
-# Extension Upgrade
+# Extension upgrades
 
-Extension developers continually add new features to their extensions, and frequently fix bugs. These updates are packaged into new versions of an extension and made available in the [!DNL Launch] catalog as upgrades.
+Extension developers continually add new features to their extensions, and frequently fix bugs. These updates are packaged into new versions of an extension and made available in the [!DNL Adobe Experience Platform Launch] catalog as upgrades.
 
 ## Extension Catalog
 
@@ -31,24 +29,26 @@ There is currently no capability to downgrade your extension to a previous versi
 
 ## Upgrade Process
 
-Installing an upgrade is pretty much the same as [installing the extension](#add-a-new-extension) for the first time.
+Installing an upgrade is pretty much the same as installing the extension for the first time.
 
-1. Click the **[!UICONTROL Upgrade]** button to go to the [!UICONTROL Extension Configuration] screen.
+1. Select **[!UICONTROL Upgrade]** to go to the [!UICONTROL Extension Configuration] screen.
 1. Make any configuration changes you'd like to make.
-1. Click **[!UICONTROL Save]**.
+1. Select **[!UICONTROL Save]**.
 
-The upgrade is not actually performed until you hit [!UICONTROL Save]. At any time previous to that, you can click [!UICONTROL Cancel] and stay with the currently installed version. Clicking [!UICONTROL Save] is the point of no return.
+The upgrade is not actually performed until you hit **[!UICONTROL Save]**. At any time previous to that, you can select [!UICONTROL Cancel] and stay with the currently installed version. Selecting **[!UICONTROL Save]** is the point of no return.
 
 Extension Upgrades are not permitted if you have a library in the `Approved` or `Submitted` state.  This is because the next build must contain the new extension version.  For a library that is `Approved` or `Submitted`, the next build is the production build.  That build would fail since it doesn't contain the latest version, so the workflow is to publish or reject libraries in the `Approved` or `Submitted` state _before_ upgrading the extension.
 
 ## Publishing an Upgrade
 
-Once the upgraded extension is installed on your property, you must include it in all Libraries from that point forward. A build failure message displays for any libraries that do not include it.
+After the upgraded extension is installed on your property, you must include it in all Libraries from that point forward. A build failure message displays for any libraries that do not include it.
 
-Beyond that, adding the upgraded extension to your library is the same as [adding any other change](../../publishing/libraries.md#add-to-a-library) to a library.
+Beyond that, adding the upgraded extension to your library is the same as [adding any other change](../../publishing/libraries.md) to a library.
 
 From the [!UICONTROL Edit Library] screen, you can use the "[!UICONTROL Add All Changed Resources]" button or you can use the "[!UICONTROL Add a Resource]" button and select the upgraded extension on its own.
 
->[!TIP] It is possible for extension developers to add new configuration items to their extension views in order to enable new functionality.  If you see build failures after upgrading to a new extension version - and you have isolated to build failures to that extension -  then the first thing to do is go to the extension's Configure page and be sure to Save (even if you didn't change anything).  Then add the new change to your library and try to build again.
+>[!TIP]
+>
+>It is possible for extension developers to add new configuration items to their extension views in order to enable new functionality.  If you see build failures after upgrading to a new extension version - and you have isolated to build failures to that extension -  then the first thing to do is go to the extension's Configure page and be sure to Save (even if you didn't change anything).  Then add the new change to your library and try to build again.
 
-Once you have added the extension upgrade to your library, you can follow the steps outlined in [Approval Workflow](../../publishing/approval-workflow.md) to publish your library through to Production.
+After you have added the extension upgrade to your library, you can follow the steps outlined in [publishing flow](../../publishing/publishing-flow.md) to publish your library through to Production.

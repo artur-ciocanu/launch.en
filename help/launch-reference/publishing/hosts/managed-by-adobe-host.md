@@ -1,62 +1,101 @@
 ---
-title: Managed by Adobe Hosts
-seo-title: Managed by Adobe Hosts in Adobe Experience Platform Launch
-description: Adobe Experience Platform Launch hosts
-seo-description: Adobe Experience Platform Launch hosts
+title: Adobe-Managed Hosts Overview
+description: Learn about the default hosting option for deploying library builds in Adobe Experience Platform Launch.
 ---
 
-# Managed by Adobe Hosts
+# Adobe-managed hosts overview
 
-This host type is the default selection and is simplest to manage.
+Adobe-managed hosts are the default host setting for deploying your library builds in Adobe Experience Platform Launch. When you create a new property through the Platform Launch user interface, a default Adobe-managed host is created for you. 
 
-When you choose the Adobe-managed option, libraries that Launch builds are delivered to a 3rd-party CDN that Adobe has contracted with. These CDNs operate independently from Adobe, so even when Launch has maintenance or downtime, the code deployed to your sites and applications continues to function as normal. The embed code references the main library file on the CDN so a client device can retrieve the files at run-time.
+With Adobe-managed hosts, library builds are delivered to a third-party content delivery network (CDN) that Adobe has contracted with. These CDNs operate independently from Adobe, so even when Platform Launch is undergoing maintenance or is otherwise down, your deployed code will continue to function as normal on your sites and applications. The embed code for an Adobe-managed host references the main library file on the CDN so a client device can retrieve the files at runtime.
 
-Currently, the primary CDN provider is Akamai. Files hosted on Akamai have a domain of [assets.adobedtm.com](https://assets.adobedtm.com). This can be referenced securely or not (`http://` or `https://`) based on how you call it in your `<script>` code.
+This document provides an overview of Adobe-managed hosts in Platform Launch, and provides steps on how to create a new Adobe-managed host in the UI.
 
-When you create a new property through the Launch UI, a default host of this type is created for you. Note that with this host type, the very first published library to any new environment can take up to five minutes to propagate out to the global CDN.
+## Akamai
 
-## About Akamai
+Currently, the primary CDN provider for Adobe is [Akamai](https://www.akamai.com/). Akamai's robust CDN is built to serve content to a global, high-volume audience of web visitors. The CDN runs redundant networks of load-balanced, geo-optimized nodes in order to serve content as quickly as possible to visitors located throughout the world.
 
-Akamai is robust when serving content to a global, high-volume audience of web visitors. Akamai runs redundant networks of load-balanced, geo-optimized nodes to serve content as quickly as possible to visitors wherever they are located throughout the world.
+Specifically, Akamai runs more than 137,000 servers in 87 countries within more than 1,150 networks. In terms of redundancy, the CDN not only routes from one server to another, but can also route from one node of servers to another node of servers as needed. In other words, each node consists of multiple servers, so that one server going down never becomes an issue as the other servers on the same node can take over.
 
-Specifically, Akamai runs more than 137,000 servers in 87 countries within more than 1,150 networks. In terms of redundancy, Akamai does not just route from one server to another. Akamai routes from one node of servers to another node of servers as needed. In other words, each node consists of multiple servers for redundancy within a node, so a server going down is not an issue because the other servers in the node take over. If a node goes down, Akamai serves from the next closest one, with the same cached content. Nodes are dynamically selected based on visitor location, traffic load, and other factors, so content is consistently served from the best local node for each visitor.
+If an entire node goes down, Akamai serves from the next-closest node with the same cached content. Nodes are dynamically selected based on visitor location, traffic load, and other factors so that content is consistently served from the best local node for each visitor.
 
-Akamai also has access to edge nodes in China, so end-users in China get traffic from nodes that are geographically close to them.
+Files hosted on Akamai have a domain of `assets.adobedtm.com`. This can be referenced securely or not (`http://` or `https://`) based on how it is called within in your embedded `<script>` code.
 
-### Can I avoid errors in case of CDN unavailability?
+>[!WARNING]
+>
+>If your library is unavailable from the Akamai network, Platform Launch is unable to prevent any errors that may arise because of it.
 
-No. Launch can do nothing if the library is unavailable from the Akamai network.
+## Library build caching
 
-### CDN cache control headers
+When using Adobe-managed hosts, your library builds are cached in two locations:
 
-When you choose to have Adobe manage your hosting, you do not have control over the headers on the response, so the Adobe default is used. There is no way to get custom headers when you have Adobe manage your hosting.
+* [Edge caching](#edge)
+* [Browser caching](#browser)
 
-As of September 25, 2019, there is a 24-hour TTL on all builds managed by Adobe.  If you require different cache control headers, you need to host your own files.  Please see the [Self-hosting Guide](/help/launch-reference/publishing/hosts/self-hosting-libraries.md) for more info.
+### Edge caching {#edge}
 
->[!NOTE]  It is up to browsers to receive and respect the cache control headers. Some browsers might ignore them.
+The primary purpose of a CDN is to intelligently distribute content to servers that are geographically closer to end-users, so that the content can be retrieved more quickly by client devices. CDNs achieve this by making copies of the content available on geographically distributed servers around the world ("edge nodes").
 
-### Cache Invalidations {#cache-invalidation}
+Once your build has been deployed to the Adobe-managed host, the CDN distributes the build on several centralized servers ("origins"), who then send copies of the build to many different edge nodes around the world for caching. The cached versions of the build stored on these edge nodes are then ultimately served to client devices.
 
-Copies of your build are cached on many different *edge nodes* around the world so that they can be served to end-users as quickly as possible.  When edge nodes field a request for a specific file, they check the TTL on the file.  If the file has not expired, the edge nodes serve the cached version.  If the TTL has expired, then it requests a new copy from the nearest *origin*, serve that refreshed copy, and then cache the refreshed copy with the defined TTL.
+![](../assets/cdn-diagram.png)
 
-When you upload a new build, Launch invalidates the edge caches, which means that each edge node considers its cached version to be invalid, regardless of how recently it retrieved a fresh copy.  The next time it fields a request for that file, it retrieves a fresh copy from origin.
+>[!NOTE]
+>
+>For Adobe-managed hosts, the very first published library to any new environment can take up to five minutes to propagate out to the global CDN. 
 
-Because Akamai has multiple origin servers that replicate files between themselves, and because there is no way of knowing which origin got your file first, it is possible for these new requests to hit an origin that does not have the latest version and then cache the older version again.  For this reason, Launch performs multiple cache invalidations for each new build on the following interval:
+When an edge node receives a request for a specific file (such as your library build), the node first checks the the time-to-live (TTL) value on the file. If the TTL has not expired, the edge node serves the cached version. If the TTL has expired, then the edge node requests a new copy from the nearest origin, serves that refreshed copy, and then caches the refreshed copy with a new TTL.
 
-* Immediately
-* 5 Minutes
-* 60 Minutes
+>[!NOTE]
+>
+>In addition to edge node caching, there may also be intermediate networks (such as corporate or mobile networks) that perform their own caching. If your builds are not caching as expected, these networks may be the underlying cause.
 
-This is done to give the origin groups time to replicate the latest version of the file between themselves so they all have the latest when the cache invalidations are performed.
+#### Edge cache invalidation {#invalidation}
 
-## How to use managed hosting
+When you upload a new library build, Platform Launch invalidates the caches on all applicable edge nodes, which means that each node considers its cached version to be invalid, regardless of how recently it retrieved a fresh copy. The next time an edge node receives a request for that file, the node retrieves a fresh copy from the origin.
 
-To have Adobe manage your hosting, you need to create a Managed by Adobe host, then assign your environments to use this host.
+Because Akamai has multiple origin servers that replicate files between each other, and because there is no way of knowing which origin received your file first, it is possible for these node requests to hit an origin that does not have the latest version, and then cache the older version again. To prevent this from occurring, Platform Launch performs multiple cache invalidations for each new build on the following intervals:
 
-## Create Managed by Adobe host
+* Immediately after upload
+* 5 minutes after upload
+* 60 minutes after upload
 
-1. Open the [!UICONTROL Hosts] tab.
-1. Create the new host.
-1. Name the host.
-1. Select **[!UICONTROL Managed by Adobe]** as the host type.
-1. Click **[!UICONTROL Save]**.
+These staggered cache invalidations give the origin server groups time to replicate the latest version of the file between themselves so they all have the latest version when the file is retrieved.
+
+### Browser caching {#browser}
+
+Library builds are also cached on the browser through the use of the `cache-control` HTTP header. When using Adobe-managed hosts, you do not have control over the headers returned in API responses, so the Adobe default for caching is used. In other words, you cannot utilize custom headers for Adobe-managed hosts. If you require a custom `cache-control` header, you may want to consider [self-hosting](self-hosting-libraries.md) instead.
+
+The time-to-live (TTL) for your browser-cached library build (determined by the `cache-control` header) will vary depending on the Platform Launch environment you are using:
+
+| Environment | `cache-control` value |
+| --- | --- |
+| Development | `max-age=0, no-cache, no-store` |
+| Staging | `max-age=0, no-cache, no-store` |
+| Production | `max-age=3600` |
+
+As the table above indicates, browser caching is not supported on development and staging environments. As such, you should not use the development or staging embed codes in high-traffic or production contexts.
+
+Cache control headers are only applied for the main library build. Any sub-resources below the main library are always considered net-new, and therefore there is no need to cache them on the browser.
+
+## Using Adobe-managed hosting in the Platform Launch UI
+
+When you first create a property in the [Platform Launch UI](http://launch.adobe.com/), an Adobe-managed host is automatically created for you. All environments that are provided out-of-the-box for the property are also assigned to the Adobe-managed host by default.
+
+>[!NOTE]
+>
+>If the default Adobe-managed host is unassigned from all environments, the host can be deleted. If you want to switch back to an Adobe-managed host after doing this, you can create a new host through the following steps:
+>
+>1. Select the **[!UICONTROL Hosts]** tab on your property, then select **[!UICONTROL Add Host]**.
+>1. Provide a name for the host, select **[!UICONTROL Managed by Adobe]** as the host type, then select **[!UICONTROL Save]**.
+>
+>You can then re-assign your environments to the Adobe-managed host as desired.
+
+## Next steps
+
+This document provided an overview of Adobe-managed hosting in Platform Launch. For information on other hosting options, refer to the following documentation:
+
+* [SFTP hosting](./sftp-host.md)
+* [Self-hosting libraries](./self-hosting-libraries.md)
+
+For details on how to manage hosts for your environments, see the [environments guide](../environments.md).

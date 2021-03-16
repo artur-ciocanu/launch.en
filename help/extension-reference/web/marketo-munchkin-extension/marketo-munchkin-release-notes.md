@@ -1,11 +1,16 @@
 ---
-title: Marketo Munchkin Extension Release Notes
-seo-title: Marketo Munchkin Extension Release Notes in Adobe Experience Platform Launch
-description: Marketo Munchkin Extension Release Notes in Adobe Experience Platform Launch
-seo-description: Marketo Munchkin Extension Release Notes in Adobe Experience Platform Launch
+title: Release Notes for the Marketo Munchkin Extension
+description: The latest release notes for the Marketo Munchkin extension in Adobe Experience Platform Launch.
 ---
 
-# Marketo Munchkin Extension Release Notes
+# Marketo Munchkin Extension release notes
+
+## December 2, 2020
+
+### Marketo Munchkin Extension 1.3.0
+
+* Updated Logo to Adobe's red Adobe A on the white background
+* Removed the Associate Lead action that is soon to be deprecated 
 
 ## January 28, 2020
 

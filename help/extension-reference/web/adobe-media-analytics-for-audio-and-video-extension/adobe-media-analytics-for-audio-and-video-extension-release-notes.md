@@ -1,11 +1,9 @@
 ---
-title: Adobe Media Analytics for Audio and Video Release Notes
-seo-title: Adobe Media Analytics for Audio and Video Release Notes in Adobe Experience Platform Launch
-description: Adobe Media Analytics for Audio and Video Release Notes in Adobe Experience Platform Launch
-seo-description: Adobe Media Analytics for Audio and Video Release Notes in Adobe Experience Platform Launch
+title: Release Notes for the Adobe Media Analytics for Audio and Video Extension
+description: The latest release notes for the Adobe Media Analytics for Audio and Video extension in Adobe Experience Platform Launch.
 ---
 
-# Adobe Media Analytics for Audio and Video Release Notes
+# Adobe Media Analytics for Audio and Video release notes
 
 ## October 25, 2019
 
@@ -34,7 +32,7 @@ seo-description: Adobe Media Analytics for Audio and Video Release Notes in Adob
 
 #### **Features**
 
-The [Adobe Analytics for Video Extension](/help/extension-reference/web/adobe-media-analytics-for-audio-and-video-extension/overview.md) adds the core Video Analytics JavaScript library. This library provides the functionality for adding the mediaHeartbeat instance to a Launch site or project. The Adobe Analytics for Video Extension (VA Extension) requires two additional extensions:
+The [Adobe Analytics for Video Extension](/help/extension-reference/web/adobe-media-analytics-for-audio-and-video-extension/overview.md) adds the core Video Analytics JavaScript library. This library provides the functionality for adding the mediaHeartbeat instance to an Adobe Experience Platform Launch site or project. The Adobe Analytics for Video Extension (VA Extension) requires two additional extensions:
 
 * Analytics Extension
 * Experience Cloud ID Extension

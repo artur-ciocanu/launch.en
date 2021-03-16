@@ -1,11 +1,9 @@
 ---
-title: Adobe Analytics Extension
-seo-title: Adobe Analytics Extension in Adobe Experience Platform Launch
-description: Adobe Analytics Extension in Adobe Experience Platform Launch
-seo-description: Adobe Analytics Extension in Adobe Experience Platform Launch
+title: Adobe Analytics Extension Overview
+description: Learn about the Adobe Analytics extension in Adobe Experience Platform Launch.
 ---
 
-# Adobe Analytics Extension
+# Adobe Analytics extension overview
 
 Use this reference for information about configuring the Adobe Analytics extension, and the options available when using this extension to build a rule.
 
@@ -13,9 +11,9 @@ Use this reference for information about configuring the Adobe Analytics extensi
 
 This section provides a reference for the options available when configuring the Adobe Analytics extension.
 
-If the Adobe Analytics extension is not yet installed, open your property, then click **[!UICONTROL Extensions > Catalog]**, hover over the Adobe Analytics extension, and click **[!UICONTROL Install]**.
+If the Adobe Analytics extension is not yet installed, open your property, then select **[!UICONTROL Extensions > Catalog]**, hover over the Adobe Analytics extension, and select **[!UICONTROL Install]**.
 
-To configure the extension, open the Extensions tab, hover over the extension, and then click **[!UICONTROL Configure]**.
+To configure the extension, open the Extensions tab, hover over the extension, and then select **[!UICONTROL Configure]**.
 
 ![](/help/assets/ext-analytics-config.png)
 
@@ -42,6 +40,10 @@ If you select this option, specify one or more report suites for each of the fol
 * Development
 * Staging
 * Production
+
+#### Using the activity map module
+
+The activity map is loaded as a separate module (like the AAM module). By default activity map is turned on, but if you would prefer to turn it off you can do so by unchecking the box in the configuration.  
 
 #### Tracker is accessible on the global variable named
 
@@ -75,7 +77,9 @@ Specify the tracker object to be used globally.
 
 Lets you [insert core AppMeasurement code](https://docs.adobe.com/help/en/analytics/implementation/other/dtm/analytics-tool/t-appmeasurement-code.html). This code is populated automatically when using the automatic configuration method.
 
->[!NOTE] The validator used in the Launch code editor is designed to identify issues with developer-written code. Code that has gone through a minification process--such as the AppMeasurement.js code downloaded from the Code Manager--might be falsely flagged as having issues by the Launch validator, which can usually be ignored.
+>[!NOTE]
+>
+>The validator used in the Adobe Experience Platform Launch code editor is designed to identify issues with developer-written code. Code that has gone through a minification process--such as the AppMeasurement.js code downloaded from the Code Manager--might be falsely flagged as having issues by the Platform Launch validator, which can usually be ignored.
 
 #### Set the following report suites on tracker
 
@@ -97,7 +101,7 @@ Select an option from the General section of the configuration page. The followi
 
 Enables or disables tracking based on the EU privacy cookie.
 
-When you check the EU Compliance check box, the [!UICONTROL Tracking Cookie Name] field appears. The Tracking Cookie overrides the default tracking cookie name. You can customize the name that Launch uses to track your opt-out status for receiving other cookies.
+When you check the EU Compliance check box, the [!UICONTROL Tracking Cookie Name] field appears. The Tracking Cookie overrides the default tracking cookie name. You can customize the name that Platform Launch uses to track your opt-out status for receiving other cookies.
 
 When a page is loaded, the system checks to see if a cookie called sat\_track is set (or the custom cookie name specified on the Edit Property page). Consider the following information:
 
@@ -107,13 +111,13 @@ When a page is loaded, the system checks to see if a cookie called sat\_track is
 You are responsible for setting the sat\_track (or custom named) cookie to false if a visitor opts out. You can accomplish this using custom code:
 
 ```javascript
-_satellite.setCookie("sat_track", "false");
+_satellite.cookie.set("sat_track", "false");
 ```
 
 You must also have a mechanism to set that cookie to true if you want a visitor to be able to opt in later:
 
 ```javascript
-_satellite.setCookie("sat_track", "true");
+_satellite.cookie.set("sat_track", "true");
 ```
 
 ### Character Set
@@ -121,14 +125,13 @@ _satellite.setCookie("sat_track", "true");
 Determines how the image request is encoded. If your implementation or site uses non-ASCII characters, it is important to define character set here. You can select a preset character set or specify a custom character set. Adobe recommends using the same character coding as your site. Typically this value is UTF-8.
 
 Character Set can be set in Analytics custom code using the variable `s.charSet`.
-
-For more information about character sets, see the [Multi-Byte Character Sets whitepaper](https://experiencecloud.adobe.com/resources/help/en_US/whitepapers/multibyte/multibyte_encodings.html).
+For more information about character sets, see the [charSet documentation](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html).
 
 ### Currency Code
 
 Determines the conversion rate to be applied to revenue and currency events. If your site allows visitors to purchase in multiple currencies, setting the currency code ensures the monetary amount is converted and stored correctly.
 
-For more information about the supported currency codes, see the [Multi-Currency Support whitepaper](https://experiencecloud.adobe.com/resources/help/en_US/whitepapers/currency/currency_codes.html).
+For more information about the supported currency codes, see [currencyCode](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/currencycode.html).
 
 ### Tracking Server
 
@@ -176,7 +179,7 @@ See [s.linkDownloadFileTypes](https://docs.adobe.com/content/help/en/analytics/i
 
 ### Track outbound links
 
-Determines whether any link clicked is an exit link.
+Determines whether any selected link is an exit link.
 
 See [s.trackExternalLinks](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/trackexternallinks.html).
 
@@ -184,14 +187,16 @@ See [s.trackExternalLinks](https://docs.adobe.com/content/help/en/analytics/impl
 
 You can use one of the following methods to track outbound links from SPA sites:
 
-* If you do not want to track any outbound links from your SPA, insert an entry into the Never Track section.  For example, [http://testsite.com/spa/\#](http://testsite.com/spa/#)  All \# links to this host are ignored. All outbound links to other hosts are tracked, such as [https://www.google.com](https://www.google.com).
+* If you do not want to track any outbound links from your SPA, insert an entry into the Never Track section.  For example, `http://testsite.com/spa/\#`. All \# links to this host are ignored. All outbound links to other hosts are tracked, such as [https://www.google.com](https://www.google.com).
 * If there are some links that you want to track on your SPA, use the Always Track section.
 
 For example, if you have a spa/\#/about page, you could put "about" in the Always Track section.
 
 The "about" page is the only outbound link that is tracked. Any other links on the page (for example, [https://www.google.com](https://www.google.com)) are not tracked.
 
-Note that these two options are mutually exclusive.
+>[!NOTE]
+>
+>These two options are mutually exclusive.
 
 ### Keep URL Parameters
 
@@ -260,7 +265,7 @@ You can configure advanced settings by showing the advanced settings and enterin
 
 ![](/help/assets/an-ext-aam-adv.png)
 
-For information about each setting, click the info icon, or refer to the [Adobe Audience Manager documentation](https://docs.adobe.com/content/help/en/audience-manager/user-guide/aam-home.html).
+For information about each setting, select the info icon, or refer to the [Adobe Audience Manager documentation](https://docs.adobe.com/content/help/en/audience-manager/user-guide/aam-home.html).
 
 ## Analytics extension action types
 
@@ -283,8 +288,8 @@ Set one or more [eVars](https://docs.adobe.com/help/en/analytics/implementation/
 1. Select an eVar from the dropdown.
 1. Specify whether you want to set the eVar as the value (Set As) or copy (Duplicate From) another eVar.
 1. Provide a Set As value, or select the eVar you want to duplicate.
-1. (Optional) Click Add eVar to set more eVars.
-1. Click **[!UICONTROL Keep Changes]**.
+1. (Optional) Select Add eVar to set more eVars.
+1. Select **[!UICONTROL Keep Changes]**.
 
 #### Props
 
@@ -293,8 +298,8 @@ Set one or more [props](https://docs.adobe.com/help/en/analytics/implementation/
 1. Select a prop from the dropdown.
 1. Specify whether you want to set the prop as the value (Set As) or copy (Duplicate From) another eVar.
 1. Provide a Set As value, or select the eVar you want to duplicate the prop from.
-1. (Optional) Click **[!UICONTROL Add prop]** to set more props.
-1. Click **[!UICONTROL Keep Changes]**.
+1. (Optional) Select **[!UICONTROL Add prop]** to set more props.
+1. Select **[!UICONTROL Keep Changes]**.
 
 #### Events
 
@@ -302,8 +307,8 @@ Set one or more [events](https://docs.adobe.com/content/help/en/analytics/implem
 
 1. Select an event from the dropdown.
 1. (Optional) Select or specify a data element used for [event serialization](https://docs.adobe.com/help/en/analytics/implementation/vars/page-vars/events/event-serialization.html).
-1. (Optional) Click **[!UICONTROL Add event]** to set more events.
-1. Click **[!UICONTROL Keep Changes]**.
+1. (Optional) Select **[!UICONTROL Add event]** to set more events.
+1. Select **[!UICONTROL Keep Changes]**.
 
 #### Hierarchy
 
@@ -325,12 +330,15 @@ These settings include:
 * Channel
 * Referrer
 * Campaign
+* Purchase ID
 
   Specify either a value or a query parameter
 
 * State
 * Zip
 * Transaction ID
+
+These settings can be found in the "Global Variables" menu by selecting  the "Additional Settings" checkbox.
 
 #### Custom Page Code
 
@@ -340,9 +348,9 @@ Use the editor to specify your custom page code.
 
 **Settings**
 
-1. Click **[!UICONTROL Open Editor]**.
+1. Select **[!UICONTROL Open Editor]**.
 1. Type the custom code.
-1. Click **[!UICONTROL Save]**.
+1. Select **[!UICONTROL Save]**.
 
 ### Send Beacon {#send-beacon}
 
@@ -368,7 +376,7 @@ Select if you do not want to increment a pageview.
    * Custom Link: Specify the link name.
    * Download Link: Specify a file name.
    * Exit Link: Specify the destination URL.
-1. Click **[!UICONTROL Keep Changes]**.
+1. Select **[!UICONTROL Keep Changes]**.
 
 ### Clear Variables {#clear-variables}
 

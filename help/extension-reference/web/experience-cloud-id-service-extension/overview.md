@@ -1,23 +1,21 @@
 ---
-title: Experience Cloud ID Service Extension
-seo-title: Experience Cloud ID Service Extension in Adobe Experience Platform Launch
-description: Information about configuring the Experience Cloud ID extension, and the options available when using this extension to build a rule
-seo-description: Experience Cloud ID Service Extension in Adobe Experience Platform Launch
+title: Adobe Experience Cloud Identity Service Extension Overview
+description: Learn about the Adobe Experience Cloud Identity Service extension in Adobe Experience Platform Launch.
 ---
 
-# Experience Cloud ID Service Extension
+# Adobe Experience Cloud Identity Service extension overview
 
-Use this reference for information about configuring the Experience Cloud ID extension, and the options available when using this extension to build a rule.
+Use this reference for information about configuring the Adobe Experience Cloud ID extension, and the options available when using this extension to build a rule.
 
-Use this extension to integrate the Experience Cloud ID Service with your property. With the Experience Cloud ID Service, you can create and store unique and persistent identifiers for your site visitors.
+Use this extension to integrate the Experience Cloud Identity Service with your property. With the Experience Cloud Identity Service, you can create and store unique and persistent identifiers for your site visitors.
 
 ## Configure the Experience Cloud ID extension
 
 This section provides a reference for the options available when configuring the Experience Cloud ID extension.
 
-If the Experience Cloud ID extension is not yet installed, open your property, then click **[!UICONTROL Extensions > Catalog]**, hover over the Experience Cloud ID extension, and click **[!UICONTROL Install]**.
+If the Experience Cloud ID extension is not yet installed, open your property, then select **[!UICONTROL Extensions > Catalog]**, hover over the Experience Cloud ID extension, and select **[!UICONTROL Install]**.
 
-To configure the extension, open the Extensions tab, hover over the extension, and then click **[!UICONTROL Configure]**.
+To configure the extension, open the Extensions tab, hover over the extension, and then select **[!UICONTROL Configure]**.
 
 ![](/help/assets/optin.jpg)
 
@@ -35,7 +33,7 @@ The Experience Cloud ID does not load if the URL matches any of the specified pa
 
 (Optional) Enable Regex if this is a regular expression.
 
-Click **[!UICONTROL Add]** to exclude another path.
+Select **[!UICONTROL Add]** to exclude another path.
 
 ### Opt In
 
@@ -81,7 +79,7 @@ Define which categories are approved or denied when no preference has been set b
 
 ### Variables
 
-Set name-value pairs as Experience Cloud ID instance properties. Use the drop-down to select a variable, then type or select a value. For information about each variable, refer to the [Experience Cloud ID Service documentation](https://experiencecloud.adobe.com/resources/help/en_US/mcvid/mcvid-overview.html).
+Set name-value pairs as Experience Cloud ID instance properties. Use the drop-down to select a variable, then type or select a value. For information about each variable, refer to the [Experience Cloud Identity Service documentation](https://experiencecloud.adobe.com/resources/help/en_US/mcvid/mcvid-overview.html).
 
 ## Experience Cloud ID extension action types
 
@@ -109,5 +107,5 @@ Set one or more customer IDs.
    * Authenticated
    * Logged out
 
-1. (Optional) Click **[!UICONTROL Add]** to set more customer IDs.
-1. Click **[!UICONTROL Keep Changes]**.
+1. (Optional) Select **[!UICONTROL Add]** to set more customer IDs.
+1. Select **[!UICONTROL Keep Changes]**.

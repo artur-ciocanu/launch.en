@@ -1,8 +1,6 @@
 ---
-title: 2019 Release notes
-seo-title: 2019 Adobe Launch Release notes
-description: 2019 Adobe Launch release notes
-seo-description: 2019 Adobe Launch release notes
+title: 2019 Release Notes
+description: 2019 release notes for Adobe Experience Platform Launch.
 ---
 
 # Release notes
@@ -43,7 +41,7 @@ Notes: You can now add textual annotations to `notable` resources.  These includ
 
 ### Updates
 
-* Property Copy: You can now make a copy of a property and everything in it.  From the Properties list page, simply select a property and click Copy in the toolbar.
+* Property Copy: You can now make a copy of a property and everything in it.  From the Properties list page, simply choose a property and select **[!UICONTROL Copy]** in the toolbar.
 * Working Library Build button: For users who use the Working Library, there's now a build button.  When you have set the working library and make edits to a resource, the default action is now *Save and Add* instead of *Save and Build*.  This will allow users to make edits to multiple resources and then build when you are ready.
 * Visual tweaks to code checks in code editor: We made some visual tweaks to soften the appearance of the Code Validation that we released back in August.
 
@@ -55,7 +53,7 @@ Notes: You can now add textual annotations to `notable` resources.  These includ
 
 ### Updates
 
-Multiple cache invalidations: If you are using the *Managed by Adobe* Host for your environments, Launch now makes multiple cache invalidations each time you publish.  Previously, one invalidation was performed for each build immediately after the build was uploaded.  However, there is a time delay between when the file is uploaded to one origin server and when it is available on all origin servers, so there was a race condition which sometimes caused the stale version of the library to be cached on the edge for up to 6 hours.  Each build is now purged on the following intervals:
+Multiple cache invalidations: If you are using the *Managed by Adobe* Host for your environments, [!DNL Platform Launch]  now makes multiple cache invalidations each time you publish.  Previously, one invalidation was performed for each build immediately after the build was uploaded.  However, there is a time delay between when the file is uploaded to one origin server and when it is available on all origin servers, so there was a race condition which sometimes caused the stale version of the library to be cached on the edge for up to 6 hours.  Each build is now purged on the following intervals:
 
 * Immediately
 * 5 minutes after build
@@ -102,7 +100,7 @@ You can read more about cache invalidations on the [Managed by Adobe Host](/help
 
 ### Updates
 
-* Libraries that use the [!DNL Managed by Adobe] host and a non-archived environment now reference all sub files directly with `https://` instead of inheriting the underlying page protocol.  This enables you to use [!DNL Launch] in embedded HTML scenarios (mobile and set-top-box environment in particular) without self-hosting.
+* Libraries that use the [!DNL Managed by Adobe] host and a non-archived environment now reference all sub files directly with `https://` instead of inheriting the underlying page protocol.  This enables you to use [!DNL Platform Launch] in embedded HTML scenarios (mobile and set-top-box environment in particular) without self-hosting.
 * You can now unset your Working Library.
 * The Edit Library screen now has a button to [!UICONTROL Remove All Resources].
 * The size of the click target has increased to remove individual resources from a library
@@ -153,7 +151,7 @@ You can read more about cache invalidations on the [Managed by Adobe Host](/help
 
 ## May 8, 2019
 
-The [!DNL Reactor] API that powers [!DNL Launch] is officially reaching 1.0 status today.  This comes with a commitment to maintaining backwards compatibility within this major version (the 1.x series).  To get started working with the [!DNL Reactor] API, please visit [https://developer.adobelaunch.com/api/\#](https://developer.adobelaunch.com/api/#).
+The [!DNL Reactor] API that powers [!DNL Platform Launch] is officially reaching 1.0 status today.  This comes with a commitment to maintaining backwards compatibility within this major version (the 1.x series).  To get started working with the [!DNL Reactor] API, please visit [https://developer.adobelaunch.com/api/\#](https://developer.adobelaunch.com/api/#).
 
 ### Updates
 
@@ -205,7 +203,7 @@ The [!DNL Reactor] API that powers [!DNL Launch] is officially reaching 1.0 stat
 
 ### Features
 
-* Cross-property Copy - You can now copy resources from one property to another.  After selecting a resource and clicking the **[!UICONTROL Copy]** button, you can select a target property to copy to.  This is available on extensions, data elements, and rules.  Read more about copying resources [here](../launch-reference/managing-resources/copying-resources.md).
+* Cross-property Copy - You can now copy resources from one property to another.  After choosing a resource and selecting **[!UICONTROL Copy]**, you can select a target property to copy to.  This is available on extensions, data elements, and rules.  Read more about copying resources [here](../launch-reference/managing-resources/copying-resources.md).
 
 ## January 29, 2019
 
@@ -231,7 +229,7 @@ The [!DNL Reactor] API that powers [!DNL Launch] is officially reaching 1.0 stat
 
 * Properties that are configured for Extension Development now have a small tag next to the Property Name.
 * OrgID is now available on the \_satellite object.
-* Use of the [!DNL Launch] UI is no longer supported in IE 11, you'll receive a warning if you login with IE 11.
+* Use of the [!DNL Platform Launch] UI is no longer supported in IE 11, you'll receive a warning if you login with IE 11.
 
 ### Bug Fixes
 

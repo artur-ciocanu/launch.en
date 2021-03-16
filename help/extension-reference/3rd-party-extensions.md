@@ -1,12 +1,10 @@
 ---
 title: Third-Party Extensions
-seo-title: Third-Party Extensions in Adobe Experience Platform Launch
-description: Provide documentation for your Launch extension here.
-seo-description: Provide documentation for your Launch extension here.
+description: Learn about third-party extensions for Adobe Experience Platform Launch.
 ---
 
 # Third-Party extensions
 
-If you own a [!DNL Launch] extension and need a place to provide documentation for it, please feel free to (1) add a sub-page with your documentation and (2) add the nav link in TOC.md.
+In addition to extensions provided by Adobe solutions, third-party extensions for Adobe Experience Platform Launch are also available.
 
->[!IMPORTANT]  [!DNL Adobe] doesn't warranty the extensions from 3rd party developers, it's up to extension authors to choose a license and support process for their extensions. Many developers have chosen to post the source code of their extension packages on [!DNL Github], where customers can review them at their convenience. You can view those at [https://github.com/Launch-Developers](https://github.com/Launch-Developers).
+Adobe does not warranty the extensions from third-party developers, and there for it is the responsibility of extension authors to choose a license and support process for their extensions. Many developers have chosen to post the source code of their extension packages on a public GitHub repository where Platform Launch users can review them at their convenience. Refer to the [Launch Developers repo](https://github.com/Launch-Developers) for more information.

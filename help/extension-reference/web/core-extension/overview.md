@@ -1,13 +1,11 @@
 ---
-title: Core Extension
-seo-title: Core Extension in Adobe Experience Platform Launch
-description: The Core extension is the default extension released with Launch
-seo-description: Core Extension in Adobe Experience Platform Launch
+title: Core Extension Overview
+description: Learn about the Core extension in Adobe Experience Platform Launch.
 ---
 
-# Core Extension
+# Core extension overview
 
-The Core extension is the default extension released with Launch.
+The Core extension is the default extension released with Adobe Experience Platform Launch.
 
 Use this reference for information about the options available when using this extension to build a rule.
 
@@ -109,7 +107,7 @@ See [Options](#options), below.
 
 #### Orientation Change
 
-Trigger the event if the device's orientation changes.
+Trigger the event if the device’s orientation changes.
 
 There are no settings for this event type.
 
@@ -125,11 +123,19 @@ There are no settings for this event type.
 
 #### Click
 
-Trigger the event if the specified element is clicked.
+Trigger the event if the specified element is selected (clicked).
 
 Optionally, you can specify property values that must be true for the element before the event is triggered.
 
-You can also specify whether to delay navigation until the rule runs if the element is a link. When you click the check box, a field opens where you can enter the desired delay in milliseconds. This specifies how long Launch waits for tags to fire on clicked links before moving to the next page. The default value is 100 milliseconds. Longer delays improve tracking accuracy. Adobe recommends a delay of 500 milliseconds or less, which the user will not perceive. Launch will wait up to the time specified, but if the beacon fires sooner, the delay is cut short. (That is, user won't always wait the full length of the delay.)
+If the element is a link (an `<a>` tag), you can also specify whether to delay navigation for a period of time.  This can be useful if your rule requires extra time to execute and would not normally complete before page navigation takes place.
+
+>[!WARNING]
+>
+>This option should be used with extreme caution due to the potential negative consequences it poses to the user experience if used incorrectly.
+
+When you use link delay, Platform Launch will actually prevent the browser from navigating off the page, then perform a JavaScript redirect to the original destination after the specified timeout.  This is especially dangerous when when your page markup has `<a>` tags where the intended functionality does not actually navigate the user away from the page.  If you cannot solve your problem in any other way, you should be extremely precise with your selector definition so that this event will trigger exactly where you need it and nowhere else.
+
+The default link delay value is 100 milliseconds. Please note that Platform Launch will always wait for the amount of time specified and is not connected to the execution of the rule’s actions in any way. It is possible that the delay will force the user to wait longer than is necessary, and also possible that the delay will not be long enough for all the rule’s actions to successfully complete.  Longer delays provide more time for rule execution, but also make for a worse user experience.  
 
 In addition, specify that the event is triggered after a specific amount of time.
 
@@ -149,7 +155,7 @@ In addition, configure whether the rule is triggered immediately or after a spec
 
 Trigger the event if a custom event type occurs.
 
-You can name a JavaScript function that you've defined elsewhere and use it for the event.
+You can name a JavaScript function that you’ve defined elsewhere and use it for the event.
 
 Specify the name of the custom event type, then configure the other settings as described in [Options](#options), below.
 
@@ -157,13 +163,13 @@ Specify the name of the custom event type, then configure the other settings as 
 
 Trigger the event if a specified data element changes.
 
-Enter the data element name. You can select the data element from a list by clicking the icon and then selecting the data element.
+Enter the data element name. You can select the data element from a list by selecting  the icon and then selecting the data element.
 
 #### Direct Call
 
 Designed to bypass event detection and lookup systems.
 
-Direct call rules are ideal for situations where you want to tell Launch exactly what is happening. Also, they are ideal when Launch cannot detect an event in the DOM, such as with Adobe Flash.
+Direct call rules are ideal for situations where you want to tell Platform Launch exactly what is happening. Also, they are ideal when Platform Launch cannot detect an event in the DOM, such as with Adobe Flash.
 
 Specify the `_satellite.track` string.
 
@@ -203,13 +209,13 @@ There are no settings for this event type.
 
 #### Library Loaded (Page Top) {#library-loaded-page-top}
 
-Trigger the event as soon as the Launch library is loaded.
+Trigger the event as soon as the Platform Launch library is loaded.
 
 There are no settings for this event type.
 
 #### Page Bottom {#page-bottom}
 
-Trigger the event once `_satellite.pageBottom();` has been called. When loading the Launch library asynchronously, this event type should not be used.
+Trigger the event once `_satellite.pageBottom();` has been called. When loading the Platform Launch library asynchronously, this event type should not be used.
 
 There are no settings for this event type.
 
@@ -256,7 +262,7 @@ If you select this option, the following parameters become available:
 
 ## Core extension condition types
 
-This section describes the condition types available in the Core extension.
+This section describes the condition types available in the Core extension.  These condition types can be used with either the regular or exception logic type.
 
 ### Data
 
@@ -268,28 +274,42 @@ Specify the cookie name and value that must exist for an event to trigger an act
 1. Enter the value that must exist in the cookie if the event is to trigger an action.
 1. (Optional) Enable Regex if this is a regular expression.
 
-#### Cookie Opt-out
-
-Specify whether the user has opted out of cookies.
-
-Set whether the user accepts cookies.
-
 #### Custom Code
 
 Specify any custom code that must exist as a condition of the event. Use the built-in code editor to enter the custom code.
 
-1. Click **[!UICONTROL Open Editor]**.
+1. Select **[!UICONTROL Open Editor]**.
 1. Type the custom code.
-1. Click **[!UICONTROL Save]**.
+1. Select **[!UICONTROL Save]**.
 
 A variable named `event` will automatically be available, which you can reference from within your custom code. The `event` object will contain useful information about the event that triggered the rule. The easiest way to determine what event data is available is to log `event` to the console from within your custom code:
 
-```javascipt
+```javascript
 console.log(event);
 return true;
 ```
 
-Run the rule in a browser and inspect the logged event object in the browser's console. Once you understand what information is available, you can use it for programmitic decisioning within your custom code.
+Run the rule in a browser and inspect the logged event object in the browser’s console. Once you understand what information is available, you can use it for programmatic decisioning within your custom code.
+
+*Condition Sequencing*
+
+When the “Run rule components in sequence” option from property settings is enabled you can have subsequent rule components wait while your condition performs an asynchronous task.
+
+When the condition returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), the next condition in the rule will not execute until the returned promise is resolved. If the promise is rejected, Platform Launch considers that condition as failed and no further conditions or actions from that rule will be executed.
+
+An example of a condition that returns a promise:
+
+```javascript
+return new Promise(function(resolve, reject) {
+  setTimeout(function() {
+    if (new Date().getDay() === 5) {
+      resolve();
+    } else {
+      reject();
+    }
+  }, 1000);
+});
+```
 
 #### Value Comparison {#value-comparison}
 
@@ -334,11 +354,11 @@ The following value comparison operators are available:
 
 **Is True:** The condition returns true if the value is a boolean with the value of true. The value you provide is not converted to a boolean if it is any other type. Any value other than a boolean with the value of true results in the condition returning false.
 
-**Is Truthy:** The condition returns true if the value is true after being converted to a boolean. See [MDN's Truthy documentation](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) for examples of truthy values.
+**Is Truthy:** The condition returns true if the value is true after being converted to a boolean. See [MDN’s Truthy documentation](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) for examples of truthy values.
 
 **Is False:** The condition returns true if the value is a boolean with the value of false. The value you provide is not converted to a boolean if it is any other type. Any value other than a boolean with the value of false results in the condition returning false.
 
-**Is Falsy:** The condition returns true if the value is false after being converted to a boolean. See [MDN's Falsy documentation](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) for examples of falsy values.
+**Is Falsy:** The condition returns true if the value is false after being converted to a boolean. See [MDN’s Falsy documentation](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) for examples of falsy values.
 
 #### Variable
 
@@ -378,14 +398,14 @@ Configure the number of times the visitor must view the page before the action i
 
 #### Sessions
 
-Trigger the action if the user's number of sessions meets the specified criteria.
+Trigger the action if the user’s number of sessions meets the specified criteria.
 
 1. Select whether the number of sessions must be greater than, equal to, or less than the specified value.
 1. Specify the number of sessions that determines whether the condition is met.
 
 #### Time On Site
 
-Trigger the action if the user's number of sessions meets the specified criteria.
+Trigger the action if the user’s number of sessions meets the specified criteria.
 
 Configure how long the visitor must be on the site before the action is triggered.
 
@@ -394,35 +414,12 @@ Configure how long the visitor must be on the site before the action is triggere
 
 #### Traffic Source
 
-Trigger the action if the user's number of sessions meets the specified criteria.
+Trigger the action if the user’s number of sessions meets the specified criteria.
 
-Specify the source of the visitor's traffic that must be true for the action to be triggered.
+Specify the source of the visitor’s traffic that must be true for the action to be triggered.
 
 1. Specify the traffic source.
 1. (Optional) Enable Regex if this is a regular expression.
-
-### Other
-
-#### Date Range
-
-Specify a date range. Choose the date and time the event occurs after, the date it occurs before, and the time zone.
-
-#### Max Frequency
-
-Specify the maximum number of times the condition returns true. You can select from the following options:
-
-* Page view
-* Sessions
-* Visitor
-* Seconds
-* Minutes
-* Days
-* Weeks
-* Months
-
-#### Sampling
-
-Specify the percentage of the time the condition returns true.
 
 ### Technology
 
@@ -478,41 +475,57 @@ Select one or more of the following operating systems:
 
 Select the screen resolution visitors must use on their devices for the action to be triggered.
 
-1. Select whether the screen resolution width of the visitor's device must be greater than, equal to, or less than the specified value.
+1. Select whether the screen resolution width of the visitor’s device must be greater than, equal to, or less than the specified value.
 1. Specify the number of pixels required for the screen resolution width.
-1. Select whether the screen resolution height of the visitor's device must be greater than, equal to, or less than the specified value.
+1. Select whether the screen resolution height of the visitor’s device must be greater than, equal to, or less than the specified value.
 1. Specify the number of pixels required for the screen resolution height.
 
 #### Window Size
 
 Select the window size visitors must use on their devices for the action to be triggered.
 
-1. Select whether the window size width of the visitor's device must be greater than, equal to, or less than the specified value.
+1. Select whether the window size width of the visitor’s device must be greater than, equal to, or less than the specified value.
 1. Specify the number of pixels required for the window size width.
-1. Select whether the window size height of the visitor's device must be greater than, equal to, or less than the specified value.
+1. Select whether the window size height of the visitor’s device must be greater than, equal to, or less than the specified value.
 1. Specify the number of pixels required for the window size height.
 
 ### URL
 
 #### Domain
 
-Specify the visitor's domain.
+Specify the visitor’s domain.
 
 #### Hash
 
 Specify one or more hash patterns that must exist in the URL.
 
->[!NOTE] Multiple hash patterns are joined by an OR.
+>[!NOTE]
+>
+>Multiple hash patterns are joined by an OR.
 
 1. Specify the hash pattern.
 1. (Optional) Enable Regex if this is a regular expression.
 1. Add any other hash patterns.
 
-#### Path
+#### Path And Query String
 
-Specify one or more paths that must exist in the URL.
+Specify one or more paths that must exist in the URL.  This includes the path and the query string.
 
->[!NOTE] Multiple paths are joined by an OR.
+>[!NOTE]
+>
+>Multiple paths are joined by an OR.
+
+1. Specify the path.
+1. (Optional) Enable Regex if this is a regular expression.
+1. Add any other paths.
+
+#### Path Without Query String
+
+Specify one or more paths that must exist in the URL.  This includes the path, but does not include the query string.
+
+>[!NOTE]
+>
+>Multiple paths are joined by an OR.
 
 1. Specify the path.
 1. (Optional) Enable Regex if this is a regular expression.
@@ -527,17 +540,7 @@ Select one of the following:
 * HTTP
 * HTTPS
 
-#### Subdomain
-
-Specify one or more subdomains that must exist in the URL.
-
->[!NOTE] Multiple subdomains are joined by an OR.
-
-1. Specify the subdomain.
-1. (Optional) Enable Regex if this is a regular expression.
-1. Add any other subdomains.
-
-#### URL Parameter
+#### Query String Parameter
 
 Specify URL parameter used in the URL.
 
@@ -545,148 +548,17 @@ Specify URL parameter used in the URL.
 1. Specify the value used for the URL parameter.
 1. (Optional) Enable Regex if this is a regular expression.
 
-## Core extension exception types
+#### Subdomain
 
-This section describes the exception types available in the Core extension.
+Specify one or more subdomains that must exist in the URL.
 
-### Data
+>[!NOTE]
+>
+>Multiple subdomains are joined by an OR.
 
-#### Cookie
-
-Specify the cookie name and value that can't exist for an event to trigger an action.
-
-1. Specify a cookie name.
-1. Enter the value that must not exist in the cookie if the event is to trigger an action.
+1. Specify the subdomain.
 1. (Optional) Enable Regex if this is a regular expression.
-
-#### Cookie Opt-out
-
-Specify whether the user has opted out of cookies.
-
-Set whether the user accepts cookies.
-
-#### Custom Code
-
-Specify any custom code that must exist as a condition of the event. Use the built-in code editor to enter the custom code.
-
-1. Click **[!UICONTROL Open Editor]**.
-1. Type the custom code.
-1. Click **[!UICONTROL Save]**.
-
-A variable named `event` will automatically be available, which you can reference from within your custom code. The `event` object will contain useful information about the event that triggered the rule. The easiest way to determine what event data is available is to log `event` to the console from within your custom code:
-
-```javascipt
-console.log(event);
-return true;
-```
-
-Run the rule in a browser and inspect the logged event object in the browser's console. Once you understand what information is available, you can use it for programmitic decisioning within your custom code.
-
-#### Value Comparison
-
-Compares two values to determine whether this exception returns true.
-
-If you have a rule with multiple conditions, it is possible that this condition will return true, but the rule will still not fire because the other conditions evaluate as false or one of the exceptions evaluates as true.
-
-1. Provide a value.
-1. Select the operator. Refer to the list of  value comparison operators, below, for more details.
-1. (Where required) Select whether the comparison should be case-insensitive.
-1. Provide another value for the comparison.
-
-The following value comparison operators are available:
-
-**Equal:** The condition returns true if the two values are equal using a non-strict comparison (in JavaScript, the == operator). The values may be of any type. When typing a word like _true_, _false_, _null_, or _undefined_ into a value field, the word is compared as a string and is not be converted to its JavaScript equivalent.
-
-**Does Not Equal:** The condition returns true if the two values are not equalusing a non-strict comparison (in JavaScript, the != operator). The values may be of any type. When typing a word like _true_, _false_, _null_, or _undefined_ into a value field, the word is compared as a string and is not be converted to its JavaScript equivalent.
-
-**Contains:** The condition returns true if the first value contains the second value. Numbers are converted to strings. Any value other than a number or string results in the condition returning false.
-
-**Does Not Contain:** The condition returns true if the first value does not contain the second value. Numbers are converted to strings. Any value other than a number or string will result in the condition returning true.
-
-**Starts With:** The condition returns true if the first value starts with the second value. Numbers are converted to strings. Any value other than a number or string results in the condition returning false.
-
-**Does Not Start With:** The condition returns true if the first value does not start with the second value. Numbers are converted to strings. Any value other than a number or string results in the condition returning true.
-
-**Ends With:** The condition returns true if the first value ends with the second value. Numbers are converted to strings. Any value other than a number or string results in the condition returning false.
-
-**Does Not End With:** The condition returns true if the first value does not end with the second value. Numbers are converted to strings. Any value other than a number or string results in the condition returning true.
-
-**Matches Regex:** The condition returns true if the first value matches the regular expression. Numbers are converted to strings. Any value other than a number or string results in the condition returning false.
-
-**Does Not Match Regex:** The condition returns true if the first value does not match the regular expression. Numbers are converted to strings. Any value other than a number or string results in the condition returning true.
-
-**Is Less Than:** The condition returns true if the first value is less than the second value. Strings representing numbers are converted to numbers. Any value other than a number or a convertible string result in the condition returning false.
-
-**Is Less Than Or Equal To:** The condition returns true if the first value is less than or equal to the second value. Strings representing numbers are converted to numbers. Any value other than a number or a convertible string result in the condition returning false.
-
-**Is Greater Than:** The condition returns true if the first value is greater than the second value. Strings representing numbers are converted to numbers. Any value other than a number or a convertible string result in the condition returning false.
-
-**Is Greater Than Or Equal To:** The condition returns true if the first value is greater than or equal to the second value. Strings representing numbers are converted to numbers. Any value other than a number or a convertible string result in the condition returning false.
-
-**Is True:** The condition returns true if the value is a boolean with the value of true. The value you provide is not converted to a boolean if it is any other type. Any value other than a boolean with the value of true results in the condition returning false.
-
-**Is Truthy:** The condition returns true if the value is true after being converted to a boolean. See [MDN's Truthy documentation](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) for examples of truthy values.
-
-**Is False:** The condition returns true if the value is a boolean with the value of false. The value you provide is not converted to a boolean if it is any other type. Any value other than a boolean with the value of false results in the condition returning false.
-
-**Is Falsy:** The condition returns true if the value is false after being converted to a boolean. See [MDN's Falsy documentation](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) for examples of falsy values.
-
-#### Variable
-
-Specify the JavaScript variable name and value that must not exist for an event to trigger an action.
-
-1. Specify the JavaScript variable name.
-1. Specify the variable value that must not exist as a condition for the event.
-1. (Optional) Enable Regex if this is a regular expression.
-
-### Engagement
-
-#### Landing Page
-
-Specify the page the user must not land on to trigger the event.
-
-1. Specify the landing page.
-1. (Optional) Enable Regex if this is a regular expression.
-
-#### New/Returning Visitor
-
-Specify whether the visitor should not be a new visitor or a returning visitor for an event to trigger an action.
-
-Select one of the following:
-
-* New Visitor
-* Returning Visitor
-
-#### Page Views
-
-Configure the number of times the visitor must view the page to keep the action from being triggered.
-
-1. Select whether the number of page views must be greater than, equal to, or less than the specified value.
-1. Specify the number of page views that determines whether the exception is met.
-1. Configure when the page views are counted by selecting one of the following:
-   * Lifetime
-   * Current Session
-
-#### Sessions
-
-Do not trigger the action if the user's number of sessions meets the specified criteria.
-
-1. Select whether the number of sessions must be greater than, equal to, or less than the specified value.
-1. Specify the number of sessions that determines whether the condition is met.
-
-#### Time On Site
-
-Configure how long the visitor must be on the site to prevent the action from being triggered.
-
-1. Select whether the number of minutes the visitor is on the site must be greater than, equal to, or less than the specified value.
-1. Specify the number of minutes that determines whether the condition is met.
-
-#### Traffic Source
-
-Specify the source of the visitor's traffic that must be true to prevent the action from being triggered.
-
-1. Specify the traffic source.
-1. (Optional) Enable Regex if this is a regular expression.
+1. Add any other subdomains.
 
 ### Other
 
@@ -707,130 +579,13 @@ Specify the maximum number of times the condition returns true. You can select f
 * Weeks
 * Months
 
+For the condition max frequency 1 per session, these two `localStorage` items are compared. If the `visitorTracking.sessionCount` is greater than the `maxFrequency.session` count, then the sampling condition is true. If they are equal, the condition is false.
+
+`sessionCount` is a `visitorTracking` item, so you the visitor API must be enabled for the sampling condition to work.
+
 #### Sampling
 
 Specify the percentage of the time the condition returns true.
-
-### Technology
-
-#### Browser
-
-Select the browser the visitor must not use for the action to be triggered.
-
-Select one or more of the following browsers:
-
-* Chrome
-* Firefox
-* Internet Explorer/Edge
-* Internet Explorer Mobile
-* Mobile Safari
-* OmniWeb
-* Opera
-* Opera Mini
-* Opera Mobile
-* Safari
-
-#### Device Type
-
-Select the device type the visitor must not use for the action to be triggered.
-
-Select one or more of the following device types:
-
-* Android
-* Blackberry
-* Desktop
-* iPad
-* iPhone
-* iPod
-* Nokia
-* Windows Phone
-
-#### Operating System
-
-Select the operating system the visitor must not use for the action to be triggered.
-
-Select one or more of the following operating systems:
-
-* Android
-* Blackberry
-* iOS
-* Linux
-* MacOS
-* Maemo
-* Symbian OS
-* Unix
-* Windows
-
-#### Screen Resolution
-
-Select the screen resolution visitors must not use on their devices for the action to be triggered.
-
-1. Select whether the screen resolution width of the visitor's device must be greater than, equal to, or less than the specified value.
-1. Specify the number of pixels required for the screen resolution width.
-1. Select whether the screen resolution height of the visitor's device must be greater than, equal to, or less than the specified value.
-1. Specify the number of pixels required for the screen resolution height.
-
-#### Window Size
-
-Select the window size visitors must not use on their devices for the action to be triggered.
-
-1. Select whether the window size width of the visitor's device must be greater than, equal to, or less than the specified value.
-1. Specify the number of pixels required for the window size width.
-1. Select whether the window size height of the visitor's device must be greater than, equal to, or less than the specified value.
-1. Specify the number of pixels required for the window size height.
-
-### URL
-
-#### Domain
-
-Specify the visitor's domain that will prevent the action from being triggered.
-
-#### Hash
-
-Specify one or more hash patterns that must not exist in the URL.
-
->[!NOTE] Multiple hash patterns are joined by an OR.
-
-1. Specify the hash pattern.
-1. (Optional) Enable Regex if this is a regular expression.
-1. Add any other hash patterns.
-
-#### Path
-
-Specify one or more paths that must not exist in the URL.
-
->[!NOTE] Multiple paths are joined by an OR.
-
-1. Specify the path.
-1. (Optional) Enable Regex if this is a regular expression.
-1. Add any other paths.
-
-#### Protocol
-
-Specify the protocol that cannot be used in the URL.
-
-Select one of the following:
-
-* HTTP
-* HTTPS
-
-#### Subdomain
-
-Specify one or more subdomains that must not exist in the URL.
-
->[!NOTE] Multiple subdomains are joined by an OR.
-
-1. Specify the subdomain.
-1. (Optional) Enable Regex if this is a regular expression.
-1. Add any other subdomains.
-
-#### URL Parameter
-
-Specify URL parameter that cannot be used in the URL.
-
-1. Specify a URL parameter name.
-1. Specify the value used for the URL parameter.
-1. (Optional) Enable Regex if this is a regular expression.
 
 ## Core extension action types
 
@@ -845,24 +600,24 @@ Provide the code that runs after the event is triggered and conditions are evalu
    * JavaScript
    * HTML
 1. Select whether to execute the action code globally.
-1. Click Open Editor.
-1. Edit the code, then click Save.
+1. Select **[!UICONTROL Open Editor]**.
+1. Edit the code, then select **[!UICONTROL Save]**.
 
 When JavaScript is selected as the language, a variable named `event` will automatically be available, which you can reference from within your custom code. The `event` object will contain useful information about the event that triggered the rule. The easiest way to determine what event data is available is to log `event` to the console from within your custom code:
 
-```javascipt
+```javascript
 console.log(event);
 ```
 
-Run the rule in a browser and inspect the logged event object in the browser's console. After you understand what information is available, you can use it for programmatic decisioning within your custom code, send a piece of the `event` object to a server, and so on.
+Run the rule in a browser and inspect the logged event object in the browser’s console. After you understand what information is available, you can use it for programmatic decisioning within your custom code, send a piece of the `event` object to a server, and so on.
 
 ### Custom Code action processing
 
-The Core extension, available to all Launch users, contains a Custom Code action for executing user-provided JavaScript or HTML. It is often helpful for users to understand how rules with Custom Code actions are processed.
+The Core extension, available to all Platform Launch users, contains a Custom Code action for executing user-provided JavaScript or HTML. It is often helpful for users to understand how rules with Custom Code actions are processed.
 
 #### Rules using the page top or page bottom events
 
-Code from custom actions is embedded in the main Launch library. The code is written to the document using document.write. If a rule has multiple Custom Code actions, the code is written in the order configured in the rule.
+Code from custom actions is embedded in the main Platform Launch library. The code is written to the document using document.write. If a rule has multiple Custom Code actions, the code is written in the order configured in the rule.
 
 #### Rules using any event other than page top or page bottom
 
@@ -872,11 +627,53 @@ While using document.write after a page has loaded would typically present probl
 
 #### Custom Code Validation
 
-The validator used in the Launch code editor is designed to identify issues with developer-written code. Code that has gone through a minification process--such as the AppMeasurement.js code downloaded from the Code Manager--might be falsely flagged as having issues by the Launch validator, which can usually be ignored.
+The validator used in the Platform Launch code editor is designed to identify issues with developer-written code. Code that has gone through a minification process—such as the AppMeasurement.js code downloaded from the Code Manager—might be falsely flagged as having issues by the validator, which can usually be ignored.
+
+#### Action sequencing
+
+When the “Run rule components in sequence” option from property settings is enabled you can have subsequent rule components wait while your action performs an asynchronous task.  This works differently for JavaScript and HTML custom code.
+
+*JavaScript*
+
+When creating a JavaScript custom code action, you may return a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) from your action. The next action in the rule will be executed only when the returned promise is resolved. If the promise is rejected, the next actions from the rule will not be executed.
+
+*Note*: This only works when your JavaScript is not set to execute globally.  If you are executing your custom code action in the global scope, Platform Launch will treat the promise as immediatly resolved and move on to the next item in the processing queue.
+
+An example of a JavaScript custom code action that returns a promise:
+
+```javascript
+return new Promise(function(resolve, reject) {
+  setTimeout(function() {
+    if (new Date().getDay() === 5) {
+      resolve();
+    } else {
+      reject();
+    }
+  }, 1000);
+});
+```
+
+*HTML*
+
+When creating an HTML custom code action, a function named `onCustomCodeSuccess()` will be available to use within your custom code. You may call this function to indicate that your custom code has completed and that Platform Launch may move on to executing subsequent actions. On the other hand, if your custom code failed in some way, you may call `onCustomCodeFailure()`. That will inform Platform Launch to not execute the subsequent actions from that rule.
+
+An example of an HTML custom code action that uses the new callbacks:
+
+```html
+<script>
+setTimeout(function() {
+  if (new Date().getDay() === 5) {
+    onCustomCodeSuccess();
+  } else {
+    onCustomCodeFailure();
+  }
+}, 1000);
+</script>
+```
 
 ## Core extension data element types
 
-Data Element types are determined by the extension. There is no limit to the types that can be created.
+Data element types are determined by the extension. There is no limit to the types that can be created.
 
 The following sections describe the types of data elements available in the Core extension. Other extensions use other types of data elements.
 
@@ -898,9 +695,9 @@ Any constant string value that can be then referenced in actions or conditions.
 
 ### Custom code
 
-Custom JavaScript can be entered into the UI by clicking Open Editor and inserting code into the editor window.
+Custom JavaScript can be entered into the UI by selecting  Open Editor and inserting code into the editor window.
 
-A return statement is necessary in the editor window in order to indicate what value should be used as the data element value. If a return statement is not included or the value `null` or `undefined` is returned, the data element's default value will be used as the data element value.
+A return statement is necessary in the editor window in order to indicate what value should be used as the data element value. If a return statement is not included or the value `null` or `undefined` is returned, the data element’s default value will be used as the data element value.
 
 **Example:**
 
@@ -915,12 +712,12 @@ if (window.location.pathname == '/') {
 
 If the custom code data element is being retrieved as part of a rule execution, a variable named `event` automatically becomes available, which you can reference from within your custom code. The `event` object will contain useful information about the event that triggered the rule. The easiest way to determine what event data is available is to log `event` to the console from within your custom code:
 
-```javascipt
+```javascript
 console.log(event);
 return true;
 ```
 
-Run the rule in a browser and inspect the logged event object in the browser's console. Once you understand what information is available under the various rules that may use your data element, you can use it for programmatic decisioning within your custom code or return a piece of the `event` object as the data element's value.
+Run the rule in a browser and inspect the logged event object in the browser’s console. Once you understand what information is available under the various rules that may use your data element, you can use it for programmatic decisioning within your custom code or return a piece of the `event` object as the data element’s value.
 
 ### DOM attribute
 
@@ -940,9 +737,9 @@ Get the value of:
 
 Any available JavaScript object or variable can be referenced using the path field.
 
-When you have JavaScript variables, or object properties in your markup, and you want to collect those values in Launch to use with any of your extensions or rules, one way to capture those values is to use Data Elements in Launch. This way, you can refer to the Data Element throughout your Rules, and if the source of the data ever changes, you only need to change your reference to the source (the Data Element) in one place in Launch.
+When you have JavaScript variables, or object properties in your markup, and you want to collect those values in Platform Launch to use with any of your extensions or rules, one way to capture those values is to use data elements in Platform Launch. This way, you can refer to the data element throughout your Rules, and if the source of the data ever changes, you only need to change your reference to the source (the data element) in one place in Platform Launch.
 
-For example, let's say your markup contains a JavaScript variable called `Page_Name`, like this:
+For example, let’s say your markup contains a JavaScript variable called `Page_Name`, like this:
 
 ```markup
 <script>
@@ -951,9 +748,9 @@ For example, let's say your markup contains a JavaScript variable called `Page_N
 </script>
 ```
 
-When you create the Data Element in Launch, simply provide the path to that variable.
+When you create the data element in Launch, simply provide the path to that variable.
 
-If you use a data collector object as party of your data layer, simply use dot notation in the Path to reference the object and property you want to capture into the Data Element, like `_myData.pageName`, or `digitalData.pageName`, etc.
+If you use a data collector object as party of your data layer, simply use dot notation in the Path to reference the object and property you want to capture into the data element, like `_myData.pageName`, or `digitalData.pageName`, etc.
 
 #### Example:
 
@@ -984,7 +781,7 @@ You can select one of the following page attributes to use in your data element:
 
 Specify a single URL parameter in the URL Parameter field.
 
-Only the name section is necessary and any special designators like "?" or "=" should be omitted
+Only the name section is necessary and any special designators like “?” or “=“ should be omitted
 
 #### Example:
 
@@ -1033,3 +830,4 @@ Some common use cases include:
 * If this is the landing page for the visit, populate an Analytics metric
 * Show a new offer to the visitor after X number of Session Counts
 * Display a newsletter sign up if this is a first time visitor
+

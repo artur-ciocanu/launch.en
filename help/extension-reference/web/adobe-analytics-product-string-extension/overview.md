@@ -1,9 +1,9 @@
 ---
-title: Adobe Analytics Product String Launch Extension
-description: The products variable tracks how users interact with products on your site.
+title: Adobe Analytics Product String Extension Overview
+description: Learn about the Adobe Analytics Product String extension in Adobe Experience Platform Launch.
 ---
 
-# Adobe Analytics Product String Launch Extension
+# Adobe Analytics Product String extension overview
 
 The `products` variable tracks how users interact with products on your site. For example, the `products` variable can track how many times a product is viewed, added to the shopping cart, checked out, and purchased. It can also track the relative effectiveness of merchandising categories on your site.
 
@@ -55,7 +55,9 @@ You would enter the following path in the "Variable for product ID/name" field t
 digitalData.transaction.item.productInfo.productName
 ```
 
->[!NOTE] If you're using a data element to populate the field, it should be configured using the Constant or Custom Code data element type and must return the path above as a string literal.
+>[!NOTE]
+>
+>If you're using a data element to populate the field, it should be configured using the Constant or Custom Code data element type and must return the path above as a string literal.
 
 ### Price Type
 
@@ -69,7 +71,7 @@ The `price` parameter in the [!DNL Adobe Analytics] product string must reflect 
 
 If your implementation uses custom events or merchandising eVars, follow these steps:
 
-1. Click the associated **[!UI CONTROL Add]** button.
+1. Select the associated **[!UICONTROL Add]** button.
 1. Choose the event or eVar you need to set from the dropdown.
 1. Enter the path to the appropriate data layer variable using the same syntax described above.
 

@@ -1,11 +1,36 @@
 ---
-title: Adobe Analytics Release Notes
-seo-title: Adobe Analytics Release Notes for Adobe Experience Platform Launch
-description: Adobe Analytics Release Notes for Adobe Experience Platform Launch
-seo-description: Adobe Analytics Release Notes for Adobe Experience Platform Launch
+title: Release Notes for the Adobe Analytics Extension
+description: The latest release notes for the Adobe Analytics extension in Adobe Experience Platform Launch.
 ---
 
-# Adobe Analytics Release Notes
+# Adobe Analytics extension release notes
+
+## August 6, 2020
+
+### Adobe Analytics Extension 1.8.5
+
+#### Bug Fixes
+
+* The incorrect cookie name in the AAM module settings was being set when the this field was left blank. This has now been corrected. 
+
+#### Features
+
+* Updated [AppMeasurement to 2.22.0](https://docs.adobe.com/content/help/en/analytics/implementation/appmeasurement-updates.html).
+* Small UI change so the additional setting now appear collapsed in an accordion instead of a checkbox.
+
+## June 2, 2020
+
+### Adobe Analytics Extension 1.8.4
+
+#### Bug Fixes
+
+* Fixed a bug where the shopping cart events (prodView, scAdd, scView, etc) were not showing up on the events dropdown. All of these should now be selectable from the dropdown. 
+
+#### Features
+
+* You can now turn off the activity map in the extension without having to use custom code. The activity map loads as a separate module (much like the AAM module) and you can turn it off if you want.
+* Cleaned up the UI by minimizing hierarchy variables and other options.
+* Added a field to set purchase IDs from the extension configuration UI.
 
 ## March 10, 2020
 
@@ -100,7 +125,7 @@ seo-description: Adobe Analytics Release Notes for Adobe Experience Platform Lau
 #### Features
 
 * Updated the Adobe Analytics Extension to [AppMeasurement 2.14.0](https://docs.adobe.com/content/help/en/analytics/implementation/appmeasurement-release-notes/c-release-notes-mjs.html) which includes a fix to a known clearVars issue
-* Added an Exchange link to the extension. The Exchange listing can be reached by clicking on the dropdown and selecting "extension info"
+* Added an Exchange link to the extension. The Exchange listing can be reached by selecting the dropdown and choosing "extension info"
 
 #### Bug fixes
 
@@ -220,7 +245,7 @@ seo-description: Adobe Analytics Release Notes for Adobe Experience Platform Lau
 #### **Features**
 
 * AppMeasurement has been updated to version 2.6
-* The initialized Analytics tracker is now exposed through a shared module in the Launch extension so other extensions can include code to interact with it.
+* The initialized Analytics tracker is now exposed through a shared module in the Adobe Experience Platform Launch extension so other extensions can include code to interact with it.
 
 #### **Bug fixes**
 

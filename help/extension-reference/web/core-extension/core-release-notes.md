@@ -1,17 +1,63 @@
 ---
-title: Core Release Notes
-seo-title: Core extension Release Notes in Adobe Experience Platform Launch
-description: Release notes for the Adobe Experience Platform Launch core extension
-seo-description: Release notes for the Adobe Experience Platform Launch core extension
+title: Release Notes for the Core Extension
+description: The latest release notes for the Core extension in Adobe Experience Platform Launch.
 ---
 
-# Core Extension Release Notes
+# Core Extension release notes
+
+## March 9, 2021
+
+v2.0.4
+
+* Added Data Element Support for various fields - Data Element support has been added to the following events: 'Time on Page', 'Enters Viewport', 'Hover' and 'Media Time Played'. As well as the following Conditions: 'Time on Site' and 'Value Comparison'
+* Adds support for default behavior for ctrl/cmd + click, and middle mouse click when using Link Delay
+* **Marked link delay on the click event as “no longer supported”.** - more information can be found on the [Adobe Exprience Platform Launch Blog](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/explainer-link-delay/ba-p/398403)
+
+## January 6, 2021
+
+v1.9.0
+
+* **New “Trigger Direct Call” Action** - The Core extension now includes a new action type called `Trigger Direct Call`.  This can be used when you want to trigger a direct call rule via an action from a different rule. It maps directly to the `_satellite.track()` method. Many thanks to [Jan Exner](https://twitter.com/jexner) for this contribution.
+
+## December 8, 2020
+
+v1.8.4
+
+* Fixed a bug where a user was unable to clear or unset the CSP nonce.
+
+## July 28, 2020
+
+v1.8.3
+
+* Fixed a bug where the CSP nonce was read only once upon extension startup instead of being pulled fresh during custom code action invocation.
+
+## July 13th, 2020
+
+v1.8.2
+
+* Fixed a bug where the custom code action was throwing an error for HTML code that contains tokens without a tag name (eg. comments).
+
+## July 10th, 2020
+
+v1.8.1
+
+* Fixed a bug where custom HTML entities inside attributes of `script` and `style` tags were not correctly decoded before being written to the page."
+* Fixed a bug where an error happens when an external custom code action has no content. External custom code action is the action that is loaded from a different file than the library (this happens when the event triggering the rule is not libraryLoaded or pageBottom)
+
+## July 6th, 2020
+
+v1.8.0
+
+* **Promises in Custom Code** - Custom Code conditions and JavaScript actions that do not execute in the global scope can now return Promises.  You can use them to have subsequent conditions and actions wait for the completion of an asynchronous process in your Custom Code before moving on to the next item.
+* **Callbacks in HTML Custom Code Actions** - You can achieve the same thing in HTML Custom Code actions using the `onCustomCodeSuccess()` and `onCustomCodeFailure()` callbacks.
+
+Please refer to the [Core Extension reference](./overview.md) in the Conditions > Custom Code and Actions > Custom Code for more detailed information.
 
 ## April 7th, 2020
 
 v1.7.3
 
-* **Text field length increase** - Text input fields were changed to a flex layout in order to better utilize the user's screen width, and give more space for longer text strings.
+* **Text field length increase** - Text input fields were changed to a flex layout in order to better utilize the user’s screen width, and give more space for longer text strings.
 
 ## November 1st, 2019
 
@@ -23,13 +69,13 @@ v1.7.0
 
 v1.6.2
 
-* **New "Constant" Data Element Type** - The Core extension now includes a new data element type called `Constant`.  This can be used when you need to store a constant value that will be referenced in various conditions, actions or custom code. Many thanks to [Jan Exner](https://twitter.com/jexner) for this contribution.
+* **New “Constant” Data Element Type** - The Core extension now includes a new data element type called `Constant`.  This can be used when you need to store a constant value that will be referenced in various conditions, actions or custom code. Many thanks to [Jan Exner](https://twitter.com/jexner) for this contribution.
 
 ## September 11, 2019
 
 v1.6.1
 
-* **Support for CSP Nonce** - The Core extension now has an optional configuration parameter. You can add a data element that references a nonce. If configured, all inline scripts that Launch adds to the page use the nonce that you've configured. This change supports the use of a Content Security Policy with a nonce so that Launch scripts can still load in a CSP environment.  You can read more about using Launch with a CSP [here](https://docs.adobe.com/content/help/en/launch/using/reference/client-side-info/content-security-policy-csp.html).
+* **Support for CSP Nonce** - The Core extension now has an optional configuration parameter. You can add a data element that references a nonce. If configured, all inline scripts that Adobe Experience Platform Launch adds to the page use the nonce that you’ve configured. This change supports the use of a Content Security Policy with a nonce so that Platform Launch scripts can still load in a CSP environment.  You can read more about using Platform Launch with a CSP [here](https://docs.adobe.com/content/help/en/launch/using/reference/client-side-info/content-security-policy-csp.html).
 
 ## June 18, 2019
 
@@ -43,7 +89,7 @@ v1.4.3
 
 * **Input Fields** - Input fields are much longer now!
 * **Custom Event** - Custom event type can now be used with events dispatched off of window.
-* **Bug Fix** - fixed a bug where the Value Comparison Condition wouldn't hold a 0 value.
+* **Bug Fix** - fixed a bug where the Value Comparison Condition wouldn’t hold a 0 value.
 * **Bug Fix** - exchange\_url field has been updated, so you can now see the Core Extension listing in Adobe Exchange.
 
 ## January 8, 2019
@@ -57,8 +103,8 @@ v1.4.2
 ## November 8, 2018
 
 * **Persist Cohort option** - The option to persist a cohort has been added to the Sampling condition. This has the effect of keeping a user in or out of the sample cohort across sessions. For example, if the “persist cohort” checkbox is checked and the condition returns true the first time it is run for a given visitor, it will return true on all subsequent runs of the condition for the same visitor. Similarly, if the “persist cohort” checkbox is checked and the condition returns false the first time it is run for a given visitor, it will return false on all subsequent runs of the condition for the same visitor.
-* **Bug Fix** - Fixed an issue where a rule using a Page Bottom event and a Custom Code action on a page where Launch was being loaded synchronously but improperly installed (no call to `_satellite.pageBottom()`) would clear website content.
-* **Bug Fix** - Fixed an issue where the Enters Viewport would not function if the Launch library was loaded asynchronously and finished loading after the browser's DOMContentLoaded event was fired.
+* **Bug Fix** - Fixed an issue where a rule using a Page Bottom event and a Custom Code action on a page where Platform Launch was being loaded synchronously but improperly installed (no call to `_satellite.pageBottom()`) would clear website content.
+* **Bug Fix** - Fixed an issue where the Enters Viewport would not function if the Platform Launch library was loaded asynchronously and finished loading after the browser’s DOMContentLoaded event was fired.
 
 ## May 24, 2018
 
@@ -81,3 +127,4 @@ v1.4.2
 * **Feature** - Page Info Data Element
 * **Feature** - Date Condition
 * **Feature** - Sampling Condition
+

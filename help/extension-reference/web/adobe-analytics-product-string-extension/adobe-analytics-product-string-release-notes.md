@@ -1,9 +1,9 @@
 ---
-title: Adobe Analytics Product String Release Notes
-description: Adobe Analytics Product String Release Notes for Adobe Experience Platform Launch
+title: Release Notes for the Adobe Analytics Product String Extension
+description: The latest release notes for the Adobe Analytics Product String extension in Adobe Experience Platform Launch.
 ---
 
-# Adobe Analytics Product String Release Notes
+# Adobe Analytics Product String extension release notes
 
 ## January 31, 2020
 

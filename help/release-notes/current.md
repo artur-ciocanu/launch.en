@@ -1,56 +1,19 @@
 ---
-title: Release notes
-seo-title: Adobe Launch Release notes
-description: Adobe Launch release notes
-seo-description: Adobe Launch release notes
+title: Release Notes
+description: The latest release notes for Adobe Experience Platform Launch.
 ---
 
 # Release notes
 
-## March 18th, 2020
+=======
 
-### Bug Fixes
+## February 18th, 2021
 
-* When a user tried to create a rule with a comma in the name, they would receive a false "duplicate name" error.
+* Updated the Adobe Experience Platform Launch UI to react-spectrum v3
+* Updated extension cards to the latest Spectrum patterns
+* Increased the size of name fields throughout the app
 
-### Features
+## January 13th, 2021
 
-* When a rule component (event, condition, or action) is updated, the `updated_at` attribute for the rule it belongs to is also updated. This more accurately reflects that the behavior of the rule has changed by modifying one or more of its components. If you use callbacks for rules, you will see an increase in rule `updated_at` callbacks. See [https://developer.adobelaunch.com/api/reference/1.0/rule_components/](https://developer.adobelaunch.com/api/reference/1.0/rule_components/) for more information.
-
-## March 3, 2020
-
-### Updates
-
-* The Launch sign-in and sign-out UI has been significantly improved. Switching between Launch and other Adobe products is now also much smoother. Finally, if you have a single account with rights to multiple companies, this is also dramatically improved.
-* The structure of Launch URLs is now more consistent with other Adobe products. The new URL format replaces `https://launch.adobe.com` with `https://experience.adobe.com/#/@companyID/launch/`. The old URLs redirect to the new ones, but you should update your bookmarks to save a few seconds each time you access Launch.
-
-## February 19, 2020
-
-### Features
-
-* Improved list view pagination:
-** Users can jump to a specific page in a list
-** Users can select the number of rows to display
-
-## February 6, 2020
-
-### Features
-
-* The JavaScript runtime library has been updated to include version 2.2.1 of js-cookie. A vulnerability was discovered in version 2.1.4 that was previously deployed. The next time a library is built, this new version of js-cookie will be automatically included.
-* Code minification errors of user defined custom code, which may occur while building a library, have been enhanced to give the user more context about the error.
-
-## January 16, 2020
-
-### Bug Fixes
-
-* The republish library feature would sometimes not purge the Launch asset on Akamai properly and result in the original library still being served.
-
-### Features
-
-* Enhanced extension package validation is now performed at the time of upload.
-
-## January 07, 2020
-
-### Bug Fixes
-
-* Property create no longer causes an erroneous 404 error. The property was still created and usable even though the error occurred.
+* **General Availability: Launch Server Side** Send event-level data to the Adobe Experience Platform Edge Network then use Launch Server Side to transform, enrich, and send that data to a non-Adobe endpoint using Adobe's servers, not the client, with low latency.
+See [Launch Server Side overview](https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-overview.html?lang=en#server-side-info) and [Getting started with Experience Platform Launch Server Side](https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-getting-started.html?lang=en#server-side-info) for more information.
