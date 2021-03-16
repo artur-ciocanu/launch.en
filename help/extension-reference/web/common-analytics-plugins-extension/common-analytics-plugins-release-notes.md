@@ -3,7 +3,7 @@ title: Release Notes for the Common Analytics Plugins Extension
 description: The latest release notes for the Common Analytics Plugins extension in Adobe Experience Platform Launch.
 ---
 
-# Common Analytics Plugins release Notes
+# Common Analytics Plugins release notes
 
 ## March 19, 2021
 
