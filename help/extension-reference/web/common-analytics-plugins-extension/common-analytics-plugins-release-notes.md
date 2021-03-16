@@ -1,9 +1,30 @@
 ---
-title: Release Notes for the Common Analytics Plugins Extension
-description: The latest release notes for the Common Analytics Plugins extension in Adobe Experience Platform Launch.
+title: Common Analytics Plugins Release Notes
+seo-title: Common Analytics Plugins Release Notes for Adobe Experience Platform Launch
+description: Common Analytics Plugins Release Notes for Adobe Experience Platform Launch
+seo-description: Common Analytics Plugins Release Notes for Adobe Experience Platform Launch
 ---
 
-# Common Analytics Plugins release notes
+# Common Analytics Plugins Release Notes
+
+## March 19, 2021
+
+### Common Analytics Plugins Extension 3.0.1
+
+#### Features
+
+* All plugins updated to automatically include version information as context data
+* Added getPercentPageViewed plugin
+* Added data elements for the following plugins
+  * getGeoCoordinates
+  * getNewRepeat
+  * getPageName
+  * getResponsiveLayout
+  * getTimeParting
+  * getTimeSinceLastVisit
+  * getVisitDuration
+  * getVisitNum
+* Updated Styles
 
 ## April 9, 2020
 
@@ -17,7 +38,7 @@ description: The latest release notes for the Common Analytics Plugins extension
 
 * Updated documentation in the initialize action
 
-## December 5, 2010
+## December 5, 2019
 
 ### Common Analytics Plugins Extension 2.1.1
 
