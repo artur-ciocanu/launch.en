@@ -1,11 +1,9 @@
 ---
-title: Common Analytics Plugins Extension
-seo-title: Common Analytics Plugins Extension for Adobe Experience Platform Launch
-description: Information about configuring the Common Analytics Plugins extension, and the options available when using this extension to augment the [!DNL Adobe Analytics] Extension.
-seo-description: Common Analytics Plugins Extension for Adobe Experience Platform Launch
+title: Common Analytics Extension Overview
+description: Learn about the Common Analytics extension in Adobe Experience Platform Launch.
 ---
 
-# Common Analytics Plugins Extension
+# Common Analytics Plugins extension overview
 
 Use this reference for information about configuring the Common Analytics Plugins extension, and the options available when using this extension to augment the [!DNL Adobe Analytics] Extension.
 
