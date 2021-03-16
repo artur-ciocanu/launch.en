@@ -1,9 +1,11 @@
 ---
-title: Common Analytics Extension Overview
-description: Learn about the Common Analytics extension in Adobe Experience Platform Launch.
+title: Common Analytics Plugins Extension
+seo-title: Common Analytics Plugins Extension for Adobe Experience Platform Launch
+description: Information about configuring the Common Analytics Plugins extension, and the options available when using this extension to augment the [!DNL Adobe Analytics] Extension.
+seo-description: Common Analytics Plugins Extension for Adobe Experience Platform Launch
 ---
 
-# Common Analytics Plugins extension overview
+# Common Analytics Plugins Extension
 
 Use this reference for information about configuring the Common Analytics Plugins extension, and the options available when using this extension to augment the [!DNL Adobe Analytics] Extension.
 
@@ -45,3 +47,39 @@ In this action, you are able to select each plugin you want to include in your i
 ### Initialize Plugin
 
 These actions initialize the specific plugin you intend to use individually. To initialize all of the plugins you intend to use in your property, simply add the corresponding action to your rule and save the rule. While there is slightly more effort involved in configuring the extension this way, it provides greater code efficiency. As such, Adobe recommends this approach.
+
+## Common Analytics Plugins extension data elements
+
+This section describes the data elements available in the Common Analytics Plugins extension.
+
+### getGeoCoordinates
+
+Allows users to leverage the native launch UI to setup and configure the getGeoCoordinates plugin. 
+
+### getNewRepeat
+
+Allows users to leverage the native launch UI to setup and configure the getNewRepeat plugin. 
+
+### getPageName
+
+Allows users to leverage the native launch UI to setup and configure the getPageName plugin. 
+
+### getResponsiveLayout
+
+Allows users to leverage the native launch UI to setup and configure the getResponsiveLayout plugin. 
+
+### getTimeParting
+
+Allows users to leverage the native launch UI to setup and configure the getTimeParting plugin. 
+
+### getTimeSinceLastVisit
+
+Allows users to leverage the native launch UI to setup and configure the getTimeSinceLastVisit plugin. 
+
+### getVisitDuration
+
+Allows users to leverage the native launch UI to setup and configure the getVisitDuration plugin. 
+
+### getVisitNum
+
+Allows users to leverage the native launch UI to setup and configure the getVisitNum plugin. 
