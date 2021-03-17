@@ -7,7 +7,7 @@ description: The latest release notes for the Common Analytics Plugins extension
 
 ## March 19, 2021
 
-### Common Analytics Plugins Extension 3.0.1
+### Common Analytics Plugins Extension 3.0.2
 
 #### Features
 
