@@ -52,7 +52,7 @@ description: The latest release notes for the Common Analytics Plugins extension
 
 #### Bug Fixes
 
-* Reintroduced individual plugin actions to support backwards compatibilty
+* Reintroduced individual plugin actions to support backwards compatibility
 * Fixed an issue with the `cleanStr` plugin
 * Fixed an issue with the `getResponsiveLayout` plugin
 * Fixed an issue with the `getPageName` plugin
@@ -87,5 +87,5 @@ description: The latest release notes for the Common Analytics Plugins extension
 
 #### Features
 
-* Extension released with 7 plugins
+* Extension released with seven plugins
 * Individual actions to initialize each plugin
