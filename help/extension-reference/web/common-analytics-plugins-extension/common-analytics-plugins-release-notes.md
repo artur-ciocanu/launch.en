@@ -5,6 +5,25 @@ description: The latest release notes for the Common Analytics Plugins extension
 
 # Common Analytics Plugins release notes
 
+## March 19, 2021
+
+### Common Analytics Plugins Extension 3.0.2
+
+#### Features
+
+* All plugins updated to automatically include version information as context data
+* Added getPercentPageViewed plugin
+* Added data elements for the following plugins
+  * getGeoCoordinates
+  * getNewRepeat
+  * getPageName
+  * getResponsiveLayout
+  * getTimeParting
+  * getTimeSinceLastVisit
+  * getVisitDuration
+  * getVisitNum
+* Updated Styles
+
 ## April 9, 2020
 
 ### Common Analytics Plugins Extension 2.2.0
@@ -17,7 +36,7 @@ description: The latest release notes for the Common Analytics Plugins extension
 
 * Updated documentation in the initialize action
 
-## December 5, 2010
+## December 5, 2019
 
 ### Common Analytics Plugins Extension 2.1.1
 
@@ -33,7 +52,7 @@ description: The latest release notes for the Common Analytics Plugins extension
 
 #### Bug Fixes
 
-* Reintroduced individual plugin actions to support backwards compatibilty
+* Reintroduced individual plugin actions to support backwards compatibility
 * Fixed an issue with the `cleanStr` plugin
 * Fixed an issue with the `getResponsiveLayout` plugin
 * Fixed an issue with the `getPageName` plugin
@@ -68,5 +87,5 @@ description: The latest release notes for the Common Analytics Plugins extension
 
 #### Features
 
-* Extension released with 7 plugins
+* Extension released with seven plugins
 * Individual actions to initialize each plugin
