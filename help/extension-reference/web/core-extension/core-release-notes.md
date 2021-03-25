@@ -10,7 +10,7 @@ description: The latest release notes for the Core extension in Adobe Experience
 
 v2.0.5
 
-* Updated code in the runtime evaluation for delay elements that now support data elements values added in the v2.0.4 release, to properly coerce strings to numbers.
+* Updated code in the runtime evaluation for events and actions that have a delay option, that now support data element values added in the v2.0.4 release, to properly coerce strings to numbers.
 
 ## March 9, 2021
 
