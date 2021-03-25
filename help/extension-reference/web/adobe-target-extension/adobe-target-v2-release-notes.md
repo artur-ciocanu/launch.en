@@ -5,12 +5,13 @@ description: The latest release notes for the Adobe Target v2 extension in Adobe
 
 # Adobe Target v2 Extension release notes
 
-<!--## March 24, 2021
+## March 25, 2021
 
 ### Adobe Target v2 Extension 0.13.7
 
-- Fixed an issue with `targetPageParams` being included in mbox requests. `targetPageParams` should be included in `pageLoad` requests only.
-- Optimized window and document globals referencing in the Adobe Experience Platform Launch extension. -->
+- Fixed an issue with `targetPageParams` being included in mbox requests. `targetPageParams` should only be included in `pageLoad` requests.
+- Optimized referencing of window and document globals. 
+Updated at.js to 2.4.1.
 
 ## January 25, 2021
 
