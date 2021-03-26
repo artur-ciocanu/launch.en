@@ -5,7 +5,7 @@ description: Learn about the shared library modules provided by the Adobe Analyt
 
 # Shared modules for the Adobe Analytics extension
 
-The [Adobe Analytics extension](./overview.md) provides two different [shared modules](../../../extension-dev/modules/web/shared.md) that you can integrate into your experience application. These modules are covered in the sections below.
+The [Adobe Analytics extension](./overview.md) provides two different [shared modules](../../../extension-dev/web/shared.md) that you can integrate into your experience application. These modules are covered in the sections below.
 
 ## [!DNL get-tracker]
 

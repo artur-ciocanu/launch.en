@@ -18,9 +18,9 @@ Library modules are pieces of reusable code provided by an extension that are em
 
 ### Modules for web extensions {#web-modules}
 
-In web extensions, rules are triggered through events, which may then execute specific actions if a given set of conditions are met. See the overview on [module flow in web extensions](./modules/web/flow.md) for more information.
+In web extensions, rules are triggered through events, which may then execute specific actions if a given set of conditions are met. See the overview on [module flow in web extensions](./web/flow.md) for more information.
 
-In addition to the [core modules](./modules/web/core.md) provided by Adobe, you can define the following library module types in your web extensions:
+In addition to the [core modules](./web/core.md) provided by Adobe, you can define the following library module types in your web extensions:
 
 * [Event types](#web-event)
 * [Condition types](#web-condition)
@@ -30,7 +30,7 @@ In addition to the [core modules](./modules/web/core.md) provided by Adobe, you 
 
 >[!NOTE]
 >
->For details on the required format for implementing library modules in web extensions, see the [module format overview](./modules/web/format.md).
+>For details on the required format for implementing library modules in web extensions, see the [module format overview](./web/format.md).
 
 #### Event types {#web-event}
 
@@ -40,7 +40,7 @@ As an example, an extension could provide a "gesture" event type that watches fo
 
 Event types typically consist of (1) a view shown within the Platform Launch application that allows users to modify settings for the event and (2) a library module emitted within the Platform Launch runtime library to interpret the settings and watch for a certain activity to occur.
 
-[Learn more](./modules/web/event-types.md)
+[Learn more](./web/event-types.md)
 
 #### Condition types {#web-condition}
 
@@ -50,7 +50,7 @@ As an example, an extension could provide a "viewport contains" condition type w
 
 Condition types typically consist of (1) a view shown within the Platform Launch application that allows users to modify settings for the condition and (2) a library module emitted within the Platform Launch runtime library to interpret the settings and evaluate a condition.
 
-[Learn more](./modules/web/condition-types.md)
+[Learn more](./web/condition-types.md)
 
 #### Action types {#web-action}
 
@@ -60,7 +60,7 @@ As an example, an extension could provide a "show support chat" action type whic
 
 Action types typically consist of (1) a view shown within the Platform Launch application that allows users to modify settings for the action and (2) a library module emitted within the Platform Launch runtime library to interpret the settings and perform an action.
 
-[Learn more](./modules/web/action-types.md)
+[Learn more](./web/action-types.md)
 
 #### Data element types {#web-data-element}
 
@@ -70,7 +70,7 @@ A data element type enables users to configure data elements to access a piece o
 
 Data element types typically consist of (1) a view shown within the Platform Launch application that allows users to modify settings for the data element and (2) a library module emitted within the Platform Launch runtime library to interpret the settings and retrieve pieces of data.
 
-[Learn more](./modules/web/data-element-types.md)
+[Learn more](./web/data-element-types.md)
 
 #### Shared modules {#shared}
 
@@ -80,11 +80,11 @@ Shared modules are included in the library even when they are never called from 
 
 Shared modules do not have a view component.
 
-[Learn more](./modules/web/shared.md)
+[Learn more](./web/shared.md)
 
 ### Modules for edge extensions {#edge-modules}
 
-In edge extensions, rules are triggered through condition checks, which then execute specific actions if those checks pass. See the overview on [module flow in edge extensions](./modules/edge/flow.md) for more information.
+In edge extensions, rules are triggered through condition checks, which then execute specific actions if those checks pass. See the overview on [module flow in edge extensions](./edge/flow.md) for more information.
 
 You can define your own library modules in your edge extensions. These can be categorized into the following types:
 
@@ -94,7 +94,7 @@ You can define your own library modules in your edge extensions. These can be ca
 
 >[!NOTE]
 >
->For details on the required format for implementing library modules in edge extensions, see the [module format overview](./modules/edge/format.md).
+>For details on the required format for implementing library modules in edge extensions, see the [module format overview](./edge/format.md).
 
 #### Condition types {#condition}
 
@@ -104,7 +104,7 @@ As an example, an extension could provide a "viewport contains" condition type w
 
 Condition types typically consist of (1) a view shown within the Platform Launch application that allows users to modify settings for the condition and (2) a library module emitted within the Platform Launch runtime library to interpret the settings and evaluate a condition.
 
-[Learn more](./modules/web/condition-types.md)
+[Learn more](./web/condition-types.md)
 
 #### Action types {#action}
 
@@ -114,7 +114,7 @@ As an example, an extension could provide a "show support chat" action type whic
 
 Action types typically consist of (1) a view shown within the Platform Launch application that allows users to modify settings for the action and (2) a library module emitted within the Platform Launch runtime library to interpret the settings and perform an action.
 
-[Learn more](./modules/web/action-types.md)
+[Learn more](./web/action-types.md)
 
 #### Data element types {#data-element}
 
@@ -122,7 +122,7 @@ Data elements are essentially aliases to pieces of data on a page regardless of 
 
 Data element types typically consist of (1) a view shown within the Platform Launch application that allows users to modify settings for the data element and (2) a library module emitted within the Platform Launch runtime library to interpret the settings and retrieve pieces of data.
 
-[Learn more](./modules/web/data-element-types.md)
+[Learn more](./web/data-element-types.md)
 
 ## Extension configuration
 
@@ -140,7 +140,7 @@ An extension consists of a directory of files. An overview of how these files sh
 
 An [`extension.json`](./manifest.md) file must exist at the root of the directory. This file will, among other things, describe the makeup of the extension and where certain files are located within the directory. This has some similarities to a [`package.json`](https://docs.npmjs.com/files/package.json) file in [npm](https://www.npmjs.com/).
 
-Each library module (the logic to be emitted within the Platform Launch runtime library) must be its own file whose content follows the [CommonJS module standard](http://wiki.commonjs.org/wiki/Modules/1.1.1). For example, if we're building a "send beacon" action type, we must have a file that contains the logic that sends the beacon. The content of this file will be emitted within the Platform Launch runtime library. You might call it `sendBeacon.js`. The location of the file in the directory is not important since `extension.json` will describe where it is located.
+Each library module (the logic to be emitted within the Platform Launch runtime library) must be its own file whose content follows the [CommonJS module standard](http://wiki.commonjs.org/wiki/1.1.1). For example, if we're building a "send beacon" action type, we must have a file that contains the logic that sends the beacon. The content of this file will be emitted within the Platform Launch runtime library. You might call it `sendBeacon.js`. The location of the file in the directory is not important since `extension.json` will describe where it is located.
 
 Each view must be an HTML file capable of being loaded into an iframe within the Platform Launch application. The view must include a script provided by Platform Launch and conform to a small API in order to communicate with the application. There are no restrictions as to what libraries are used within your views. In other words, you may use jQuery, Underscore, React, Angular, Bootstrap or other libraries. We do, however, hope that you will make your extension have a similar look and feel to the application.
 

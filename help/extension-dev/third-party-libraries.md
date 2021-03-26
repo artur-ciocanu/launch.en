@@ -74,7 +74,7 @@ The base code creates a script element, sets it to load asynchronously, and sets
 
 ## Implementation options in Platform Launch
 
-The sections below demonstrate the different ways you can load vendor libraries in your extensions, using the Pinterest base code shown previously as an example. Each of these examples involve creating an [action type for a web extension](./modules/web/action-types.md) that loads the library on your website.
+The sections below demonstrate the different ways you can load vendor libraries in your extensions, using the Pinterest base code shown previously as an example. Each of these examples involve creating an [action type for a web extension](./web/action-types.md) that loads the library on your website.
 
 >[!NOTE]
 >
@@ -123,7 +123,7 @@ module.exports = function() {
 
 Optionally, you can take additional steps to refactor this implementation. Since the variables `scriptElement` and `firstScriptElement` are now scoped to the exported function, you can remove the IIFE since these variables don't run the risk of becoming globals.
 
-In addition, Platform Launch provides several [core modules](./modules/web/core.md) which are utilities that any extension can use. Specifically, the `@adobe/reactor-load-script` module loads a script from a remote location by creating a script element and adding it to the document. By using this module for the script loading process, you can refactor the action code even further:
+In addition, Platform Launch provides several [core modules](./web/core.md) which are utilities that any extension can use. Specifically, the `@adobe/reactor-load-script` module loads a script from a remote location by creating a script element and adding it to the document. By using this module for the script loading process, you can refactor the action code even further:
 
 ```js
 var loadScript = require('@adobe/reactor-load-script');
