@@ -11,7 +11,7 @@ description: Learn how to format library modules for web extensions in Adobe Exp
 
 A library module is a piece of reusable code provided by an extension that is emitted inside the Adobe Experience Platform Launch runtime library (the library that runs on the client's website). For example, a `gesture` event type will have a library module that will run on the client's website and detects user gestures.
 
-The library module is structured as a [CommonJS module](http://wiki.commonjs.org/wiki/1.1.1). Within a CommonJS module, the following variables are available for usage:
+The library module is structured as a [CommonJS module](http://wiki.commonjs.org/wiki/Modules/1.1.1). Within a CommonJS module, the following variables are available for usage:
 
 ## [!DNL require]
 

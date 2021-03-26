@@ -146,7 +146,6 @@ git-repo: https://github.com/AdobeDocs/launch.en
   * Edge extensions {#edge}
     * [Extension flow](./extension-dev/edge/flow.md)
     * [Library module format](./extension-dev/edge/format.md)
-    * [Views](./extension-dev/web/views.md)
     * [Condition types](./extension-dev/edge/condition-types.md)
     * [Action types](./extension-dev/edge/action-types.md)
     * [Data element types](./extension-dev/edge/data-element-types.md)

@@ -147,7 +147,7 @@ The following is an example `getBuildInfo` object to demonstrate the values it r
 
 ### [!DNL getExtensionSettings]
 
-This utility returns the `settings` object that was last saved from the [extension configuration](../../configuration.md) view.
+This utility returns the `settings` object that was last saved from the [extension configuration](../configuration.md) view.
 
 ```js
 logger.log(context.utils.getExtensionSettings());
