@@ -73,7 +73,7 @@ The [hostedLibFiles](./manifest.md) property can be defined inside the extension
 var mcidInstance = turbine.getSharedModule('adobe-mcid', 'mcid-instance');
 ```
 
-Retrieves a module which has been shared from another extension. If no matching module is found, `undefined` will be returned. See [Implementing Shared Modules](./modules/web/shared.md) for more information regarding shared modules.
+Retrieves a module which has been shared from another extension. If no matching module is found, `undefined` will be returned. See [Implementing Shared Modules](./web/shared.md) for more information regarding shared modules.
 
 ### [!DNL logger]
 

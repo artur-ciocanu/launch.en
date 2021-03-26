@@ -9,11 +9,11 @@ In edge extensions, each condition, action, and data element type has both a vie
 
 As the following high-level diagram shows, the extension's action type view is shown inside an iframe within the application integrated with Adobe Experience Platform Launch. The user then uses the view to modify settings which are then saved to Platform Launch's data storage. When the Platform Launch runtime library is built, both the extension's action type library module as well as the user-defined settings will be included in the runtime library that gets deployed to the edge node. At runtime, Platform Launch injects the user-defined settings into the library module.
 
-![extension flow diagram](../../images/flow/edge/event-processing-flow.png)
+![extension flow diagram](../images/flow/edge/event-processing-flow.png)
 
 In the following diagram you can see the link between events, conditions and actions inside the rule processing flow.
 
-![rule processing flow diagram](../../images/flow/edge/rule-processing-flow.png)
+![rule processing flow diagram](../images/flow/edge/rule-processing-flow.png)
 
 The rule processing flow contains the following phases:
 
