@@ -1,8 +1,8 @@
 ---
 title: Publishing Flow
 description: Learn about the process of creating libraries, testing builds, and approving them for production in Adobe Experience Platform Launch.
+exl-id: cccd2371-e472-4d53-ac00-2be14a161ae8
 ---
-
 # Publishing flow
 
 In Adobe Experience Platform Launch, the publishing flow refers to the process of creating libraries, testing builds, and approving them for production.

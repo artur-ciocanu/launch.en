@@ -1,8 +1,8 @@
 ---
 title: Adobe Extensions Reference
 description: Find documentation for for Adobe Experience Platform Launch extensions provided by Adobe solutions.
+exl-id: b7e47b2a-9c00-45f9-8b7f-8747c19f8dae
 ---
-
 # Adobe extensions reference
 
 The following is a list of documentation for the Adobe Experience Platform Launch extensions provided by Adobe solutions:

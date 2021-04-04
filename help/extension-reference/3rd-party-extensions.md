@@ -1,8 +1,8 @@
 ---
 title: Third-Party Extensions
 description: Learn about third-party extensions for Adobe Experience Platform Launch.
+exl-id: 951bd19b-bae7-4ebc-a645-ac0241d42aa2
 ---
-
 # Third-Party extensions
 
 In addition to extensions provided by Adobe solutions, third-party extensions for Adobe Experience Platform Launch are also available.

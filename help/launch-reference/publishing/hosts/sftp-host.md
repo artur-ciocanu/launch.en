@@ -1,8 +1,8 @@
 ---
 title: SFTP Hosts
 description: Learn how to configure Adobe Experience Platform Launch to deliver library builds to a secured, self-hosted SFTP server.
+exl-id: 8908e22c-346e-454d-b612-b2264b119a50
 ---
-
 # SFTP hosts
 
 If you do not want to have Adobe manage your hosted libraries, your other option is to have Adobe Experience Platform Launch deliver builds to a secured SFTP server that you host.

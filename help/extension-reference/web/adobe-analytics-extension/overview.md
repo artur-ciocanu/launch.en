@@ -1,8 +1,8 @@
 ---
 title: Adobe Analytics Extension Overview
 description: Learn about the Adobe Analytics extension in Adobe Experience Platform Launch.
+exl-id: 71972939-cfc5-405f-8ffa-702167fb0ac7
 ---
-
 # Adobe Analytics extension overview
 
 Use this reference for information about configuring the Adobe Analytics extension, and the options available when using this extension to build a rule.

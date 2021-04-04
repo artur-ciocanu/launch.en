@@ -1,8 +1,8 @@
 ---
 title: Common Analytics Extension Overview
 description: Learn about the Common Analytics extension in Adobe Experience Platform Launch.
+exl-id: 2766cb4d-42a8-4940-b5b0-a2491eb6c477
 ---
-
 # Common Analytics Plugins extension overview
 
 Use this reference for information about configuring the Common Analytics Plugins extension, and the options available when using this extension to augment the [!DNL Adobe Analytics] Extension.
@@ -80,4 +80,4 @@ Allows users to leverage the native Platform Launch UI to set up and configure t
 
 ### getVisitNum
 
-Allows users to leverage the native Platform Launch UI to set up and configure the getVisitNum plugin. 
+Allows users to leverage the native Platform Launch UI to set up and configure the getVisitNum plugin.

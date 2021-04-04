@@ -1,8 +1,8 @@
 ---
 title: Adobe-Managed Hosts Overview
 description: Learn about the default hosting option for deploying library builds in Adobe Experience Platform Launch.
+exl-id: 850b4a34-77da-41c9-b7c0-745379335788
 ---
-
 # Adobe-managed hosts overview
 
 Adobe-managed hosts are the default host setting for deploying your library builds in Adobe Experience Platform Launch. When you create a new property through the Platform Launch user interface, a default Adobe-managed host is created for you. 

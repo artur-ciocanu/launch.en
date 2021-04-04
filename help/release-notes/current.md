@@ -1,8 +1,8 @@
 ---
 title: Release Notes
 description: The latest release notes for Adobe Experience Platform Launch.
+exl-id: 7d76f141-9732-4f68-8a50-9d43b3f4444c
 ---
-
 # Release notes
 
 =======

@@ -1,8 +1,8 @@
 ---
 title: Delete Resources
 description: Learn how to delete resources in Adobe Experience Platform Launch.
+exl-id: bc24f3f8-bb85-4eae-aacd-65933500a8c4
 ---
-
 # Delete resources
 
 Deleting a resource is a permanent removal of that resource from [!DNL Adobe Experience Platform Launch]. If you still want the resource to appear in [!DNL Platform Launch], but not be in your library, see [Remove Resources from a Library](remove-resources-from-library.md).

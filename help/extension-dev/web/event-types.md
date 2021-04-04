@@ -1,8 +1,8 @@
 ---
 title: Event Types for Web Extensions
 description: Learn how to define an event-type library module for a web extension in Adobe Experience Platform Launch.
+exl-id: de3ee753-e524-44c7-b6de-72f017c40956
 ---
-
 # Event types
 
 An event type library module has one goal: detect when an activity happens and, when it does, call a function to fire the associated rule. What is being detected is up to you. Are you detecting when a user makes a certain gesture? When a user scrolls rapidly? When a user interacts with something?
@@ -127,5 +127,3 @@ module.exports = function(settings, trigger) {
 ```
 
 Natural programming practices typically maintain proper order, but it is important to be aware of the implications and develop accordingly.
-
-

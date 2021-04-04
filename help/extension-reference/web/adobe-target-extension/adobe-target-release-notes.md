@@ -1,8 +1,8 @@
 ---
 title: Release Notes for the Adobe Target Extension
 description: The latest release notes for the Adobe Target extension in Adobe Experience Platform Launch.
+exl-id: 9fe1e6c2-e895-4d36-97b6-29f3ccd8a1bc
 ---
-
 # Adobe Target release notes
 
 ## July 24, 2020

@@ -1,8 +1,8 @@
 ---
 title: Adobe Target Extension Overview
 description: Learn about the Adobe Target extension in Adobe Experience Platform Launch.
+exl-id: b816bbab-34c6-4d6c-8f27-5643328fd9ca
 ---
-
 # Adobe Target extension overview
 
 Use this reference for information about the options available when using this extension to build a rule.

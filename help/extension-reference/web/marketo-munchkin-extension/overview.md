@@ -1,8 +1,8 @@
 ---
 title: Marketo Munchkin Extension Overview
 description: Learn about the Marketo Munchkin extension in Adobe Experience Platform Launch.
+exl-id: 3811a44f-fbb1-4c0d-9e12-97346cb7a496
 ---
-
 # Marketo Munchkin extension overview
 
 Use this extension to integrate the [!DNL Marketo Munchkin] JavaScript tracking code with your property. [!DNL Marketo Munchkin] JavaScript allows for tracking of end-user page visits and navigates to your Marketo landing pages and external web pages.

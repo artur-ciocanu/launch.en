@@ -1,8 +1,8 @@
 ---
 title: Manage Resources
 description: Learn how to manage various resources in Adobe Experience Platform Launch, including extensions, data elements, and rules.
+exl-id: 90a367b1-4f87-4d70-964b-c42c58219172
 ---
-
 # Manage resources
 
 In [!DNL Adobe Experience Platform Launch], the word "resources" refers to any of the following:

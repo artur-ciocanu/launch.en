@@ -1,8 +1,8 @@
 ---
 title: Create an Exchange Listing for an Extension
 description: Learn how to add your Adobe Experience Platform Launch extension to the public catalog.
+exl-id: 93e83a62-6089-48e9-b521-82f972b36ac4
 ---
-
 # Create an exchange listing for an extension
 
 Adobe Experience Platform Launch has two catalogs for extensions: Private and Public.

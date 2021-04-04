@@ -1,8 +1,8 @@
 ---
 title: Implementing Third-Party Libraries
 description: Learn about the different methods of hosting third-party libraries within your Adobe Experience Platform Launch extensions.
+exl-id: d8d79147-a07b-4564-a866-a95616038f10
 ---
-
 # Implementing third-party libraries
 
 One of the main purposes of extensions in Adobe Experience Platform Launch is to enable you to easily implement existing marketing technologies (libraries) into your website. By using extensions, you can implement libraries provided by third-party content delivery networks (CDNs) without having to manually edit your website's HTML.

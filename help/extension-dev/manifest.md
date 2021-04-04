@@ -1,8 +1,8 @@
 ---
 title: Extension Manifest
-description: Learn how to configure a JSON manifest file that informs Adobe Experience Platform Launch how to properly consume your extension. 
+description: Learn how to configure a JSON manifest file that informs Adobe Experience Platform Launch how to properly consume your extension.
+exl-id: 67a9f555-96a6-4000-bfd7-665f90e27640
 ---
-
 # Extension manifest
 
 In your extension's base directory you must create a file called `extension.json`. This contains critical details about your extension that allows Adobe Experience Platform Launch to properly consume it. Some of the contents are formed after the manner of [npm's `package.json`](https://docs.npmjs.com/files/package.json).

@@ -1,8 +1,8 @@
 ---
 title: Getting started with Adobe Experience Platform Launch Server Side
 description: Follow this step-by-step tutorial to get started using Adobe Experience Platform Launch Server Side.
+exl-id: b565af18-2208-4c36-9d0f-1939b4c623aa
 ---
-
 # Getting started with Experience Platform Launch Server Side
 
 To use Adobe Experience Platform Launch Server Side, data must be sent to Adobe Experience Platform Edge Network using one or more of three options:

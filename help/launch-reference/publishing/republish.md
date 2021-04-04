@@ -1,8 +1,8 @@
 ---
 title: Republish a Library
 description: Learn how to republish a previous library in Adobe Experience Platform Launch.
+exl-id: eb112f48-a70c-4365-8ae6-148f26601f27
 ---
-
 # Republish a library
 
 The five most recent libraries that have been published to your production environment on a Web property are available for later retrieval.  

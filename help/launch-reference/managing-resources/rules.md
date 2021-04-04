@@ -1,8 +1,8 @@
 ---
 title: Rules
 description: Learn how extensions function in Adobe Experience Platform Launch.
+exl-id: 420c8c0b-3b3a-457a-993f-071ad0286674
 ---
-
 # Rules
 
 [!DNL Adobe Experience Platform Launch] is a rule-based system. It looks for user interaction and associated data. When the criteria outlined in your rules are met, the rule triggers the extension, script, or client-side code you identified.

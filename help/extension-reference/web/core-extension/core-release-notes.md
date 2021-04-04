@@ -1,8 +1,8 @@
 ---
 title: Release Notes for the Core Extension
 description: The latest release notes for the Core extension in Adobe Experience Platform Launch.
+exl-id: e366b5ef-d9b8-4424-b026-a0a8df1dacfc
 ---
-
 # Core Extension release notes
 
 
@@ -134,4 +134,3 @@ v1.4.2
 * **Feature** - Page Info Data Element
 * **Feature** - Date Condition
 * **Feature** - Sampling Condition
-

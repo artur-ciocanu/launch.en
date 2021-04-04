@@ -1,8 +1,8 @@
 ---
 title: Libraries
 description: Learn about the concept of libraries and how they function within Adobe Experience Platform Launch.
+exl-id: 9be19d44-bece-4a1f-8531-726b8474c220
 ---
-
 # Libraries
 
 A library is a set of instructions for how extensions, data elements, and rules interact with one another after they are deployed.

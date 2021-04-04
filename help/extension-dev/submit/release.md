@@ -1,8 +1,8 @@
 ---
 title: Release an Extension
 description: Learn how to privately or publicly release an Adobe Experience Platform Launch extension.
+exl-id: 64e40955-82a7-4985-bf67-edc702a3eebb
 ---
-
 # Release an extension
 
 Once you've completed testing and documenting, you are ready to release. There are currently two types of releases that you can perform:

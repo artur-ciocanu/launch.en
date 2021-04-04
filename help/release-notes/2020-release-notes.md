@@ -1,8 +1,8 @@
 ---
 title: 2020 Release Notes
 description: 2020 release notes for Adobe Experience Platform Launch
+exl-id: c4e4f72c-7fdb-4937-b555-444e390d0072
 ---
-
 # 2020 release notes
 
 ## October 26th, 2020

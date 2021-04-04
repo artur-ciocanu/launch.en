@@ -1,8 +1,8 @@
 ---
 title: Adobe Experience Platform Launch Object Reference
 description: Learn about the client-side _satellite object and the various functions you can perform with it in Adobe Experience Platform Launch.
+exl-id: 55af465c-4e14-4fe1-bbf8-14871f818f95
 ---
-
 # Adobe Experience Platform Launch object reference
 
 This document serves as a reference for the client-side `_satellite` object (also called the Adobe Experience Platform Launch object) and the various functions you can perform with it.

@@ -1,8 +1,8 @@
 ---
 title: Compare Resource Revisions
 description: Learn how to to view the history of revisions for a resource in Adobe Experience Platform Launch.
+exl-id: 855903b1-5fa4-45bf-82f5-fd840182d65e
 ---
-
 # Compare resource revisions
 
 Compare resource revisions to see the history of an individual resource.  You can compare the current state of the resource to older versions, or compare the currently published version of a resource to the most recent set of changes that have been saved.

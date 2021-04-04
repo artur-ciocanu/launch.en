@@ -1,8 +1,8 @@
 ---
 title: Backwards Compatibility Standard
-description: Learn about the backwards compatibility standard that ensures updated versions of Adobe Experience Platform Launch extensions are compatible with previous versions. 
+description: Learn about the backwards compatibility standard that ensures updated versions of Adobe Experience Platform Launch extensions are compatible with previous versions.
+exl-id: 796dffe1-a54e-4153-8410-4124cebccaa2
 ---
-
 # Backwards compatibility standard
 
 Updates to an Adobe Experience Platform Launch extension must be backward compatible with previous versions of the extension.  This means that:

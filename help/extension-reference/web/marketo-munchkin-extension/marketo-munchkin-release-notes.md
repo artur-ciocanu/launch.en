@@ -1,8 +1,8 @@
 ---
 title: Release Notes for the Marketo Munchkin Extension
 description: The latest release notes for the Marketo Munchkin extension in Adobe Experience Platform Launch.
+exl-id: 95d27872-8f25-4172-b96c-ab7687c18a6b
 ---
-
 # Marketo Munchkin Extension release notes
 
 ## December 2, 2020

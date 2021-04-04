@@ -1,8 +1,8 @@
 ---
 title: Release Notes for the Adobe Target v2 Extension
 description: The latest release notes for the Adobe Target v2 extension in Adobe Experience Platform Launch.
+exl-id: b18889e8-a2a2-44bf-acb6-7693b4d1bbca
 ---
-
 # Adobe Target v2 Extension release notes
 
 ## March 25, 2021

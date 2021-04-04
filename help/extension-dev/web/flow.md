@@ -1,8 +1,8 @@
 ---
 title: Web Extension Flow
 description: Learn how the components of an Adobe Experience Platform Launch web extension interact with each other at runtime.
+exl-id: 51365bb9-a877-448a-9287-f33c19b8ab83
 ---
-
 # Web extension flow
 
 In web extensions, each event, condition, action, and data element type has both a view which allows users to modify settings and a library module to act upon those user-defined settings.

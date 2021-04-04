@@ -1,8 +1,8 @@
 ---
 title: Upload and Implement End-to-End Testing for an Extension
 description: Learn how to validate, upload, and test your Adobe Experience Platform Launch extension.
+exl-id: db12595b-ab17-410e-ac9a-2d2fe469c2b6
 ---
-
 # Upload and implement end-to-end testing
 
 Testing extensions involves using the Adobe Experience Platform Launch API and/or command-line tools to upload your extension packages, then using the Platform Launch UI to install your extension package to a property and exercise its capabilities inside a Platform Launch library and build.

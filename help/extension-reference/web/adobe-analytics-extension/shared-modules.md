@@ -1,8 +1,8 @@
 ---
 title: Shared modules for the Adobe Analytics extension
 description: Learn about the shared library modules provided by the Adobe Analytics extension in Adobe Experience Platform Launch.
+exl-id: b4f502d5-843f-43ef-a2f6-90016bc0c6f8
 ---
-
 # Shared modules for the Adobe Analytics extension
 
 The [Adobe Analytics extension](./overview.md) provides two different [shared modules](../../../extension-dev/web/shared.md) that you can integrate into your experience application. These modules are covered in the sections below.
