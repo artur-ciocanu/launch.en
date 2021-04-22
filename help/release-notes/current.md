@@ -12,6 +12,7 @@ exl-id: 7d76f141-9732-4f68-8a50-9d43b3f4444c
 **Adobe Experience Platform Data Collection** - Sending data to Adobe is not just about deploying tags to your site or configuration to your app.  Usage of the Experience Platform SDKs and the Edge Network require access to other Platform capabilities.  This used to require logging into a few different tools, but now we've brought them together in one place.
 
 Platform Data Collection consists of six capabilities, and your newly streamlined navigation will only contain the items that your company and user account have access to.  We've also updated some of the capability names to match Experience Platform's naming patterns.
+
 * Client (formerly accessed as Client Side)
 * Datastreams (formerly accessed as Edge Configurations)
 * Server (formerly accessed as Server Side)
