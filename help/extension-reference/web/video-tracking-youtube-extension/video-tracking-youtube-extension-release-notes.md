@@ -5,6 +5,15 @@ exl-id: 182c970a-aa78-4254-ac56-b7fd9f00841e
 ---
 # YouTube Video Tracking extension release notes
 
+## April 23, 2021
+
+### YouTube Video Tracking extension 2.0.0
+
+#### Features
+
+* Data element specifying version
+* Intuitive QSP overwrite
+
 ## November 24, 2020
 
 ### YouTube Video Tracking extension 1.0.1
