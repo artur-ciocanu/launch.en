@@ -5,6 +5,11 @@ exl-id: e366b5ef-d9b8-4424-b026-a0a8df1dacfc
 ---
 # Core Extension release notes
 
+## May 4, 2021
+
+v2.0.6
+
+* Minor update to fix icons that become distorted when the scrren size changes.
 
 ## March 11, 2021
 
