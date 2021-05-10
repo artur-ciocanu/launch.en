@@ -6,6 +6,9 @@ exl-id: 7d76f141-9732-4f68-8a50-9d43b3f4444c
 # Release notes
 
 =======
+## May 10th, 2021
+
+**Simplified Publishing** - Building to the staging environment is no longer required.  If you have the appropriate rights, you can skip the Submitted state entirely and publish directly from Development as long as you’ve had a successful build and there are no other libraries upstream.
 
 ## April 22nd, 2021
 
