@@ -91,7 +91,7 @@ Yes. [!DNL Platform Tags] includes an extension that specializes in listening fo
 
 ## Which event types does Platform Tags support?
 
-Event types are available through extensions. The pre-loaded [!DNL DTM] extension includes 30 built-in event types. Other extensions could add additional event types. For example, the YouTube extension includes four video event types: play, pause, end, and time played. Through extensions, [!DNL Platform Launch] can support any other browser event types or synthetic event types, such as specific visitor activity sequences.
+Event types are available through extensions. The pre-loaded [!DNL DTM] extension includes 30 built-in event types. Other extensions could add additional event types. For example, the YouTube extension includes four video event types: play, pause, end, and time played. Through extensions, [!DNL Platform Tags] can support any other browser event types or synthetic event types, such as specific visitor activity sequences.
 
 ## Will Platform Tags speed up (or slow down) my web site?
 
