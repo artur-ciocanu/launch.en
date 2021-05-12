@@ -1,15 +1,15 @@
 ---
 title: Backwards Compatibility Standard
-description: Learn about the backwards compatibility standard that ensures updated versions of Adobe Experience Platform Launch extensions are compatible with previous versions.
+description: Learn about the backwards compatibility standard that ensures updated versions of Adobe Experience Platform tag extensions are compatible with previous versions.
 exl-id: 796dffe1-a54e-4153-8410-4124cebccaa2
 ---
 # Backwards compatibility standard
 
-Updates to an Adobe Experience Platform Launch extension must be backward compatible with previous versions of the extension.  This means that:
+Updates to an Adobe Experience Platform tag extension must be backward compatible with previous versions of the extension.  This means that:
 
 * Any modifications to the primary components of the extensions must be compatible with previous versions.  This includes extension configuration, event types, condition types, action types, data element types, and shared modules.
 * Components that a user has created with the older extension version must be able to pass validation against the schemas provided by the newer version.
-* A Platform Launch user should be able to install an updated version of your extension and have everything they've done continue to function exactly as is until they make deliberate changes.
+* A Data Collection tag user should be able to install an updated version of your extension and have everything they've done continue to function exactly as is until they make deliberate changes.
 
 ## Allowed changes
 
@@ -46,7 +46,7 @@ There may be scenarios when you have a valid business reason and you think you r
 1. I want to change an optional field to be required => Make a new component requiring the desired field and deprecate the old one
 1. I want to change the API of a shared module => Make a new shared module and deprecate the old one
 
-You may be picking up on a common thread.  That's good.  When deprecating an old component, you'll want to notify users of your extension that it has been deprecated and that they need switch to a new one.  A few suggestions on communicating with users:
+You may be picking up on a common thread.  That's good.  When deprecating an old component, you'll want to notify users of your extension that it has been deprecated and that they need to switch to a new one.  A few suggestions on communicating with users:
 
 * Update the display name of the old component to include "(Deprecated)".
 * Update the view for the old component to have big red warning text that this component has been deprecated and that the user should switch to the new component.
