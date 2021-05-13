@@ -5,6 +5,13 @@ exl-id: b18889e8-a2a2-44bf-acb6-7693b4d1bbca
 ---
 # Adobe Target v2 Extension release notes
 
+## May 14, 2021
+
+### Adobe Target v2 Extension 0.14.0
+
+- Added a new action `Load Target with On-Device Decisioning`, which loads and at.js version with On-Device Decisioning capabilities
+- Updated at.js to 2.5.0.
+
 ## March 25, 2021
 
 ### Adobe Target v2 Extension 0.13.7
