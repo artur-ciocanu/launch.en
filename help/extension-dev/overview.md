@@ -1,6 +1,6 @@
 ---
 title: Extension development overview
-description: Learn about the primary components of different extension types and the extension development process in Adobe Experience Platform Data Collection tags.
+description: Learn about the primary components of different tags extension types and the extension development process in Adobe Experience Platform Data Collection.
 exl-id: 0dd90fa7-91e5-4297-b2c2-5c52ee893357
 ---
 # Extension development overview
@@ -46,7 +46,7 @@ Event types typically consist of (1) a view shown within the tags application th
 
 A rule condition is evaluated after a rule event has occurred. All conditions must return true in order for the rule to continue processing. The exception is when users explicitly place conditions into an "exception" bucket in which case all conditions within the bucket must return false for the rule to continue processing.
 
-As an example, an extension could provide a "viewport contains" condition type wherein the tags user could specify a CSS selector. When the condition is evaluated on the client's website, the extension would be able to find elements matching the CSS selector and return whether any of them are contained within the user's viewport.
+As an example, an extension could provide a "viewport contains" condition type wherein the user could specify a CSS selector. When the condition is evaluated on the client's website, the extension would be able to find elements matching the CSS selector and return whether any of them are contained within the user's viewport.
 
 Condition types typically consist of (1) a view shown within the tags application that allows users to modify settings for the condition and (2) a library module emitted within the tags runtime library to interpret the settings and evaluate a condition.
 
