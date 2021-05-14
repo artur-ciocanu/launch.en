@@ -7,7 +7,7 @@ exl-id: d8d79147-a07b-4564-a866-a95616038f10
 
 One of the main purposes of extensions in Adobe Experience Platform Data Collection tags is to enable you to easily implement existing marketing technologies (libraries) into your website. By using extensions, you can implement libraries provided by third-party content delivery networks (CDNs) without having to manually edit your website's HTML.
 
-There are several methods to host third-party (vendor) libraries within your extensions in tags. This document provides an overview of these different implementation methods, including the pros and cons of each.
+There are several methods to host third-party (vendor) libraries within your extensions. This document provides an overview of these different implementation methods, including the pros and cons of each.
 
 ## Prerequisites
 
@@ -72,7 +72,7 @@ firstScriptElement.parentNode.insertBefore(
 
 The base code creates a script element, sets it to load asynchronously, and sets the `src` URL to `https://s.pinimg.com/ct/core.js`. It then adds the script element to the document by inserting it before the first script element already in the document.
 
-## Implementation options in Data Collection tags
+## Tags implementation options
 
 The sections below demonstrate the different ways you can load vendor libraries in your extensions, using the Pinterest base code shown previously as an example. Each of these examples involves creating an [action type for a web extension](./web/action-types.md) that loads the library on your website.
 
@@ -87,7 +87,7 @@ The following methods are covered:
   - [Prerequisites](#prerequisites)
   - [Base code loading process](#base-code-loading-process)
     - [Base code example](#base-code-example)
-  - [Implementation options in Data Collection tags](#implementation-options-in-data-collection-tags)
+  - [Tags implementation options](#tags-implementation-options)
     - [Load at runtime from the vendor host {#vendor-host}](#load-at-runtime-from-the-vendor-host-vendor-host)
     - [Load at runtime from the tags library host](#load-at-runtime-from-the-tags-library-host)
     - [Embed the library directly](#embed-the-library-directly)
