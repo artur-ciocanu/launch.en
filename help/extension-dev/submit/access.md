@@ -30,7 +30,7 @@ Some of you may have access to more than one Organization. In order to add the t
 
 A Product Profile is a group.  Individual rights are assigned to product profiles and any users in the profile will inherit those rights.
 
-Choose the "Products" link at the top, and "Experience Cloud" on the left. If you do not have Adobe Experience Platform Launch listed, customers should contact their account team and partners should email <ExchangeTechEC@adobe.com>.
+Choose the "Products" link at the top, and "Experience Cloud" on the left. If you do not have Adobe Experience Platform Data Collection listed, customers should contact their account team and partners should email <ExchangeTechEC@adobe.com>.
 
 ![Admin console Products tab](../images/getting-started/admin-console-products-launch.png)
 
