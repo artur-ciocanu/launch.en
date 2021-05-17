@@ -1,11 +1,11 @@
 ---
 title: Extension Submission Process Overview
-description: Learn the steps for submitting your Adobe Experience Launch extension from development to release.
+description: Learn the steps for submitting your Adobe Experience Data Collection extension from development to release.
 exl-id: b8110384-16aa-4f5d-912f-f0ad1c63904e
 ---
 # Extension submission process overview
 
-Submitting an extension to the Adobe Experience Platform Launch catalog can appear to be a daunting task.  The individual steps are not difficult, but it can be hard to keep track of everything and know what comes next.
+Submitting an extension to the Adobe Experience Platform Data Collection catalog can appear to be a daunting task.  The individual steps are not difficult, but it can be hard to keep track of everything and know what comes next.
 
 This guide is intended to outline the process and help you complete each step.  In order to submit your extension, you will need to complete the following steps:
 
@@ -21,8 +21,8 @@ For more information on each of these steps, please select the appropriate link.
 
 ## Support
 
-As you're building and testing your extension, support is available in the Platform Launch developer community Slack workspace where extension authors support each other. You can request access at [http://join.launchdevelopers.chat](http://join.launchdevelopers.chat). 
+As you're building and testing your extension, support is available in the Data Collection tags developer community Slack workspace where extension authors support each other. You can request access at [http://join.launchdevelopers.chat](http://join.launchdevelopers.chat). 
 
 >[!NOTE]
 >
->While there are members of the Platform Launch team in this Slack workspace, it is a community resource not sponsored by or moderated by Adobe.
+>While there are members of the Data Collection team in this Slack workspace, it is a community resource not sponsored by or moderated by Adobe.
