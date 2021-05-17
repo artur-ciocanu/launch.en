@@ -1,11 +1,11 @@
 ---
 title: Grant User Access
-description: Set up your team members' user accounts for Adobe Experience Platform Data Collection tags.
+description: Set up your team members' user accounts and permissions for Adobe Experience Platform Data Collection tags.
 exl-id: eae1df66-ce22-44fe-a256-c8acda0b19b9
 ---
 # Grant user access
 
-Before you get started with your extension_package, you need to set up your team members with user accounts.  This is accomplished in the [Adobe Admin Console](https://adminconsole.adobe.com/).
+Before you get started with your extension_package, you need to set up your team members with user accounts and permissions.  This is accomplished in the [Adobe Admin Console](https://adminconsole.adobe.com/).
 
 This document provides steps for granting access to Adobe Experience Platform Data Collection tags through the Admin Console.
 
@@ -50,27 +50,23 @@ Select the Users tab. Here you can search for existing Adobe ID users by email, 
 
 ![Product Profiles Users tab](../images/getting-started/admin-console-add-launch-user.png)
 
-Enter a name, user group or email address in the appropriate text field. It is recommended to include a first and last name where possible.
+Enter a name, user group or email address in the appropriate text field. It is recommended to include a first and last name where possible. Select Save to you add the user.
 
 ![Add user to Profile display](../images/getting-started/admin-console-add-user.png)
 
-Select Save to you add the user. This completes the required setup in the Administration Console! You and your team members that have been set up as users can now sign in to [Data Collection tags](https://launch.adobe.com/).
+When you have all the users you need in this Product Profile, we'll add Permissions for them. Select the Permissions tab. On the Permissions screen you'll see PROPERTIES, COMPANY RIGHTS, and PROPERTY RIGHTS. Select Edit and complete the following instructions for both Company Rights and Property Rights.
 
-<!-- When you have all the users you need in this Product Profile, we'll add Permissions for them. Select the Permissions tab:
-
-![Product Profiles Permissions tab](../images/getting-started/admin-console-profile-permissions.jpg)
-
-On the Permissions screen you'll see PROPERTIES, COMPANY RIGHTS, and PROPERTY RIGHTS:
-
-![Product Profiles Permissions tab](../images/getting-started/admin_console_rights.png)
+![Product Profiles Permissions tab](../images/getting-started/admin-console-profile-permissions.png)
 
 To author extensions, you and your team need - at a minimum - `Manage Properties` from the Company group as well as `Manage Extensions`, `Manage Environments`, and `Develop` from the Property group. You can create additional Product Profiles with more limited rights later if you like, but for now, it is simplest to select "+ Add all" for both Company Rights and Property Rights, being sure to select "Save" on each:
 
-![Manage Company Rights](../images/getting-started/admin_console_add_all_company_rights.png)
+![Manage Property Rights](../images/getting-started/admin-console-add-all-property-rights.png)
 
-![Manage Property Rights](../images/getting-started/admin_console_add_all_property_rights.png)
+![Manage Company Rights](../images/getting-started/admin-console-add-all-company-rights.png)
 
-So far, we have chosen the appropriate Organization, created a Product Profile, added Users to the product profile, and assigned permissions. -->
+So far, we have chosen the appropriate Organization, created a Product Profile, added Users to the product profile, and assigned permissions.
+
+This completes the required setup in the Administration Console! You and your team members that have been set up as users can now sign in to [Data Collection tags](https://launch.adobe.com/).
 
 ## Confirm Provisioning
 
