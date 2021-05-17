@@ -63,6 +63,12 @@ Add this action to your Platform Launch rule where it makes sense to load Target
 
 No configuration is needed.
 
+### Load Target with On-Device Decisioning
+
+Add this action to your Platform Launch rule where it makes sense to load Target with [on-device decisioning](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/on-device-decisioning/on-device-decisioning.html) enabled in the context of your rule. This loads the at.js library with on-device decisioning enabled into the page. In most implementations, Target should be loaded on every page of your site. Adobe recommends using the Load Target with On-Device Decisioning action only if it is preceded by a Target call. Otherwise, you might run into issues like the Analytics call being delayed.
+
+No configuration is needed.
+
 ### Add Params to All Requests
 
 Add parameters to all Target requests. The Load Target action must be used earlier.
