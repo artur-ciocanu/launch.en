@@ -9,8 +9,8 @@ exl-id: b18889e8-a2a2-44bf-acb6-7693b4d1bbca
 
 ### Adobe Target v2 Extension 0.14
 
-•	Added a new action Load Target with [On-Device Decisioning](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/targetv2-extension/adobe-target-extension-v2.html?lang=en#load-target-with-on-device-decisioning), which loads at.js 2.5 with On-Device Decisioning capabilities
-•	Updated at.js to 2.5
+-	Added a new action Load Target with [On-Device Decisioning](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/targetv2-extension/adobe-target-extension-v2.html?lang=en#load-target-with-on-device-decisioning), which loads at.js 2.5 with On-Device Decisioning capabilities
+-	Updated at.js to 2.5
 
 
 ## March 25, 2021
