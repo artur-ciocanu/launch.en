@@ -13,7 +13,7 @@ The `arc` property is an object that provides information about the event trigge
 
 ### [!DNL event]
 
-The `event` object represents the event that triggered the rule. `event` contains a single property, `rule`, which itself contains the following values:
+The `event` object represents the event that triggered the rule and contains the following values:
 
 ```js
 logger.log(context.arc.event);
@@ -21,8 +21,8 @@ logger.log(context.arc.event);
 
 | Property | Description |
 | --- | --- |
-| `rule.xdm` | The XDM object of the event. |
-| `rule.data` | The custom data layer. |
+| `xdm` | The XDM object of the event. |
+| `data` | The custom data layer. |
 
 ### [!DNL request]
 
