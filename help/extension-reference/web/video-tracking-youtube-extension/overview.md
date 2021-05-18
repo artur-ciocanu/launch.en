@@ -15,13 +15,13 @@ Each Adobe Experience Platform Launch property requires that the following exten
 
 Per [https://developers.google.com/youtube/player_parameters](https://developers.google.com/youtube/player_parameters), use the ”Embed a player using an tag” code snippet in the HTML of each Web page where a video player is to render.
 
-This extension, version 2.0.0, supports embedding one or more YouTube videos on a single Web page by inserting an "id" attribute with a unique value in the iframe script tag, and appending "enablejsapi=1" and "rel=0" to the end of the "src" attribute value, if not already included, as such:
+This extension, version 2.0.0, supports embedding one or more YouTube videos on a single Web page by inserting an `id` attribute with a unique value in the iframe script tag, and appending `enablejsapi=1` and `rel=0` to the end of the `src` attribute value, if not already included, as such:
 
 `<iframe id="player1" width="560" height="315" src="https://www.youtube.com/embed/xpatB77BzYE?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
 
-Please note that this extension is also designed to dynamically check for a unique id attribute value, like "player1," whether the "enablejsapi" and "rel" query string parameters exist, and if their expected values are correct. As a result, the YouTube script tag can be added to a Web page with or without the "id" attribute and the "enablejsapi" and "rel" query string parameters are included, or not.
+Please note that this extension is also designed to dynamically check for a unique ID attribute value, like `player1`, whether the `enablejsapi` and `rel` query string parameters exist, and if their expected values are correct. As a result, the YouTube script tag can be added to a Web page with or without the `id` attribute and whether the `enablejsapi` and `rel` query string parameters are included or not.
 
-On pages with more than one video, note that each video will use the same configuration set in the Launch rule executing on that page. For example, if you create a rule with an event that triggers on video 50% complete, each video on the page will trigger the rule at the 50% cue point.
+On pages with more than one video, note that each video uses the same configuration set in the Launch rule executing on that page. For example, if you create a rule with an event that triggers on video 50% complete, each video on the page triggers the rule at the 50% cue point.
 
 The Extension relies on the following logic to rewrite the iFrames:
 
