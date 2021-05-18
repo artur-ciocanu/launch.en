@@ -9,7 +9,7 @@ For release notes on the Experience Cloud Identity Service itself and not just t
 
 ## Nov 3, 2020
 
-### Experience Cloud ID Extension 5.1.1
+### Experience Cloud ID Extension 5.2.1
 
 #### **Features**
 
