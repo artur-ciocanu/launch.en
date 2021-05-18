@@ -1,8 +1,8 @@
 ---
 title: Extension development overview
 description: Learn about the primary components of different extension types and the extension development process in Adobe Experience Platform Launch.
+exl-id: 0dd90fa7-91e5-4297-b2c2-5c52ee893357
 ---
-
 # Extension development overview
 
 One of the primary goals of Adobe Experience Platform Launch is to create an open ecosystem where engineers outside of the core Platform Launch engineering team can expose additional functionality through Platform Launch. This is done through Reactor extensions. Once an extension has been installed on a Platform Launch property by a user, that extension's functionality then becomes available for use by all users of the property.

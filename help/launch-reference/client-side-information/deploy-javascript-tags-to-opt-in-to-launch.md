@@ -1,8 +1,8 @@
 ---
 title: Deploy JavaScript Tags to Manage Customer Consent
 description: Learn how to manage customer opt-in and opt-out signals for various Adobe solutions in Adobe Experience Platform Launch.
+exl-id: c9014b6b-13d4-4c6c-8f2f-e91fc4ae68ba
 ---
-
 # Deploy JavaScript tags to manage customer consent
 
 The combination of the European Union [General Data Protection Regulation (GDPR)](https://gdpr-info.eu/art-7-gdpr/) and [ePrivacy](https://medium.com/mydata/consent-lost-gdpr-and-found-eprivacy-e85cf881ffb) legislation requires companies to be able to manage consent for their users. [!DNL Adobe] customers may require visitors to opt-in before [!DNL Adobe] solutions execute for any given visitor. Visitors should have the ability to manage their opt-in and opt-out status.

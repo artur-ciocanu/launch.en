@@ -1,8 +1,8 @@
 ---
 title: Data Element Types for Web Extensions
 description: Learn how to define a data-element-type library module for a web extension in Adobe Experience Platform Launch.
+exl-id: 72c43ac3-4672-4eb5-a062-550537bdb686
 ---
-
 # Data element types for edge extensions
 
 A data element type library module has one goal: retrieve a piece of data. How this piece of data is retrieved is up to you. For example, you can use a data element type to allow Adobe Experience Platform Launch users to retrieve a piece of data from local storage, a cookie, or a DOM element.

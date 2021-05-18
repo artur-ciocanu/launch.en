@@ -1,8 +1,8 @@
 ---
 title: YouTube Video Tracking Extension Overview
 description: Learn about the YouTube Video Tracking extension in Adobe Experience Platform Launch.
+exl-id: 139a6419-5517-4eb5-a4aa-bab382c8330c
 ---
-
 # YouTube Video Tracking extension overview
 
 **Prerequisites**

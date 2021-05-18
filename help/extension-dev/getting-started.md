@@ -1,8 +1,8 @@
 ---
 title: Getting Started with Extension Development
 description: Get started with developing your own extensions in Adobe Experience Platform Launch.
+exl-id: bfec6c89-0a5f-4c1c-a9fe-77f963b6f9e4
 ---
-
 # Getting started with extension development
 
 To get you up and running and building extensions, we will be using the open-source scaffolding tool, provided by Adobe Experience Platform Launch engineers to create the necessary files and file structure for your extension package, so all you have left to do is the valuable part: actually write the code.
@@ -50,4 +50,3 @@ For example, this can return if the user’s browser is Chrome, if they're using
 >* Subsequent runs of the scaffolding tool will skip over the initial configuration.
 >* More than one of each event, condition, action, may be added.
 >* Only one configuration view may exist.
-

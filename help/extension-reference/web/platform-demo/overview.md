@@ -1,8 +1,8 @@
 ---
 title: Adobe Experience Platform Demo Extension Overview
 description: Learn about the Adobe Experience Platform Demo extension in Adobe Experience Platform Launch.
+exl-id: 94bd5c84-cca2-4d46-888f-d106da362817
 ---
-
 # Adobe Experience Platform Demo Extension
 
 This extension will be deprecated in favor of the [Adobe Experience Platform Web SDK](../aep-web-sdk/overview.md). The features of this extension are being ported over to new extension. Here is a quick comparison of current features. 

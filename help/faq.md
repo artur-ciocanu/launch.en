@@ -1,8 +1,8 @@
 ---
 title: FAQ
 description: Get answers to frequently asked questions about Adobe Experience Platform Launch.
+exl-id: 1192c0cd-fa2d-4c82-978c-af75a70d060b
 ---
-
 # Adobe Experience Platform Launch FAQ
 
 This document provides answers to frequently asked questions about Adobe Experience Platform Launch.

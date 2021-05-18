@@ -1,8 +1,8 @@
 ---
 title: User Permissions
 description: Learn about the different available permissions for Adobe Experience Platform Launch users.
+exl-id: 43ed8522-452a-47fe-b316-564f80b012af
 ---
-
 # User permissions
 
 ## Permission types

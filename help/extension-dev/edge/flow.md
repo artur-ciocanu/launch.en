@@ -1,8 +1,8 @@
 ---
 title: Edge Extension Flow
 description: Learn how the components of an Adobe Experience Platform Launch edge extension interact with each other at runtime.
+exl-id: 1c026502-5d78-4ada-961b-c323125f8cfe
 ---
-
 # Edge extension flow
 
 In edge extensions, each condition, action, and data element type has both a view which allows users to modify settings and a library module to act upon those user-defined settings.

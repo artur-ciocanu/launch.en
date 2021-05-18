@@ -1,8 +1,8 @@
 ---
 title: Additional Resources
 description: Find additional resources to help you get the most out of Adobe Experience Platform Launch.
+exl-id: f57b84f3-c110-48ac-849e-42438923ee89
 ---
-
 # Additional resources
 
 The Adobe Experience Platform Launch community is full of talented professionals who share useful tips, tutorials, and tools across the web. This is a collection of some of the best things supplied by the community so far.

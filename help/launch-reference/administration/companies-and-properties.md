@@ -1,8 +1,8 @@
 ---
 title: Companies and Properties
 description: Learn how your extensions, environments, and libraries are organized and grouped for your organization in Adobe Experience Platform Launch.
+exl-id: 016cb7d5-1977-4b26-8516-b9b035a66f7e
 ---
-
 # Companies and properties
 
 ## Companies

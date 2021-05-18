@@ -1,8 +1,8 @@
 ---
 title: Notes
 description: Learn how to textual annotations to certain resources in Adobe Experience Platform Launch.
+exl-id: 47bc15ea-8bff-42fc-8011-5498ab11e400
 ---
-
 # Notes
 
 Notes are textual annotations that you can add to certain Adobe Experience Platform Launch resources.  Notes can be attached to the following resources:

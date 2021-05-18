@@ -1,8 +1,8 @@
 ---
 title: Turbine Free Variable
 description: Learn about the turbine object, a free variable which provides information and utilities specific to the Adobe Experience Platform Launch runtime.
+exl-id: f91fd053-09bd-4c26-9559-701701b58050
 ---
-
 # Turbine free variable
 
 The `turbine` object is a "free variable" within the scope of your extension's library modules. It provides information and utilities specific to the Adobe Experience Platform Launch runtime and is always available to library modules without using `require()`.

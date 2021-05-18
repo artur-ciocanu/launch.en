@@ -1,8 +1,8 @@
 ---
 title: Videos
 description: Watch videos that cover various capabilities and processes in Adobe Experience Platform Launch.
+exl-id: f9bc91b9-e78e-4daa-a6d4-de7b8b670f88
 ---
-
 # Videos
 
 These videos introduce you to [!DNL Platform Launch] concepts and tasks.

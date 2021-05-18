@@ -1,8 +1,8 @@
 ---
 title: Quickstart Guide
 description: Learn how to quickly get up and running with Adobe Experience Platform Launch.
+exl-id: 12be4e94-1838-4aea-92a1-4a4862d3cb1f
 ---
-
 # Quickstart guide
 
 [!DNL Adobe Experience Platform Launch] is the next-generation of [!DNL Adobe's] tag management technology, built on the [!DNL Adobe Experience Platform]. It is built from the ground up to support an open and sustainable ecosystem where anyone can build their own integrations that [!DNL Adobe] customers can deploy to their sites. It is an API first application so anything you can do through the UI you can also do programmatically through an API.

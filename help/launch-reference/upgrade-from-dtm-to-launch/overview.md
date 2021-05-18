@@ -1,8 +1,8 @@
 ---
 title: Upgrade From DTM to Adobe Experience Platform Launch
 description: Learn how to upgrade from Dynamic Tag Management (DTM) to Adobe Experience Platform Launch.
+exl-id: 1bfa5152-9503-45fa-b631-c876900cda5f
 ---
-
 # Upgrade From DTM to Adobe Experience Platform Launch
 
 * [Upgrade FAQ](upgrade-faq.md)

@@ -1,8 +1,8 @@
 ---
 title: Experience Cloud Organization Setup
 description: Learn how to register an Adobe Experience Cloud organization in order to start developing extensions for Adobe Experience Platform Launch.
+exl-id: b7028f8b-11a3-4e7a-ad1c-30bc8f9d8e11
 ---
-
 # Experience Cloud organization setup
 
 The first step in developing extensions in Adobe Experience Platform Launch is to register an Adobe Experience Cloud organization.

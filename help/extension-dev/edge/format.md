@@ -1,8 +1,8 @@
 ---
 title: Library Modules in Edge Extensions
 description: Learn how to format library modules for edge extensions in Adobe Experience Platform Launch.
+exl-id: 9264898d-c872-4089-ae3e-84a3ccc02f46
 ---
-
 # Library modules in edge extensions
 
 >[!IMPORTANT]

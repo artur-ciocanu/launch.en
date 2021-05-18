@@ -1,8 +1,8 @@
 ---
 title: Environments
 description: Learn about the concept of environments and how they function within Adobe Experience Platform Launch.
+exl-id: 5c7fd0bb-c4f1-468a-be91-14aa93c8d0bc
 ---
-
 # Environments
 
 Environments in Adobe Experience Platform Launch define several key aspects of the library builds you deploy on your website or app:

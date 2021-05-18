@@ -1,8 +1,8 @@
 ---
 title: Adobe Experience Platform Launch Server Side Overview
 description: Learn about Adobe Experience Platform Launch Server Side, which allows you to use the Platform Edge Network to execute tasks without changing your client-side implementation.
+exl-id: a349ee6c-9854-43d0-adca-2d8f086b63b8
 ---
-
 # Adobe Experience Platform Launch Server Side overview
 
 Adobe Experience Platform Launch Server Side decreases web page and app weight by using Adobe Experience Platform Edge Network to execute tasks normally done on the client. Platform Launch Server Side rules can transform and send data to new destinations without changing client-side implementations.

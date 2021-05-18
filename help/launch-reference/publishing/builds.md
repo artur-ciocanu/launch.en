@@ -1,8 +1,8 @@
 ---
 title: Builds
 description: Learn about the concept of builds and how they function within Adobe Experience Platform Launch.
+exl-id: 4c247b0e-79ae-4e1c-82b4-a31c0381a78f
 ---
-
 # Builds
 
 A build is the set of files containing all the code that runs on the client device.

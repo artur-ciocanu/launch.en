@@ -1,8 +1,8 @@
 ---
 title: Extension Submission Process Overview
 description: Learn the steps for submitting your Adobe Experience Launch extension from development to release.
+exl-id: b8110384-16aa-4f5d-912f-f0ad1c63904e
 ---
-
 # Extension submission process overview
 
 Submitting an extension to the Adobe Experience Platform Launch catalog can appear to be a daunting task.  The individual steps are not difficult, but it can be hard to keep track of everything and know what comes next.

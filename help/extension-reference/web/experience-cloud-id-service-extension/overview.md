@@ -1,8 +1,8 @@
 ---
 title: Adobe Experience Cloud Identity Service Extension Overview
 description: Learn about the Adobe Experience Cloud Identity Service extension in Adobe Experience Platform Launch.
+exl-id: 6f9922fc-abca-4c26-aa5a-22223be0291b
 ---
-
 # Adobe Experience Cloud Identity Service extension overview
 
 Use this reference for information about configuring the Adobe Experience Cloud ID extension, and the options available when using this extension to build a rule.

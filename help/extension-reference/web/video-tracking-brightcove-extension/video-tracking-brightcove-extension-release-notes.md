@@ -1,8 +1,8 @@
 ---
 title: Release Notes for the BrightCove Video Tracking Extension
 description: The latest release notes for the BrightCove Video Tracking extension in Adobe Experience Platform Launch.
+exl-id: d63d6f25-fed2-48f3-b1e1-491d6f22d861
 ---
-
 # BrightCove Video Tracking extension release notes
 
 

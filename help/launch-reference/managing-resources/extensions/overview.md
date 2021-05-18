@@ -1,8 +1,8 @@
 ---
 title: Extensions
 description: Learn how extensions function in Adobe Experience Platform Launch.
+exl-id: 270c7ea0-a81f-4d3a-b728-ed46f14ed6cd
 ---
-
 # Extensions
 
 An extension is a packaged set of code that extends the [!DNL Adobe Experience Platform Launch] interface and the library functionality. [!DNL Platform Launch] is the platform, and extensions are like apps that run on the platform.

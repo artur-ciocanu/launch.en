@@ -1,8 +1,8 @@
 ---
 title: Supported Browsers
 description: The Adobe Experience Platform Launch runtime is compatible with multiple browsers.
+exl-id: 82575bc2-14e3-4289-93ed-b2b438616081
 ---
-
 # Supported browsers
 
 The Adobe Experience Platform Launch runtime (delivered to clients' websites) is designed to support the following browsers:

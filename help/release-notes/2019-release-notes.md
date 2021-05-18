@@ -1,8 +1,8 @@
 ---
 title: 2019 Release Notes
 description: 2019 release notes for Adobe Experience Platform Launch.
+exl-id: 7f716e06-98cb-4f68-92f8-1cd9f9a8c460
 ---
-
 # Release notes
 
 ## November 21, 2019

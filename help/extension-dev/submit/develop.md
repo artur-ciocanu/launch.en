@@ -1,8 +1,8 @@
 ---
 title: Develop an Extension
 description: This document provides a general overview of the extension development process, with links to further documentation for more detailed processes.
+exl-id: f4b6173e-6690-438b-a363-05e364b32a0e
 ---
-
 # Develop an extension
 
 An extension should be thought of as a (small) product with its own requirements. Determining how an Adobe Experience Platform Launch user will want to use your extension can help you sort the functionality into what event types, condition types, action types, and data element types your extension should provide.

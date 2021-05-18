@@ -1,8 +1,8 @@
 ---
 title: Action Types for Web Extensions
 description: Learn how to define an action-type library module for a web extension in Adobe Experience Platform Launch.
+exl-id: f322495b-341f-445d-b796-ec04efe43e30
 ---
-
 # Action types for web extensions
 
 An action type library module is intended to take an action--any action. What this action does is entirely up to you. Do you want to send a beacon, show an offer, thank the user for visiting, save a cookie, or open a support chat?

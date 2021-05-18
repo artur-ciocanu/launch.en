@@ -1,8 +1,8 @@
 ---
 title: Copy Resources
 description: Learn how to create a new resource using the settings of an existing resource in Adobe Experience Platform Launch.
+exl-id: 05228e4c-e49c-441b-b897-5a5cb89487c0
 ---
-
 # Copy resources
 
 Sometimes, it is convenient to make a new resource using the settings of an existing resource.  In these cases, you can make a copy.

@@ -1,8 +1,8 @@
 ---
 title: Self-Hosting Libraries
 description: Learn how to implement self-hosting for your library builds in Adobe Experience Platform Launch.
+exl-id: e8dc1a71-9cb0-4a03-b871-97c5c1b34c63
 ---
-
 # Self-hosting libraries
 
 Everything you do in Adobe Experience Platform Launch has the ultimate goal of producing a set of files to control the behavior of your application at run-time. This set of files is called a [build](../builds.md).

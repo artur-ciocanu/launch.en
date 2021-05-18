@@ -1,8 +1,8 @@
 ---
 title: Adobe ContextHub Extension Overview
 description: Learn about the Adobe ContextHub extension in Adobe Experience Platform Launch.
+exl-id: b8d26cca-652a-4f9e-b169-43a9e17fc58c
 ---
-
 # Adobe ContextHub extension overview
 
 Use this reference for information about configuring the Adobe ContextHub extension, and the options available when using this extension to build a rule.

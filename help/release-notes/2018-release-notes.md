@@ -1,8 +1,8 @@
 ---
 title: 2018 Release Notes
 description: 2018 release notes for Adobe Experience Platform Launch.
+exl-id: 73cbb140-965f-4404-98df-ef176177550e
 ---
-
 # 2018 release notes
 
 ## November 14, 2018

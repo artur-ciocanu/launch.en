@@ -1,8 +1,8 @@
 ---
 title: Asynchronous Deployment
 description: Learn how to asynchronously deploy Adobe Experience Platform Launch libraries on your website.
+exl-id: 928d1cbc-c6ab-4fa9-a875-0be8e4b699c4
 ---
-
 # Asynchronous deployment
 
 Performance and non-blocking deployment of the JavaScript libraries required by our products is increasingly important to [!DNL Adobe Experience Cloud] users. Tools like [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights/) recommend that users change they way they deploy the [!DNL Adobe] libraries on their site. This article explains how to use the [!DNL Adobe] JavaScript libraries in an asynchronous fashion.

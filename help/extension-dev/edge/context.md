@@ -1,8 +1,8 @@
 ---
 title: Context in Edge Extension Modules
 description: Learn about the context object and the role it plays in interacting with library modules in Adobe Experience Platform Launch edge extensions.
+exl-id: 6f392d90-135b-4790-a733-f20effb23bfb
 ---
-
 # Context in edge extension modules
 
 All library modules in edge extensions are provided a `context` object when they are executed. This document covers the properties provided by the `context` object and the role they play in library modules.
