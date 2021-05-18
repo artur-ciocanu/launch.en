@@ -7,12 +7,12 @@ exl-id: 80d010d3-f6ac-4edf-95f9-4f2538901d70
 
 ## March 26, 2021
 
-### Common Analytics Plugins Extension 3.0.3
+### Common Analytics Plugins Extension 3.0.4
 
 #### Bug Fixes
 
-* Fixed issue where `getPageLoadTime` was incorrectly setting variables on the window object
-* Fixed an issue where `getQueryParam` was returning undefined instead of "" if the queryParam was not present in the query string
+* Fixed issue where getPageLoadTime was incorrectly setting variables on the window object
+* Fixed an issue where getQueryParam was returning undefined instead of "" if the queryParam was not present in the query string
 * Fixed an issue where the incorrect version numbers were displaying in the initialize action
 
 ## March 19, 2021
