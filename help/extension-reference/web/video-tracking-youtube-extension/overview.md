@@ -59,7 +59,7 @@ There are eight events available within the extension, only Custom Cue Point Tra
 
 ## Usage
 
-There will be one Launch Rule for every Video Event (listed above). As such, the user of this extension needs to create a specific Launch rule for each event they want to track. In other words, if they don't want to track Video Pause, they wouldn't create a rule for it.
+There is one Platform Launch rule for every video event (listed above). As such, the user of this extension needs to create a specific Platform Launch rule for each event they want to track. In other words, if they don't want to track Video Pause, they wouldn't create a rule for it.
 
 Rules have three actions:
 
