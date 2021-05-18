@@ -9,7 +9,7 @@ exl-id: e366b5ef-d9b8-4424-b026-a0a8df1dacfc
 
 v2.0.6
 
-* Minor update to fix icons that become distorted when the scrren size changes.
+* Minor update to fix icons that become distorted when the screen size changes.
 
 ## March 11, 2021
 
