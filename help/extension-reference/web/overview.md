@@ -1,11 +1,11 @@
 ---
 title: Adobe Extensions Reference
-description: Find documentation for for Adobe Experience Platform Launch extensions provided by Adobe solutions.
+description: Find documentation for Data Collection tags extensions in Adobe Experience Platform.
 exl-id: b7e47b2a-9c00-45f9-8b7f-8747c19f8dae
 ---
 # Adobe extensions reference
 
-The following is a list of documentation for the Adobe Experience Platform Launch extensions provided by Adobe solutions:
+The following is a list of documentation for the Adobe Experience Platform Data Collection tags extensions provided by Adobe solutions:
 
 * [Analytics extension](adobe-analytics-extension/overview.md)
 * [Adobe Analytics Product String extension](adobe-analytics-product-string-extension/overview.md)
