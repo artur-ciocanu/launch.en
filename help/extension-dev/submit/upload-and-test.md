@@ -122,9 +122,9 @@ Extensions can define data element types if needed for your extension to operate
 
 ![](../images/getting-started/create-data-element.png)
 
-When a user selects your extension from the Extension dropdown, the Data Element Type dropdown is populated with any data element types supplied by your extension. The user can then map each data element to its source value. Data elements can then be used when building rules in the Data Element Change Event or Custom Code Event to trigger a rule to execute. A data element can also be used in the Data Element Condition, or other Conditions, Exceptions, or Actions in a rule.
+When a user selects your extension from the Extension dropdown, the Data Element Type dropdown is populated with any data element types supplied by your extension. The user can then map each data element to its source value. Data elements can then be used when building rules in the Data Element Change Event or Custom Code Event to trigger a rule to execute. A data element can also be used in the Data Element Condition or other Conditions, Exceptions, or Actions in a rule.
 
-Once the data element is created (the mapping is set up), users can reference the source data simply by referencing the data element. If the source of the value ever changes (site re-designs, etc.) users only need update the mapping once in Data Collection and all the data elements will automatically receive the new source value.
+Once the data element is created (the mapping is set up), users can reference the source data simply by referencing the data element. If the source of the value ever changes (site re-designs, etc.) users only need to update the mapping once in Data Collection and all the data elements will automatically receive the new source value.
 
 ### Rules
 
@@ -144,7 +144,7 @@ Continuing with the Facebook example, let's add an event for any time a page loa
 
 With the `Window Loaded` Event Type, any time a page loads on our site this rule will be triggered. Select **Keep Changes**. For this example, let's skip Conditions and Exceptions as we want this rule triggered for any page on our site - our "global" On Load rule so to speak.
 
-Under Actions select **Add**. On this Action Configuration screen we can choose the extension we want to work with and the action we want to occur when this rule is triggered. Let's choose the **Facebook Pixel** under Extension, and **Send Page View** under Action Type:
+Under Actions select **Add**. On this Action Configuration screen, we can choose the extension we want to work with and the action we want to occur when this rule is triggered. Let's choose the **Facebook Pixel** under Extension, and **Send Page View** under Action Type:
 
 ![](../images/getting-started/action-configuration.png)
 
@@ -158,7 +158,7 @@ In the main navigation, select **Publishing**, then on **Add New Library** link:
 
 A library is a set of instructions for how extensions, data elements, and rules will interact with one another and with a website. Libraries are compiled into builds. A library can contain as many changes as a user is comfortable making or testing at once.
 
-On the Create New Library screen, add a Name and choose an Environment. Data Collection tags provides a default development environment helpfully named `Development`, so select that one from the Environment list.  For now, we'll add all available resources, so select **Add All Changed Resources**.
+On the Create New Library screen, add a Name and choose an Environment. Data Collection tags provide a default development environment helpfully named `Development`, so select that one from the Environment list.  For now, we'll add all available resources, so select **Add All Changed Resources**.
 
 >[!NOTE]
 >
@@ -197,14 +197,14 @@ While validating your extension on your test page or site, there are a few conso
 * `_satellite.setDebug(true);` will put Data Collection into debug mode and output useful logging statements to the console.
 * The `_satellite._container` object contains all kinds of useful information about the deployed library including details about the Build, Data Elements, Rules, and Extensions included.
 
-Ultimately your objective here is to test the functionality of the deployed library to ensure that the code you wrote inside your extension package behaves as expected when Data Collection tags has compiled it into a library.
+Ultimately your objective here is to test the functionality of the deployed library to ensure that the code you wrote inside your extension package behaves as expected when Data Collection tags have compiled it into a library.
 
 When you discover changes that need to be made to your extension package, the iteration process is similar to the development process.
 
 1. Make changes to the code in your project
 2. Validate the changes with the Sandbox tool
 3. Use the Packager tool to create a new .zip package
-4. Use the Uploader tool to upload your new .zip package - you can follow the same instructions as above for the initial upload, but you'll notice that this time, because there is already an extension package of that name in development mode, this one will overwrite the other one instead of creating a new one.  If you want to save yourself some time by not entering credentials over and over again, you can look at the [reactor-uploader documentation](https://www.npmjs.com/package/@adobe/reactor-uploader) and pass in the arguments on the command line.
+4. Use the Uploader tool to upload your new .zip package - you can follow the same instructions as above for the initial upload, but you'll notice that this time because there is already an extension package of that name in development mode, this one will overwrite the other one instead of creating a new one.  If you want to save yourself some time by not entering credentials over and over again, you can look at the [reactor-uploader documentation](https://www.npmjs.com/package/@adobe/reactor-uploader) and pass in the arguments on the command line.
 5. We can skip the installation step this time around
 6. Modify resources - if you've changed the configuration for any of your extension components, you'll want to update those resources in the Data Collection UI
 7. Add your latest changes to your Library and build again
