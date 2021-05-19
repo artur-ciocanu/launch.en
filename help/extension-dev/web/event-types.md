@@ -1,6 +1,6 @@
 ---
 title: Event Types for Web Extensions
-description: Learn how to define an event-type library module for a web extension in Adobe Experience Platform Launch.
+description: Learn how to define a tags event-type library module for a web extension in Adobe Experience Platform Data Collection.
 exl-id: de3ee753-e524-44c7-b6de-72f017c40956
 ---
 # Event types
@@ -9,7 +9,7 @@ An event type library module has one goal: detect when an activity happens and, 
 
 >[!NOTE]
 >
->This document assumes you are familiar with library modules and how they are integrated in Platform Launch extensions. See the overview on [library module formatting](./format.md) for an introduction to their implementation before returning to this guide.
+>This document assumes you are familiar with library modules and how they are integrated in Data Collection extensions. See the overview on [library module formatting](./format.md) for an introduction to their implementation before returning to this guide.
 
 In addition to the `settings` parameter that is common to other module types, the `module.exports` for an event type accepts a second parameter, `trigger`:
 
@@ -34,7 +34,7 @@ module.exports = function(settings, trigger) {
 };
 ```
 
-Now what if we wanted to make the duration configurable by the Adobe Experience Platform Launch user? In our view we would allow the user to input a duration and then save the duration to the settings object. The object might look something like this:
+Now what if we wanted to make the duration configurable by the Adobe Experience Platform Data Collection user? In our view we would allow the user to input a duration and then save the duration to the settings object. The object might look something like this:
 
 ```js
 {
@@ -88,7 +88,7 @@ trigger({
 
 ## Respecting rule order
 
-Platform Launch gives users the ability to order rules. For example, a user might create two rules which both use the orientation change event type and the user would like to customize the order in which the rules fire. Let's assume that the Platform Launch user specifies an order value of `2` for the orientation change event in Rule A and an order value of `1` for the orientation change event in Rule B. This indicates that when the orientation changes on a mobile device, Rule B should fire before Rule A (rules with lower order values fire first).
+Data Collection tags gives users the ability to order rules. For example, a user might create two rules which both use the orientation change event type and the user would like to customize the order in which the rules fire. Let's assume that the Data Collection user specifies an order value of `2` for the orientation change event in Rule A and an order value of `1` for the orientation change event in Rule B. This indicates that when the orientation changes on a mobile device, Rule B should fire before Rule A (rules with lower order values fire first).
 
 As mentioned previously, the exported function in our event module will be called once for each rule that has been configured to use our event type. Each time the exported function is called, it is passed a unique `trigger` function that is tied to a specific rule. In the scenario just described, our exported function will be called once with a `trigger` function tied to Rule B and then again with a `trigger` function tied to Rule A. Rule B comes first because the user has given it a lower order value than Rule A. When our library module detects an orientation change, it is important that we call the `trigger` functions in the same order they were provided to the library module.
 
