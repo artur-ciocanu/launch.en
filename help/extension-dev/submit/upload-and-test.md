@@ -213,5 +213,5 @@ When you discover changes that need to be made to your extension package, the it
 <!--
 ## Document {#document}
 
-Your [exchange listing](./create-listing.md) is a great place for marketing and support information for your extension, but our Platform Launch [Help Docs](https://docs.adobe.com/content/help/en/launch/using/overview.html) are used every day by our customers. We encourage you to submit a pull request to [add your extension documentation](https://github.com/AdobeDocs/launch.en/blob/master/help/extension-reference/3rd-party-extensions.md) into the Platform Launch user docs. Open source docs for the win! 🚀
+Your [exchange listing](./create-listing.md) is a great place for marketing and support information for your extension, but our Data Collection [Help Docs](https://docs.adobe.com/content/help/en/launch/using/overview.html) are used every day by our customers. We encourage you to submit a pull request to [add your extension documentation](https://github.com/AdobeDocs/launch.en/blob/master/help/extension-reference/3rd-party-extensions.md) into the Data Collection user docs. Open source docs for the win! 🚀
 -->
