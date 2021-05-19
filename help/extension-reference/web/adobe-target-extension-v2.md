@@ -1,6 +1,6 @@
 ---
 title: Adobe Target v2 Extension Overview
-description: Learn about the Adobe Target v2 extension in Adobe Experience Platform Launch.
+description: Learn about the Adobe Target v2 extension in Adobe Experience Platform Data Collection tags.
 exl-id: 46d652f7-4b27-40f7-8fb1-56de3afa6055
 ---
 # Adobe Target v2 extension overview
@@ -21,7 +21,7 @@ To configure the extension, open the Extensions tab, hover over the extension, a
 
 ### at.js settings
 
-All of your at.js settings, with the exception of the Timeout, are automatically retrieved from your at.js configuration in the Target user interface. The extension only retrieves settings from the Target user interface when it is first added, so all settings should be managed in the Adobe Experience Platform Launch interface if additional updates are needed.
+All of your at.js settings, with the exception of the Timeout, are automatically retrieved from your at.js configuration in the Target UI. The extension only retrieves settings from the Target UI when it is first added, so all settings should be managed in the Adobe Experience Platform Data Collection UI if additional updates are needed.
 
 The following configuration options are available:
 
@@ -59,7 +59,7 @@ The Target extension provides the following actions in the Then portion of a rul
 
 ### Load Target
 
-Add this action to your Platform Launch rule where it makes sense to load Target in the context of your rule. This loads the at.js library into the page. In most implementations, Target should be loaded on every page of your site. Adobe recommends using the Load Target action only if it is preceded by a Target call. Otherwise, you might run into issues like the Analytics call being delayed.
+Add this action to your Data Collection tags rule where it makes sense to load Target in the context of your rule. This loads the at.js library into the page. In most implementations, Target should be loaded on every page of your site. Adobe recommends using the Load Target action only if it is preceded by a Target call. Otherwise, you might run into issues like the Analytics call being delayed.
 
 No configuration is needed.
 
@@ -111,20 +111,20 @@ After you have saved this rule, you'll need to add it to a Library and build/dep
 
 ## Adobe Target extension with an asynchronous deployment
 
-Platform Launch can be deployed asynchronously. If you are loading the Platform Launch library asynchronously with Target inside it, then Target will also be loaded asynchronously. This is a fully supported scenario, but there is one additional consideration that must be handled.
+Adobe Experience Platform Data Collection can be deployed asynchronously. If you are loading the Data Collection tags library asynchronously with Target inside it, then Target will also be loaded asynchronously. This is a fully supported scenario, but there is one additional consideration that must be handled.
 
-In asynchronous deployments, it is possible for the page to finish rendering the default content before the Target library is fully loaded and has performed the content swap. This can lead to what is known as "flicker" where the default content shows up briefly before being replaced by the personalized content specified by Target. If you want to avoid this flicker, we suggest you use a pre-hiding snippet and load the Platform Launch bundle asynchronously to avoid any content flicker.
+In asynchronous deployments, it is possible for the page to finish rendering the default content before the Target library is fully loaded and has performed the content swap. This can lead to what is known as "flicker" where the default content shows up briefly before being replaced by the personalized content specified by Target. If you want to avoid this flicker, we suggest you use a pre-hiding snippet and load the Data Collection tags bundle asynchronously to avoid any content flicker.
 
 Here are some things to keep in mind when using the pre-hiding snippet:
 
-* The snippet must be added before loading the Platform Launch header embed code.
-* This code can't be managed by Platform Launch, so it must be added to the page directly.
+* The snippet must be added before loading the Data Collection tags header embed code.
+* This code can't be managed by Data Collection tags, so it must be added to the page directly.
 * The page displays when the earliest of the following events occur:
   * When the page load response has been received
   * When the page load request times out
   * When the snippet itself times out
 * The "Fire Page Load Request” action should be used on all pages using the pre-hiding snippet to minimize the duration of the pre-hiding.
-* Body hiding must also be enabled in the Page Load Request action in the Page Load rule you use for Target in Platform Launch; otherwise, all Page loads remain hidden for the timeout period.
+* Body hiding must also be enabled in the Page Load Request action in the Page Load rule you use for Target in Data Collection tags; otherwise, all Page loads remain hidden for the timeout period.
 
 The pre-hiding code snippet is as follows and can be minified. The configurable options are at the end:
 
