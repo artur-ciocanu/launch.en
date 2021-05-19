@@ -20,9 +20,7 @@ If you want Adobe Experience Platform Launch to work with your CSP, there are tw
 * **The source for your Platform Launch library must be trusted.** If this condition is not met, the Platform Launch library and other required JavaScript files are blocked by the browser and won't load on the page.
 * **Inline scripts must be allowed.** If this condition is not met, Custom Code rule actions are blocked on the page and won't execute properly.
 
-If you want to use Platform Launch _and_ have a CSP in place, you have to fix both of these problems without incorrectly marking other scripts as safe. Increasing security comes at the price of increasing the amount of work on your part.
-
-If you want to use [!DNL Platform Launch] and have a CSP in place, you have to address both of these issues without incorrectly marking other scripts as safe. The rest of this document provides guidance on how to achieve this.
+Increased security comes at the price of increasing the amount of work on your part. If you want to use [!DNL Platform Launch] and have a CSP in place, you have to address both of these issues without incorrectly marking other scripts as safe. The rest of this document provides guidance on how to achieve this.
 
 ## Add [!DNL Platform Launch] as a trusted source
 
