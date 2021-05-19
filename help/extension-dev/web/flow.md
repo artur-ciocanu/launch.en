@@ -19,6 +19,6 @@ The rule processing flow contains the following phases:
 
 1. The `settings` and the `trigger` method are provided to the event library module at startup.
 2. When the event library module determines the event has occurred, the event library module calls `trigger`.
-3. Platform Launch passes `settings` into the rule’s condition library modules where conditions are evaluated.
+3. Data Collection tags passes `settings` into the rule’s condition library modules where conditions are evaluated.
 4. Each condition library module returns whether a condition evaluates to true.
 5. If all conditions pass, the rule’s actions are executed.
