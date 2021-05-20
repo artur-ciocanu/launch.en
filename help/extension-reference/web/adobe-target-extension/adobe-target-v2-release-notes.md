@@ -5,6 +5,12 @@ exl-id: b18889e8-a2a2-44bf-acb6-7693b4d1bbca
 ---
 # Adobe Target v2 Extension release notes
 
+## May 19, 2021
+
+### Adobe Target v2 Extension 0.14.1
+
+- Fix regression introduced with v0.14 release where Load Target action was firing global mbox calls
+
 ## May 14, 2021
 
 ### Adobe Target v2 Extension 0.14
