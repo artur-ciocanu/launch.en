@@ -261,11 +261,11 @@ The following options appear:
 
 The Audience Manager subdomain is assigned by Adobe Audience Manager. It is sometimes referred to as your "Partner Name" or "Partner Subdomain." Contact your Adobe consultant or Customer Care if you do not know your Partner Name.
 
-You can configure advanced settings by showing the advanced settings and entering your preferences.
+You can configure advanced settings by selecting **Show advanced settings** and entering your preferences.
 
 ![](/help/assets/an-ext-aam-adv.png)
 
-For information about each setting, select the info icon, or refer to the [Adobe Audience Manager documentation](https://docs.adobe.com/content/help/en/audience-manager/user-guide/aam-home.html).
+For information about each setting, hover over the info icon, or refer to the [Adobe Audience Manager documentation](https://docs.adobe.com/content/help/en/audience-manager/user-guide/aam-home.html).
 
 ## Analytics extension action types
 
