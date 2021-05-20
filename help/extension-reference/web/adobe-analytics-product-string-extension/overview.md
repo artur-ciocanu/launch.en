@@ -1,6 +1,6 @@
 ---
 title: Adobe Analytics Product String Extension Overview
-description: Learn about the Adobe Analytics Product String extension in Adobe Experience Platform Launch.
+description: Learn about the Adobe Analytics Product String extension in Adobe Experience Platform Data Collection tags.
 exl-id: a2236a39-3fcd-4d5a-8d79-a57a22818146
 ---
 # Adobe Analytics Product String extension overview
