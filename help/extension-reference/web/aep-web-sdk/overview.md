@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Platform Web SDK Extension Overview
-description: Learn about the Adobe Experience Platform Web SDK extension in Adobe Experience Platform Launch.
+description: Learn about the Adobe Experience Platform Web SDK extension in Adobe Experience Platform Data Collection tags.
 exl-id: 48e09cb9-fc9e-41c1-b907-fd74d3798dbe
 ---
 # Adobe Experience Platform Web SDK extension overview
