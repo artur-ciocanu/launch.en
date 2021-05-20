@@ -39,15 +39,15 @@ The "*Adobe Analytics*" tags extension for Adobe Experience Platform must be ins
     
 ## Configure Adobe Experience Manager (AEM)
 
-This section describes how to configure AEM with data collection tags, how to enable Asset Insight in AEM, and how to Enable UUID tracking for Assets.
+This section describes how to configure AEM with tags in Adobe Experience Platform, how to enable Asset Insight in AEM, and how to Enable UUID tracking for Assets.
 
-### Integrate AEM with data collection tags
+### Integrate AEM with tags in Adobe Experience Platform
 
-The recommended integration of [data collection tags(https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) with Adobe Experience Manager is done via Adobe I/O.
+The recommended integration of [tags(https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) with Adobe Experience Manager is done via Adobe I/O.
 
-1. [Connect AEM with data collection tags using Adobe I/O](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
+1. [Connect AEM with tags in Adobe Experience Platform using Adobe I/O](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
 
-1. [Create a data collection tags Cloud Service configuration](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/create-launch-cloud-service.html).
+2. [Create an Adobe Experience Platform Cloud Service configuration](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/create-launch-cloud-service.html).
 
 ### Enable Asset Insight in AEM
 
@@ -77,7 +77,7 @@ This extension has two events and one action.
 
 ### Asset impressions
     
-Add the "Set AA Variables" action to a new or existing data collection tags rule that fires on every page and sends an Analytics image request. The "Set AA Variables" action must appear **before** the "Adobe Analytics - Send Beacon" action. Additonal actions can be added as required.
+Add the "Set AA Variables" action to a new or existing tags rule that fires on every page and sends an Analytics image request. The "Set AA Variables" action must appear **before** the "Adobe Analytics - Send Beacon" action. Additonal actions can be added as required.
     
 In the **[Set AA Variables]** config page, select the **[Viewed Assets]** (default) option. This only sets the Impressions event for assets that are actually seen by the visitor.
 
