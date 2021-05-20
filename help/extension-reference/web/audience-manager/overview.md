@@ -1,11 +1,11 @@
 ---
 title: Adobe Audience Manager Extension Overview
-description: Learn about the Adobe Audience Manager extension in Adobe Experience Platform Launch.
+description: Learn about the Adobe Audience Manager extension in Adobe Experience Platform Data Collection tags.
 exl-id: e3619761-f45c-44a9-96d1-77b7666abb75
 ---
 # Adobe Audience Manager extension overview
 
-With the Audience Manager extension, you can integrate the DIL code used by Audience Manager with your properties in Adobe Experience Platform Launch.
+With the Audience Manager extension, you can integrate the DIL code used by Audience Manager with your properties in Adobe Experience Platform Data Collection tags.
 
 Use this reference for information about the options available when using this extension to build a rule.
 
