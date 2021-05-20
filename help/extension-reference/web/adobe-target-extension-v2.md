@@ -107,7 +107,7 @@ A Target rule with this basic implementation looks like this:
 
 ![](/help/assets/targetv2deploy.png)
 
-After you have saved this rule, you'll need to add it to a Library and build/deploy so that you can test the behavior.
+After you have saved this rule, you'll need to add it to a Library and build/deploy it so that you can test the behavior.
 
 ## Adobe Target extension with an asynchronous deployment
 
