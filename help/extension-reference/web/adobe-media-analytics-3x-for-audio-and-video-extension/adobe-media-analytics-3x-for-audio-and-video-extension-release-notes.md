@@ -1,6 +1,6 @@
 ---
 title: Release Notes for the Adobe Media Analytics (3.x SDK) for Audio and Video Extension
-description: The latest release notes for the Adobe Media Analytics (3.x SDK) for Audio and Video extension in Adobe Experience Platform Launch.
+description: The latest release notes for the Adobe Media Analytics (3.x SDK) for Audio and Video extension in Adobe Experience Platform Data Collection tags.
 exl-id: 59e08258-177d-46f6-bcd7-a4c818766beb
 ---
 # Adobe Media Analytics (3.x SDK) for Audio and Video release notes
@@ -19,4 +19,4 @@ exl-id: 59e08258-177d-46f6-bcd7-a4c818766beb
 * Uses Media Collection API for tracking media
 * Supports player state tracking
 
-The [Adobe Media Analytics (3.x SDK) for Audio and Video Extension](/help/extension-reference/web/adobe-media-analytics-3x-for-audio-and-video-extension/overview.md) adds the core Media Analytics 3.x JavaScript library. This library provides the functionality for tracking media to an Adobe Experience Platform Launch site or project.
+The [Adobe Media Analytics (3.x SDK) for Audio and Video Extension](/help/extension-reference/web/adobe-media-analytics-3x-for-audio-and-video-extension/overview.md) adds the core Media Analytics 3.x JavaScript library. This library provides the functionality for tracking media to an Adobe Experience Platform Data Collection site or project.
