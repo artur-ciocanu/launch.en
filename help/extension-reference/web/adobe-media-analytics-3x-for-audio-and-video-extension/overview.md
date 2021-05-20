@@ -1,13 +1,13 @@
 ---
 title: Adobe Media Analytics (3.x SDK) for Audio and Video Extension Overview
-description: Learn about the Adobe Media Analytics (3.x SDK) for Audio and Video extension in Adobe Experience Platform Launch.
+description: Learn about the Adobe Media Analytics (3.x SDK) for Audio and Video extension in Adobe Experience Platform Data Collection tags.
 exl-id: a691fa2b-cee1-4081-b83c-4f1552e41c9e
 ---
 # Adobe Media Analytics (3.x SDK) for Audio and Video extension overview
 
 Use this documentation for information on installing, configuring, and implementing the Adobe Media Analytics (3.x SDK) for Audio and Video extension (Media Analytics extension). Included are the options available when using this extension to build a rule, along with examples and links to samples.
 
-The Media Analytics (MA) extension adds the core JavaScript Media SDK (Media 3.x SDK). This extension provides the functionality for adding the `Media` tracker instance to an Adobe Experience Platform Launch site or project. The MA extension requires two additional extensions:
+The Media Analytics (MA) extension adds the core JavaScript Media SDK (Media 3.x SDK). This extension provides the functionality for adding the `Media` tracker instance to an Adobe Experience Platform Data Collection site or project. The MA extension requires two additional extensions:
 
 * [Analytics Extension](/help/extension-reference/web/adobe-analytics-extension/overview.md)
 * [Experience Cloud ID Extension](/help/extension-reference/web/experience-cloud-id-service-extension/overview.md)
@@ -16,7 +16,7 @@ The Media Analytics (MA) extension adds the core JavaScript Media SDK (Media 3.x
 >
 >This extension deploys with Media 3.x SDK, which is not backward compatible with Media 2.x SDK. If your page already uses Media 2.x SDK, use [Adobe Media Analytics for Audio and Video Extension](/help/extension-reference/web/adobe-media-analytics-for-audio-and-video-extension/overview.md) instead of this extension.
 
-After you have included all three of the extensions mentioned above in your Platform Launch project, you can proceed in one of two ways:
+After you have included all three of the extensions mentioned above in your Data Collection tags project, you can proceed in one of two ways:
 
 * Use `Media` APIs from your web app
 * Include, or build, a player-specific extension that maps specific media player events to the APIs on the `Media` tracker instance. This instance is exposed through the MA extension.
@@ -100,4 +100,4 @@ The MA extension exposes `media` as shared module to other extensions. (For addi
 
 >[!NOTE]
 >
->**Testing:** For this release, to test your extension you must upload it to [Adobe Experience Platform Launch](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/73a73bd5ff53162339ce5ded3f4bba4712146d20/extension-reference/launch.adobe.com), where you have access to all dependent extensions.
+>**Testing:** For this release, to test your extension you must upload it to [Adobe Experience Platform Data Collection tags](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/73a73bd5ff53162339ce5ded3f4bba4712146d20/extension-reference/launch.adobe.com), where you have access to all dependent extensions.
