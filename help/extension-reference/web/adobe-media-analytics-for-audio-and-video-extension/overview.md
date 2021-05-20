@@ -194,7 +194,7 @@ The _Open Video_ action provides various configurations for creating and customi
 
   UI Code to configure the Action is defined here.
 
-* [\[...\]/actions/openVideo.js](https://github.com/adobe/reactor-adobe-va-sample-player/blob/master/src/lib/actions/openVideo.js) - This file exports a function that gets executed when the Action is triggered as part of the launch rule.
+* [\[...\]/actions/openVideo.js](https://github.com/adobe/reactor-adobe-va-sample-player/blob/master/src/lib/actions/openVideo.js) - This file exports a function that gets executed when the Action is triggered as part of the Data Collection tags rule.
 
   This is a code snippet from `openVideo.js` where the `openVideo` Action is executed:
 
