@@ -1,6 +1,6 @@
 ---
 title: Shared modules for the Adobe Analytics extension
-description: Learn about the shared library modules provided by the Adobe Analytics extension in Adobe Experience Platform Launch.
+description: Learn about the shared library modules provided by the Adobe Analytics extension in Adobe Experience Platform Data Collection tags.
 exl-id: b4f502d5-843f-43ef-a2f6-90016bc0c6f8
 ---
 # Shared modules for the Adobe Analytics extension
@@ -23,7 +23,7 @@ getTracker().then(function(tracker) {
 
 ### Verifying that Adobe Analytics has been installed
 
-It's possible that Adobe Analytics has not been installed or included in the same Platform Launch library as your extension. Because of this, it's highly recommended that you check for this case in your code and handle it appropriately. The following JavaScript is an example of how you might implement this:
+It's possible that Adobe Analytics has not been installed or included in the same Data Collection tags library as your extension. Because of this, it's highly recommended that you check for this case in your code and handle it appropriately. The following JavaScript is an example of how you might implement this:
 
 ```js
 var getTracker = turbine.getSharedModule('adobe-analytics', 'get-tracker');
@@ -37,12 +37,12 @@ if (getTracker) {
 }
 ```
 
-If `getTracker` is `undefined`, the Adobe Analytics extension does not exist in the Platform Launch library. You can customize the logged message to accurately reflect what functionality may be lost if Adobe Analytics is not installed.
+If `getTracker` is `undefined`, the Adobe Analytics extension does not exist in the tags library. You can customize the logged message to accurately reflect what functionality may be lost if Adobe Analytics is not installed.
 
 
 ## [!DNL augment-tracker]
 
-After the tracker object is initialized, the next step in the process is augmentation. This step gives your extension the opportunity to augment the tracker with anything necessary before any variables have been applied from the Adobe Analytics extension configuration or before any beacons have been sent.
+After the tracker object is initialized, the next step in the process is augmentation. This step allows your extension to augment the tracker with anything necessary before any variables have been applied from the Adobe Analytics extension configuration or before any beacons have been sent.
 
 In addition, your extension has the opportunity to pause the tracker initialization process while your extension performs any asynchronous task of its own, such as fetching data or JavaScript from a server.
 
