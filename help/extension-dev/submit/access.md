@@ -1,13 +1,13 @@
 ---
 title: Grant User Access
-description: Set up your team members' user accounts and permissions for Adobe Experience Platform Data Collection tags.
+description: Set up your team members' user accounts and permissions for tags in Adobe Experience Platform.
 exl-id: eae1df66-ce22-44fe-a256-c8acda0b19b9
 ---
 # Grant user access
 
 Before you get started with your extension_package, you need to set up your team members with user accounts and permissions.  This is accomplished in the [Adobe Admin Console](https://adminconsole.adobe.com/).
 
-This document provides steps for granting access to Adobe Experience Platform Data Collection tags through the Admin Console.
+This document provides steps for granting access to tags in Adobe Experience Platform through Admin Console.
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ Your Adobe Experience Cloud organization administrator should sign in to the [Ad
 
 ![Admin console overview tab](../images/getting-started/admin-console-overview.png)
 
-Some of you may have access to more than one Organization. In order to add the tags product to the correct Org, select the name of the Organization you see in the upper right corner of the screen, then choose the one where you want to use Data Collection tags:
+Some of you may have access to more than one Organization. In order to add the tags capability to the correct Org, select the name of the Organization you see in the upper right corner of the screen, then choose the one where you want to use tags.
 
 ![Admin console Org selection dropdown](../images/getting-started/admin-console-choose-org.png)
 
@@ -66,8 +66,8 @@ To author extensions, you and your team need - at a minimum - `Manage Properties
 
 So far, we have chosen the appropriate Organization, created a Product Profile, added Users to the product profile, and assigned permissions.
 
-This completes the required setup in the Administration Console! You and your team members that have been set up as users can now sign in to [Data Collection tags](https://launch.adobe.com/).
+This completes the required setup in Admin Console. You and your team members that have been set up as users can now sign in to [the Data Collection UI](https://launch.adobe.com/).
 
 ## Confirm Provisioning
 
-After your company is provisioned with access to Adobe Experience Platform Data Collection and your users are set up as described above, you should be able to access the [tags](https://launch.adobe.com/) production environment. If you have been provisioned for Data Collection tags and have completed the Admin Console steps above, but still cannot sign in to [tags](https://launch.adobe.com/), please contact your Adobe support representatives.
+After your company is provisioned with access to tags and your users are set up as described above, you should be able to access the [tags](https://launch.adobe.com/) production environment. If you have been provisioned for tags and have completed the Admin Console steps above, but still cannot sign in to tags, please contact your Adobe support representatives.
