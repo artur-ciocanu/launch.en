@@ -18,11 +18,11 @@ This guide assumes you are an Organization Admin as designated by the Admin Cons
 
 ## Choose your organization
 
-Your Adobe Experience Cloud organization administrator should sign in to the [Admin Console](https://adminconsole.adobe.com/). The first screen is the Overview:
+Your Adobe Experience Cloud organization administrator should sign in to the [Admin Console](https://adminconsole.adobe.com/). The first screen is the overview:
 
 ![Admin console overview tab](../images/getting-started/admin-console-overview.png)
 
-Some of you may have access to more than one Organization. In order to add the tags capability to the correct Org, select the name of the Organization you see in the upper right corner of the screen, then choose the one where you want to use tags.
+Some of you may have access to more than one organization (Org). In order to add the tags capability to the correct Org, select the name of the organization you see in the upper right corner of the screen, then choose the one where you want to use tags.
 
 ![Admin console Org selection dropdown](../images/getting-started/admin-console-choose-org.png)
 
@@ -34,11 +34,11 @@ Choose the **[!UICONTROL Products]** link at the top, and **[!UICONTROL Experien
 
 ![Admin console Products tab](../images/getting-started/admin-console-products-launch.png)
 
-The screenshot above shows an example Profile, you may not have one yet. To create one, select **[!UICONTROL New Profile**. On the **Create a New Profile** screen, just add a **Profile Name** (Data Collection testing, for example), and an optional **Description**, then select **[!UICONTROL Save]**:
+The screenshot above shows an example profile, you may not have one yet. To create one, select **[!UICONTROL New Profile**. On the **Create a New Profile** screen, just add a **Profile Name** (Data Collection testing, for example), and an optional **Description**, then select **[!UICONTROL Save]**:
 
 ![Create New Profile display](../images/getting-started/admin-console-create-a-new-profile.png)
 
-Now that we have the product profile in our Organization, let's add our users.
+Now that we have the product profile in our organization, let's add our users.
 
 ## Assign users to the product profile
 
@@ -63,13 +63,13 @@ To author extensions, your team must have a minimum of the following permissions
 - "Manage Properties" from the company group.
 - "Manage Extensions", "Manage Environments", and "Develop" from the property group.
   
-You can create additional product profiles with more limited rights later if you like, but for now simply select **[!UICONTROL + Add all]** for both Company Rights and Property Rights. Make sure to select **[!UICONTROL Save]** on each.
+You can create additional product profiles with more limited rights later if you like, but for now simply select **[!UICONTROL + Add all]** for both **Company Rights** and **Property Rights**. Make sure to select **[!UICONTROL Save]** on each.
 
 ![Manage Property Rights](../images/getting-started/admin-console-add-all-property-rights.png)
 
 ![Manage Company Rights](../images/getting-started/admin-console-add-all-company-rights.png)
 
-So far, we have chosen the appropriate organization, created a product profile, added Users to the product profile, and assigned permissions.
+So far, we have chosen the appropriate organization, created a product profile, added users to the product profile, and assigned permissions.
 
 This completes the required setup in Admin Console. You and your team members that have been set up as users can now sign in to [the Data Collection UI](https://launch.adobe.com/).
 
