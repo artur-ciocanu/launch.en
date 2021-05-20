@@ -76,7 +76,7 @@ You see 'AEP' and my 'Demo Sandbox' property here but you won't see any properti
 
 Because you want to use this property for extension development testing, you also need to expand the Advanced Options and make sure to check the box for "Configure for extension development".
 
-![](../images/getting-started/launch_create_a_dev_property.png)
+![](../images/getting-started/launch-create-a-dev-property.png)
 
 Select **Save** at the bottom to save your new property.
 
