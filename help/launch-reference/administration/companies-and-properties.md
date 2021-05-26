@@ -108,7 +108,7 @@ Navigate to your company page, then select **[!UICONTROL Add Property]**, or sel
    **Domains:** The base URL of any sites you plan to deploy this property to
 
 1. (Advanced) **[!UICONTROL Run rule components in sequence]** Select this checkbox to make conditions and actions wait for the previous one to complete before they run
-1. (Advanced) **[!UICONTROL Return an empty string for missing data elements:]** If you reference a data element that does not exist within a library, that would normally return `undefined`.  Select this check box if you want that scenario to give you an empty string instead.
+1. (Advanced) **[!UICONTROL Return an empty string for missing data elements:]** If you reference a data element that does not exist within a library, that would normally return `undefined`.  Select this check box if you want that scenario to return an empty string instead.
 1. (Advanced) **[!UICONTROL Configure for extension development:]** Select this check box if you plan to install development extensions that are being actively developed by your company
 1. Select **[!UICONTROL Save]**.
 
