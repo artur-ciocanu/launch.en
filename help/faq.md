@@ -1,13 +1,13 @@
 ---
 title: FAQ
-description: Get answers to frequently asked questions about tags in Adobe Experience Platform Data Collection.
+description: Get answers to frequently asked questions about tags in Adobe Experience Platform.
 exl-id: 1192c0cd-fa2d-4c82-978c-af75a70d060b
 ---
-# Adobe Experience Platform Data Collection tags FAQ
+# Tags troubleshooting guide
 
-This document provides answers to frequently asked questions about tags in Adobe Experience Platform Data Collection.
+This document provides answers to frequently asked questions about tags in Adobe Experience Platform.
 
-## What are tags in Data Collection?
+## What are tags capabilities in Adobe Experience Platform?
 
 Tags are the next-generation of the [!DNL Adobe] tag-management capability, built into the [!DNL Adobe Experience Platform]. Tags enables clients to:
 
@@ -17,23 +17,9 @@ Tags are the next-generation of the [!DNL Adobe] tag-management capability, buil
 
 Tags is an advanced code and configuration delivery system that evaluates conditions and executes actions to efficiently and effectively deploy client-side libraries and products. It also provides a highly scalable approach to managing and building integrations and has a robust set of APIs for programmatic interaction.
 
-## Are Data Collection tags just an updated DTM?
+## How much do tags in Adobe Experience Platform cost?
 
-No. Data Collection tags are a tag manager, but it is not an update to DTM. Tags is an entirely new product with a new code-base. It has been redesigned from scratch using modern front-end development practices and an API-first approach. Everything is built on a robust set of APIs, which makes the system very powerful, flexible, and customizable.
-
-## Will the current DTM product remain available?
-
-For now, yes, but not indefinitely. DTM has a [defined sunset plan](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/dtm-plans-for-a-sunset/ba-p/331077) with specific milestones that will progressively limit its functionality. The next Milestone is set for October of 2020 when DTM properties will become read-only. At this time, no major feature enhancements are planned for legacy [!DNL DTM].
-
-A migration assistant is available to copy properties from DTM into tags, you can read more about that [here](https://docs.adobe.com/content/help/en/launch/using/reference/upgrade/overview.html) and [here](https://docs.adobe.com/content/help/en/core-services-learn/tutorials/launch-web/migrate-from-dynamic-tag-manager-to-launch.html).
-
-## How much do Digital Content tags cost?
-
-There is no additional charge for Data Collection tags. It is available for any [!DNL Adobe Experience Cloud] customer.
-
-## Do I have to change the embed codes in my current DTM implementation?
-
-No, you don't have to change your production embed codes if you're currently using the existing (legacy) [!DNL DTM] system. You can continue to work in your current [!DNL DTM] Company and Web Properties without worrying about changing that embed code. For more details, see the [Data Collection tags help docs](https://docs.adobe.com/content/help/en/launch/using/reference/upgrade/overview.html), and this [blog post](https://medium.com/launch-by-adobe/migrating-from-dtm-to-launch-57548251a86d).
+There is no additional charge for tags capabilities. They are available for any [!DNL Adobe Experience Cloud] customer.
 
 ## I heard there are plug-ins now. What's that about?
 
@@ -49,55 +35,31 @@ Tags have opened its virtually self-service portal, which extension developers c
 
 We have many customers who also choose to build their own private extensions for use only within their own companies using the same extension development methods.
 
-## Do Digital Content tags meet my company's security standards?
+## Do tags in Adobe Experience Platform meet my company's security standards?
 
 Tags are SOC-2 and Gramm-Leach-Bliley Act ready. Tags also offer the capability of being self-hosted. JavaScript libraries and mobile configurations can be served from your own servers or the CDN of your choice. For I.T. and security teams, this gives you the ability to run automated testing, to check the files into your own version control system, and to fully comply with any internal production migration processes, security-related or otherwise.
 
-## When can I move to Digital Content tags?
+## When can I move to tags?
 
-Now! You should move to tags in Adobe Experience Platform Data Collection now. The migration process makes it easy to copy your DTM properties into tags. We recommend extensive testing, but we've automated as much as we can (no on-page embed code changes, and automated migration of rules and data elements).
+Now is the best time to move over to tags in Adobe Experience Platform. The migration process makes it easy to copy your DTM properties into tags. We recommend extensive testing, but we've automated as much as we can (no on-page embed code changes, and automated migration of rules and data elements).
 
-## Which capabilities exist in Data Collection tags that don't exist in legacy DTM?
-
-Tags have many major capabilities that aren't comparable to legacy [!DNL DTM]:
-
-- Deploy non-[!DNL Adobe] client-side browser technologies quickly and easily
-
-  Using extensions, clients and partners can easily control in-browser technologies in the interface, without managing custom code.
-
-- Enterprise-grade publishing
-
-  Compartmentalize and control each piece of your libraries to deploy precisely what you need, where you need it, and when you need it.
-
-- Robust approval workflows
-
-  Flexible approval workflows allow custom processes to match your existing internal approval processes.
-
-- Granular rights management
-
-  Administrators will designate which extensions users can, and can't use. They will also control which areas within tags are accessible to certain users.
-
-- APIs
-
-  Many customers' different integrations with tags use the APIs. Some have hooked tags into their site deployment pipelines, others have made property cloning tools, while others have made applications to download local copies of their properties where they can make changes and sync them back to tags.
-
-## Do Data Collection tags support single-page apps and my favorite framework?
+## Do tags in Adobe Experience Platform support single-page apps and my favorite framework?
 
 Yes. Tags have the capabilities to give users and extension developers flexibility in collecting, managing, and distributing data within single-page application experiences or Ajax-heavy pages or sites. This applies regardless of your development framework preferences, whether that's Angular, React.js, Ember, Meteor, etc.
 
-## Do Data Collection tags support dynamic data layers?
+## Do tags support dynamic data layers?
 
 Yes. Tags include an extension that specializes in listening for changes in dynamic data layers.
 
 ## Which event types do tags support?
 
-Event types are available through extensions. The pre-loaded [!DNL DTM] extension includes 30 built-in event types. Other extensions could add additional event types. For example, the YouTube extension includes four video event types: play, pause, end, and time played. Through extensions, tags can support any other browser event types or synthetic event types, such as specific visitor activity sequences.
+Event types are available through extensions. The amount of event types supported varies by extension. For example, the YouTube extension includes four video event types: play, pause, end, and time played. Through extensions, tags can support any other browser event types or synthetic event types, such as specific visitor activity sequences.
 
-## Will Data Collection tags speed up (or slow down) my website?
+## Will tags speed up (or slow down) my website?
 
 Tags are designed to deliver and run marketing and advertising technologies on your website as efficiently as possible using today's best practices. When used properly, tags have been proven to improve the performance of websites over alternative methods that provide similar functionality.
 
-## Which browsers does Data Collection tags support?
+## Which browsers do tags support?
 
 Browser support in the tags client-side libraries:
 
@@ -116,9 +78,9 @@ Browser support in the tags application interface:
 - [!DNL Firefox] (latest)
 - [!DNL Microsoft Edge] (latest)
 
-Legacy [!DNL DTM] supported older versions of [!DNL Internet Explorer], but over the last few years, the percentage of overall web users with older, outdated browsers has dropped to a small segment for our clients. Most [!DNL Adobe] clients now leverage more modern web platform features in current browsers and create better user experiences, including single-page applications and interactive Ajax-heavy websites and pages. As most clients move to more modern approaches with their sites, they demand a solution like tags that enables those approaches.
+Most [!DNL Adobe] clients leverage more modern web platform features in current browsers to create better user experiences, including single-page applications and interactive Ajax-heavy websites and pages. As most clients move to more modern approaches with their sites, they demand a solution like tags that enables those approaches.
 
-## Do Data Collection tags work on native mobile apps?
+## Do tags work on native mobile apps?
 
 Yes! Tags now support mobile properties and configuration for the new [!DNL Adobe Experience Platform] [Mobile SDKs](https://sdkdocs.com) to implement data collection and delivery in a native mobile app environment. Please visit [documentation](https://sdkdocs.com) to learn more.
 
