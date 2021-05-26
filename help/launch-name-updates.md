@@ -2,6 +2,7 @@
 title: Adobe Experience Platform Launch name update
 description: A complete list of terms and UI elements that are affected by the Adobe Experience Platform Launch rebranding.
 ---
+# Adobe Experience Platform Launch name update
 
 Adobe Experience Platform Launch is being integrated into Adobe Experience Platform as a suite of data collection technologies. Launch is no longer to be considered a separate service under Adobe Experience Platform. Instead, its constituent features are capabilities of Adobe Experience Platform as a whole. As a result of this distinction between their previous pseudo-status as a service and new classification as a feature/capability, the Adobe Experience Platform feature names are not capitalized.
 
