@@ -5,19 +5,24 @@ exl-id: db12595b-ab17-410e-ac9a-2d2fe469c2b6
 ---
 # Upload and implement end-to-end testing
 
+>**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](/help/launch-name-updates.md) for a consolidated reference of the terminology changes.
+
 Testing extensions involves using the Adobe Experience Platform Launch API and/or command-line tools to upload your extension packages, then using the Platform Launch UI to install your extension package to a property and exercise its capabilities inside a Platform Launch library and build.
 
 The basic steps to achieve this are:
 
-1. [Validate your extension](#validate)
-1. [Create an Adobe I/O Integration](#integration)
-1. [Upload your extension package](#upload)
-1. [Create a development property](#property)
-1. [Install your extension](#install-extension)
-1. [Create resources to test your extension](#resources)
-1. [Publish your changes](#publish)
-1. [Install Platform Launch on a test site](#install-launch)
-1. [Test](#test)
+- [Upload and implement end-to-end testing](#upload-and-implement-end-to-end-testing)
+  - [Validate your extension {#validate}](#validate-your-extension-validate)
+  - [Create an Adobe I/O integration {#integration}](#create-an-adobe-io-integration-integration)
+  - [Upload Your extension package {#upload}](#upload-your-extension-package-upload)
+  - [Create a development property {#property}](#create-a-development-property-property)
+  - [Install your extension {#install-extension}](#install-your-extension-install-extension)
+  - [Create resources to test your extension {#resources}](#create-resources-to-test-your-extension-resources)
+    - [Data elements](#data-elements)
+    - [Rules](#rules)
+  - [Publish your changes {#publish}](#publish-your-changes-publish)
+  - [Install Platform Launch on a test site {#install-launch}](#install-platform-launch-on-a-test-site-install-launch)
+  - [Test {#test}](#test-test)
 <!-- 1. [Document](#document) -->
 
 As you are testing (Step 9 above), when you discover issues that need to be fixed, you will:
