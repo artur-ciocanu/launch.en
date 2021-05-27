@@ -5,7 +5,7 @@ exl-id: acf16175-b9aa-4037-9b42-6b201ff94d0c
 ---
 # Condition types for edge extensions
 
-A condition-type library module evaluates whether something is true or false. What it evaluates is up to you.
+A condition-type library module evaluates whether something is true or false and returns a boolean value.
 
 >[!IMPORTANT]
 >
@@ -13,7 +13,7 @@ A condition-type library module evaluates whether something is true or false. Wh
 >
 >This document also assumes you are familiar with library modules and how they are integrated in tags extensions. If you require an introduction, see the overview on [library module formatting](./format.md) before returning to this guide.
 
-For example, if you wanted to evaluate whether the user is on the host `example.com`, your module may look like this:
+For example, if you want to evaluate whether the user is on the host `example.com`, your module may look like this.
 
 ```js
 module.exports = (context) => {
@@ -22,7 +22,7 @@ module.exports = (context) => {
 };
 ```
 
-Now, consider a situation where you want to make the hostname configurable by the Adobe Experience Platform data collection user. You may allow the user to input a hostname and then save the hostname to the settings object. The object might look something like this:
+If you want to make the hostname configurable by the user to allow the input of a hostname and save it to the settings object, the object might look similar to this example.
 
 ```js
 {
