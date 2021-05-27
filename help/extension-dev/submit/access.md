@@ -18,11 +18,11 @@ This guide assumes you are an Organization Admin as designated by the Admin Cons
 
 ## Choose your organization
 
-Your Adobe Experience Cloud organization administrator should sign in to the [Admin Console](https://adminconsole.adobe.com/). The first screen is the overview:
+Your Adobe Experience Cloud organization administrator should sign in to the [Admin Console](https://adminconsole.adobe.com/). The first screen is the overview.
 
 ![Admin console overview tab](../images/getting-started/admin-console-overview.png)
 
-Some of you may have access to more than one organization (Org). In order to add the tags capability to the correct Org, select the name of the organization you see in the upper right corner of the screen, then choose the one where you want to use tags.
+Some of you may have access to more than one organization (Org). In order to add the tags capability to the correct Org, select the name of the organization you see in the upper right corner of the screen, then choose the Org where you want to use tags.
 
 ![Admin console Org selection dropdown](../images/getting-started/admin-console-choose-org.png)
 
