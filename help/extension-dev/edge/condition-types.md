@@ -5,7 +5,7 @@ exl-id: acf16175-b9aa-4037-9b42-6b201ff94d0c
 ---
 # Condition types for edge extensions
 
-A condition-type library module evaluates whether something is true or false and returns a boolean value.
+A condition-type library module evaluates whether something is true or false and returns a boolean value. This document provides examples concerning the implementation of edge extension condition types.
 
 >[!IMPORTANT]
 >

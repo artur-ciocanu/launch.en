@@ -5,7 +5,7 @@ exl-id: 76c66d9c-cd40-40f1-a673-cac82e44e437
 ---
 # Action types for edge extensions
 
-An action-type library module is designed to take a predefined action. The effect of this action is entirely up to the author. The module could be created as a beacon or even transform some data from the event.
+An action-type library module is designed to take a predefined action. The effect of this action is entirely defined by the author. The module could be created as a beacon or even transform some data from the event. This document provides examples concerning the implementation of edge extension action types.
 
 >[!IMPORTANT]
 >
