@@ -1,5 +1,5 @@
 ---
-title: Core Extension Overview
+title: Server-side Core Extension Overview
 description: Learn about the server-side Core extension in Adobe Experience Platform Launch.
 exl-id: e3228a8b-abe9-48b5-b39c-6c3b1b955653
 ---
