@@ -5,6 +5,8 @@ exl-id: 8908e22c-346e-454d-b612-b2264b119a50
 ---
 # SFTP hosts
 
+>**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](/help/launch-name-updates.md) for a consolidated reference of the terminology changes.
+
 If you do not want to have Adobe manage your hosted libraries, your other option is to have Adobe Experience Platform Launch deliver builds to a secured SFTP server that you host.
 
 Platform Launch connects to your SFTP site using an encrypted key. There are a few steps to set this up correctly:
