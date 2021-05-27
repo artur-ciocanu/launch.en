@@ -76,12 +76,12 @@ npx @adobe/reactor-uploader
 
 The Uploader will ask you to input several pieces of information.  The technical account ID, API key and other bits of information can be retrieved from the Adobe I/O console.  Navigate to the [Integrations page](https://console.adobe.io/integrations) in the I/O console.  Select the correct Org from the dropdown, find the right integration and select **[!UICONTROL View]**.
 
-* What is the path to your private key? /path/to/private.key. This is the place you saved your private key in step 2 above.
-* What is your Org ID? Copy/paste this from the I/O Console overview page that you left open earlier.
-* What is your technical account ID? Copy/paste from I/O Console.
-* What is your API key? Copy/paste from I/O Console.
-* What is client secret? Copy/paste from I/O console.
-* What is the path to the extension_package you want to upload? /path/to/extension_package.zip.  If you invoke the uploader from within the directory containing your .zip package, you can just select it from the list instead of typing the path.
+- What is the path to your private key? /path/to/private.key. This is the place you saved your private key in step 2 above.
+- What is your Org ID? Copy/paste this from the I/O Console overview page that you left open earlier.
+- What is your technical account ID? Copy/paste from I/O Console.
+- What is your API key? Copy/paste from I/O Console.
+- What is client secret? Copy/paste from I/O console.
+- What is the path to the extension_package you want to upload? /path/to/extension_package.zip.  If you invoke the uploader from within the directory containing your .zip package, you can just select it from the list instead of typing the path.
 
 Your extension package will then be uploaded and the uploader will give you the ID of the extension_package.
 
