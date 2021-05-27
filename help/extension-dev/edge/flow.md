@@ -1,6 +1,6 @@
 ---
 title: Edge Extension Flow
-description: Learn how the components of an Adobe Experience Platform data collection edge extension interact with each other at runtime.
+description: Learn how the components of an edge extension in Adobe Experience Platform interact with each other at runtime.
 exl-id: 1c026502-5d78-4ada-961b-c323125f8cfe
 ---
 # Edge extension flow
@@ -19,6 +19,6 @@ The rule processing flow contains the following phases:
 
 1. The `settings` and the `trigger` method are provided to the event library module at startup.
 2. When the event library module determines the event has occurred, the event library module calls `trigger`.
-3. Data Collection passes `settings` into the rule’s condition-type library modules where conditions are then evaluated.
+3. Data collection passes `settings` into the rule’s condition-type library modules where conditions are then evaluated.
 4. Each condition type returns whether a condition evaluates to true.
 5. If all conditions pass, the rule’s actions are executed.
