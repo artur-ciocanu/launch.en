@@ -30,7 +30,7 @@ module.exports = (context) {
 };
 ```
 
-To make the endpoint configurable by the user and allow the input and persistence of an endpoint to the settings object within the module, the object would look something like this.
+If you want to make the endpoint configurable by the user, and allow the input and persistence of an endpoint to the settings object within the module, the object would look similar to this.
 
 ```json
 {
