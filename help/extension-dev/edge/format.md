@@ -5,6 +5,8 @@ exl-id: 9264898d-c872-4089-ae3e-84a3ccc02f46
 ---
 # Library modules in edge extensions
 
+>**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](help/launch-name-updates.md) for a consolidated reference of the terminology changes.
+
 >[!IMPORTANT]
 >
 >This document covers the library module format for edge extensions. If you are developing a web extension, see the guide on [formatting web extension modules](../web/format.md) instead.
