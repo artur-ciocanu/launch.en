@@ -5,7 +5,7 @@ exl-id: 76c66d9c-cd40-40f1-a673-cac82e44e437
 ---
 # Action types for edge extensions
 
-An action-type library module is intended to take an action--any action. What this action does is entirely up to you. Would you like to send a beacon or perhaps transform some data from the event?
+An action-type library module is designed to take a predefined action. The effect of this action is entirely up to the author. The module could be created as a beacon or even transform some data from the event.
 
 >[!IMPORTANT]
 >
@@ -13,7 +13,7 @@ An action-type library module is intended to take an action--any action. What th
 >
 >This document also assumes you are familiar with library modules and how they are integrated in tags extensions. If you require an introduction, see the overview on [library module formatting](./format.md) before returning to this guide.
 
-For example, if you wanted to forward some data to a third-party party endpoint, your module may look like this:
+For example, a module to forward some data to a third-party party endpoint may look like this.
 
 ```js
 module.exports = (context) {
@@ -30,7 +30,7 @@ module.exports = (context) {
 };
 ```
 
-Now, consider a situation where you want to make the endpoint configurable by the Adobe Experience Platform data collection user. You could allow the user to input an endpoint and then save the endpoint to the settings object, with the object looking something like this:
+To make the endpoint configurable by the user and allow the input and persistence of an endpoint to the settings object within the module, the object would look something like this.
 
 ```json
 {
@@ -38,7 +38,7 @@ Now, consider a situation where you want to make the endpoint configurable by th
 }
 ```
 
-In order to operate on the user-defined endpoint, your module would need to change to this:
+In order to operate on the user-defined endpoint, your module would need to change to the following example.
 
 ```js
 module.exports = (context) {
