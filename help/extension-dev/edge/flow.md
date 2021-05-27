@@ -1,13 +1,13 @@
 ---
 title: Edge Extension Flow
-description: Learn how the components of an Adobe Experience Platform Data Collection edge extension interact with each other at runtime.
+description: Learn how the components of an Adobe Experience Platform data collection edge extension interact with each other at runtime.
 exl-id: 1c026502-5d78-4ada-961b-c323125f8cfe
 ---
 # Edge extension flow
 
 In edge extensions, each condition, action, and data element type has both a view which allows users to modify settings and a library module to act upon those user-defined settings.
 
-As the following high-level diagram shows, the extension's action type view is shown inside an iframe within the application integrated with Adobe Experience Platform Data Collection. The view is then used to modify settings which are then saved within Data Collection. When the tags runtime library is built, both the extension's action type library module as well as the user-defined settings will be included in the runtime library that gets deployed to the edge node. User-defined settings from Data Collection are injected into the library module at runtime.
+As the following high-level diagram shows, the extension's action type view is shown inside an iframe within the application integrated with Adobe Experience Platform data collection. The view is then used to modify settings which are then saved within data collection. When the tags runtime library is built, both the extension's action type library module as well as the user-defined settings will be included in the runtime library that gets deployed to the edge node. User-defined settings from data collection are injected into the library module at runtime.
 
 ![extension flow diagram](../images/flow/edge/event-processing-flow.png)
 

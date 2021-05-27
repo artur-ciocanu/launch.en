@@ -1,6 +1,6 @@
 ---
 title: Action Types for Edge Extensions
-description: Learn how to define an action-type library module for a tags edge extension in Adobe Experience Platform Data Collection.
+description: Learn how to define an action-type library module for a tags edge extension in Adobe Experience Platform.
 exl-id: 76c66d9c-cd40-40f1-a673-cac82e44e437
 ---
 # Action types for edge extensions
@@ -11,7 +11,7 @@ An action-type library module is intended to take an action--any action. What th
 >
 >This document covers action types for edge extensions. If you are developing a web extension, see the guide on [action types for web extensions](../web/action-types.md) instead.
 >
->This document also assumes you are familiar with library modules and how they are integrated in Data Collection tags extensions. If you require an introduction, see the overview on [library module formatting](./format.md) before returning to this guide.
+>This document also assumes you are familiar with library modules and how they are integrated in tags extensions. If you require an introduction, see the overview on [library module formatting](./format.md) before returning to this guide.
 
 For example, if you wanted to forward some data to a third-party party endpoint, your module may look like this:
 
@@ -30,7 +30,7 @@ module.exports = (context) {
 };
 ```
 
-Now, consider a situation where you want to make the endpoint configurable by the Adobe Experience Platform Data Collection user. You could allow the user to input an endpoint and then save the endpoint to the settings object, with the object looking something like this:
+Now, consider a situation where you want to make the endpoint configurable by the Adobe Experience Platform data collection user. You could allow the user to input an endpoint and then save the endpoint to the settings object, with the object looking something like this:
 
 ```json
 {
