@@ -28,7 +28,7 @@ Some of you may have access to more than one organization (Org). In order to add
 
 ## Create a product profile
 
-A product profile is a group.  Individual rights are assigned to product profiles and any users in the profile will inherit those rights.
+A product profile is a group. Individual rights are assigned to product profiles and any users in the profile will inherit those rights.
 
 Choose the **[!UICONTROL Products]** link at the top, and **[!UICONTROL Experience Cloud]** on the left. If you do not have Adobe Experience Platform Data Collection listed, customers should contact their account team and partners should email <ExchangeTechEC@adobe.com>.
 
@@ -38,7 +38,7 @@ The screenshot above shows an example profile, you may not have one yet. To crea
 
 ![Create New Profile display](../images/getting-started/admin-console-create-a-new-profile.png)
 
-Now that we have the product profile in our organization, let's add our users.
+The product profile has now been added to the organization. Next, add users to the product profile.
 
 ## Assign users to the product profile
 
