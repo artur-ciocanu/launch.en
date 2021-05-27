@@ -5,6 +5,8 @@ exl-id: 3a515c93-f453-49b6-8832-92a51699ced3
 ---
 # Condition types for web extensions
 
+>**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](/help/launch-name-updates.md) for a consolidated reference of the terminology changes.
+
 A condition type library module has one goal: evaluate whether something is true or false. What it evaluates is up to you.
 
 >[!NOTE]
