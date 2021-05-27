@@ -5,6 +5,8 @@ exl-id: b565af18-2208-4c36-9d0f-1939b4c623aa
 ---
 # Getting started with Experience Platform Launch Server Side
 
+>**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](/help/launch-name-updates.md) for a consolidated reference of the terminology changes.
+
 To use Adobe Experience Platform Launch Server Side, data must be sent to Adobe Experience Platform Edge Network using one or more of three options:
 
 * Adobe Experience Platform Web SDK
