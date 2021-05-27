@@ -5,6 +5,8 @@ exl-id: e3228a8b-abe9-48b5-b39c-6c3b1b955653
 ---
 # Server-side Core extension overview
 
+>**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](/help/launch-name-updates.md) for a consolidated reference of the terminology changes.
+
 The Core extension is the default extension released with Adobe Experience Platform Launch Server Side. 
 
 Use this reference for information about the options available when using this extension to build a rule.
