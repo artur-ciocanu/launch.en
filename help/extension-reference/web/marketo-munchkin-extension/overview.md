@@ -5,6 +5,8 @@ exl-id: 3811a44f-fbb1-4c0d-9e12-97346cb7a496
 ---
 # Marketo Munchkin extension overview
 
+>**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](/help/launch-name-updates.md) for a consolidated reference of the terminology changes.
+
 Use this extension to integrate the [!DNL Marketo Munchkin] JavaScript tracking code with your property. [!DNL Marketo Munchkin] JavaScript allows for tracking of end-user page visits and navigates to your Marketo landing pages and external web pages.
 
 ## Install Marketo Munchkin extension
