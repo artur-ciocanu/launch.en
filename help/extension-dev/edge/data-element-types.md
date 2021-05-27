@@ -5,7 +5,7 @@ exl-id: f12d6f0d-8504-4564-8ebb-01ac3e552238
 ---
 # Data-element types in edge extensions
 
-A data-element-type library module retrieves a piece of data. How this piece of data is retrieved is up to you. For example, you can use a data element type to allow Adobe Experience Platform data collection users to retrieve a piece of data from the XDM layer or their custom data layer?
+A data-element-type library module retrieves a piece of data. The module author determines how this piece of data is retrieved. For example, you can use a data element type to allow Adobe Experience Platform users to retrieve a piece of data from the XDM layer or their custom data layer. This document provides examples concerning the implementation of edge extension data element types.
 
 >[!IMPORTANT]
 >
@@ -13,7 +13,7 @@ A data-element-type library module retrieves a piece of data. How this piece of 
 >
 >This document also assumes you are familiar with library modules and how they are integrated in tags extensions. If you require an introduction, see the overview on [library module formatting](./format.md) before returning to this guide.
 
-Consider a situation where you want to allow users to retrieve a piece of data from the custom data layer. Your module may look like this:
+Should you want to allow users to retrieve a piece of data from the custom data layer, your module may look like this example.
 
 ```js
 module.exports = (context) => {
@@ -22,7 +22,7 @@ module.exports = (context) => {
 };
 ```
 
-If you want to make the data returned for the data layer configurable by the Adobe Experience Platform data collection user, you can allow the user to input a key name and then save the name to the `settings` object. The object might look something like this:
+If you want to make the data returned for the data layer configurable by the Adobe Experience Platform data collection user, you can allow the user to input a key name and then save the name to the `settings` object. The object might look something like this.
 
 ```js
 {
