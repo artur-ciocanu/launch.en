@@ -5,6 +5,8 @@ exl-id: 67a9f555-96a6-4000-bfd7-665f90e27640
 ---
 # Extension manifest
 
+>**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](/help/launch-name-updates.md) for a consolidated reference of the terminology changes.
+
 In your extension's base directory you must create a file called `extension.json`. This contains critical details about your extension that allows Adobe Experience Platform Launch to properly consume it. Some of the contents are formed after the manner of [npm's `package.json`](https://docs.npmjs.com/files/package.json).
 
 An example `extension.json` can be found the [Hello World extension](https://github.com/adobe/reactor-helloworld-extension/blob/master/extension.json) GitHub repository.
