@@ -5,6 +5,8 @@ exl-id: 7d76f141-9732-4f68-8a50-9d43b3f4444c
 ---
 # Release notes
 
+>**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](/help/launch-name-updates.md) for a consolidated reference of the terminology changes.
+
 ## May 17, 2021
 
 **Better handling of unsaved changes** - It used to be that whenever you navigated away from a settings view (extensions, data elements, and rule components), you'd get a prompt on whether you wanted to discard your changes. But the logic for determining that wasn't great, so most of the time you got prompted to save changes even though there weren't any.  That's been fixed.  From now on, you should only see that prompt when you have actually made changes.
