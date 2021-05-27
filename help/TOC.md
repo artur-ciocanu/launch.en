@@ -11,6 +11,8 @@ git-repo: https://github.com/AdobeDocs/launch.en
 
 # Experience Platform Launch {#using}
 
+>**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](/help/launch-name-updates.md) for a consolidated reference of the terminology changes.
+
 * [[!DNL Platform Launch] overview](./home.md)
 * Getting started {#get-started}
   * [Quickstart guide](quick-start/quick-start.md)
