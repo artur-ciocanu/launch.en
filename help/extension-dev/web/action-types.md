@@ -1,17 +1,17 @@
 ---
 title: Action Types for Web Extensions
-description: Learn how to define an action-type library module for a web extension in Adobe Experience Data Collection tags.
+description: Learn how to define an action-type library module for a tags web extension in Adobe Experience Platform.
 exl-id: f322495b-341f-445d-b796-ec04efe43e30
 ---
 # Action types for web extensions
 
-An action type library module is intended to take an action--any action. What this action does is entirely up to you. Do you want to send a beacon, show an offer, thank the user for visiting, save a cookie, or open a support chat?
+An action type library module is intended to take a predefined action. What this action does is entirely up to you. Do you want to send a beacon, show an offer, thank the user for visiting, save a cookie, or open a support chat?
 
 >[!IMPORTANT]
 >
 >This document covers action types for web extensions. If you are developing an edge extension, see the guide on [action types for edge extensions](../edge/action-types.md) instead.
 >
->This document also assumes you are familiar with library modules and how they are integrated in Data Collection tags extensions. If you require an introduction, see the overview on [library module formatting](./format.md) before returning to this guide.
+>This document also assumes you are familiar with library modules and how they are integrated in tags extensions. If you require an introduction, see the overview on [library module formatting](./format.md) before returning to this guide.
 
 ```js
 module.exports = function(settings) {
@@ -19,7 +19,7 @@ module.exports = function(settings) {
 };
 ```
 
-Now, consider a situation where you want to make the message configurable by the Adobe Experience Platform Data Collection user. You could allow the user to input a message and then save the message to the settings object, with the object looking something like this:
+For example, to make the message configurable by the Adobe Experience Platform data collection user, you could allow the user to input and save a message to the settings object. The object looking something like this:
 
 ```json
 {
@@ -37,7 +37,7 @@ module.exports = function(settings) {
 
 ## Contextual event data
 
-A second argument is passed to your module which contains contextual information regarding the event that fired the rule. It may be beneficial in certain cases and can be accessed as follows:
+A second argument would then have to be passed to your module which contains the contextual information about the event that fires the rule. It may be beneficial in certain cases and can be accessed as follows:
 
 ```js
 module.exports = function(settings, event) {
