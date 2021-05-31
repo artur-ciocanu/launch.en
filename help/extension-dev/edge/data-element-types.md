@@ -7,7 +7,7 @@ exl-id: f12d6f0d-8504-4564-8ebb-01ac3e552238
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-name-updates) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 A data-element-type library module retrieves a piece of data. How this piece of data is retrieved is up to you. For example, you can use a data element type to allow Adobe Experience Platform Launch users to retrieve a piece of data from the XDM layer or their custom data layer?
 

@@ -7,7 +7,7 @@ exl-id: e93d81b1-4766-4af1-b603-b619a63aa3fc
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-name-updates) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 Use this documentation for information on installing, configuring, and implementing the Adobe Media Analytics for Audio and Video extension (Media Analytics extension). Included are the options available when using this extension to build a rule, along with examples and links to samples.
 

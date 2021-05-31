@@ -7,7 +7,7 @@ exl-id: 6f9922fc-abca-4c26-aa5a-22223be0291b
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](/help/launch-name-updates.md) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](/help/launch-term-updates.md.md) for a consolidated reference of the terminology changes.
 
 Use this reference for information about configuring the Adobe Experience Cloud ID extension, and the options available when using this extension to build a rule.
 

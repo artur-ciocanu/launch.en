@@ -7,7 +7,7 @@ exl-id: bc24f3f8-bb85-4eae-aacd-65933500a8c4
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-name-updates) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 Deleting a resource is a permanent removal of that resource from [!DNL Adobe Experience Platform Launch]. If you still want the resource to appear in [!DNL Platform Launch], but not be in your library, see [Remove Resources from a Library](remove-resources-from-library.md).
 

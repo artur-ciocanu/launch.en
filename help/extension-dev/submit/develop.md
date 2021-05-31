@@ -7,7 +7,7 @@ exl-id: f4b6173e-6690-438b-a363-05e364b32a0e
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-name-updates) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 An extension should be thought of as a (small) product with its own requirements. Determining how an Adobe Experience Platform Launch user will want to use your extension can help you sort the functionality into what event types, condition types, action types, and data element types your extension should provide.
 

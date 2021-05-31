@@ -7,7 +7,7 @@ exl-id: b8d26cca-652a-4f9e-b169-43a9e17fc58c
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-name-updates) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 Use this reference for information about configuring the Adobe ContextHub extension, and the options available when using this extension to build a rule.
 

@@ -7,7 +7,7 @@ exl-id: 270c7ea0-a81f-4d3a-b728-ed46f14ed6cd
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-name-updates) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 An extension is a packaged set of code that extends the [!DNL Adobe Experience Platform Launch] interface and the library functionality. [!DNL Platform Launch] is the platform, and extensions are like apps that run on the platform.
 

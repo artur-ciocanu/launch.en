@@ -7,7 +7,7 @@ exl-id: ee483bed-3320-493a-9503-dd9f55fcdaed
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-name-updates) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 For release notes on the Experience Cloud Identity Service itself and not just the Adobe Experience Platform Launch Extension, please reference: [https://docs.adobe.com/content/help/en/id-service/using/release-notes/release-notes.html](https://docs.adobe.com/content/help/en/id-service/using/release-notes/release-notes.html)
 

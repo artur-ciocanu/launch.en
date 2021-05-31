@@ -7,7 +7,7 @@ exl-id: b8110384-16aa-4f5d-912f-f0ad1c63904e
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-name-updates) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 Submitting an extension to the Adobe Experience Platform Launch catalog can appear to be a daunting task.  The individual steps are not difficult, but it can be hard to keep track of everything and know what comes next.
 
