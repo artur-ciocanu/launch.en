@@ -9,6 +9,13 @@ exl-id: e366b5ef-d9b8-4424-b026-a0a8df1dacfc
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
+## May 20, 2021
+
+v2.0.7
+
+* Fixes an issue where mouse interactions on Text Inputs were no longer working correctly.
+* Deprecates the usage of the Browser and Operating System conditions.
+
 ## May 4, 2021
 
 v2.0.6
