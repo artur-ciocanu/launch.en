@@ -5,7 +5,7 @@ exl-id: d8d79147-a07b-4564-a866-a95616038f10
 ---
 # Implementing third-party libraries
 
->**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](/help/launch-name-updates.md) for a consolidated reference of the terminology changes.
+>**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../launch-name-updates) for a consolidated reference of the terminology changes.
 
 One of the main purposes of extensions in Adobe Experience Platform Launch is to enable you to easily implement existing marketing technologies (libraries) into your website. By using extensions, you can implement libraries provided by third-party content delivery networks (CDNs) without having to manually edit your website's HTML.
 

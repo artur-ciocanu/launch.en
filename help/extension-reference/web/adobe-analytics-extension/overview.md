@@ -5,7 +5,7 @@ exl-id: 71972939-cfc5-405f-8ffa-702167fb0ac7
 ---
 # Adobe Analytics extension overview
 
->**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](/help/launch-name-updates.md) for a consolidated reference of the terminology changes.
+>**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-name-updates) for a consolidated reference of the terminology changes.
 
 Use this reference for information about configuring the Adobe Analytics extension, and the options available when using this extension to build a rule.
 

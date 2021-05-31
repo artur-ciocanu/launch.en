@@ -5,7 +5,7 @@ exl-id: cccd2371-e472-4d53-ac00-2be14a161ae8
 ---
 # Publishing flow
 
->**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](/help/launch-name-updates.md) for a consolidated reference of the terminology changes.
+>**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-name-updates) for a consolidated reference of the terminology changes.
 
 In Adobe Experience Platform Launch, the publishing flow refers to the process of creating libraries, testing builds, and approving them for production.
 

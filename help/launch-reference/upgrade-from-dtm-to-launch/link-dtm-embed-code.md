@@ -5,7 +5,7 @@ exl-id: 467742f6-63ee-4a11-8d53-2ecb5b9d0414
 ---
 # Link a DTM embed code
 
->**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](/help/launch-name-updates.md) for a consolidated reference of the terminology changes.
+>**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-name-updates) for a consolidated reference of the terminology changes.
 
 Linking embed codes primarily applies to Dynamic Tag Management (DTM) and Adobe Experience Platform Launch users who use built-in Akamai hosting. Those who are self-hosting, please see the [self-hosting section](#self-hosting) at the end of this article.
 

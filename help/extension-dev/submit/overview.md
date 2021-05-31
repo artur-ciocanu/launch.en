@@ -5,19 +5,19 @@ exl-id: b8110384-16aa-4f5d-912f-f0ad1c63904e
 ---
 # Extension submission process overview
 
->**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](/help/launch-name-updates.md) for a consolidated reference of the terminology changes.
+>**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-name-updates) for a consolidated reference of the terminology changes.
 
 Submitting an extension to the Adobe Experience Platform Launch catalog can appear to be a daunting task.  The individual steps are not difficult, but it can be hard to keep track of everything and know what comes next.
 
 This guide is intended to outline the process and help you complete each step.  In order to submit your extension, you will need to complete the following steps:
 
 1. [Set up an Adobe Experience Cloud organization](./setup.md)
-1. [Grant user access for extension development](./access.md)
-1. [Develop an extension](./develop.md)
-1. [Create an exchange listing](./create-listing.md)
-1. Create your extension package
-1. [Upload and test your extension](./upload-and-test.md)
-1. [Release your extension](./release.md)
+2. [Grant user access for extension development](./access.md)
+3. [Develop an extension](./develop.md)
+4. [Create an exchange listing](./create-listing.md)
+5. Create your extension package
+6. [Upload and test your extension](./upload-and-test.md)
+7. [Release your extension](./release.md)
 
 For more information on each of these steps, please select the appropriate link.
 

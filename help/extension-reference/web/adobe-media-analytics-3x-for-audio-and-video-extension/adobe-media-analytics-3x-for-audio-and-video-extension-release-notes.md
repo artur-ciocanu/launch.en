@@ -5,7 +5,7 @@ exl-id: 59e08258-177d-46f6-bcd7-a4c818766beb
 ---
 # Adobe Media Analytics (3.x SDK) for Audio and Video release notes
 
->**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](/help/launch-name-updates.md) for a consolidated reference of the terminology changes.
+>**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-name-updates) for a consolidated reference of the terminology changes.
 
 ## April 5, 2021
 

@@ -5,7 +5,7 @@ exl-id: 1c026502-5d78-4ada-961b-c323125f8cfe
 ---
 # Edge extension flow
 
->**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](/help/launch-name-updates.md) for a consolidated reference of the terminology changes.
+>**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-name-updates) for a consolidated reference of the terminology changes.
 
 In edge extensions, each condition, action, and data element type has both a view which allows users to modify settings and a library module to act upon those user-defined settings.
 
@@ -20,7 +20,7 @@ In the following diagram you can see the link between events, conditions and act
 The rule processing flow contains the following phases:
 
 1. The `settings` and the `trigger` method are provided to the event library module at startup.
-1. When the event library module determines the event has occurred, the event library module calls `trigger`.
-1. Platform Launch passes `settings` into the rule’s condition-type library modules where conditions are then evaluated.
-1. Each condition type returns whether a condition evaluates to true.
-1. If all conditions pass, the rule’s actions are executed.
+2. When the event library module determines the event has occurred, the event library module calls `trigger`.
+3. Platform Launch passes `settings` into the rule’s condition-type library modules where conditions are then evaluated.
+4. Each condition type returns whether a condition evaluates to true.
+5. If all conditions pass, the rule’s actions are executed.

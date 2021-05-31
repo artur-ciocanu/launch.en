@@ -5,7 +5,7 @@ exl-id: 1bd8b45b-f194-4201-b2d4-050084ce8bed
 ---
 # AEM Asset Insights extension overview
 
->**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](/help/launch-name-updates.md) for a consolidated reference of the terminology changes.
+>**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-name-updates) for a consolidated reference of the terminology changes.
 
 This extension is intended to be used together with [AEM Asset Insights](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/touch-ui-configuring-asset-insights.html). More specifically, it replaces the "pageTracker" process and embed code. When configured, this extension sends Asset *Impression* and *Click* metrics to Adobe Analytics, after which they will be imported into the AEM Asset Insights reports. The Asset metrics can then be reported on by using either AEM Asset Insights or Adobe Analytics Project Workspaces.
 
