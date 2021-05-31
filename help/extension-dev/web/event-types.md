@@ -60,11 +60,11 @@ trigger({
 });
 ```
 
-The marketer could then use this value on an analytics beacon by specifying the value `%event.swipeAngle%` in a text field. They could also access `event.swipeAngle` from within other contexts as well (like a custom code action). Feel free to include any event information that may be useful to a marketer. This information is entirely optional.
+The marketer could then use this value on an analytics beacon by specifying the value `%event.swipeAngle%` in a text field. They could also access `event.swipeAngle` from within other contexts as well (like a custom code action). It is possible to include other types of optional event information that may be useful to a marketer in the same fashion.
 
 ### [!DNL nativeEvent]
 
-If your event type is based on a native event (for example, if your extension provided a `click` event type), we recommend setting the `nativeEvent` property as follows:
+If your event type is based on a native event (for example, if your extension provided a `click` event type), it is recommended to set the `nativeEvent` property as follows.
 
 ```js
 trigger({
@@ -86,7 +86,7 @@ trigger({
 
 ## Respecting rule order
 
-Data collection tags gives users the ability to order rules. For example, a user might create two rules which both use the orientation change event type and the user would like to customize the order in which the rules fire. Let's assume that the Adobe Experience Platform data collection user specifies an order value of `2` for the orientation change event in Rule A and an order value of `1` for the orientation change event in Rule B. This indicates that when the orientation changes on a mobile device, Rule B should fire before Rule A (rules with lower order values fire first).
+Data collection tags gives users the ability to order rules. For example, a user might create two rules which both use the orientation-change event type and to customize the order in which the rules fire. Assuming that the Adobe Experience Platform data collection user specifies an order value of `2` for the orientation change event in Rule A and an order value of `1` for the orientation change event in Rule B. This indicates that when the orientation changes on a mobile device, Rule B should fire before Rule A (rules with lower order values fire first).
 
 As mentioned previously, the exported function in our event module will be called once for each rule that has been configured to use our event type. Each time the exported function is called, it is passed a unique `trigger` function that is tied to a specific rule. In the scenario just described, our exported function will be called once with a `trigger` function tied to Rule B and then again with a `trigger` function tied to Rule A. Rule B comes first because the user has given it a lower order value than Rule A. When our library module detects an orientation change, it is important that we call the `trigger` functions in the same order they were provided to the library module.
 
