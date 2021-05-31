@@ -5,7 +5,9 @@ exl-id: b7028f8b-11a3-4e7a-ad1c-30bc8f9d8e11
 ---
 # Experience Cloud organization setup
 
->**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-name-updates) for a consolidated reference of the terminology changes.
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-name-updates) for a consolidated reference of the terminology changes.
 
 The first step in developing extensions in Adobe Experience Platform Launch is to register an Adobe Experience Cloud organization.
 

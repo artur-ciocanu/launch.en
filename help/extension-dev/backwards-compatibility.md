@@ -5,7 +5,9 @@ exl-id: 796dffe1-a54e-4153-8410-4124cebccaa2
 ---
 # Backwards compatibility standard
 
->**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../launch-name-updates) for a consolidated reference of the terminology changes.
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../launch-name-updates) for a consolidated reference of the terminology changes.
 
 Updates to an Adobe Experience Platform Launch extension must be backward compatible with previous versions of the extension.  This means that:
 

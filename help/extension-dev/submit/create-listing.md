@@ -5,7 +5,9 @@ exl-id: 93e83a62-6089-48e9-b521-82f972b36ac4
 ---
 # Create an exchange listing for an extension
 
->**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-name-updates) for a consolidated reference of the terminology changes.
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-name-updates) for a consolidated reference of the terminology changes.
 
 Adobe Experience Platform Launch has two catalogs for extensions: Private and Public.
 

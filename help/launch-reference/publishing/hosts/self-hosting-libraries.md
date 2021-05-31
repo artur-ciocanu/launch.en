@@ -5,7 +5,9 @@ exl-id: e8dc1a71-9cb0-4a03-b871-97c5c1b34c63
 ---
 # Self-hosting libraries
 
->**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-name-updates) for a consolidated reference of the terminology changes.
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-name-updates) for a consolidated reference of the terminology changes.
 
 Everything you do in Adobe Experience Platform Launch has the ultimate goal of producing a set of files to control the behavior of your application at run-time. This set of files is called a [build](../builds.md).
 

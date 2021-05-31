@@ -5,7 +5,9 @@ exl-id: aabac85b-b714-4f5b-a772-e8ed551eaaa4
 ---
 # Link DTM to Experience Cloud
 
->**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-name-updates) for a consolidated reference of the terminology changes.
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-name-updates) for a consolidated reference of the terminology changes.
 
 If you've been using Dynamic Tag Management (DTM) for a while, it's possible that your company's account is older than the Experience Cloud (or even the Marketing Cloud). Unless you've already gone through the process to link your DTM account to the Experience Cloud, this work still lies ahead of you.
 

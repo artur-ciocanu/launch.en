@@ -5,7 +5,9 @@ exl-id: cd211043-038d-4bff-84f6-2f4a837483db
 ---
 # Publishing overview
 
->**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-name-updates) for a consolidated reference of the terminology changes.
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-name-updates) for a consolidated reference of the terminology changes.
 
 Adobe Experience Platform Launch allows you to encapsulate changes to your tag-management code within individual libraries. Since Platform Launch provides the flexibility for multiple libraries to be developed in parallel by different teams, these libraries must follow a deliberate, permissioned process for merging changes together before being pushed to your production environment.
 

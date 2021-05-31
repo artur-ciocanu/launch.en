@@ -5,7 +5,9 @@ exl-id: 05228e4c-e49c-441b-b897-5a5cb89487c0
 ---
 # Copy resources
 
->**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-name-updates) for a consolidated reference of the terminology changes.
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-name-updates) for a consolidated reference of the terminology changes.
 
 Sometimes, it is convenient to make a new resource using the settings of an existing resource.  In these cases, you can make a copy.
 
