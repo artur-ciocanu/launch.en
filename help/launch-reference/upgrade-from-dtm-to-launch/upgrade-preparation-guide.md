@@ -5,6 +5,10 @@ exl-id: 4b697e1f-e39c-4f62-881b-bfafa4327dcc
 ---
 # Upgrade preparation guide
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 Adobe Experience Platform Launch is an entirely different system than DTM. Conceptually, they achieve the same goal, but the way they do so is different.
 
 * The`_satellite`object looks different in [!DNL Platform Launch]  than it does in DTM.

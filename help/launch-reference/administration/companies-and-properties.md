@@ -5,6 +5,10 @@ exl-id: 016cb7d5-1977-4b26-8516-b9b035a66f7e
 ---
 # Companies and properties
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 ## Companies
 
 In [!DNL Adobe Experience Platform Launch], there is a 1:1 relationship between your company and your [!DNL Experience Cloud] organizations.  Companies may contain any number properties.  Each individual property can be deployed on any number of sites and apps depending on your needs.

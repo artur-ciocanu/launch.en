@@ -5,6 +5,10 @@ exl-id: 657c1507-f005-49a8-a54a-26e6b9ff8b6f
 ---
 # Core extension overview
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 The Core extension is the default extension released with Adobe Experience Platform Launch.
 
 Use this reference for information about the options available when using this extension to build a rule.

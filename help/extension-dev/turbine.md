@@ -5,6 +5,10 @@ exl-id: f91fd053-09bd-4c26-9559-701701b58050
 ---
 # Turbine free variable
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 The `turbine` object is a "free variable" within the scope of your extension's library modules. It provides information and utilities specific to the Adobe Experience Platform Launch runtime and is always available to library modules without using `require()`.
 
 ## [!DNL buildInfo]

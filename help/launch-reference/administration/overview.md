@@ -5,6 +5,10 @@ exl-id: 55420861-3ea8-4436-b702-7a96064b4e19
 ---
 # Administration overview
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 The following documents contain information that is useful for [!DNL Adobe Experience Platform Launch] administrators:
 
 * [User permissions](user-permissions.md): Learn about the user management process and the available access rights in Platform Launch.

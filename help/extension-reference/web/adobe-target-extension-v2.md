@@ -5,6 +5,10 @@ exl-id: 46d652f7-4b27-40f7-8fb1-56de3afa6055
 ---
 # Adobe Target v2 extension overview
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 Use this reference for information about the options available when using this extension to build a rule.
 
 ## Configure the Adobe Target v2 extension
