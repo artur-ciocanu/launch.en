@@ -13,7 +13,7 @@ exl-id: b18889e8-a2a2-44bf-acb6-7693b4d1bbca
 
 ### Adobe Target v2 Extension 0.14.2
 
-- Fix a bug where the final Launch bundle contains two at.js versions one with On-Device Decisioning and one without.
+- Fix a bug where the final Launch bundle contains two at.js versions, one with On-Device Decisioning and one without.
 
 ## May 19, 2021
 
