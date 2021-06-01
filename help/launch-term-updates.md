@@ -2,7 +2,7 @@
 title: Adobe Experience Platform Launch terminology updates
 description: A complete list of terms and UI elements that are affected by the Adobe Experience Platform Launch rebranding.
 ---
-# Adobe Experience Platform Launch terminology update
+# Adobe Experience Platform Launch terminology updates
 
 Adobe Experience Platform Launch is being integrated into Adobe Experience Platform as a suite of data collection technologies. Rather than being a separate service from Experience Platform, Platform Launch's constituent features are now considered capabilities of Platform as a whole.
 
@@ -14,4 +14,4 @@ When directly referenced in the documentation, all of the terms listed below now
 |---|---|
 | Platform Launch Server Side | [Event forwarding](./launch-reference/server-side-information/server-side-overview.md) |
 | Edge configurations  |  [Datastreams](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) |
-| Platform Launch | [Tags](./home.md). This refers to the tags capability provided by Experience Platform. |
+| Platform Launch | [Tags](./home.md). |
