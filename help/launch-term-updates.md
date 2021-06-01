@@ -14,4 +14,4 @@ When directly referenced in the documentation, all of the terms listed below now
 |---|---|
 | Platform Launch Server Side | [Event forwarding](./launch-reference/server-side-information/server-side-overview.md) |
 | Edge configurations  |  [Datastreams](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) |
-| Platform Launch | [Tags](./home.md). |
+| Platform Launch | [Tags](./home.md) |
