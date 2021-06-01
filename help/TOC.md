@@ -4,6 +4,7 @@ product: adobe launch
 user-guide-title: Experience Platform Launch User Guide
 breadcrumb-title: Adobe Experience Platform Launch Guide
 user-guide-description: Learn to deploy and manage analytics, marketing, and advertising tags to power customer experiences.
+landing-page-description: Learn to deploy and manage analytics, marketing, and advertising tags to power customer experiences.
 index: yes
 git-repo: https://github.com/AdobeDocs/launch.en
 ---
@@ -11,6 +12,7 @@ git-repo: https://github.com/AdobeDocs/launch.en
 # Experience Platform Launch {#using}
 
 * [[!DNL Platform Launch] overview](./home.md)
+* [Terminology updates](./launch-term-updates.md)
 * Getting started {#get-started}
   * [Quickstart guide](quick-start/quick-start.md)
   * [Implementation guides](quick-start/implementation-guides.md)

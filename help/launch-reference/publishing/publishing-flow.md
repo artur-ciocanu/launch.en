@@ -5,6 +5,10 @@ exl-id: cccd2371-e472-4d53-ac00-2be14a161ae8
 ---
 # Publishing flow
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 In Adobe Experience Platform Launch, the publishing flow refers to the process of creating libraries, testing builds, and approving them for production.
 
 The available actions that you can make on a library depend on the library's state and the level of permission you have. In addition, a library's state also affects the resources it contains (rules, data elements, and extensions) depending on what is upstream in the publishing flow.

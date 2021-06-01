@@ -5,6 +5,10 @@ exl-id: 362d9945-6b71-48a2-97c4-af030544aaa2
 ---
 # Content Security Policy (CSP) support
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 A Content Security Policy (CSP) is a security feature that helps prevent cross-site scripting attacks (XSS). This happens when the browser is tricked into running malicious content that appears to come from a trusted source, but is really coming from somewhere else. CSPs allow the browser (on behalf of the user) to verify that the script is actually coming from a trusted source.
 
 CSPs are implemented by adding a `Content-Security-Policy` HTTP header to your server responses, or by adding a configured `<meta>` element in the `<head>` section of your HTML files.
@@ -20,9 +24,7 @@ If you want Adobe Experience Platform Launch to work with your CSP, there are tw
 * **The source for your Platform Launch library must be trusted.** If this condition is not met, the Platform Launch library and other required JavaScript files are blocked by the browser and won't load on the page.
 * **Inline scripts must be allowed.** If this condition is not met, Custom Code rule actions are blocked on the page and won't execute properly.
 
-If you want to use Platform Launch _and_ have a CSP in place, you have to fix both of these problems without incorrectly marking other scripts as safe. Increasing security comes at the price of increasing the amount of work on your part.
-
-If you want to use [!DNL Platform Launch] and have a CSP in place, you have to address both of these issues without incorrectly marking other scripts as safe. The rest of this document provides guidance on how to achieve this.
+Increased security comes at the price of increasing the amount of work on your part. If you want to use [!DNL Platform Launch] and have a CSP in place, you have to address both of these issues without incorrectly marking other scripts as safe. The rest of this document provides guidance on how to achieve this.
 
 ## Add [!DNL Platform Launch] as a trusted source
 

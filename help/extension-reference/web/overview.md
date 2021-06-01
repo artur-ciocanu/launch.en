@@ -5,6 +5,10 @@ exl-id: b7e47b2a-9c00-45f9-8b7f-8747c19f8dae
 ---
 # Adobe extensions reference
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 The following is a list of documentation for the Adobe Experience Platform Data Collection tags extensions provided by Adobe solutions:
 
 * [Analytics extension](adobe-analytics-extension/overview.md)

@@ -5,6 +5,10 @@ exl-id: e3619761-f45c-44a9-96d1-77b7666abb75
 ---
 # Adobe Audience Manager extension overview
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 With the Audience Manager extension, you can integrate the DIL code used by Audience Manager with your properties in Adobe Experience Platform Data Collection tags.
 
 Use this reference for information about the options available when using this extension to build a rule.

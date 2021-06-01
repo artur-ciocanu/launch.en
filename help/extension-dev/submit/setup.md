@@ -5,6 +5,10 @@ exl-id: b7028f8b-11a3-4e7a-ad1c-30bc8f9d8e11
 ---
 # Experience Cloud organization setup
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 To develop tags extensions in Adobe Experience Platform data collection it is necessary to register an Adobe Experience Cloud organization.
 
 Experience Cloud customers are assigned an organization when contracts are signed. If you are an existing customer and already have an organization registered then you can skip this document and proceed to the guide on [granting user access for extension development](./access.md). If you are not an Experience Cloud customer, you can have an organization created by joining one of the Adobe partner programs listed below.

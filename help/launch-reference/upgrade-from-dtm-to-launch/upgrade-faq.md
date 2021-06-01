@@ -5,6 +5,10 @@ exl-id: 95b3edc0-5bab-4910-8dd4-036f973eb0a9
 ---
 # DTM to Platform Launch upgrade FAQ
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 ## What does the Adobe Experience Platform Launch Upgrade do? {#what-does-the-launch-upgrade-do}
 
 The [!DNL Platform Launch]  Upgrade reads your DTM property and attempts to make a complete copy of that property in [!DNL Platform Launch] . The resulting [!DNL Platform Launch]  property mimics the on-page behavior of your DTM property as closely as possible. To read about differences in structure, see [Upgrade Preparation Guide](upgrade-preparation-guide.md).

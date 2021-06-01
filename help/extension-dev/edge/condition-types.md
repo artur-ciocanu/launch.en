@@ -5,6 +5,10 @@ exl-id: acf16175-b9aa-4037-9b42-6b201ff94d0c
 ---
 # Condition types for edge extensions
 
+>[!NOTE]
+>
+> Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 A condition-type library module evaluates whether something is true or false and returns a boolean value.
 
 >[!IMPORTANT]

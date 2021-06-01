@@ -5,13 +5,13 @@ exl-id: 93e83a62-6089-48e9-b521-82f972b36ac4
 ---
 # Create an exchange listing for an extension
 
-Adobe Experience Platform data collection has two catalogs for extensions: Private and Public.
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-The Private catalog is only available within your own organization. If you do not plan on making your extension available to the public, you can skip this step and proceed to the document on [uploading and testing your extension](./upload-and-test.md).
+Adobe Experience Platform data collection has two catalogs for extensions: Private and Public. The Private catalog is only available within your own organization. If you do not plan on making your extension available to the public, you can skip this step and proceed to the document on [uploading and testing your extension](./upload-and-test.md).
 
-In order to add your extension to the Public catalog, you must create a listing and include the URL to your listing in the extension.json manifest file inside of your Extension Package.
-
-Extensions created for public release are required to have a listing in the [Exchange Marketplace](https://experiencecloud.adobeexchange.com/). These listings enable extension developers to post support information, links to additional support or documentation, and to market your extensions to prospective users who may not be aware of your company or the functionality of your extension. In this marketplace, your extension will have a public listing that can be viewed without the user being authenticated to Adobe Experience Platform data collection.
+To add your extension to the Public catalog, you must create a listing and include the URL to your listing in the extension.json manifest file inside of your Extension Package. Extensions created for public release are required to have a listing in the [Exchange Marketplace](https://experiencecloud.adobeexchange.com/). These listings enable extension developers to post support information, links to additional support or documentation, and to market your extensions to prospective users who may not be aware of your company or the functionality of your extension. In this marketplace, your extension will have a public listing that can be viewed without the user being authenticated to Adobe Experience Platform data collection.
 
 The listing can be created at any time during the development of the extension, but must be completed and published (with the URL included in your extension package) before your extension can be released publicly.
 
