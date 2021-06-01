@@ -223,8 +223,8 @@ Installation is completed by placing this single `<script>` tag inside the `<hea
 
 While validating your extension on your test page or site, there are a few console commands that will be helpful:
 
-* `_satellite.setDebug(true);` will put Platform Launch into debug mode and output useful logging statements to the console.
-* The `_satellite._container` object contains all kinds of useful information about the deployed library including details about the Build, Data Elements, Rules, and Extensions included.
+- `_satellite.setDebug(true);` will put Platform Launch into debug mode and output useful logging statements to the console.
+- The `_satellite._container` object contains all kinds of useful information about the deployed library including details about the Build, Data Elements, Rules, and Extensions included.
 
 Ultimately your objective here is to test the functionality of the deployed library to ensure that the code you wrote inside your extension package behaves as expected when Platform Launch has compiled it into a library.
 
