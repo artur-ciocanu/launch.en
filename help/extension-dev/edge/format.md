@@ -13,7 +13,7 @@ exl-id: 9264898d-c872-4089-ae3e-84a3ccc02f46
 >
 >This document covers the library module format for edge extensions. If you are developing a web extension, see the guide on [formatting web extension modules](../web/format.md) instead.
 
-A library module is a piece of reusable code provided by an extension that is emitted inside the tags runtime library in Adobe Experience Platform (the library that runs on the edge node). For example, a `sendBeacon` action type will have a library module that will run on the edge node and send a beacon.
+A library module is a piece of reusable code provided by an extension that is emitted inside the tag runtime library in Adobe Experience Platform (the library that runs on the edge node). For example, a `sendBeacon` action type will have a library module that will run on the edge node and send a beacon.
 
 The library module is structured as a [CommonJS module](http://wiki.commonjs.org/wiki/Modules/1.1.1). Within a CommonJS module, the following variables are available for usage:
 

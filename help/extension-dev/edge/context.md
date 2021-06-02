@@ -92,7 +92,7 @@ The first time this action is executed, `ruleStash` starts as `undefined` and is
 
 ## Utilities
 
-The `utils` property represents an object that provides utilities specific to the tags runtime.
+The `utils` property represents an object that provides utilities specific to the tag runtime.
 
 ### [!DNL logger]
 
@@ -123,7 +123,7 @@ context.utils.fetch('http://example.com/movies.json')
 
 ### [!DNL getBuildInfo]
 
-This utility returns an object containing information about the build of the current tags runtime library. 
+This utility returns an object containing information about the build of the current tag runtime library. 
 
 ```js
 logger.log(context.utils.getBuildInfo().turbineBuildDate);

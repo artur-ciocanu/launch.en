@@ -13,7 +13,7 @@ exl-id: 17fb6e5e-1e22-4192-a4a3-018f63061ef6
 >
 >This document covers the library module format for web extensions. If you are developing an edge extension, see the guide on [formatting edge extension modules](../edge/format.md) instead.
 
-A library module is a piece of reusable code provided by an extension that is emitted inside the Adobe Experience Platform Data Collection tags runtime library (the library that runs on the client's website). For example, a `gesture` event type will have a library module that will run on the client's website and detects user gestures.
+A library module is a piece of reusable code provided by an extension that is emitted inside the Adobe Experience Platform Data Collection tag runtime library (the library that runs on the client's website). For example, a `gesture` event type will have a library module that will run on the client's website and detects user gestures.
 
 The library module is structured as a [CommonJS module](http://wiki.commonjs.org/wiki/Modules/1.1.1). Within a CommonJS module, the following variables are available for usage:
 
@@ -55,7 +55,7 @@ This is an alternative to `module.exports` but is more limited in its usage. Ple
 
 ## Execution and caching
 
-When the Data Collection tags runtime library runs, modules will be immediately "installed" and their exports cached. Assuming the following module:
+When the Data Collection tag runtime library runs, modules will be immediately "installed" and their exports cached. Assuming the following module:
 
 ```javascript
 console.log('runs on startup');

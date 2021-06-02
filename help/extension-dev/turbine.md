@@ -1,6 +1,6 @@
 ---
 title: Turbine Free Variable
-description: Learn about the turbine object, a free variable which provides information and utilities specific to the Adobe Experience Platform Data Collection tags runtime.
+description: Learn about the turbine object, a free variable which provides information and utilities specific to the Adobe Experience Platform Data Collection tag runtime.
 exl-id: f91fd053-09bd-4c26-9559-701701b58050
 ---
 # Turbine free variable
@@ -9,7 +9,7 @@ exl-id: f91fd053-09bd-4c26-9559-701701b58050
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-The `turbine` object is a "free variable" within the scope of your extension's library modules. It provides information and utilities specific to the Adobe Experience Platform Data Collection tags runtime and is always available to library modules without using `require()`.
+The `turbine` object is a "free variable" within the scope of your extension's library modules. It provides information and utilities specific to the Adobe Experience Platform Data Collection tag runtime and is always available to library modules without using `require()`.
 
 ## [!DNL buildInfo]
 
@@ -17,7 +17,7 @@ The `turbine` object is a "free variable" within the scope of your extension's l
 console.log(turbine.buildInfo.turbineBuildDate);
 ```
 
-`turbine.buildInfo` is an object containing build information about the current tags runtime library.
+`turbine.buildInfo` is an object containing build information about the current tag runtime library.
 
 ```js
 {
@@ -69,7 +69,7 @@ loadScript(turbine.getHostedLibFileUrl('AppMeasurement.js')).then(function() {
 })
 ```
 
-The [hostedLibFiles](./manifest.md) property can be defined inside the extension manifest in order to host various files along with the tags runtime library. This module returns the URL where the given library file is hosted.
+The [hostedLibFiles](./manifest.md) property can be defined inside the extension manifest in order to host various files along with the tag runtime library. This module returns the URL where the given library file is hosted.
 
 ### [!DNL getSharedModule] {#shared}
 
@@ -105,7 +105,7 @@ If you are simply attempting to log messages, it's unlikely you will need to use
 console.log(turbine.propertySettings.domains);
 ```
 
-An object containing the following settings which are defined by the user for the property of the current tags runtime library:
+An object containing the following settings which are defined by the user for the property of the current tag runtime library:
 
 * `propertySettings.domains: Array<String>`
 

@@ -13,6 +13,6 @@ Extension configuration is the manner by which an extension gathers global setti
 
 In Adobe Experience Platform Data Collection, when users install an extension to a tags property, they will be shown the extension configuration view which your extension will provide. They cannot complete installing the extension without completing extension configuration. See the document on [views](./web/views.md) to learn how to create a view for extension configuration.
 
-After settings are saved from an extension configuration view, they will be emitted in the tags runtime library. You can then access these settings from extension library modules by calling [`turbine.getExtensionSettings()`](./turbine.md#get-extension-settings).
+After settings are saved from an extension configuration view, they will be emitted in the tag runtime library. You can then access these settings from extension library modules by calling [`turbine.getExtensionSettings()`](./turbine.md#get-extension-settings).
 
 Extension configuration is an optional feature that you may choose not to leverage.
