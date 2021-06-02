@@ -80,7 +80,7 @@ exl-id: b18889e8-a2a2-44bf-acb6-7693b4d1bbca
 - Previously, the ECID library made two blocking calls before at.js could fetch experiences. This has been reduced to a single call, which significantly improves performance.
 
 >[!NOTE]
->Please upgrade your ECID extension for Data Collection to v4.4.1 to take advantage of this performance enhancement.
+>Please upgrade your ECID tag extension to v4.4.1 to take advantage of this performance enhancement.
 
 ## July 31, 2019
 

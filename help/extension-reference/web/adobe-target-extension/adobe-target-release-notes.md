@@ -43,7 +43,7 @@ exl-id: 9fe1e6c2-e895-4d36-97b6-29f3ccd8a1bc
 
 ### Adobe Target Extension 0.10.1
 
-* Hotfix for parameters handling for Adobe Target extension for Data Collection tags
+* Hotfix for parameters handling the tag extension for Adobe Target
 
 ## May 4, 2019
 
