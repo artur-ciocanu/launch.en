@@ -9,7 +9,7 @@ exl-id: d8d79147-a07b-4564-a866-a95616038f10
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-One of the main purposes of extensions in Adobe Experience Platform Data Collection tags is to enable you to easily implement existing marketing technologies (libraries) into your website. By using extensions, you can implement libraries provided by third-party content delivery networks (CDNs) without having to manually edit your website's HTML.
+One of the main purposes of tag extensions in Adobe Experience Platform is to enable you to easily implement existing marketing technologies (libraries) into your website. By using extensions, you can implement libraries provided by third-party content delivery networks (CDNs) without having to manually edit your website's HTML.
 
 There are several methods to host third-party (vendor) libraries within your extensions. This document provides an overview of these different implementation methods, including the pros and cons of each.
 
@@ -222,6 +222,6 @@ module.exports = function() {
 
 ## Next steps
 
-This document provided an overview of the different methods for hosting third-party libraries in your Data Collection tag extensions. While the examples provided were focused on libraries, these techniques apply to any piece of code that your extension can utilize.
+This document provided an overview of the different methods for hosting third-party libraries in your tag extensions. While the examples provided were focused on libraries, these techniques apply to any piece of code that your extension can utilize.
 
 Refer to the documentation linked to throughout this guide to learn more about the tools for configuring your extensions, including action types, the extension manifest, core modules, and the turbine object.

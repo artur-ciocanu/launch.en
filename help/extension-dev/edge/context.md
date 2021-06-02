@@ -1,6 +1,6 @@
 ---
 title: Context in Edge Extension Modules
-description: Learn about the context object and the role it plays in interacting with library modules in Adobe Experience Platform data collection tags edge extensions.
+description: Learn about the context object and the role it plays in interacting with library modules in Adobe Experience Platform tag edge extensions.
 exl-id: 6f392d90-135b-4790-a733-f20effb23bfb
 ---
 # Context in edge extension modules

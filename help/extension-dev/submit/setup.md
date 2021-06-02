@@ -9,7 +9,7 @@ exl-id: b7028f8b-11a3-4e7a-ad1c-30bc8f9d8e11
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-To develop tag extensions in Adobe Experience Platform data collection it is necessary to register an Adobe Experience Cloud organization.
+To develop tag extensions in Adobe Experience Platform it is necessary to register an Adobe Experience Cloud organization.
 
 Experience Cloud customers are assigned an organization when contracts are signed. If you are an existing customer and already have an organization registered then you can skip this document and proceed to the guide on [granting user access for extension development](./access.md). If you are not an Experience Cloud customer, you can have an organization created by joining one of the Adobe partner programs listed below.
 
@@ -39,4 +39,4 @@ Once your company is in the Exchange Partner program, you can request access to 
 
 ## For independent developers
 
-If you are an independent developer, or you are otherwise unable to join one of the partner programs listed and you would like to build extensions for Adobe Experience Platform data collection, please send an email to launch-ext-dev@adobe.com to request access. Please provide some background on your experience with Adobe Experience Platform data collection tags, and your planned extension project roadmap.
+If you are an independent developer, or you are otherwise unable to join one of the partner programs listed and you would like to build tag extensions for Adobe Experience Platform, please send an email to launch-ext-dev@adobe.com to request access. Please provide some background on your experience with Adobe Experience Platform tags, and your planned extension project roadmap.

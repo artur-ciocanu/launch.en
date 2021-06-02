@@ -1,6 +1,6 @@
 ---
 title: Upload and Implement End-to-End Testing for an Extension
-description: Learn how to validate, upload, and test your extension in Adobe Experience Platform data collection.
+description: Learn how to validate, upload, and test your extension in Adobe Experience Platform.
 exl-id: db12595b-ab17-410e-ac9a-2d2fe469c2b6
 ---
 # Upload and implement end-to-end testing
@@ -9,13 +9,13 @@ exl-id: db12595b-ab17-410e-ac9a-2d2fe469c2b6
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-Testing extensions involves using the Adobe Experience Platform data collection tags API and/or command-line tools to upload your extension packages, then using the Data Collection UI to install your extension package to a property and exercise its capabilities inside a data collection tags library and build.
+To test Adobe Experience Platform tag extensions use the tags API and/or command-line tools to upload your extension packages. Next, use the Data Collection UI to install your extension package to a property and exercise its capabilities inside a tags library and build.
 
 The following steps assume the use of a Mac OS with node and npm installed and available.
 
 ## Validate your extension {#validate}
 
-Once your team is satisfied with the performance of your extension and the results they see in the [Sandbox](https://www.npmjs.com/package/@adobe/reactor-sandbox#running-the-sandbox) tool, you should be ready to upload your extension package to data collection tags. 
+Once your team is satisfied with the performance of your extension and the results they see in the [Sandbox](https://www.npmjs.com/package/@adobe/reactor-sandbox#running-the-sandbox) tool, you should be ready to upload your extension package to tags. 
 
 Before uploading, please validate that any required fields or settings are present. For example, reviewing your [extension manifest](../manifest.md), your [extension configuration](../configuration.md), your [views](../web/views.md), and your [library modules](../web/format.md) (at a minimum) is good practice. 
 
@@ -41,7 +41,7 @@ If you cannot create an Integration, it is likely that you do not have the corre
 
 Now that you have credentials, you are ready to test your extension package end-to-end.
 
-When you first upload your extension package, it goes into a state of `development`. This means that it is only visible with your own data collection tags company and only with a property that has been marked for extension development.
+When you first upload your extension package, it goes into a state of `development`. This means that it is only visible with your own tags company and only with a property that has been marked for extension development.
 
 Use the command line to run the following command within the directory that contains your .zip package.
 
@@ -64,7 +64,7 @@ Your extension package will then be uploaded and the uploader will give you the 
 
 >[!NOTE]
 >
->When uploading or patching, extension packages are placed into a pending state while the system asynchronously extracts the package and deploys. While this process is taking place, you can poll the `extension_package` ID for its status using the API and within data collection tags. You will see an extension card in the catalog marked as Pending.
+>When uploading or patching, extension packages are placed into a pending state while the system asynchronously extracts the package and deploys. While this process is taking place, you can poll the `extension_package` ID for its status using the API and within tags. You will see an extension card in the catalog marked as Pending.
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ Your extension package will then be uploaded and the uploader will give you the 
 
 ## Create a development property {#property}
 
-When you sign in to Data Collection you'll see the Properties screen first. A property is a container for the tags that you want to deploy and it can be used on one or many sites.
+When you sign in to data collection you'll see the Properties screen first. A property is a container for the tags that you want to deploy and it can be used on one or many sites.
 
 ![](../images/getting-started/properties-screen.png)
 
@@ -98,7 +98,7 @@ To add your extension, select the **Catalog** tab.
 
 ![](../images/getting-started/catalog.png)
 
-The catalog displays card icons for each available extension. If your extension is not displayed in the catalog, ensure that you have completed the steps above in the Adobe Administration Console Set Up and Creating Your Extension Package sections. Your extension package may also appear as Pending if Adobe Experience Platform Data Collection has not completed the initial processing.
+The catalog displays card icons for each available extension. If your extension is not displayed in the catalog, ensure that you have completed the steps above in the Adobe Administration Console Set Up and Creating Your Extension Package sections. Your extension package may also appear as Pending if data collection has not completed the initial processing.
 
 If you have followed the the previous steps and still do not see a Pending or Failed extension package in the catalog, you should check the status of your extension package directly using the API. For information on how to make the appropriate API call, read [Fetch an ExtensionPackage](https://developer.adobelaunch.com/api/reference/1.0/extension_packages/fetch/) in the API documentation.
 
@@ -116,11 +116,11 @@ You should now see the **Installed** extensions screen with the Core extension a
 
 ## Create resources to test your extension {#resources}
 
-Extensions provide new capabilities to users of Adobe Experience Platform data collection tags. These are typically displayed in Data Elements or the Rule Builder.
+Extensions provide new capabilities to users of Adobe Experience Platform tags. These are typically displayed in Data Elements or the Rule Builder.
 
 ### Data elements
 
-Data elements exist in data collection tags to help users persist values. Each data element is a mapping or pointer to source data. A single data element is a variable that can be mapped to query strings, URLs, cookie values, JavaScript variables, etc. Select **Data Elements** from the left navigation bar, and **Create New Data Element**.
+Data elements exist in tags to help users persist values. Each data element is a mapping or pointer to source data. A single data element is a variable that can be mapped to query strings, URLs, cookie values, JavaScript variables, etc. Select **Data Elements** from the left navigation bar, and **Create New Data Element**.
 
 ![](/help/extension-dev/images/getting-started/data-element-create-new-link.png)
 
@@ -164,7 +164,7 @@ In the main navigation, select **Publishing**, then on **Add New Library** link:
 
 A library is a set of instructions for how extensions, data elements, and rules will interact with one another and with a website. Libraries are compiled into builds. A library can contain as many changes as a user is comfortable making or testing at once.
 
-On the **Create Library** screen, add a name in the **Name** text field. Data collection tags provide a default development environment named **Development**. Select **Development** from the **Environment** dropdown list. For simplicity add all the available resources. Select **Add All Changed Resources**, then select **Save**.
+On the **Create Library** screen, add a name in the **Name** text field. Tags provides a default development environment named **Development**. Select **Development** from the **Environment** dropdown list. For simplicity add all the available resources. Select **Add All Changed Resources**, then select **Save**.
 
 >[!NOTE]
 >
@@ -180,9 +180,9 @@ After the build process completes, a green **success** indicator displays next t
 
 ![](../images/getting-started/successful-build.png)
 
-The data collection tags library is now published and available for use. The test page must use the newly created library in order to test the page behavior for the end-user in a browser.
+The tags library is now published and available for use. The test page must use the newly created library in order to test the page behavior for the end-user in a browser.
 
-## Install data collection tags on a test site {#install-data-collection-tags}
+## Install tags on a test site {#install-data-collection-tags}
 
 Installation instructions are available from the Environments tab. This page displays all available environments and also allows you to create more. As the library was published to the Development environment select the box icon in the **INSTALL** column on the **Development** row.
 
@@ -192,7 +192,7 @@ The **Web Install Instructions** dialogue for the Development environment appear
 
 ![](../images/getting-started/launch-installation-instructions-dialogue.png)
 
-Complete the installation by placing this single `<script>` tag inside the `<head>` section of your document or site template. Next, visit the test site to examine the behavior of your published data collection tags library.
+Complete the installation by placing this single `<script>` tag inside the `<head>` section of your document or site template. Next, visit the test site to examine the behavior of your published tags library.
 
 ## Test {#test}
 
