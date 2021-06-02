@@ -15,7 +15,7 @@ An action type library module is intended to take a predefined action. What this
 >
 >This document covers action types for web extensions. If you are developing an edge extension, see the guide on [action types for edge extensions](../edge/action-types.md) instead.
 >
->This document also assumes you are familiar with library modules and how they are integrated in tags extensions. If you require an introduction, see the overview on [library module formatting](./format.md) before returning to this guide.
+>This document also assumes you are familiar with library modules and how they are integrated in tag extensions. If you require an introduction, see the overview on [library module formatting](./format.md) before returning to this guide.
 
 ```js
 module.exports = function(settings) {

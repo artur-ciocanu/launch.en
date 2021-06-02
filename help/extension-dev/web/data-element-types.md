@@ -15,7 +15,7 @@ The purpose of a data element type library module is to retrieve a piece of data
 >
 >This document provides information on data-element types for web extensions. If you are developing an edge extension, see the guide on [data-element types for edge extensions](../edge/data-element-types.md) instead.
 >
->This document also assumes you are familiar with library modules and how they are integrated in tags extensions. If you require an introduction, see the overview on [library module formatting](./format.md) before returning to this guide.
+>This document also assumes you are familiar with library modules and how they are integrated in tag extensions. If you require an introduction, see the overview on [library module formatting](./format.md) before returning to this guide.
 
 Consider a situation where you want to allow users to retrieve a piece of data from a local storage item named `productName`. Your module may look like this:
 

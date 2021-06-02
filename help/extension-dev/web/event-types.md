@@ -13,7 +13,7 @@ An event type library module is designed to detect when an activity happens and 
 
 >[!NOTE]
 >
->This document assumes you are familiar with library modules and how they are integrated in tags extensions. See the overview on [library module formatting](./format.md) for an introduction to their implementation before returning to this guide.
+>This document assumes you are familiar with library modules and how they are integrated in tag extensions. See the overview on [library module formatting](./format.md) for an introduction to their implementation before returning to this guide.
 
 `module.exports` accept both the `settings` and `trigger` parameters. This enables customization of the event-type.
 

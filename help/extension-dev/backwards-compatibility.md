@@ -1,6 +1,6 @@
 ---
 title: Backwards Compatibility Standard
-description: Learn about the backward compatibility standard in Adobe Experience Platform Data Collection that ensures updated versions of tags extensions are compatible with previous versions.
+description: Learn about the backward compatibility standard in Adobe Experience Platform Data Collection that ensures updated versions of tag extensions are compatible with previous versions.
 exl-id: 796dffe1-a54e-4153-8410-4124cebccaa2
 ---
 # Backwards compatibility standard
@@ -9,7 +9,7 @@ exl-id: 796dffe1-a54e-4153-8410-4124cebccaa2
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-Updates to a tags extension in Adobe Experience Platform Data Collection must be backward compatible with previous versions of the extension.  This means that:
+Updates to a tag extension in Adobe Experience Platform Data Collection must be backward compatible with previous versions of the extension. This means that:
 
 * Any modifications to the primary components of the extensions must be compatible with previous versions.  This includes extension configuration, event types, condition types, action types, data element types, and shared modules.
 * Components that a user has created with the older extension version must be able to pass validation against the schemas provided by the newer version.

@@ -1,6 +1,6 @@
 ---
 title: Extension Configuration
-description: Learn how to configure a tags extension in Adobe Experience Platform Data Collection to gather global settings from a user.
+description: Learn how to configure a tag extension in Adobe Experience Platform Data Collection to gather global settings from a user.
 exl-id: 60081c35-4fa7-469e-affa-1b79c5e46a51
 ---
 # Extension configuration

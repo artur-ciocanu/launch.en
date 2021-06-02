@@ -249,7 +249,7 @@ exl-id: 9eb3827c-bc97-481c-a1f4-a554f543f562
 #### **Features**
 
 * AppMeasurement has been updated to version 2.6
-* The initialized Analytics tracker is now exposed through a shared module in the Adobe Experience Platform Data Collection tags extension so other extensions can include code to interact with it.
+* The initialized Analytics tracker is now exposed through a shared module in the Adobe Experience Platform Data Collection tag extension so other extensions can include code to interact with it.
 
 #### **Bug fixes**
 

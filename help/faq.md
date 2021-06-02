@@ -27,7 +27,7 @@ There is no additional charge for tags capabilities. They are available for any 
 
 ## I heard there are plug-ins now. What's that about?
 
-Tags are built into the [!DNL Adobe Experience Platform] and are fully extensible. Customers, [!DNL Adobe] Partners, agencies, and marketing or advertising technology vendors can build a tags extension that adds new functionality or modifies existing functionality. The system allows partners and clients to build, manage, and update their own integrations. This is just one way [!DNL Adobe] is opening up the [!DNL Adobe Experience Platform] so customers and partners can build products and businesses on it. This helps everyone connect Adobe technology to the marketing and advertising technologies from other vendors with greater ease.
+Tags are built into the [!DNL Adobe Experience Platform] and are fully extensible. Customers, [!DNL Adobe] Partners, agencies, and marketing or advertising technology vendors can build a tag extension that adds new functionality or modifies existing functionality. The system allows partners and clients to build, manage, and update their own integrations. This is just one way [!DNL Adobe] is opening up the [!DNL Adobe Experience Platform] so customers and partners can build products and businesses on it. This helps everyone connect Adobe technology to the marketing and advertising technologies from other vendors with greater ease.
 
 ## Will all third-party extensions be available right away?
 

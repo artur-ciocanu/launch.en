@@ -9,7 +9,7 @@ exl-id: b7028f8b-11a3-4e7a-ad1c-30bc8f9d8e11
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-To develop tags extensions in Adobe Experience Platform data collection it is necessary to register an Adobe Experience Cloud organization.
+To develop tag extensions in Adobe Experience Platform data collection it is necessary to register an Adobe Experience Cloud organization.
 
 Experience Cloud customers are assigned an organization when contracts are signed. If you are an existing customer and already have an organization registered then you can skip this document and proceed to the guide on [granting user access for extension development](./access.md). If you are not an Experience Cloud customer, you can have an organization created by joining one of the Adobe partner programs listed below.
 
@@ -17,7 +17,7 @@ Experience Cloud customers are assigned an organization when contracts are signe
 
 This program is for partners who have technology that's complimentary to Adobe and can be integrated with Adobe technologies to add value to our mutual customers. This program maintains a [marketplace](https://www.adobeexchange.com/experiencecloud.html) where partners can create listings that promote their integrations. You can see the registration guide [here](https://partners.adobe.com/exchangeprogram/experiencecloud/reg-guide.html) and you can begin your registration [here](https://partners.adobe.com/exchangeprogram/experiencecloud/prereg.html).
 
-You must be a member of this program in order to create publicly listed tags extensions for Adobe Experience Platform that will show in the marketplace.
+You must be a member of this program in order to create publicly listed tag extensions for Adobe Experience Platform that will show in the marketplace.
 
 >[!WARNING]
 >

@@ -15,7 +15,7 @@ A condition-type library module evaluates whether something is true or false and
 >
 >This document covers condition types for edge extensions. If you are developing a web extension, see the guide on [condition types for web extensions](../web/condition-types.md) instead.
 >
->This document also assumes you are familiar with library modules and how they are integrated in tags extensions. If you require an introduction, see the overview on [library module formatting](./format.md) before returning to this guide.
+>This document also assumes you are familiar with library modules and how they are integrated in tag extensions. If you require an introduction, see the overview on [library module formatting](./format.md) before returning to this guide.
 
 For example, if you want to evaluate whether the user is on the host `example.com`, your module may look like this.
 

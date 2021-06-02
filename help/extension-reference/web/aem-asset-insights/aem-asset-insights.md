@@ -1,6 +1,6 @@
 ---
 title: AEM Asset Insights Extension Overview
-description: Learn about the AEM Asset Insights tags extension in Adobe Experience Platform.
+description: Learn about the AEM Asset Insights tag extension in Adobe Experience Platform.
 exl-id: 1bd8b45b-f194-4201-b2d4-050084ce8bed
 ---
 # AEM Asset Insights extension overview
@@ -27,7 +27,7 @@ There are also two metrics:
 
 These reports must be enabled using the Analytics Administrator (select **[!UICONTROL Analytics] > [!UICONTROL Admin] > [!UICONTROL Report Suites] > `<report suite>` > [!UICONTROL Edit Settings] > [!UICONTROL AEM] > [!UICONTROL AEM Assets Reporting]**) before they can be populated using this extension.
 
-The "*Adobe Analytics*" tags extension for Adobe Experience Platform must be installed into the same tags Web Property.
+The "*Adobe Analytics*" tag extension for Adobe Experience Platform must be installed into the same tags Web Property.
         
 ### Adobe Experience Manager (AEM)
                         
