@@ -28,13 +28,13 @@ In the Link Tracking section of the [!DNL Analytics] extension's configuration s
 
 When these settings are not selected, [!DNL Platform Launch] does not fire [!DNL Adobe Analytics] automatically. [!DNL Analytics] fires only if you specifically tell it to in a rule action. Use the rule conditions to determine when and what to fire. For example, to use cookies to determine opt-in status, set a data element to read that cookie and use it as a condition in the rule to determine when to fire the Send Beacon action. 
 
-Separately, you could consider using the [Adobe opt-in object](https://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/optin-overview.html) to control the firing of this tag in concert with your consent management platform.
+Separately, you could consider using the [Adobe opt-in object](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html) to control the firing of this tag in concert with your consent management platform.
 
 Integrations with consent managers (such as OneTrust) can set and track the consent cookies for customers, which can then be used in the rule builder.
 
 ## Audience Manager
 
-DIL is currently set to fire automatically if it is placed on a customer page. Please consider using the [Adobe opt-in object](https://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/optin-overview.html) to control the firing of this tag in concert with your consent management platform.
+DIL is currently set to fire automatically if it is placed on a customer page. Please consider using the [Adobe opt-in object](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html) to control the firing of this tag in concert with your consent management platform.
 
 [!DNL Adobe] recommends that you use server-side forwarding within [!DNL Analytics].
 
@@ -42,12 +42,12 @@ DIL is currently set to fire automatically if it is placed on a customer page. P
 
 [!DNL Experience Cloud ID] currently fires automatically if it is placed on a customer page. 
 
-Please consider using the [Adobe opt-in object](https://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/optin-overview.html) to control the firing of this tag in concert with your consent management platform.
+Please consider using the [Adobe opt-in object](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html) to control the firing of this tag in concert with your consent management platform.
 
 ## Target
 
 [!DNL Platform Launch] does not fire [!DNL Target] automatically. [!DNL Target] fires only if you specifically tell it to in a rule action. Use the rule conditions to determine when and what to fire. For example, to use cookies to determine opt-in status, set a data element to read that cookie and use it as a condition in the rule to determine when to fire the Load [!DNL Target] action. 
 
-Separately, you could consider using the [Adobe opt-in object](https://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/optin-overview.html) to control the firing of this tag in concert with your consent management platform.
+Separately, you could consider using the [Adobe opt-in object](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html) to control the firing of this tag in concert with your consent management platform.
 
 Integrations with consent managers (such as OneTrust) can set and track the consent cookies for customers, which can then be used in the rule builder.

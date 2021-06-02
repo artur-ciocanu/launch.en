@@ -15,7 +15,7 @@ description: The latest release notes for the Adobe Analytics extension in Adobe
 
 #### Features
 
-* Updated [AppMeasurement to 2.22.0](https://docs.adobe.com/content/help/en/analytics/implementation/appmeasurement-updates.html).
+* Updated [AppMeasurement to 2.22.0](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-updates.html).
 * Small UI change so the additional setting now appear collapsed in an accordion instead of a checkbox.
 
 ## June 2, 2020
@@ -43,7 +43,7 @@ description: The latest release notes for the Adobe Analytics extension in Adobe
 
 #### Features
 
-* Updated [AppMeasurement to 2.20.0](https://docs.adobe.com/content/help/en/analytics/implementation/appmeasurement-updates.html)
+* Updated [AppMeasurement to 2.20.0](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-updates.html)
 
 ## March 2, 2020
 
@@ -55,7 +55,7 @@ description: The latest release notes for the Adobe Analytics extension in Adobe
 
 #### Features
 
-* Updated [AppMeasurement to 2.18.0](https://docs.adobe.com/content/help/en/analytics/implementation/appmeasurement-updates.html)
+* Updated [AppMeasurement to 2.18.0](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-updates.html)
 * Updated the DIL library in the Audience Manager module to 9.4
 * Increased the length of input fields in the extension
 * eVars and props in the extension and action configurations now show the friendly name from Analytics
@@ -115,7 +115,7 @@ description: The latest release notes for the Adobe Analytics extension in Adobe
 #### Features
 
 * Updated the Adobe Analytics extension to support DIL 9.2 for Audience Manager
-* Updated extension to support [AppMeasurement 2.15.0](https://docs.adobe.com/content/help/en/analytics/implementation/appmeasurement-release-notes/c-release-notes-mjs.html)    
+* Updated extension to support [AppMeasurement 2.15.0](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-release-notes/c-release-notes-mjs.html)    
 * Removed the following checkbox since it’s not supported anymore: "Do not attach the destination publishing IFRAME to the DOM or fire destinations"
  
 ## June 4, 2019
@@ -124,7 +124,7 @@ description: The latest release notes for the Adobe Analytics extension in Adobe
 
 #### Features
 
-* Updated the Adobe Analytics Extension to [AppMeasurement 2.14.0](https://docs.adobe.com/content/help/en/analytics/implementation/appmeasurement-release-notes/c-release-notes-mjs.html) which includes a fix to a known clearVars issue
+* Updated the Adobe Analytics Extension to [AppMeasurement 2.14.0](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-release-notes/c-release-notes-mjs.html) which includes a fix to a known clearVars issue
 * Added an Exchange link to the extension. The Exchange listing can be reached by selecting the dropdown and choosing "extension info"
 
 #### Bug fixes

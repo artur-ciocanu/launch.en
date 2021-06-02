@@ -129,6 +129,6 @@ To learn more about [!DNL Platform Launch], refer to these resources:
 * **[Platform Launch Community](https://forums.adobe.com/community/experience-cloud/platform/launch)**: Ask and answer questions, submit ideas, vote on the ideas of others. Log in with your [!DNL Adobe] ID.
 * **[Platform Launch Webinars](https://adobe.com/go/launchme)**: Sign up for upcoming webinars and watch recordings of past webinars.
 * **[Developer Docs](https://developer.adobelaunch.com/)**: Get involved with the [!DNL Platform Launch] developer community to build extensions or use the [!DNL Platform Launch] APIs
-* **[Videos](https://docs.adobe.com/content/help/en/core-services-learn/tutorials/overview.html)**
+* **[Videos](https://experienceleague.adobe.com/docs/core-services-learn/tutorials/overview.html)**
 
   These videos introduce you to [!DNL Platform Launch] concepts and tasks.

@@ -168,7 +168,7 @@ Environment pages now display async embed codes as the default. Toggling between
 
 ### Documentation
 
-Open source documentation for [!DNL Platform Launch] available at [https://docs.adobe.com/content/help/en/launch/using/overview.html](https://docs.adobe.com/content/help/en/launch/using/overview.html).
+Open source documentation for [!DNL Platform Launch] available at [https://experienceleague.adobe.com/docs/launch/using/overview.html](https://experienceleague.adobe.com/docs/launch/using/overview.html).
 
 ## April 24, 2018
 

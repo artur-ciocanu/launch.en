@@ -43,13 +43,13 @@ The domain where Target requests are sent. This should almost always be left as 
 
 #### GDPR Opt-In
 
-When enabled, Adobe Target provides opt-in functionality to help support your consent management strategy. Opt-in functionality lets customers control how and when the Target tag is fired.  For more information about Adobe Opt-in, see [Privacy and General Data Protection Regulation (GDPR)](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+When enabled, Adobe Target provides opt-in functionality to help support your consent management strategy. Opt-in functionality lets customers control how and when the Target tag is fired.  For more information about Adobe Opt-in, see [Privacy and General Data Protection Regulation (GDPR)](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 #### Timeout (ms)
 
 If the response from Target is not received within the defined period, the request times out and default content is displayed. Additional requests continue to be attempted during the visitor's session. The default is 3000ms, which might be different from the Timeout configured in the Target user interface.
 
-For more information about how the Timeout setting works, refer to the [Adobe Target help](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/deploy-at-js/implementing-target-without-a-tag-manager.html).
+For more information about how the Timeout setting works, refer to the [Adobe Target help](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/deploy-at-js/implementing-target-without-a-tag-manager.html).
 
 ## Target extension action types
 
@@ -88,7 +88,7 @@ The following options are available:
 * **Body Hiding:** You can enable or disable this setting. The default value is Enabled, which means HTML BODY is hidden.
 * **Body Hidden Style:** The default value is body{opacity:0}. This value can be changed to something different, like body{display:none}.
 
-For more information, refer to the [Target online help documentation](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/advanced-mboxjs-settings.html).
+For more information, refer to the [Target online help documentation](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/advanced-mboxjs-settings.html).
 
 ### Trigger View
 
@@ -97,7 +97,7 @@ Trigger a view for your Single Page Applications.
 1. Specify the view name that must be triggered.
 2. Specify whether the triggering of the view should be attributed to an impression for reporting by checking the Page checkbox. If the view is correlated to a component that is re-rendered and does not attribute to an impression for reporting then leave the Page checkbox unchecked.
 
-For more information about triggering a view, please refer to the [`triggerView()` help documentation](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/functions-overview/adobe-target-triggerview-atjs-2.html).
+For more information about triggering a view, please refer to the [`triggerView()` help documentation](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-triggerview-atjs-2.html).
 
 ## Adobe Target basic deployment
 

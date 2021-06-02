@@ -40,7 +40,7 @@ The Common Analytics Plugins extension provides the following actions:
 >
 >While this action is easier to implement, Adobe Consulting does not recommend that you use this action as it increases the weight of the plugin.
 
-In this action, you are able to select each plugin you want to include in your implementation and save the changes. Select as many or as few as you intend to use during the implementation. Links to documentation on how to use each plugin and a brief description are provided in the Analytics [Plug-ins overview](https://docs.adobe.com/content/help/en/analytics/implementation/vars/plugins/impl-plugins.html).
+In this action, you are able to select each plugin you want to include in your implementation and save the changes. Select as many or as few as you intend to use during the implementation. Links to documentation on how to use each plugin and a brief description are provided in the Analytics [Plug-ins overview](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/impl-plugins.html).
 
 ### Initialize Plugin
 

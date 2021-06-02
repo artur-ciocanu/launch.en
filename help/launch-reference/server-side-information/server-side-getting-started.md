@@ -39,7 +39,7 @@ In Adobe Experience Platform, create your schema.
 
 1. Save the schema and note the name that you gave it.
 
-For more information about schemas, see [Experience Data Model (XDM) System Help](https://docs.adobe.com/content/help/en/experience-platform/xdm/home.html).
+For more information about schemas, see [Experience Data Model (XDM) System Help](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
 
 ## Create Platform Launch Server Side property
 
@@ -103,7 +103,7 @@ In Platform Launch Client Side, create your property, then use the Adobe Experie
 
 1. Select the Edge Domain.
 
-See the [Web SDK extension documentation](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/aep-extension/overview.html) for more configuration options.
+See the [Web SDK extension documentation](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/aep-extension/overview.html) for more configuration options.
 
 ## Create a Platform Launch Client Side rule to send data to Platform Web SDK
 

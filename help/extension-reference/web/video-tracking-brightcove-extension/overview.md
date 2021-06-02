@@ -82,7 +82,7 @@ None
 
 >[!TIP]
 >
->For those who might not want to provision multiple eVars or props for each video element, data elements values can be concatenated within Platform Launch, and then parsed into Classification reports using the Classification Rule Builder Tool, [https://docs.adobe.com/content/help/en/analytics/components/classifications/classifications-rulebuilder/classification-rule-builder.html](https://docs.adobe.com/content/help/en/analytics/components/classifications/classifications-rulebuilder/classification-rule-builder.html), and then applied as a segment in Analysis Workspace.
+>For those who might not want to provision multiple eVars or props for each video element, data elements values can be concatenated within Platform Launch, and then parsed into Classification reports using the Classification Rule Builder Tool, [https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-rulebuilder/classification-rule-builder.html](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-rulebuilder/classification-rule-builder.html), and then applied as a segment in Analysis Workspace.
 >
 >To do this, create a new data element called something like &quot;Video MetaData&quot; and program it to pull in all the Video Data Elements (listed above) and concatenate them together.
 

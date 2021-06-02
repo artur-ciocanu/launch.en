@@ -5,7 +5,7 @@ description: The latest release notes for the Adobe Experience Cloud Identity Se
 
 # Adobe Experience Cloud Identity Service extension release notes
 
-For release notes on the Experience Cloud Identity Service itself and not just the Adobe Experience Platform Launch Extension, please reference: [https://docs.adobe.com/content/help/en/id-service/using/release-notes/release-notes.html](https://docs.adobe.com/content/help/en/id-service/using/release-notes/release-notes.html)
+For release notes on the Experience Cloud Identity Service itself and not just the Adobe Experience Platform Launch Extension, please reference: [https://experienceleague.adobe.com/docs/id-service/using/release-notes/release-notes.html](https://experienceleague.adobe.com/docs/id-service/using/release-notes/release-notes.html)
 
 ## Nov 3, 2020
 
