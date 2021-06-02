@@ -79,7 +79,7 @@ Specify the tracker object to be used globally.
 
 #### Open Editor
 
-Lets you [insert core AppMeasurement code](https://docs.adobe.com/help/en/analytics/implementation/other/dtm/analytics-tool/t-appmeasurement-code.html). This code is populated automatically when using the automatic configuration method.
+Lets you [insert core AppMeasurement code](https://experienceleague.adobe.com/docs/analytics/implementation/other/dtm/analytics-tool/t-appmeasurement-code.html). This code is populated automatically when using the automatic configuration method.
 
 >[!NOTE]
 >
@@ -143,7 +143,7 @@ Used for first-party cookie implementations to dictate where the first-party coo
 
 Tracking Server can be set in Analytics custom code using the variable `s.trackingServer`.
 
-See [trackingServer](https://docs.adobe.com/help/en/analytics/implementation/vars/config-vars/trackingserver.html) in the Adobe Analytics Implementation guide.
+See [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/trackingserver.html) in the Adobe Analytics Implementation guide.
 
 ### SSL Tracking Server
 
@@ -151,7 +151,7 @@ Used for SSL first-party cookie implementations to dictate where the first-party
 
 SSL Tracking Server can be set in Analytics custom code using the variable `s.trackingServerSecure`.
 
-See [trackingServerSecure](https://docs.adobe.com/help/en/analytics/implementation/vars/config-vars/trackingserversecure.html).
+See [trackingServerSecure](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/trackingserversecure.html).
 
 ## Global Variables
 
@@ -287,7 +287,7 @@ Important: Using a "set variables" action won't send the beacon. You must use th
 
 #### eVars
 
-Set one or more [eVars](https://docs.adobe.com/help/en/analytics/implementation/vars/page-vars/evar.html).
+Set one or more [eVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html).
 
 1. Select an eVar from the dropdown.
 1. Specify whether you want to set the eVar as the value (Set As) or copy (Duplicate From) another eVar.
@@ -297,7 +297,7 @@ Set one or more [eVars](https://docs.adobe.com/help/en/analytics/implementation/
 
 #### Props
 
-Set one or more [props](https://docs.adobe.com/help/en/analytics/implementation/vars/page-vars/prop.html).
+Set one or more [props](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/prop.html).
 
 1. Select a prop from the dropdown.
 1. Specify whether you want to set the prop as the value (Set As) or copy (Duplicate From) another eVar.
@@ -310,7 +310,7 @@ Set one or more [props](https://docs.adobe.com/help/en/analytics/implementation/
 Set one or more [events](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/events/events-overview.html).
 
 1. Select an event from the dropdown.
-1. (Optional) Select or specify a data element used for [event serialization](https://docs.adobe.com/help/en/analytics/implementation/vars/page-vars/events/event-serialization.html).
+1. (Optional) Select or specify a data element used for [event serialization](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/events/event-serialization.html).
 1. (Optional) Select **[!UICONTROL Add event]** to set more events.
 1. Select **[!UICONTROL Keep Changes]**.
 
