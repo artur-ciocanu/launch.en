@@ -21,7 +21,7 @@ The [!DNL Adobe Analytics Product String Builder] extension automatically sets t
 Category;Product;Quantity;Price;eventN=X|eventN2=X2;eVarN=merch_category|eVarN2=merch_category2
 ```
 
-For complete documentation, visit [Products](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-products.html).
+For complete documentation, visit [Products](https://experienceleague.adobe.com/docs/analytics/components/variables/dimensions-reports/reports-products.html).
 
 ## Extension Instructions
 
@@ -88,4 +88,4 @@ This action must be accompanied by an "Adobe Analytics - Set Variables" action t
 ### Requirements
 
 * An object-based [data layer](https://theblog.adobe.com/data-layers-buzzword-best-practice/) with variables for all product related data (such as product ID, quantity, price). This extension does not work with array-based data layers.
-* The [Adobe Analytics](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html) extension must be installed.
+* The [Adobe Analytics](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html) extension must be installed.

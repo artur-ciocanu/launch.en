@@ -95,7 +95,7 @@ Then, include the ”Send Beacon” action (`s.tl`) with link name ”video star
 
 >[!TIP]
 > 
->For implementations where multiple eVars or props for each video element can't be used, data element values can be concatenated within Platform Launch, parsed into classification reports using the Classification Rule Builder tool, as explained in [https://docs.adobe.com/content/help/en/analytics/components/classifications/classifications-rulebuilder/classification-rule-builder.html](https://docs.adobe.com/content/help/en/analytics/components/classifications/classifications-rulebuilder/classification-rule-builder.html), and then applied as a segment in Analysis Workspace.
+>For implementations where multiple eVars or props for each video element can't be used, data element values can be concatenated within Platform Launch, parsed into classification reports using the Classification Rule Builder tool, as explained in [https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-rulebuilder/classification-rule-builder.html](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-rulebuilder/classification-rule-builder.html), and then applied as a segment in Analysis Workspace.
 
 To concatenate video information values, create a new data element called ”Video Meta Data,” and program it to pull in all the video data elements (listed above) and assemble them together. For example:
 

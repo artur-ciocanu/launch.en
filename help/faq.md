@@ -29,7 +29,7 @@ No. [!DNL Platform Launch] is a tag manager, but it is not an update to DTM. [!D
 
 For now, yes, but not indefinitely. DTM has a [defined sunset plan](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/dtm-plans-for-a-sunset/ba-p/331077) with specific milestones that will progressively limit its functionality. The next Milestone is set for October of 2020 when DTM properties will become read-only. At this time, no major feature enhancements are planned for legacy [!DNL DTM].
 
-A migration assistant is available to copy properties from DTM into [!DNL Platform Launch] , you can read more about that [here](https://docs.adobe.com/content/help/en/launch/using/reference/upgrade/overview.html) and [here](https://docs.adobe.com/content/help/en/core-services-learn/tutorials/launch-web/migrate-from-dynamic-tag-manager-to-launch.html).
+A migration assistant is available to copy properties from DTM into [!DNL Platform Launch] , you can read more about that [here](https://experienceleague.adobe.com/docs/launch/using/reference/upgrade/overview.html) and [here](https://experienceleague.adobe.com/docs/core-services-learn/tutorials/launch-web/migrate-from-dynamic-tag-manager-to-launch.html).
 
 ## How much does Platform Launch cost?
 
@@ -37,7 +37,7 @@ There is no additional charge for [!DNL Platform Launch]. It is available for an
 
 ## Do I have to change the embed codes in my current DTM implementation?
 
-No, you don't have to change your production embed codes if you're currently using the existing (legacy) [!DNL DTM] system. You can continue to work in your current [!DNL DTM] Company and Web Properties without worrying about changing that embed code. For more details, see the [Platform Launch help docs](https://docs.adobe.com/content/help/en/launch/using/reference/upgrade/overview.html), and this [blog post](https://medium.com/launch-by-adobe/migrating-from-dtm-to-launch-57548251a86d).
+No, you don't have to change your production embed codes if you're currently using the existing (legacy) [!DNL DTM] system. You can continue to work in your current [!DNL DTM] Company and Web Properties without worrying about changing that embed code. For more details, see the [Platform Launch help docs](https://experienceleague.adobe.com/docs/launch/using/reference/upgrade/overview.html), and this [blog post](https://medium.com/launch-by-adobe/migrating-from-dtm-to-launch-57548251a86d).
 
 ## I heard there are plug-ins now. What's that about?
 

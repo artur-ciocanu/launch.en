@@ -11,7 +11,7 @@ exl-id: f9bc91b9-e78e-4daa-a6d4-de7b8b670f88
 
 These videos introduce you to [!DNL Platform Launch] concepts and tasks.
 
-* [Experience Cloud Core Services tutorials](https://docs.adobe.com/content/help/en/core-services-learn/tutorials/overview.html)
+* [Experience Cloud Core Services tutorials](https://experienceleague.adobe.com/docs/core-services-learn/tutorials/overview.html)
 * [Introduction to Experience Platform Launch](https://www.youtube.com/embed/rwqqkG1SERU)
 * [Publishing process overview](https://helpx.adobe.com/analytics/how-to/adobe-launch-publishing-process.html)
 * [User management](https://www.youtube.com/embed/ba28BHX8cwU)
