@@ -1,9 +1,13 @@
 ---
 title: Context in Edge Extension Modules
 description: Learn about the context object and the role it plays in interacting with library modules in Adobe Experience Platform Launch edge extensions.
+exl-id: 6f392d90-135b-4790-a733-f20effb23bfb
 ---
-
 # Context in edge extension modules
+
+>[!NOTE]
+>
+> Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 All library modules in edge extensions are provided a `context` object when they are executed. This document covers the properties provided by the `context` object and the role they play in library modules.
 
@@ -13,7 +17,7 @@ The `arc` property is an object that provides information about the event trigge
 
 ### [!DNL event]
 
-The `event` object represents the event that triggered the rule. `event` contains a single property, `rule`, which itself contains the following values:
+The `event` object represents the event that triggered the rule and contains the following values:
 
 ```js
 logger.log(context.arc.event);
@@ -21,8 +25,8 @@ logger.log(context.arc.event);
 
 | Property | Description |
 | --- | --- |
-| `rule.xdm` | The XDM object of the event. |
-| `rule.data` | The custom data layer. |
+| `xdm` | The XDM object of the event. |
+| `data` | The custom data layer. |
 
 ### [!DNL request]
 

@@ -1,17 +1,35 @@
 ---
 title: Release Notes for the Adobe Target v2 Extension
 description: The latest release notes for the Adobe Target v2 extension in Adobe Experience Platform Launch.
+exl-id: b18889e8-a2a2-44bf-acb6-7693b4d1bbca
 ---
-
 # Adobe Target v2 Extension release notes
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
+## May 19, 2021
+
+### Adobe Target v2 Extension 0.14.1
+
+- Fix regression introduced with v0.14 release where Load Target action was firing global mbox calls
+
+## May 14, 2021
+
+### Adobe Target v2 Extension 0.14
+
+- Added a new action Load Target with [On-Device Decisioning](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/targetv2-extension/adobe-target-extension-v2.html?lang=en#load-target-with-on-device-decisioning), which loads at.js 2.5 with On-Device Decisioning capabilities
+- Updated at.js to 2.5
+
 
 ## March 25, 2021
 
 ### Adobe Target v2 Extension 0.13.7
 
 - Fixed an issue with `targetPageParams` being included in mbox requests. `targetPageParams` should only be included in `pageLoad` requests.
-- Optimized referencing of window and document globals. 
-Updated at.js to 2.4.1.
+- Fixed an issue with document and window global objects in the Adobe Experience Platform Launch extension by replacing the Platform Launch global object dependencies with direct references to them. 
+- Updated at.js to 2.4.1.
 
 ## January 25, 2021
 

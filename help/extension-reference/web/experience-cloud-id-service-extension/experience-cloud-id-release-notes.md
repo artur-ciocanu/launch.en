@@ -1,15 +1,19 @@
 ---
 title: Release Notes for the Adobe Experience Cloud Identity Service Extension
 description: The latest release notes for the Adobe Experience Cloud Identity Service extension in Adobe Experience Platform Launch.
+exl-id: ee483bed-3320-493a-9503-dd9f55fcdaed
 ---
-
 # Adobe Experience Cloud Identity Service extension release notes
 
-For release notes on the Experience Cloud Identity Service itself and not just the Adobe Experience Platform Launch Extension, please reference: [https://experienceleague.adobe.com/docs/id-service/using/release-notes/release-notes.html](https://experienceleague.adobe.com/docs/id-service/using/release-notes/release-notes.html)
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
+For release notes on the Experience Cloud Identity Service itself and not just the Adobe Experience Platform Launch Extension, please reference: [https://docs.adobe.com/content/help/en/id-service/using/release-notes/release-notes.html](https://docs.adobe.com/content/help/en/id-service/using/release-notes/release-notes.html)
 
 ## Nov 3, 2020
 
-### Experience Cloud ID Extension 5.1.1
+### Experience Cloud ID Extension 5.2.1
 
 #### **Features**
 

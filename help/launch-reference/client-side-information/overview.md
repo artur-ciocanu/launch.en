@@ -1,9 +1,13 @@
 ---
 title: Client-Side Information
 description: Learn how to manage client-side operations in Adobe Experience Platform Launch.
+exl-id: 37481f22-3893-4b4c-9246-c51e95351861
 ---
-
 # Client-side information
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 This section contains information that is useful when managing client-side operations of [!DNL Adobe Experience Platform Launch].
 

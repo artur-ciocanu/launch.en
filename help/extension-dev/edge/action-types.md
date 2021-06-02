@@ -1,9 +1,13 @@
 ---
 title: Action Types for Edge Extensions
 description: Learn how to define an action-type library module for an edge extension in Adobe Experience Platform Launch.
+exl-id: 76c66d9c-cd40-40f1-a673-cac82e44e437
 ---
-
 # Action types for edge extensions
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 An action-type library module is intended to take an action--any action. What this action does is entirely up to you. Would you like to send a beacon or perhaps transform some data from the event?
 

@@ -1,10 +1,26 @@
 ---
 title: Release Notes for the Core Extension
 description: The latest release notes for the Core extension in Adobe Experience Platform Launch.
+exl-id: e366b5ef-d9b8-4424-b026-a0a8df1dacfc
 ---
-
 # Core Extension release notes
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
+## May 20, 2021
+
+v2.0.7
+
+* Fixes an issue where mouse interactions on Text Inputs were no longer working correctly.
+* Deprecates the usage of the Browser and Operating System conditions.
+
+## May 4, 2021
+
+v2.0.6
+
+* Minor update to fix icons that become distorted when the screen size changes.
 
 ## March 11, 2021
 
@@ -134,4 +150,3 @@ v1.4.2
 * **Feature** - Page Info Data Element
 * **Feature** - Date Condition
 * **Feature** - Sampling Condition
-

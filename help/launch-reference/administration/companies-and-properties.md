@@ -1,9 +1,13 @@
 ---
 title: Companies and Properties
 description: Learn how your extensions, environments, and libraries are organized and grouped for your organization in Adobe Experience Platform Launch.
+exl-id: 016cb7d5-1977-4b26-8516-b9b035a66f7e
 ---
-
 # Companies and properties
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 ## Companies
 
@@ -108,7 +112,7 @@ Navigate to your company page, then select **[!UICONTROL Add Property]**, or sel
    **Domains:** The base URL of any sites you plan to deploy this property to
 
 1. (Advanced) **[!UICONTROL Run rule components in sequence]** Select this checkbox to make conditions and actions wait for the previous one to complete before they run
-1. (Advanced) **[!UICONTROL Return an empty string for undefined data elements:]** Select this check box if you want data elements that resolve to null or undefined values to be converted to empty strings.
+1. (Advanced) **[!UICONTROL Return an empty string for missing data elements:]** If you reference a data element that does not exist within a library, that would normally return `undefined`.  Select this check box if you want that scenario to return an empty string instead.
 1. (Advanced) **[!UICONTROL Configure for extension development:]** Select this check box if you plan to install development extensions that are being actively developed by your company
 1. Select **[!UICONTROL Save]**.
 

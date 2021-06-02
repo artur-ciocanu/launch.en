@@ -1,9 +1,13 @@
 ---
-title: Core Extension Overview
+title: Server-side Core Extension Overview
 description: Learn about the server-side Core extension in Adobe Experience Platform Launch.
+exl-id: e3228a8b-abe9-48b5-b39c-6c3b1b955653
 ---
-
 # Server-side Core extension overview
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 The Core extension is the default extension released with Adobe Experience Platform Launch Server Side. 
 
@@ -215,4 +219,4 @@ arc.event.xdm.page.pageName
 
 >[!NOTE]
 >
->The `interact` call from the client has `events`, but in Platform Launch Server Side you need `event`. This is because Platform Launch Server Side inspects each event individually, and not as a batch of multiple events as shown on the client.  
+>The `interact` call from the client has `events`, but in Platform Launch Server Side you need `event`. This is because Platform Launch Server Side inspects each event individually, and not as a batch of multiple events as shown on the client.

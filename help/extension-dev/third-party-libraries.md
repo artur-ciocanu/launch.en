@@ -1,9 +1,13 @@
 ---
 title: Implementing Third-Party Libraries
 description: Learn about the different methods of hosting third-party libraries within your Adobe Experience Platform Launch extensions.
+exl-id: d8d79147-a07b-4564-a866-a95616038f10
 ---
-
 # Implementing third-party libraries
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 One of the main purposes of extensions in Adobe Experience Platform Launch is to enable you to easily implement existing marketing technologies (libraries) into your website. By using extensions, you can implement libraries provided by third-party content delivery networks (CDNs) without having to manually edit your website's HTML.
 
@@ -83,9 +87,15 @@ The sections below demonstrate the different ways you can load vendor libraries 
 
 The following methods are covered:
 
-* [Load at runtime from the vendor host](#load-at-runtime-from-the-vendor-host)
-* [Load at runtime from the Platform Launch library host](#load-at-runtime-from-the-platform-launch-library-host)
-* [Embed the library directly](#embed-the-library-directly)
+- [Implementing third-party libraries](#implementing-third-party-libraries)
+  - [Prerequisites](#prerequisites)
+  - [Base code loading process](#base-code-loading-process)
+    - [Base code example](#base-code-example)
+  - [Implementation options in Platform Launch](#implementation-options-in-platform-launch)
+    - [Load at runtime from the vendor host {#vendor-host}](#load-at-runtime-from-the-vendor-host-vendor-host)
+    - [Load at runtime from the Platform Launch library host](#load-at-runtime-from-the-platform-launch-library-host)
+    - [Embed the library directly](#embed-the-library-directly)
+  - [Next steps](#next-steps)
 
 ### Load at runtime from the vendor host {#vendor-host}
 

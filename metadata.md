@@ -1,5 +1,5 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 solution: Experience Platform Launch, Data Collection
 type: Documentation
 feature-set: Launch

@@ -1,23 +1,30 @@
 ---
 title: Upload and Implement End-to-End Testing for an Extension
 description: Learn how to validate, upload, and test your Adobe Experience Platform Launch extension.
+exl-id: db12595b-ab17-410e-ac9a-2d2fe469c2b6
 ---
-
 # Upload and implement end-to-end testing
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 Testing extensions involves using the Adobe Experience Platform Launch API and/or command-line tools to upload your extension packages, then using the Platform Launch UI to install your extension package to a property and exercise its capabilities inside a Platform Launch library and build.
 
 The basic steps to achieve this are:
 
-1. [Validate your extension](#validate)
-1. [Create an Adobe I/O Integration](#integration)
-1. [Upload your extension package](#upload)
-1. [Create a development property](#property)
-1. [Install your extension](#install-extension)
-1. [Create resources to test your extension](#resources)
-1. [Publish your changes](#publish)
-1. [Install Platform Launch on a test site](#install-launch)
-1. [Test](#test)
+- [Upload and implement end-to-end testing](#upload-and-implement-end-to-end-testing)
+  - [Validate your extension {#validate}](#validate-your-extension-validate)
+  - [Create an Adobe I/O integration {#integration}](#create-an-adobe-io-integration-integration)
+  - [Upload Your extension package {#upload}](#upload-your-extension-package-upload)
+  - [Create a development property {#property}](#create-a-development-property-property)
+  - [Install your extension {#install-extension}](#install-your-extension-install-extension)
+  - [Create resources to test your extension {#resources}](#create-resources-to-test-your-extension-resources)
+    - [Data elements](#data-elements)
+    - [Rules](#rules)
+  - [Publish your changes {#publish}](#publish-your-changes-publish)
+  - [Install Platform Launch on a test site {#install-launch}](#install-platform-launch-on-a-test-site-install-launch)
+  - [Test {#test}](#test-test)
 <!-- 1. [Document](#document) -->
 
 As you are testing (Step 9 above), when you discover issues that need to be fixed, you will:
@@ -71,12 +78,12 @@ npx @adobe/reactor-uploader
 
 The Uploader will ask you to input several pieces of information.  The technical account ID, API key and other bits of information can be retrieved from the Adobe I/O console.  Navigate to the [Integrations page](https://console.adobe.io/integrations) in the I/O console.  Select the correct Org from the dropdown, find the right integration and select **[!UICONTROL View]**.
 
-* What is the path to your private key? /path/to/private.key. This is the place you saved your private key in step 2 above.
-* What is your Org ID? Copy/paste this from the I/O Console overview page that you left open earlier.
-* What is your technical account ID? Copy/paste from I/O Console.
-* What is your API key? Copy/paste from I/O Console.
-* What is client secret? Copy/paste from I/O console.
-* What is the path to the extension_package you want to upload? /path/to/extension_package.zip.  If you invoke the uploader from within the directory containing your .zip package, you can just select it from the list instead of typing the path.
+- What is the path to your private key? /path/to/private.key. This is the place you saved your private key in step 2 above.
+- What is your Org ID? Copy/paste this from the I/O Console overview page that you left open earlier.
+- What is your technical account ID? Copy/paste from I/O Console.
+- What is your API key? Copy/paste from I/O Console.
+- What is client secret? Copy/paste from I/O console.
+- What is the path to the extension_package you want to upload? /path/to/extension_package.zip.  If you invoke the uploader from within the directory containing your .zip package, you can just select it from the list instead of typing the path.
 
 Your extension package will then be uploaded and the uploader will give you the ID of the extension_package.
 
@@ -216,8 +223,8 @@ Installation is completed by placing this single `<script>` tag inside the `<hea
 
 While validating your extension on your test page or site, there are a few console commands that will be helpful:
 
-* `_satellite.setDebug(true);` will put Platform Launch into debug mode and output useful logging statements to the console.
-* The `_satellite._container` object contains all kinds of useful information about the deployed library including details about the Build, Data Elements, Rules, and Extensions included.
+- `_satellite.setDebug(true);` will put Platform Launch into debug mode and output useful logging statements to the console.
+- The `_satellite._container` object contains all kinds of useful information about the deployed library including details about the Build, Data Elements, Rules, and Extensions included.
 
 Ultimately your objective here is to test the functionality of the deployed library to ensure that the code you wrote inside your extension package behaves as expected when Platform Launch has compiled it into a library.
 
@@ -235,5 +242,5 @@ When you discover changes that need to be made to your extension package, the it
 <!--
 ## Document {#document}
 
-Your [exchange listing](./create-listing.md) is a great place for marketing and support information for your extension, but our Platform Launch [Help Docs](https://experienceleague.adobe.com/docs/launch/using/overview.html) are used every day by our customers. We encourage you to submit a pull request to [add your extension documentation](https://github.com/AdobeDocs/launch.en/blob/master/help/extension-reference/3rd-party-extensions.md) into the Platform Launch user docs. Open source docs for the win! 🚀
+Your [exchange listing](./create-listing.md) is a great place for marketing and support information for your extension, but our Platform Launch [Help Docs](https://docs.adobe.com/content/help/en/launch/using/overview.html) are used every day by our customers. We encourage you to submit a pull request to [add your extension documentation](https://github.com/AdobeDocs/launch.en/blob/master/help/extension-reference/3rd-party-extensions.md) into the Platform Launch user docs. Open source docs for the win! 🚀
 -->

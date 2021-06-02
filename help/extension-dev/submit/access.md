@@ -1,9 +1,13 @@
 ---
 title: Grant User Access
 description: Learn how to set up your team members with user accounts and permissions for Adobe Experience Platform Launch.
+exl-id: eae1df66-ce22-44fe-a256-c8acda0b19b9
 ---
-
 # Grant user access
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 Before you get started with your extension_package, you need to set up your team members with user accounts and permissions.  This is accomplished in the [Adobe Admin Console](https://adminconsole.adobe.com/).
 

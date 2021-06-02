@@ -1,11 +1,15 @@
 ---
 title: AEM Asset Insights Extension Overview
 description: Learn about the AEM Asset Insights extension in Adobe Experience Platform Launch.
+exl-id: 1bd8b45b-f194-4201-b2d4-050084ce8bed
 ---
-
 # AEM Asset Insights extension overview
 
-This extension is intended to be used together with [AEM Asset Insights](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/touch-ui-configuring-asset-insights.html). More specifically, it replaces the "pageTracker" process and embed code. When configured, this extension sends Asset *Impression* and *Click* metrics to Adobe Analytics, after which they will be imported into the AEM Asset Insights reports. The Asset metrics can then be reported on by using either AEM Asset Insights or Adobe Analytics Project Workspaces.
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
+This extension is intended to be used together with [AEM Asset Insights](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/touch-ui-configuring-asset-insights.html). More specifically, it replaces the "pageTracker" process and embed code. When configured, this extension sends Asset *Impression* and *Click* metrics to Adobe Analytics, after which they will be imported into the AEM Asset Insights reports. The Asset metrics can then be reported on by using either AEM Asset Insights or Adobe Analytics Project Workspaces.
 
 ## Extension prerequisites
         
@@ -142,4 +146,4 @@ If `a.assets.clickedid` is not in the image request, it's mostly likely because 
 
 In the resulting Analytics image request, if `a.assets.clickedid` has the Asset ID, the rule is working correctly. 
 
-If `a.assets.clickedid` is not in the image request, it's mostly likely because the asset that was selected did not have [Asset Insights](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/touch-ui-configuring-asset-insights.html) enabled in AEM.
+If `a.assets.clickedid` is not in the image request, it's mostly likely because the asset that was selected did not have [Asset Insights](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/touch-ui-configuring-asset-insights.html) enabled in AEM.

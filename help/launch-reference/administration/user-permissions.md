@@ -1,9 +1,13 @@
 ---
 title: User Permissions
 description: Learn about the different available permissions for Adobe Experience Platform Launch users.
+exl-id: 43ed8522-452a-47fe-b316-564f80b012af
 ---
-
 # User permissions
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 ## Permission types
 

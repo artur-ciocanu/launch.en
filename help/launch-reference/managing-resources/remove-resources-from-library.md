@@ -1,9 +1,13 @@
 ---
 title: Remove Resources from a Library
 description: Learn how to remove resources from an Adobe Experience Platform Launch library.
+exl-id: fd0df7a8-3fd9-462a-b4c2-6d09b9cf97d7
 ---
-
 # Remove resources from a library
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 When you no longer want a resource to have an effect inside a build, you must remove it from the library that contains that resource and create a new build.
 

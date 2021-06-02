@@ -1,9 +1,13 @@
 ---
 title: Test Embed Codes using Adobe Experience Platform Debugger
 description: Learn how to use Platform Debugger to locally test different embed codes for Adobe Experience Platform Launch on your website.
+exl-id: f6ea1b36-0455-45a6-a4e5-4d90656fe04d
 ---
-
 # Test embed codes using Adobe Experience Platform Debugger
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 As you make changes to your library builds in Adobe Experience Platform Launch, you should test these changes before deploying the build to your production environment. If you do not have a dedicated staging or development environment for your website, you can use Adobe Experience Platform Debugger to locally test different embed codes within your site.
 

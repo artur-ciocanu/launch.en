@@ -1,9 +1,22 @@
 ---
 title: Release Notes for the YouTube Video Tracking Extension
 description: The latest release notes for the YouTube Video Tracking extension in Adobe Experience Platform Launch.
+exl-id: 182c970a-aa78-4254-ac56-b7fd9f00841e
 ---
-
 # YouTube Video Tracking extension release notes
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
+## April 23, 2021
+
+### YouTube Video Tracking extension 2.0.0
+
+#### Features
+
+* Data element specifying version
+* Intuitive QSP overwrite
 
 ## November 24, 2020
 
