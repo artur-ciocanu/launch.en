@@ -1,6 +1,6 @@
 ---
 title: Release Notes for the Adobe Target v2 Extension
-description: The latest release notes for the Data Collection tags Adobe Target v2 extension in Adobe Experience Platform.
+description: The latest release notes for the Adobe Target v2 tag extension in Adobe Experience Platform.
 exl-id: b18889e8-a2a2-44bf-acb6-7693b4d1bbca
 ---
 # Adobe Target v2 Extension release notes
@@ -28,7 +28,7 @@ exl-id: b18889e8-a2a2-44bf-acb6-7693b4d1bbca
 ### Adobe Target v2 Extension 0.13.7
 
 - Fixed an issue with `targetPageParams` being included in mbox requests. `targetPageParams` should only be included in `pageLoad` requests.
-- Fixed an issue with document and window global objects in the Adobe Experience Platform tag extension by replacing the Data Collection tags global object dependencies with direct references to them. 
+- Fixed an issue with document and window global objects in the tag extension by replacing the tags global object dependencies with direct references to them. 
 - Updated at.js to 2.4.1.
 
 ## January 25, 2021
@@ -60,7 +60,7 @@ exl-id: b18889e8-a2a2-44bf-acb6-7693b4d1bbca
 ### Adobe Target v2 Extension 0.13.2
 
 - Fixed an issue when using CNAME and edge override, where at.js 1.x might incorrectly create the server domain, resulting in the Target request failing
-- Fixed an issue where, when using Adobe Experience Platform Data Collection tags Target extension v2 and Adobe Analytics extension, Target delayed the Analytics sendBeacon call
+- Fixed an issue where, when using the v2 tag extension for Target and Adobe Analytics tag extension, Target delayed the Analytics sendBeacon call
 - Improved the `deviceIdLifetime` setting by making it overridable via `targetGlobalSettings`
 
 ## March 25, 2020
@@ -93,4 +93,4 @@ exl-id: b18889e8-a2a2-44bf-acb6-7693b4d1bbca
 
 ### Adobe Target v2 Extension 0.11.0
 
-- New Data Collection tag extension to support at.js 2.1
+- New tag extension to support at.js 2.1

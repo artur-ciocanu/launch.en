@@ -1,6 +1,6 @@
 ---
 title: Release Notes for the AEM Asset Insights Extension
-description: The latest release notes for the Data Collection tags AEM Asset Insights extension in Adobe Experience Platform.
+description: The latest release notes for the AEM Asset Insights tag extension in Adobe Experience Platform.
 exl-id: 83aefdd4-4846-4621-bcce-7526dba11e8f
 ---
 # AEM Asset Insights release notes
@@ -17,7 +17,7 @@ exl-id: 83aefdd4-4846-4621-bcce-7526dba11e8f
 
 - This extension is intended to be used together with AEM Asset Insights.
 - More specifically, it replaces the ***pageTracker*** process and page code.
-- When configured in Adobe Experience Platform Data Collection tags, this extension sends AEM Asset Impression and Click metrics to Adobe Analytics, which will then automatically be imported back into the Asset Insights reports in AEM.
+- When configured in tags, this extension sends AEM Asset Impression and Click metrics to Adobe Analytics, which will then automatically be imported back into the Asset Insights reports in AEM.
 
 **Bug Fixes**
 

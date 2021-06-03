@@ -1,6 +1,6 @@
 ---
 title: Shared modules for the Adobe Analytics extension
-description: Learn about the shared library modules provided by the Adobe Analytics extension in Adobe Experience Platform Data Collection tags.
+description: Learn about the shared library modules provided by the Adobe Analytics tag extension in Adobe Experience Platform.
 exl-id: b4f502d5-843f-43ef-a2f6-90016bc0c6f8
 ---
 # Shared modules for the Adobe Analytics extension
@@ -27,7 +27,7 @@ getTracker().then(function(tracker) {
 
 ### Verifying that Adobe Analytics has been installed
 
-It's possible that Adobe Analytics has not been installed or included in the same Data Collection tags library as your extension. Because of this, it's highly recommended that you check for this case in your code and handle it appropriately. The following JavaScript is an example of how you might implement this:
+It's possible that Adobe Analytics has not been installed or included in the same tag library as your extension. Because of this, it's highly recommended that you check for this case in your code and handle it appropriately. The following JavaScript is an example of how you might implement this:
 
 ```js
 var getTracker = turbine.getSharedModule('adobe-analytics', 'get-tracker');

@@ -1,6 +1,6 @@
 ---
 title: Views in Web Extensions
-description: Learn how to define views for library modules in your Adobe Experience Platform Data Collection tags web extensions.
+description: Learn how to define views for library modules in your Adobe Experience Platform web extensions.
 exl-id: 4a33ee7d-78c7-4e88-9602-c61d7f63b1d8
 ---
 # Views in web extensions
@@ -19,19 +19,19 @@ Be sure to include a `doctype` tag in your HTML file. Typically this means begin
 <!DOCTYPE html>
 ```
 
-## Including the Data Collection tags iframe script
+## Including the tags iframe script
 
-Include the Data Collection tags iframe script within your view's HTML:
+Include the tags iframe script within your view's HTML:
 
 ```html
 <script src="https://assets.adobedtm.com/activation/reactor/extensionbridge/extensionbridge.min.js"></script>
 ```
 
-This script provides a communication API to allow your view to communicate with the Data Collection tags application.
+This script provides a communication API to allow your view to communicate with the tags application.
 
 ## Registering with the extension bridge communication API
 
-After the iframe script is loaded, you will need to provide some methods to Data Collection tags which it will use for communication. Call `window.extensionBridge.register` and pass it an object as follows:
+After the iframe script is loaded, you will need to provide some methods to tags which it will use for communication. Call `window.extensionBridge.register` and pass it an object as follows:
 
 ```js
 window.extensionBridge.register({
@@ -59,14 +59,14 @@ The content of each of the methods will need to be modified to accommodate your 
 
 ### [!DNL init]
 
-The `init` method will be called by Data Collection as soon as the view has been loaded into the iframe. It will be passed a single argument (`info`) which must be an object containing the following properties:
+The `init` method will be called by tags as soon as the view has been loaded into the iframe. It will be passed a single argument (`info`) which must be an object containing the following properties:
 
 | Property | Description |
 | --- | --- |
 | `settings` | An object containing settings that were previously saved from this view. If `settings` is `null`, it indicates that the user is creating the initial settings rather than loading a saved version. If `settings` is an object, you should use it to populate your view since the user is choosing to edit the previously persisted settings. |
 | `extensionSettings` | Settings saved from the extension configuration view. This can be useful to access extension settings in views that are not the extension configuration view. If the current view is the extension configuration view, use `settings. |
 | `propertySettings` | An object containing settings for the property. See the [turbine object guide](../turbine.md#property-settings) for details on what is contained in this object. |
-| `tokens` | An object containing API tokens. For accessing Adobe APIs from inside the view you will need to usually use an IMS token under `tokens.imsAccess`. This token will be made available only for extensions developed by Adobe. If you are an Adobe employee representing an extension authored by Adobe, please [email the Data Collection engineering team](mailto:reactor@adobe.com) and provide the name of the extension so we can add it to the allowed list. |
+| `tokens` | An object containing API tokens. For accessing Adobe APIs from inside the view you will need to usually use an IMS token under `tokens.imsAccess`. This token will be made available only for extensions developed by Adobe. If you are an Adobe employee representing an extension authored by Adobe, please [email the data collection engineering team](mailto:reactor@adobe.com) and provide the name of the extension so we can add it to the allowed list. |
 | `company` | An object containing a single property, `orgId`, which itself represents your Adobe Experience Cloud ID (a 24-character alphanumeric string). |
 | `schema` | An object in [JSON Schema](http://json-schema.org/) format. This object will come from the [extension manifest](../manifest.md) and may be helpful in validating your form. |
 
@@ -74,7 +74,7 @@ Your view should use this information to render and manage its form. It is likel
 
 ### [!DNL validate]
 
-The `validate` method will be called after the user hits the "Save" button in Data Collection tags. It should return one of the following:
+The `validate` method will be called after the user hits the "Save" button. It should return one of the following:
 
 * A boolean indicating whether the user's input is valid.
 * A promise to later be resolved with a boolean indicating whether the user's input is valid.
@@ -85,16 +85,16 @@ If the user's input is invalid, please show some indication of this within your 
 
 ### [!DNL getSettings]
 
-The `getSettings` method will be called after the user hits the "Save" button in PData Collection tags and the view has been validated. The function should return one of the following:
+The `getSettings` method will be called after the user hits the "Save" button and the view has been validated. The function should return one of the following:
 
 * An object containing settings based on user input.
 * A promise to later be resolved with an object containing settings based on user input.
 
-This settings object will later be emitted in the Data Collection tag runtime library. The content of this object is under your discretion. The object must be serializable and deserializable to and from JSON. Values such as functions or [RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp) instances don't meet these criteria and are therefore not allowed.
+This settings object will later be emitted in the tag runtime library. The content of this object is under your discretion. The object must be serializable and deserializable to and from JSON. Values such as functions or [RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp) instances don't meet these criteria and are therefore not allowed.
 
 ## Leveraging shared views
 
-The `window.extensionBridge` object has several methods that allow you to take advantage of existing views available in Data Collection tags so you don't have to reproduce them within your view. The available methods are as follows:
+The `window.extensionBridge` object has several methods that allow you to take advantage of existing views available in tags so you don't have to reproduce them within your view. The available methods are as follows:
 
 ### [!DNL openCodeEditor]
 
@@ -142,9 +142,9 @@ The `options` object should contain a single boolean property, `tokenize`. This 
 
 Your views probably have form fields where users would like to leverage data elements. For example, if your view has a text field where the user should enter a product name, it may not make sense for the user to type a hard-coded value into the field. Instead, they may want the value of the field to be dynamic (determined at runtime) and can accomplish this by using a data element.
 
-As an example, assume we are building an extension that sends a beacon to track a conversion. Let's also assume that one of the pieces of data our beacon sends is a product name. Our extension view that allows the Data Collection user to configure the beacon would likely have a text field for the product name. It typically wouldn't make much sense for the Data Collection user to type in a static product name like "Calzone Oven XL" because the product name is likely dependent upon the page from which the beacon will be sent. This is a great case for a data element.
+As an example, assume we are building an extension that sends a beacon to track a conversion. Let's also assume that one of the pieces of data our beacon sends is a product name. Our extension view that allows the user to configure the beacon would likely have a text field for the product name. It typically wouldn't make much sense for the tags user to type in a static product name like "Calzone Oven XL" because the product name is likely dependent upon the page from which the beacon will be sent. This is a great case for a data element.
 
-If a user wanted to use the data element named `productname` for the product name value, they may type the name of the data element with percent signs on both sides (`%productname%`). We refer to the percentage-sign-wrapped data element name as a "data element token" and Data Collection users are often familiar with this construct. Your extension, in turn, would save the data element token inside the `settings` object it exports. Your settings object may then look like this:
+If a user wanted to use the data element named `productname` for the product name value, they may type the name of the data element with percent signs on both sides (`%productname%`). We refer to the percentage-sign-wrapped data element name as a "data element token" and tags users are often familiar with this construct. Your extension, in turn, would save the data element token inside the `settings` object it exports. Your settings object may then look like this:
 
 ```js
 {
@@ -152,7 +152,7 @@ If a user wanted to use the data element named `productname` for the product nam
 }
 ```
 
-At runtime, before passing the settings object to your library module, Data Collection will deeply scan the settings object and replace any data element tokens with their respective values. If at runtime, the value of the `productname` data element was `Ceiling Medallion Pro 2000`, the settings object that would be passed into your library module would be as follows:
+At runtime, before passing the settings object to your library module, tags will deeply scan the settings object and replace any data element tokens with their respective values. If at runtime, the value of the `productname` data element was `Ceiling Medallion Pro 2000`, the settings object that would be passed into your library module would be as follows:
 
 ```js
 {

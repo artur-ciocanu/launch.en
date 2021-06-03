@@ -1,6 +1,6 @@
 ---
 title: Shared Modules in Web Extensions
-description: Learn how to define shared library modules in your Adobe Experience Platform Data Collection tags web extensions.
+description: Learn how to define shared library modules for web extensions in Adobe Experience Platform.
 exl-id: 06cbc12e-0401-4342-8442-65ebc00e1d48
 ---
 # Shared modules in web extensions
@@ -11,7 +11,7 @@ exl-id: 06cbc12e-0401-4342-8442-65ebc00e1d48
 
 A shared module is a mechanism by which you can communicate with other extensions. In JavaScript implementations, all shared modules are instantiated using the [`getSharedModule`](../turbine.md#shared) method provided by the `turbine` free variable.
 
-When developing your own Data Collection tag extension, you can define any shared modules you want it to provide. For example, you can create a module that loads a user ID asynchronously and then shares the user ID with any other extension via a [promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise):
+When developing your own tag extension, you can define any shared modules you want it to provide. For example, you can create a module that loads a user ID asynchronously and then shares the user ID with any other extension via a [promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise):
 
 ```javascript
 var userIdPromise = new Promise(/* load user id, then resolve promise */);

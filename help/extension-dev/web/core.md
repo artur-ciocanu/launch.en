@@ -1,6 +1,6 @@
 ---
 title: Core Library Modules for Web Extensions
-description: Learn about the core library modules you can use within your Adobe Experience Platform data collection tags web extensions.
+description: Learn about the core library modules you can use within your web extensions.
 exl-id: 6831963e-33da-4bc9-8a7f-eda94f4f98c7
 ---
 # Core library modules for web extensions

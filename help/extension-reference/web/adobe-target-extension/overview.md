@@ -1,6 +1,6 @@
 ---
 title: Adobe Target Extension Overview
-description: Learn about the Adobe Experience Platform Data Collection tags Adobe Target extension.
+description: Learn about the tag extension for Adobe Target in Adobe Experience Platform.
 exl-id: b816bbab-34c6-4d6c-8f27-5643328fd9ca
 ---
 # Adobe Target extension overview
@@ -25,7 +25,7 @@ To configure the extension, open the [!UICONTROL Extensions] tab, hover over the
 
 ### at.js Settings
 
-All of your at.js settings, with the exception of the Timeout. are automatically retrieved from your at.js configuration in the Target user interface. The extension only retrieves settings from the Target user interface when it is first added, so all settings should be managed in the Adobe Experience Platform Data Collection UI if additional updates are needed.
+All of your at.js settings, with the exception of the Timeout are automatically retrieved from your at.js configuration in the Target user interface. The extension only retrieves settings from the Target user interface when it is first added, so all settings should be managed in the Data Collection UI if additional updates are needed.
 
 The following configuration options are available:
 
@@ -80,7 +80,7 @@ The Target extension provides the following actions in the Then portion of a rul
 
 ### Load Target
 
-Add this action to your Data Collection tags rule where it makes sense to load Target in the context of your rule. This loads the at.js library into the page. In most implementations, Target should be loaded on every page of your site.
+Add this action to your tag rule where it makes sense to load Target in the context of your rule. This loads the at.js library into the page. In most implementations, Target should be loaded on every page of your site.
 
 No configuration is needed.
 
@@ -123,14 +123,14 @@ Once you have saved this rule, you'll need to add it to a Library and build/depl
 
 ## Adobe Target extension with an asynchronous deployment
 
-Data Collection tags can be deployed asynchronously. If you are loading the Data Collection tags library asynchronously with Target inside it, then Target will also be loaded asynchronously. This is a fully supported scenario, but there is one additional consideration that must be handled.
+Tags can be deployed asynchronously. If you are loading the tag library asynchronously with Target inside it, then Target will also be loaded asynchronously. This is a fully supported scenario, but there is one additional consideration that must be handled.
 
-In asynchronous deployments, the page can finish rendering the default content before the Target library is fully loaded and has performed the content swap. This can lead to what is known as "flicker" where the default content shows up briefly before being replaced by the personalized content specified by Target. If you want to avoid this flicker, we suggest you use a pre-hiding snippet and load the Data Collection tags bundle asynchronously to avoid any content flicker.
+In asynchronous deployments, the page can finish rendering the default content before the Target library is fully loaded and has performed the content swap. This can lead to what is known as "flicker" where the default content shows up briefly before being replaced by the personalized content specified by Target. If you want to avoid this flicker, we suggest you use a pre-hiding snippet and load the tag bundle asynchronously to avoid any content flicker.
 
 Here are some things to keep in mind when using the pre-hiding snippet:
 
-* The snippet must be added before loading the Data Collection header embed code.
-* This code can't be managed by Data Collection tags, so it must be added to the page directly.
+* The snippet must be added before loading the tag header embed code.
+* This code can't be managed by tags, so it must be added to the page directly.
 * The page will be displayed when the earliest of the following events occur:
   * When the global mbox response has been received
   * When the global mbox request times out
