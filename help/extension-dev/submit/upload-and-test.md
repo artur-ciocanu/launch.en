@@ -11,32 +11,11 @@ exl-id: db12595b-ab17-410e-ac9a-2d2fe469c2b6
 
 Testing extensions involves using the Adobe Experience Platform Launch API and/or command-line tools to upload your extension packages, then using the Platform Launch UI to install your extension package to a property and exercise its capabilities inside a Platform Launch library and build.
 
-The basic steps to achieve this are:
+This document covers how to implement end-to-end testing for your extension. 
 
-- [Upload and implement end-to-end testing](#upload-and-implement-end-to-end-testing)
-  - [Validate your extension {#validate}](#validate-your-extension-validate)
-  - [Create an Adobe I/O integration {#integration}](#create-an-adobe-io-integration-integration)
-  - [Upload Your extension package {#upload}](#upload-your-extension-package-upload)
-  - [Create a development property {#property}](#create-a-development-property-property)
-  - [Install your extension {#install-extension}](#install-your-extension-install-extension)
-  - [Create resources to test your extension {#resources}](#create-resources-to-test-your-extension-resources)
-    - [Data elements](#data-elements)
-    - [Rules](#rules)
-  - [Publish your changes {#publish}](#publish-your-changes-publish)
-  - [Install Platform Launch on a test site {#install-launch}](#install-platform-launch-on-a-test-site-install-launch)
-  - [Test {#test}](#test-test)
-<!-- 1. [Document](#document) -->
-
-As you are testing (Step 9 above), when you discover issues that need to be fixed, you will:
-
-1. Update your extension code
-2. Create a new extension package
-3. Upload your new extension package - your installed extension will reference this new package automatically
-4. Update resources as needed
-5. Publish again
-6. Test
-
-As we walk through the steps below, we'll assume you're using Mac OS with node and npm installed and available.
+>[!NOTE]
+>
+>This guide assumes that you are using MacOS with Node.js and npm installed and available.
 
 ## Validate your extension {#validate}
 
