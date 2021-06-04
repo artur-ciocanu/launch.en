@@ -19,7 +19,7 @@ Each Adobe Experience Platform Launch property requires that the following exten
 
 Per [https://developers.google.com/youtube/player_parameters](https://developers.google.com/youtube/player_parameters), use the ”Embed a player using an tag” code snippet in the HTML of each Web page where a video player is to render.
 
-This extension, version 2.0.0, supports embedding one or more YouTube videos on a single Web page by inserting an `id` attribute with a unique value in the iframe script tag, and appending `enablejsapi=1` and `rel=0` to the end of the `src` attribute value, if not already included, as such:
+This extension, version 2.0.1, supports embedding one or more YouTube videos on a single Web page by inserting an `id` attribute with a unique value in the iframe script tag, and appending `enablejsapi=1` and `rel=0` to the end of the `src` attribute value, if not already included, as such:
 
 `<iframe id="player1" width="560" height="315" src="https://www.youtube.com/embed/xpatB77BzYE?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
 
