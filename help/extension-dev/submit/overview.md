@@ -23,7 +23,7 @@ Select the appropriate link for more information on each of these steps.
 
 ## Support
 
-Support is available via the data collection tags developer community Slack workspace as you are building and testing your extension. The Slack workspace is an online community where extension authors support each other. You can request access at [http://join.launchdevelopers.chat](http://join.launchdevelopers.chat). 
+Support is available via the tags developer community Slack workspace as you are building and testing your extension. The Slack workspace is an online community where extension authors support each other. You can request access at [http://join.launchdevelopers.chat](http://join.launchdevelopers.chat). 
 
 >[!NOTE]
 >

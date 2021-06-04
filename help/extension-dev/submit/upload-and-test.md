@@ -9,7 +9,7 @@ exl-id: db12595b-ab17-410e-ac9a-2d2fe469c2b6
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-To test Adobe Experience Platform tag extensions use the tags API and/or command-line tools to upload your extension packages. Next, use the Data Collection UI to install your extension package to a property and exercise its capabilities inside a tags library and build.
+To test Adobe Experience Platform tag extensions use the tags API and/or command-line tools to upload your extension packages. Next, use the Data Collection UI to install your extension package to a property and exercise its capabilities inside a tag library and build.
 
 The following steps assume the use of a Mac OS with node and npm installed and available.
 
@@ -180,7 +180,7 @@ After the build process completes, a green **success** indicator displays next t
 
 ![](../images/getting-started/successful-build.png)
 
-The tags library is now published and available for use. The test page must use the newly created library in order to test the page behavior for the end-user in a browser.
+The tag library is now published and available for use. The test page must use the newly created library in order to test the page behavior for the end-user in a browser.
 
 ## Install tags on a test site {#install-data-collection-tags}
 
@@ -192,7 +192,7 @@ The **Web Install Instructions** dialogue for the Development environment appear
 
 ![](../images/getting-started/launch-installation-instructions-dialogue.png)
 
-Complete the installation by placing this single `<script>` tag inside the `<head>` section of your document or site template. Next, visit the test site to examine the behavior of your published tags library.
+Complete the installation by placing this single `<script>` tag inside the `<head>` section of your document or site template. Next, visit the test site to examine the behavior of your published tag library.
 
 ## Test {#test}
 

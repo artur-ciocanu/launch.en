@@ -82,7 +82,7 @@ The sections below demonstrate the different ways you can load vendor libraries 
 
 >[!NOTE]
 >
->While the examples below use action types for demonstration purposes, you can apply the same principles to any function that loads the tags library on your site.
+>While the examples below use action types for demonstration purposes, you can apply the same principles to any function that loads the tag library on your site.
 
 
 The following methods are covered:
@@ -93,7 +93,7 @@ The following methods are covered:
     - [Base code example](#base-code-example)
   - [Tags implementation options](#tags-implementation-options)
     - [Load at runtime from the vendor host {#vendor-host}](#load-at-runtime-from-the-vendor-host-vendor-host)
-    - [Load at runtime from the tags library host](#load-at-runtime-from-the-tags-library-host)
+    - [Load at runtime from the tag library host](#load-at-runtime-from-the-tag-library-host)
     - [Embed the library directly](#embed-the-library-directly)
   - [Next steps](#next-steps)
 
@@ -154,11 +154,11 @@ module.exports = function() {
 };
 ```
 
-### Load at runtime from the tags library host
+### Load at runtime from the tag library host
 
 Using a vendor CDN for library hosting poses several risks: the CDN may fail, the file may be updated with a critical bug at any time, or the file could be compromised for nefarious purposes.
 
-To address these concerns, you can choose to include the vendor library as a separate file within your extension. The extension can then be configured so that the file is hosted alongside the main tags library. At runtime, the extension loads the vendor library from the same sever that delivered the main library to the website.
+To address these concerns, you can choose to include the vendor library as a separate file within your extension. The extension can then be configured so that the file is hosted alongside the main tag library. At runtime, the extension loads the vendor library from the same sever that delivered the main library to the website.
 
 >[!IMPORTANT]
 >
@@ -166,7 +166,7 @@ To address these concerns, you can choose to include the vendor library as a sep
 
 To implement this, you must first download the vendor library onto your machine. In the case of Pinterest, the vendor library is found at [https://s.pinimg.com/ct/core.js](https://s.pinimg.com/ct/core.js). Once you have downloaded the file, you must place it within your extension project. In the example below, the file is named `pinterest.js` and is located within a `vendor` folder in the project directory.
 
-Once the library file is in your project, you must update your [extension manifest](./manifest.md) (`extension.json`) to indicate that the vendor library should be delivered alongside the main tags library. This is done by adding the path to the library file within a `hostedLibFiles` array:
+Once the library file is in your project, you must update your [extension manifest](./manifest.md) (`extension.json`) to indicate that the vendor library should be delivered alongside the main tag library. This is done by adding the path to the library file within a `hostedLibFiles` array:
 
 ```json
 {
@@ -199,7 +199,7 @@ It is important to note that when using this method, you must manually update yo
 
 ### Embed the library directly
 
-You can bypass having to load the vendor library entirely by directly embedding the library code into the action code itself, which effectively makes it part of the main tags library. Using this method increases the size of the main library, but avoids the need to make an additional HTTP request to retrieve a separate file.
+You can bypass having to load the vendor library entirely by directly embedding the library code into the action code itself, which effectively makes it part of the main tag library. Using this method increases the size of the main library, but avoids the need to make an additional HTTP request to retrieve a separate file.
 
 Using the action code built in the [previous section](#vendor-host) as a starting point, you can replace the line where the script is loaded with the content of the script itself:
 

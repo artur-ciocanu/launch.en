@@ -63,7 +63,7 @@ The Target extension provides the following actions in the Then portion of a rul
 
 ### Load Target
 
-Add this action to your tags rule where it makes sense to load Target in the context of your rule. This loads the at.js library into the page. In most implementations, Target should be loaded on every page of your site. Adobe recommends using the Load Target action only if it is preceded by a Target call. Otherwise, you might run into issues like the Analytics call being delayed.
+Add this action to your tag rule where it makes sense to load Target in the context of your rule. This loads the at.js library into the page. In most implementations, Target should be loaded on every page of your site. Adobe recommends using the Load Target action only if it is preceded by a Target call. Otherwise, you might run into issues like the Analytics call being delayed.
 
 No configuration is needed.
 

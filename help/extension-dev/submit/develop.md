@@ -17,7 +17,7 @@ With that knowledge you can plan out what components should be provided in your 
 
 With a plan in place, these guides can help you understand the extension development process:
 
-- The [getting started guide](../getting-started.md) and most of the other documents under **Extension development** in the left navigation are great reference material for understanding what extensions can do, how user information is stored and passed between your extension and data collection tags, how your code is bundled into libraries within Adobe Experience data collection, and how your extension code is interpreted and used at runtime in the browser.
+- The [getting started guide](../getting-started.md) and most of the other documents under **Extension development** in the left navigation are great reference material for understanding what extensions can do, how user information is stored and passed between your extension and tags in Adobe Experience Platform, how your code is bundled into libraries within Adobe Experience data collection, and how your extension code is interpreted and used at runtime in the browser.
 - The [extension tutorial video](https://youtu.be/rxjtC9o4rl0) is a great place to start.
 - The [Introduction to Extensions](https://www.youtube.com/playlist?list=PLOdw8u2F8CIgynzKrPEwCPuDxzHW1WP5m) YouTube playlist walks through the process of creating extension packages.
 - [Understanding JSON Schema](https://spacetelescope.github.io/understanding-json-schema/index.html#) article.
@@ -49,4 +49,4 @@ There are example extensions on GitHub you can review or use as starter projects
 
 There is a Slack community workspace where extension authors can support each other. You can request access at [http://join.launchdevelopers.chat](http://join.launchdevelopers.chat).
 
-**Please note**: while there are members of the data collection tags team in this Slack workspace, it is a community resource not sponsored by or moderated by Adobe.
+**Please note**: while there are members of the tags team in this Slack workspace, it is a community resource not sponsored by or moderated by Adobe.

@@ -22,7 +22,7 @@ You must release your extension as a private extension before you can release it
 
 ## Private release
 
-The easiest way to release your extension to private availability is to use the [data collection tag extension Releaser](https://www.npmjs.com/package/@adobe/reactor-releaser). More instructions are found within its documentation.
+The easiest way to release your extension to private availability is to use the [tag extension Releaser](https://www.npmjs.com/package/@adobe/reactor-releaser). More instructions are found within its documentation.
 
 If you'd like to release your extension to private availability using the API directly, see the example call for [privately releasing an extension package](https://developer.adobelaunch.com/api/reference/1.0/extension_packages/release_private/) in the API docs for more detail.
 

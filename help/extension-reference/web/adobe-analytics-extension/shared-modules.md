@@ -41,7 +41,7 @@ if (getTracker) {
 }
 ```
 
-If `getTracker` is `undefined`, the Adobe Analytics extension does not exist in the tags library. You can customize the logged message to accurately reflect what functionality may be lost if Adobe Analytics is not installed.
+If `getTracker` is `undefined`, the Adobe Analytics extension does not exist in the tag library. You can customize the logged message to accurately reflect what functionality may be lost if Adobe Analytics is not installed.
 
 
 ## [!DNL augment-tracker]
