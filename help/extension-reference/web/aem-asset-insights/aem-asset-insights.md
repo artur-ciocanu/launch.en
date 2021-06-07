@@ -47,7 +47,7 @@ This section describes how to configure AEM with tags in Adobe Experience Platfo
 
 ### Integrate AEM with tags in Adobe Experience Platform
 
-The recommended integration of [tags(https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) with Adobe Experience Manager is done via Adobe I/O.
+The recommended integration of [tags](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) with Adobe Experience Manager is done via Adobe I/O.
 
 1. [Connect AEM with tags in Adobe Experience Platform using Adobe I/O](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
 

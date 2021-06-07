@@ -38,7 +38,7 @@ Choose the **[!UICONTROL Products]** link at the top, and **[!UICONTROL Experien
 
 ![Admin console Products tab](../images/getting-started/admin-console-products-launch.png)
 
-The screenshot above shows an example profile, you may not have one yet. To create one, select **[!UICONTROL New Profile**. On the **Create a New Profile** screen, just add a **Profile Name** (Data Collection testing, for example), and an optional **Description**, then select **[!UICONTROL Save]**:
+The screenshot above shows an example profile, you may not have one yet. To create one, select **[!UICONTROL New Profile]**. On the **Create a New Profile** screen, just add a **Profile Name** (Data Collection testing, for example), and an optional **Description**, then select **[!UICONTROL Save]**:
 
 ![Create New Profile display](../images/getting-started/admin-console-create-a-new-profile.png)
 
@@ -64,8 +64,8 @@ When you have all the users you need in this product profile, we'll add permissi
 
 To author extensions, your team must have a minimum of the following permissions:
 
-- "Manage Properties" from the company group.
-- "Manage Extensions", "Manage Environments", and "Develop" from the property group.
+* "Manage Properties" from the company group.
+* "Manage Extensions", "Manage Environments", and "Develop" from the property group.
   
 You can create additional product profiles with more limited rights later if you like, but for now simply select **[!UICONTROL + Add all]** for both **Company Rights** and **Property Rights**. Make sure to select **[!UICONTROL Save]** on each.
 

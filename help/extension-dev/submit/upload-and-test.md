@@ -214,7 +214,7 @@ When you discover changes that need to be made to your extension package, the it
 1. The installation step can be skipped when updating an existing package.
 1. Modify resources - if the configuration for any of your extension components has been changed, you will need to update those resources in the Data Collection UI.
 1. Add your latest changes to your Library and build again.
-2. Complete another round of tests.
+1. Complete another round of tests.
 
 <!--
 ## Document {#document}
