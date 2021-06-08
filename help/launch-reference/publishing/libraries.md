@@ -35,14 +35,14 @@ A library moves between several environments as it makes its way through the pub
 
 1. Select **[!UICONTROL Add New Library]**.
 
-   ![](/help/assets/library-create.jpg)
+   ![](/help/images/library-create.jpg)
 
 1. Name the library.
 1. Assign the library to a Dev environment.
 1. Add a change to the library.
    To add an item, select **[!UICONTROL Add a Change]**, then choose the items you want to add. Any item that has been edited or deleted is available to add to the chosen library.
 
-   ![](/help/assets/library-add-change.jpg)
+   ![](/help/images/library-add-change.jpg)
 
    You can add the following to your library:
 
@@ -73,7 +73,7 @@ Once a library is created, use the drop down menu for that library to select one
 
   Remove that library from the publishing process.
 
-![](/help/assets/library-menu.png)
+![](/help/images/library-menu.png)
 
 ## Add to a library {#add-to-a-library}
 
@@ -105,11 +105,11 @@ To remove something from a library, you must deactivate it and then publish the 
 
 1. Choose a library and select **[!UICONTROL Edit]** to view library changes. All changes are shown in the [!UICONTROL Library Contents] list.
 
-   ![](/help/assets/library-contents.jpg)
+   ![](/help/images/library-contents.jpg)
 
 1. Select a change to view and select a revision.
 
-   ![](/help/assets/library-contents-revision.jpg)
+   ![](/help/images/library-contents-revision.jpg)
 
 1. Select whether to show all items or changed items.
 1. Select the revision, then select **[!UICONTROL Select Revision]**.

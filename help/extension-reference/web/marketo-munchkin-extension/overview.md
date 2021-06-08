@@ -23,7 +23,7 @@ This section describes the action types available int he  [!DNL Marketo Munchkin
 
 ### Initialize
 
-![](/help/assets/munchkin-Init.png)
+![](/help/images/munchkin-Init.png)
 
 **Munchkin ID: (required)** Munchkin Account ID found under Admin > Integration > Munchkin menu.
 
@@ -31,7 +31,7 @@ This section describes the action types available int he  [!DNL Marketo Munchkin
 
 ### Visit web page
 
-![](/help/assets/munchkin-visit-page.png)
+![](/help/images/munchkin-visit-page.png)
 
 **url: (required)** The URL file path used to record a page visit.
 
@@ -41,6 +41,6 @@ This section describes the action types available int he  [!DNL Marketo Munchkin
 
 ### Click link
 
-![](/help/assets/munchkin-click-link.png)
+![](/help/images/munchkin-click-link.png)
 
 **href: (required)** The URL file path used to record a link select.

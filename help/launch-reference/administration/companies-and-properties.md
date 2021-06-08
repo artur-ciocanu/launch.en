@@ -101,7 +101,7 @@ Before beginning, review the [Best practices for planning properties](companies-
 
 Navigate to your company page, then select **[!UICONTROL Add Property]**, or select an existing property from the list and select **[!UICONTROL Configure]**.
 
-![](/help/assets/property-settings.png)
+![](/help/images/property-settings.png)
 
 ### For Web
 

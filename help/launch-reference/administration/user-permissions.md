@@ -143,11 +143,11 @@ Steps 1-3 below can be bypassed by navigating directly to [Adobe Admin Console](
 
 Sign in to [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/) with your [!DNL Adobe] ID, then choose the organization to use within [!DNL Platform Launch] from the [!UICONTROL Navigation] menu.
 
-![](/help/assets/nav-menu.png)
+![](/help/images/nav-menu.png)
 
 Open the solution picker by selecting  the 9-dots icon from the [!UICONTROL Navigation] menu, then select [!UICONTROL Administration].
 
-![](/help/assets/choose-admin.png)
+![](/help/images/choose-admin.png)
 
 If you can't see this link, both of the following conditions are true:
 
@@ -164,23 +164,23 @@ In either case, ask an org admin to perform these steps for you, or to make you 
 
 Select **Platform Launch Admin Console**.
 
-![](/help/assets/launch-admin-console-button.png)
+![](/help/images/launch-admin-console-button.png)
 
 Select the **[!DNL Experience Platform Launch] - `Company Name`** card.
 
-![](/help/assets/launch-card.png)
+![](/help/images/launch-card.png)
 
 <!-- Scott, update above image. Rebranding. -->
 
 You can also select [!UICONTROL Products] in the top nav, then select **[!DNL Experience Platform Launch] - `Company Name`** from the left nav.
 
-![](/help/assets/products-select-launch.png)
+![](/help/images/products-select-launch.png)
 
 If you do not see a [!DNL Experience Platform Launch] card and or if [!DNL Experience Platform Launch] does not appear in this list, then you are not an Org Admin, but you are a Product Admin for other Experience Cloud products. Because you are not an Administrator for Experience Platform Launch, you need to find an Org Admin who can perform these steps for you or who can make you a Product Admin for [!DNL Platform Launch].
 
 After you select Platform Launch, a list of product profiles displays. Think of these profiles as permission groups. One profile is created for you and is named "[!DNL Platform Launch] - `Company Name`."
 
-![](/help/assets/product-profiles.png)
+![](/help/images/product-profiles.png)
 
 ### 3. Create your product profile
 
@@ -192,27 +192,27 @@ To create a new product profile, select [!UICONTROL New Profile].
 
 Give your new profile a name and a description, configure whether users should receive emails when they are added or removed from this profile, and then select [!UICONTROL Done].
 
-![](/help/assets/profile-new.png)
+![](/help/images/profile-new.png)
 
 ### 4. Edit your product profile
 
 Select the product profile from the list, then open the [!UICONTROL Permissions] tab. You can assign permissions across two dimensions: Properties and Rights.
 
-![](/help/assets/profile-permissions.png)
+![](/help/images/profile-permissions.png)
 
 To assign properties to this group definition, open the [!UICONTROL Properties] section.
 
-![](/help/assets/profile-properties-select.png)
+![](/help/images/profile-properties-select.png)
 
 A list shows your [!DNL Platform Launch] properties.
 
-![](/help/assets/profile-properties.png)
+![](/help/images/profile-properties.png)
 
 By default, new product configurations automatically include properties. This means that all properties (present and future) are included in the group definition.
 
 If Auto-include is disabled, all currently available properties are listed on the left. You can move properties into this group definition by selecting  [!UICONTROL Add].
 
-![](/help/assets/profile-properties-add.png)
+![](/help/images/profile-properties-add.png)
 
 Select [!UICONTROL Save] when finished.
 
@@ -220,17 +220,17 @@ Select [!UICONTROL Save] when finished.
 
 Assign the rights you want to be part of your group definition. Open the [!UICONTROL Rights] section.
 
-![](/help/assets/profile-rights-select.png)
+![](/help/images/profile-rights-select.png)
 
 Rights are not automatically included. You must assign each right to your profile. You can quickly add all rights to this profile by using the [!UICONTROL + Add All] button or you can assign individual rights by using the individual + buttons. For more information on what permissions are associated with each right, see [Rights scenarios](#rights-scenarios). Select [!UICONTROL Save] when finished. If [!UICONTROL Save] is not available, you didn't make any changes and the profile won't give you any rights.
 
 First, assign Property Rights:
 
-![](/help/assets/rights-property.png)
+![](/help/images/rights-property.png)
 
 Then, assign Company Rights.
 
-![](/help/assets/rights-company.png)
+![](/help/images/rights-company.png)
 
 Some important notes:
 
@@ -247,7 +247,7 @@ Some important notes:
 
 To assign users to be part of your group, open the [!UICONTROL Users] tab, then select [!UICONTROL Add User].
 
-![](/help/assets/profile-user.png)
+![](/help/images/profile-user.png)
 
 Select [!UICONTROL ...] for additional options, such as bulk user operations.
 
@@ -269,7 +269,7 @@ Once you've added users, they receive an email letting them know that they now h
 
 When you log in to [!DNL Platform Launch], you receive a message saying "Error Loading Account".
 
-![](/help/assets/profile-error.png)
+![](/help/images/profile-error.png)
 
 Resolution: Your user does not belong to any [!DNL Platform Launch] product profiles. See the steps above to create a profile and assign rights to it, and to assign a user to a profile.
 

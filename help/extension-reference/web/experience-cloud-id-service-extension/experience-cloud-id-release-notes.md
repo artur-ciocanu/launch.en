@@ -99,7 +99,7 @@ Details of these attribute values are on [web.dev](https://web.dev/samesite-cook
 * Fixed a bug for get Opt-In preApprovals Input
 * Renamed VIDEO_ANALYTICS to MEDIA_ANALYTICS in preOptInApprovals
 
-  ![](/help/assets/ecid-media-analytics.png)
+  ![](/help/images/ecid-media-analytics.png)
 
 ## July 17, 2019
 
@@ -110,7 +110,7 @@ Details of these attribute values are on [web.dev](https://web.dev/samesite-cook
 * Updated visitor.js to 4.4.0
 * Added SHA256 hashing support for setCustomerIDs
 
-  ![](/help/assets/ecid-setCustomerIDs-hash.png)
+  ![](/help/images/ecid-setCustomerIDs-hash.png)
 
 ## May 13, 2019
 
@@ -121,7 +121,7 @@ Details of these attribute values are on [web.dev](https://web.dev/samesite-cook
 * Updated visitor.js to 4.3
 * Added data element type for ECID as part of the Platform Launch Extension
 
-  ![](/help/assets/ecid-data-element.png)
+  ![](/help/images/ecid-data-element.png)
 
 ## April 9, 2019
 
@@ -148,7 +148,7 @@ Details of these attribute values are on [web.dev](https://web.dev/samesite-cook
 * Updated visitor.js to 4.0
 * Added a configuration options for the new built-in Opt-In Object. Opti-In settings can be used to suppress cookie and beacon calls of Adobe Solutions to better support regulations such as GDPR
 
-  ![](/help/assets/ext-mcid-opt-in.png)
+  ![](/help/images/ext-mcid-opt-in.png)
 
 ## March 20, 2018
 
