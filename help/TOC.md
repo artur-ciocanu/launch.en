@@ -155,6 +155,9 @@ git-repo: https://github.com/AdobeDocs/launch.en
   * [Hosting third-party libraries](./extension-dev/third-party-libraries.md)
   * [Turbine free variable](./extension-dev/turbine.md)
   * [Backwards compatibility standard](./extension-dev/backwards-compatibility.md)
+* Reactor API {#api}
+  * [Getting started](./api/getting-started.md)
+  * [Companies](./api/companies.md)
 * [FAQ](./faq.md)
 * Release notes {#release-notes}
   * [Latest](release-notes/current.md)
