@@ -1,7 +1,7 @@
 ---
 title: Adobe Extensions
 seo-title: Adobe Extensions in Adobe Experience Platform Launch
-description: Documentation for tag extensions in Adobe Experience Platform Data Collection.
+description: Documentation for tag extensions in Adobe Experience Platform data collection.
 seo-description: Documentation for the Adobe Experience Platform Launch Extensions provided by Adobe solutions.
 exl-id: e39b308a-8e2b-4cdf-9a2e-71b559ed386b
 ---
