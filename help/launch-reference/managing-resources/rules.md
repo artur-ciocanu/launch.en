@@ -57,13 +57,13 @@ Create a rule by specifying what actions occur if a condition is met.
 
 1. Open the [!UICONTROL Rules] tab, then select **[!UICONTROL Create New Rule]**.
 
-   ![](/help/assets/launch-rule-builder.jpg)
+   ![](/help/images/launch-rule-builder.jpg)
 
 1. Name the rule.
 1. Select the Events **[!UICONTROL Add]** icon.
 1. Choose your extension and one of the event types available for that extension, then configure the settings for the event.  
 
-   ![](/help/assets/rule-event-config.png)
+   ![](/help/images/rule-event-config.png)
 
    Available event types depend on the extension you've selected.  Event settings will differ based on the event type.  Some events don't have any settings that need to be configured.
 
@@ -93,7 +93,7 @@ Create a rule by specifying what actions occur if a condition is met.
 
 1. Select the Conditions **[!UICONTROL Add]** icon, then choose a logic type, extension, condition type and configure the settings for your condition. Next, select **[!UICONTROL Keep Changes]**.
 
-   ![](/help/assets/condition-settings.png)
+   ![](/help/images/condition-settings.png)
 
    Available condition types depend on the extension you've selected.  Condition settings will differ based on the condition type.
 
@@ -108,7 +108,7 @@ Create a rule by specifying what actions occur if a condition is met.
 
 1. Select the Actions **[!UICONTROL Add]** icon, then choose your extension and one of the action types available for that extension, configure the settings for the action, then select **[!UICONTROL Keep Changes]**.
 
-   ![](/help/assets/action-settings.png)
+   ![](/help/images/action-settings.png)
 
    Available action types depend on the extension you've selected.  Action settings will differ based on the action type.
 

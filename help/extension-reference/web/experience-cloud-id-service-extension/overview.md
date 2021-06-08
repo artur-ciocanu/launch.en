@@ -21,7 +21,7 @@ If the Experience Cloud ID extension is not yet installed, open your property, t
 
 To configure the extension, open the Extensions tab, hover over the extension, and then select **[!UICONTROL Configure]**.
 
-![](/help/assets/optin.jpg)
+![](/help/images/optin.jpg)
 
 The following configuration options are available:
 

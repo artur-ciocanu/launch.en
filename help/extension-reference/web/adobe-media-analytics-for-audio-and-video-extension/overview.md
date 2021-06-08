@@ -31,7 +31,7 @@ After you have included all three of the extensions mentioned above in your Plat
 
 * **Configure -** To configure the MA extension, open the [!UICONTROL Extensions] tab, hover over the extension, and then select **[!UICONTROL Configure]**:
 
-![MA Extension Configuration](/help/assets/ext-va-config.jpg)
+![MA Extension Configuration](/help/images/ext-va-config.jpg)
 
 ### Configuration options:
 
@@ -190,9 +190,9 @@ The _Open Video_ action provides various configurations for creating and customi
 
 **Action Configuration / Player Settings:** Note the CSS Selector setting which specifics the `<div>` in the web page where the player is added. Note also that the _Enable Adobe Analytics_ checkbox is checked in the Analytics Settings pane.
 
-![Player Extension Action Configuration](/help/assets/ext-va-sp-action.png)
+![Player Extension Action Configuration](/help/images/ext-va-sp-action.png)
 
-![Player Extension Action Configuration](/help/assets/ext-va-sp-action1.png)
+![Player Extension Action Configuration](/help/images/ext-va-sp-action1.png)
 
 * [\[...\]/openVideo/openVideo.jsx](https://github.com/adobe/reactor-adobe-va-sample-player/blob/master/src/view/actions/openVideo/openVideo.jsx) -
 
@@ -229,7 +229,7 @@ The _Open Video_ action provides various configurations for creating and customi
 
 Once the Sample Player extension is installed, you'll need to create at least one rule to properly deploy it. The Image below shows a sample rule that opens the specified video when the core extension fires the `DOMLoaded` event.
 
-![Player Extension Sample Rule](/help/assets/ext-va-sp-rule.png)
+![Player Extension Sample Rule](/help/images/ext-va-sp-rule.png)
 
 After you have saved this rule, you will need to add it to a Library, and then build and deploy so that you can test the behavior.
 

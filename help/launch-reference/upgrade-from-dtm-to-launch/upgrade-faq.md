@@ -25,7 +25,7 @@ Not everything you can do in DTM is compatible with [!DNL Platform Launch] . A l
 
 Log in to DTM through the Experience Cloud, select your DTM property, then select **[!UICONTROL Upgrade to Launch]**.
 
-![](/help/assets/upgrade_to_launch.png)
+![](/help/images/upgrade_to_launch.png)
 
 ## Why is my upgrade button grayed out? {#why-is-my-upgrade-button-greyed-out}
 

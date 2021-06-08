@@ -19,11 +19,11 @@ Copying a resource creates a duplicate of that resource in the specified destina
 
 You can initiate a copy of an extension by viewing your installed extensions, selecting  the drop-down arrow on the **[!UICONTROL Configure]** button and selecting **[!UICONTROL Copy]**.
 
-![Copying the Analytics extension](/help/assets/copy-initiate-extension.png)
+![Copying the Analytics extension](/help/images/copy-initiate-extension.png)
 
 For properties, rules, and data elements, simply select the resource you want to copy and then select **[!UICONTROL Copy]** in the actions menu.
 
-![Copying my Analytics rule](/help/assets/copy-initiate-rule.png)
+![Copying my Analytics rule](/help/images/copy-initiate-rule.png)
 
 If you are copying a rule or a data element, in the copy dialog you may use the drop-down menu to select a Destination Property you want to copy to (default setting is the current property). Extensions cannot be copied to the same property, so those will not provide that option.
 
@@ -56,7 +56,7 @@ When you copy an extension to another property, there are a few things that you 
 
 All rules and data elements are provided by an extension, so when you copy across properties, [!DNL Platform Launch] must account for these underlying extensions.
 
-![Copying a Rule to my Demo Property](/help/assets/copy-rules-dialog1.png)
+![Copying a Rule to my Demo Property](/help/images/copy-rules-dialog1.png)
 
 An explanation of exactly what [!DNL Platform Launch] is planning to do is available inside the Copy dialog before you actually begin copying.  The above dialog is for a rule, but the same applies to data elements.
 

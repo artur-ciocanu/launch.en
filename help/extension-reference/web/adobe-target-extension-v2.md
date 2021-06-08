@@ -21,7 +21,7 @@ If the Adobe Target extension is not yet installed, open your property, then sel
 
 To configure the extension, open the Extensions tab, hover over the extension, and then select **[!UICONTROL Configure]**.
 
-![](/help/assets/targetv2config.png)
+![](/help/images/targetv2config.png)
 
 ### at.js settings
 
@@ -115,7 +115,7 @@ Once the Target Extension is installed, create at least one rule to properly dep
 
 A Target rule with this basic implementation looks like this:
 
-![](/help/assets/targetv2deploy.png)
+![](/help/images/targetv2deploy.png)
 
 After you have saved this rule, you'll need to add it to a Library and build/deploy so that you can test the behavior.
 

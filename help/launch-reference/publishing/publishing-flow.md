@@ -38,11 +38,11 @@ When it comes to the publishing flow, there are four basic states that a library
 
 These four states are represented as columns within the **[!UICONTROL Publishing Flow]** tab in the Platform Launch UI.
 
-![](./assets/approval-workflow/flow-ui.png)
+![](./images/approval-workflow/flow-ui.png)
 
 Specific actions must be taken to move a library between these states. The following diagram outlines each action that moves a library between states:
 
-![](./assets/approval-workflow/library-state.png)
+![](./images/approval-workflow/library-state.png)
 
 ### [!UICONTROL Development] {#development}
 
@@ -94,15 +94,15 @@ If a library is currently in the [!UICONTROL Development], [!UICONTROL Submitted
 
 What is included in the upstream depends on the current stage of the library. For example, libraries in the [!UICONTROL Approved] column only inherit resources from the [!UICONTROL Published] library, whereas libraries under [!UICONTROL Development] inherit resources from all other columns.
 
-![](./assets/approval-workflow/upstream.png)
+![](./images/approval-workflow/upstream.png)
 
 When you are editing a library in the Platform Launch UI, all resources that are inherited from the upstream are represented in the **[!UICONTROL Resources Upstream]** section. To view these resources, select the expand tab below the section heading.
 
-![](./assets/approval-workflow/upstream-collapse.png)
+![](./images/approval-workflow/upstream-collapse.png)
 
 The section expands to show the individual resources that are inherited from the upstream. You can use the left rail to filter between [!UICONTROL Rules], [!UICONTROL Data Elements], and [!UICONTROL Extensions], or use the search bar to look up a specific resource by name.
 
-![](./assets/approval-workflow/upstream-resources.png)
+![](./images/approval-workflow/upstream-resources.png)
 
 ## Next steps
 

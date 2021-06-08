@@ -23,7 +23,7 @@ When a user visits your site in a browser, the browser requests the DTM file fro
 
 In the diagram below, Step 1 shows DTM publishing the container tag to your specified web host. In Step 2, the browser requests the container tag, using the embed code, and the host responds with the published file.
 
-![](/help/assets/dtm_publishing.png)
+![](/help/images/dtm_publishing.png)
 
 ## Linking Embed Codes {#linking-embed-codes}
 
@@ -35,7 +35,7 @@ When you publish in [!DNL Platform Launch] , the [!DNL Platform Launch]  contain
 
 In the diagram below, Step 3 represents [!DNL Platform Launch]  publishing its container tag over the top of the DTM container tag (from Step 1). When Step 2 occurs, it gets the [!DNL Platform Launch]  container tag instead.
 
-![](/help/assets/launch_publishing.png)
+![](/help/images/launch_publishing.png)
 
 >[!IMPORTANT]
 >
