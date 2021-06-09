@@ -158,8 +158,11 @@ git-repo: https://github.com/AdobeDocs/launch.en
 * Reactor API {#api}
   * [Getting started](./api/getting-started.md)
   * [App configurations](./api/app-configurations.md)
+  * [Builds](./api/builds.md)
   * [Callbacks](./api/callbacks.md)
   * [Companies](./api/companies.md)
+  * [Environments](./api/environments.md)
+  * [Libraries](./api/libraries.md)
   * [Properties](./api/properties.md)
 * [FAQ](./faq.md)
 * Release notes {#release-notes}
