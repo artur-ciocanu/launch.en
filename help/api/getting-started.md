@@ -15,7 +15,7 @@ This guide covers how to use the Adobe Developer Console to gather the values fo
 
 ## Gain developer access to Adobe Experience Platform
 
-Before you can generate authentication values for the Reactor API, you must have developer access to Experience Platform. To gain developer access, follow the beginning steps in the [Experience Platform authentication tutorial](https://experienceleague.adobe.com/docs/experience-platform/tutorials/authentication.html). Once you arrive at the step "Generate access credentials in Adobe Developer Console", return to this tutorial to generate the credentials specific to Launch.
+Before you can generate authentication values for the Reactor API, you must have developer access to Experience Platform. To gain developer access, follow the beginning steps in the [Experience Platform authentication tutorial](http://www.adobe.com/go/platform-api-authentication-en). Once you arrive at the step "Generate access credentials in Adobe Developer Console", return to this tutorial to generate the credentials specific to Launch.
 
 ## Generate access credentials
 
@@ -25,7 +25,7 @@ Using Adobe Developer Console, you must generate the following three access cred
 * `{API_KEY}`
 * `{ACCESS_TOKEN}`
 
-Your IMS Organization's ID (`{IMS_ORG}`) and API key (`{API_KEY}`) only need to be generated once and can be reused in future API calls. However, your access token (`{ACCESS_TOKEN}`) is temporary and must be regenerated every 24 hours.
+Your IMS Organization's ID (`{IMS_ORG}`) and API key (`{API_KEY}`) can be reused in future API calls after they have been initially generated. However, your access token (`{ACCESS_TOKEN}`) is temporary and must be regenerated every 24 hours.
 
 The steps for generating these values are covered in detail below.
 
@@ -33,7 +33,7 @@ The steps for generating these values are covered in detail below.
 
 Go to [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui) and sign in with your Adobe ID. Next, follow the steps outlined in the tutorial on [creating an empty project](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/projects-empty.md) in the Developer Console documentation.
 
-Once you have created a new project, select **Add API** on the **Project Overview** screen.
+Once you have created a project, select **Add API** on the **Project Overview** screen.
 
 ![](../images/api/getting-started/add-api-button.png)
 
@@ -45,19 +45,19 @@ On the next screen, you are prompted to create a JSON Web Token (JWT) credential
 
 ![](../images/api/getting-started/create-jwt.png)
 
-The next screen confirms the keypair has successfully generated, and a compressed folder containing a public certificate and a private key is automatically downloaded to your machine. You will need this private key in a later step to generate an access token.
+The next screen confirms that the keypair has successfully generated, and a compressed folder containing a public certificate and a private key is automatically downloaded to your machine. This private key is required in a later step to generate an access token.
 
 Select **Next** to continue.
 
 ![](../images/api/getting-started/keypair-generated.png)
 
-The next screen prompts you to select the product profile(s) to associate with the API integration.
+The next screen prompts you to select one or more product profiles to associate with the API integration.
 
 >[!NOTE]
 >
->Product profiles are managed by your organization through the Adobe Admin Console, and contain specific sets of permissions for granular features in Adobe Experience Platform Launch. Product profiles and their permissions can only be managed by users with administrator privileges within your organization. If you are unsure which product profile(s) to select for the API, contact your administrator.
+>Product profiles are managed by your organization through the Adobe Admin Console, and contain specific sets of permissions for granular features in Adobe Experience Platform Launch. Product profiles and their permissions can only be managed by users with administrator privileges within your organization. If you are unsure which product profiles to select for the API, contact your administrator.
 
-Select the desired product profile(s) from the list, then select **Save configured API** to complete the API registration.
+Select the desired product profiles from the list, then select **Save configured API** to complete the API registration.
 
 ![](../images/api/getting-started/select-product-profile.png)
 
@@ -74,7 +74,7 @@ Now that you have your `{API_KEY}` and `{IMS_ORG}` values, the final step is gen
 
 >[!NOTE]
 >
->Note that these tokens expire after 24 hours.  If you are using this integration for an application, it is a good idea to obtain your bearer token programmatically from within your application.
+>These tokens expire after 24 hours. If you are using this integration for an application, it is a good idea to obtain your bearer token programmatically from within your application.
 
 You have two options to generate your access tokens, depending on your use case:
 
