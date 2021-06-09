@@ -11,7 +11,11 @@ exl-id: db12595b-ab17-410e-ac9a-2d2fe469c2b6
 
 To test Adobe Experience Platform tag extensions use the tags API and/or command-line tools to upload your extension packages. Next, use the Data Collection UI to install your extension package to a property and exercise its capabilities inside a tag library and build.
 
-The following steps assume the use of a Mac OS with node and npm installed and available.
+This document covers how to implement end-to-end testing for your extension. 
+
+>[!NOTE]
+>
+>This guide assumes that you are using MacOS with Node.js and npm installed and available.
 
 ## Validate your extension {#validate}
 
@@ -219,5 +223,5 @@ When you discover changes that need to be made to your extension package, the it
 <!--
 ## Document {#document}
 
-Your [exchange listing](./create-listing.md) is a great place for marketing and support information for your extension, but our Data Collection [Help Docs](https://docs.adobe.com/content/help/en/launch/using/overview.html) are used every day by our customers. We encourage you to submit a pull request to [add your extension documentation](https://github.com/AdobeDocs/launch.en/blob/master/help/extension-reference/3rd-party-extensions.md) into the Data Collection user docs. Open source docs for the win! 🚀
+Your [exchange listing](./create-listing.md) is a great place for marketing and support information for your extension, but our tags [Help Docs](https://docs.adobe.com/content/help/en/launch/using/overview.html) are used every day by our customers. We encourage you to submit a pull request to [add your extension documentation](https://github.com/AdobeDocs/launch.en/blob/master/help/extension-reference/3rd-party-extensions.md) into the tags user docs. Open source docs for the win! 🚀
 -->

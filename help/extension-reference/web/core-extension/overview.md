@@ -1,6 +1,6 @@
 ---
 title: Core Extension Overview
-description: Learn about the Core extension in Adobe Experience Platform Launch.
+description: Learn about the Core tag extension in Adobe Experience Platform.
 exl-id: 657c1507-f005-49a8-a54a-26e6b9ff8b6f
 ---
 # Core extension overview
@@ -9,7 +9,7 @@ exl-id: 657c1507-f005-49a8-a54a-26e6b9ff8b6f
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-The Core extension is the default extension released with Adobe Experience Platform Launch.
+The Core extension is the default extension released with tags in Adobe Experience Platform.
 
 Use this reference for information about the options available when using this extension to build a rule.
 
@@ -137,9 +137,9 @@ If the element is a link (an `<a>` tag), you can also specify whether to delay n
 >
 >This option should be used with extreme caution due to the potential negative consequences it poses to the user experience if used incorrectly.
 
-When you use link delay, Platform Launch will actually prevent the browser from navigating off the page, then perform a JavaScript redirect to the original destination after the specified timeout.  This is especially dangerous when when your page markup has `<a>` tags where the intended functionality does not actually navigate the user away from the page.  If you cannot solve your problem in any other way, you should be extremely precise with your selector definition so that this event will trigger exactly where you need it and nowhere else.
+When you use link delay, tags will actually prevent the browser from navigating off the page, then perform a JavaScript redirect to the original destination after the specified timeout.  This is especially dangerous when when your page markup has `<a>` tags where the intended functionality does not actually navigate the user away from the page.  If you cannot solve your problem in any other way, you should be extremely precise with your selector definition so that this event will trigger exactly where you need it and nowhere else.
 
-The default link delay value is 100 milliseconds. Please note that Platform Launch will always wait for the amount of time specified and is not connected to the execution of the rule’s actions in any way. It is possible that the delay will force the user to wait longer than is necessary, and also possible that the delay will not be long enough for all the rule’s actions to successfully complete.  Longer delays provide more time for rule execution, but also make for a worse user experience.  
+The default link delay value is 100 milliseconds. Please note that tags will always wait for the amount of time specified and is not connected to the execution of the rule’s actions in any way. It is possible that the delay will force the user to wait longer than is necessary, and also possible that the delay will not be long enough for all the rule’s actions to successfully complete.  Longer delays provide more time for rule execution, but also make for a worse user experience.  
 
 In addition, specify that the event is triggered after a specific amount of time.
 
@@ -167,7 +167,7 @@ Specify the name of the custom event type, then configure the other settings as 
 
 Trigger the event if a specified data element changes.
 
-Enter the data element name. You can select the data element from a list by selecting  the icon and then selecting the data element.
+Enter the data element name. You can select the data element from a list by selecting the icon and then selecting the data element.
 
 #### Direct Call
 
@@ -213,13 +213,13 @@ There are no settings for this event type.
 
 #### Library Loaded (Page Top) {#library-loaded-page-top}
 
-Trigger the event as soon as the Platform Launch library is loaded.
+Trigger the event as soon as the tag library is loaded.
 
 There are no settings for this event type.
 
 #### Page Bottom {#page-bottom}
 
-Trigger the event once `_satellite.pageBottom();` has been called. When loading the Platform Launch library asynchronously, this event type should not be used.
+Trigger the event once `_satellite.pageBottom();` has been called. When loading the tag library asynchronously, this event type should not be used.
 
 There are no settings for this event type.
 
@@ -266,7 +266,7 @@ If you select this option, the following parameters become available:
 
 ## Core extension condition types
 
-This section describes the condition types available in the Core extension.  These condition types can be used with either the regular or exception logic type.
+This section describes the condition types available in the Core extension. These condition types can be used with either the regular or exception logic type.
 
 ### Data
 
