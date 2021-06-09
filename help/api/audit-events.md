@@ -168,7 +168,7 @@ GET /audit_events/{AUDIT_EVENT_ID}
 
 ```shell
 curl -X GET \
-  https://reactor.adobe.io/app_configurations/AC40c339ab80d24c958b90d67b698602eb \
+  https://reactor.adobe.io/audit_events/AEa98742de8ef044d8b86767aa6a15a674 \
   -H 'Authorization: Bearer {ACCESS_TOKEN}' \
   -H 'x-api-key: {API_KEY}' \
   -H 'x-gw-ims-org-id: {IMS_ORG}' \
@@ -182,31 +182,44 @@ A successful response returns the details of the audit event.
 ```json
 {
   "data": {
-    "id": "AC40c339ab80d24c958b90d67b698602eb",
-    "type": "app_configurations",
+    "id": "AEd6a3b381fb8241818d7520001f8bd459",
+    "type": "audit_events",
     "attributes": {
-      "created_at": "2020-12-14T17:31:10.626Z",
-      "updated_at": "2020-12-14T17:31:10.626Z",
-      "app_id": "com.adobe.test_app",
-      "name": "Kessel Apns App",
-      "platform": "mobile",
-      "messaging_service": "apns",
-      "key_type": "p8_file"
+      "attributed_to_display_name": "spencer roan",
+      "attributed_to_email": "roan@adobe.com",
+      "created_at": "2020-12-14T17:31:46.956Z",
+      "display_name": "Example Rule",
+      "type_of": "rule.created",
+      "updated_at": "2020-12-14T17:31:46.956Z",
+      "entity": "{\"data\":{\"id\":\"RL52d156a9074844b89ca20c987dbafd3b\",\"meta\":{\"latest_revision_number\":0},\"type\":\"rules\",\"links\":{\"self\":\"https://reactor.adobe.io/rules/RL52d156a9074844b89ca20c987dbafd3b\",\"origin\":\"https://reactor.adobe.io/rules/RL52d156a9074844b89ca20c987dbafd3b\",\"property\":\"https://reactor.adobe.io/properties/PR03cc61073ef74fd2af21e4cfb6ed97a7\",\"rule_components\":\"https://reactor.adobe.io/rules/RL52d156a9074844b89ca20c987dbafd3b/rule_components\"},\"attributes\":{\"name\":\"Example Rule\",\"dirty\":true,\"enabled\":true,\"published\":false,\"created_at\":\"2020-12-14T17:31:46.883Z\",\"deleted_at\":null,\"updated_at\":\"2020-12-14T17:31:46.883Z\",\"published_at\":null,\"review_status\":\"unsubmitted\",\"revision_number\":0},\"relationships\":{\"notes\":{\"links\":{\"related\":\"https://reactor.adobe.io/rules/RL52d156a9074844b89ca20c987dbafd3b/notes\"}},\"origin\":{\"data\":{\"id\":\"RL52d156a9074844b89ca20c987dbafd3b\",\"type\":\"rules\"},\"links\":{\"related\":\"https://reactor.adobe.io/rules/RL52d156a9074844b89ca20c987dbafd3b/origin\"}},\"property\":{\"data\":{\"id\":\"PR03cc61073ef74fd2af21e4cfb6ed97a7\",\"type\":\"properties\"},\"links\":{\"related\":\"https://reactor.adobe.io/rules/RL52d156a9074844b89ca20c987dbafd3b/property\"}},\"libraries\":{\"links\":{\"related\":\"https://reactor.adobe.io/rules/RL52d156a9074844b89ca20c987dbafd3b/libraries\"}},\"revisions\":{\"links\":{\"related\":\"https://reactor.adobe.io/rules/RL52d156a9074844b89ca20c987dbafd3b/revisions\"}},\"rule_components\":{\"links\":{\"related\":\"https://reactor.adobe.io/rules/RL52d156a9074844b89ca20c987dbafd3b/rule_components\"}}}}}"
     },
     "relationships": {
-      "company": {
+      "property": {
         "links": {
-          "related": "https://reactor.adobe.io/app_configurations/AC40c339ab80d24c958b90d67b698602eb/company"
+          "related": "https://reactor.adobe.io/audit_events/AEd6a3b381fb8241818d7520001f8bd459/property"
         },
         "data": {
-          "id": "CO2bf094214ffd4785bb4bcf88c952a7c1",
-          "type": "companies"
+          "id": "PR03cc61073ef74fd2af21e4cfb6ed97a7",
+          "type": "properties"
+        }
+      },
+      "entity": {
+        "links": {
+          "related": "https://reactor.adobe.io/audit_events/AEd6a3b381fb8241818d7520001f8bd459/rule"
+        },
+        "data": {
+          "type": "rules",
+          "id": "RL52d156a9074844b89ca20c987dbafd3b"
         }
       }
     },
     "links": {
-      "company": "https://reactor.adobe.io/companies/CO2bf094214ffd4785bb4bcf88c952a7c1",
-      "self": "https://reactor.adobe.io/app_configurations/AC40c339ab80d24c958b90d67b698602eb"
+      "entity": "https://reactor.adobe.io/rules/RL52d156a9074844b89ca20c987dbafd3b",
+      "property": "https://reactor.adobe.io/properties/PR03cc61073ef74fd2af21e4cfb6ed97a7",
+      "self": "https://reactor.adobe.io/audit_events/AEd6a3b381fb8241818d7520001f8bd459"
+    },
+    "meta": {
+      "property_name": "Kessel Example Property"
     }
   }
 }
