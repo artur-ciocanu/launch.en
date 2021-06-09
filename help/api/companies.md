@@ -5,9 +5,9 @@ exl-id: f57b84f3-c110-48ac-849e-42438923ee89
 ---
 # Companies endpoint
 
-A company represents a customer organization, typically a business. In the Reactor API, these companies match 1:1 with IMS Organization ID. API users only have visibility into the companies to which they have access.
+A company represents a customer organization, typically a business. In the Reactor API, these companies match 1:1 with IMS Organization ID. API users only have visibility into the companies to which they have access. A company may contain many [properties](./properties.md). A property belongs to exactly one company.
 
-A company may contain many properties. A property belongs to exactly one company.
+The `/companies` endpoint in the Reactor API allows you to programmatically retrieve the companies that you have access to within your experience application.
 
 ## Getting started
 

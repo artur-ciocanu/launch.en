@@ -6,9 +6,9 @@ description: Learn how to make calls to the /app_configurations endpoint in the 
 
 >[!WARNING]
 >
->The implementation of the `app_configurations` are in flux as features are added, removed, and reworked.
+>The implementation of the `/app_configurations` endpoint is in flux as features are added, removed, and reworked.
 
-App configurations allow credentials to be stored and retrieved for later use.
+App configurations allow credentials to be stored and retrieved for later use. The `/app_configurations` endpoint in the Reactor API allows you to programmatically manage app configurations within your experience application.
 
 ## Getting started
 
