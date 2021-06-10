@@ -32,7 +32,7 @@ The following events are supported for each resource type:
 
 ## Getting started
 
-The endpoint used in this guide is part of the Reactor API. Before continuing, please review the [getting started guide](./getting-started.md) for links to related documentation, a guide to reading the sample API calls in this document, and important information regarding required headers.
+The endpoint used in this guide is part of the Reactor API. Before continuing, please review the [getting started guide](../getting-started.md) for links to related documentation, a guide to reading the sample API calls in this document, and important information regarding required headers.
 
 ## Retrieve a list of audit events {#list}
 

@@ -14,11 +14,11 @@ A build is the actual file (or files) that are loaded within your web and mobile
 
 A build belongs to exactly one library. A library can have many builds.
 
-For more general information about builds and how they fit into the publishing workflow for tags, please refer to the [publishing overview](../launch-reference/publishing/overview.md).
+For more general information about builds and how they fit into the publishing workflow for tags, please refer to the [publishing overview](../../launch-reference/publishing/overview.md).
 
 ## Getting started
 
-The endpoint used in this guide is part of the Reactor API. Before continuing, please review the [getting started guide](./getting-started.md) for links to related documentation, a guide to reading the sample API calls in this document, and important information regarding required headers.
+The endpoint used in this guide is part of the Reactor API. Before continuing, please review the [getting started guide](../getting-started.md) for links to related documentation, a guide to reading the sample API calls in this document, and important information regarding required headers.
 
 ## Retrieve a list of builds {#list}
 

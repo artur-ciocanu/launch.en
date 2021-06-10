@@ -28,7 +28,7 @@ A callback belongs to exactly one [property](./properties.md). A property can ha
 
 ## Getting started
 
-The endpoint used in this guide is part of the Reactor API. Before continuing, please review the [getting started guide](./getting-started.md) for links to related documentation, a guide to reading the sample API calls in this document, and important information regarding required headers.
+The endpoint used in this guide is part of the Reactor API. Before continuing, please review the [getting started guide](../getting-started.md) for links to related documentation, a guide to reading the sample API calls in this document, and important information regarding required headers.
 
 ## List callbacks {#list}
 
@@ -46,7 +46,7 @@ GET  /properties/{PROPERTY_ID}/callbacks
 
 >[!NOTE]
 >
->Callbacks can be filtered based on the following attributes:<ul><li>`created_at`</li><li>`updated_at`</li></ul>See the guide on [filtering responses](./filtering.md) for more information.
+>Callbacks can be filtered based on the following attributes:<ul><li>`created_at`</li><li>`updated_at`</li></ul>See the guide on [filtering responses](../guides/filtering.md) for more information.
 
 **Request**
 

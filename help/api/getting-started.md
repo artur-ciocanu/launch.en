@@ -147,7 +147,7 @@ A successful response returns a new access token, as well as the number of secon
 
 By following the steps in this tutorial, you should have a valid values for `{IMS_ORG}`, `{API_KEY}`, and `{ACCESS_TOKEN}`. You can now test these values by using them in a simple cURL request to the Reactor API.
 
-Start by attempting to make an API call to [list all companies](./companies.md#list). 
+Start by attempting to make an API call to [list all companies](./endpoints/companies.md#list). 
 
 >[!NOTE]
 >

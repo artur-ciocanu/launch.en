@@ -10,11 +10,11 @@ Using several data elements together results in a data dictionary or data map. T
 
 A data element belongs to exactly one [property](./properties.md). A property can have many data elements.
 
-For more general information on data elements and their use in tags, see the [data elements guide](../launch-reference/managing-resources/data-elements.md) in the UI documentation.
+For more general information on data elements and their use in tags, see the [data elements guide](../../launch-reference/managing-resources/data-elements.md) in the UI documentation.
 
 ## Getting started
 
-The endpoint used in this guide is part of the Reactor API. Before continuing, please review the [getting started guide](./getting-started.md) for links to related documentation, a guide to reading the sample API calls in this document, and important information regarding required headers.
+The endpoint used in this guide is part of the Reactor API. Before continuing, please review the [getting started guide](../getting-started.md) for links to related documentation, a guide to reading the sample API calls in this document, and important information regarding required headers.
 
 ## Retrieve a list of data elements {#list}
 
@@ -299,7 +299,7 @@ POST /properties/{PROPERTY_ID}/data_elements
 
 **Request**
 
-The following request creates a new data element for the specified property. The call also associates the data element with an existing extension through the `relationship` property. See the guide on [relationships](./guides/relationships.md) for more information.
+The following request creates a new data element for the specified property. The call also associates the data element with an existing extension through the `relationship` property. See the guide on [relationships](../guides/relationships.md) for more information.
 
 ```shell
 curl -X POST \
@@ -335,7 +335,7 @@ curl -X POST \
 | Property | Description |
 | --- | --- |
 | `attributes.name` | **(Required)** A human-readable name for the data element. |
-| `attributes.delegate_descriptor_id` | **(Required)** A formatted string that associates the data element with an extension package. All data elements must be associated with an extension package when they are first created, as each extension package defines the compatible types for its delegate data elements, as well as their intended behavior. See the guide on [delegate descriptor IDs](./guides/delegate-descriptor-ids.md) for more information. |
+| `attributes.delegate_descriptor_id` | **(Required)** A formatted string that associates the data element with an extension package. All data elements must be associated with an extension package when they are first created, as each extension package defines the compatible types for its delegate data elements, as well as their intended behavior. See the guide on [delegate descriptor IDs](../guides/delegate-descriptor-ids.md) for more information. |
 | `attributes.settings` | A settings JSON object represented as a string. |
 | `attributes.default_value` | A default value to return if the data element evaluates to `undefined`. |
 | `attributes.enabled` | A boolean value indicating whether the data element is enabled. |
