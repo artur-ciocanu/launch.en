@@ -765,3 +765,723 @@ curl -X DELETE \
 **Response**
 
 A successful response returns HTTP status 204 (No Content) with no response body, indicating that the data element has been deleted.
+
+## Retrieve related resources for a data element {#related}
+
+The following calls demonstrate how to retrieve the related resources for a data element. When [looking up a data element](#lookup), these relationships are listed under the `relationships` property.
+
+See the [relationships guide](../guides/relationships.md) for more information on relationships in the Reactor API.
+
+### List the related libraries for a data element {#libraries}
+
+You can list the libraries that utilize a data element by appending `/libraries` to the path of a lookup request.
+
+**API format**
+
+```http
+GET  /data_elements/{DATA_ELEMENT_ID}/libraries
+```
+
+| Parameter | Description |
+| --- | --- |
+| `{DATA_ELEMENT_ID}` | The `id` of the data element whose libraries you want to list. |
+
+**Request**
+
+```shell
+curl -X GET \
+  https://reactor.adobe.io/data_elements/DE3fab176ccf8641838b3da59f716fc42b/libraries \
+  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
+  -H 'x-api-key: {API_KEY}' \
+  -H 'x-gw-ims-org-id: {IMS_ORG}' \
+  -H 'Accept: application/vnd.api+json;revision=1'
+```
+
+**Response**
+
+A successful response returns a list of libraries that use the specified data element.
+
+```json
+{
+  "data": [
+    {
+      "id": "LB62d20ad807a949e6b13b0a2c7299eb65",
+      "type": "libraries",
+      "attributes": {
+        "created_at": "2020-12-14T17:50:19.589Z",
+        "name": "My Library",
+        "published_at": null,
+        "state": "development",
+        "updated_at": "2020-12-14T17:50:19.589Z",
+        "build_required": true
+      },
+      "relationships": {
+        "builds": {
+          "links": {
+            "related": "https://reactor.adobe.io/libraries/LB62d20ad807a949e6b13b0a2c7299eb65/builds"
+          }
+        },
+        "environment": {
+          "links": {
+            "self": "https://reactor.adobe.io/libraries/LB62d20ad807a949e6b13b0a2c7299eb65/relationships/environment"
+          },
+          "data": null
+        },
+        "data_elements": {
+          "links": {
+            "related": "https://reactor.adobe.io/libraries/LB62d20ad807a949e6b13b0a2c7299eb65/data_elements",
+            "self": "https://reactor.adobe.io/libraries/LB62d20ad807a949e6b13b0a2c7299eb65/relationships/data_elements"
+          }
+        },
+        "extensions": {
+          "links": {
+            "related": "https://reactor.adobe.io/libraries/LB62d20ad807a949e6b13b0a2c7299eb65/extensions",
+            "self": "https://reactor.adobe.io/libraries/LB62d20ad807a949e6b13b0a2c7299eb65/relationships/extensions"
+          }
+        },
+        "notes": {
+          "links": {
+            "related": "https://reactor.adobe.io/libraries/LB62d20ad807a949e6b13b0a2c7299eb65/notes"
+          }
+        },
+        "rules": {
+          "links": {
+            "related": "https://reactor.adobe.io/libraries/LB62d20ad807a949e6b13b0a2c7299eb65/rules",
+            "self": "https://reactor.adobe.io/libraries/LB62d20ad807a949e6b13b0a2c7299eb65/relationships/rules"
+          }
+        },
+        "upstream_library": {
+          "data": null
+        },
+        "property": {
+          "links": {
+            "related": "https://reactor.adobe.io/libraries/LB62d20ad807a949e6b13b0a2c7299eb65/property"
+          },
+          "data": {
+            "id": "PR241ba9cd56324ac192de68d658f20cb0",
+            "type": "properties"
+          }
+        },
+        "last_build": {
+          "links": {
+            "related": "https://reactor.adobe.io/libraries/LB62d20ad807a949e6b13b0a2c7299eb65/last_build"
+          },
+          "data": null
+        }
+      },
+      "links": {
+        "property": "https://reactor.adobe.io/properties/PR241ba9cd56324ac192de68d658f20cb0",
+        "self": "https://reactor.adobe.io/libraries/LB62d20ad807a949e6b13b0a2c7299eb65"
+      },
+      "meta": {
+        "build_status": null,
+        "build_required_detail": "No build found since last state change"
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "current_page": 1,
+      "next_page": null,
+      "prev_page": null,
+      "total_pages": 1,
+      "total_count": 1
+    }
+  }
+}
+```
+
+### List the related revisions for a data element {#revisions}
+
+You can list the previous revisions of a data element by appending `/revisions` to the path of a lookup request.
+
+**API format**
+
+```http
+GET  /data_elements/{DATA_ELEMENT_ID}/revisions
+```
+
+| Parameter | Description |
+| --- | --- |
+| `{DATA_ELEMENT_ID}` | The `id` of the data element whose revisions you want to list. |
+
+**Request**
+
+```shell
+curl -X GET \
+  https://reactor.adobe.io/data_elements/DE3fab176ccf8641838b3da59f716fc42b/revisions \
+  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
+  -H 'x-api-key: {API_KEY}' \
+  -H 'x-gw-ims-org-id: {IMS_ORG}' \
+  -H 'Accept: application/vnd.api+json;revision=1'
+```
+
+**Response**
+
+A successful response returns a list of revisions that use the specified data element.
+
+```json
+{
+  "data": [
+    {
+      "id": "DEaeceb5164d494c768c18e37ec6f3b091",
+      "type": "data_elements",
+      "attributes": {
+        "created_at": "2020-12-14T17:37:06.488Z",
+        "deleted_at": null,
+        "dirty": false,
+        "enabled": true,
+        "name": "My Data Element 2020-12-14 17:37:05 +0000",
+        "published": false,
+        "published_at": null,
+        "revision_number": 1,
+        "updated_at": "2020-12-14T17:37:06.488Z",
+        "clean_text": false,
+        "default_value": null,
+        "delegate_descriptor_id": "kessel-test::dataElements::dom-attribute",
+        "force_lower_case": false,
+        "review_status": "unsubmitted",
+        "storage_duration": null,
+        "settings": "{\"elementProperty\":\"html\",\"elementSelector\":\".target-element\"}"
+      },
+      "relationships": {
+        "libraries": {
+          "links": {
+            "related": "https://reactor.adobe.io/data_elements/DEaeceb5164d494c768c18e37ec6f3b091/libraries"
+          }
+        },
+        "revisions": {
+          "links": {
+            "related": "https://reactor.adobe.io/data_elements/DEaeceb5164d494c768c18e37ec6f3b091/revisions"
+          }
+        },
+        "notes": {
+          "links": {
+            "related": "https://reactor.adobe.io/data_elements/DEaeceb5164d494c768c18e37ec6f3b091/notes"
+          }
+        },
+        "property": {
+          "links": {
+            "related": "https://reactor.adobe.io/data_elements/DEaeceb5164d494c768c18e37ec6f3b091/property"
+          },
+          "data": {
+            "id": "PR52072581500b44cd808e03e36c38e005",
+            "type": "properties"
+          }
+        },
+        "origin": {
+          "links": {
+            "related": "https://reactor.adobe.io/data_elements/DEaeceb5164d494c768c18e37ec6f3b091/origin"
+          },
+          "data": {
+            "id": "DE5172417ff56e43d2a99ca149021bf65a",
+            "type": "data_elements"
+          }
+        },
+        "extension": {
+          "links": {
+            "related": "https://reactor.adobe.io/data_elements/DEaeceb5164d494c768c18e37ec6f3b091/extension"
+          },
+          "data": {
+            "id": "EXdd53073348ef467683365286a33ade02",
+            "type": "extensions"
+          }
+        },
+        "updated_with_extension_package": {
+          "links": {
+            "related": "https://reactor.adobe.io/data_elements/DEaeceb5164d494c768c18e37ec6f3b091/updated_with_extension_package"
+          },
+          "data": {
+            "id": "EP75db2452065b44e2b8a38ca883ce369a",
+            "type": "extension_packages"
+          }
+        },
+        "updated_with_extension": {
+          "links": {
+            "related": "https://reactor.adobe.io/data_elements/DEaeceb5164d494c768c18e37ec6f3b091/updated_with_extension"
+          },
+          "data": {
+            "id": "EXf9d7d1ca8e6f436b900659ce499c09ce",
+            "type": "extensions"
+          }
+        }
+      },
+      "links": {
+        "property": "https://reactor.adobe.io/properties/PR52072581500b44cd808e03e36c38e005",
+        "origin": "https://reactor.adobe.io/data_elements/DE5172417ff56e43d2a99ca149021bf65a",
+        "self": "https://reactor.adobe.io/data_elements/DEaeceb5164d494c768c18e37ec6f3b091",
+        "extension": "https://reactor.adobe.io/extensions/EXdd53073348ef467683365286a33ade02"
+      },
+      "meta": {
+        "latest_revision_number": 1
+      }
+    },
+    {
+      "id": "DE5172417ff56e43d2a99ca149021bf65a",
+      "type": "data_elements",
+      "attributes": {
+        "created_at": "2020-12-14T17:37:05.920Z",
+        "deleted_at": null,
+        "dirty": false,
+        "enabled": true,
+        "name": "My Data Element 2020-12-14 17:37:05 +0000",
+        "published": false,
+        "published_at": null,
+        "revision_number": 0,
+        "updated_at": "2020-12-14T17:37:05.920Z",
+        "clean_text": false,
+        "default_value": null,
+        "delegate_descriptor_id": "kessel-test::dataElements::dom-attribute",
+        "force_lower_case": false,
+        "review_status": "unsubmitted",
+        "storage_duration": null,
+        "settings": "{\"elementProperty\":\"html\",\"elementSelector\":\".target-element\"}"
+      },
+      "relationships": {
+        "libraries": {
+          "links": {
+            "related": "https://reactor.adobe.io/data_elements/DE5172417ff56e43d2a99ca149021bf65a/libraries"
+          }
+        },
+        "revisions": {
+          "links": {
+            "related": "https://reactor.adobe.io/data_elements/DE5172417ff56e43d2a99ca149021bf65a/revisions"
+          }
+        },
+        "notes": {
+          "links": {
+            "related": "https://reactor.adobe.io/data_elements/DE5172417ff56e43d2a99ca149021bf65a/notes"
+          }
+        },
+        "property": {
+          "links": {
+            "related": "https://reactor.adobe.io/data_elements/DE5172417ff56e43d2a99ca149021bf65a/property"
+          },
+          "data": {
+            "id": "PR52072581500b44cd808e03e36c38e005",
+            "type": "properties"
+          }
+        },
+        "origin": {
+          "links": {
+            "related": "https://reactor.adobe.io/data_elements/DE5172417ff56e43d2a99ca149021bf65a/origin"
+          },
+          "data": {
+            "id": "DE5172417ff56e43d2a99ca149021bf65a",
+            "type": "data_elements"
+          }
+        },
+        "extension": {
+          "links": {
+            "related": "https://reactor.adobe.io/data_elements/DE5172417ff56e43d2a99ca149021bf65a/extension"
+          },
+          "data": {
+            "id": "EXdd53073348ef467683365286a33ade02",
+            "type": "extensions"
+          }
+        },
+        "updated_with_extension_package": {
+          "links": {
+            "related": "https://reactor.adobe.io/data_elements/DE5172417ff56e43d2a99ca149021bf65a/updated_with_extension_package"
+          },
+          "data": {
+            "id": "EP75db2452065b44e2b8a38ca883ce369a",
+            "type": "extension_packages"
+          }
+        },
+        "updated_with_extension": {
+          "links": {
+            "related": "https://reactor.adobe.io/data_elements/DE5172417ff56e43d2a99ca149021bf65a/updated_with_extension"
+          },
+          "data": {
+            "id": "EXf9d7d1ca8e6f436b900659ce499c09ce",
+            "type": "extensions"
+          }
+        }
+      },
+      "links": {
+        "property": "https://reactor.adobe.io/properties/PR52072581500b44cd808e03e36c38e005",
+        "origin": "https://reactor.adobe.io/data_elements/DE5172417ff56e43d2a99ca149021bf65a",
+        "self": "https://reactor.adobe.io/data_elements/DE5172417ff56e43d2a99ca149021bf65a",
+        "extension": "https://reactor.adobe.io/extensions/EXdd53073348ef467683365286a33ade02"
+      },
+      "meta": {
+        "latest_revision_number": 1
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "current_page": 1,
+      "next_page": null,
+      "prev_page": null,
+      "total_pages": 1,
+      "total_count": 2
+    }
+  }
+}
+```
+
+### Look up the related extension for a data element {#extension}
+
+You can look up the extension that utilizes a data element by appending `/extension` to the path of a GET request.
+
+**API format**
+
+```http
+GET  /data_elements/{DATA_ELEMENT_ID}/extension
+```
+
+| Parameter | Description |
+| --- | --- |
+| `{DATA_ELEMENT_ID}` | The `id` of the data element whose extension you want to look up. |
+
+**Request**
+
+```shell
+curl -X GET \
+  https://reactor.adobe.io/data_elements/DE3fab176ccf8641838b3da59f716fc42b/extension \
+  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
+  -H 'x-api-key: {API_KEY}' \
+  -H 'x-gw-ims-org-id: {IMS_ORG}' \
+  -H 'Accept: application/vnd.api+json;revision=1'
+```
+
+**Response**
+
+A successful response returns the details of the extension that uses the specified data element.
+
+```json
+{
+  "data": {
+    "id": "EX9c7f9f1e826149978f2dadaf4c639679",
+    "type": "extensions",
+    "attributes": {
+      "created_at": "2020-12-14T17:37:31.952Z",
+      "deleted_at": null,
+      "dirty": false,
+      "enabled": true,
+      "name": "kessel-test",
+      "published": false,
+      "published_at": null,
+      "revision_number": 0,
+      "updated_at": "2020-12-14T17:37:31.952Z",
+      "delegate_descriptor_id": null,
+      "display_name": "Kessel Test",
+      "review_status": "unsubmitted",
+      "version": "1.2.0",
+      "settings": "{}"
+    },
+    "relationships": {
+      "libraries": {
+        "links": {
+          "related": "https://reactor.adobe.io/extensions/EX9c7f9f1e826149978f2dadaf4c639679/libraries"
+        }
+      },
+      "revisions": {
+        "links": {
+          "related": "https://reactor.adobe.io/extensions/EX9c7f9f1e826149978f2dadaf4c639679/revisions"
+        }
+      },
+      "notes": {
+        "links": {
+          "related": "https://reactor.adobe.io/extensions/EX9c7f9f1e826149978f2dadaf4c639679/notes"
+        }
+      },
+      "property": {
+        "links": {
+          "related": "https://reactor.adobe.io/extensions/EX9c7f9f1e826149978f2dadaf4c639679/property"
+        },
+        "data": {
+          "id": "PR5c15543ef7bb403abc79d65fee0bf1f9",
+          "type": "properties"
+        }
+      },
+      "origin": {
+        "links": {
+          "related": "https://reactor.adobe.io/extensions/EX9c7f9f1e826149978f2dadaf4c639679/origin"
+        },
+        "data": {
+          "id": "EX9c7f9f1e826149978f2dadaf4c639679",
+          "type": "extensions"
+        }
+      },
+      "updated_with_extension_package": {
+        "links": {
+          "related": "https://reactor.adobe.io/extensions/EX9c7f9f1e826149978f2dadaf4c639679/updated_with_extension_package"
+        },
+        "data": {
+          "id": "EP75db2452065b44e2b8a38ca883ce369a",
+          "type": "extension_packages"
+        }
+      },
+      "extension_package": {
+        "links": {
+          "related": "https://reactor.adobe.io/extensions/EX9c7f9f1e826149978f2dadaf4c639679/extension_package"
+        },
+        "data": {
+          "id": "EP75db2452065b44e2b8a38ca883ce369a",
+          "type": "extension_packages"
+        }
+      }
+    },
+    "links": {
+      "property": "https://reactor.adobe.io/properties/PR5c15543ef7bb403abc79d65fee0bf1f9",
+      "origin": "https://reactor.adobe.io/extensions/EX9c7f9f1e826149978f2dadaf4c639679",
+      "self": "https://reactor.adobe.io/extensions/EX9c7f9f1e826149978f2dadaf4c639679",
+      "extension_package": "https://reactor.adobe.io/extension_packages/EP75db2452065b44e2b8a38ca883ce369a",
+      "latest_extension_package": "https://reactor.adobe.io/extension_packages/EP75db2452065b44e2b8a38ca883ce369a"
+    },
+    "meta": {
+      "latest_revision_number": 1
+    }
+  }
+}
+```
+
+### Look up the related origin for a data element {#origin}
+
+You can look up the origin of a data element by appending `/origin` to the path of a GET request. The origin of a data element is the previous revision that was updated to create the current revision.
+
+**API format**
+
+```http
+GET  /data_elements/{DATA_ELEMENT_ID}/origin
+```
+
+| Parameter | Description |
+| --- | --- |
+| `{DATA_ELEMENT_ID}` | The `id` of the data element whose origin you want to look up. |
+
+**Request**
+
+```shell
+curl -X GET \
+  https://reactor.adobe.io/data_elements/DE3fab176ccf8641838b3da59f716fc42b/origin \
+  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
+  -H 'x-api-key: {API_KEY}' \
+  -H 'x-gw-ims-org-id: {IMS_ORG}' \
+  -H 'Accept: application/vnd.api+json;revision=1'
+```
+
+**Response**
+
+A successful response returns the details of the origin that uses the specified data element.
+
+```json
+{
+  "data": {
+    "id": "DE790cb76f91594c2082a727b9f97024f6",
+    "type": "data_elements",
+    "attributes": {
+      "created_at": "2020-12-14T17:37:19.891Z",
+      "deleted_at": null,
+      "dirty": false,
+      "enabled": true,
+      "name": "My Data Element 2020-12-14 17:37:19 +0000",
+      "published": false,
+      "published_at": null,
+      "revision_number": 0,
+      "updated_at": "2020-12-14T17:37:19.891Z",
+      "clean_text": false,
+      "default_value": null,
+      "delegate_descriptor_id": "kessel-test::dataElements::dom-attribute",
+      "force_lower_case": false,
+      "review_status": "unsubmitted",
+      "storage_duration": null,
+      "settings": "{\"elementProperty\":\"html\",\"elementSelector\":\".target-element\"}"
+    },
+    "relationships": {
+      "libraries": {
+        "links": {
+          "related": "https://reactor.adobe.io/data_elements/DE790cb76f91594c2082a727b9f97024f6/libraries"
+        }
+      },
+      "revisions": {
+        "links": {
+          "related": "https://reactor.adobe.io/data_elements/DE790cb76f91594c2082a727b9f97024f6/revisions"
+        }
+      },
+      "notes": {
+        "links": {
+          "related": "https://reactor.adobe.io/data_elements/DE790cb76f91594c2082a727b9f97024f6/notes"
+        }
+      },
+      "property": {
+        "links": {
+          "related": "https://reactor.adobe.io/data_elements/DE790cb76f91594c2082a727b9f97024f6/property"
+        },
+        "data": {
+          "id": "PRf1ac400fb1e04c689e28d5efcd675c94",
+          "type": "properties"
+        }
+      },
+      "origin": {
+        "links": {
+          "related": "https://reactor.adobe.io/data_elements/DE790cb76f91594c2082a727b9f97024f6/origin"
+        },
+        "data": {
+          "id": "DE790cb76f91594c2082a727b9f97024f6",
+          "type": "data_elements"
+        }
+      },
+      "extension": {
+        "links": {
+          "related": "https://reactor.adobe.io/data_elements/DE790cb76f91594c2082a727b9f97024f6/extension"
+        },
+        "data": {
+          "id": "EX2345dba2c8b34d1cbe2795e29c62bf27",
+          "type": "extensions"
+        }
+      },
+      "updated_with_extension_package": {
+        "links": {
+          "related": "https://reactor.adobe.io/data_elements/DE790cb76f91594c2082a727b9f97024f6/updated_with_extension_package"
+        },
+        "data": {
+          "id": "EP75db2452065b44e2b8a38ca883ce369a",
+          "type": "extension_packages"
+        }
+      },
+      "updated_with_extension": {
+        "links": {
+          "related": "https://reactor.adobe.io/data_elements/DE790cb76f91594c2082a727b9f97024f6/updated_with_extension"
+        },
+        "data": {
+          "id": "EXad7ebb72d721478483b741eebfffda6a",
+          "type": "extensions"
+        }
+      }
+    },
+    "links": {
+      "property": "https://reactor.adobe.io/properties/PRf1ac400fb1e04c689e28d5efcd675c94",
+      "origin": "https://reactor.adobe.io/data_elements/DE790cb76f91594c2082a727b9f97024f6",
+      "self": "https://reactor.adobe.io/data_elements/DE790cb76f91594c2082a727b9f97024f6",
+      "extension": "https://reactor.adobe.io/extensions/EX2345dba2c8b34d1cbe2795e29c62bf27"
+    },
+    "meta": {
+      "latest_revision_number": 1
+    }
+  }
+}
+```
+
+### Look up the related property for a data element {#property}
+
+You can look up the property that owns a data element by appending `/property` to the path of a GET request.
+
+**API format**
+
+```http
+GET  /data_elements/{DATA_ELEMENT_ID}/property
+```
+
+| Parameter | Description |
+| --- | --- |
+| `{DATA_ELEMENT_ID}` | The `id` of the data element whose property you want to look up. |
+
+**Request**
+
+```shell
+curl -X GET \
+  https://reactor.adobe.io/data_elements/DE3fab176ccf8641838b3da59f716fc42b/property \
+  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
+  -H 'x-api-key: {API_KEY}' \
+  -H 'x-gw-ims-org-id: {IMS_ORG}' \
+  -H 'Accept: application/vnd.api+json;revision=1'
+```
+
+**Response**
+
+A successful response returns the details of the property that owns the specified data element.
+
+```json
+{
+  "data": {
+    "id": "PRae9440b0f3234c4286569485f2b7a6a2",
+    "type": "properties",
+    "attributes": {
+      "created_at": "2020-12-14T17:52:40.829Z",
+      "enabled": true,
+      "name": "Kessel Example Property",
+      "updated_at": "2020-12-14T17:52:40.829Z",
+      "platform": "web",
+      "development": false,
+      "token": "42daac072e1e",
+      "domains": [
+        "example.com"
+      ],
+      "undefined_vars_return_empty": false,
+      "rule_component_sequencing_enabled": false
+    },
+    "relationships": {
+      "company": {
+        "links": {
+          "related": "https://reactor.adobe.io/properties/PRae9440b0f3234c4286569485f2b7a6a2/company"
+        },
+        "data": {
+          "id": "CO2bf094214ffd4785bb4bcf88c952a7c1",
+          "type": "companies"
+        }
+      },
+      "callbacks": {
+        "links": {
+          "related": "https://reactor.adobe.io/properties/PRae9440b0f3234c4286569485f2b7a6a2/callbacks"
+        }
+      },
+      "hosts": {
+        "links": {
+          "related": "https://reactor.adobe.io/properties/PRae9440b0f3234c4286569485f2b7a6a2/hosts"
+        }
+      },
+      "environments": {
+        "links": {
+          "related": "https://reactor.adobe.io/properties/PRae9440b0f3234c4286569485f2b7a6a2/environments"
+        }
+      },
+      "libraries": {
+        "links": {
+          "related": "https://reactor.adobe.io/properties/PRae9440b0f3234c4286569485f2b7a6a2/libraries"
+        }
+      },
+      "data_elements": {
+        "links": {
+          "related": "https://reactor.adobe.io/properties/PRae9440b0f3234c4286569485f2b7a6a2/data_elements"
+        }
+      },
+      "extensions": {
+        "links": {
+          "related": "https://reactor.adobe.io/properties/PRae9440b0f3234c4286569485f2b7a6a2/extensions"
+        }
+      },
+      "rules": {
+        "links": {
+          "related": "https://reactor.adobe.io/properties/PRae9440b0f3234c4286569485f2b7a6a2/rules"
+        }
+      },
+      "notes": {
+        "links": {
+          "related": "https://reactor.adobe.io/properties/PRae9440b0f3234c4286569485f2b7a6a2/notes"
+        }
+      }
+    },
+    "links": {
+      "company": "https://reactor.adobe.io/companies/CO2bf094214ffd4785bb4bcf88c952a7c1",
+      "data_elements": "https://reactor.adobe.io/properties/PRae9440b0f3234c4286569485f2b7a6a2/data_elements",
+      "environments": "https://reactor.adobe.io/properties/PRae9440b0f3234c4286569485f2b7a6a2/environments",
+      "extensions": "https://reactor.adobe.io/properties/PRae9440b0f3234c4286569485f2b7a6a2/extensions",
+      "rules": "https://reactor.adobe.io/properties/PRae9440b0f3234c4286569485f2b7a6a2/rules",
+      "self": "https://reactor.adobe.io/properties/PRae9440b0f3234c4286569485f2b7a6a2"
+    },
+    "meta": {
+      "rights": [
+        "approve",
+        "develop",
+        "manage_environments",
+        "manage_extensions",
+        "publish"
+      ]
+    }
+  }
+}
+```

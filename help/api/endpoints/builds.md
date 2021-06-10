@@ -450,6 +450,8 @@ A successful response returns the details of the republished build.
 
 The following calls demonstrate how to retrieve the related resources for a build. When [looking up a build](#lookup), these relationships are listed under the `relationships` property.
 
+See the [relationships guide](../guides/relationships.md) for more information on relationships in the Reactor API.
+
 ### List the related data elements for a build {#data-elements}
 
 You can list the related data elements for a build by appending `/data_elements` to the path of a lookup request.
