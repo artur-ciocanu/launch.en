@@ -327,7 +327,7 @@ A successful response returns the details of the updated callback.
 
 ## Delete a callback
 
-You can update a callback by including its ID in the path of a DELETE request.
+You can delete a callback by including its ID in the path of a DELETE request.
 
 **API format**
 

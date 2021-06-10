@@ -157,15 +157,21 @@ git-repo: https://github.com/AdobeDocs/launch.en
   * [Backwards compatibility standard](./extension-dev/backwards-compatibility.md)
 * Reactor API {#api}
   * [Getting started](./api/getting-started.md)
+  * Guides {#guides}
+    * [Delegate descriptor IDs](./api/guides/delegate-descriptor-ids.md)
+    * [Relationships](./api/guides/relationships.md)
   * [Filtering responses](./api/filtering.md)
   * [App configurations](./api/app-configurations.md)
   * [Audit events](./api/audit-events.md)
   * [Builds](./api/builds.md)
   * [Callbacks](./api/callbacks.md)
   * [Companies](./api/companies.md)
+  * [Data elements](./api/data-elements.md)
   * [Environments](./api/environments.md)
+  * [Extensions](./api/extensions.md)
   * [Libraries](./api/libraries.md)
   * [Properties](./api/properties.md)
+  * [Rules](./api/rules.md)
 * [FAQ](./faq.md)
 * Release notes {#release-notes}
   * [Latest](release-notes/current.md)

@@ -315,7 +315,7 @@ A successful response returns the details of the updated app configuration.
 
 ## Delete an app configuration
 
-You can update an app configuration by including its ID in the path of a DELETE request.
+You can delete an app configuration by including its ID in the path of a DELETE request.
 
 **API format**
 
