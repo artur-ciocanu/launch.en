@@ -9,18 +9,18 @@ exl-id: 94bd5c84-cca2-4d46-888f-d106da362817
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-This extension will be deprecated in favor of the [Adobe Experience Platform Web SDK](../aep-web-sdk/overview.md). The features of this extension are being ported over to new extension. Here is a quick comparison of current features. 
+This extension will be deprecated in favor of the [Adobe Experience Platform Web SDK](../aep-web-sdk/overview.md). The features of this extension are being ported over to a new extension. Here is a quick comparison of current features. 
 
 | Platform Demo Extension | Platform Web SDK |
 | ------------------ | ----------- |
 | Support for Custom Customer IDs | Support for Custom Cusotmer IDs|
-| Client Side Mapping UI for XDM | Build in ECID (No need for visitor.js)|
+| Client-Side Mapping UI for XDM | Build in ECID (No need for visitor.js)|
 | Ability to create a streaming connection | Opt-in Support |
 | | XDM Support as a data element | 
 | | First Party Domain Support | 
-| | Debugging tools built in | 
+| | Debugging tools built-in | 
 | | Automatically collects browser context | 
-| | Fully open source | 
+| | Fully open-source | 
 
 
 ## Configure the Adobe Experience Platform extension
@@ -41,7 +41,7 @@ If you select **[!UICONTROL Create a streaming connection]** a modal window will
 
 ![](../../../assets/adobe-experienc-platform-create-streaming-connection.png)
 
-The modal contains fields with pre-populated values that can be changed to suit your needs. If you plan to create more that one streaming connection, you should be aware that the **[!UICONTROL Data Source]** field needs to be unique. Trying to create another streaming connection using a **[!UICONTROL Data Source]** already used on another connection will fail.
+The modal contains fields with pre-populated values that can be changed to suit your needs. If you plan to create more than one streaming connection, you should be aware that the **[!UICONTROL Data Source]** field needs to be unique. Trying to create another streaming connection using a **[!UICONTROL Data Source]** already used on another connection will fail.
 
 Once you selected a streaming endpoint, you will the streaming endpoint URL and source.
 
@@ -71,7 +71,7 @@ After selecting the dataset you can define your schema mapping.
 
 The source value field accepts a value or a data element. You can add a data element by selecting the data element button that is located next to the source value field.
 
-The target schema field contains the path of a XDM field defined in the dataset schema. For fields defined deeper in the schema hierarchy you can use the dot as a separator between the path parts  (eg. timeSeriesEvents.eventType).
+The target schema field contains the path of an XDM field defined in the dataset schema. For fields defined deeper in the schema hierarchy, you can use the dot as a separator between the path parts  (eg. timeSeriesEvents.eventType).
 
 ### Schema Field Selector
 
@@ -81,7 +81,7 @@ The extension offers also the possibility to select a target schema field using 
 
 ### Identity fields inside the Adobe Experience Platform
 
-Record data schemas and time series data schemas may contain one or more identity fields. Identity fields stitch together to form a single identity representation of a subject and include information such as a CRM identifier, Experience Cloud ID (ECID), browser cookie, AdvertisingId, or other IDs in different domains.
+Record data schemas and time-series data schemas may contain one or more identity fields. Identity fields stitch together to form a single identity representation of a subject and include information such as a CRM identifier, Experience Cloud ID (ECID), browser cookie, AdvertisingId, or other IDs in different domains.
 
 Identity fields can be defined in two ways inside the schema:
 
@@ -106,16 +106,16 @@ An identity section will be visible if your schema contains an `xdm:identityMap`
 
 ![](../../../assets/adobe-experience-platform-send-beacon-identity-section.png)
 
-The identity mapping section can contain multiple rows. Each row can define a certain identity type. You can define the following attributes for an identity: type, authenticated state, primary and value.
+The identity mapping section can contain multiple rows. Each row can define a certain identity type. You can define the following attributes for an identity: type, authenticated state, primary, and value.
 
 If you have multiple identities inside the identity mapping section, only one identity can be marked as primary.
 
-If you have a schema that has an `xdm:identityMap` field and at the same time another field is marked an a primary identity field, the primary column from inside the identity mapping section will not be visible.
+If you have a schema that has an `xdm:identityMap` field and at the same time another field is marked as a primary identity field, the primary column from inside the identity mapping section will not be visible.
 
 ![](../../../assets/adobe-experience-platform-send-beacon-identity-section-not-primary.png)
 
 ### Required fields
 
-Some schemas will have top level required fields. The most commons ones are `timestamp` and `_id`. Without defining these fields, the beacon will fail. You can defined them inside the schema mapping section.
+Some schemas will have top-level required fields. The most commons ones are `timestamp` and `_id`. Without defining these fields, the beacon will fail. You can define them inside the schema mapping section.
 
 If your schema mapping section won't contain `timestamp` or `_id`, but the dataset schema requires them, the Adobe Experience Platform extension will send a beacon containing automatically generated values so that the beacon will not fail. The automatically generated values will be added to the beacon data only if you haven't defined those fields inside the schema mapping section.
