@@ -13,11 +13,11 @@ The destination and archive format configured by the environment changes how you
 
 Environments come in three types (or stages), with each type having a different limit to the total number you can have:
 
-| Environment Type |	Allowed Number |
+| Environment Type | Allowed Number |
 | --- | --- |
-| Development |	(No limit) |
-| Staging |	One |
-| Production |	One |
+| Development | (No limit) |
+| Staging | One |
+| Production | One |
 
 These environment types have similar behavior, but are used at different stages of the [tag publishing workflow](../../launch-reference/publishing/publishing-flow.md).
 
@@ -728,6 +728,7 @@ A successful response returns the details of the host that uses the specified en
   }
 }
 ```
+
 ### Look up the related library for an environment {#library}
 
 You can look up the library that uses an environment by appending `/library` to the path of a GET request.
