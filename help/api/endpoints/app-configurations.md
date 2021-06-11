@@ -26,6 +26,10 @@ GET /companies/{COMPANY_ID}/app_configurations
 | --- | --- |
 | `COMPANY_ID` | The `id` of the [company](./companies.md) that owns the app configurations. |
 
+>[!NOTE]
+>
+>Using query parameters, listed app configurations can be filtered based on the following attributes:<ul><li>`app_id`</li><li>`created_at`</li><li>`key_type`</li><li>`messaging_service`</li><li>`name`</li><li>`platform`</li><li>`updated_at`</li></ul>See the guide on [filtering responses](../guides/filtering.md) for more information.
+
 **Request**
 
 ```shell

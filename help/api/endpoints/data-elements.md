@@ -18,6 +18,8 @@ The endpoint used in this guide is part of the Reactor API. Before continuing, p
 
 ## Retrieve a list of data elements {#list}
 
+You can retrieve a list of data elements for a property by including the property's ID in the path of a GET request.
+
 **API format**
 
 ```http
@@ -26,7 +28,11 @@ GET /properties/{PROPERTY_ID}/data_elements
 
 | Parameter | Description |
 | --- | --- |
-| `PROPERTY_ID` | The `id` of the [property](./properties.md) that owns the data elements. |
+| `PROPERTY_ID` | The `id` of the property that owns the data elements. |
+
+>[!NOTE]
+>
+>Using query parameters, listed companies can be filtered based on the following attributes:<ul><li>`created_at`</li><li>`dirty`</li><li>`enabled`</li><li>`name`</li><li>`origin_id`</li><li>`published`</li><li>`published_at`</li><li>`revision_number`</li><li>`updated_at`</li></ul>See the guide on [filtering responses](../guides/filtering.md) for more information.
 
 **Request**
 
@@ -299,7 +305,7 @@ POST /properties/{PROPERTY_ID}/data_elements
 
 **Request**
 
-The following request creates a new data element for the specified property. The call also associates the data element with an existing extension through the `relationship` property. See the guide on [relationships](../guides/relationships.md) for more information.
+The following request creates a new data element for the specified property. The call also associates the data element with an existing extension through the `relationships` property. See the guide on [relationships](../guides/relationships.md) for more information.
 
 ```shell
 curl -X POST \
@@ -638,7 +644,7 @@ curl -X PUT \
 
 **Response**
 
-A successful response returns the details of the new revision data element, as indicated by the incremented `meta.latest_revision_number` attribute.
+A successful response returns the details of the new revision for the data element, as indicated by the incremented `meta.latest_revision_number` attribute.
 
 ```json
 {
@@ -1266,7 +1272,7 @@ curl -X GET \
 
 **Response**
 
-A successful response returns the details of the origin that uses the specified data element.
+A successful response returns the details of the the specified data element's origin.
 
 ```json
 {

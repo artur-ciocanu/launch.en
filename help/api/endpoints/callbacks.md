@@ -46,7 +46,7 @@ GET  /properties/{PROPERTY_ID}/callbacks
 
 >[!NOTE]
 >
->Callbacks can be filtered based on the following attributes:<ul><li>`created_at`</li><li>`updated_at`</li></ul>See the guide on [filtering responses](../guides/filtering.md) for more information.
+>Using query parameters, listed callbacks can be filtered based on the following attributes:<ul><li>`created_at`</li><li>`updated_at`</li></ul>See the guide on [filtering responses](../guides/filtering.md) for more information.
 
 **Request**
 

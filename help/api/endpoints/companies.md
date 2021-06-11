@@ -23,6 +23,10 @@ You can list the companies that you are authorized to used by making a GET reque
 GET /companies
 ```
 
+>[!NOTE]
+>
+>Using query parameters, listed companies can be filtered based on the following attributes:<ul><li>`created_at`</li><li>`name`</li><li>`org_id`</li><li>`token`</li><li>`updated_at`</li></ul>See the guide on [filtering responses](../guides/filtering.md) for more information.
+
 **Request**
 
 ```shell
