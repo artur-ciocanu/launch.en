@@ -39,7 +39,7 @@ This ID ties your implementation to your Adobe Experience Cloud account. This sh
 
 #### Server Domain
 
-The domain where Target requests are sent. This should almost always be left as the default value.
+The server domain refers to the domain where the Target requests are sent. This should almost always be left as the default value.
 
 #### GDPR Opt-In
 
@@ -65,31 +65,29 @@ No configuration is needed.
 
 ### Load Target with On-Device Decisioning
 
-Add this action to your Platform Launch rule where it makes sense to load Target with [on-device decisioning](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/on-device-decisioning/on-device-decisioning.html) enabled in the context of your rule. This loads the at.js library with on-device decisioning enabled into the page. In most implementations, Target should be loaded on every page of your site. Adobe recommends using the Load Target with On-Device Decisioning action only if it is preceded by a Target call. Otherwise, you might run into issues like the Analytics call being delayed.
+Add this action to your tag rule where it makes sense to load Target with [on-device decisioning](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/on-device-decisioning/on-device-decisioning.html) enabled in the context of your rule. This loads the at.js library with on-device decisioning enabled into the page. In most implementations, Target should be loaded on every page of your site. Adobe recommends using the Load Target with On-Device Decisioning action only if it is preceded by a Target call. Otherwise, you might run into issues like the Analytics call being delayed.
 
 No configuration is needed.
 
 ### Add Params to All Requests
 
-Add parameters to all Target requests. The Load Target action must be used earlier.
+This action type allows parameters to be added to all Target requests. The Load Target action must be used earlier.
 
 1. Specify the name and value of any parameter you want to add.
 2. Select the add icon to add more parameters.
 
 ### Add Params to Page Load Request
 
-Add parameters only to your page load requests. The Load Target action must be used earlier.
+This action type allows parameters to be added specifically to your page load requests. The Load Target action must be used earlier.
 
 1. Specify the name and value of any parameter you want to add.
 2. Select the add icon to add more parameters.
 
 ### Fire Page Load Request
 
-Fire a Target request when your page loads. The Load Target action must be used earlier.
+This action type allows Target to fire a request when your page loads. The Load Target action must be used earlier.
 
-Specify whether to enable body hiding to prevent flickering, and the style used when hiding your body element.
-
-The following options are available:
+You must specify whether to enable body hiding to prevent flickering, and the style used when hiding your body element. The following options are available:
 
 * **Body Hiding:** You can enable or disable this setting. The default value is Enabled, which means HTML BODY is hidden.
 * **Body Hidden Style:** The default value is body{opacity:0}. This value can be changed to something different, like body{display:none}.
@@ -98,7 +96,7 @@ For more information, refer to the [Target online help documentation](https://ex
 
 ### Trigger View
 
-Trigger a view for your Single Page Applications.
+The Trigger View action can be called whenever a new page is loaded or when a component on a page is re-rendered. Trigger view should be implemented for Single Page Applications.
 
 1. Specify the view name that must be triggered.
 2. Specify whether the triggering of the view should be attributed to an impression for reporting by checking the Page checkbox. If the view is correlated to a component that is re-rendered and does not attribute to an impression for reporting then leave the Page checkbox unchecked.
@@ -111,7 +109,7 @@ Once the Target Extension is installed, create at least one rule to properly dep
 
 A Target rule with this basic implementation looks like this:
 
-![](/help/images/targetv2deploy.png)
+![](../../images/targetv2deploy.png)
 
 After you have saved this rule, you'll need to add it to a Library and build/deploy it so that you can test the behavior.
 
