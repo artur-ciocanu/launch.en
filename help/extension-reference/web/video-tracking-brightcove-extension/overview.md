@@ -21,9 +21,9 @@ Use the "In-Page embed code (Advanced)" code snippet in the HTML of each Web pag
 
 This extension version 1.1.0 supports embedding multiple BrightCove videos on a single Web page. If there are multiple `id` properties within the advanced embed tags, ensure that they each have unique values. For example, `player1`, `player2`, and so on.
 
-> !NOTE
-> 
-> On pages with multiple videos, each video uses the same configuration set in the tag rule executing on that page. For example, if you create a rule with an event that triggers on a video that is 50% complete, each video on the page triggers the rule at the 50% cue point.
+>[!NOTE]
+>
+>On pages with multiple videos, each video uses the same configuration set in the tag rule executing on that page. For example, if you create a rule with an event that triggers on a video that is 50% complete, each video on the page triggers the rule at the 50% cue point.
 
 If the webpage that uses this extension interacting with the video before the relevant script has completely loaded, there are two actions you can take to remedy the issue. Firstly the tag library can be loaded synchronously, and secondly, place the `<script type="text/javascript">\_satellite.pageBottom();\</script\>` element before the video embed on the page.
 
@@ -46,8 +46,9 @@ There are seven data elements available within the extension, none of which requ
 There are seven events available within the extension, only Custom Cue Point Tracking requires configuration.
 
 * **Custom Cue Point Tracking:** This event triggers when the video reaches the specified video threshold percentage. For example, if a video is 60 seconds long and the specified cue point is 50%, the event triggers at the 30-second mark.
-  > [!NOTE]
-  > Please note that this event triggers every time this cue point is reached. For example, if the user reaches the 50% mark, seeks the video before the 50% mark then reaches the 50% mark again, the trigger will fire again.
+  >[!NOTE]
+  >
+  >Please note that this event triggers every time this cue point is reached. For example, if the user reaches the 50% mark, seeks the video before the 50% mark then reaches the 50% mark again, the trigger will fire again.
 * **Video Completed:** This event triggers when a video fully completes.
 * **Video Loaded Metadata:** This event is fired when the player has received initial duration and dimension information.
 * **Video Pause:** This event triggers when the video is paused.

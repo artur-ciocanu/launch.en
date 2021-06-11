@@ -25,9 +25,9 @@ This extension version 2.0.0, supports embedding one or more YouTube videos on a
 
 This extension is also designed to dynamically check for a unique ID attribute value, like `player1`, regardless of whether the `enablejsapi` and `rel` query string parameters exist and if their expected values are correct. As a result, the YouTube script tag can be added to a Web page with or without the `id` attribute and whether the `enablejsapi` and `rel` query string parameters are included or not.
 
-> [!NOTE]
-> 
-> On pages with more than one video, each video uses the same configuration set in the tags rule executing on that page. For example, if you create a rule with an event that triggers on video 50% complete, each video on the page triggers the rule at the 50% cue point.
+>[!NOTE]
+>
+>On pages with more than one video, each video uses the same configuration set in the tags rule executing on that page. For example, if you create a rule with an event that triggers on video 50% complete, each video on the page triggers the rule at the 50% cue point.
 
 The Extension relies on the following logic to rewrite the iFrames:
 

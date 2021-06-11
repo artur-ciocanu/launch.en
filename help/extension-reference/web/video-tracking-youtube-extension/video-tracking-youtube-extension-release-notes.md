@@ -1,6 +1,6 @@
 ---
 title: Release Notes for the YouTube Video Tracking Extension
-description: The latest release notes for the YouTube Video Tracking extension in Adobe Experience Platform Launch.
+description: The latest release notes for the YouTube Video Tracking tag extension in Adobe Experience Platform.
 exl-id: 182c970a-aa78-4254-ac56-b7fd9f00841e
 ---
 # YouTube Video Tracking extension release notes
