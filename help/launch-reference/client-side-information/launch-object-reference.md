@@ -396,6 +396,6 @@ The example above specifies all three methods in the monitor. When they're calle
 
 If you open the page in [!DNL Chrome], open the browser console, and select the page, the following appears in the console:
 
-![](/help/assets/debug.png)
+![](/help/images/debug.png)
 
 Additional hooks or additional information might be added to theses handlers as needed.

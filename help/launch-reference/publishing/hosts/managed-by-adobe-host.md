@@ -42,7 +42,7 @@ The primary purpose of a CDN is to intelligently distribute content to servers t
 
 Once your build has been deployed to the Adobe-managed host, the CDN distributes the build on several centralized servers ("origins"), who then send copies of the build to many different edge nodes around the world for caching. The cached versions of the build stored on these edge nodes are then ultimately served to client devices.
 
-![](../assets/cdn-diagram.png)
+![](../images/cdn-diagram.png)
 
 >[!NOTE]
 >

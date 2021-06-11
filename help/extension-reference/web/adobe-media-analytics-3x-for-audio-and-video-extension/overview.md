@@ -31,7 +31,7 @@ After you have included all three of the extensions mentioned above in your tags
 
 * **Configure:** To configure the MA extension, open the [!UICONTROL Extensions] tab, hover over the extension, and then select **[!UICONTROL Configure]**:
 
-![MA Extension Configuration](/help/assets/ext-ma-config.png)
+![MA Extension Configuration](/help/images/ext-ma-config.png)
 
 ### Configuration options:
 

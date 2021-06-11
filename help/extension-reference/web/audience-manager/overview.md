@@ -27,7 +27,7 @@ To configure the extension, open the [!UICONTROL Extensions] tab, hover over the
 
 Configure your DIL settings. The following configuration options are available:
 
-![](/help/assets/ext-aam-config.png)
+![](/help/images/ext-aam-config.png)
 
 #### DIL Version
 
@@ -77,6 +77,6 @@ Run the custom code configured in the code editor.
 
 Enter the desired code in the Code Editor, then provide a name for the code. This code will become available in the Then portion of the rule builder.
 
-![](/help/assets/ext-aam-then.png)
+![](/help/images/ext-aam-then.png)
 
 You can also add a note with information about the configuration.

@@ -39,7 +39,7 @@ The "*Adobe Analytics*" tag extension for Adobe Experience Platform must be inst
     >
     >This extension will *not* function if the AEM Asset configuration setting **[!UICONTROL Disable UUID Tracking]** is checked. It is unchecked by default. 
 
-    ![Disable UUID Tracking](assets/disableassets.jpg)
+    ![Disable UUID Tracking](images/disableassets.jpg)
     
 ## Configure Adobe Experience Manager (AEM)
 
@@ -63,11 +63,11 @@ Track assets in Analytics using the UUID of the asset in AEM.
 
 To enable tracking with the UUID of the asset, open the component policy console of the editable template and uncheck the "Disable UUID tracking" property. (By default, this property is checked for the OOTB image component.)
  
-![](assets/uuid.png)
+![](images/uuid.png)
 
 After you enable the UUID, you should see the "data-asset-id" data element being populated with the UUID of the asset. Analytics tracks the asset click or impression with this UUID.
  
-![](assets/uuid-code.png)
+![](images/uuid-code.png)
 
 ## Extension usage
     
@@ -89,7 +89,7 @@ In the **[Set AA Variables]** config page, select the **[Viewed Assets]** (defau
 >
 >Although not recommended, the "Set AA Variables" action also supports a "loaded" option, which sends asset impressions for every asset on the page, whether the visitor saw them or not.
     
-![Impressions](assets/sendImpressions.jpg)
+![Impressions](images/sendImpressions.jpg)
 
     
 ### Asset clicks
@@ -98,11 +98,11 @@ Configure a second rule using the "Asset Clicked" event and the "Set AA Variable
 
 The "Asset Clicked" event also supports an "Asset Clicked image request" setting of "On Click". This sends the click metric to Analytics immediately and requires an Analytics "Send Beacon" action as well.
     
-![Asset Clicks on page load](assets/sendClickOnPageload.jpg)
+![Asset Clicks on page load](images/sendClickOnPageload.jpg)
     
 Configure a third rule that will fire when there are Assets on the pages that do not have a destination (no `href` attribute). At a minimum, the new rule needs to use the "Asset Clicked (No Destination)" event as well as the "Set AA Variables" and "Adobe Analytics - Send Beacon" actions. Additonal conditions and actions can be added as required. 
     
-![Asset Clicks no destination](assets/sendClickOnClickNoDestination.jpg)
+![Asset Clicks no destination](images/sendClickOnClickNoDestination.jpg)
     
 ### Extension testing tips
     

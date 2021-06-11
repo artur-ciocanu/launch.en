@@ -71,7 +71,7 @@ Nothing in [!DNL Platform Launch] is published automatically. Each set of change
 
 To make sense of that process, there are some relationships between [!DNL Platform Launch], your web page, and your hosting location that you need to understand.
 
-![](/help/assets/loop.png)
+![](/help/images/loop.png)
 
 1. [!DNL Platform Launch]  publishes a build to your host server.
 
