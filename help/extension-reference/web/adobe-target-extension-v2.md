@@ -21,7 +21,7 @@ If the Adobe Target extension is not yet installed, open your property, then sel
 
 To configure the extension, open the Extensions tab, hover over the extension, and then select **[!UICONTROL Configure]**.
 
-![](/help/images/targetv2config.png)
+![](../../images/targetv2config.png)
 
 ### at.js settings
 
@@ -31,15 +31,11 @@ The following configuration options are available:
 
 #### Client Code
 
-The client code is Target’s account identifier. This should almost always be left as the default value.
-
-Can be changed using data elements.
+The client code is Target’s account identifier. This should almost always be left as the default value. It can be changed using data elements.
 
 #### Organization ID
 
-This ID ties your implementation to your Adobe Experience Cloud account. This should almost always be left as the default value.
-
-Can be changed using data elements.
+This ID ties your implementation to your Adobe Experience Cloud account. This should almost always be left as the default value. It can be changed using data elements.
 
 #### Server Domain
 
