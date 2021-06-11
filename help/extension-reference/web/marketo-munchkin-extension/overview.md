@@ -23,7 +23,7 @@ This section describes the action types available int he [!DNL Marketo Munchkin]
 
 ### Initialize
 
-![](../../../images/munchkin-init.png)
+![](../../../images/munchkin-Init.png)
 
 **Munchkin ID: (required)** Munchkin Account ID found under Admin > Integration > Munchkin menu.
 
