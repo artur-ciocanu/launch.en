@@ -1,6 +1,6 @@
 ---
 title: YouTube Video Tracking Extension Overview
-description: Learn about the YouTube Video Tracking extension in Adobe Experience Platform Launch.
+description: Learn about the YouTube Video Tracking tag extension in Adobe Experience Platform.
 exl-id: 139a6419-5517-4eb5-a4aa-bab382c8330c
 ---
 # YouTube Video Tracking extension overview
@@ -11,13 +11,13 @@ exl-id: 139a6419-5517-4eb5-a4aa-bab382c8330c
 
 **Prerequisites**
 
-Each Adobe Experience Platform Launch property requires that the following extensions are installed and configured from the Extensions screen:
+Each tags property in Adobe Experience Platform requires that the following extensions are installed and configured from the Extensions screen:
 
 * Adobe Analytics
 * Experience Cloud Visitor ID Service
 * Core extension
 
-Per [https://developers.google.com/youtube/player_parameters](https://developers.google.com/youtube/player_parameters), use the ”Embed a player using an tag” code snippet in the HTML of each Web page where a video player is to render.
+Use the [”Embed a player using an \<iframe\> tag”](https://developers.google.com/youtube/player_parameters#Manual_IFrame_Embeds) code snippet from the Google developer docs in the HTML of each Web page where a video player is to render.
 
 This extension, version 2.0.0, supports embedding one or more YouTube videos on a single Web page by inserting an `id` attribute with a unique value in the iframe script tag, and appending `enablejsapi=1` and `rel=0` to the end of the `src` attribute value, if not already included, as such:
 
@@ -25,7 +25,9 @@ This extension, version 2.0.0, supports embedding one or more YouTube videos on 
 
 Please note that this extension is also designed to dynamically check for a unique ID attribute value, like `player1`, whether the `enablejsapi` and `rel` query string parameters exist, and if their expected values are correct. As a result, the YouTube script tag can be added to a Web page with or without the `id` attribute and whether the `enablejsapi` and `rel` query string parameters are included or not.
 
-On pages with more than one video, note that each video uses the same configuration set in the Launch rule executing on that page. For example, if you create a rule with an event that triggers on video 50% complete, each video on the page triggers the rule at the 50% cue point.
+> [!NOTE]
+> 
+> On pages with more than one video, each video uses the same configuration set in the tags rule executing on that page. For example, if you create a rule with an event that triggers on video 50% complete, each video on the page triggers the rule at the 50% cue point.
 
 The Extension relies on the following logic to rewrite the iFrames:
 
@@ -40,7 +42,7 @@ Therefore, there will be a slight flicker after the page loads. This behavior is
 
 There are six data elements available within the extension, none of which require configuration.
 
-* **Playhead Position:** Records the place, in seconds, of the playhead position on the video timeline, when it is called upon within a Launch Rule.
+* **Playhead Position:** Records the place, in seconds, of the playhead position on the video timeline, when it is called upon within a tag rule.
 * **Video ID:** Specifies the YouTube ID associated with the video.
 * **Video Name:** Specifies the descriptive, or friendly name of the video.
 * **Video URL:** Returns the YouTube.com URL for the currently loaded/playing video.
@@ -63,7 +65,7 @@ There are eight events available within the extension, only Custom Cue Point Tra
 
 ## Usage
 
-There is one Platform Launch rule for every video event (listed above). As such, the user of this extension needs to create a specific Platform Launch rule for each event they want to track. In other words, if they don't want to track Video Pause, they wouldn't create a rule for it.
+One tag rule can be set for every video event (the seven events listed above). Create a specific tag rule for each event you want to track. If you do not want to track an event, simply omit creating a rule for it.
 
 Rules have three actions:
 
@@ -71,31 +73,27 @@ Rules have three actions:
 * **Send beacon:** Send the Adobe Analytics beacon as a custom link tracking call, and provide a ”Link Name” value.
 * **Clear variables:** Clear the Adobe Analytics variables.
 
-**Example Platform Launch rule for ”Video Start”**
+## Example tags rule for ”Video Start”
 
 The following Video Extension objects are to be included.
 
-Events:
+* **Events**: ”Video Start” (This event causes the rule to fire when the visitor starts playing a YouTube video.)
 
-”Video Start” (This event causes the rule to fire when the visitor starts playing a YouTube video.)
+* **Condition**: None
 
-Condition: None
+* **Actions**: Use the **Analytics extension** to ”Set Variables” action, to map:
 
-Actions: Use the Analytics extension to:
+    * The event for Video Start,
+    * A prop/eVar for the Video Duration data element
+    * A prop/eVar for the Video ID data element
+    * A prop/eVar for the Video Name data element
+    * A prop/eVar for the Video URL data element
 
-”Set Variables” action, to map:
-
-* The event for Video Start,
-* A prop/eVar for the Video Duration data element
-* A prop/eVar for the Video ID data element
-* A prop/eVar for the Video Name data element
-* A prop/eVar for the Video URL data element
-
-Then, include the ”Send Beacon” action (`s.tl`) with link name ”video start," followeded by a ”Clear Variables” action.
+  Then, include the ”Send Beacon” action (`s.tl`) with link name ”video start," followed by a ”Clear Variables” action.
 
 >[!TIP]
 > 
->For implementations where multiple eVars or props for each video element can't be used, data element values can be concatenated within Platform Launch, parsed into classification reports using the Classification Rule Builder tool, as explained in [https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-rulebuilder/classification-rule-builder.html](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-rulebuilder/classification-rule-builder.html), and then applied as a segment in Analysis Workspace.
+>For implementations where multiple eVars or props for each video element can't be used, data element values can be concatenated within Platform, parsed into classification reports using the Classification Rule Builder tool, as explained in [https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-rulebuilder/classification-rule-builder.html](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-rulebuilder/classification-rule-builder.html), and then applied as a segment in Analysis Workspace.
 
 To concatenate video information values, create a new data element called ”Video Meta Data,” and program it to pull in all the video data elements (listed above) and assemble them together. For example:
 
