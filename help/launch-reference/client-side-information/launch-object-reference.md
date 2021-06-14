@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience Platform Launch Object Reference
+title: Tag Object Reference
 description: Learn about the client-side _satellite object and the various functions you can perform with it in Adobe Experience Platform Launch.
 exl-id: 55af465c-4e14-4fe1-bbf8-14871f818f95
 ---
@@ -43,7 +43,7 @@ var product = _satellite.getVar('product');
 
 If a data element exists with a matching name, the data element's value will be returned. If no matching data element exists, it will then check to see if a custom variable with a matching name has previously been set using `_satellite.setVar()`. If a matching custom variable is found, its value will be returned.
 
-Note that in many form fields in the [!DNL Platform Launch] user interface, you can use the `%%` syntax to reference variables, reducing the need to call `_satellite.getVar()`. For example, using %product% will access the value of the product data element or custom variable.
+Note that in many form fields in the Data Collection user interface, you can use the `%%` syntax to reference variables, reducing the need to call `_satellite.getVar()`. For example, using %product% will access the value of the product data element or custom variable.
 
 ## `setVar`
 
@@ -109,7 +109,7 @@ _satellite.logger.error(message: string)
 _satellite.logger.error('No product ID found.');
 ```
 
-Logs a message to the browser console. The message will only be displayed if [!DNL Platform Launch] debugging is enabled by the user (by calling `_satellite.setDebug(true)` or using an appropriate browser extension).
+Logs a message to the browser console. The message will only be displayed if tag debugging is enabled by the user (by calling `_satellite.setDebug(true)` or using an appropriate browser extension).
 
 ### Logging Deprecation Warnings
 
@@ -120,7 +120,7 @@ _satellite.logger.deprecation(message: string)
 **Example**
 
 ```javascript
-_satellite.logger.deprecation('This method is no longer supported, plese use [new example] instead.');
+_satellite.logger.deprecation('This method is no longer supported, please use [new example] instead.');
 ```
 
 Logs a warning to the browser console. The message is displayed whether or not [!DNL Platform Launch] debugging is enabled by the user.

@@ -38,9 +38,9 @@ console.log(turbine.buildInfo.turbineBuildDate);
 
 ## [!DNL debugEnabled]
 
-Whether tags debugging is currently enabled.
+Whether tag debugging is currently enabled.
 
-If you are simply attempting to log messages, it's unlikely you will need to use this. Instead, always log messages using `turbine.logger` and tags will ensure your messages are only printed to the console when tags debugging is enabled.
+If you are simply attempting to log messages, it's unlikely you will need to use this. Instead, always log messages using `turbine.logger` and tags will ensure your messages are only printed to the console when tag debugging is enabled.
 
 ### [!DNL getDataElementValue]
 
@@ -58,7 +58,7 @@ var extensionSettings = turbine.getExtensionSettings();
 
 Returns the settings object that was last saved from the [extension configuration](./configuration.md) view.
 
-Please note that values within the returned settings objects may be coming from data elements. Because of this, calling `getExtensionSettings()` at different times may yield different results if the values of the data elements have changed. To get the most up-to-date values, please wait until as late as possible before calling `getExtensionSettings()`.
+Please note that values within the returned settings objects may be coming from data elements. Because of this, calling `getExtensionSettings()` at different times may yield different results if the values of the data elements have changed. To get the most up-to-date values, please wait as long as possible before calling `getExtensionSettings()`.
 
 ### [!DNL getHostedLibFileUrl] {#get-hosted-lib-file}
 
@@ -97,7 +97,7 @@ The logging utility is used to log messages to the console. Messages will only s
 
 By passing a callback function into `turbine.onDebugChanged`, tags will call your callback whenever debugging is toggled. Tags will pass a boolean to the callback function which will be true if debugging was enabled or false if debugging was disabled.
 
-If you are simply attempting to log messages, it's unlikely you will need to use this. Instead, always log messages using `turbine.logger` and tags will ensure your messages are only printed to the console when tags debugging is enabled. 
+If you are simply attempting to log messages, it's unlikely you will need to use this. Instead, always log messages using `turbine.logger` and tags will ensure your messages are only printed to the console when tag debugging is enabled. 
 
 ### [!DNL propertySettings] {#property-settings}
 

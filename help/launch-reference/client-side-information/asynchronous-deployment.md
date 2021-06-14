@@ -62,7 +62,7 @@ Although the order is always enforced, some rules might be executed immediately 
 
 1. Rule A is executed immediately.
 2. If the `DOMContentLoaded` browser event (DOM Ready) has already occurred, Rule B and Rule C are executed immediately. Otherwise, Rule B and Rule C are executed later when the [`DOMContentLoaded`](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded) browser event occurs.
-3. If the [`load`](https://developer.mozilla.org/en-US/docs/Web/Events/load) browser event (Window Loaded) has already occurred, Rule D is executed immediately. Otherwise, Rule D will be executed later when the [`load`](https://developer.mozilla.org/en-US/docs/Web/Events/load) browser event occurs. Note that if you've installed the tag library according to the instructions, the tag library _always_ finishes loading before the [`load`](https://developer.mozilla.org/en-US/docs/Web/Events/load) browser event occurs.
+3. If the [`load`](https://developer.mozilla.org/en-US/docs/Web/Events/load) browser event (Window Loaded) has already occurred, Rule D is executed immediately. Otherwise, Rule D will be executed later when the [`load`](https://developer.mozilla.org/en-US/docs/Web/Events/load) browser event occurs. Note that if you've installed the tag library according to the instructions, the tag library *always* finishes loading before the [`load`](https://developer.mozilla.org/en-US/docs/Web/Events/load) browser event occurs.
 
 When applying these principles to your own website, consider the following:
 
@@ -80,13 +80,13 @@ Tags provides a toggle to turn on asynchronous loading when creating an embed co
    For the tags embed code, that means changing this:
 
    ```markup
-   <script src="//www.yoururl.com/tags-EN1a3807879cfd4acdc492427deca6c74e.min.js"></script>
+   <script src="//www.yoururl.com/launch-EN1a3807879cfd4acdc492427deca6c74e.min.js"></script>
    ```
 
    to this:
 
    ```markup
-   <script src="//www.yoururl.com/tags-EN1a3807879cfd4acdc492427deca6c74e.min.js" async></script>
+   <script src="//www.yoururl.com/launch-EN1a3807879cfd4acdc492427deca6c74e.min.js" async></script>
    ```
 
 1. Remove any code you may have previously added at the bottom of your tag:

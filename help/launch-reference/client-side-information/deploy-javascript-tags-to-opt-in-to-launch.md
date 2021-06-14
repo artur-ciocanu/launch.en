@@ -25,7 +25,7 @@ Integrations with consent managers (such as OneTrust) can set and track the cons
 
 ## Analytics
 
-In the Link Tracking section of the [!DNL Analytics] extension's configuration settings, make sure the following are _not_ selected:
+In the Link Tracking section of the [!DNL Analytics] extension's configuration settings, make sure the following are *not* selected:
 
 * Track download links
 * Track outbound links
