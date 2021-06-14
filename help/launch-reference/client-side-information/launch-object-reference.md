@@ -1,15 +1,15 @@
 ---
-title: Tag Object Reference
-description: Learn about the client-side _satellite object and the various functions you can perform with it in Adobe Experience Platform Launch.
+title: Tags _satellite Object Reference
+description: Learn about the client-side _satellite object and the various functions you can perform with it in Adobe Experience Platform.
 exl-id: 55af465c-4e14-4fe1-bbf8-14871f818f95
 ---
-# Adobe Experience Platform Launch object reference
+# Adobe Experience Platform tags `_satellite` object reference
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-This document serves as a reference for the client-side `_satellite` object (also called the Adobe Experience Platform Launch object) and the various functions you can perform with it.
+This document serves as a reference for the client-side `_satellite` object and the various functions you can perform with it.
 
 ## `track`
 
@@ -25,7 +25,7 @@ _satellite.track(identifier: string [, detail: *] )
 _satellite.track('contact_submit', { name: 'John Doe' });
 ```
 
-Fires all rules using the Direct Call event type from the Core extension that has been configured with the given identifier. The above example triggers all rules using a Direct Call event type where the configured identifier is `contact_submit`. An optional object containing related information is also passed. The detail object can be accessed by entering `%event.detail%` within a text field in a condition or action or `event.detail` inside the code editor in a Custom Code condition or action.
+`track` fires all rules using the Direct Call event type that has been configured with the given identifier from the Core extension. The above example triggers all rules using a Direct Call event type where the configured identifier is `contact_submit`. An optional object containing related information is also passed. The detail object can be accessed by entering `%event.detail%` within a text field in a condition or action or `event.detail` inside the code editor in a Custom Code condition or action.
 
 ## `getVar`
 
@@ -41,7 +41,7 @@ _satellite.getVar(name: string) => *
 var product = _satellite.getVar('product');
 ```
 
-If a data element exists with a matching name, the data element's value will be returned. If no matching data element exists, it will then check to see if a custom variable with a matching name has previously been set using `_satellite.setVar()`. If a matching custom variable is found, its value will be returned.
+In the example provided, if a data element exists with a matching name, the data element's value will be returned. If no matching data element exists, it will then check to see if a custom variable with a matching name has previously been set using `_satellite.setVar()`. If a matching custom variable is found, its value will be returned.
 
 Note that in many form fields in the Data Collection user interface, you can use the `%%` syntax to reference variables, reducing the need to call `_satellite.getVar()`. For example, using %product% will access the value of the product data element or custom variable.
 
@@ -59,7 +59,7 @@ _satellite.setVar(name: string, value: *)
 _satellite.setVar('product', 'Circuit Pro');
 ```
 
-Sets a custom variable with a given name and value. The value of the variable can later be accessed using `_satellite.getVar()`.
+`setVar()` sets a custom variable with a given name and value. The value of the variable can later be accessed using `_satellite.getVar()`.
 
 You may optionally set multiple variables at once by passing an object where the keys are variable names and the values are the respective variable values.
 
@@ -109,7 +109,7 @@ _satellite.logger.error(message: string)
 _satellite.logger.error('No product ID found.');
 ```
 
-Logs a message to the browser console. The message will only be displayed if tag debugging is enabled by the user (by calling `_satellite.setDebug(true)` or using an appropriate browser extension).
+The `logger` object allows for a message to be logged to the browser console. The message will only be displayed if tag debugging is enabled by the user (by calling `_satellite.setDebug(true)` or using an appropriate browser extension).
 
 ### Logging Deprecation Warnings
 
@@ -123,7 +123,7 @@ _satellite.logger.deprecation(message: string)
 _satellite.logger.deprecation('This method is no longer supported, please use [new example] instead.');
 ```
 
-Logs a warning to the browser console. The message is displayed whether or not [!DNL Platform Launch] debugging is enabled by the user.
+This logs a warning to the browser console. The message is displayed whether or not tag debugging is enabled by the user.
 
 ## `cookie`
 
@@ -158,7 +158,7 @@ var product = _satellite.cookie.get('product');
 _satellite.cookie.remove('product');
 ```
 
-A utility for reading and writing cookies. This is an exposed copy of the third-party library js-cookie. For more advanced usage, please review the [js-cookie usage documentation](https://www.npmjs.com/package/js-cookie#basic-usage) (external link).
+This is a utility for reading and writing cookies. It is an exposed copy of the third-party library js-cookie. For more advanced usage, please review the [js-cookie usage documentation](https://www.npmjs.com/package/js-cookie#basic-usage) (external link).
 
 ## `buildInfo`
 
@@ -168,11 +168,11 @@ A utility for reading and writing cookies. This is an exposed copy of the third-
 _satellite.buildInfo
 ```
 
-This object contains information about the build of the current [!DNL Platform Launch] runtime library. The object contains the following properties:
+This object contains information about the build of the current tag runtime library. The object contains the following properties:
 
 ### `turbineVersion`
 
-The [Turbine](https://www.npmjs.com/package/@adobe/reactor-turbine) version used inside the current library.
+This provides the [Turbine](https://www.npmjs.com/package/@adobe/reactor-turbine) version used inside the current library.
 
 ### `turbineBuildDate`
 
@@ -219,9 +219,9 @@ _satellite.notify(message: string[, level: number])
 _satellite.notify('Hello world!');
 ```
 
-Logs a message to the browser console. The message will only be displayed if [!DNL Platform Launch] debugging is enabled by the user (by calling `_satellite.setDebug(true)` or using an appropriate browser extension).
+`notify` logs a message to the browser console. The message will only be displayed if tag debugging is enabled by the user (by calling `_satellite.setDebug(true)` or using an appropriate browser extension).
 
-An optional logging level can be passed which will affect styling and filtering of the message being logged. Supported levels are as follows:
+An optional logging level can be passed which will affect the styling and filtering of the message being logged. Supported levels are as follows:
 
 3 - Informational messages.
 
@@ -249,7 +249,7 @@ _satellite.setCookie(name: string, value: string, days: number)
 _satellite.setCookie('product', 'Circuit Pro', 3);
 ```
 
-Sets a cookie in the user's browser. The cookie will persist for the number of days specified.
+This sets a cookie in the user's browser. The cookie will persist for the number of days specified.
 
 ## `readCookie`
 
@@ -269,7 +269,7 @@ _satellite.readCookie(name: string) => string
 var product = _satellite.readCookie('product');
 ```
 
-Reads a cookie from the user's browser.
+This reads a cookie from the user's browser.
 
 ## `removeCookie`
 
@@ -289,11 +289,11 @@ _satellite.removeCookie(name: string)
 _satellite.removeCookie('product');
 ```
 
-Removes a cookie from the user's browser.
+This removes a cookie from the user's browser.
 
 ## Debugging Functions
 
-The following functions should not be accessed from production code. They are intended only for debugging purposes and will change over time as needed.
+The following functions should not be accessed from the production code. They are intended only for debugging purposes and will change over time as needed.
 
 ### `container`
 
@@ -307,7 +307,7 @@ _satellite._container
 
 >[!IMPORTANT]
 >
->This function should not be accessed from production code. It is intended only for debugging purposes and will change over time as needed.
+>This function should not be accessed from the production code. It is intended only for debugging purposes and will change over time as needed.
 
 ### `monitor`
 
@@ -321,11 +321,11 @@ _satellite._monitors
 
 >[!IMPORTANT]
 >
->This function should not be accessed from production code. It is intended only for debugging purposes and will change over time as needed.
+>This function should not be accessed from the production code. It is intended only for debugging purposes and will change over time as needed.
 
 **Sample**
 
-On your web page running a [!DNL Platform Launch] library, add a snippet of code to your HTML. Typically, the code is placed in the `<head>` tag before the `<script>` tag that loads the [!DNL Platform Launch] library. This allows the monitor to catch the earliest system events that occur in the [!DNL Platform Launch] library. For example:
+On your web page running a tag library, add a snippet of code to your HTML. Typically, the code is inserted into the `<head>` element before the `<script>` element that loads the tag library. This allows the monitor to catch the earliest system events that occur in the tag library. For example:
 
 ```html
 <!DOCTYPE html>
@@ -367,35 +367,35 @@ On your web page running a [!DNL Platform Launch] library, add a snippet of code
 </html>
 ```
 
-In the first script tag, because the [!DNL Platform Launch] library has not been loaded yet, the initial `_satellite` object is created and an array on `_satellite._monitors` is initialized. The script then adds a monitor object to that array. The monitor object can specify the following methods which will later be called by the [!DNL Platform Launch] library:
+In the first script element, because the tag library has not been loaded yet, the initial `_satellite` object is created and an array on `_satellite._monitors` is initialized. The script then adds a monitor object to that array. The monitor object can specify the following methods which will later be called by the tag library:
 
 ### `ruleTriggered`
 
-Called after an event triggers a rule but before the rule's conditions and actions have been processed. The event object passed to `ruleTriggered` contains information about the rule that was triggered.
+This function is called after an event triggers a rule but before the rule's conditions and actions have been processed. The event object passed to `ruleTriggered` contains information about the rule that was triggered.
 
 ### `ruleCompleted`
 
-Called after a rule has been fully processed. In other words, the event has occurred, all conditions have passed, and all actions have executed. The event object passed to `ruleCompleted` contains information about the rule that completed.
+This function is called after a rule has been fully processed. In other words, the event has occurred, all conditions have passed, and all actions have been executed. The event object passed to `ruleCompleted` contains information about the rule that was completed.
 
 ### `ruleConditionFailed`
 
-Called after a rule has been triggered and one of its conditions has failed. The event object passed to `ruleConditionFailed` contains information about the rule that was triggered and the condition that failed.
+This function is called after a rule has been triggered and one of its conditions has failed. The event object passed to `ruleConditionFailed` contains information about the rule that was triggered and the condition that failed.
 
 If `ruleTriggered` is called, either `ruleCompleted` or `ruleConditionFailed` will be called shortly thereafter.
 
 >[!NOTE]
 >
->A monitor doesn't have to specify all three methods (`ruleTriggered`, `ruleCompleted`, and `ruleConditionFailed`). Platform Launch works with whatever supported methods have been provided by the monitor.
+>A monitor doesn't have to specify all three methods (`ruleTriggered`, `ruleCompleted`, and `ruleConditionFailed`). Tags in Adobe Experience Platform work with whatever supported methods have been provided by the monitor.
 
 ### Testing the Monitor
 
-The example above specifies all three methods in the monitor. When they're called, the monitor logs out relevant information. To test this, set up two rules in the [!DNL Platform Launch] library:
+The example above specifies all three methods in the monitor. When they're called, the monitor logs out relevant information. To test this, set up two rules in the tag library:
 
 1. A rule that has a click event and a browser condition that passes only if the browser is [!DNL Chrome].
 1. A rule that has a click event and a browser condition that passes only if the browser is [!DNL Firefox].
 
 If you open the page in [!DNL Chrome], open the browser console, and select the page, the following appears in the console:
 
-![](/help/images/debug.png)
+![](../../images/debug.png)
 
-Additional hooks or additional information might be added to theses handlers as needed.
+Additional hooks or additional information might be added to these handlers as needed.
