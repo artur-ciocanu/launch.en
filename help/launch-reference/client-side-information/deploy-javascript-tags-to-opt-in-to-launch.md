@@ -1,6 +1,6 @@
 ---
 title: Deploy JavaScript Tags to Manage Customer Consent
-description: Learn how to manage customer opt-in and opt-out signals for various Adobe solutions in Adobe Experience Platform Launch.
+description: Learn how to manage customer opt-in and opt-out signals for various Adobe solutions in Adobe Experience Platform.
 exl-id: c9014b6b-13d4-4c6c-8f2f-e91fc4ae68ba
 ---
 # Deploy JavaScript tags to manage customer consent
@@ -9,17 +9,17 @@ exl-id: c9014b6b-13d4-4c6c-8f2f-e91fc4ae68ba
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-The combination of the European Union [General Data Protection Regulation (GDPR)](https://gdpr-info.eu/art-7-gdpr/) and [ePrivacy](https://medium.com/mydata/consent-lost-gdpr-and-found-eprivacy-e85cf881ffb) legislation requires companies to be able to manage consent for their users. [!DNL Adobe] customers may require visitors to opt-in before [!DNL Adobe] solutions execute for any given visitor. Visitors should have the ability to manage their opt-in and opt-out status.
+The combination of the European Union [General Data Protection Regulation (GDPR)](https://gdpr-info.eu/art-7-gdpr/) and [ePrivacy](https://medium.com/mydata/consent-lost-gdpr-and-found-eprivacy-e85cf881ffb) legislation requires companies to be able to manage consent for their users. Adobe customers may require visitors to opt-in before Adobe solutions execute for any given visitor. Visitors should have the ability to manage their opt-in and opt-out status.
 
-[!DNL Adobe Experience Cloud] customers require a variety of implementations of these requirements. Some use enterprise-level consent managers and others build their own.
+Adobe Experience Cloud customers require a variety of implementations of these requirements. Some use enterprise-level consent managers and others build their own.
 
-For [!DNL Platform Launch], extension developers use extensions and the rule builder to define opt-in and opt-out solutions.
+Adobe Experience Platform extension developers use extensions and the rule builder to define opt-in and opt-out solutions.
 
 This document contains information about how to prevent Adobe tags from firing until consent is acquired.
 
 ## Advertising Cloud
 
-[!DNL Platform Launch] does not fire [!DNL Advertising Cloud] automatically. [!DNL Advertising Cloud] only fires if you specifically tell it to in a rule action. Use the rule conditions to determine when and what to fire. For example, to use cookies to determine opt-in status, set a data element to read that cookie and use it as a condition in the rule to determine when to fire the Track Conversion action.
+Adobe Experience Platform does not fire [!DNL Advertising Cloud] automatically. [!DNL Advertising Cloud] only fires if you specifically tell it to in a rule action. Use the rule conditions to determine when and what to fire. For example, to use cookies to determine opt-in status, set a data element to read that cookie and use it as a condition in the rule to determine when to fire the Track Conversion action.
 
 Integrations with consent managers (such as OneTrust) can set and track the consent cookies for customers, which can then be used in the rule builder.
 
@@ -30,7 +30,7 @@ In the Link Tracking section of the [!DNL Analytics] extension's configuration s
 * Track download links
 * Track outbound links
 
-When these settings are not selected, [!DNL Platform Launch] does not fire [!DNL Adobe Analytics] automatically. [!DNL Analytics] fires only if you specifically tell it to in a rule action. Use the rule conditions to determine when and what to fire. For example, to use cookies to determine opt-in status, set a data element to read that cookie and use it as a condition in the rule to determine when to fire the Send Beacon action. 
+When these settings are not selected, Platform does not fire [!DNL Adobe Analytics] automatically. [!DNL Analytics] fires only if you specifically tell it to in a rule action. Use the rule conditions to determine when and what to fire. For example, to use cookies to determine opt-in status, set a data element to read that cookie and use it as a condition in the rule to determine when to fire the Send Beacon action. 
 
 Separately, you could consider using the [Adobe opt-in object](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html) to control the firing of this tag in concert with your consent management platform.
 
@@ -50,7 +50,7 @@ Please consider using the [Adobe opt-in object](https://experienceleague.adobe.c
 
 ## Target
 
-[!DNL Platform Launch] does not fire [!DNL Target] automatically. [!DNL Target] fires only if you specifically tell it to in a rule action. Use the rule conditions to determine when and what to fire. For example, to use cookies to determine opt-in status, set a data element to read that cookie and use it as a condition in the rule to determine when to fire the Load [!DNL Target] action. 
+Adobe Experience Platform does not fire [!DNL Target] automatically. [!DNL Target] fires only if you specifically tell it to in a rule action. Use the rule conditions to determine when and what to fire. For example, to use cookies to determine opt-in status, set a data element to read that cookie and use it as a condition in the rule to determine when to fire the Load [!DNL Target] action. 
 
 Separately, you could consider using the [Adobe opt-in object](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html) to control the firing of this tag in concert with your consent management platform.
 
