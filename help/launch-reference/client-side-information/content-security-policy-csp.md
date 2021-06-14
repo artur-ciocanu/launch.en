@@ -1,6 +1,6 @@
 ---
 title: Content Security Policy (CSP) Support
-description: Learn how to deal with Content Security Policy (CSP) restrictions when integrating Adobe Experience Platform Launch into your website.
+description: Learn how to deal with Content Security Policy (CSP) restrictions when integrating your website with tags in Adobe Experience Platform.
 exl-id: 362d9945-6b71-48a2-97c4-af030544aaa2
 ---
 # Content Security Policy (CSP) support
@@ -17,18 +17,18 @@ CSPs are implemented by adding a `Content-Security-Policy` HTTP header to your s
 >
 > For more detailed information on CSP, refer to the [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP).
 
-As a tag management system, Adobe Experience Platform Launch is designed to dynamically load scripts on your website. A default CSP blocks these dynamically loaded scripts due to potential security problems. This document provides guidance on how to configure your CSP to allow dynamically loaded scripts from [!DNL Platform Launch].
+Tags in Adobe Experience Platform is a tag management system that is designed to dynamically load scripts on your website. A default CSP blocks these dynamically loaded scripts due to potential security problems. This document provides guidance on how to configure your CSP to allow dynamically loaded scripts from tags.
 
-If you want Adobe Experience Platform Launch to work with your CSP, there are two main challenges to overcome:
+If you want tags to work with your CSP, there are two main challenges to overcome:
 
-* **The source for your Platform Launch library must be trusted.** If this condition is not met, the Platform Launch library and other required JavaScript files are blocked by the browser and won't load on the page.
+* **The source for your tag library must be trusted.** If this condition is not met, the tag library and other required JavaScript files are blocked by the browser and won't load on the page.
 * **Inline scripts must be allowed.** If this condition is not met, Custom Code rule actions are blocked on the page and won't execute properly.
 
-Increased security comes at the price of increasing the amount of work on your part. If you want to use [!DNL Platform Launch] and have a CSP in place, you have to address both of these issues without incorrectly marking other scripts as safe. The rest of this document provides guidance on how to achieve this.
+Increased security requires an increased amount of work on behalf of the content creator. If you want to use tags and have a CSP in place, you have to address both of these issues without incorrectly marking other scripts as safe. The rest of this document provides guidance on how to achieve this.
 
-## Add [!DNL Platform Launch] as a trusted source
+## Add tags as a trusted source
 
-When using a CSP, you must include any trusted domains within the value of the `Content-Security-Policy` header. The value you must provide for [!DNL Platform Launch] will vary depending on the type of hosting you are using.
+When using a CSP, you must include any trusted domains within the value of the `Content-Security-Policy` header. The value you must provide for tags will vary depending on the type of hosting you are using.
 
 ### Self-hosting
 
@@ -48,7 +48,7 @@ Content-Security-Policy: script-src 'self'
 
 ### Adobe-managed hosting
 
-If you are using an [Adobe-managed host](../publishing/hosts/managed-by-adobe-host.md), then your build is maintained on `assets.adobedtm.com`. You should specify `self` as a safe domain so you don't break any scripts that you are already loading, but you also need `assets.adobedtm.com` to be listed as safe or your Platform Launch library won't load on the page. In this case, you should use the following configuration:
+If you are using an [Adobe-managed host](../publishing/hosts/managed-by-adobe-host.md), then your build is maintained on `assets.adobedtm.com`. You should specify `self` as a safe domain so you don't break any scripts that you are already loading, but you also need `assets.adobedtm.com` to be listed as safe or your tag library won't load on the page. In this case, you should use the following configuration:
 
 **HTTP header**
 
@@ -59,7 +59,7 @@ Content-Security-Policy: script-src 'self' assets.adobedtm.com
 **HTML `<meta>` tag**
 
 
-There is a very important prerequisite: You must load the Platform Launch library [asynchronously](https://experienceleague.adobe.com/docs/launch/using/reference/client-side-info/asynchronous-deployment.html). This does not work with a synchronous load of the Platform Launch library (which results in console errors and rules not executing properly).
+There is a very important prerequisite: You must load the tag library [asynchronously](https://experienceleague.adobe.com/docs/launch/using/reference/client-side-info/asynchronous-deployment.html). This does not work with a synchronous load of the tag library (which results in console errors and rules not executing properly).
 
 ```html
 <meta http-equiv="Content-Security-Policy" content="script-src 'self' assets.adobedtm.com">
@@ -76,7 +76,7 @@ CSP disallows inline scripts by default, and therefore must be manually configur
 
 >[!NOTE]
 >
->The CSP specification has details for a third option using hashes, but this approach is not feasible to use with tag management systems like [!DNL Platform Launch]. For more information on the limitations of using hashes in [!DNL Platform Launch], see the [Subresource Integrity (SRI) guide](./sri.md).
+>The CSP specification has details for a third option using hashes, but this approach is not feasible to use with tag management systems like Platform tags. For more information on the limitations of using hashes in tags, see the [Subresource Integrity (SRI) guide](./sri.md).
 
 ### Allow by nonce {#nonce}
 
@@ -100,7 +100,7 @@ Content-Security-Policy: script-src 'self' assets.adobedtm.com 'nonce-2726c7f26c
 <meta http-equiv="Content-Security-Policy" content="script-src 'self' assets.adobedtm.com 'nonce-2726c7f26c'">
 ```
 
-Once you configure your header or HTML tag, must then tell [!DNL Platform Launch] where to find the nonce when loading an inline script. For [!DNL Platform Launch] to use the nonce when loading the script, you must:
+Once you configure your header or HTML tag, must then tell tags where to find the nonce when loading an inline script. For tags to use the nonce when loading the script, you must:
 
 1. Create a data element that references where the nonce is located within your data layer.
 2. Configure the Core Extension and specify which data element you used.
@@ -108,7 +108,7 @@ Once you configure your header or HTML tag, must then tell [!DNL Platform Launch
 
 >[!NOTE]
 >
->The above process only handles loading your custom code, not what that custom code does. If an inline script contains custom code that is not compliant with your CSP, the CSP takes precedence. For example, if you use custom code to load an inline script by appending it to the DOM, [!DNL Platform Launch] cannot add the nonce correctly, so that particular custom code action will not work as expected.
+>The above process only handles loading your custom code, not what that custom code does. If an inline script contains custom code that is not compliant with your CSP, the CSP takes precedence. For example, if you use custom code to load an inline script by appending it to the DOM, tags cannot add the nonce correctly, so that particular custom code action will not work as expected.
 
 ### Allow all inline scripts {#unsafe-inline}
 
@@ -150,6 +150,6 @@ Content-Security-Policy: script-src 'self' assets.adobedtm.com 'unsafe-inline'
 
 ## Next steps
 
-By reading this document, you should now understand how to configure your CSP header to accept the [!DNL Platform Launch] library file and inline scripts.
+By reading this document, you should now understand how to configure your CSP header to accept the tag library file and inline scripts.
 
-As an additional security measure, you may also opt to use Subresource Integrity (SRI) to validate fetched library builds. However, this feature has some major limitations when used with tag management systems like [!DNL Platform Launch]. See the guide on [SRI compatibility in [!DNL Platform Launch]](./sri.md) for more information.
+As an additional security measure, you may also opt to use Subresource Integrity (SRI) to validate fetched library builds. However, this feature has some major limitations when used with tag management systems like tags in Adobe Experience Platform. See the guide on [SRI compatibility in tags](./sri.md) for more information.
