@@ -169,10 +169,12 @@ git-repo: https://github.com/AdobeDocs/launch.en
     * [Companies](./api/endpoints/companies.md)
     * [Data elements](./api/endpoints/data-elements.md)
     * [Environments](./api/endpoints/environments.md)
+    * [Extension packages](./api/endpoints/extension-packages.md)
     * [Extensions](./api/endpoints/extensions.md)
     * [Hosts](./api/endpoints/hosts.md)
     * [Libraries](./api/endpoints/libraries.md)
     * [Properties](./api/endpoints/properties.md)
+    * [Rule components](./api/endpoints/rule-components.md)
     * [Rules](./api/endpoints/rules.md)
 * [FAQ](./faq.md)
 * Release notes {#release-notes}

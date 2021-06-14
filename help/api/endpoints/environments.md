@@ -27,7 +27,7 @@ For more general information on environments, see the section on [environments](
 
 ## Getting started
 
-The endpoint used in this guide is part of the Reactor API. Before continuing, please review the [getting started guide](../getting-started.md) for links to related documentation, a guide to reading the sample API calls in this document, and important information regarding required headers.
+The endpoint used in this guide is part of the Reactor API. Before continuing, please review the [getting started guide](../getting-started.md) for important information regarding required headers and links to related documentation.
 
 ## Retrieve a list of environments {#list}
 
