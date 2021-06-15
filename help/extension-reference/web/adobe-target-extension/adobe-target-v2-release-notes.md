@@ -9,6 +9,12 @@ exl-id: b18889e8-a2a2-44bf-acb6-7693b4d1bbca
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
+## June 2, 2021
+
+### Adobe Target v2 Extension 0.14.2
+
+- Fix a bug where the final Launch bundle contains two at.js versions, one with On-Device Decisioning and one without.
+
 ## May 19, 2021
 
 ### Adobe Target v2 Extension 0.14.1
@@ -21,7 +27,6 @@ exl-id: b18889e8-a2a2-44bf-acb6-7693b4d1bbca
 
 - Added a new action Load Target with [On-Device Decisioning](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/targetv2-extension/adobe-target-extension-v2.html?lang=en#load-target-with-on-device-decisioning), which loads at.js 2.5 with On-Device Decisioning capabilities
 - Updated at.js to 2.5
-
 
 ## March 25, 2021
 
