@@ -11,9 +11,9 @@ exl-id: 93e83a62-6089-48e9-b521-82f972b36ac4
 
 Adobe Experience Platform Launch has a single catalog where users can view extensions that are available for installation.  This catalog is available within the product and contains extensions of three types:
 
-1. Public extensions - These are completed extensions designed for production use by any user.
-2. Private extensions - These are completed extensions designed for production, but were developed by other users in your company and are only available to users within your company.
-3. Development extensions - These extensions are under active development and are only available within your company and only on a property that is specifically designated as a Development property.
+1. **Public extensions**: These are completed extensions designed for production use by any user.
+2. **Private extensions**: These are completed extensions designed for production, but were developed by other users in your company and are only available to users within your company.
+3. **Development extensions**: These extensions are under active development and are only available within your company and only on a property that is specifically designated as a Development property.
 
 Separate from the extensions in the product catalog, some extensions also have listings in the [Experience Cloud Exchange Marketplace](https://exchange.adobe.com/experiencecloud.experience-platform-launch.html#product).  
 
@@ -45,7 +45,7 @@ If you already have a company account, or if you do not plan on ever completing 
 
 ### Create an effective listing
 
-Please take a look at the [App Submission Guideline](https://partners.adobe.com/exchangeprogram/experiencecloud/build/ec-exchange.html) for detailed information on how to create the most engaging listing. No, really - you should check out that guide.
+Please take a look at the [App Submission Guideline](https://partners.adobe.com/exchangeprogram/experiencecloud/build/ec-exchange.html) for detailed information on how to create the most engaging listing.
 
 #### After submitting your Exchange listing
 
