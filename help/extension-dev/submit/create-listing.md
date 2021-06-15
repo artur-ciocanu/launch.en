@@ -9,15 +9,19 @@ exl-id: 93e83a62-6089-48e9-b521-82f972b36ac4
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-Adobe Experience Platform Launch has two catalogs for extensions: Private and Public.
+Adobe Experience Platform Launch has a single catalog where users can view extensions that are available for installation.  This catalog is available within the product and contains extensions of three types:
 
-The Private catalog is only available within your own organization. If you do not plan on making your extension available to the public, you can skip this step and proceed to the document on [uploading and testing your extension](./upload-and-test.md).
+1. Public extensions - These are completed extensions designed for production use by any user.
+2. Private extensions - These are completed extensions designed for production, but were developed by other users in your company and are only available to users within your company.
+3. Development extensions - These extensions are under active development and are only available within your company and only on a property that is specifically designated as a Development property.
 
-In order to add your extension to the Public catalog, you must create a listing and include the URL to your listing in the extension.json manifest file inside of your Extension Package.
+Separate from the extensions in the product catalog, some extensions also have listings in the [Experience Cloud Exchange Marketplace](https://exchange.adobe.com/experiencecloud.experience-platform-launch.html#product).  
 
-Extensions created for public release are required to have a listing in the [Exchange Marketplace](https://experiencecloud.adobeexchange.com/). These listings enable extension developers to post support information, links to additional support or documentation, and to market your extensions to prospective users who may not be aware of your company or the functionality of your extension. In this marketplace, your extension will have a public listing that can be viewed without the user being authenticated to Platform Launch.
+These listings enable extension developers to post descriptions of functionality, provide links to additional support and documentation, and to market extensions to prospective users who may not be aware of your company or the functionality of your extension. In this marketplace, your extension will have a public listing that can be viewed without the user being authenticated to Platform Launch.  Many developers find it beneficial to develop an Exchange listing, but this is not a required step.
 
-The listing can be created at any time during the development of the extension, but must be completed and published (with the URL included in your extension package) before your extension can be released publicly.
+If you do not have a company to upload and test your extension package, you should register for the Exchange program and begin a listing.  This will trigger the creation of a company account (it takes some time, you'll get an email when this is completed) that you can use to upload and test your extension.  You do not ever have to make the listing public.
+
+If you already have a company account, or if you do not plan on ever completing your listing, you can skip the rest of this step and proceed to [uploading and testing your extension](./upload-and-test.md).
 
 ## Create a listing
 
@@ -41,7 +45,7 @@ The listing can be created at any time during the development of the extension, 
 
 ### Create an effective listing
 
-Please take a look at our [App Submission Guideline](https://partners.adobe.com/exchangeprogram/experiencecloud/build/ec-exchange.html) for detailed information on how to create the most engaging listing. No, really - you should check out that guide. Honest.
+Please take a look at the [App Submission Guideline](https://partners.adobe.com/exchangeprogram/experiencecloud/build/ec-exchange.html) for detailed information on how to create the most engaging listing. No, really - you should check out that guide.
 
 #### After submitting your Exchange listing
 
@@ -52,3 +56,7 @@ If you don't have a login to the Exchange site, make sure that your email is reg
 #### Update your Exchange listing after initial approval
 
 When you update your extension, or just need to update your Exchange listing, login to the [Partner Portal](https://partners.adobe.com/exchangeprogram/experiencecloud), and select the App Manager button next to your name. Then select your application and follow the flow above that was initially used to create the listing. Once re-submitted, the Adobe Exchange team will review the changes and will either approve the changes, or respond with comments about the changes.
+
+## Link your extension package to your listing
+
+After your listing has been approved and is publicly available, we recommend that you provide a link to the public listing in the `exchange_url` field of the `extension.json` file within your extension package.  This will create a "More Info" link within the Platform Launch extension catalog so users within the product can find your listing and it's extra information.
