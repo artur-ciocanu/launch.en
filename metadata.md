@@ -2,7 +2,7 @@
 cloud: Experience Cloud
 solution: Experience Platform Launch, Data Collection
 type: Documentation
-feature-set: Launch
+feature-set: Experience Platform Launch
 solution-title: Learn & Support
 solution-hub-url: https://helpx.adobe.com/support/experience-cloud/core-services.html
 solution-image: help/images/experience-cloud-logo-24.png
