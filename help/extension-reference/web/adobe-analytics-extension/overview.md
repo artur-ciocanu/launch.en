@@ -79,7 +79,7 @@ Specify the tracker object to be used globally.
 
 #### Open Editor
 
-Lets you [insert core AppMeasurement code](https://experienceleague.adobe.com/docs/analytics/implementation/other/dtm/analytics-tool/t-appmeasurement-code.html). This code is populated automatically when using the automatic configuration method.
+Lets you insert core [AppMeasurement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) code. This code is populated automatically when using the automatic configuration method.
 
 >[!NOTE]
 >
