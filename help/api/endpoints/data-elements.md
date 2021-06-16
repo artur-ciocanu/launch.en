@@ -596,7 +596,7 @@ A successful response returns the details of the updated data element.
 }
 ```
 
-## Revise data element {#revise}
+## Revise a data element {#revise}
 
 When you revise a data element, a new revision of the data element is created with the current (head) revision. Each revision of a data element will have its own ID. The original data element may be discovered through an origin link.
 
@@ -924,7 +924,7 @@ curl -X GET \
 
 **Response**
 
-A successful response returns a list of revisions that use the specified data element.
+A successful response returns a list of revisions for the specified data element.
 
 ```json
 {

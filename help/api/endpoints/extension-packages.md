@@ -1237,7 +1237,6 @@ A successful response return the details of the extension package.
 }
 ```
 
-
 ## List the versions for an extension package
 
 You can list the versions of an extension package by appending `/versions` to the path of a lookup request.
@@ -1265,4 +1264,4 @@ curl -X GET \
 
 **Response**
 
-A successful response returns an array of previous versions of the extension packages. An example response has been omitted for space.
+A successful response returns an array of previous versions of the extension package. An example response has been omitted for space.
