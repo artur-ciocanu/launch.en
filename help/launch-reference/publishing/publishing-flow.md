@@ -71,7 +71,7 @@ The following table outlines the available actions for a library in the [!UICONT
 | [!UICONTROL Open] | View the contents of the library. Changes are not allowed for libraries outside of the [!UICONTROL Development] column. If changes are needed, the library should be rejected so changes can be made in [!UICONTROL Development]. |
 | [!UICONTROL Build for Staging] | Build the library in the staging environment for deployment. |
 | [!UICONTROL Approve for Publishing] | Move the library to the [!UICONTROL Approved] column for a user with publishing permissions to work on. |
-| [!UICONTROL Approve & Publish to Production] | This is can only be performed by a user with both the Approve, and Publish rights.  This action unassigns the library from the staging environment, moves it to the [!UICONTROL Approved] state, and publishes to production (upon completion of the production build, the library will move to the [!UICONTROL Published] state).  This can be performed with our without a successful build in the staging environment.
+| [!UICONTROL Approve & Publish to Production] | This is can only be performed by a user with both the Approve, and Publish rights.  This action unassigns the library from the staging environment, moves it to the [!UICONTROL Approved] state, and publishes to production (upon completion of the production build, the library will move to the [!UICONTROL Published] state).  This can be performed with our without a successful build in the staging environment. |
 | [!UICONTROL Reject] | Unassign the library from the staging environment and move the library back to the [!UICONTROL Development] column for further changes. |
 
 ### [!UICONTROL Approved] {#approved}
@@ -92,7 +92,7 @@ The [!UICONTROL Published] column shows which libraries have been published and 
 
 | Action | Description |
 | --- | --- |
-| [!UICONTROL Open] | View the contents of the library. Changes are not allowed for libraries outside of the [!UICONTROL Development] column.  Desired changes must be published in a new library.
+| [!UICONTROL Open] | View the contents of the library. Changes are not allowed for libraries outside of the [!UICONTROL Development] column.  Desired changes must be published in a new library. |
 | [!UICONTROL Republish] | This action is only available on the 5 most recently published libraries and only if the production environment (a) was configured with the Archive option off and (b) was using a [!UICONTROL Managed by Adobe] host at the time of the build. |
 | [!UICONTROL Download] | This action is only available on the 5 most recently published libraries and only if the production environment (a) was configured with the Archive option on and (b) was using a [!UICONTROL Managed by Adobe] host at the time of the build. |
 
