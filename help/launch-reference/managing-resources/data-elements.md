@@ -11,7 +11,7 @@ exl-id: 00d45148-4aa1-4578-8ede-4fc3b6315621
 
 Data elements are the building blocks for your data dictionary (or data map). Use data elements to collect, organize, and deliver data across marketing and ad technology.
 
-A single data element is a variable whose value can be mapped to query strings, URLs, cookie values, JavaScript variables, and so on. You can reference this value by its variable name throughout [!DNL Adobe Experience Platform Launch]. This collection of data elements becomes the dictionary of defined data that you can use to build your rules (events, conditions, and actions). This data dictionary is shared across all of [!DNL Platform Launch] for use with any extension you've added to your property.
+A single data element is a variable whose value can be mapped to query strings, URLs, cookie values, JavaScript variables, and so on. You can reference this value by its variable name throughout Adobe Experience Platform tags. This collection of data elements becomes the dictionary of defined data that you can use to build your rules (events, conditions, and actions). This data dictionary is shared across tags for use with any extension you've added to your property.
 
 >[!IMPORTANT]
 >
@@ -21,9 +21,9 @@ Use data elements as widely as possible throughout rule creation to consolidate 
 
 The concept of reusable data elements is very powerful and you should use them as best practice.
 
-For example, if there is a particular way that you reference page names or product IDs, or grab information from query string parameters from an affiliate marketing link or from [!DNL AdWords], and so forth, you can create a data dictionary (data elements) by getting information from its source and then using this data in various [!DNL Platform Launch] rules.
+For example, if there is a particular way that you reference page names or product IDs or grab information from query string parameters from an affiliate marketing link or from [!DNL AdWords], and so forth, you can create a data dictionary (data elements) by getting information from its source and then using this data in various tags rules.
 
-Using page name as an example, suppose you use a particular page-name schema by referencing a data layer, `document.title` element, or a title tag within the website. In [!DNL Platform Launch], you can create a data element as a single point of reference for that particular point of data. You can then use this data element in any rule that needs to reference the page name. If for some reason in the future you decide to change the way you reference page name (for example, you have been referencing `document.title` but you now want to reference a particular data layer), you don't need to edit many different rules to change that reference. You simply change the reference once in the data element and all rules that reference that data element automatically update.
+Using page name as an example, suppose you use a particular page-name schema by referencing a data layer, `document.title` element, or a title tag within the website. Tags in Adobe Experience Platform allow you to create a data element as a single point of reference for that particular point of data. You can then use this data element in any rule that needs to reference the page name. If for some reason in the future you decide to change the way you reference page name (for example, you have been referencing `document.title` but you now want to reference a particular data layer), you don't need to edit many different rules to change that reference. You simply change the reference once in the data element and all rules that reference that data element automatically update.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Using page name as an example, suppose you use a particular page-name schema by 
 Data elements are populated with data when they are used in rules or when manually called in a script. At a high level, you:
 
 1. [Create a data element](#create-a-data-element), if you haven't done so already.
-1. Use the data element in a [rule](/help/launch-reference/managing-resources/rules.md) or a custom script.
+2. Use the data element in a [rule](/help/launch-reference/managing-resources/rules.md) or a custom script.
 
 For an introductory video, see [Data elements](../../quick-start/videos.md).
 
@@ -56,7 +56,7 @@ Data elements are the building blocks for rules. Data elements let you create a 
 1. Name the data element.
 1. Select an extension and type.
 
-   The available data element types are determined by the extension. For information about the types available with the Platform Launch Core extension, refer to [Types of data elements](data-elements.md#types-of-data-elements).
+   The available data element types are determined by the extension. For information about the types available with the tags Core extension, refer to [Types of data elements](data-elements.md#types-of-data-elements).
 
 1. Provide any requested information about the chosen type in the fields provided.
 1. (Optional) Enter a default value.
@@ -79,11 +79,11 @@ Data elements are the building blocks for rules. Data elements let you create a 
      * Values persist in the browser's session storage until the browser tab is closed.
      * Available throughout the site visit.
    * Visitor
-     * The value is stored indefinitely in the brower's local storage.
+     * The value is stored indefinitely in the browser's local storage.
 
 1. Select **[!UICONTROL Save]**.
 
-When creating or editing elements, you can save and build to your [active library](/help/launch-reference/publishing/libraries.md#active-library). This immediately saves your change to your library and executes a build. The status of the build is displayed. You can also create a new library from the [!UICONTROL Active Library] drop down.
+When creating or editing elements, you can save and build to your [active library](/help/launch-reference/publishing/libraries.md#active-library). This immediately saves your change to your library and executes a build. The status of the build is displayed. You can also create a new library from the [!UICONTROL Active Library] dropdown.
 
 ## Types of data elements {#types-of-data-elements}
 
@@ -116,7 +116,7 @@ if (window.location.pathname == '/') {
 }
 ```
 
-Custom code can accept the `event` object from the calling rule as an argument. This allows the code to read values that are available in there.
+Custom code can accept the `event` object from the calling rule as an argument. This allows the code to read value there.
 
 **Example:**
 
@@ -130,7 +130,7 @@ You can then use this in custom scripts by using the `_satellite` object syntax:
 
 `_satellite.getVar('data element name', event);`
 
-When using with the `%..%` notation, you only need to specify the data element name. You don't need to specify `event`.
+When using the `%..%` notation, you only need to specify the data element name. You don't need to specify `event`.
 
 `%data element name%`
 
@@ -152,7 +152,7 @@ Get the value of:
 
 Any available JavaScript object or variable can be referenced using the path field.
 
-When you have JavaScript variables, or object properties in your markup, and you want to collect those values in [!DNL Platform Launch] to use with any of your extensions or rules, one way to capture those values is to use data elements in [!DNL Platform Launch]. This way, you can refer to the data element throughout your rules, and if the source of the data ever changes, you only need to change your reference to the source (the data element) in one place in [!DNL Platform Launch].
+If you want to collect JavaScript variables or object properties in your markup and use them with any of your extensions or rules, tag data elements can be used to capture these values. This way, you can refer to the data element throughout your rules, and if the source of the data ever changes, you only need to change your reference to the source (the data element) in one place within the Data Collection UI.
 
 For example, let's say your markup contains a JavaScript variable called `Page_Name`, like this:
 
@@ -163,7 +163,7 @@ For example, let's say your markup contains a JavaScript variable called `Page_N
 </script>
 ```
 
-When you create the data element in [!DNL Platform Launch], simply provide the path to that variable.
+You must provide the path to that variable when you create the data element in tags.
 
 If you use a data collector object as party of your data layer, simply use dot notation in the path to reference the object and property you want to capture into the data element, like `_myData.pageName`, or `digitalData.pageName`, etc.
 
@@ -175,7 +175,7 @@ If you use a data collector object as party of your data layer, simply use dot n
 
 Provide the name of your local storage item in the [!UICONTROL Local Storage Item Name] field.
 
-Local storage gives browsers a way to store information from page to page ([https://www.w3schools.com/html/html5\_webstorage.asp](https://www.w3schools.com/html/html5_webstorage.asp)). Local storage works a lot like cookies, but is much larger and more flexible.
+Local storage gives browsers a way to store information from page to page ([https://www.w3schools.com/html/html5\_webstorage.asp](https://www.w3schools.com/html/html5_webstorage.asp)). Local storage works a lot like cookies but is much larger and more flexible.
 
 Use the provided field to specify the value you created for a local storage item, such as `lastProductViewed.`
 
@@ -244,11 +244,11 @@ Some common use cases include:
 * Show a survey after a visitor has been on the site for five minutes
 * If this is the landing page for the visit, populate an [!DNL Analytics] metric
 * Show a new offer to the visitor after X number of Session Counts
-* Display a newsletter sign up if this is a first time visitor
+* Display a newsletter sign up if this is a first-time visitor
 
 ## Built-in data elements
 
-If you used any of the following data elements in the past, you must create custom data element in [!DNL Platform Launch]:
+If you used any of the following data elements in the past, you must create custom data element in tags:
 
 * URI
 * Protocol

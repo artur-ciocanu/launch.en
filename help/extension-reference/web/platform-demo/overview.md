@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Platform Demo Extension Overview
-description: Learn about the Adobe Experience Platform Demo tag extension in Adobe Experience Platform.
+description: Learn about the Adobe Experience Platform Demo extension in Adobe Experience Platform.
 exl-id: 94bd5c84-cca2-4d46-888f-d106da362817
 ---
 # Adobe Experience Platform Demo Extension
