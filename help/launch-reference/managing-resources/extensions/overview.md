@@ -62,7 +62,7 @@ Tags in Adobe Experience Platform is highly extendible. Extensions add core func
 1. From a property's overview page, open the **[!UICONTROL Extensions]** tab.
 2. Select an extension.
 
-   ![../../../images/extensions.png)
+   ![]()../../../images/extensions.png)
 
    * If the extension exists, select it from the extensions catalog.
    * Mouse over an extension in your list to configure or disable it.
