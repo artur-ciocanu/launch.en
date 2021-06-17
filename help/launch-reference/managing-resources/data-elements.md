@@ -15,7 +15,7 @@ A single data element is a variable whose value can be mapped to query strings, 
 
 >[!IMPORTANT]
 >
->Changes do not take effect until they are [published](/help/launch-reference/publishing/overview.md).
+>Changes do not take effect until they are [published](../publishing/overview.md).
 
 Use data elements as widely as possible throughout rule creation to consolidate the definition of dynamic data and to improve the efficiency of your tagging process. You define data rules once and then use them in multiple places.
 
@@ -32,7 +32,7 @@ Using page name as an example, suppose you use a particular page-name schema by 
 Data elements are populated with data when they are used in rules or when manually called in a script. At a high level, you:
 
 1. [Create a data element](#create-a-data-element), if you haven't done so already.
-2. Use the data element in a [rule](/help/launch-reference/managing-resources/rules.md) or a custom script.
+2. Use the data element in a [rule](./rules.md) or a custom script.
 
 For an introductory video, see [Data elements](../../quick-start/videos.md).
 
@@ -83,7 +83,7 @@ Data elements are the building blocks for rules. Data elements let you create a 
 
 1. Select **[!UICONTROL Save]**.
 
-When creating or editing elements, you can save and build to your [active library](/help/launch-reference/publishing/libraries.md#active-library). This immediately saves your change to your library and executes a build. The status of the build is displayed. You can also create a new library from the [!UICONTROL Active Library] dropdown.
+When creating or editing elements, you can save and build to your [active library](../publishing/libraries.md#active-library). This immediately saves your change to your library and executes a build. The status of the build is displayed. You can also create a new library from the [!UICONTROL Active Library] dropdown.
 
 ## Types of data elements {#types-of-data-elements}
 
