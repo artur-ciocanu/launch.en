@@ -1,6 +1,6 @@
 ---
 title: Test Embed Codes using Adobe Experience Platform Debugger
-description: Learn how to use Platform Debugger to locally test different embed codes for Adobe Experience Platform Launch on your website.
+description: Learn how to use Platform Debugger to locally test different embed codes for Adobe Experience Platform on your website.
 exl-id: f6ea1b36-0455-45a6-a4e5-4d90656fe04d
 ---
 # Test embed codes using Adobe Experience Platform Debugger
@@ -9,11 +9,11 @@ exl-id: f6ea1b36-0455-45a6-a4e5-4d90656fe04d
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-As you make changes to your library builds in Adobe Experience Platform Launch, you should test these changes before deploying the build to your production environment. If you do not have a dedicated staging or development environment for your website, you can use Adobe Experience Platform Debugger to locally test different embed codes within your site.
+As you make changes to your tags library builds in Adobe Experience Platform, you should test these changes before deploying the build to your production environment. If you do not have a dedicated staging or development environment for your website, you can use Adobe Experience Platform Debugger to locally test different embed codes within your site.
 
 ## Prerequisites
 
-This tutorial requires a working understanding of the use of environments and embed codes in Platform Launch. See the [environments overview](./environments.md) for more information.
+This tutorial requires a working understanding of the use of environments and embed codes in tags. See the [environments overview](./environments.md) for more information.
 
 This tutorial also requires that you have the Platform Debugger browser extension installed. Platform Debugger is only available for Chrome and Firefox browsers. Use one of the following links to install the extension before starting the tutorial:
 
@@ -22,7 +22,7 @@ This tutorial also requires that you have the Platform Debugger browser extensio
 
 ## Open Platform Debugger on your website
 
-Using your browser of choice, navigate to your website and open the Platform Debugger extension. The site that Platform Debugger is currently connected to is displayed at the bottom of the window. If Platform Launch is currently running on your site, it will be listed in the [!UICONTROL Summary] tab.
+Using your browser of choice, navigate to your website and open the Platform Debugger extension. The site that Platform Debugger is currently connected to is displayed at the bottom of the window. If tags is currently running on your site, it will be listed in the [!UICONTROL Summary] tab.
 
 ![](./images/embed-code-testing/summary.png)
 
