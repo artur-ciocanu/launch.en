@@ -347,7 +347,6 @@ curl -X POST \
 | `attributes.enabled` | A boolean value indicating whether the data element is enabled. |
 | `attributes.force_lower_case` | A boolean value indicating whether the data element value should be converted to lowercase before being stored. |
 | `attributes.clean_text` | A boolean value indicating whether leading and trailing whitespace should be removed from the data element value before being stored. |
-| `id` | The `id` of the data element you want to update. This should match the `{DATA_ELEMENT_ID}` value provided in the request path. |
 | `type` | The type of resource being updated. For this endpoint, the value must be `data_elements`. |
 
 **Response**
