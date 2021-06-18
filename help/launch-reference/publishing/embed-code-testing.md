@@ -9,11 +9,11 @@ exl-id: f6ea1b36-0455-45a6-a4e5-4d90656fe04d
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-As you make changes to your tags library builds in Adobe Experience Platform, you should test these changes before deploying the build to your production environment. If you do not have a dedicated staging or development environment for your website, you can use Adobe Experience Platform Debugger to locally test different embed codes within your site.
+As you make changes to your tag library builds in Adobe Experience Platform, you should test these changes before deploying the build to your production environment. If you do not have a dedicated staging or development environment for your website, you can use Adobe Experience Platform Debugger to locally test different embed codes within your site.
 
 ## Prerequisites
 
-This tutorial requires a working understanding of the use of environments and embed codes in tags. See the [environments overview](./environments.md) for more information.
+This tutorial requires a working understanding of the use of environments and embed codes in the tags workspace. See the [environments overview](./environments.md) for more information.
 
 This tutorial also requires that you have the Platform Debugger browser extension installed. Platform Debugger is only available for Chrome and Firefox browsers. Use one of the following links to install the extension before starting the tutorial:
 

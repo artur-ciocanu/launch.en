@@ -56,9 +56,9 @@ When an edge node receives a request for a specific file (such as your library b
 
 #### Edge cache invalidation {#invalidation}
 
-When you upload a new library build, tags invalidate the caches on all applicable edge nodes, which means that each node considers its cached version to be invalid, regardless of how recently it retrieved a fresh copy. The next time an edge node receives a request for that file, the node retrieves a fresh copy from the origin.
+When you upload a new library build the caches on all applicable edge nodes are invalidated. This means that each node considers its cached version to be invalid, regardless of how recently it retrieved a fresh copy. The next time an edge node receives a request for that file, the node retrieves a fresh copy from the origin.
 
-Because Akamai has multiple origin servers that replicate files between each other, and because there is no way of knowing which origin received your file first, these node requests can hit an origin that does not have the latest version. It would then cache the older version again. To prevent this from occurring, tags perform multiple cache invalidations for each new build on the following intervals:
+Because Akamai has multiple origin servers that replicate files between each other, and because there is no way of knowing which origin received your file first, these node requests can hit an origin that does not have the latest version. It would then cache the older version again. To prevent this from occurring, multiple cache invalidations are performed for each new build on the following intervals:
 
 * Immediately after upload
 * 5 minutes after upload
@@ -97,7 +97,7 @@ When you first create a property in the [Platform Data Collection UI](http://lau
 
 ## Next steps
 
-This document provided an overview of Adobe-managed hosting for tags libraries in Adobe Experience Platform. For information on other hosting options, refer to the following documentation:
+This document provided an overview of Adobe-managed hosting for tag libraries in Adobe Experience Platform. For information on other hosting options, refer to the following documentation:
 
 * [SFTP hosting](./sftp-host.md)
 * [Self-hosting libraries](./self-hosting-libraries.md)

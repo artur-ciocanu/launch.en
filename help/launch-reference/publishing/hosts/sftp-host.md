@@ -14,8 +14,8 @@ If you do not want to have Adobe manage your hosted libraries, your other option
 Platform connects to your SFTP site using an encrypted key. There are a few steps to set this up correctly:
 
 1. You must have a public/private key pair installed on your SFTP server. You can generate these keys on your server or generate them somewhere else and install them on your server. See [here](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key)for an example of how to generate keys.
-2. You must encrypt the private key with tags' public GPG key so that you can provide your private key to tags during the SFTP host creation process. See [Encrypting Values](https://developer.adobelaunch.com/api/guides/encrypting_values/) in the Reactor API documentation for instructions and tags' public GPG keys. Unless you know you need a different one, use the Production Environment's GPG key. Finally, you can encrypt your private key from any machine, so you do not need to install GPG on your server to complete this step.
-3. You might need to approve the tags' IP addresses with your company firewall to allow Platform to reach your SFTP server and connect to it. Those IP Addresses are:
+2. The private key is used to encrypt the public GPG key. You will need to provide your private key during the SFTP host creation process. See the [Encrypt values](https://developer.adobelaunch.com/api/guides/encrypting_values/) section in the Reactor API documentation for instructions on encrypting public GPG keys. Use the Production Environment's GPG key unless you know you need a specific one. Finally, you can encrypt your private key from any machine, so you do not need to install GPG on your server to complete this step.
+3. You might need to approve the IP addresses used with your company firewall to allow Platform to reach your SFTP server and connect to it. Those IP Addresses are:
    * `184.72.239.68`
    * `23.20.85.113`
    * `54.226.193.184`
@@ -52,4 +52,4 @@ There is a full guide [in a Medium article](https://medium.com/launch-by-adobe/c
 
 1. Select **[!UICONTROL Save]**.
 
-When you select **[!UICONTROL Save]**, tags tests whether it is able to connect and deliver files to your SFTP server. It creates a folder, writes a file within that folder, checks to make sure the file is there, then cleans up after itself. If the user account on your SFTP server (the one attached to the secure certificate you provided to Platform) does not have the necessary permissions to perform this action, then the Host goes into a "Failed" status.
+When you select **[!UICONTROL Save]**, the connection and ability to deliver the files to your SFTP server is tested. Platform creates a folder, writes a file within that folder, checks to make sure the file is there, then cleans up after itself. If the user account on your SFTP server (the one attached to the secure certificate you provided to Platform) does not have the necessary permissions to perform this action, then the Host goes into a "Failed" status.

@@ -9,11 +9,11 @@ exl-id: e8dc1a71-9cb0-4a03-b871-97c5c1b34c63
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-Everything you do with tags in Adobe Experience Platform has the ultimate goal of producing a set of files to control the behavior of your application at run-time. This set of files is called a [build](../builds.md).
+Tags in Adobe Experience Platform has the ultimate goal of producing a set of files to control the behavior of your application at run-time. This set of files is called a [build](../builds.md).
 
 Builds need to be hosted somewhere so client devices can retrieve them at run-time as needed.
 
-Tags can either manage the hosting of these files for you or you can do it yourself.
+Platform can either manage the hosting of these files for you or you can do it yourself.
 
 ## Managed by Adobe {#managed-by-adobe}
 
@@ -50,12 +50,12 @@ There are two methods you can use to acquire completed builds so that you can se
 
 #### Download
 
-Tags can deliver builds as a packaged .zip file (encryption optional). You can then unzip the package and insert the contents into your release cycle to place them on your own servers.
+The builds can be delivered as a packaged .zip file (encryption optional). You can then unzip the package and insert the contents into your release cycle to place them on your own servers.
 
 Use a [Managed by Adobe](self-hosting-libraries.md) host and select the [Archive](../environments.md) option on your environment. The environment provides a download link. Whenever a build is created, you can retrieve it from the environment's download link.
 
 #### Direct Delivery
 
-Tags can also deliver builds directly to an SFTP server that you created. You take responsibility to get these filed into your release cycle and push them live.
+The builds can also be delivered directly to an SFTP server that you created. You take responsibility to get these filed into your release cycle and push them live.
 
 To perform a direct delivery, you should create an [SFTP host](sftp-host.md) and assign that host to your environment. Whenever you build a library in that environment, the files are delivered to your SFTP server.

@@ -36,7 +36,7 @@ The smaller files contain code and configuration for individual Actions that are
 
 The default file format for builds is a package of files that contain all the required code for your extensions, data elements, and rules to run in the way that you want them to.
 
-However, in certain cases, you might prefer a .zip archive of the files rather than the executable client-side code file. For example, you might want to create an archive if you host your build yourself and want to use the build in another deployment. If you provide anything in the self-hosted path to the library field, you can save your environment. Along with your new code, a link to the archived download becomes available. Tags still builds your library and deploys it, but instead of deploying a bunch of code files, you can deploy a zip file to Akamai, and download it from `assets.adobedtm.com/...`
+However, in certain cases, you might prefer a .zip archive of the files rather than the executable client-side code file. For example, you might want to create an archive if you host your build yourself and want to use the build in another deployment. If you provide anything in the self-hosted path to the library field, you can save your environment. Along with your new code, a link to the archived download becomes available. After the library is built you have the option to deploy a zip file to Akamai, and download it from `assets.adobedtm.com/...`.
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Minification lowers bandwidth costs and improves speed by stripping data that is
 
 To increase performance, Platform minifies everything, including:
 
-* The main tags library
+* The main tag library
 * Module code provided by extension developers as part of an extension
 * Custom code provided by Platform users
 
@@ -68,8 +68,8 @@ If you want to see the un-minified code, remove .min from the file name:
 
 `launch-%environment_id%.js`
 
-If an extension developer provides minified code with their extension, tags does not provide un-minified code in the un-minified build. Tags only provides what the extension developer delivers to Adobe. Similarly, if a Platform user puts minified code into a custom code box, that code is still minified in un-minified builds. Tags does not un-minify anything.
+If an extension developer provides minified code with their extension, Platform does not provide un-minified code in the un-minified build. Similarly, if a Platform user puts minified code into a custom code box, that code is still minified in un-minified builds. Platform does not un-minify anything.
 
 For more information about minification, see [this stackpath article](https://blog.stackpath.com/glossary/minification/).
 
-When performing a build, tags will construct the un-minified library first, then minify the entire library all at once.
+When performing a build it will construct the un-minified library first, then minify the entire library all at once.
