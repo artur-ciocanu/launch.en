@@ -96,6 +96,7 @@ A successful response returns a list of hosts for the specified property.
       "total_count": 1
     }
   }
+}
 ```
 
 ## Look up a host {#lookup}

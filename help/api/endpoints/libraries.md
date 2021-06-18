@@ -7,6 +7,7 @@ description: Learn how to make calls to the /libraries endpoint in the Reactor A
 A library is a collection of tag resources ([extensions](./extensions.md), [rules](./rules.md), and [data elements](./data-elements.md)) that represent the desired behavior of a [property](./properties.md). The `/libraries` endpoint in the Reactor API allows you to programmatically manage libraries within your tag properties.
 
 A library belongs to exactly one property. A property can have many libraries.
+
 ## Getting started
 
 The endpoint used in this guide is part of the [Reactor API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/reactor.yaml). Before continuing, please review the [getting started guide](../getting-started.md) for important information regarding required headers and links to related documentation.
@@ -1315,7 +1316,7 @@ A successful response returns a list of rules that use the specified library.
 }
 ```
 
-### Look up the related environment for a library {#environment}
+### Look up the related environment for a library {#related-environment}
 
 You can look up the environment that a library is assigned to by appending `/environment` to the path of a GET request.
 
