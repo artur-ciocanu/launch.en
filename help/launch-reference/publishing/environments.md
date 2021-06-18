@@ -68,7 +68,7 @@ For mobile properties, you can view the configuration options for an environment
 See the overview on [hosts](./hosts/hosts-overview.md) for more information.
 
 ## Web configuration
-<!-- brain is failing. Should this be tags or Platform? Also check for plurals vs singles tags do / tags does -->
+
 The settings from the assigned environment determine the following for web properties:
 
 * **Host**: The server location where you want your build to be deployed.
