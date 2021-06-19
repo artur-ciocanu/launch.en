@@ -85,7 +85,7 @@ Select **[!UICONTROL Host]** to choose a pre-configured host for the environment
 
 ![](./images/environments/select-host.png)
 
-When a build is created, [!DNL Platform Launch] delivers that build to the location you specified for the assigned host. For information on how to create and configure hosts in [!DNL Platform Launch], refer to the [hosts overview](./hosts/hosts-overview.md).
+When a build is created, that build is delivered to the location you specified for the assigned host. For information on how to create and configure hosts in tags, refer to the [hosts overview](./hosts/hosts-overview.md).
 
 ### Archive setting {#archive}
 
@@ -107,13 +107,13 @@ If you use the archive option, all build files are delivered as a ZIP file inste
 
 ### Embed code {#embed-code}
 
-An embed code is a `<script>` tag that must be placed in the `<head>` sections of your website pages in order to load and execute the code you build in [!DNL Platform Launch]. Each environment configuration automatically generates its own embed code, so you only need to copy and paste it into your site on the pages where you want [!DNL Platform Launch] to run.
+An embed code is a `<script>` tag that must be placed in the `<head>` sections of your website pages in order to load and execute the code you build. Each environment configuration automatically generates its own embed code, so you only need to copy and paste it into your site on the pages where you want tags to run.
 
-When you view the installation instructions, you can choose to have the script load the library files synchronously or asynchronously. This setting is not persistent and does not reflect how you actually have implemented [!DNL Platform Launch] on your site. Rather, it is only meant to show the appropriate way to install the environment.
+When you view the installation instructions, you can choose to have the script load the library files synchronously or asynchronously. This setting is not persistent and does not reflect how you actually have implemented tags on your site. Rather, it is only meant to show the appropriate way to install the environment.
 
 >[!WARNING]
 >
->Depending on the contents of your [!DNL Platform Launch] library, the behavior of your rules and other elements can change between synchronous and asynchronous deployment. It is therefore important to thoroughly test any changes you make.
+>Depending on the contents of your tag library, the behavior of your rules and other elements can change between synchronous and asynchronous deployment. It is therefore important to thoroughly test any changes you make.
 
 #### Asynchronous deployment
 
@@ -123,7 +123,7 @@ For more information on this setting, see the guide on [asynchronous deployment]
 
 #### Synchronous deployment
 
-When the browser reads an embed code using synchronous deployment, it retrieves the [!DNL Platform Launch] library and executes it before continuing to load the page. This is also how [Dynamic Tag Management (DTM)](https://experienceleague.adobe.com/docs/dtm/using/dtm-home.html) works.
+When the browser reads an embed code using synchronous deployment, it retrieves the tag library and executes it before continuing to load the page. This is also how [Dynamic Tag Management (DTM)](https://experienceleague.adobe.com/docs/dtm/using/dtm-home.html) works.
 
 Synchronous embed codes consist of two `<script>` tags that must be placed within the HTML of your website. One `<script>` tag must be placed in the document `<head>`, while the other must be placed just before the closing `</body>` tag.
 
@@ -137,7 +137,7 @@ Since embed codes are generated based on your environment configurations, some c
 
 >[!WARNING]
 >
->When an environment's embed code changes in [!DNL Platform Launch], you must manually to update the embed codes in your HTML. To avoid costly maintenance, you should only update your embed code(s) when absolutely necessary.
+>When a tag environment's embed code changes, you must manually to update the embed codes in your HTML. To avoid costly maintenance, you should only update your embed code(s) when absolutely necessary.
 
 ## Create an environment
 

@@ -1,6 +1,6 @@
 ---
 title: Publishing Flow
-description: Learn about the process of creating libraries, testing builds, and approving them for production in Adobe Experience Platform Launch.
+description: Learn about the process of creating libraries, testing builds, and approving them for production in Adobe Experience Platform.
 exl-id: cccd2371-e472-4d53-ac00-2be14a161ae8
 ---
 # Publishing flow
@@ -9,7 +9,7 @@ exl-id: cccd2371-e472-4d53-ac00-2be14a161ae8
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-In Adobe Experience Platform Launch, the publishing flow refers to the process of creating libraries, testing builds, and approving them for production.
+The tags publishing flow in Adobe Experience Platform refers to the process of creating libraries, testing builds, and approving them for production.
 
 The available actions that you can make on a library depend on the library's state and the level of permission you have. In addition, a library's state also affects the resources it contains (rules, data elements, and extensions) depending on what is upstream in the publishing flow.
 
@@ -25,7 +25,7 @@ There are different levels of user permissions that are important for the publis
 
 These rights are not inclusive. For a single person to perform the workflow from start to finish, that person must be granted all three rights within a given property.
 
-For more information on managing permissions for Platform Launch, see the [user permissions guide](../administration/user-permissions.md).
+See the [user permissions guide](../administration/user-permissions.md) for more information on managing permissions for tags.
 
 ## Library state {#state}
 
@@ -36,7 +36,7 @@ When it comes to the publishing flow, there are four basic states that a library
 * [[!UICONTROL Approved]](#approved)
 * [[!UICONTROL Published]](#published)
 
-These four states are represented as columns within the **[!UICONTROL Publishing Flow]** tab in the Platform Launch UI.
+These four states are represented as columns within the **[!UICONTROL Publishing Flow]** tab in the Data Collection UI.
 
 ![](./images/approval-workflow/flow-ui.png)
 
@@ -55,7 +55,7 @@ The following table outlines the available actions for a library in the [!UICONT
 | [!UICONTROL Edit] | Use the [!UICONTROL Edit Library] screen to add or remove components from the library. |
 | [!UICONTROL Build for Development] | Create a build for the library. The build is compiled and deployed to the environment that the library is assigned to. This step fails if the library has not been assigned to an environment, or contains a change that is already defined in the upstream. |
 | [!UICONTROL Submit for Approval] | Unassign the library from the development environment, and move the library to the [!UICONTROL Submitted] column for a user with approval permissions to work on. The last build for the library must be successful in order for this option to be enabled. |
-| [!UICONTROL Delete] | Remove the library from Platform Launch. This does not remove the build from the environment. |
+| [!UICONTROL Delete] | Remove the library from Platform. This does not remove the build from the environment. |
 
 ### [!UICONTROL Submitted] {#submitted}
 
@@ -96,7 +96,7 @@ What is included in the upstream depends on the current stage of the library. Fo
 
 ![](./images/approval-workflow/upstream.png)
 
-When you are editing a library in the Platform Launch UI, all resources that are inherited from the upstream are represented in the **[!UICONTROL Resources Upstream]** section. To view these resources, select the expand tab below the section heading.
+When you are editing a library in the Data Collection UI, all resources that are inherited from the upstream are represented in the **[!UICONTROL Resources Upstream]** section. To view these resources, select the expand tab below the section heading.
 
 ![](./images/approval-workflow/upstream-collapse.png)
 
@@ -106,4 +106,4 @@ The section expands to show the individual resources that are inherited from the
 
 ## Next steps
 
-This guide provided a high-level overview of the publishing flow for libraries in Platform Launch. To learn more about how to publish your libraries, refer to the [publishing overview](./overview.md).
+This guide provided a high-level overview of the publishing flow for libraries in Adobe Experience Platform. To learn more about how to publish your libraries, refer to the [publishing overview](./overview.md).

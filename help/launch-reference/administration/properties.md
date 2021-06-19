@@ -21,7 +21,7 @@ For a video tutorial, see [Creating your first property](../../quick-start/video
 
 ## Best practices for planning properties {#best-practices-for-planning-properties}
 
-Each tags implementation in Adobe Experience Platform can be very different. They have a wide variety of data-collection needs, variable usage, extensions, third-party tags, other systems and technologies, people, teams, geographic regions, and so on. You should structure your properties in a way that matches your IMS Organization's workflow, and processes.
+Each tag implementation in Adobe Experience Platform can be very different. They have a wide variety of data-collection needs, variable usage, extensions, third-party tags, other systems and technologies, people, teams, geographic regions, and so on. You should structure your properties in a way that matches your IMS Organization's workflow, and processes.
 
 Considering the following when planning properties:
 
