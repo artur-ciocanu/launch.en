@@ -180,7 +180,7 @@ If you do not see a [!DNL Experience Platform Launch] card and or if [!DNL Exper
 
 After you select Platform Launch, a list of product profiles displays. Think of these profiles as permission groups. One profile is created for you and is named "[!DNL Platform Launch] - `Company Name`."
 
-![](/help/images/product-profiles.png)
+![](../../images/product-profiles.png)
 
 ### 3. Create your product profile
 
