@@ -5,6 +5,10 @@ exl-id: 016cb7d5-1977-4b26-8516-b9b035a66f7e
 ---
 # Companies and properties
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 ## Companies
 
 In [!DNL Adobe Experience Platform Launch], there is a 1:1 relationship between your company and your [!DNL Experience Cloud] organizations.  Companies may contain any number properties.  Each individual property can be deployed on any number of sites and apps depending on your needs.
@@ -97,7 +101,7 @@ Before beginning, review the [Best practices for planning properties](companies-
 
 Navigate to your company page, then select **[!UICONTROL Add Property]**, or select an existing property from the list and select **[!UICONTROL Configure]**.
 
-![](/help/assets/property-settings.png)
+![](/help/images/property-settings.png)
 
 ### For Web
 
@@ -108,7 +112,7 @@ Navigate to your company page, then select **[!UICONTROL Add Property]**, or sel
    **Domains:** The base URL of any sites you plan to deploy this property to
 
 1. (Advanced) **[!UICONTROL Run rule components in sequence]** Select this checkbox to make conditions and actions wait for the previous one to complete before they run
-1. (Advanced) **[!UICONTROL Return an empty string for undefined data elements:]** Select this check box if you want data elements that resolve to null or undefined values to be converted to empty strings.
+1. (Advanced) **[!UICONTROL Return an empty string for missing data elements:]** If you reference a data element that does not exist within a library, that would normally return `undefined`.  Select this check box if you want that scenario to return an empty string instead.
 1. (Advanced) **[!UICONTROL Configure for extension development:]** Select this check box if you plan to install development extensions that are being actively developed by your company
 1. Select **[!UICONTROL Save]**.
 

@@ -5,6 +5,10 @@ exl-id: 73cbb140-965f-4404-98df-ef176177550e
 ---
 # 2018 release notes
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 ## November 14, 2018
 
 ### Features
@@ -168,7 +172,7 @@ Environment pages now display async embed codes as the default. Toggling between
 
 ### Documentation
 
-Open source documentation for [!DNL Platform Launch] available at [https://docs.adobe.com/content/help/en/launch/using/overview.html](https://docs.adobe.com/content/help/en/launch/using/overview.html).
+Open source documentation for [!DNL Platform Launch] available at [https://experienceleague.adobe.com/docs/launch/using/overview.html](https://experienceleague.adobe.com/docs/launch/using/overview.html).
 
 ## April 24, 2018
 

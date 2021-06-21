@@ -5,13 +5,17 @@ exl-id: 855903b1-5fa4-45bf-82f5-fd840182d65e
 ---
 # Compare resource revisions
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 Compare resource revisions to see the history of an individual resource.  You can compare the current state of the resource to older versions, or compare the currently published version of a resource to the most recent set of changes that have been saved.
 
 ## Initiate a comparison
 
 Initiating a comparison is the same for all resource types.  Open the Edit view for an individual resource, then find the three dots icon next to the **[!UICONTROL Save]** button to view available actions for that resource.  Select **[!UICONTROL Compare Revisions]** from the list.
 
-![Initiate a comparison for an extension](/help/assets/compare-initiate-extension.png)
+![Initiate a comparison for an extension](/help/images/compare-initiate-extension.png)
 
 For extensions, access the detail view by selecting  the **[!UICONTROL Configure]** button when viewing your list of installed extensions.  For data elements and rules, select one from the list.
 
@@ -21,7 +25,7 @@ When you initiate a comparison, the default view shows the latest version on the
 
 On the left, you can choose from any existing revisions to compare to "Latest."
 
-![Comparing versions of the Analytics extension](/help/assets/compare-interpret-extension.png)
+![Comparing versions of the Analytics extension](/help/images/compare-interpret-extension.png)
 
 Select **[!UICONTROL Use These Changes]** to copy the settings from your selected revision (left) to the latest version (right).  This copies the settings from the old revision to the latest unsaved changes.  If you want these changes to stick, be sure to **[!UICONTROL Save]** after exiting the Compare view.
 
@@ -35,7 +39,7 @@ Extensions have a single screen to show the differences between versions.
 
 In Compare view, differences between settings versions are highlighted.  Additions and removals to individual settings are indicated by an expansion of a line in either direction.
 
-![Comparing different versions of the Analytics extension](/help/assets/compare-extension.png)
+![Comparing different versions of the Analytics extension](/help/images/compare-extension.png)
 
 Above, you can see the following changes:
 
@@ -46,7 +50,7 @@ Above, you can see the following changes:
 
 Data elements have a single screen to show differences, but because data elements have additional attributes besides their settings, additional information is shown.  Attributes that have changed are highlighted in orange.
 
-![Comparing different versions of a data element](/help/assets/compare-data-element.png)
+![Comparing different versions of a data element](/help/images/compare-data-element.png)
 
 Above, you can see the following changes:
 
@@ -65,7 +69,7 @@ Rules consist of many rule components.  To understand the changes to a rule, you
 
 The first screen shows a high-level view, which highlights changes to the arrangement of rule components within the rule.  Changes are highlighted. Several different types of changes are shown.
 
-![Comparing different versions of a rule](/help/assets/compare-rule.png)
+![Comparing different versions of a rule](/help/images/compare-rule.png)
 
 Above, you can see the following changes:
 
@@ -77,11 +81,11 @@ Above, you can see the following changes:
 
 To view the specific modifications to one of the rule components, select the specific component you'd like to view.  The line changes to blue when you mouse over.
 
-![Select the component you&apos;d like to see in more detail](/help/assets/compare-rule-component-click.png)
+![Select the component you&apos;d like to see in more detail](/help/images/compare-rule-component-click.png)
 
 The comparison for an individual rule component behaves the same as the comparison for a data element.
 
-![Comparing different versions of an individual rule component](/help/assets/compare-rule-component.png)
+![Comparing different versions of an individual rule component](/help/images/compare-rule-component.png)
 
 Above, you can see the following change:
 

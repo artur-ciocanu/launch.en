@@ -5,6 +5,10 @@ exl-id: 4a33ee7d-78c7-4e88-9602-c61d7f63b1d8
 ---
 # Views in web extensions
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 Each event, condition, action, or data element type may provide a view allowing a user to supply settings. The extension may also have a top-level [extension configuration view](../configuration.md) which allows users to supply global settings for the entire extension. The process of building a view is identical across all types of views.
 
 ## Including a document type
@@ -60,7 +64,7 @@ The `init` method will be called by Platform Launch as soon as the view has been
 | Property | Description |
 | --- | --- |
 | `settings` | An object containing settings that were previously saved from this view. If `settings` is `null`, it indicates that the user is creating the initial settings rather than loading a saved version. If `settings` is an object, you should use it to populate your view since the user is choosing to edit the previously persisted settings. |
-| `extensionSettings` | Settings saved from the extension configuration view. This can be useful to access extension settings in views that are not the extension configuration view. If the current view is the extension configuration view, use `settings. |
+| `extensionSettings` | Settings saved from the extension configuration view. This can be useful to access extension settings in views that are not the extension configuration view. If the current view is the extension configuration view, use `settings`. |
 | `propertySettings` | An object containing settings for the property. See the [turbine object guide](../turbine.md#property-settings) for details on what is contained in this object. |
 | `tokens` | An object containing API tokens. For accessing Adobe APIs from inside the view you will need to usually use an IMS token under `tokens.imsAccess`. This token will made available only for extensions developed by Adobe. If you are an Adobe employee representing an extension authored by Adobe, please [email the Platform Launch engineering team](mailto:reactor@adobe.com) and provide the name of the extension so we can add it to the allowed list. |
 | `company` | An object containing  a single property, `orgId`, which itself represents your Adobe Experience Cloud ID (a 24-character alphanumeric string). |

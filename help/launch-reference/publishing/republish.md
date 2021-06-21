@@ -5,6 +5,10 @@ exl-id: eb112f48-a70c-4365-8ae6-148f26601f27
 ---
 # Republish a library
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 The five most recent libraries that have been published to your production environment on a Web property are available for later retrieval.  
 
 This feature is helpful when you find a bug in your production library and need to rollback to a known good state immediately.
@@ -43,7 +47,7 @@ For this reason, [!DNL Platform Launch] notifies you that a property is in a rep
 
 ### How to Republish an older library
 
-![Republish a library](assets/retrieve_republish.png)
+![Republish a library](images/retrieve_republish.png)
 
 From the Publishing screen:
 
@@ -57,7 +61,7 @@ Downloading an Archived library is more straightforward.  You aren't directly re
 
 ### How to Download an older library
 
-![Download a library](assets/retrieve_download.png)
+![Download a library](images/retrieve_download.png)
 
 From the Publishing screen:
 

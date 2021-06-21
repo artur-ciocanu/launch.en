@@ -5,6 +5,10 @@ exl-id: 71972939-cfc5-405f-8ffa-702167fb0ac7
 ---
 # Adobe Analytics extension overview
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 Use this reference for information about configuring the Adobe Analytics extension, and the options available when using this extension to build a rule.
 
 ## Configure the Adobe Analytics extension
@@ -15,7 +19,7 @@ If the Adobe Analytics extension is not yet installed, open your property, then 
 
 To configure the extension, open the Extensions tab, hover over the extension, and then select **[!UICONTROL Configure]**.
 
-![](/help/assets/ext-analytics-config.png)
+![](/help/images/ext-analytics-config.png)
 
 ## Library Management
 
@@ -75,7 +79,7 @@ Specify the tracker object to be used globally.
 
 #### Open Editor
 
-Lets you [insert core AppMeasurement code](https://docs.adobe.com/help/en/analytics/implementation/other/dtm/analytics-tool/t-appmeasurement-code.html). This code is populated automatically when using the automatic configuration method.
+Lets you insert core [AppMeasurement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) code. This code is populated automatically when using the automatic configuration method.
 
 >[!NOTE]
 >
@@ -125,13 +129,13 @@ _satellite.cookie.set("sat_track", "true");
 Determines how the image request is encoded. If your implementation or site uses non-ASCII characters, it is important to define character set here. You can select a preset character set or specify a custom character set. Adobe recommends using the same character coding as your site. Typically this value is UTF-8.
 
 Character Set can be set in Analytics custom code using the variable `s.charSet`.
-For more information about character sets, see the [charSet documentation](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html).
+For more information about character sets, see the [charSet documentation](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html).
 
 ### Currency Code
 
 Determines the conversion rate to be applied to revenue and currency events. If your site allows visitors to purchase in multiple currencies, setting the currency code ensures the monetary amount is converted and stored correctly.
 
-For more information about the supported currency codes, see [currencyCode](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/currencycode.html).
+For more information about the supported currency codes, see [currencyCode](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/currencycode.html).
 
 ### Tracking Server
 
@@ -139,7 +143,7 @@ Used for first-party cookie implementations to dictate where the first-party coo
 
 Tracking Server can be set in Analytics custom code using the variable `s.trackingServer`.
 
-See [trackingServer](https://docs.adobe.com/help/en/analytics/implementation/vars/config-vars/trackingserver.html) in the Adobe Analytics Implementation guide.
+See [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/trackingserver.html) in the Adobe Analytics Implementation guide.
 
 ### SSL Tracking Server
 
@@ -147,11 +151,11 @@ Used for SSL first-party cookie implementations to dictate where the first-party
 
 SSL Tracking Server can be set in Analytics custom code using the variable `s.trackingServerSecure`.
 
-See [trackingServerSecure](https://docs.adobe.com/help/en/analytics/implementation/vars/config-vars/trackingserversecure.html).
+See [trackingServerSecure](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/trackingserversecure.html).
 
 ## Global Variables
 
-Use this section to set up [eVars and Props](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/evar.html), and to create hierarchies.
+Use this section to set up [eVars and Props](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html), and to create hierarchies.
 
 Global variables are variables that are set on the Analytics tracking object when that object is initialized on the page. Any variables you set here will be set when the tracking object is created on each page. Once these variables are set, they are just like any other variables set any other way. Specifically, this means that a rule can modify, change, or clear these variables.
 
@@ -163,25 +167,25 @@ Select an option from the Link Tracking section of the configuration page. The f
 
 ### Enable ClickMap
 
-[ClickMap](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/activity-map.html) is a plug-in for Internet Explorer and Firefox, and a module of Reports & Analytics.
+[ClickMap](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/activity-map.html) is a plug-in for Internet Explorer and Firefox, and a module of Reports & Analytics.
 
 ### Track download links
 
 Tracks links to downloadable files on your site.
 
-See [s.trackDownLoadLinks](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/trackdownloadlinks.html).
+See [s.trackDownLoadLinks](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/trackdownloadlinks.html).
 
 ### Download Extensions
 
 If the Track Download Links option is enabled, you can select the extensions of file links that are included in the Downloads Report If your site contains links to files with any of the listed extensions, the URLs of these links will appear in reporting.
 
-See [s.linkDownloadFileTypes](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/linkdownloadfiletypes.html).
+See [s.linkDownloadFileTypes](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/linkdownloadfiletypes.html).
 
 ### Track outbound links
 
 Determines whether any selected link is an exit link.
 
-See [s.trackExternalLinks](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/trackexternallinks.html).
+See [s.trackExternalLinks](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/trackexternallinks.html).
 
 **Single-Page App Considerations:** Because of the way some SPA websites are coded, an internal link to a page on the SPA site might look like it is an outbound link.
 
@@ -202,7 +206,7 @@ The "about" page is the only outbound link that is tracked. Any other links on t
 
 Preserves query strings.
 
-See [s.linkLeaveQueryString](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/linkleavequerystring.html).
+See [s.linkLeaveQueryString](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/linkleavequerystring.html).
 
 ## Cookies
 
@@ -212,37 +216,37 @@ Configure field descriptions for the Cookies global settings used for deploying 
 
 Unique value that represents a customer in both the online and offline systems.
 
-See [visitorID](https://docs.adobe.com/content/help/en/analytics/import/data-sources/data-types-and-categories/datasrc-visitorid.html).
+See [visitorID](https://experienceleague.adobe.com/docs/analytics/import/data-sources/data-types-and-categories/datasrc-visitorid.html).
 
 ### Visitor Namespace
 
 Variable to identify the domain with which cookies are set.
 
-See [visitorNamespace](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/visitornamespace.html).
+See [visitorNamespace](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/visitornamespace.html).
 
 ### Domain Periods
 
 The domain on which the Analytics cookie `s_cc` and `s_sq` are set by determining the number of periods in the domain of the page URL. This variable is also used by some plug-ins in determining the correct domain to set the plug-in's cookie.
 
-See [s.cookieDomainPeriods](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/cookiedomainperiods.html).
+See [s.cookieDomainPeriods](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/cookiedomainperiods.html).
 
 ### First-Party Domain Periods
 
 The `fpCookieDomainPeriods` variable is for cookies set by JavaScript (`s_sq`, `s_cc`, plug-ins) that are inherently first-party cookies, even if your implementation uses the third-party 2o7.net or omtrdc.net domains.
 
-See [s.fpCookieDomainPeriods](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/fpcookiedomainperiods.html).
+See [s.fpCookieDomainPeriods](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/fpcookiedomainperiods.html).
 
 ### Cookie Lifetime
 
 Determines the life span of a cookie.
 
-See [s.cookieLifetime](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/cookielifetime.html).
+See [s.cookieLifetime](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/cookielifetime.html).
 
 ### Secure Cookies
 
 This variable allows AppMeasurement to write secure cookies.
 
-See [writeSecureCookies](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/writesecurecookies.html)
+See [writeSecureCookies](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/writesecurecookies.html)
 
 
 ## Customize Page Code
@@ -257,15 +261,15 @@ Enable **Automatically share Analytics data with Audience Manager**.
 
 The following options appear:
 
-![](/help/assets/an-ext-aam.png)
+![](/help/images/an-ext-aam.png)
 
 The Audience Manager subdomain is assigned by Adobe Audience Manager. It is sometimes referred to as your "Partner Name" or "Partner Subdomain." Contact your Adobe consultant or Customer Care if you do not know your Partner Name.
 
 You can configure advanced settings by showing the advanced settings and entering your preferences.
 
-![](/help/assets/an-ext-aam-adv.png)
+![](/help/images/an-ext-aam-adv.png)
 
-For information about each setting, select the info icon, or refer to the [Adobe Audience Manager documentation](https://docs.adobe.com/content/help/en/audience-manager/user-guide/aam-home.html).
+For information about each setting, select the info icon, or refer to the [Adobe Audience Manager documentation](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html).
 
 ## Analytics extension action types
 
@@ -283,7 +287,7 @@ Important: Using a "set variables" action won't send the beacon. You must use th
 
 #### eVars
 
-Set one or more [eVars](https://docs.adobe.com/help/en/analytics/implementation/vars/page-vars/evar.html).
+Set one or more [eVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html).
 
 1. Select an eVar from the dropdown.
 1. Specify whether you want to set the eVar as the value (Set As) or copy (Duplicate From) another eVar.
@@ -293,7 +297,7 @@ Set one or more [eVars](https://docs.adobe.com/help/en/analytics/implementation/
 
 #### Props
 
-Set one or more [props](https://docs.adobe.com/help/en/analytics/implementation/vars/page-vars/prop.html).
+Set one or more [props](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/prop.html).
 
 1. Select a prop from the dropdown.
 1. Specify whether you want to set the prop as the value (Set As) or copy (Duplicate From) another eVar.
@@ -303,16 +307,16 @@ Set one or more [props](https://docs.adobe.com/help/en/analytics/implementation/
 
 #### Events
 
-Set one or more [events](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/events/events-overview.html).
+Set one or more [events](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/events/events-overview.html).
 
 1. Select an event from the dropdown.
-1. (Optional) Select or specify a data element used for [event serialization](https://docs.adobe.com/help/en/analytics/implementation/vars/page-vars/events/event-serialization.html).
+1. (Optional) Select or specify a data element used for [event serialization](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/events/event-serialization.html).
 1. (Optional) Select **[!UICONTROL Add event]** to set more events.
 1. Select **[!UICONTROL Keep Changes]**.
 
 #### Hierarchy
 
-Set the Analytics [Hierarchy](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/hier.html) variable.
+Set the Analytics [Hierarchy](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/hier.html) variable.
 
 Specify each level in the hierarchy.
 

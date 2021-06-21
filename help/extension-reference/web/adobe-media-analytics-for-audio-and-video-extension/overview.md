@@ -5,6 +5,10 @@ exl-id: e93d81b1-4766-4af1-b603-b619a63aa3fc
 ---
 # Adobe Media Analytics for Audio and Video extension overview
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 Use this documentation for information on installing, configuring, and implementing the Adobe Media Analytics for Audio and Video extension (Media Analytics extension). Included are the options available when using this extension to build a rule, along with examples and links to samples.
 
 The Media Analytics (MA) extension adds the core JavaScript Media SDK (Media 2.x SDK). This extension provides the functionality for adding the `MediaHeartbeat` tracker instance to an Adobe Experience Platform Launch site or project. The MA extension requires two additional extensions:
@@ -27,7 +31,7 @@ After you have included all three of the extensions mentioned above in your Plat
 
 * **Configure -** To configure the MA extension, open the [!UICONTROL Extensions] tab, hover over the extension, and then select **[!UICONTROL Configure]**:
 
-![MA Extension Configuration](/help/assets/ext-va-config.jpg)
+![MA Extension Configuration](/help/images/ext-va-config.jpg)
 
 ### Configuration options:
 
@@ -43,7 +47,7 @@ After you have included all three of the extensions mentioned above in your Plat
 | Export APIs to Window Object | Enable or Disable exporting Media Analytics APIs to global scope |
 | Variable Name | A variable you use to export Media Analytics APIs under the `window` object |
 
-**Reminder:** The MA extension requires the [Analytics](/help/extension-reference/web/adobe-analytics-extension/overview.md) and [Experience Cloud ID](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html) extensions. You must also add these extensions to your extension property and configure them.
+**Reminder:** The MA extension requires the [Analytics](/help/extension-reference/web/adobe-analytics-extension/overview.md) and [Experience Cloud ID](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html) extensions. You must also add these extensions to your extension property and configure them.
 
 ## Using the MA extension
 
@@ -164,7 +168,7 @@ The MA extension exposes the `get-instance` and `media-heartbeat` shared modules
     ...
     ```
 
-1. Using the Media Heartbeat instance, follow the [Media SDK JS documentation](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/set-up-js.html) and [JS API documentation](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/index.html) to implement media tracking.
+1. Using the Media Heartbeat instance, follow the [Media SDK JS documentation](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/setup/setup-javascript/set-up-js-2.html) and [JS API documentation](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/index.html) to implement media tracking.
 
 >[!NOTE]
 >
@@ -186,9 +190,9 @@ The _Open Video_ action provides various configurations for creating and customi
 
 **Action Configuration / Player Settings:** Note the CSS Selector setting which specifics the `<div>` in the web page where the player is added. Note also that the _Enable Adobe Analytics_ checkbox is checked in the Analytics Settings pane.
 
-![Player Extension Action Configuration](/help/assets/ext-va-sp-action.png)
+![Player Extension Action Configuration](/help/images/ext-va-sp-action.png)
 
-![Player Extension Action Configuration](/help/assets/ext-va-sp-action1.png)
+![Player Extension Action Configuration](/help/images/ext-va-sp-action1.png)
 
 * [\[...\]/openVideo/openVideo.jsx](https://github.com/adobe/reactor-adobe-va-sample-player/blob/master/src/view/actions/openVideo/openVideo.jsx) -
 
@@ -225,7 +229,7 @@ The _Open Video_ action provides various configurations for creating and customi
 
 Once the Sample Player extension is installed, you'll need to create at least one rule to properly deploy it. The Image below shows a sample rule that opens the specified video when the core extension fires the `DOMLoaded` event.
 
-![Player Extension Sample Rule](/help/assets/ext-va-sp-rule.png)
+![Player Extension Sample Rule](/help/images/ext-va-sp-rule.png)
 
 After you have saved this rule, you will need to add it to a Library, and then build and deploy so that you can test the behavior.
 

@@ -5,6 +5,10 @@ exl-id: 270c7ea0-a81f-4d3a-b728-ed46f14ed6cd
 ---
 # Extensions
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 An extension is a packaged set of code that extends the [!DNL Adobe Experience Platform Launch] interface and the library functionality. [!DNL Platform Launch] is the platform, and extensions are like apps that run on the platform.
 
 Adding an extension adds new data elements and new options for creating rules.
@@ -60,7 +64,7 @@ A common use of extensions is to create integrations with other applications. In
 1. From a property's overview page, open the **[!UICONTROL Extensions]** tab.
 1. Select an extension.
 
-   ![](/help/assets/extensions.png)
+   ![](/help/images/extensions.png)
 
    * If the extension exists, select it from the extensions catalog.
    * Mouse over an extension in your list to configure or disable it.

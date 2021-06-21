@@ -5,6 +5,10 @@ exl-id: 12be4e94-1838-4aea-92a1-4a4862d3cb1f
 ---
 # Quickstart guide
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 [!DNL Adobe Experience Platform Launch] is the next-generation of [!DNL Adobe's] tag management technology, built on the [!DNL Adobe Experience Platform]. It is built from the ground up to support an open and sustainable ecosystem where anyone can build their own integrations that [!DNL Adobe] customers can deploy to their sites. It is an API first application so anything you can do through the UI you can also do programmatically through an API.
 
 The basic [!DNL Platform Launch] workflow:
@@ -67,7 +71,7 @@ Nothing in [!DNL Platform Launch] is published automatically. Each set of change
 
 To make sense of that process, there are some relationships between [!DNL Platform Launch], your web page, and your hosting location that you need to understand.
 
-![](/help/assets/loop.png)
+![](/help/images/loop.png)
 
 1. [!DNL Platform Launch]  publishes a build to your host server.
 
@@ -129,6 +133,6 @@ To learn more about [!DNL Platform Launch], refer to these resources:
 * **[Platform Launch Community](https://forums.adobe.com/community/experience-cloud/platform/launch)**: Ask and answer questions, submit ideas, vote on the ideas of others. Log in with your [!DNL Adobe] ID.
 * **[Platform Launch Webinars](https://adobe.com/go/launchme)**: Sign up for upcoming webinars and watch recordings of past webinars.
 * **[Developer Docs](https://developer.adobelaunch.com/)**: Get involved with the [!DNL Platform Launch] developer community to build extensions or use the [!DNL Platform Launch] APIs
-* **[Videos](https://docs.adobe.com/content/help/en/core-services-learn/tutorials/overview.html)**
+* **[Videos](https://experienceleague.adobe.com/docs/core-services-learn/tutorials/overview.html)**
 
   These videos introduce you to [!DNL Platform Launch] concepts and tasks.

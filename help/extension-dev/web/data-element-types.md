@@ -5,6 +5,8 @@ exl-id: 72c43ac3-4672-4eb5-a062-550537bdb686
 ---
 # Data element types for edge extensions
 
+>**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 A data element type library module has one goal: retrieve a piece of data. How this piece of data is retrieved is up to you. For example, you can use a data element type to allow Adobe Experience Platform Launch users to retrieve a piece of data from local storage, a cookie, or a DOM element.
 
 >[!IMPORTANT]

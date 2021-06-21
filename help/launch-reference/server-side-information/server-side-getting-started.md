@@ -5,6 +5,10 @@ exl-id: b565af18-2208-4c36-9d0f-1939b4c623aa
 ---
 # Getting started with Experience Platform Launch Server Side
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 To use Adobe Experience Platform Launch Server Side, data must be sent to Adobe Experience Platform Edge Network using one or more of three options:
 
 * Adobe Experience Platform Web SDK
@@ -39,7 +43,7 @@ In Adobe Experience Platform, create your schema.
 
 1. Save the schema and note the name that you gave it.
 
-For more information about schemas, see [Experience Data Model (XDM) System Help](https://docs.adobe.com/content/help/en/experience-platform/xdm/home.html).
+For more information about schemas, see [Experience Data Model (XDM) System Help](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
 
 ## Create Platform Launch Server Side property
 
@@ -103,7 +107,7 @@ In Platform Launch Client Side, create your property, then use the Adobe Experie
 
 1. Select the Edge Domain.
 
-See the [Web SDK extension documentation](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/aep-extension/overview.html) for more configuration options.
+See the [Web SDK extension documentation](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/aep-extension/overview.html) for more configuration options.
 
 ## Create a Platform Launch Client Side rule to send data to Platform Web SDK
 

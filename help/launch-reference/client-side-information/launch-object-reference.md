@@ -5,6 +5,10 @@ exl-id: 55af465c-4e14-4fe1-bbf8-14871f818f95
 ---
 # Adobe Experience Platform Launch object reference
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
 This document serves as a reference for the client-side `_satellite` object (also called the Adobe Experience Platform Launch object) and the various functions you can perform with it.
 
 ## `track`
@@ -392,6 +396,6 @@ The example above specifies all three methods in the monitor. When they're calle
 
 If you open the page in [!DNL Chrome], open the browser console, and select the page, the following appears in the console:
 
-![](/help/assets/debug.png)
+![](/help/images/debug.png)
 
 Additional hooks or additional information might be added to theses handlers as needed.
