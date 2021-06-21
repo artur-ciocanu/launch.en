@@ -27,7 +27,7 @@ The following types of changes to your extension are allowed:
 
 The following types of changes to your extension are not allowed:
 
-1. You may not rename a component
+1. You may not rename a component.
 2. You may not remove a component.
 3. You may not remove a field from a component.
 4. You may not change optional fields to required fields.
