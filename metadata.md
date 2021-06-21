@@ -1,15 +1,15 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 solution: Experience Platform Launch, Data Collection
 type: Documentation
-feature-set: Launch
+feature-set: Experience Platform Launch
 solution-title: Learn & Support
 solution-hub-url: https://helpx.adobe.com/support/experience-cloud/core-services.html
-solution-image: help/assets/experience-cloud-logo-24.png
+solution-image: help/images/experience-cloud-logo-24.png
 getting-started-title: Getting Started
 getting-started-url: https://helpx.adobe.com/experience-cloud-core-services/get-started.html
 tutorials-title: Tutorials
-tutorials-url: https://docs.adobe.com/content/help/en/core-services-learn/tutorials/overview.html
+tutorials-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/overview.html
 git-repo: https://git.corp.adobe.com/AdobeDocs/launch.en
 index: yes
 ---

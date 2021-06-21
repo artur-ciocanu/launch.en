@@ -1,15 +1,19 @@
 ---
 title: Release Notes for the Adobe Experience Cloud Identity Service Extension
 description: The latest release notes for the Adobe Experience Cloud Identity Service extension in Adobe Experience Platform Launch.
+exl-id: ee483bed-3320-493a-9503-dd9f55fcdaed
 ---
-
 # Adobe Experience Cloud Identity Service extension release notes
 
-For release notes on the Experience Cloud Identity Service itself and not just the Adobe Experience Platform Launch Extension, please reference: [https://docs.adobe.com/content/help/en/id-service/using/release-notes/release-notes.html](https://docs.adobe.com/content/help/en/id-service/using/release-notes/release-notes.html)
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
+For release notes on the Experience Cloud Identity Service itself and not just the Adobe Experience Platform Launch Extension, please reference: [https://experienceleague.adobe.com/docs/id-service/using/release-notes/release-notes.html](https://experienceleague.adobe.com/docs/id-service/using/release-notes/release-notes.html)
 
 ## Nov 3, 2020
 
-### Experience Cloud ID Extension 5.1.1
+### Experience Cloud ID Extension 5.2.1
 
 #### **Features**
 
@@ -95,7 +99,7 @@ Details of these attribute values are on [web.dev](https://web.dev/samesite-cook
 * Fixed a bug for get Opt-In preApprovals Input
 * Renamed VIDEO_ANALYTICS to MEDIA_ANALYTICS in preOptInApprovals
 
-  ![](/help/assets/ecid-media-analytics.png)
+  ![](/help/images/ecid-media-analytics.png)
 
 ## July 17, 2019
 
@@ -106,7 +110,7 @@ Details of these attribute values are on [web.dev](https://web.dev/samesite-cook
 * Updated visitor.js to 4.4.0
 * Added SHA256 hashing support for setCustomerIDs
 
-  ![](/help/assets/ecid-setCustomerIDs-hash.png)
+  ![](/help/images/ecid-setCustomerIDs-hash.png)
 
 ## May 13, 2019
 
@@ -117,7 +121,7 @@ Details of these attribute values are on [web.dev](https://web.dev/samesite-cook
 * Updated visitor.js to 4.3
 * Added data element type for ECID as part of the Platform Launch Extension
 
-  ![](/help/assets/ecid-data-element.png)
+  ![](/help/images/ecid-data-element.png)
 
 ## April 9, 2019
 
@@ -144,7 +148,7 @@ Details of these attribute values are on [web.dev](https://web.dev/samesite-cook
 * Updated visitor.js to 4.0
 * Added a configuration options for the new built-in Opt-In Object. Opti-In settings can be used to suppress cookie and beacon calls of Adobe Solutions to better support regulations such as GDPR
 
-  ![](/help/assets/ext-mcid-opt-in.png)
+  ![](/help/images/ext-mcid-opt-in.png)
 
 ## March 20, 2018
 

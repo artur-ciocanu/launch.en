@@ -1,9 +1,13 @@
 ---
 title: Release Notes for the Adobe Analytics Product String Extension
 description: The latest release notes for the Adobe Analytics Product String extension in Adobe Experience Platform Launch.
+exl-id: ef9c5035-d3cc-41b7-b431-f2d9aee7ffcb
 ---
-
 # Adobe Analytics Product String extension release notes
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 ## January 31, 2020
 

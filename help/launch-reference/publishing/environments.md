@@ -1,9 +1,13 @@
 ---
 title: Environments
 description: Learn about the concept of environments and how they function within Adobe Experience Platform Launch.
+exl-id: 5c7fd0bb-c4f1-468a-be91-14aa93c8d0bc
 ---
-
 # Environments
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 Environments in Adobe Experience Platform Launch define several key aspects of the library builds you deploy on your website or app:
 
@@ -45,21 +49,21 @@ Each environment has a set of instructions used to connect it to your applicatio
 
 To access the installation instructions for an environment, navigate to the **[!UICONTROL Environments]** tab for your property, and then select the **[!UICONTROL Install]** icon for that environment.
 
-![](./assets/environments/install-buttons.png)
+![](./images/environments/install-buttons.png)
 
 If using a web property, you are given an embed code to be used in the `<head>` tag of your document. You are also presented with the option to deploy library files synchronously or asynchronously at runtime. Depending on the setting you choose, the displayed install instructions will be different. Embed codes are explained in further detail later in this document.
 
-![](./assets/environments/web-instructions.png)
+![](./images/environments/web-instructions.png)
 
 If you are using a mobile property, you are given separate instructions for installing dependencies for Android (via [Gradle](https://gradle.org/)) and iOS (via [CocoaPods](https://cocoapods.org/)).
 
-![](./assets/environments/mobile-instructions.png)
+![](./images/environments/mobile-instructions.png)
 
 ## Mobile configuration
 
 For mobile properties, you can view the configuration options for an environment by selecting it from the list. From here, you can change the name of the environment. Mobile environments currently can only use Adobe-managed hosts.
 
-![](./assets/environments/mobile-config.png)
+![](./images/environments/mobile-config.png)
 
 See the overview on [hosts](./hosts/hosts-overview.md) for more information.
 
@@ -73,13 +77,13 @@ For web properties, [!DNL Platform Launch] uses the settings from the assigned e
 
 In the [!UICONTROL Environments] tab, select a listed environment to display its configuration controls.
 
-![](./assets/environments/environment-config.png)
+![](./images/environments/environment-config.png)
 
 ### Host {#host}
 
 Select **[!UICONTROL Host]** to choose a pre-configured host for the environment from the dropdown menu.
 
-![](./assets/environments/select-host.png)
+![](./images/environments/select-host.png)
 
 When a build is created, [!DNL Platform Launch] delivers that build to the location you specified for the assigned host. For information on how to create and configure hosts in [!DNL Platform Launch], refer to the [hosts overview](./hosts/hosts-overview.md).
 
@@ -91,7 +95,7 @@ The **[!UICONTROL Create archive]** button allows you to toggle the environment'
 
 If you choose to turn the archive setting on, additional configuration settings appear in the UI, enabling you to optionally encrypt the archive file and define a path to the library if you are using self-hosting.
 
-![](./assets/environments/archive-settings.png)
+![](./images/environments/archive-settings.png)
 
 The path can be either a full URL or a relative path that can be used across multiple domains. This is important because most builds have multiple files that contain internal references to each other.
 
@@ -119,7 +123,7 @@ For more information on this setting, see the guide on [asynchronous deployment]
 
 #### Synchronous deployment
 
-When the browser reads an embed code using synchronous deployment, it retrieves the [!DNL Platform Launch] library and executes it before continuing to load the page. This is also how [Dynamic Tag Management (DTM)](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html) works.
+When the browser reads an embed code using synchronous deployment, it retrieves the [!DNL Platform Launch] library and executes it before continuing to load the page. This is also how [Dynamic Tag Management (DTM)](https://experienceleague.adobe.com/docs/dtm/using/dtm-home.html) works.
 
 Synchronous embed codes consist of two `<script>` tags that must be placed within the HTML of your website. One `<script>` tag must be placed in the document `<head>`, while the other must be placed just before the closing `</body>` tag.
 
@@ -141,19 +145,19 @@ Three environments are automatically assigned to a property when that property i
 
 On the [!UICONTROL Environments] tab for your property, select **[!UICONTROL Add Environment]**.
 
-![](./assets/environments/create-new.png)
+![](./images/environments/create-new.png)
 
 On the next screen, select the **[!UICONTROL Development]** option.
 
-![](./assets/environments/create-development.png)
+![](./images/environments/create-development.png)
 
 The next screen allows you to name the new environment, select a host, and choose an archive setting. When finished, select **[!UICONTROL Save]** to create the environment.
 
-![](./assets/environments/create-config.png)
+![](./images/environments/create-config.png)
 
 The [!UICONTROL Environments] tab reappears, with the install instructions for the new environment displayed.
 
-![](./assets/environments/create-install.png)
+![](./images/environments/create-install.png)
 
 ## Next steps
 

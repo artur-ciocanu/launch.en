@@ -1,9 +1,23 @@
 ---
 title: Release Notes for the Common Analytics Plugins Extension
 description: The latest release notes for the Common Analytics Plugins extension in Adobe Experience Platform Launch.
+exl-id: 80d010d3-f6ac-4edf-95f9-4f2538901d70
 ---
-
 # Common Analytics Plugins release notes
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
+## March 26, 2021
+
+### Common Analytics Plugins Extension 3.0.4
+
+#### Bug Fixes
+
+* Fixed issue where getPageLoadTime was incorrectly setting variables on the window object
+* Fixed an issue where getQueryParam was returning undefined instead of "" if the queryParam was not present in the query string
+* Fixed an issue where the incorrect version numbers were displaying in the initialize action
 
 ## March 19, 2021
 

@@ -1,9 +1,13 @@
 ---
 title: Common Analytics Extension Overview
 description: Learn about the Common Analytics extension in Adobe Experience Platform Launch.
+exl-id: 2766cb4d-42a8-4940-b5b0-a2491eb6c477
 ---
-
 # Common Analytics Plugins extension overview
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 Use this reference for information about configuring the Common Analytics Plugins extension, and the options available when using this extension to augment the [!DNL Adobe Analytics] Extension.
 
@@ -40,7 +44,7 @@ The Common Analytics Plugins extension provides the following actions:
 >
 >While this action is easier to implement, Adobe Consulting does not recommend that you use this action as it increases the weight of the plugin.
 
-In this action, you are able to select each plugin you want to include in your implementation and save the changes. Select as many or as few as you intend to use during the implementation. Links to documentation on how to use each plugin and a brief description are provided in the Analytics [Plug-ins overview](https://docs.adobe.com/content/help/en/analytics/implementation/vars/plugins/impl-plugins.html).
+In this action, you are able to select each plugin you want to include in your implementation and save the changes. Select as many or as few as you intend to use during the implementation. Links to documentation on how to use each plugin and a brief description are provided in the Analytics [Plug-ins overview](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/impl-plugins.html).
 
 ### Initialize Plugin
 
@@ -80,4 +84,4 @@ Allows users to leverage the native Platform Launch UI to set up and configure t
 
 ### getVisitNum
 
-Allows users to leverage the native Platform Launch UI to set up and configure the getVisitNum plugin. 
+Allows users to leverage the native Platform Launch UI to set up and configure the getVisitNum plugin.

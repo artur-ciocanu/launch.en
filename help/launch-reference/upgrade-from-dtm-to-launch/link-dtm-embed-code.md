@@ -1,9 +1,13 @@
 ---
 title: Link a DTM Embed Code
 description: Learn how to link a Dynamic Tag Management (DTM) embed code using Adobe Experience Platform Launch.
+exl-id: 467742f6-63ee-4a11-8d53-2ecb5b9d0414
 ---
-
 # Link a DTM embed code
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 Linking embed codes primarily applies to Dynamic Tag Management (DTM) and Adobe Experience Platform Launch users who use built-in Akamai hosting. Those who are self-hosting, please see the [self-hosting section](#self-hosting) at the end of this article.
 
@@ -19,7 +23,7 @@ When a user visits your site in a browser, the browser requests the DTM file fro
 
 In the diagram below, Step 1 shows DTM publishing the container tag to your specified web host. In Step 2, the browser requests the container tag, using the embed code, and the host responds with the published file.
 
-![](/help/assets/dtm_publishing.png)
+![](/help/images/dtm_publishing.png)
 
 ## Linking Embed Codes {#linking-embed-codes}
 
@@ -31,7 +35,7 @@ When you publish in [!DNL Platform Launch] , the [!DNL Platform Launch]  contain
 
 In the diagram below, Step 3 represents [!DNL Platform Launch]  publishing its container tag over the top of the DTM container tag (from Step 1). When Step 2 occurs, it gets the [!DNL Platform Launch]  container tag instead.
 
-![](/help/assets/launch_publishing.png)
+![](/help/images/launch_publishing.png)
 
 >[!IMPORTANT]
 >

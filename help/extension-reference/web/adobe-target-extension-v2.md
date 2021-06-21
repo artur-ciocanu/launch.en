@@ -1,9 +1,13 @@
 ---
 title: Adobe Target v2 Extension Overview
 description: Learn about the Adobe Target v2 extension in Adobe Experience Platform Launch.
+exl-id: 46d652f7-4b27-40f7-8fb1-56de3afa6055
 ---
-
 # Adobe Target v2 extension overview
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 Use this reference for information about the options available when using this extension to build a rule.
 
@@ -17,7 +21,7 @@ If the Adobe Target extension is not yet installed, open your property, then sel
 
 To configure the extension, open the Extensions tab, hover over the extension, and then select **[!UICONTROL Configure]**.
 
-![](/help/assets/targetv2config.png)
+![](/help/images/targetv2config.png)
 
 ### at.js settings
 
@@ -43,13 +47,13 @@ The domain where Target requests are sent. This should almost always be left as 
 
 #### GDPR Opt-In
 
-When enabled, Adobe Target provides opt-in functionality to help support your consent management strategy. Opt-in functionality lets customers control how and when the Target tag is fired.  For more information about Adobe Opt-in, see [Privacy and General Data Protection Regulation (GDPR)](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+When enabled, Adobe Target provides opt-in functionality to help support your consent management strategy. Opt-in functionality lets customers control how and when the Target tag is fired.  For more information about Adobe Opt-in, see [Privacy and General Data Protection Regulation (GDPR)](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 #### Timeout (ms)
 
 If the response from Target is not received within the defined period, the request times out and default content is displayed. Additional requests continue to be attempted during the visitor's session. The default is 3000ms, which might be different from the Timeout configured in the Target user interface.
 
-For more information about how the Timeout setting works, refer to the [Adobe Target help](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/deploy-at-js/implementing-target-without-a-tag-manager.html).
+For more information about how the Timeout setting works, refer to the [Adobe Target help](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/deploy-at-js/implementing-target-without-a-tag-manager.html).
 
 ## Target extension action types
 
@@ -60,6 +64,12 @@ The Target extension provides the following actions in the Then portion of a rul
 ### Load Target
 
 Add this action to your Platform Launch rule where it makes sense to load Target in the context of your rule. This loads the at.js library into the page. In most implementations, Target should be loaded on every page of your site. Adobe recommends using the Load Target action only if it is preceded by a Target call. Otherwise, you might run into issues like the Analytics call being delayed.
+
+No configuration is needed.
+
+### Load Target with On-Device Decisioning
+
+Add this action to your Platform Launch rule where it makes sense to load Target with [on-device decisioning](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/on-device-decisioning/on-device-decisioning.html) enabled in the context of your rule. This loads the at.js library with on-device decisioning enabled into the page. In most implementations, Target should be loaded on every page of your site. Adobe recommends using the Load Target with On-Device Decisioning action only if it is preceded by a Target call. Otherwise, you might run into issues like the Analytics call being delayed.
 
 No configuration is needed.
 
@@ -88,7 +98,7 @@ The following options are available:
 * **Body Hiding:** You can enable or disable this setting. The default value is Enabled, which means HTML BODY is hidden.
 * **Body Hidden Style:** The default value is body{opacity:0}. This value can be changed to something different, like body{display:none}.
 
-For more information, refer to the [Target online help documentation](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/advanced-mboxjs-settings.html).
+For more information, refer to the [Target online help documentation](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/advanced-mboxjs-settings.html).
 
 ### Trigger View
 
@@ -97,7 +107,7 @@ Trigger a view for your Single Page Applications.
 1. Specify the view name that must be triggered.
 2. Specify whether the triggering of the view should be attributed to an impression for reporting by checking the Page checkbox. If the view is correlated to a component that is re-rendered and does not attribute to an impression for reporting then leave the Page checkbox unchecked.
 
-For more information about triggering a view, please refer to the [`triggerView()` help documentation](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/functions-overview/adobe-target-triggerview-atjs-2.html).
+For more information about triggering a view, please refer to the [`triggerView()` help documentation](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-triggerview-atjs-2.html).
 
 ## Adobe Target basic deployment
 
@@ -105,7 +115,7 @@ Once the Target Extension is installed, create at least one rule to properly dep
 
 A Target rule with this basic implementation looks like this:
 
-![](/help/assets/targetv2deploy.png)
+![](/help/images/targetv2deploy.png)
 
 After you have saved this rule, you'll need to add it to a Library and build/deploy so that you can test the behavior.
 

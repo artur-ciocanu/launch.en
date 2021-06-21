@@ -1,9 +1,13 @@
 ---
 title: Adobe-Managed Hosts Overview
 description: Learn about the default hosting option for deploying library builds in Adobe Experience Platform Launch.
+exl-id: 850b4a34-77da-41c9-b7c0-745379335788
 ---
-
 # Adobe-managed hosts overview
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 Adobe-managed hosts are the default host setting for deploying your library builds in Adobe Experience Platform Launch. When you create a new property through the Platform Launch user interface, a default Adobe-managed host is created for you. 
 
@@ -38,7 +42,7 @@ The primary purpose of a CDN is to intelligently distribute content to servers t
 
 Once your build has been deployed to the Adobe-managed host, the CDN distributes the build on several centralized servers ("origins"), who then send copies of the build to many different edge nodes around the world for caching. The cached versions of the build stored on these edge nodes are then ultimately served to client devices.
 
-![](../assets/cdn-diagram.png)
+![](../images/cdn-diagram.png)
 
 >[!NOTE]
 >

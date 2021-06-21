@@ -1,9 +1,10 @@
 ---
 audience: end-user
-product: Adobe Launch
+product: adobe launch
 user-guide-title: Experience Platform Launch User Guide
 breadcrumb-title: Adobe Experience Platform Launch Guide
 user-guide-description: Learn to deploy and manage analytics, marketing, and advertising tags to power customer experiences.
+landing-page-description: Learn to deploy and manage analytics, marketing, and advertising tags to power customer experiences.
 index: yes
 git-repo: https://github.com/AdobeDocs/launch.en
 ---
@@ -11,6 +12,7 @@ git-repo: https://github.com/AdobeDocs/launch.en
 # Experience Platform Launch {#using}
 
 * [[!DNL Platform Launch] overview](./home.md)
+* [Terminology updates](./launch-term-updates.md)
 * Getting started {#get-started}
   * [Quickstart guide](quick-start/quick-start.md)
   * [Implementation guides](quick-start/implementation-guides.md)
@@ -133,25 +135,23 @@ git-repo: https://github.com/AdobeDocs/launch.en
     * [Release an extension](./extension-dev/submit/release.md)
   * [Extension configuration](./extension-dev/configuration.md)
   * [Extension manifest](./extension-dev/manifest.md)
-  * Library modules {#modules}
-    * Modules for web extensions {#web}
-      * [Extension flow](./extension-dev/modules/web/flow.md)
-      * [Library module format](./extension-dev/modules/web/format.md)
-      * [Views](./extension-dev/modules/web/views.md)
-      * [Event types](./extension-dev/modules/web/event-types.md)
-      * [Condition types](./extension-dev/modules/web/condition-types.md)
-      * [Action types](./extension-dev/modules/web/action-types.md)
-      * [Data element types](./extension-dev/modules/web/data-element-types.md)
-      * [Core modules](./extension-dev/modules/web/core.md)
-      * [Shared modules](./extension-dev/modules/web/shared.md)
-    * Modules for edge extensions {#edge}
-      * [Extension flow](./extension-dev/modules/edge/flow.md)
-      * [Library module format](./extension-dev/modules/edge/format.md)
-      * [Views](./extension-dev/modules/web/views.md)
-      * [Condition types](./extension-dev/modules/edge/condition-types.md)
-      * [Action types](./extension-dev/modules/edge/action-types.md)
-      * [Data element types](./extension-dev/modules/edge/data-element-types.md)
-      * [Context parameter](./extension-dev/modules/edge/context.md)
+  * Web extensions {#web}
+    * [Extension flow](./extension-dev/web/flow.md)
+    * [Library module format](./extension-dev/web/format.md)
+    * [Views](./extension-dev/web/views.md)
+    * [Event types](./extension-dev/web/event-types.md)
+    * [Condition types](./extension-dev/web/condition-types.md)
+    * [Action types](./extension-dev/web/action-types.md)
+    * [Data element types](./extension-dev/web/data-element-types.md)
+    * [Core modules](./extension-dev/web/core.md)
+    * [Shared modules](./extension-dev/web/shared.md)
+  * Edge extensions {#edge}
+    * [Extension flow](./extension-dev/edge/flow.md)
+    * [Library module format](./extension-dev/edge/format.md)
+    * [Condition types](./extension-dev/edge/condition-types.md)
+    * [Action types](./extension-dev/edge/action-types.md)
+    * [Data element types](./extension-dev/edge/data-element-types.md)
+    * [Context parameter](./extension-dev/edge/context.md)
   * [Hosting third-party libraries](./extension-dev/third-party-libraries.md)
   * [Turbine free variable](./extension-dev/turbine.md)
   * [Backwards compatibility standard](./extension-dev/backwards-compatibility.md)

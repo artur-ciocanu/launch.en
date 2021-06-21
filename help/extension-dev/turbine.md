@@ -1,9 +1,13 @@
 ---
 title: Turbine Free Variable
 description: Learn about the turbine object, a free variable which provides information and utilities specific to the Adobe Experience Platform Launch runtime.
+exl-id: f91fd053-09bd-4c26-9559-701701b58050
 ---
-
 # Turbine free variable
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 The `turbine` object is a "free variable" within the scope of your extension's library modules. It provides information and utilities specific to the Adobe Experience Platform Launch runtime and is always available to library modules without using `require()`.
 
@@ -73,7 +77,7 @@ The [hostedLibFiles](./manifest.md) property can be defined inside the extension
 var mcidInstance = turbine.getSharedModule('adobe-mcid', 'mcid-instance');
 ```
 
-Retrieves a module which has been shared from another extension. If no matching module is found, `undefined` will be returned. See [Implementing Shared Modules](./modules/web/shared.md) for more information regarding shared modules.
+Retrieves a module which has been shared from another extension. If no matching module is found, `undefined` will be returned. See [Implementing Shared Modules](./web/shared.md) for more information regarding shared modules.
 
 ### [!DNL logger]
 

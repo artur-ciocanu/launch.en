@@ -1,9 +1,13 @@
 ---
 title: Implementing Third-Party Libraries
 description: Learn about the different methods of hosting third-party libraries within your Adobe Experience Platform Launch extensions.
+exl-id: d8d79147-a07b-4564-a866-a95616038f10
 ---
-
 # Implementing third-party libraries
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 One of the main purposes of extensions in Adobe Experience Platform Launch is to enable you to easily implement existing marketing technologies (libraries) into your website. By using extensions, you can implement libraries provided by third-party content delivery networks (CDNs) without having to manually edit your website's HTML.
 
@@ -74,7 +78,7 @@ The base code creates a script element, sets it to load asynchronously, and sets
 
 ## Implementation options in Platform Launch
 
-The sections below demonstrate the different ways you can load vendor libraries in your extensions, using the Pinterest base code shown previously as an example. Each of these examples involve creating an [action type for a web extension](./modules/web/action-types.md) that loads the library on your website.
+The sections below demonstrate the different ways you can load vendor libraries in your extensions, using the Pinterest base code shown previously as an example. Each of these examples involve creating an [action type for a web extension](./web/action-types.md) that loads the library on your website.
 
 >[!NOTE]
 >
@@ -83,9 +87,15 @@ The sections below demonstrate the different ways you can load vendor libraries 
 
 The following methods are covered:
 
-* [Load at runtime from the vendor host](#load-at-runtime-from-the-vendor-host)
-* [Load at runtime from the Platform Launch library host](#load-at-runtime-from-the-platform-launch-library-host)
-* [Embed the library directly](#embed-the-library-directly)
+- [Implementing third-party libraries](#implementing-third-party-libraries)
+  - [Prerequisites](#prerequisites)
+  - [Base code loading process](#base-code-loading-process)
+    - [Base code example](#base-code-example)
+  - [Implementation options in Platform Launch](#implementation-options-in-platform-launch)
+    - [Load at runtime from the vendor host {#vendor-host}](#load-at-runtime-from-the-vendor-host-vendor-host)
+    - [Load at runtime from the Platform Launch library host](#load-at-runtime-from-the-platform-launch-library-host)
+    - [Embed the library directly](#embed-the-library-directly)
+  - [Next steps](#next-steps)
 
 ### Load at runtime from the vendor host {#vendor-host}
 
@@ -123,7 +133,7 @@ module.exports = function() {
 
 Optionally, you can take additional steps to refactor this implementation. Since the variables `scriptElement` and `firstScriptElement` are now scoped to the exported function, you can remove the IIFE since these variables don't run the risk of becoming globals.
 
-In addition, Platform Launch provides several [core modules](./modules/web/core.md) which are utilities that any extension can use. Specifically, the `@adobe/reactor-load-script` module loads a script from a remote location by creating a script element and adding it to the document. By using this module for the script loading process, you can refactor the action code even further:
+In addition, Platform Launch provides several [core modules](./web/core.md) which are utilities that any extension can use. Specifically, the `@adobe/reactor-load-script` module loads a script from a remote location by creating a script element and adding it to the document. By using this module for the script loading process, you can refactor the action code even further:
 
 ```js
 var loadScript = require('@adobe/reactor-load-script');

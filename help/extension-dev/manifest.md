@@ -1,9 +1,13 @@
 ---
 title: Extension Manifest
-description: Learn how to configure a JSON manifest file that informs Adobe Experience Platform Launch how to properly consume your extension. 
+description: Learn how to configure a JSON manifest file that informs Adobe Experience Platform Launch how to properly consume your extension.
+exl-id: 67a9f555-96a6-4000-bfd7-665f90e27640
 ---
-
 # Extension manifest
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 In your extension's base directory you must create a file called `extension.json`. This contains critical details about your extension that allows Adobe Experience Platform Launch to properly consume it. Some of the contents are formed after the manner of [npm's `package.json`](https://docs.npmjs.com/files/package.json).
 
@@ -25,11 +29,11 @@ An extension manifest must consist of the following:
 |`hostedLibFiles` *(Optional)* | Many of our users prefer hosting all Platform-Launch-related files on their own server. This provides users an increased level of certainty regarding file availability at runtime and they can easily scan the code for security vulnerabilities. If the library portion of your extension needs to load JavaScript files at runtime, it is recommended you use this property to list those files. The listed files will be hosted alongside the Platform Launch runtime library. Your extension can then load the files via a URL retrieved using the [getHostedLibFileUrl](./turbine.md#get-hosted-lib-file) method.<br><br>This option contains an array with relative paths of 3rd party library files that need to be hosted. |
 | `main` *(Optional)* | The relative path of a library module that should be executed at runtime.<br><br>This module will always be included in the runtime library and executed. Because the module is always included in the runtime library, we recommend only using a "main" module when absolutely necessary and keeping its code size minimal.<br><br>This module is not guaranteed to be executed first; other modules may be executed before it. |
 | `configuration` *(Optional)* | This describes the [extension configuration](./configuration.md) portion of the extension. This is necessary if you need users to provide global settings for the extension. See the [appendix](#config-object) for details on how this field should be structured.| 
-| `events` *(Optional)* | An array of [event](./modules/web/event-types.md) type definitions. See the appendix section on [type definitions](#type-definitions) for the structure of each object in the array. |
-| `conditions` *(Optional)* | An array of [condition](./modules/web/condition-types.md) type definitions. See the appendix section on [type definitions](#type-definitions) for the structure of each object in the array. |
-| `actions` *(Optional)* | An array of [action](./modules/web/action-types.md) type definitions. See the appendix section on [type definitions](#type-definitions) for the structure of each object in the array. |
-| `dataElements` *(Optional)* | An array of [data element](./modules/web/data-element-types.md) type definitions. See the appendix section on [type definitions](#type-definitions) for the structure of each object in the array. |
-| `sharedModules` *(Optional)* | An array of shared module definition objects. Each shared module object in the array should be structured as follows: <ul><li>`name`: The name of the shared module. Note that this name will be used when referencing shared modules from other extensions as described in [Shared Modules](./modules/web/shared.md). This name is never displayed in any user interface. It should be unique from the names of other shared modules within your extension and must comply with [naming rules](#naming-rules). **This is used by Platform Launch as an identifier and should not be changed after you publish your extension.**</li><li>`libPath`: The relative path to the shared module. It should not not begin with a slash. It must reference a JavaScript file with a `.js` extension.</li></ul>|
+| `events` *(Optional)* | An array of [event](./web/event-types.md) type definitions. See the appendix section on [type definitions](#type-definitions) for the structure of each object in the array. |
+| `conditions` *(Optional)* | An array of [condition](./web/condition-types.md) type definitions. See the appendix section on [type definitions](#type-definitions) for the structure of each object in the array. |
+| `actions` *(Optional)* | An array of [action](./web/action-types.md) type definitions. See the appendix section on [type definitions](#type-definitions) for the structure of each object in the array. |
+| `dataElements` *(Optional)* | An array of [data element](./web/data-element-types.md) type definitions. See the appendix section on [type definitions](#type-definitions) for the structure of each object in the array. |
+| `sharedModules` *(Optional)* | An array of shared module definition objects. Each shared module object in the array should be structured as follows: <ul><li>`name`: The name of the shared module. Note that this name will be used when referencing shared modules from other extensions as described in [Shared Modules](./web/shared.md). This name is never displayed in any user interface. It should be unique from the names of other shared modules within your extension and must comply with [naming rules](#naming-rules). **This is used by Platform Launch as an identifier and should not be changed after you publish your extension.**</li><li>`libPath`: The relative path to the shared module. It should not not begin with a slash. It must reference a JavaScript file with a `.js` extension.</li></ul>|
 
 ## Appendix
 

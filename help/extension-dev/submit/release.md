@@ -1,9 +1,13 @@
 ---
 title: Release an Extension
 description: Learn how to privately or publicly release an Adobe Experience Platform Launch extension.
+exl-id: 64e40955-82a7-4985-bf67-edc702a3eebb
 ---
-
 # Release an extension
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 Once you've completed testing and documenting, you are ready to release. There are currently two types of releases that you can perform:
 

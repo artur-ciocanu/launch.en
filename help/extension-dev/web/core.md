@@ -1,9 +1,11 @@
 ---
 title: Core Library Modules for Web Extensions
 description: Learn about the core library modules you can use within your Adobe Experience Platform Launch web extensions.
+exl-id: 6831963e-33da-4bc9-8a7f-eda94f4f98c7
 ---
-
 # Core library modules for web extensions
+
+>**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 This document provides a list of core library modules that you may use within your web extensions. You may access these modules using `require('@adobe/{MODULE}')`, where `{MODULE}` is the name of the core module want to use.
 

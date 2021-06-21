@@ -1,9 +1,13 @@
 ---
 title: Adobe Media Analytics (3.x SDK) for Audio and Video Extension Overview
 description: Learn about the Adobe Media Analytics (3.x SDK) for Audio and Video extension in Adobe Experience Platform Launch.
+exl-id: a691fa2b-cee1-4081-b83c-4f1552e41c9e
 ---
-
 # Adobe Media Analytics (3.x SDK) for Audio and Video extension overview
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 Use this documentation for information on installing, configuring, and implementing the Adobe Media Analytics (3.x SDK) for Audio and Video extension (Media Analytics extension). Included are the options available when using this extension to build a rule, along with examples and links to samples.
 
@@ -27,7 +31,7 @@ After you have included all three of the extensions mentioned above in your Plat
 
 * **Configure:** To configure the MA extension, open the [!UICONTROL Extensions] tab, hover over the extension, and then select **[!UICONTROL Configure]**:
 
-![MA Extension Configuration](/help/assets/ext-ma-config.png)
+![MA Extension Configuration](/help/images/ext-ma-config.png)
 
 ### Configuration options:
 
@@ -42,7 +46,7 @@ After you have included all three of the extensions mentioned above in your Plat
 | Export APIs to Window Object | Enable or Disable exporting Media Analytics APIs to global scope |
 | Variable Name | A variable you use to export Media Analytics APIs under the `window` object |
 
-**Reminder:** The MA extension requires the [Analytics](/help/extension-reference/web/adobe-analytics-extension/overview.md) and [Experience Cloud ID](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html) extensions. You must also add these extensions to your extension property and configure them.
+**Reminder:** The MA extension requires the [Analytics](/help/extension-reference/web/adobe-analytics-extension/overview.md) and [Experience Cloud ID](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html) extensions. You must also add these extensions to your extension property and configure them.
 
 ## Using the MA extension
 
@@ -101,4 +105,3 @@ The MA extension exposes `media` as shared module to other extensions. (For addi
 >[!NOTE]
 >
 >**Testing:** For this release, to test your extension you must upload it to [Adobe Experience Platform Launch](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/73a73bd5ff53162339ce5ded3f4bba4712146d20/extension-reference/launch.adobe.com), where you have access to all dependent extensions.
-

@@ -1,9 +1,13 @@
 ---
 title: Upgrade Preparation Guide
 description: Follow this preparation guide to get started upgrading from Dynamic Tag Management (DTM) to Adobe Experience Platform Launch.
+exl-id: 4b697e1f-e39c-4f62-881b-bfafa4327dcc
 ---
-
 # Upgrade preparation guide
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 Adobe Experience Platform Launch is an entirely different system than DTM. Conceptually, they achieve the same goal, but the way they do so is different.
 
@@ -297,4 +301,4 @@ The contents of custom scripts are copied over as is. The code is not inpected t
   >[!IMPORTANT]
   >
   >If you use ES6 code in DTM, the code is copied to [!DNL Platform Launch] , but your build fails with compile errors when you make the build. You can fix this before or after you upgrade.
-* In custom code, it is common to reference the `_satellite` object and various properties and functions that it provides. [!DNL Platform Launch]  uses the `satellite` object, but it is not structured the same as before. Functions and properties that were supported in DTM move to [!DNL Platform Launch] , but many of the ones that were unsupported do not. If you use any of these functions in DTM, it is likely that your custom code needs to be updated. To see what is supported on the new [!DNL Platform Launch]  `satellite` object, refer to the [[!DNL Platform Launch]  Object Reference.](https://docs.adobe.com/content/help/en/launch/using/reference/client-side-info/launch-object-reference.html)
+* In custom code, it is common to reference the `_satellite` object and various properties and functions that it provides. [!DNL Platform Launch]  uses the `satellite` object, but it is not structured the same as before. Functions and properties that were supported in DTM move to [!DNL Platform Launch] , but many of the ones that were unsupported do not. If you use any of these functions in DTM, it is likely that your custom code needs to be updated. To see what is supported on the new [!DNL Platform Launch]  `satellite` object, refer to the [[!DNL Platform Launch]  Object Reference.](https://experienceleague.adobe.com/docs/launch/using/reference/client-side-info/launch-object-reference.html)

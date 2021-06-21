@@ -1,9 +1,32 @@
 ---
 title: Release Notes for the Core Extension
 description: The latest release notes for the Core extension in Adobe Experience Platform Launch.
+exl-id: e366b5ef-d9b8-4424-b026-a0a8df1dacfc
 ---
-
 # Core Extension release notes
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
+## May 20, 2021
+
+v2.0.7
+
+* Fixes an issue where mouse interactions on Text Inputs were no longer working correctly.
+* Deprecates the usage of the Browser and Operating System conditions.
+
+## May 4, 2021
+
+v2.0.6
+
+* Minor update to fix icons that become distorted when the screen size changes.
+
+## March 11, 2021
+
+v2.0.5
+
+* Updated code in the runtime evaluation for events and actions that have a delay option, which now support data element values added in the v2.0.4 release, to properly coerce strings to numbers.
 
 ## March 9, 2021
 
@@ -75,7 +98,7 @@ v1.6.2
 
 v1.6.1
 
-* **Support for CSP Nonce** - The Core extension now has an optional configuration parameter. You can add a data element that references a nonce. If configured, all inline scripts that Adobe Experience Platform Launch adds to the page use the nonce that you’ve configured. This change supports the use of a Content Security Policy with a nonce so that Platform Launch scripts can still load in a CSP environment.  You can read more about using Platform Launch with a CSP [here](https://docs.adobe.com/content/help/en/launch/using/reference/client-side-info/content-security-policy-csp.html).
+* **Support for CSP Nonce** - The Core extension now has an optional configuration parameter. You can add a data element that references a nonce. If configured, all inline scripts that Adobe Experience Platform Launch adds to the page use the nonce that you’ve configured. This change supports the use of a Content Security Policy with a nonce so that Platform Launch scripts can still load in a CSP environment.  You can read more about using Platform Launch with a CSP [here](https://experienceleague.adobe.com/docs/launch/using/reference/client-side-info/content-security-policy-csp.html).
 
 ## June 18, 2019
 
@@ -127,4 +150,3 @@ v1.4.2
 * **Feature** - Page Info Data Element
 * **Feature** - Date Condition
 * **Feature** - Sampling Condition
-

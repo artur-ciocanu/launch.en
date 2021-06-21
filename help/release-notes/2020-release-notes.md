@@ -1,9 +1,13 @@
 ---
 title: 2020 Release Notes
 description: 2020 release notes for Adobe Experience Platform Launch
+exl-id: c4e4f72c-7fdb-4937-b555-444e390d0072
 ---
-
 # 2020 release notes
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 ## October 26th, 2020
 

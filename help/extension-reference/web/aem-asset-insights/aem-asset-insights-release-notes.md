@@ -1,9 +1,13 @@
 ---
 title: Release Notes for the AEM Asset Insights Extension
 description: The latest release notes for the AEM Asset Insights extension in Adobe Experience Platform Launch.
+exl-id: 83aefdd4-4846-4621-bcce-7526dba11e8f
 ---
-
 # AEM Asset Insights release notes
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 ## September 9, 2020
 

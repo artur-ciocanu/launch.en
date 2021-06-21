@@ -1,11 +1,15 @@
 ---
 title: AEM Asset Insights Extension Overview
 description: Learn about the AEM Asset Insights extension in Adobe Experience Platform Launch.
+exl-id: 1bd8b45b-f194-4201-b2d4-050084ce8bed
 ---
-
 # AEM Asset Insights extension overview
 
-This extension is intended to be used together with [AEM Asset Insights](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/touch-ui-configuring-asset-insights.html). More specifically, it replaces the "pageTracker" process and embed code. When configured, this extension sends Asset *Impression* and *Click* metrics to Adobe Analytics, after which they will be imported into the AEM Asset Insights reports. The Asset metrics can then be reported on by using either AEM Asset Insights or Adobe Analytics Project Workspaces.
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+
+This extension is intended to be used together with [AEM Asset Insights](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/touch-ui-configuring-asset-insights.html). More specifically, it replaces the "pageTracker" process and embed code. When configured, this extension sends Asset *Impression* and *Click* metrics to Adobe Analytics, after which they will be imported into the AEM Asset Insights reports. The Asset metrics can then be reported on by using either AEM Asset Insights or Adobe Analytics Project Workspaces.
 
 ## Extension prerequisites
         
@@ -27,7 +31,7 @@ The "*Adobe Analytics*" extension for Adobe Experience Platform Launch must be i
         
 ### Adobe Experience Manager (AEM)
                         
-1. Enable [AEM Asset Insights](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/touch-ui-configuring-asset-insights.html). In AEM, select **[!UICONTROL Tools > Assets]**, then open the **[!UICONTROL Insights Configuration]** panel. 
+1. Enable [AEM Asset Insights](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/touch-ui-configuring-asset-insights.html). In AEM, select **[!UICONTROL Tools > Assets]**, then open the **[!UICONTROL Insights Configuration]** panel. 
                         
 1. Disable UUID Tracking. 
 
@@ -35,7 +39,7 @@ The "*Adobe Analytics*" extension for Adobe Experience Platform Launch must be i
     >
     >This extension will *not* function if the AEM Asset configuration setting **[!UICONTROL Disable UUID Tracking]** is checked. It is unchecked by default. 
 
-    ![Disable UUID Tracking](assets/disableassets.jpg)
+    ![Disable UUID Tracking](images/disableassets.jpg)
     
 ## Configure Adobe Experience Manager (AEM)
 
@@ -43,15 +47,15 @@ This section describes how to configure AEM with Platform Launch, how to enable 
 
 ### Integrate AEM with Platform Launch
 
-The recommended integration of [Platform Launch](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) with Adobe Experience Manager is done via Adobe I/O.
+The recommended integration of [Platform Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) with Adobe Experience Manager is done via Adobe I/O.
 
-1. [Connect AEM with Platform Launch using Adobe I/O](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
+1. [Connect AEM with Platform Launch using Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
 
-1. [Create a Platform Launch Cloud Service configuration](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/create-launch-cloud-service.html).
+1. [Create a Platform Launch Cloud Service configuration](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/create-launch-cloud-service.html).
 
 ### Enable Asset Insight in AEM
 
-For instructions on enabling Asset Insights, see the [Experience Manager 6.5 Assets user guide](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/touch-ui-configuring-asset-insights.html).
+For instructions on enabling Asset Insights, see the [Experience Manager 6.5 Assets user guide](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/touch-ui-configuring-asset-insights.html).
 
 ### Enable UUID tracking for Assets
 
@@ -59,11 +63,11 @@ Track assets in Analytics using the UUID of the asset in AEM.
 
 To enable tracking with the UUID of the asset, open the component policy console of the editable template and uncheck the "Disable UUID tracking" property. (By default, this property is checked for the OOTB image component.)
  
-![](assets/uuid.png)
+![](images/uuid.png)
 
 After you enable the UUID, you should see the "data-asset-id" data element being populated with the UUID of the asset. Analytics tracks the asset click or impression with this UUID.
  
-![](assets/uuid-code.png)
+![](images/uuid-code.png)
 
 ## Extension usage
     
@@ -85,7 +89,7 @@ In the **[Set AA Variables]** config page, select the **[Viewed Assets]** (defau
 >
 >Although not recommended, the "Set AA Variables" action also supports a "loaded" option, which sends asset impressions for every asset on the page, whether the visitor saw them or not.
     
-![Impressions](assets/sendImpressions.jpg)
+![Impressions](images/sendImpressions.jpg)
 
     
 ### Asset clicks
@@ -94,11 +98,11 @@ Configure a second rule using the "Asset Clicked" event and the "Set AA Variable
 
 The "Asset Clicked" event also supports an "Asset Clicked image request" setting of "On Click". This sends the click metric to Analytics immediately and requires an Analytics "Send Beacon" action as well.
     
-![Asset Clicks on page load](assets/sendClickOnPageload.jpg)
+![Asset Clicks on page load](images/sendClickOnPageload.jpg)
     
 Configure a third rule that will fire when there are Assets on the pages that do not have a destination (no `href` attribute). At a minimum, the new rule needs to use the "Asset Clicked (No Destination)" event as well as the "Set AA Variables" and "Adobe Analytics - Send Beacon" actions. Additonal conditions and actions can be added as required. 
     
-![Asset Clicks no destination](assets/sendClickOnClickNoDestination.jpg)
+![Asset Clicks no destination](images/sendClickOnClickNoDestination.jpg)
     
 ### Extension testing tips
     
@@ -122,7 +126,7 @@ Configure three Rules as described above:
     
     * There was never an asset in the browser's viewing area
     
-    * There were no assets on the page configured with [Asset Insights](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/touch-ui-configuring-asset-insights.html) enabled in AEM.
+    * There were no assets on the page configured with [Asset Insights](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/touch-ui-configuring-asset-insights.html) enabled in AEM.
     
 **Clicks** 
 
@@ -132,7 +136,7 @@ Configure three Rules as described above:
 
 In the resulting Analytics image request (from the next page), if `a.assets.idlist` has the Asset IDs on the destination page and `a.assets.clickedid` has the Asset ID of the asset that was selected on the originating page, the rule is working correctly. 
 
-If `a.assets.clickedid` is not in the image request, it's mostly likely because the Asset that was selected did not have [Asset Insights](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/touch-ui-configuring-asset-insights.html) enabled in AEM.
+If `a.assets.clickedid` is not in the image request, it's mostly likely because the Asset that was selected did not have [Asset Insights](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/touch-ui-configuring-asset-insights.html) enabled in AEM.
     
 **Clicks with no destination** 
 
@@ -142,4 +146,4 @@ If `a.assets.clickedid` is not in the image request, it's mostly likely because 
 
 In the resulting Analytics image request, if `a.assets.clickedid` has the Asset ID, the rule is working correctly. 
 
-If `a.assets.clickedid` is not in the image request, it's mostly likely because the asset that was selected did not have [Asset Insights](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/touch-ui-configuring-asset-insights.html) enabled in AEM.
+If `a.assets.clickedid` is not in the image request, it's mostly likely because the asset that was selected did not have [Asset Insights](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/touch-ui-configuring-asset-insights.html) enabled in AEM.

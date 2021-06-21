@@ -1,9 +1,13 @@
 ---
 title: Core Extension Overview
 description: Learn about the Core extension in Adobe Experience Platform Launch.
+exl-id: 657c1507-f005-49a8-a54a-26e6b9ff8b6f
 ---
-
 # Core extension overview
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 The Core extension is the default extension released with Adobe Experience Platform Launch.
 
@@ -830,4 +834,3 @@ Some common use cases include:
 * If this is the landing page for the visit, populate an Analytics metric
 * Show a new offer to the visitor after X number of Session Counts
 * Display a newsletter sign up if this is a first time visitor
-

@@ -1,9 +1,13 @@
 ---
 title: Adobe Experience Cloud Identity Service Extension Overview
 description: Learn about the Adobe Experience Cloud Identity Service extension in Adobe Experience Platform Launch.
+exl-id: 6f9922fc-abca-4c26-aa5a-22223be0291b
 ---
-
 # Adobe Experience Cloud Identity Service extension overview
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 Use this reference for information about configuring the Adobe Experience Cloud ID extension, and the options available when using this extension to build a rule.
 
@@ -17,7 +21,7 @@ If the Experience Cloud ID extension is not yet installed, open your property, t
 
 To configure the extension, open the Extensions tab, hover over the extension, and then select **[!UICONTROL Configure]**.
 
-![](/help/assets/optin.jpg)
+![](/help/images/optin.jpg)
 
 The following configuration options are available:
 

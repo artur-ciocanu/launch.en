@@ -1,9 +1,13 @@
 ---
 title: Extension development overview
 description: Learn about the primary components of different extension types and the extension development process in Adobe Experience Platform Launch.
+exl-id: 0dd90fa7-91e5-4297-b2c2-5c52ee893357
 ---
-
 # Extension development overview
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 One of the primary goals of Adobe Experience Platform Launch is to create an open ecosystem where engineers outside of the core Platform Launch engineering team can expose additional functionality through Platform Launch. This is done through Reactor extensions. Once an extension has been installed on a Platform Launch property by a user, that extension's functionality then becomes available for use by all users of the property.
 
@@ -18,9 +22,9 @@ Library modules are pieces of reusable code provided by an extension that are em
 
 ### Modules for web extensions {#web-modules}
 
-In web extensions, rules are triggered through events, which may then execute specific actions if a given set of conditions are met. See the overview on [module flow in web extensions](./modules/web/flow.md) for more information.
+In web extensions, rules are triggered through events, which may then execute specific actions if a given set of conditions are met. See the overview on [module flow in web extensions](./web/flow.md) for more information.
 
-In addition to the [core modules](./modules/web/core.md) provided by Adobe, you can define the following library module types in your web extensions:
+In addition to the [core modules](./web/core.md) provided by Adobe, you can define the following library module types in your web extensions:
 
 * [Event types](#web-event)
 * [Condition types](#web-condition)
@@ -30,7 +34,7 @@ In addition to the [core modules](./modules/web/core.md) provided by Adobe, you 
 
 >[!NOTE]
 >
->For details on the required format for implementing library modules in web extensions, see the [module format overview](./modules/web/format.md).
+>For details on the required format for implementing library modules in web extensions, see the [module format overview](./web/format.md).
 
 #### Event types {#web-event}
 
@@ -40,7 +44,7 @@ As an example, an extension could provide a "gesture" event type that watches fo
 
 Event types typically consist of (1) a view shown within the Platform Launch application that allows users to modify settings for the event and (2) a library module emitted within the Platform Launch runtime library to interpret the settings and watch for a certain activity to occur.
 
-[Learn more](./modules/web/event-types.md)
+[Learn more](./web/event-types.md)
 
 #### Condition types {#web-condition}
 
@@ -50,7 +54,7 @@ As an example, an extension could provide a "viewport contains" condition type w
 
 Condition types typically consist of (1) a view shown within the Platform Launch application that allows users to modify settings for the condition and (2) a library module emitted within the Platform Launch runtime library to interpret the settings and evaluate a condition.
 
-[Learn more](./modules/web/condition-types.md)
+[Learn more](./web/condition-types.md)
 
 #### Action types {#web-action}
 
@@ -60,7 +64,7 @@ As an example, an extension could provide a "show support chat" action type whic
 
 Action types typically consist of (1) a view shown within the Platform Launch application that allows users to modify settings for the action and (2) a library module emitted within the Platform Launch runtime library to interpret the settings and perform an action.
 
-[Learn more](./modules/web/action-types.md)
+[Learn more](./web/action-types.md)
 
 #### Data element types {#web-data-element}
 
@@ -70,7 +74,7 @@ A data element type enables users to configure data elements to access a piece o
 
 Data element types typically consist of (1) a view shown within the Platform Launch application that allows users to modify settings for the data element and (2) a library module emitted within the Platform Launch runtime library to interpret the settings and retrieve pieces of data.
 
-[Learn more](./modules/web/data-element-types.md)
+[Learn more](./web/data-element-types.md)
 
 #### Shared modules {#shared}
 
@@ -80,11 +84,11 @@ Shared modules are included in the library even when they are never called from 
 
 Shared modules do not have a view component.
 
-[Learn more](./modules/web/shared.md)
+[Learn more](./web/shared.md)
 
 ### Modules for edge extensions {#edge-modules}
 
-In edge extensions, rules are triggered through condition checks, which then execute specific actions if those checks pass. See the overview on [module flow in edge extensions](./modules/edge/flow.md) for more information.
+In edge extensions, rules are triggered through condition checks, which then execute specific actions if those checks pass. See the overview on [module flow in edge extensions](./edge/flow.md) for more information.
 
 You can define your own library modules in your edge extensions. These can be categorized into the following types:
 
@@ -94,7 +98,7 @@ You can define your own library modules in your edge extensions. These can be ca
 
 >[!NOTE]
 >
->For details on the required format for implementing library modules in edge extensions, see the [module format overview](./modules/edge/format.md).
+>For details on the required format for implementing library modules in edge extensions, see the [module format overview](./edge/format.md).
 
 #### Condition types {#condition}
 
@@ -104,7 +108,7 @@ As an example, an extension could provide a "viewport contains" condition type w
 
 Condition types typically consist of (1) a view shown within the Platform Launch application that allows users to modify settings for the condition and (2) a library module emitted within the Platform Launch runtime library to interpret the settings and evaluate a condition.
 
-[Learn more](./modules/web/condition-types.md)
+[Learn more](./web/condition-types.md)
 
 #### Action types {#action}
 
@@ -114,7 +118,7 @@ As an example, an extension could provide a "show support chat" action type whic
 
 Action types typically consist of (1) a view shown within the Platform Launch application that allows users to modify settings for the action and (2) a library module emitted within the Platform Launch runtime library to interpret the settings and perform an action.
 
-[Learn more](./modules/web/action-types.md)
+[Learn more](./web/action-types.md)
 
 #### Data element types {#data-element}
 
@@ -122,7 +126,7 @@ Data elements are essentially aliases to pieces of data on a page regardless of 
 
 Data element types typically consist of (1) a view shown within the Platform Launch application that allows users to modify settings for the data element and (2) a library module emitted within the Platform Launch runtime library to interpret the settings and retrieve pieces of data.
 
-[Learn more](./modules/web/data-element-types.md)
+[Learn more](./web/data-element-types.md)
 
 ## Extension configuration
 

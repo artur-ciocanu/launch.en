@@ -1,9 +1,13 @@
 ---
 title: Release Notes for the Adobe Target Extension
 description: The latest release notes for the Adobe Target extension in Adobe Experience Platform Launch.
+exl-id: 9fe1e6c2-e895-4d36-97b6-29f3ccd8a1bc
 ---
-
 # Adobe Target release notes
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 ## July 24, 2020
 

@@ -1,9 +1,13 @@
 ---
 title: Test Embed Codes using Adobe Experience Platform Debugger
 description: Learn how to use Platform Debugger to locally test different embed codes for Adobe Experience Platform Launch on your website.
+exl-id: f6ea1b36-0455-45a6-a4e5-4d90656fe04d
 ---
-
 # Test embed codes using Adobe Experience Platform Debugger
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 As you make changes to your library builds in Adobe Experience Platform Launch, you should test these changes before deploying the build to your production environment. If you do not have a dedicated staging or development environment for your website, you can use Adobe Experience Platform Debugger to locally test different embed codes within your site.
 
@@ -20,7 +24,7 @@ This tutorial also requires that you have the Platform Debugger browser extensio
 
 Using your browser of choice, navigate to your website and open the Platform Debugger extension. The site that Platform Debugger is currently connected to is displayed at the bottom of the window. If Platform Launch is currently running on your site, it will be listed in the [!UICONTROL Summary] tab.
 
-![](./assets/embed-code-testing/summary.png)
+![](./images/embed-code-testing/summary.png)
 
 >[!NOTE]
 >
@@ -30,21 +34,21 @@ Using your browser of choice, navigate to your website and open the Platform Deb
 
 Once Platform Debugger has connected to your site, select **[!UICONTROL Launch]** in the left navigation. Here you can see information about the library build currently being run on your site, including its environment and associated extensions. From here, select **[!UICONTROL Configuration]** to display controls for managing embed codes.
 
-![](./assets/embed-code-testing/launch-tab.png)
+![](./images/embed-code-testing/launch-tab.png)
 
 Under [!UICONTROL Page Embed Codes], the embed code that your site is currently using is displayed. Select **[!UICONTROL Actions]** on the right-hand side of the embed code, then select **[!UICONTROL Replace]**.
 
-![](./assets/embed-code-testing/replace.png)
+![](./images/embed-code-testing/replace.png)
 
 A popover appears, prompting you to provide an embed code to replace the current one with. Note that replacing the embed code using Platform Debugger does not change the deployed embed code on your site. Rather, it only replaces the embed code running locally so you can test and debug its implementation.
 
 Paste the embed code you want to test in the provided text box, then select **[!UICONTROL Apply]**.
 
-![](./assets/embed-code-testing/paste-code.png)
+![](./images/embed-code-testing/paste-code.png)
 
 The **[!UICONTROL Configuration]** tab reappears, showing that the live embed code has been replaced with the one you provided. You can now use the web browser to see if the embed code you are testing is working as expected.
 
-![](./assets/embed-code-testing/code-replaced.png)
+![](./images/embed-code-testing/code-replaced.png)
 
 ## Next steps
 

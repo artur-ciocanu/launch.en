@@ -1,9 +1,13 @@
 ---
 title: Adobe Target Extension Overview
 description: Learn about the Adobe Target extension in Adobe Experience Platform Launch.
+exl-id: b816bbab-34c6-4d6c-8f27-5643328fd9ca
 ---
-
 # Adobe Target extension overview
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 Use this reference for information about the options available when using this extension to build a rule.
 
@@ -17,7 +21,7 @@ If the Adobe Target extension is not yet installed, open your property, then sel
 
 To configure the extension, open the [!UICONTROL Extensions] tab, hover over the extension, and then select **[!UICONTROL Configure]**.
 
-![](/help/assets/ext-target-config.png)
+![](/help/images/ext-target-config.png)
 
 ### at.js Settings
 
@@ -58,7 +62,7 @@ Determines where Target sets cookies in the browsers.
 
 If the response from Target is not received within the defined period, the request times out and default content is displayed. Additional requests continue to be attempted during the visitor's session. The default is 3000ms, which might be different from the Timeout configured in the Target user interface.
 
-For more information about how the Timeout setting works, refer to the [Adobe Target help](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/deploy-at-js/implementing-target-without-a-tag-manager.html).
+For more information about how the Timeout setting works, refer to the [Adobe Target help](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/deploy-at-js/implementing-target-without-a-tag-manager.html).
 
 #### Other at.js settings available in the Target user interface
 
@@ -105,7 +109,7 @@ The following options are available:
 * **Body Hiding:** You can enable or disable this setting. The default value is Enabled, which means HTML BODY is hidden.
 * **Body Hidden Style:** The default value is `body{opacity:0}`. This value can be changed to something different, like `body{display:none}`.
 
-For more information, refer to the [Target online help documentation](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/advanced-mboxjs-settings.html).
+For more information, refer to the [Target online help documentation](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/advanced-mboxjs-settings.html).
 
 ## Adobe Target basic deployment
 
@@ -113,7 +117,7 @@ Once the Target Extension is installed, you'll need to create at least one rule 
 
 A Target rule with this basic implementation looks like this:
 
-![](/help/assets/basic_target_implementation.png)
+![](/help/images/basic_target_implementation.png)
 
 Once you have saved this rule, you'll need to add it to a Library and build/deploy so that you can test the behavior.
 
