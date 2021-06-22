@@ -11,9 +11,9 @@ If you would like to have more details on development consideration, [please rea
 
 ## Installation
 
-In order to install the extension, navigate to the extension catalogue in the Data Collection UI and select Adobe Client Data Layer.
+In order to install the extension, navigate to the extension catalog in the Data Collection UI and select Adobe Client Data Layer.
 
-![ACDL Extension view in Catalogue](./images/catalog.png)
+![ACDL Extension view in Catalog](./images/catalog.png)
 
 <!-- (GitHub link?)
 There is also the possibility to fork this project. You can download this github project, realize the change that you deem required for your specific use-case and re-upload it on your Organization as a private extension.
