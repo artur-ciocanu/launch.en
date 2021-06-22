@@ -36,7 +36,7 @@ For detailed instructions on how to create groups and add users for tags, see [U
 After tag rights have been added to your Adobe ID, you need to log in to the Data Collection UI. You can do this by navigating directly to the[Experience Cloud login screen](https://experiencecloud.adobe.com), and selecting **[!UICONTROL Launch / Data Collection]** from the Quick Access tab.
 
 >[!NOTE]
->Organizations can be changed by selecting the Organization name in the Control bar along the top of the screen and choosing a different organization from the dropdown list.
+>If you have a single account with rights to multiple organizations, the organization can be changed by selecting the organization name in the Control bar along the top of the screen and choosing a different organization from the dropdown list.
 
 ## 3. Create a property 
 
