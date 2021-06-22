@@ -70,8 +70,8 @@ However there is, currently, no possibility to completely remove information set
 
 ### Push to Data Layer
 
-The extension provides you with an action to push JSON content to the Data Layer itself.<br>
-You will need to pass valid JSON data.<br>
+The extension provides you with an action to push JSON content to the Data Layer itself. You will need to pass valid JSON data.
+
 This action make it possible to use Data Elements directly in the JSON. Within the JSON editor, data elements should be referenced with the **%dataElementName%** notation.
 
 ```
