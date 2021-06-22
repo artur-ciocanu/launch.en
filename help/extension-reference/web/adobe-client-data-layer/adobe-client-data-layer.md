@@ -1,6 +1,6 @@
 # ACDL Launch Extension
 
-This documentation provide example and best practices on the Extension usage.
+This documentation provides examples and best practices on the Extension usage.
 If you would like to have more details on development consideration, [please reach this page](./dev.md).
 
 ## Installation
@@ -14,13 +14,13 @@ This installation will not be supported on our end.<br>
 
 ## Extension View
 
-The extension view provides you with the possibility to change the name of the datalayer.
-By default the ACDL script will create a new datalayer with the variable name "adobeDataLayer".
+The extension view provides you with the possibility to change the name of the data layer.
+By default the ACDL script will create a new data layer with the variable name "adobeDataLayer".
 Setting a new name will provide you the possibility to use a specific name for it.
 
 The name that you have set will be instantiated when Launch is loaded.
 
-**Be careful**: The adobeDataLayer object is still being insantiated and then being duplicated to the new variable name you have selected.
+**Be careful**: The adobeDataLayer object is still being instantiated and then being duplicated to the new variable name you have selected.
 
 ## Events
 
@@ -44,7 +44,7 @@ or this kind of push: <br>
 but not this kind of push<br>
 ``` adobeDataLayer.push({"data":"something"}) ```
 
-* Listen to specific event : In the case that you specify an event, then the event listen will listen to any event that match this string.<br>
+* Listen to specific event : In the case that you specify an event, then the event listen will listen to any events that match this string.<br>
 Example : setting "myevent" in this configuration will listen to this kind of push : <br>
 ```adobeDataLayer.push({"event":"myEvent"})```
 
@@ -52,17 +52,17 @@ There is also possibility to change the scope of your event listener.<br>
 The different options are:
 
 * all: This is the default option and will trigger the rule every time the condition you have selected above has been met in the past or will be push in the future.<br>
-This is the safest option if you are using an asynchrous implementation.
+This is the safest option if you are using an asynchronous implementation.
 
-* future: This option will trigger the rule only when new push matching your condition will be send to the Data Layer.
+* future: This option will trigger the rule only when new push matching your condition will be sent to the Data Layer.
 
-* past: This option will trigger the rule only for old push matching your condition. New push matching your condition will be ignore and will not trigger the rule anymore.
+* past: This option will trigger the rule only for old push matching your condition. New push matching your condition will be ignored and will not trigger the rule anymore.
 
 ## Actions
 
 ### Reset Data Layer
 
-The extension provides you with a way to reset the datalayer length.
+The extension provides you with a way to reset the data layer length.
 This will help you keeping a limited size for Single Page Application.<br>
 However there is, currently, no possibility to completely remove information set previously during the push methods.
 
@@ -72,7 +72,7 @@ However there is, currently, no possibility to completely remove information set
 
 The extension provides you with an action to push JSON content to the Data Layer itself. You will need to pass valid JSON data.
 
-This action make it possible to use Data Elements directly in the JSON. Within the JSON editor, data elements should be referenced with the **%dataElementName%** notation.
+This action makes it possible to use Data Elements directly in the JSON. Within the JSON editor, data elements should be referenced with the **%dataElementName%** notation.
 
 ```
 {
@@ -98,7 +98,7 @@ Example of path: `data.foo`
 
 ### Data Layer Size
 
-This data element will return you the size of the Data Layer, the number of element that have been pushed to this object is returned.
+This data element will return the size of the Data Layer. The number of elements that have been pushed to this object is returned.
 Example :
 
 ```JS
