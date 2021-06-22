@@ -1,8 +1,8 @@
 ---
 title: Release Notes for the Adobe Client Data Layer Extension
-description: The latest release notes for the Adobe Client Data Layer extension in Adobe Experience Platform Launch.
+description: The latest release notes for the Adobe Client Data Layer tag extension in Adobe Experience Platform.
 ---
-# Adobe Client Data Layer release notes
+# Adobe Client Data Layer extension release notes
 
 ## Version 2.0.2
 
