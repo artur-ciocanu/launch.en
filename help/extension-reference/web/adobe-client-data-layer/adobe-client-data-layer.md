@@ -74,13 +74,15 @@ The extension provides you with an action to push JSON content to the Data Layer
 You will need to pass valid JSON data.\
 This action make it possible to use Data Elements directly in the JSON. Within the JSON editor, data elements should be referenced with the **%dataElementName%** notation.
 
-    {
-        "page": {
-            "url": "%url%",
-            "previous_url": "%previous_url%",
-            "concatenated_values": "static string %dataElement%"
-        }
+```
+{
+    "page": {
+        "url": "%url%",
+        "previous_url": "%previous_url%",
+        "concatenated_values": "static string %dataElement%"
     }
+}
+```
 
 ## Data Elements
 
