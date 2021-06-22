@@ -1,4 +1,8 @@
-# Releases notes
+---
+title: Release Notes for the Adobe Client Data Layer Extension
+description: The latest release notes for the Adobe Client Data Layer tag extension in Adobe Experience Platform.
+---
+# Adobe Client Data Layer extension release notes
 
 ## Version 2.0.2
 
@@ -9,19 +13,18 @@
 
 * Loading the ACDL core library (version 1.1.3)
 
-
 ## Version 1.1.2
 
-On the initial release, the following functionality will be provided by the Launch Extension:
+The following functionality is provided by the extension on initial release:
 
 * Loading the ACDL core library (version 1.1.1)
 * Renaming the Adobe Data Layer
 * Events:
   * Listening to all events
   * Listening to all data pushed
-  * Listening to a specific event pushed\
-  All event can be listen for different scope.
-* Data Elements creation:
+  * Listening to a specific event pushed
+  * All events can be listened to on different scopes
+* Data elements:
   * Computed State : Global or Specific state
   * Data Layer Size
 * Actions:
