@@ -1,6 +1,6 @@
 ---
 title: Data Element Types for Web Extensions
-description: Learn how to define a data-element-type library module for a tags web extension in Adobe Experience Platform.
+description: Learn how to define a data-element-type library module for a tag web extension in Adobe Experience Platform.
 exl-id: 72c43ac3-4672-4eb5-a062-550537bdb686
 ---
 # Data element types for edge extensions
@@ -9,7 +9,7 @@ exl-id: 72c43ac3-4672-4eb5-a062-550537bdb686
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-The purpose of a data element type library module is to retrieve a piece of data. The method for this retrieval is customizable. Different data element types allow Adobe Experience Platform data collection users to retrieve data from local storage, a cookie, or a DOM element.
+The purpose of a data element type library module is to retrieve a piece of data. The method for this retrieval is customizable. Different data element types allow Adobe Experience Platform users to retrieve data from local storage, a cookie, or a DOM element.
 
 >[!IMPORTANT]
 >
@@ -25,7 +25,7 @@ module.exports = function(settings) {
 }
 ```
 
-If you want to make the local storage item name configurable by the Adobe Experience Platform data collection user, you can allow the user to input a name and then save the name to the `settings` object. The object might look something like this:
+If you want to make the local storage item name configurable by the Adobe Experience Platform user, you can allow the user to input a name and then save the name to the `settings` object. The object might look something like this:
 
 ```js
 {

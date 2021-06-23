@@ -142,9 +142,9 @@ The `options` object should contain a single boolean property, `tokenize`. This 
 
 Your views probably have form fields where users would like to leverage data elements. For example, if your view has a text field where the user should enter a product name, it may not make sense for the user to type a hard-coded value into the field. Instead, they may want the value of the field to be dynamic (determined at runtime) and can accomplish this by using a data element.
 
-As an example, assume we are building an extension that sends a beacon to track a conversion. Let's also assume that one of the pieces of data our beacon sends is a product name. Our extension view that allows the user to configure the beacon would likely have a text field for the product name. It typically wouldn't make much sense for the tags user to type in a static product name like "Calzone Oven XL" because the product name is likely dependent upon the page from which the beacon will be sent. This is a great case for a data element.
+As an example, assume we are building an extension that sends a beacon to track a conversion. Let's also assume that one of the pieces of data our beacon sends is a product name. Our extension view that allows the user to configure the beacon would likely have a text field for the product name. It typically wouldn't make much sense for the Platform user to type in a static product name like "Calzone Oven XL" because the product name is likely dependent upon the page from which the beacon will be sent. This is a great case for a data element.
 
-If a user wanted to use the data element named `productname` for the product name value, they may type the name of the data element with percent signs on both sides (`%productname%`). We refer to the percentage-sign-wrapped data element name as a "data element token" and tags users are often familiar with this construct. Your extension, in turn, would save the data element token inside the `settings` object it exports. Your settings object may then look like this:
+If a user wanted to use the data element named `productname` for the product name value, they may type the name of the data element with percent signs on both sides (`%productname%`). We refer to the percentage-sign-wrapped data element name as a "data element token". Platform users are often familiar with this construct. Your extension, in turn, would save the data element token inside the `settings` object it exports. Your settings object may then look like this:
 
 ```js
 {
@@ -152,7 +152,7 @@ If a user wanted to use the data element named `productname` for the product nam
 }
 ```
 
-At runtime, before passing the settings object to your library module, tags will deeply scan the settings object and replace any data element tokens with their respective values. If at runtime, the value of the `productname` data element was `Ceiling Medallion Pro 2000`, the settings object that would be passed into your library module would be as follows:
+At runtime, before passing the settings object to your library module, the settings object is scanned and any data element tokens replaced with with their respective values. If at runtime, the value of the `productname` data element was `Ceiling Medallion Pro 2000`, the settings object that would be passed into your library module would be as follows:
 
 ```js
 {

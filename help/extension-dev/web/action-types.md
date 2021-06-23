@@ -1,6 +1,6 @@
 ---
 title: Action Types for Web Extensions
-description: Learn how to define an action-type library module for a tags web extension in Adobe Experience Platform.
+description: Learn how to define an action-type library module for a tag web extension in Adobe Experience Platform.
 exl-id: f322495b-341f-445d-b796-ec04efe43e30
 ---
 # Action types for web extensions
@@ -23,7 +23,7 @@ module.exports = function(settings) {
 };
 ```
 
-For example, to make the message configurable by the Adobe Experience Platform data collection user, you could allow the user to input and save a message to the settings object. The object looking something like this:
+For example, to make the message configurable by the Adobe Experience Platform user, you could allow the user to input and save a message to the settings object. The object looking something like this:
 
 ```json
 {

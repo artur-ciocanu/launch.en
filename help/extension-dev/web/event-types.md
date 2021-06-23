@@ -1,6 +1,6 @@
 ---
 title: Event Types for Web Extensions
-description: Learn how to define a tags event-type library module for a web extension in Adobe Experience Platform.
+description: Learn how to define an event-type library module for a web extension in Adobe Experience Platform.
 exl-id: de3ee753-e524-44c7-b6de-72f017c40956
 ---
 # Event types

@@ -1,6 +1,6 @@
 ---
 title: Condition Types for Web Extensions
-description: Learn how to define a condition-type library module for a tags web extension in Adobe Experience Platform.
+description: Learn how to define a condition-type library module for a tag web extension in Adobe Experience Platform.
 exl-id: 3a515c93-f453-49b6-8832-92a51699ced3
 ---
 # Condition types for web extensions
@@ -25,7 +25,7 @@ module.exports = function(settings) {
 };
 ```
 
-Now, consider a situation where you want to make the hostname configurable by the Adobe Experience Platform data collection user. You may allow the user to input a hostname and then save the hostname to the settings object. The object might look something like this:
+Now, consider a situation where you want to make the hostname configurable by the Adobe Experience Platform user. You may allow the user to input a hostname and then save the hostname to the settings object. The object might look something like this:
 
 ```js
 {
