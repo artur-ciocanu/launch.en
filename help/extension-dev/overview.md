@@ -9,7 +9,7 @@ exl-id: 0dd90fa7-91e5-4297-b2c2-5c52ee893357
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-One of the primary goals of Adobe Experience Platform is to create an open ecosystem where engineers outside of the core engineering team can expose additional functionality through tags. This is done through Reactor extensions. Once an extension has been installed on a tags property by a user, that extension's functionality then becomes available for use by all users of the property.
+One of the primary goals of Adobe Experience Platform is to create an open ecosystem where engineers outside of the core engineering team can expose additional functionality through tags. This is done through Reactor extensions. Once an extension has been installed on a tag property by a user, that extension's functionality then becomes available for use by all users of the property.
 
 This document outlines the primary components of different extension types and provides links for further documentation to guide you on the extension development process.
 
@@ -42,7 +42,7 @@ A rule event is some activity that must occur before a rule fires.
 
 As an example, an extension could provide a "gesture" event type that watches for a certain mouse or touch gesture to occur. Once the gesture occurs, the event logic would fire the rule.
 
-Event types typically consist of (1) a view shown within the tags application that allows users to modify settings for the event and (2) a library module emitted within the tag runtime library to interpret the settings and watch for a certain activity to occur.
+Event types typically consist of (1) a view shown within the tags workspace that allows users to modify settings for the event and (2) a library module emitted within the tag runtime library to interpret the settings and watch for a certain activity to occur.
 
 [Learn more](./web/event-types.md)
 
@@ -52,7 +52,7 @@ A rule condition is evaluated after a rule event has occurred. All conditions mu
 
 As an example, an extension could provide a "viewport contains" condition type wherein the user could specify a CSS selector. When the condition is evaluated on the client's website, the extension would be able to find elements matching the CSS selector and return whether any of them are contained within the user's viewport.
 
-Condition types typically consist of (1) a view shown within the tags application that allows users to modify settings for the condition and (2) a library module emitted within the tag runtime library to interpret the settings and evaluate a condition.
+Condition types typically consist of (1) a view shown within the tags workspace that allows users to modify settings for the condition and (2) a library module emitted within the tag runtime library to interpret the settings and evaluate a condition.
 
 [Learn more](./web/condition-types.md)
 
@@ -62,7 +62,7 @@ A rule action is something that is performed after the rule event has occurred a
 
 As an example, an extension could provide a "show support chat" action type which could display a support chat dialog to help users who may be struggling while checking out.
 
-Action types typically consist of (1) a view shown within the tags application that allows users to modify settings for the action and (2) a library module emitted within the tag runtime library to interpret the settings and perform an action.
+Action types typically consist of (1) a view shown within the tags workspace that allows users to modify settings for the action and (2) a library module emitted within the tag runtime library to interpret the settings and perform an action.
 
 [Learn more](./web/action-types.md)
 
@@ -70,9 +70,9 @@ Action types typically consist of (1) a view shown within the tags application t
 
 Data elements are essentially aliases to pieces of data on a page regardless of whether that data is found in query string parameters, cookies, DOM elements, or some other place. A data element can be referenced by rules and acts as an abstraction for accessing these pieces of data. When the location of the data changes in the future (for example, from a DOM element's `innerHTML` to a JavaScript variable's value), a single data element can be reconfigured while all the rules referencing that data element can remain unchanged.
 
-A data element type enables users to configure data elements to access a piece of data in a particular way. As an example, an extension could provide a "local storage item" data element type wherein the tags user could specify a local storage item name. When the data element is referenced by a rule, the extension would be able to look up the local storage item value by using the local storage item name that the user had provided when configuring the data element.
+A data element type enables users to configure data elements to access a piece of data in a particular way. As an example, an extension could provide a "local storage item" data element type wherein the user could specify a local storage item name. When the data element is referenced by a rule, the extension would be able to look up the local storage item value by using the local storage item name that the user had provided when configuring the data element.
 
-Data element types typically consist of (1) a view shown within the tags application that allows users to modify settings for the data element and (2) a library module emitted within the tag runtime library to interpret the settings and retrieve pieces of data.
+Data element types typically consist of (1) a view shown within the tags workspace that allows users to modify settings for the data element and (2) a library module emitted within the tag runtime library to interpret the settings and retrieve pieces of data.
 
 [Learn more](./web/data-element-types.md)
 
@@ -104,9 +104,9 @@ You can define your own library modules in your edge extensions. These can be ca
 
 A rule condition is evaluated after a rule event has occurred. All conditions must return true in order for the rule to continue processing. The exception is when users explicitly place conditions into an "exception" bucket in which case all conditions within the bucket must return false for the rule to continue processing.
 
-As an example, an extension could provide a "viewport contains" condition type wherein the tags user could specify a CSS selector. When the condition is evaluated on the client's website, the extension would be able to find elements matching the CSS selector and return whether any of them are contained within the user's viewport.
+As an example, an extension could provide a "viewport contains" condition type wherein the user could specify a CSS selector. When the condition is evaluated on the client's website, the extension would be able to find elements matching the CSS selector and return whether any of them are contained within the user's viewport.
 
-Condition types typically consist of (1) a view shown within the tags application that allows users to modify settings for the condition and (2) a library module emitted within the tag runtime library to interpret the settings and evaluate a condition.
+Condition types typically consist of (1) a view shown within the tags workspace that allows users to modify settings for the condition and (2) a library module emitted within the tag runtime library to interpret the settings and evaluate a condition.
 
 [Learn more](./web/condition-types.md)
 
@@ -116,7 +116,7 @@ A rule action is something that is performed after the rule conditions have pass
 
 As an example, an extension could provide a "show support chat" action type which could display a support chat dialog to help users who may be struggling while checking out.
 
-Action types typically consist of (1) a view shown within the tags application that allows users to modify settings for the action and (2) a library module emitted within the tag runtime library to interpret the settings and perform an action.
+Action types typically consist of (1) a view shown within the tags workspace that allows users to modify settings for the action and (2) a library module emitted within the tag runtime library to interpret the settings and perform an action.
 
 [Learn more](./web/action-types.md)
 
@@ -124,7 +124,7 @@ Action types typically consist of (1) a view shown within the tags application t
 
 Data elements are essentially aliases to pieces of data on a page regardless of where that data is found inside the event received by the server. A data element can be referenced by rules and acts as an abstraction for accessing these pieces of data. When the location of the data changes in the future (for example, the event key that contains the value is changed), a single data element can be reconfigured while all the rules referencing that data element can remain unchanged.
 
-Data element types typically consist of (1) a view shown within the tags application that allows users to modify settings for the data element and (2) a library module emitted within the tag runtime library to interpret the settings and retrieve pieces of data.
+Data element types typically consist of (1) a view shown within the tags workspace that allows users to modify settings for the data element and (2) a library module emitted within the tag runtime library to interpret the settings and retrieve pieces of data.
 
 [Learn more](./web/data-element-types.md)
 
@@ -132,7 +132,7 @@ Data element types typically consist of (1) a view shown within the tags applica
 
 An extension's configuration refers to the manner by which it gathers global settings from a user. For example, consider an extension that allows the user to send a beacon using a Send Beacon action and the beacon must always contain an account ID. We don't want to trouble users by asking them for the account ID each time they configure a Send Beacon action. Instead, the extension should ask for the account ID once from the extension configuration view. Each time a beacon is to be sent, the Send Beacon action library module can pull the account ID from the extension configuration and add it to the beacon.
 
-When users install an extension to a tags property, they will be shown the extension configuration view. They cannot complete the installation of the extension without completing the extension configuration.
+When users install an extension to a tag property, they will be shown the extension configuration view. They cannot complete the installation of the extension without completing the extension configuration.
 
 The extension configuration consists of a view component that will export settings that are then emitted within the tag runtime library as a plain object.
 

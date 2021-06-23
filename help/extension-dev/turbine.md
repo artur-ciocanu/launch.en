@@ -40,7 +40,7 @@ console.log(turbine.buildInfo.turbineBuildDate);
 
 Whether tag debugging is currently enabled.
 
-If you are simply attempting to log messages, it's unlikely you will need to use this. Instead, always log messages using `turbine.logger` and tags will ensure your messages are only printed to the console when tag debugging is enabled.
+If you are simply attempting to log messages, it's unlikely you will need to use this. Instead, always log messages using `turbine.logger` to ensure your messages are only printed to the console when tag debugging is enabled.
 
 ### [!DNL getDataElementValue]
 
@@ -85,7 +85,7 @@ Retrieves a module that has been shared from another extension. If no matching m
 turbine.logger.error('Error!');
 ```
 
-The logging utility is used to log messages to the console. Messages will only show in the console if debugging is turned on by the user. The recommended way to turn on debugging is to use the [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj?src=propaganda) or the [tags and DTM Switch](https://chrome.google.com/webstore/detail/adobe-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk) Chrome extension. As an alternative, the user can run the following command `_satellite.setDebug(true)` inside the browser developer console. The logger has the following methods:
+The logging utility is used to log messages to the console. Messages will only show in the console if debugging is turned on by the user. The recommended way to turn on debugging is to use the [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj?src=propaganda) or the [Launch and DTM Switch](https://chrome.google.com/webstore/detail/adobe-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk) Chrome extension. As an alternative, the user can run the following command `_satellite.setDebug(true)` inside the browser developer console. The logger has the following methods:
 
 * `logger.log(message: string)`: Logs a message to the console.
 * `logger.info(message: string)`: Logs an informational message to the console.
