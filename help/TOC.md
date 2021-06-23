@@ -174,6 +174,7 @@ git-repo: https://github.com/AdobeDocs/launch.en
     * [Hosts](./api/endpoints/hosts.md)
     * [Libraries](./api/endpoints/libraries.md)
     * [Notes](./api/endpoints/notes.md)
+    * [Profile](./api/endpoints/profile.md)
     * [Properties](./api/endpoints/properties.md)
     * [Rule components](./api/endpoints/rule-components.md)
     * [Rules](./api/endpoints/rules.md)
