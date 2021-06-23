@@ -1,6 +1,6 @@
 ---
 title: Release an Extension
-description: Learn how to privately or publicly release an extension in Adobe Experience Platform.
+description: Learn how to privately or publicly release a tag extension in Adobe Experience Platform.
 exl-id: 64e40955-82a7-4985-bf67-edc702a3eebb
 ---
 # Release an extension
@@ -9,7 +9,7 @@ exl-id: 64e40955-82a7-4985-bf67-edc702a3eebb
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-Once testing and documenting is complete, the extension is ready for release. There are currently two types of releases that you can perform:
+Once testing and documenting are complete, the extension is ready for release. There are currently two types of releases that you can perform:
 
 - **Private release**: The completed extension is available to all properties within your company, but is not available to any other companies in Adobe Experience Platform.
 - **Public release**: The completed extension is available in the public marketplace for all Adobe Experience Platform data collection users.
@@ -22,9 +22,9 @@ You must release your extension as a private extension before you can release it
 
 ## Private release
 
-The easiest way to release your extension to private availability is to use the [tag extension Releaser](https://www.npmjs.com/package/@adobe/reactor-releaser). More instructions are found within its documentation.
+The easiest way to release your extension with private availability is to use the [tag extension releaser](https://www.npmjs.com/package/@adobe/reactor-releaser). More instructions are found within its documentation.
 
-If you'd like to release your extension to private availability using the API directly, see the example call for [privately releasing an extension package](https://developer.adobelaunch.com/api/reference/1.0/extension_packages/release_private/) in the API docs for more detail.
+If you'd like to release your extension with private availability using the API directly, see the example call for [privately releasing an extension package](https://developer.adobelaunch.com/api/reference/1.0/extension_packages/release_private/) in the API docs for more detail.
 
 ## Public release
 

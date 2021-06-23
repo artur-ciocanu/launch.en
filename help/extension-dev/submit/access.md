@@ -1,6 +1,6 @@
 ---
 title: Grant User Access
-description: Set up your team members' user accounts and permissions for tags in Adobe Experience Platform.
+description: Set up your team members' tag user accounts and permissions in Adobe Experience Platform.
 exl-id: eae1df66-ce22-44fe-a256-c8acda0b19b9
 ---
 # Grant user access
@@ -26,7 +26,7 @@ Your Adobe Experience Cloud organization administrator should sign in to the [Ad
 
 ![Admin console overview tab](../images/getting-started/admin-console-overview.png)
 
-Some of you may have access to more than one organization (Org). In order to add the tags capability to the correct Org, select the name of the organization you see in the upper right corner of the screen, then choose the Org where you want to use tags.
+Some of you may have access to more than one organization (Org). In order to add the tags capability to the correct Org, select the name of the organization you see in the upper right corner of the screen. Next choose the Org where you want to use tags from the dropdown list.
 
 ![Admin console Org selection dropdown](../images/getting-started/admin-console-choose-org.png)
 
@@ -79,4 +79,4 @@ This completes the required setup in Admin Console. You and your team members th
 
 ## Confirm provisioning
 
-After your company is provisioned with access to tags and your users are set up as described above, you should be able to access the [tags](https://launch.adobe.com/) production environment. If you have been provisioned for tags and have completed the Admin Console steps above, but still cannot sign in to tags, please contact your Adobe support representatives.
+After your company is provisioned with access to tags and your users are set up as described above, you should be able to access the [tags](https://launch.adobe.com/) production environment. If you have been provisioned for tags and have completed the Admin Console steps above, but still cannot sign in to the tags workspace, please contact your Adobe support representatives.

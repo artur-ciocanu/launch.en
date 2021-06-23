@@ -9,7 +9,7 @@ exl-id: db12595b-ab17-410e-ac9a-2d2fe469c2b6
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-To test Adobe Experience Platform tag extensions use the tags API and/or command-line tools to upload your extension packages. Next, use the Data Collection UI to install your extension package to a property and exercise its capabilities inside a tag library and build.
+To test tag extensions in Adobe Experience Platform, use the tags API and/or command-line tools to upload your extension packages. Next, use the Data Collection UI to install your extension package to a property and exercise its capabilities inside a tag library and build.
 
 This document covers how to implement end-to-end testing for your extension. 
 
@@ -23,7 +23,7 @@ Once your team is satisfied with the performance of your extension and the resul
 
 Before uploading, please validate that any required fields or settings are present. For example, reviewing your [extension manifest](../manifest.md), your [extension configuration](../configuration.md), your [views](../web/views.md), and your [library modules](../web/format.md) (at a minimum) is good practice. 
 
-A specific example is your logo file: Add an `"iconPath": "example.svg",` line to your `extension.json` file and include that logo image file in your project. This is the relative path to the icon that will be displayed for the extension within data collection. It should not begin with a slash. It must reference an SVG file with a `.svg` extension. The SVG should appear normally when rendered square and may be scaled by the user interface. See the [How to Scale SVG article](https://css-tricks.com/scale-svg/) for more details.
+A specific example is your logo file: Add an `"iconPath": "example.svg",` line to your `extension.json` file and include that logo image file in your project. This is the relative path to the icon that will be displayed for the extension. It should not begin with a slash. It must reference an SVG file with a `.svg` extension. The SVG should appear normally when rendered square and may be scaled by the user interface. See the [How to Scale SVG article](https://css-tricks.com/scale-svg/) for more details.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ A specific example is your logo file: Add an `"iconPath": "example.svg",` line t
 
 In order to use the API or command-line tools, you need a technical account with Adobe I/O. You must create the technical account in the I/O console and then use the Uploader tool to upload the extension package.
 
-For information on creating a technical account for use with data collection, please refer to the [Access Tokens](https://developer.adobelaunch.com/api/guides/access_tokens/) guide.
+For information on creating a technical account for use with tags in Adobe Experience Platform, please refer to the [Access Tokens](https://developer.adobelaunch.com/api/guides/access_tokens/) guide.
 
 >[!IMPORTANT]
 >
@@ -45,7 +45,7 @@ If you cannot create an Integration, it is likely that you do not have the corre
 
 Now that you have credentials, you are ready to test your extension package end-to-end.
 
-When you first upload your extension package, it goes into a state of `development`. This means that it is only visible with your own tags company and only with a property that has been marked for extension development.
+When you first upload your extension package, it goes into a state of `development`. This means that it is only visible to your own organization, and only with a property that has been marked for extension development.
 
 Use the command line to run the following command within the directory that contains your .zip package.
 
@@ -68,7 +68,7 @@ Your extension package will then be uploaded and the uploader will give you the 
 
 >[!NOTE]
 >
->When uploading or patching, extension packages are placed into a pending state while the system asynchronously extracts the package and deploys. While this process is taking place, you can poll the `extension_package` ID for its status using the API and within tags. You will see an extension card in the catalog marked as Pending.
+>When uploading or patching, extension packages are placed into a pending state while the system asynchronously extracts the package and deploys. While this process is taking place, you can poll the `extension_package` ID for its status using the API and within the Data Collection UI. You will see an extension card in the catalog marked as Pending.
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ Your extension package will then be uploaded and the uploader will give you the 
 
 ## Create a development property {#property}
 
-When you sign in to data collection you'll see the Properties screen first. A property is a container for the tags that you want to deploy and it can be used on one or many sites.
+After you sign into the Data Collection UI, the Properties screen is displayed. A property is a container for the tags that you want to deploy and it can be used on one or many sites.
 
 ![](../images/getting-started/properties-screen.png)
 
@@ -102,7 +102,7 @@ To add your extension, select the **Catalog** tab.
 
 ![](../images/getting-started/catalog.png)
 
-The catalog displays card icons for each available extension. If your extension is not displayed in the catalog, ensure that you have completed the steps above in the Adobe Administration Console Set Up and Creating Your Extension Package sections. Your extension package may also appear as Pending if data collection has not completed the initial processing.
+The catalog displays card icons for each available extension. If your extension is not displayed in the catalog, ensure that you have completed the steps above in the Adobe Administration Console Set Up and Creating Your Extension Package sections. Your extension package may also appear as Pending if Platform has not completed the initial processing.
 
 If you have followed the the previous steps and still do not see a Pending or Failed extension package in the catalog, you should check the status of your extension package directly using the API. For information on how to make the appropriate API call, read [Fetch an ExtensionPackage](https://developer.adobelaunch.com/api/reference/1.0/extension_packages/fetch/) in the API documentation.
 
@@ -120,11 +120,11 @@ You should now see the **Installed** extensions screen with the Core extension a
 
 ## Create resources to test your extension {#resources}
 
-Extensions provide new capabilities to users of Adobe Experience Platform tags. These are typically displayed in Data Elements or the Rule Builder.
+Extensions provide new capabilities to users of Adobe Experience Platform. These are typically displayed in Data Elements or the Rule Builder.
 
 ### Data elements
 
-Data elements exist in tags to help users persist values. Each data element is a mapping or pointer to source data. A single data element is a variable that can be mapped to query strings, URLs, cookie values, JavaScript variables, etc. Select **Data Elements** from the left navigation bar, and **Create New Data Element**.
+The purpose of tag data elements is to help users persist values. Each data element is a mapping or pointer to source data. A single data element is a variable that can be mapped to query strings, URLs, cookie values, JavaScript variables, etc. Select **Data Elements** from the left navigation bar, and **Create New Data Element**.
 
 ![](/help/extension-dev/images/getting-started/data-element-create-new-link.png)
 
@@ -134,7 +134,7 @@ Extensions can define data element types if needed for your extension to operate
 
 When a user selects your extension from the **Extension** dropdown, the **Data Element Type** dropdown is populated with any data element types supplied by your extension. The user can then map each data element to its source value. Data elements can then be used when building rules in the Data Element Change Event or Custom Code Event to trigger a rule to execute. A data element can also be used in the Data Element Condition or other Conditions, Exceptions, or Actions in a rule.
 
-Once the data element is created (the mapping is set up), users can reference the source data simply by referencing the data element. If the source of the value ever changes (site re-designs, etc.) users only need to update the mapping once in data collection and all the data elements will automatically receive the new source value.
+Once the data element is created (the mapping is set up), users can reference the source data simply by referencing the data element. If the source of the value ever changes (site re-designs, etc.) users only need to update the mapping once in the tags workspace and all the data elements will automatically receive the new source value.
 
 ### Rules
 
@@ -202,7 +202,7 @@ Complete the installation by placing this single `<script>` tag inside the `<hea
 
 The following is a list of useful console commands for validating your extension on your test page or site.
 
-- `_satellite.setDebug(true);` will put data collection into debug mode and output useful logging statements to the console.
+- `_satellite.setDebug(true);` will enable debug mode and output useful logging statements to the console.
 - The `_satellite._container` object contains useful information about the deployed library including details about the Build, Data Elements, Rules, and Extensions included.
 
 The objective of this testing is to check the functionality of the deployed library, and ensure that the extension package behaves as expected after it has been complied into a library.

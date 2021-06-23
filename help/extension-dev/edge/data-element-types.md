@@ -1,6 +1,6 @@
 ---
 title: Data Element Types for Edge Extensions
-description: Learn how to define an data-element-type library module for a tags edge extension in Adobe Experience Platform.
+description: Learn how to define an data-element-type library module for a tag edge extension in Adobe Experience Platform.
 exl-id: f12d6f0d-8504-4564-8ebb-01ac3e552238
 ---
 # Data-element types in edge extensions

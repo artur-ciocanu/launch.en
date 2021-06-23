@@ -35,8 +35,8 @@ This program is for consulting firms that help Adobe customers make the most of 
 >
 >Currently your corporate email can only be used in one partner program at a time, so you will need to use a different corporate email as the registered contact for each of the programs.
 
-Once your company is in the Exchange Partner program, you can request access to Adobe Solutions by signing in to the [Exchange Partner Site](https://partners.adobe.com/exchangeprogram/experiencecloud) and following the steps below. If you already have an Experience Cloud Account and access to solutions, but you do not have access to Adobe Experience Platform data collection, please see the instructions for setting up groups and users [here](../../launch-reference/administration/user-permissions.md).
+Once your company is in the Exchange Partner program, you can request access to Adobe Solutions by signing in to the [Exchange Partner Site](https://partners.adobe.com/exchangeprogram/experiencecloud) and following the steps below. If you already have an Experience Cloud Account and access to solutions, but you do not have access to Adobe Experience Platform Data Collection, please see the [instructions for setting up groups and users](../../launch-reference/administration/user-permissions.md).
 
 ## For independent developers
 
-If you are an independent developer, or you are otherwise unable to join one of the partner programs listed and you would like to build tag extensions for Adobe Experience Platform, please send an email to launch-ext-dev@adobe.com to request access. Please provide some background on your experience with Adobe Experience Platform tags, and your planned extension project roadmap.
+If you are an independent developer, or you are otherwise unable to join one of the partner programs listed and you would like to build tag extensions for Adobe Experience Platform, please send an email to launch-ext-dev@adobe.com to request access. Please provide some background on your experience with tags in Adobe Experience Platform, and your planned extension project roadmap.
