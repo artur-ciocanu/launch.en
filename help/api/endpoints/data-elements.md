@@ -771,6 +771,10 @@ curl -X DELETE \
 
 A successful response returns HTTP status 204 (No Content) with no response body, indicating that the data element has been deleted.
 
+## Manage notes for a data element {#notes}
+
+Data elements are "notable" resources, meaning you can create and retrieve text-based notes on each individual resource. See the [notes endpoint guide](./notes.md) for more information on how to manage notes for data elements and other compatible resources.
+
 ## Retrieve related resources for a data element {#related}
 
 The following calls demonstrate how to retrieve the related resources for a data element. When [looking up a data element](#lookup), these relationships are listed under the `relationships` property.

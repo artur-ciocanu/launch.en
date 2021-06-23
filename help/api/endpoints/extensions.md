@@ -571,75 +571,9 @@ curl -X DELETE \
 
 A successful response returns HTTP status 204 (No Content) with no response body, indicating that the extension has been deleted.
 
-## List the notes for an extension {#notes}
+## Manage notes for an extension {#notes}
 
-You can retrieve the notes attached to an extension by appending `/notes` to the path of a lookup request.
-
-**API format**
-
-```http
-GET /extensions/{EXTENSION_ID}/notes
-```
-
-| Parameter | Description |
-| --- | --- |
-| `EXTENSION_ID` | The `id` of the extension whose notes you want to list. |
-
-**Request**
-
-```shell
-curl -X GET \
-  https://reactor.adobe.io/extensions/EX8ce7ced633f34bd48d33089ff8fad082/notes \
-  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
-  -H 'x-api-key: {API_KEY}' \
-  -H 'x-gw-ims-org-id: {IMS_ORG}' \
-  -H 'Accept: application/vnd.api+json;revision=1'
-```
-
-**Response**
-
-A successful response returns a list of notes attached to the specified extension.
-
-```json
-{
-  "data": [
-    {
-      "id": "NT9cf401536d9f4f64a850ca9eda56386a",
-      "type": "notes",
-      "attributes": {
-        "author_display_name": "spencer roan",
-        "author_email": "roan@adobe.com",
-        "created_at": "2020-12-14T17:41:57.514Z",
-        "text": "this is a note on an extension"
-      },
-      "relationships": {
-        "resource": {
-          "links": {
-            "related": "https://reactor.adobe.io/extensions/EX8ce7ced633f34bd48d33089ff8fad082"
-          },
-          "data": {
-            "id": "EX8ce7ced633f34bd48d33089ff8fad082",
-            "type": "extensions"
-          }
-        }
-      },
-      "links": {
-        "resource": "https://reactor.adobe.io/extensions/EX8ce7ced633f34bd48d33089ff8fad082",
-        "self": "https://reactor.adobe.io/notes/NT9cf401536d9f4f64a850ca9eda56386a"
-      }
-    }
-  ],
-  "meta": {
-    "pagination": {
-      "current_page": 1,
-      "next_page": null,
-      "prev_page": null,
-      "total_pages": 1,
-      "total_count": 1
-    }
-  }
-}
-```
+Extensions are "notable" resources, meaning you can create and retrieve text-based notes on each individual resource. See the [notes endpoint guide](./notes.md) for more information on how to manage notes for extensions and other compatible resources.
 
 ## Retrieve related resources for an extension {#related}
 

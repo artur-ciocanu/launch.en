@@ -66,8 +66,8 @@ A successful response returns a list of audit events. The example response below
       "id": "AEa98742de8ef044d8b86767aa6a15a674",
       "type": "audit_events",
       "attributes": {
-        "attributed_to_display_name": "spencer roan",
-        "attributed_to_email": "roan@adobe.com",
+        "attributed_to_display_name": "John Smith",
+        "attributed_to_email": "jsmith@example.com",
         "created_at": "2020-12-14T17:31:21.836Z",
         "display_name": "Kessel Apns App",
         "type_of": "app_configuration.updated",
@@ -101,8 +101,8 @@ A successful response returns a list of audit events. The example response below
       "id": "AE7320b6c1c3f84bb69405fcfe9cb58189",
       "type": "audit_events",
       "attributes": {
-        "attributed_to_display_name": "spencer roan",
-        "attributed_to_email": "roan@adobe.com",
+        "attributed_to_display_name": "John Smith",
+        "attributed_to_email": "jsmith@example.com",
         "created_at": "2020-12-14T17:31:10.672Z",
         "display_name": "Kessel Apns App",
         "type_of": "app_configuration.created",
@@ -185,8 +185,8 @@ A successful response returns the details of the audit event.
     "id": "AEd6a3b381fb8241818d7520001f8bd459",
     "type": "audit_events",
     "attributes": {
-      "attributed_to_display_name": "spencer roan",
-      "attributed_to_email": "roan@adobe.com",
+      "attributed_to_display_name": "John Smith",
+      "attributed_to_email": "jsmith@example.com",
       "created_at": "2020-12-14T17:31:46.956Z",
       "display_name": "Example Rule",
       "type_of": "rule.created",

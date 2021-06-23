@@ -864,75 +864,9 @@ curl -X POST \
 }
 ```
 
-## Retrieve a list of notes for a library
+## Manage notes for a library {#notes}
 
-You can list the notes attached to a library by appending `/notes` to the path of a lookup request.
-
-**API format**
-
-```http
-GET /libraries/{LIBRARY_ID}/notes
-```
-
-| Parameter | Description |
-| --- | --- |
-| `LIBRARY_ID` | The `id` of the library that you want to delete. |
-
-**Request**
-
-```shell
-curl -X GET \
-  https://reactor.adobe.io/libraries/LBcffea1a38c52408cae2398868625a12d/notes \
-  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
-  -H 'x-api-key: {API_KEY}' \
-  -H 'x-gw-ims-org-id: {IMS_ORG}' \
-  -H 'Accept: application/vnd.api+json;revision=1'
-```
-
-**Response**
-
-A successful response returns a list of notes attached to the specified library.
-
-```json
-{
-  "data": [
-    {
-      "id": "NTa40de8d76bfd4e40835830900ce83b7b",
-      "type": "notes",
-      "attributes": {
-        "author_display_name": "spencer roan",
-        "author_email": "roan@adobe.com",
-        "created_at": "2020-12-14T17:51:00.411Z",
-        "text": "this is a note on a library"
-      },
-      "relationships": {
-        "resource": {
-          "links": {
-            "related": "https://reactor.adobe.io/libraries/LBcffea1a38c52408cae2398868625a12d"
-          },
-          "data": {
-            "id": "LBcffea1a38c52408cae2398868625a12d",
-            "type": "libraries"
-          }
-        }
-      },
-      "links": {
-        "resource": "https://reactor.adobe.io/libraries/LBcffea1a38c52408cae2398868625a12d",
-        "self": "https://reactor.adobe.io/notes/NTa40de8d76bfd4e40835830900ce83b7b"
-      }
-    }
-  ],
-  "meta": {
-    "pagination": {
-      "current_page": 1,
-      "next_page": null,
-      "prev_page": null,
-      "total_pages": 1,
-      "total_count": 1
-    }
-  }
-}
-```
+Libraries are "notable" resources, meaning you can create and retrieve text-based notes on each individual resource. See the [notes endpoint guide](./notes.md) for more information on how to manage notes for libraries and other compatible resources.
 
 ## Retrieve related resources for a library {#related}
 
