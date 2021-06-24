@@ -42,7 +42,7 @@ After tag rights have been added to your Adobe ID, you need to log in to the Dat
 
 Once you have logged into the Data Collection UI, the first thing to do is create a property. A property is basically a container that you fill with extensions, rules, data elements, and libraries as you deploy tags to your site. Many people create a property for each website (or group of closely related sites) where they want to deploy the same set of tags.
 
-For more about creating properties, see [Create a property](../launch-reference/administration/properties.md).
+For more about creating properties, see [Create a property](../launch-reference/administration/companies-and-properties.md).
 
 ## 4. Install extensions
 

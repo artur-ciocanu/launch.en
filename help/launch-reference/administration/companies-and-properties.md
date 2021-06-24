@@ -91,7 +91,7 @@ This section provides guidance on how to create or configure a tag property in A
 >
 >Only a user with sufficient rights can create a property. See [User Management](user-permissions.md).
 
-Before beginning, review the [Best practices for planning properties](properties.md#best-practices-for-planning-properties) for properties.
+Before beginning, review the [Best practices for planning properties](companies-and-properties.md#best-practices-for-planning-properties) for properties.
 
 Navigate to your company page, then select **[!UICONTROL Add Property]**, or select an existing property from the list and select **[!UICONTROL Configure]**.
 

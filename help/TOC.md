@@ -61,7 +61,7 @@ git-repo: https://github.com/AdobeDocs/launch.en
     * [Getting started](launch-reference/server-side-information/server-side-getting-started.md)
 * Administration {#admin}
   * [Overview](launch-reference/administration/overview.md)
-  * [Companies and properties](launch-reference/administration/properties.md)
+  * [Companies and properties](launch-reference/administration/companies-and-properties.md)
   * [User permissions](launch-reference/administration/user-permissions.md)
 * Extensions reference {#extensions-ref}
   * [Overview](extension-reference/adobe-extensions/overview.md)
