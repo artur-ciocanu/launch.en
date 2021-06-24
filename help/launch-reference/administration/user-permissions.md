@@ -59,17 +59,17 @@ Assuming that a user belongs to a profile with access to Property A1, what they 
 
 The permissions available within this group are:
 
-* **Develop:** This allows the creation of rules and data elements. You can also create libraries and build them in existing development environments. You can submit a library for approval when ready. Most day-to-day tasks in tags workspace require this right.
+* **Develop:** This allows the creation of rules and data elements. You can also create libraries and build them in existing development environments. You can submit a library for approval when ready. Most day-to-day tasks in the tags workspace require this right.
 * **Approve:** This grants the ability to take a submitted library and build to the staging environment. You can also approve a library for publishing once testing has been completed.
 * **Publish:** This grants the ability to publish approved libraries to the production environment.
-* **Manage Extensions:** This grants the abilities to install new extensions to a property, to modify the extension configuration for an already installed extension, and to delete an extension. More information on extensions is available [here](../managing-resources/extensions/overview.md). This role typically belongs to IT or Marketing, depending on your organization.
-* **Manage Environments:** This grants the ability to create and modify environments. Read more about environments [here](../publishing/environments.md). This role typically belongs to the IT group.
+* **Manage Extensions:** This grants the abilities to install new extensions to a property, to modify the extension configuration for an already installed extension, and to delete an extension. See the extensions overview documentation for [more information on extensions](../managing-resources/extensions/overview.md). This role typically belongs to IT or Marketing, depending on your organization.
+* **Manage Environments:** This grants the ability to create and modify environments. See the [environments documentation](../publishing/environments.md) for more information. This role typically belongs to the IT group.
 
 #### Company rights
 
 Company rights apply to permissions that span multiple properties. There are currently two:
 
-* **Manage Properties:** This grants the ability to create new properties in the tags workspace and to modify the metadata and settings at the property level. You can also delete properties. Read more about properties [here](properties.md). Administrators usually perform this role.
+* **Manage Properties:** This grants the ability to create new properties in the tags workspace and to modify the metadata and settings at the property level. You can also delete properties. Read the [properties documentation](properties.md) for more information. Administrators usually perform this role.
 * **Develop Extensions:** This grants the ability to create and modify extension packages that are owned by the company including private releases and requests for public release.
 
 ### Total user permissions

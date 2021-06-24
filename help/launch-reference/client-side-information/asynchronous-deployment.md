@@ -25,11 +25,11 @@ By default, the browser parses the document and reaches this line, then starts t
 
 If the parser comes across the `<script>` tag before rendering visible content, content display is delayed. If the JavaScript file being loaded is not absolutely necessary to show content to your users, you are unnecessarily requiring your visitors to wait for content. The larger the library, the longer the delay.  For this reason, website performance benchmark tools like [!DNL Google PageSpeed] or [!DNL Lighthouse] often flag synchronously loaded scripts.
 
-Tag Management libraries can quickly grow large if you have a lot of tags to manage.
+Tag management libraries can quickly grow large if you have a lot of tags to manage.
 
 ### Asynchronous deployment
 
-You can load any library asynchronously by adding an `async` attribute to the `<script>` tag.  For example:
+You can load any library asynchronously by adding an `async` attribute to the `<script>` tag. For example:
 
 ```markup
 <script src="example.js" async></script>
@@ -43,9 +43,9 @@ As described above, in synchronous deployments, the browser pauses parsing and r
 
 First, because the tag library can finish loading before or after the bottom of the page has been parsed and executed, you should no longer call `_satellite.pageBottom()` from your page code (`_satellite` won't be available until after the library has loaded). This is explained in [Loading the tags embed code asynchronously](#loading-the-tags-embed-code-asynchronously).
 
-Second, the tags library can finish loading before or after the [`DOMContentLoaded`](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded) browser event (DOM Ready) has occurred.
+Second, the tag library can finish loading before or after the [`DOMContentLoaded`](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded) browser event (DOM Ready) has occurred.
 
-Because of these two points, it's worth demonstrating how the [Library Loaded](../../extension-reference/web/core-extension/overview.md#library-loaded-page-top), [Page Bottom](../../extension-reference/web/core-extension/overview.md#page-bottom), [DOM Ready](../../extension-reference/web/core-extension/overview.md#page-bottom), and [Window Loaded](../../extension-reference/web/core-extension/overview.md#window-loaded) event types from the Core extension function when loading a tags library asynchronously.
+Because of these two points, it's worth demonstrating how the [Library Loaded](../../extension-reference/web/core-extension/overview.md#library-loaded-page-top), [Page Bottom](../../extension-reference/web/core-extension/overview.md#page-bottom), [DOM Ready](../../extension-reference/web/core-extension/overview.md#page-bottom), and [Window Loaded](../../extension-reference/web/core-extension/overview.md#window-loaded) event types from the Core extension function when loading a tag library asynchronously.
 
 If your tag property contains the following four rules:
 
@@ -95,4 +95,4 @@ Tags provides a toggle to turn on asynchronous loading when creating an embed co
    <script type="text/javascript">_satellite.pageBottom();</script>
    ```
 
-   This code tells tags that the browser parser has reached the bottom of the page. Because tags likely will not have loaded and executed before this time, calling `_satellite.pageBottom()` results in an error and the Page Bottom event type may not behave as expected.
+   This code tells Platform that the browser parser has reached the bottom of the page. It is likely that tags will not have loaded and executed before this time, therefore calling `_satellite.pageBottom()` results in an error and the Page Bottom event type may not behave as expected.

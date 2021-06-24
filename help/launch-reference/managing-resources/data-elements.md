@@ -11,7 +11,7 @@ exl-id: 00d45148-4aa1-4578-8ede-4fc3b6315621
 
 Data elements are the building blocks for your data dictionary (or data map). Use data elements to collect, organize, and deliver data across marketing and ad technology.
 
-A single data element is a variable whose value can be mapped to query strings, URLs, cookie values, JavaScript variables, and so on. You can reference this value by its variable name throughout Adobe Experience Platform tags. This collection of data elements becomes the dictionary of defined data that you can use to build your rules (events, conditions, and actions). This data dictionary is shared across tags for use with any extension you've added to your property.
+A single data element is a variable whose value can be mapped to query strings, URLs, cookie values, JavaScript variables, and so on. You can reference this value by its variable name throughout Adobe Experience Platform. This collection of data elements becomes the dictionary of defined data that you can use to build your rules (events, conditions, and actions). This data dictionary is shared across tags for use with any extension you've added to your property.
 
 >[!IMPORTANT]
 >
@@ -21,7 +21,7 @@ Use data elements as widely as possible throughout rule creation to consolidate 
 
 The concept of reusable data elements is very powerful and you should use them as best practice.
 
-For example, if there is a particular way that you reference page names or product IDs or grab information from query string parameters from an affiliate marketing link or from [!DNL AdWords], and so forth, you can create a data dictionary (data elements) by getting information from its source and then using this data in various tags rules.
+For example, if there is a particular way that you reference page names or product IDs or grab information from query string parameters from an affiliate marketing link or from [!DNL AdWords], and so forth, you can create a data dictionary (data elements) by getting information from its source and then using this data in various tag rules.
 
 Using page name as an example, suppose you use a particular page-name schema by referencing a data layer, `document.title` element, or a title tag within the website. Tags in Adobe Experience Platform allow you to create a data element as a single point of reference for that particular point of data. You can then use this data element in any rule that needs to reference the page name. If for some reason in the future you decide to change the way you reference page name (for example, you have been referencing `document.title` but you now want to reference a particular data layer), you don't need to edit many different rules to change that reference. You simply change the reference once in the data element and all rules that reference that data element automatically update.
 
@@ -248,7 +248,7 @@ Some common use cases include:
 
 ## Built-in data elements
 
-If you used any of the following data elements in the past, you must create custom data element in tags:
+You must create custom data element in the tags workspace if you previously used any of the following data elements:
 
 * URI
 * Protocol

@@ -158,7 +158,7 @@ These events need to be executed almost always (unless conditions evaluate to fa
 
    >[!NOTE]
    >
-   >Adobe Experience Platform tags Client Side uses JavaScript version es5. Event forwarding uses version es6.
+   >Tags in Adobe Experience Platform uses JavaScript version es5. Event forwarding uses version es6.
    
 * **HTML:** The HTML is embedded in the main tags library. `document.write` is used to write the HTML to the document. If the rule has multiple custom scripts, they're written in order.
 
@@ -171,7 +171,7 @@ Adobe cannot guarantee that any other rules will actually be triggered and that 
 
 ## Rule Component Sequencing
 
-The tags runtime environment's behavior depends on whether **[!UICONTROL Run rule components in sequence]** is on or off for your property.
+The tag runtime environment's behavior depends on whether **[!UICONTROL Run rule components in sequence]** is on or off for your property.
 
 ### Enabled
 
@@ -183,7 +183,7 @@ If an action fails or reaches its defined timeout, that rule's subsequent action
 
 >[!NOTE]
 >
->With this setting enabled, all conditions and actions are executed asynchronously, even if you loaded the tags library synchronously.
+>With this setting enabled, all conditions and actions are executed asynchronously, even if you loaded the tag library synchronously.
 
 ### Disabled
 

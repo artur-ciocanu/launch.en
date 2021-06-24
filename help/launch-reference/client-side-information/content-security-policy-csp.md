@@ -76,7 +76,7 @@ CSP disallows inline scripts by default, and therefore must be manually configur
 
 >[!NOTE]
 >
->The CSP specification has details for a third option using hashes, but this approach is not feasible to use with tag management systems like Platform tags. For more information on the limitations of using hashes in tags, see the [Subresource Integrity (SRI) guide](./sri.md).
+>The CSP specification has details for a third option using hashes, but this approach is not feasible to use with tag management systems like tags in Adobe Experience Platform. For more information on the limitations of using hashes in tags, see the [Subresource Integrity (SRI) guide](./sri.md).
 
 ### Allow by nonce {#nonce}
 
