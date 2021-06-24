@@ -25,7 +25,7 @@ Specify any custom code that must exist as a condition of the event. Use the bui
 1. Type the custom code.
 1. Select **[!UICONTROL Save]**.
 
-To access the value of a data element in custom code, use the `getDataElementValue` method. For example, to retrieve the value of a data element named `productName, write the following: 
+To access the value of a data element in custom code, use the `getDataElementValue` method. For example, to retrieve the value of a data element named `productName`, write the following: 
 
 ```javascript
 getDataElementValue('productName') 
