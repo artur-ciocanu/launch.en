@@ -301,7 +301,7 @@ Cache-control headers are now automatically set for libraries hosted on [!DNL Ak
 
 #### Rule ordering {#rule-ordering}
 
-Events in rules can now be assigned an order. When an event is triggered, any rules that use that event are executed in the order defined. Lower numbers run first (1 comes before 10). See [Rule ordering](../launch-reference/managing-resources/rules#rule-ordering) for more information.
+Events in rules can now be assigned an order. When an event is triggered, any rules that use that event are executed in the order defined. Lower numbers run first (1 comes before 10). See [Rule ordering](../launch-reference/managing-resources/rules.md#rule-ordering) for more information.
 
 #### Set active library
 
