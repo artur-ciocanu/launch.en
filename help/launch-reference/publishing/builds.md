@@ -11,15 +11,15 @@ exl-id: 4c247b0e-79ae-4e1c-82b4-a31c0381a78f
 
 A build is the set of files containing all the code that runs on the client device.
 
-It is a composite of the changes you specified within your Library, as well as everything that has been submitted, approved, or published before it.
+It is a composite of the changes you specified within your library, as well as everything that has been submitted, approved, or published before it.
 
 The build consists of client-side code files that reference each other. These files are delivered to your hosting location using the environment and host that you have chosen for the library. The code that you deploy on your site points to this same location so the files can load when a user accesses your site or application.
 
 ## File Contents
 
-A Library defines a discreet set of tag resources (Extensions, Rules, and Data Elements) that should be included within it.
+A library defines a discreet set of tag resources (extensions, rules, and data elements) that should be included within it.
 
-A Build contains all the module code (provided by the extension developers) and the configuration (entered by you) that is needed to power the resources contained within the Library. For example, if an extension provides actions that are not used within your rules, then the code to perform those actions is not contained within the Build.
+A build contains all the module code (provided by the extension developers) and the configuration (entered by you) that is needed to power the resources contained within the library. For example, if an extension provides actions that are not used within your rules, then the code to perform those actions is not contained within the build.
 
 Builds are divided into the main library file and potentially many smaller files. The main library file is referenced in your embed code and loaded onto the page at run-time. It contains:
 

@@ -9,9 +9,9 @@ exl-id: 93ce11e3-5c88-4822-b5df-e32839f29f34
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](./launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-Adobe Experience Platform tags are the next generation of tag management capabilities from [!DNL Adobe]. Tags gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising tags necessary to power relevant customer experiences.
+Tags in Adobe Experience Platform are the next generation of tag management capabilities from Adobe. Tags gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising tags necessary to power relevant customer experiences.
 
-Tags empower anyone to build and maintain their own integrations, called _extensions_. These extensions are available to [!DNL Adobe Experience Cloud] customers in an app-store experience so they can quickly install, configure, and deploy their tags.
+Tags empower anyone to build and maintain their own integrations, called *extensions*. These extensions are available to [!DNL Adobe Experience Cloud] customers in an app-store experience so they can quickly install, configure, and deploy their tags.
 
 Tags are offered to [!DNL Adobe Experience Cloud] customers as an included value-add feature. Tags are an entirely new product with a new code base, designed to replace the previous [!DNL Dynamic Tag Management (DTM)] service.
 

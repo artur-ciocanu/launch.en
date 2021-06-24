@@ -13,7 +13,7 @@ If you do not want to have Adobe manage your hosted libraries, your other option
 
 Platform connects to your SFTP site using an encrypted key. There are a few steps to set this up correctly:
 
-1. You must have a public/private key pair installed on your SFTP server. You can generate these keys on your server or generate them somewhere else and install them on your server. See [here](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key)for an example of how to generate keys.
+1. You must have a public/private key pair installed on your SFTP server. You can generate these keys on your server or generate them somewhere else and install them on your server. See the GitHub documentation regarding [how to generate SSH keys](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key) for more information.
 2. The private key is used to encrypt the public GPG key. You will need to provide your private key during the SFTP host creation process. See the [Encrypt values](https://developer.adobelaunch.com/api/guides/encrypting_values/) section in the Reactor API documentation for instructions on encrypting public GPG keys. Use the Production Environment's GPG key unless you know you need a specific one. Finally, you can encrypt your private key from any machine, so you do not need to install GPG on your server to complete this step.
 3. You might need to approve the IP addresses used with your company firewall to allow Platform to reach your SFTP server and connect to it. Those IP Addresses are:
    * `184.72.239.68`

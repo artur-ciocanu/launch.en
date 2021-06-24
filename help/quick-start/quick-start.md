@@ -21,7 +21,7 @@ The basic tags workflow:
 6. Test in your dev environment.
 7. Promote to production.
 
-For an introductory video, see [Introduction to Experience Platform Launch](videos.md).
+For an introductory video, see the [introductory videos](videos.md) documentation.
 
 ## 1. Set up groups and users
 
@@ -29,7 +29,7 @@ Tags in Adobe Experience Platform is fully integrated with your Adobe ID. User p
 
 Tags have a rights-based user management system. This means that individual rights must be granted explicitly. These rights are assigned to groups, then users are added to the appropriate groups in order to gain access. Even if your organization has access to the tags workspace, individual users cannot do anything until an Org Administrator explicitly grants them some rights.
 
-For detailed instructions on how to create groups and add users for tags, see [Users](../launch-reference/administration/user-permissions.md).
+For detailed instructions on how to create groups and add users for tags, see the [user permissions](../launch-reference/administration/user-permissions.md) document.
 
 ## 2. Log in
 
