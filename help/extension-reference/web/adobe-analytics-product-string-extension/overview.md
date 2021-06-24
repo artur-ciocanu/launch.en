@@ -21,7 +21,7 @@ The [!DNL Adobe Analytics Product String Builder] extension automatically sets t
 Category;Product;Quantity;Price;eventN=X|eventN2=X2;eVarN=merch_category|eVarN2=merch_category2
 ```
 
-For complete documentation, visit [Products](https://experienceleague.adobe.com/docs/analytics/components/variables/dimensions-reports/reports-products.html).
+For complete documentation, visit [Products](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html).
 
 ## Extension Instructions
 

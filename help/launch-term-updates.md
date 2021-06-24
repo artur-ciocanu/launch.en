@@ -1,6 +1,7 @@
 ---
 title: Adobe Experience Platform Launch terminology updates
 description: A complete list of terms and UI elements that are affected by the Adobe Experience Platform Launch rebranding.
+exl-id: 4a5863b8-5db9-4991-8718-06b6166d65bb
 ---
 # Adobe Experience Platform Launch terminology updates
 

@@ -67,10 +67,13 @@ The permissions available within this group are:
 
 #### Company rights
 
-Company rights apply to permissions that span multiple properties. There are currently two:
+Company rights apply to permissions that span multiple properties.  There are currently three:
 
-* **Manage Properties:** This grants the ability to create new properties in the tags workspace and to modify the metadata and settings at the property level. You can also delete properties. Read the [properties documentation](properties.md) for more information. Administrators usually perform this role.
-* **Develop Extensions:** This grants the ability to create and modify extension packages that are owned by the company including private releases and requests for public release.
+* **Manage Properties:** This grants the ability to create new properties in the tags workspace and to modify the metadata and settings at the property level. You can also delete properties. Read the [properties documentation](companies-and-properties.md) for more information. Administrators usually perform this role.
+* 
+* Grants the ability to create new properties in [!DNL Platform Launch] and to modify the metadata and settings at the property level. You can also delete properties.  Read more about properties [here](companies-and-properties.md). Administrators usually perform this role.
+* **Develop Extensions:** Grants the ability to create and modify extension packages that are owned by the company including private releases and requests for public release.
+* **Manage App Configurations:** This is only available to customers who have licensed Adobe Journey Optimizer, or some other solution that gives them access to mobile in-app and push messaging.  This grants the ability to manage the apps that Experience Cloud knows about along with the necessary push credentials needed to communicate with the Firebase Cloud Messaging service and the Apple Push Notification Service.
 
 ### Total user permissions
 
@@ -128,7 +131,7 @@ Here are a few descriptions of different roles that could apply in your organiza
 |--- |--- |--- |--- |
 |The Manager|Auto-include|||
 |The Marketer|Auto-include|Manage Properties|Develop<br>Manage Extensions|
-|The Mobile App Developer|Auto-include|Manage Properties|Develop<br>Manage Extensions|
+|The Mobile App Developer|Auto-include|Manage Properties<br>Manage App Configurations|Develop<br>Manage Extensions|
 |The IT Team|Auto-include|Approve<br>Publish<br>Manage Environments|
 |The Jack of All Trades|Auto-include|Manage Properties|Develop<br>Approve<br>Publish<br>Manage Extensions<br>Manage Environments|
 |The Extension Developer|Auto-include|Manage Properties<br>Develop Extensions|Develop|

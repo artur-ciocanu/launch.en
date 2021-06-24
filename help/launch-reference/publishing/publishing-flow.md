@@ -53,9 +53,12 @@ The following table outlines the available actions for a library in the [!UICONT
 | Action | Description |
 | --- | --- |
 | [!UICONTROL Edit] | Use the [!UICONTROL Edit Library] screen to add or remove components from the library. |
-| [!UICONTROL Build for Development] | Create a build for the library. The build is compiled and deployed to the environment that the library is assigned to. This step fails if the library has not been assigned to an environment, or contains a change that is already defined in the upstream. |
-| [!UICONTROL Submit for Approval] | Unassign the library from the development environment, and move the library to the [!UICONTROL Submitted] column for a user with approval permissions to work on. The last build for the library must be successful in order for this option to be enabled. |
-| [!UICONTROL Delete] | Remove the library from Platform. This does not remove the build from the environment. |
+| [!UICONTROL Build to Development] | Create a build for the library. The build is compiled and deployed to the environment that the library is assigned to. This step fails if the library has not been assigned to an environment, or contains a change that is already defined in the upstream. |
+| [!UICONTROL Submit for Approval] | Unassign the library from the development environment, and move the library to the [!UICONTROL Submitted] column for a user with approval permissions to work on. The most recent build for the library must be successful in order for this option to be enabled. |
+| [!UICONTROL Submit & Build to Staging] | This can only be performed by a user with both the Develop and Approve rights. This action unassigns the library from the development environment, moves the library to the [!UICONTROL Submitted] state, and builds the library to the staging environment. The most recent build for the library must be successful in order for this option to be enabled. |
+| [!UICONTROL Approve for Publishing] | This can only be performed by a user with both the Develop and Approve rights. This action unassigns the library from the development environment and moves it to the [!UICONTROL Approved] state - skipping the staging environment and the [!UICONTROL Submitted] state entirely. The most recent build for the library must be successful in order for this option to be enabled. |
+| [!UICONTROL Approve & Publish to Production] | This can only be performed by a user with the Develop, Approve, and Publish rights. This action unassigns the library from the development environment, moves it to the [!UICONTROL Approved] state, and publishes to production. Upon completion of the production build, the library will move to the [!UICONTROL Published] state. The most recent build for the library must be successful in order for this option to be enabled. |
+| [!UICONTROL Delete] | Remove the library from Platform Launch. This does not remove the build from the environment. |
 
 ### [!UICONTROL Submitted] {#submitted}
 
@@ -68,6 +71,7 @@ The following table outlines the available actions for a library in the [!UICONT
 | [!UICONTROL Open] | View the contents of the library. Changes are not allowed for libraries outside of the [!UICONTROL Development] column. If changes are needed, the library should be rejected so changes can be made in [!UICONTROL Development]. |
 | [!UICONTROL Build for Staging] | Build the library in the staging environment for deployment. |
 | [!UICONTROL Approve for Publishing] | Move the library to the [!UICONTROL Approved] column for a user with publishing permissions to work on. |
+| [!UICONTROL Approve & Publish to Production] | This can only be performed by a user with both Approve and Publish rights. This action unassigns the library from the staging environment, moves it to the [!UICONTROL Approved] state, and publishes to production. Upon completion of the production build, the library will move to the [!UICONTROL Published] state. This can be performed with our without a successful build in the staging environment. |
 | [!UICONTROL Reject] | Unassign the library from the staging environment and move the library back to the [!UICONTROL Development] column for further changes. |
 
 ### [!UICONTROL Approved] {#approved}
@@ -84,7 +88,13 @@ The following table outlines the available actions for a library in the [!UICONT
 
 ### [!UICONTROL Published] {#published}
 
-Libraries under the [!UICONTROL Published] column are live on the production environment. This column shows which libraries have been published and their publish dates. You can view these libraries, but you cannot make changes to them. If you want to change what is in your production environment, you must create a new library and move it through the complete publishing process.
+The [!UICONTROL Published] column shows which libraries have been published and their publish dates. The currently published library will show with a green dot next to it. Unless you have performed a republish on a previous library, this will always be the library at the top of the column.
+
+| Action | Description |
+| --- | --- |
+| [!UICONTROL Open] | View the contents of the library. Changes are not allowed for libraries outside of the [!UICONTROL Development] column. If you want to change what is in your production environment, you must create a new library and move it through the complete publishing process. |
+| [!UICONTROL Republish] | This action is only available on the five most recently published libraries, and only if the production environment is (A) configured with the Archive option off and (b) uses a [!UICONTROL Managed by Adobe] host at the time of the build. |
+| [!UICONTROL Download] | This action is only available on the five most recently published libraries, and only if the production environment is (A) configured with the Archive option on and (b) uses a [!UICONTROL Managed by Adobe] host at the time of the build. |
 
 ## Upstream {#upstream}
 
