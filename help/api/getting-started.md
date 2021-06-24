@@ -143,6 +143,8 @@ A successful response returns a new access token, as well as the number of secon
 | `access_token`   | The newly generated access token value. This value is used for the required `Authorization` header, and must be provided in the format `Bearer {ACCESS_TOKEN}`. |
 | `expires_in`   | The remaining time until the token expires, in milliseconds. Once a token expires, a new one must be generated. |
 
+{style="table-layout:auto"}
+
 ## Next steps
 
 By following the steps in this tutorial, you should have a valid values for `{IMS_ORG}`, `{API_KEY}`, and `{ACCESS_TOKEN}`. You can now test these values by using them in a simple cURL request to the Reactor API.

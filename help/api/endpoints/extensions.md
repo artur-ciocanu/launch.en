@@ -26,6 +26,8 @@ GET properties/{PROPERTY_ID}/extensions
 | --- | --- |
 | `{PROPERTY_ID}` | The `id` of the property whose extensions you want to list. |
 
+{style="table-layout:auto"}
+
 >[!NOTE]
 >
 >Using query parameters, listed extensions can be filtered based on the following attributes:<ul><li>`created_at`</li><li>`dirty`</li><li>`display_name`</li><li>`enabled`</li><li>`name`</li><li>`origin_id`</li><li>`published`</li><li>`published_at`</li><li>`revision_number`</li><li>`updated_at`</li><li>`version`</li></ul>See the guide on [filtering responses](../guides/filtering.md) for more information.
@@ -162,6 +164,8 @@ GET /extensions/{EXTENSION_ID}
 | --- | --- |
 | `EXTENSION_ID` | The `id` of the extension that you want to look up. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -279,6 +283,8 @@ POST /properties/{PROPERTY_ID}/extensions
 | --- | --- |
 | `PROPERTY_ID` | The `id` of the property that you want to install the extension  under. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -314,6 +320,8 @@ curl -X POST \
 | `attributes.delegate_descriptor_id` | If your extension requires custom settings, then it also requires a delegate descriptor ID. See the guide on [delegate descriptor IDs](../guides/delegate-descriptor-ids.md) for more information. |
 | `attributes.enabled` | A boolean indicating whether the extension is enabled. |
 | `attributes.settings` | A settings JSON object represented as a string. |
+
+{style="table-layout:auto"}
 
 **Response**
 
@@ -421,6 +429,8 @@ PATCH /extensions/{EXTENSION_ID}
 | --- | --- |
 | `EXTENSION_ID` | The `id` of the extension that you want to revise. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 As with [creating an extension](#create), a local version of the revised package must be uploaded via form data.
@@ -450,6 +460,8 @@ curl -X POST \
 | --- | --- |
 | `attributes` | The attributes that you want to revise. For extensions, you can revise their `delegate_descriptor_id`, `enabled`, and `settings` attributes.  |
 | `meta.action` | Must be included with a value of `revise` when making a revision. |
+
+{style="table-layout:auto"}
 
 **Response**
 
@@ -557,6 +569,8 @@ DELETE /extensions/{EXTENSION_ID}
 | --- | --- |
 | `EXTENSION_ID` | The `id` of the extension that you want to delete. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -594,6 +608,8 @@ GET  /extensions/{EXTENSION_ID}/libraries
 | Parameter | Description |
 | --- | --- |
 | `{EXTENSION_ID}` | The `id` of the extension whose libraries you want to list. |
+
+{style="table-layout:auto"}
 
 **Request**
 
@@ -713,6 +729,8 @@ GET  /extensions/{EXTENSION_ID}/revisions
 | Parameter | Description |
 | --- | --- |
 | `{EXTENSION_ID}` | The `id` of the extension whose revisions you want to list. |
+
+{style="table-layout:auto"}
 
 **Request**
 
@@ -924,6 +942,8 @@ GET  /extensions/{EXTENSION_ID}/extension_package
 | Parameter | Description |
 | --- | --- |
 | `{EXTENSION_ID}` | The `id` of the extension whose extension you want to look up. |
+
+{style="table-layout:auto"}
 
 **Request**
 
@@ -1157,6 +1177,8 @@ GET  /extensions/{EXTENSION_ID}/origin
 | --- | --- |
 | `{EXTENSION_ID}` | The `id` of the extension whose origin you want to look up. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -1273,6 +1295,8 @@ GET  /extensions/{EXTENSION_ID}/property
 | Parameter | Description |
 | --- | --- |
 | `{EXTENSION_ID}` | The `id` of the extension whose property you want to look up. |
+
+{style="table-layout:auto"}
 
 **Request**
 

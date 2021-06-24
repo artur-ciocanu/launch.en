@@ -44,6 +44,8 @@ GET  /properties/{PROPERTY_ID}/callbacks
 | --- | --- |
 | `{PROPERTY_ID}` | The `id` of the property whose callbacks you want to list. |
 
+{style="table-layout:auto"}
+
 >[!NOTE]
 >
 >Using query parameters, listed callbacks can be filtered based on the following attributes:<ul><li>`created_at`</li><li>`updated_at`</li></ul>See the guide on [filtering responses](../guides/filtering.md) for more information.
@@ -120,6 +122,8 @@ GET /callbacks/{CALLBACK_ID}
 | --- | --- |
 | `CALLBACK_ID` | The `id` of the callback that you want to look up. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -181,6 +185,8 @@ POST /properties/{PROPERTY_ID}/callbacks
 | --- | --- |
 | `PROPERTY_ID` | The `id` of the [property](./properties.md) that you are defining the callback under. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -206,6 +212,8 @@ curl -X POST \
 | --- | --- |
 | `url` | The URL destination for the callback message. The URL must use the HTTPS protocol extension. |
 | `subscriptions` | An array of strings, indicating the audit event types that will trigger the callback. See the [audit events endpoint guide](./audit-events.md) for a list of possible event types. |
+
+{style="table-layout:auto"}
 
 **Response**
 
@@ -257,6 +265,8 @@ PUT /callbacks/{CALLBACK_ID}
 | --- | --- |
 | `CALLBACK_ID` | The `id` of the callback that you want to update. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 The following request updates the `subscriptions` array for an existing callback.
@@ -287,6 +297,8 @@ curl -X PUT \
 | `attributes` | An object whose properties represent the attributes to be updated for the callback. Each key represents the particular callback attribute to be updated, along with the corresponding value it should be updated to.<br><br>The following attributes can be updated for callbacks:<ul><li>`subscriptions`</li><li>`url`</li></ul> |
 | `id` | The `id` of the callback you want to update. This should match the `{CALLBACK_ID}` value provided in the request path. |
 | `type` | The type of resource being updated. For this endpoint, the value must be `callbacks`. |
+
+{style="table-layout:auto"}
 
 **Response**
 
@@ -338,6 +350,8 @@ DELETE /callbacks/{CALLBACK_ID}
 | Parameter | Description |
 | --- | --- |
 | `CALLBACK_ID` | The `id` of the callback that you want to delete. |
+
+{style="table-layout:auto"}
 
 **Request**
 

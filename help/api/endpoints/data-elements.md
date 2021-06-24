@@ -30,6 +30,8 @@ GET /properties/{PROPERTY_ID}/data_elements
 | --- | --- |
 | `PROPERTY_ID` | The `id` of the property that owns the data elements. |
 
+{style="table-layout:auto"}
+
 >[!NOTE]
 >
 >Using query parameters, listed data elements can be filtered based on the following attributes:<ul><li>`created_at`</li><li>`dirty`</li><li>`enabled`</li><li>`name`</li><li>`origin_id`</li><li>`published`</li><li>`published_at`</li><li>`revision_number`</li><li>`updated_at`</li></ul>See the guide on [filtering responses](../guides/filtering.md) for more information.
@@ -176,6 +178,8 @@ GET /data_elements/{DATA_ELEMENT_ID}
 | --- | --- |
 | `DATA_ELEMENT_ID` | The `id` of the data element that you want to look up. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -303,6 +307,8 @@ POST /properties/{PROPERTY_ID}/data_elements
 | --- | --- |
 | `PROPERTY_ID` | The `id` of the [property](./properties.md) that you are defining the data element under. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 The following request creates a new data element for the specified property. The call also associates the data element with an existing extension through the `relationships` property. See the guide on [relationships](../guides/relationships.md) for more information.
@@ -348,6 +354,8 @@ curl -X POST \
 | `attributes.force_lower_case` | A boolean value indicating whether the data element value should be converted to lowercase before being stored. |
 | `attributes.clean_text` | A boolean value indicating whether leading and trailing whitespace should be removed from the data element value before being stored. |
 | `type` | The type of resource being updated. For this endpoint, the value must be `data_elements`. |
+
+{style="table-layout:auto"}
 
 **Response**
 
@@ -465,6 +473,8 @@ PATCH /data_elements/{DATA_ELEMENT_ID}
 | --- | --- |
 | `DATA_ELEMENT_ID` | The `id` of the data element that you want to update. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 The following request updates the `name` for an existing data element.
@@ -492,6 +502,8 @@ curl -X PUT \
 | `attributes` | An object whose properties represent the attributes to be updated for the data element. All data element attributes can be updated. See the example call for [creating a data element](#create) for a list of attributes and their use case. |
 | `id` | The `id` of the data element you want to update. This should match the `{DATA_ELEMENT_ID}` value provided in the request path. |
 | `type` | The type of resource being updated. For this endpoint, the value must be `data_elements`. |
+
+{style="table-layout:auto"}
 
 **Response**
 
@@ -611,6 +623,8 @@ PATCH /data_elements/{DATA_ELEMENT_ID}
 | --- | --- |
 | `DATA_ELEMENT_ID` | The `id` of the data element that you want to revise. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -640,6 +654,8 @@ curl -X PUT \
 | `meta.action` | When included with a value of `revise`, this property indicates that a new revision should be created for the data element. |
 | `id` | The `id` of the data element you want to revise. This should match the `{DATA_ELEMENT_ID}` value provided in the request path. |
 | `type` | The type of resource being revised. For this endpoint, the value must be `data_elements`. |
+
+{style="table-layout:auto"}
 
 **Response**
 
@@ -757,6 +773,8 @@ DELETE /data_elements/{DATA_ELEMENT_ID}
 | --- | --- |
 | `DATA_ELEMENT_ID` | The `id` of the data element that you want to delete. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -794,6 +812,8 @@ GET  /data_elements/{DATA_ELEMENT_ID}/libraries
 | Parameter | Description |
 | --- | --- |
 | `{DATA_ELEMENT_ID}` | The `id` of the data element whose libraries you want to list. |
+
+{style="table-layout:auto"}
 
 **Request**
 
@@ -913,6 +933,8 @@ GET  /data_elements/{DATA_ELEMENT_ID}/revisions
 | Parameter | Description |
 | --- | --- |
 | `{DATA_ELEMENT_ID}` | The `id` of the data element whose revisions you want to list. |
+
+{style="table-layout:auto"}
 
 **Request**
 
@@ -1145,6 +1167,8 @@ GET  /data_elements/{DATA_ELEMENT_ID}/extension
 | --- | --- |
 | `{DATA_ELEMENT_ID}` | The `id` of the data element whose extension you want to look up. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -1261,6 +1285,8 @@ GET  /data_elements/{DATA_ELEMENT_ID}/origin
 | Parameter | Description |
 | --- | --- |
 | `{DATA_ELEMENT_ID}` | The `id` of the data element whose origin you want to look up. |
+
+{style="table-layout:auto"}
 
 **Request**
 
@@ -1388,6 +1414,8 @@ GET  /data_elements/{DATA_ELEMENT_ID}/property
 | Parameter | Description |
 | --- | --- |
 | `{DATA_ELEMENT_ID}` | The `id` of the data element whose property you want to look up. |
+
+{style="table-layout:auto"}
 
 **Request**
 

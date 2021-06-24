@@ -34,6 +34,8 @@ GET /properties/{PROPERTY_ID}/hosts
 | --- | --- |
 | `PROPERTY_ID` | The `id` of the property that owns the hosts. |
 
+{style="table-layout:auto"}
+
 >[!NOTE]
 >
 >Using query parameters, listed hosts can be filtered based on the following attributes:<ul><li>`created_at`</li><li>`name`</li><li>`type_of`</li><li>`updated_at`</li></ul>See the guide on [filtering responses](../guides/filtering.md) for more information.
@@ -113,6 +115,8 @@ GET /hosts/{HOST_ID}
 | --- | --- |
 | `HOST_ID` | The `id` of the host that you want to look up. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -177,6 +181,8 @@ POST /properties/{PROPERTY_ID}/hosts
 | --- | --- |
 | `PROPERTY_ID` | The `id` of the [property](./properties.md) that you are defining the host under. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 The following request creates a new host for the specified property. The call also associates the host with an existing extension through the `relationships` property. See the guide on [relationships](../guides/relationships.md) for more information.
@@ -214,6 +220,8 @@ curl -X POST \
 | `attributes.server` | The host URL for the server. |
 | `attributes.username` | An optional user name for authentication. |
 | `type` | The type of resource being updated. For this endpoint, the value must be `hosts`. |
+
+{style="table-layout:auto"}
 
 **Response**
 
@@ -272,6 +280,8 @@ PATCH /hosts/{HOST_ID}
 | --- | --- |
 | `HOST_ID` | The `id` of the host that you want to update. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 The following request updates the `name` for an existing host.
@@ -299,6 +309,8 @@ curl -X PUT \
 | `attributes` | An object whose properties represent the attributes to be updated for the host. The following attributes can be updated for a host: <ul><li>`encrypted_private_key`</li><li>`name`</li><li>`path`</li><li>`port`</li><li>`server`</li><li>`type_of`</li><li>`username`</li></ul>|
 | `id` | The `id` of the host you want to update. This should match the `{HOST_ID}` value provided in the request path. |
 | `type` | The type of resource being updated. For this endpoint, the value must be `hosts`. |
+
+{style="table-layout:auto"}
 
 **Response**
 
@@ -353,6 +365,8 @@ DELETE /hosts/{HOST_ID}
 | --- | --- |
 | `HOST_ID` | The `id` of the host that you want to delete. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -386,6 +400,8 @@ GET /hosts/{HOST_ID}/property
 | Parameter | Description |
 | --- | --- |
 | `{HOST_ID}` | The `id` of the host whose property you want to look up. |
+
+{style="table-layout:auto"}
 
 **Request**
 

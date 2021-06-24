@@ -28,6 +28,8 @@ GET /properties/{PROPERTY_ID}/libraries
 | --- | --- |
 | `PROPERTY_ID` | The `id` of the property that owns the libraries. |
 
+{style="table-layout:auto"}
+
 >[!NOTE]
 >
 >Using query parameters, listed libraries can be filtered based on the following attributes:<ul><li>`created_at`</li><li>`name`</li><li>`published_at`</li><li>`stale`</li><li>`state`</li><li>`updated_at`</li></ul>See the guide on [filtering responses](../guides/filtering.md) for more information.
@@ -151,6 +153,8 @@ GET /libraries/{LIBRARY_ID}
 | --- | --- |
 | `LIBRARY_ID` | The `id` of the library that you want to look up. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -259,6 +263,8 @@ POST /properties/{PROPERTY_ID}/libraries
 | --- | --- |
 | `PROPERTY_ID` | The `id` of the [property](./properties.md) that you are defining the library under. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 The following request creates a new library for the specified property. When first creating a library, only its `name` attribute can be configured. In order to add data elements, extensions, and rules to the library, you must create relationships. See the section on [managing library resources](#resources) for more information.
@@ -284,6 +290,8 @@ curl -X POST \
 | --- | --- |
 | `attributes.name` | **(Required)** A human-readable name for the library. |
 | `type` | The type of resource being updated. For this endpoint, the value must be `libraries`. |
+
+{style="table-layout:auto"}
 
 **Response**
 
@@ -406,6 +414,8 @@ POST /libraries/{LIBRARY_ID}/relationships/{RESOURCE_TYPE}
 | `{LIBRARY_ID}` | The ID of the library that you want to add resources to. |
 | `{RESOURCE_TYPE}` | The type of resource that you are adding to the library. The following values are accepted: <ul><li>`data_elements`</li><li>`extensions`</li><li>`rules`</li></ul> |
 
+{style="table-layout:auto"}
+
 **Request**
 
 The following request adds two data elements to a library.
@@ -436,6 +446,8 @@ curl -X GET \
 | --- | --- |
 | `id` | The ID of the resource that you are adding to the library. |
 | `type` | The type of resource that you are adding to the library. |
+
+{style="table-layout:auto"}
 
 **Response**
 
@@ -475,6 +487,8 @@ PATCH /libraries/{LIBRARY_ID}/relationships/{RESOURCE_TYPE}
 | `{LIBRARY_ID}` | The ID of the library whose relationships you want to replace. |
 | `{RESOURCE_TYPE}` | The type of resource that you are replacing. The following values are accepted: <ul><li>`data_elements`</li><li>`extensions`</li><li>`rules`</li></ul> |
 
+{style="table-layout:auto"}
+
 **Request**
 
 The following request replaces the extensions for a library with those provided in the `data` array.
@@ -501,6 +515,8 @@ curl -X PATCH \
 | --- | --- |
 | `id` | The ID of the resource that you are adding to the library. |
 | `type` | The type of resource that you are adding to the library. |
+
+{style="table-layout:auto"}
 
 **Response**
 
@@ -536,6 +552,8 @@ DELETE /libraries/{LIBRARY_ID}/relationships/{RESOURCE_TYPE}
 | `{LIBRARY_ID}` | The ID of the library whose resources you want to remove. |
 | `{RESOURCE_TYPE}` | The type of resource that you are removing. The following values are accepted: <ul><li>`data_elements`</li><li>`extensions`</li><li>`rules`</li></ul> |
 
+{style="table-layout:auto"}
+
 **Request**
 
 The following request removes a rule from a library. Any existing rules that are not included in the `data` array are not deleted.
@@ -562,6 +580,8 @@ curl -X DELETE \
 | --- | --- |
 | `id` | The ID of the resource that you are removing from the library. |
 | `type` | The type of resource that you are removing from the library. |
+
+{style="table-layout:auto"}
 
 **Response**
 
@@ -593,6 +613,8 @@ POST /libraries/{LIBRARY_ID}/relationships/environment
 | --- | --- |
 | `{LIBRARY_ID}` | The ID of the library that you want to assign. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -615,6 +637,8 @@ curl -X GET \
 | --- | --- |
 | `id` | The ID of the environment that you assign the library to. |
 | `type` | Must be set to `environments`. |
+
+{style="table-layout:auto"}
 
 **Response**
 
@@ -647,6 +671,8 @@ PATCH /libraries/{LIBRARY_ID}
 | --- | --- |
 | `LIBRARY_ID` | The `id` of the library that you want to transition. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 The following request transitions the state of an existing library, based on the value of `meta.action` provided in the payload. The available actions for a library depend on its current publishing state, as outlined in the [publishing flow](../../launch-reference/publishing/publishing-flow.md#state).
@@ -674,6 +700,8 @@ curl -X PUT \
 | `meta.action` | The specific transition action that you want to make on the library. The following actions are available, depending on the library's current publishing state: <ul><li>`develop`</li><li>`submit`</li><li>`approve`</li><li>`reject`</li></ul> |
 | `id` | The `id` of the library you want to update. This should match the `{LIBRARY_ID}` value provided in the request path. |
 | `type` | The type of resource being updated. For this endpoint, the value must be `libraries`. |
+
+{style="table-layout:auto"}
 
 **Response**
 
@@ -778,6 +806,8 @@ POST /libraries/{LIBRARY_ID}/builds
 | Parameter | Description |
 | --- | --- |
 | `LIBRARY_ID` | The `id` of the library that you want to publish. |
+
+{style="table-layout:auto"}
 
 **Request**
 
@@ -887,6 +917,8 @@ GET  /libraries/{LIBRARY_ID}/data_elements
 | Parameter | Description |
 | --- | --- |
 | `{LIBRARY_ID}` | The `id` of the library whose data elements you want to list. |
+
+{style="table-layout:auto"}
 
 **Request**
 
@@ -1026,6 +1058,8 @@ GET  /libraries/{LIBRARY_ID}/extensions
 | --- | --- |
 | `{LIBRARY_ID}` | The `id` of the library whose extensions you want to list. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -1154,6 +1188,8 @@ GET  /libraries/{LIBRARY_ID}/rules
 | --- | --- |
 | `{LIBRARY_ID}` | The `id` of the library whose rules you want to list. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -1264,6 +1300,8 @@ GET  /libraries/{LIBRARY_ID}/environment
 | --- | --- |
 | `{LIBRARY_ID}` | The `id` of the library whose environment you want to look up. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -1372,6 +1410,8 @@ GET  /libraries/{LIBRARY_ID}/property
 | Parameter | Description |
 | --- | --- |
 | `{LIBRARY_ID}` | The `id` of the library whose property you want to look up. |
+
+{style="table-layout:auto"}
 
 **Request**
 
@@ -1492,6 +1532,8 @@ GET  /libraries/{LIBRARY_ID}/upstream_library
 | Parameter | Description |
 | --- | --- |
 | `{LIBRARY_ID}` | The `id` of the library whose upstream library you want to look up. |
+
+{style="table-layout:auto"}
 
 **Request**
 

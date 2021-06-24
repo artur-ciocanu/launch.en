@@ -34,6 +34,8 @@ GET /libraries/{LIBRARY_ID}/builds
 | --- | --- |
 | `LIBRARY_ID` | The `id` of the library whose builds you want to list. |
 
+{style="table-layout:auto"}
+
 >[!NOTE]
 >
 >Using query parameters, listed builds can be filtered based on the following attributes:<ul><li>`created_at`</li><li>`status`</li><li>`token`</li><li>`updated_at`</li></ul>See the guide on [filtering responses](../guides/filtering.md) for more information.
@@ -148,6 +150,8 @@ GET /builds/{BUILD_ID}
 | --- | --- |
 | `BUILD_ID` | The `id` of the build that you want to look up. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -246,6 +250,8 @@ POST /libraries/{LIBRARY_ID}/builds
 | Parameter | Description |
 | --- | --- |
 | `LIBRARY_ID` | The `id` of the library that you are defining the build under. |
+
+{style="table-layout:auto"}
 
 **Request**
 
@@ -347,6 +353,8 @@ PATCH /builds/{BUILD_ID}
 | --- | --- |
 | `BUILD_ID` | The `id` of the build that you want to republish. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 The following request updates the `app_id` for an existing app configuration.
@@ -374,6 +382,8 @@ curl -X PATCH \
 | `id` | The `id` of the build you want to update. This should match the `{BUILD_ID}` value provided in the request path. |
 | `type` | The type of resource being updated. For this endpoint, the value must be `builds`. |
 | `meta.action` | The type of PATCH action to be performed. Must be set to `republish`. |
+
+{style="table-layout:auto"}
 
 **Response**
 
@@ -469,6 +479,8 @@ GET  /builds/{BUILD_ID}/data_elements
 | Parameter | Description |
 | --- | --- |
 | `{BUILD_ID}` | The `id` of the build whose data elements you want to list. |
+
+{style="table-layout:auto"}
 
 **Request**
 
@@ -608,6 +620,8 @@ GET  /builds/{BUILD_ID}/extensions
 | --- | --- |
 | `{BUILD_ID}` | The `id` of the build whose extensions you want to list. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -736,6 +750,8 @@ GET  /builds/{BUILD_ID}/rules
 | --- | --- |
 | `{BUILD_ID}` | The `id` of the build whose rules you want to list. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -846,6 +862,8 @@ GET  /builds/{BUILD_ID}/library
 | --- | --- |
 | `{BUILD_ID}` | The `id` of the build whose library you want to look up. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -955,6 +973,8 @@ GET  /builds/{BUILD_ID}/environment
 | Parameter | Description |
 | --- | --- |
 | `{BUILD_ID}` | The `id` of the build whose environment you want to look up. |
+
+{style="table-layout:auto"}
 
 **Request**
 

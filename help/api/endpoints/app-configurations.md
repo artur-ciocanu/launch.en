@@ -26,6 +26,8 @@ GET /companies/{COMPANY_ID}/app_configurations
 | --- | --- |
 | `COMPANY_ID` | The `id` of the [company](./companies.md) that owns the app configurations. |
 
+{style="table-layout:auto"}
+
 >[!NOTE]
 >
 >Using query parameters, listed app configurations can be filtered based on the following attributes:<ul><li>`app_id`</li><li>`created_at`</li><li>`key_type`</li><li>`messaging_service`</li><li>`name`</li><li>`platform`</li><li>`updated_at`</li></ul>See the guide on [filtering responses](../guides/filtering.md) for more information.
@@ -103,6 +105,8 @@ GET /app_configurations/{APP_CONFIGURATION_ID}
 | --- | --- |
 | `APP_CONFIGURATION_ID` | The `id` of the app configuration that you want to look up. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -165,6 +169,8 @@ POST /companies/{COMPANY_ID}/app_configurations
 | --- | --- |
 | `COMPANY_ID` | The `id` of the [company](./companies.md) that you are defining the app configuration under. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -200,6 +206,8 @@ curl -X POST \
 | `messaging_service` | The messaging service associated with the app, such as [Apple Push Notification service (APNs)](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html) and [Firebase Cloud Messaging (FCM)](https://firebase.google.com/docs/cloud-messaging). This determines which key types can be used. |
 | `key_type` | Represents the protocol that a push-service vendor supports and determines the format of the `push_credential` object. As protocols evolve for messaging services, new `key_type` values are created to support the updated protocols. |
 | `push_credential` | The actual credential value, which is encrypted at rest. This field is not normally decrypted or included in API responses. Only certain Adobe services can get a response containing a decrypted push credential. |
+
+{style="table-layout:auto"}
 
 **Response**
 
@@ -252,6 +260,8 @@ PUT /app_configurations/{APP_CONFIGURATION_ID}
 | --- | --- |
 | `APP_CONFIGURATION_ID` | The `id` of the app configuration that you want to update. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 The following request updates the `app_id` for an existing app configuration.
@@ -279,6 +289,8 @@ curl -X PUT \
 | `attributes` | An object whose properties represent the attributes to be updated for the app configuration. Each key represents the particular app configuration attribute to be updated, along with the corresponding value it should be updated to.<br><br>The following attributes can be updated for app configurations:<ul><li>`app_id`</li><li>`key_type`</li><li>`messaging_service`</li><li>`name`</li><li>`platform`</li><li>`push_credential`</li></ul> |
 | `id` | The `id` of the app configuration you want to update. This should match the `{APP_CONFIGURATION_ID}` value provided in the request path. |
 | `type` | The type of resource being updated. For this endpoint, the value must be `app_configurations`. |
+
+{style="table-layout:auto"}
 
 **Response**
 
@@ -330,6 +342,8 @@ DELETE /app_configurations/{APP_CONFIGURATION_ID}
 | Parameter | Description |
 | --- | --- |
 | `APP_CONFIGURATION_ID` | The `id` of the app configuration that you want to delete. |
+
+{style="table-layout:auto"}
 
 **Request**
 

@@ -164,6 +164,8 @@ GET /audit_events/{AUDIT_EVENT_ID}
 | --- | --- |
 | `AUDIT_EVENT_ID` | The `id` of the audit event that you want to look up. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell

@@ -114,6 +114,8 @@ GET /companies/{COMPANY_ID}
 | --- | --- |
 | `{COMPANY_ID}` | The `id` value of the company you want to look up. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell

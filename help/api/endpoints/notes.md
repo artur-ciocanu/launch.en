@@ -50,6 +50,8 @@ GET /{RESOURCE_TYPE}/{RESOURCE_ID}/notes
 | `RESOURCE_TYPE` | The type of resource you are fetching notes for. Must be one of the following values: <ul><li>`data_elements`</li><li>`extensions`</li><li>`libraries`</li><li>`properties`</li><li>`rule_components`</li><li>`rules`</li></ul> |
 | `RESOURCE_ID` | The `id` of the specific resource whose notes you want to list. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 The following request lists the notes attached to a library.
@@ -122,6 +124,8 @@ GET /notes/{NOTE_ID}
 | --- | --- |
 | `NOTE_ID` | The `id` of the note that you want to look up. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -186,6 +190,8 @@ POST /{RESOURCE_TYPE}/{RESOURCE_ID}/notes
 | `RESOURCE_TYPE` | The type of resource you are creating a note for. Must be one of the following values: <ul><li>`data_elements`</li><li>`extensions`</li><li>`libraries`</li><li>`properties`</li><li>`rule_components`</li><li>`rules`</li></ul> |
 | `RESOURCE_ID` | The `id` of the specific resource that you want to create a note for. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 The following request creates a new note for a property.
@@ -211,6 +217,8 @@ curl -X POST \
 | --- | --- |
 | `type` | **(Required)** The type of resource being updated. For this endpoint, the value must be `notes`. |
 | `attributes.text` | **(Required)** The text that comprises the note. Each note is limited to 512 Unicode characters. |
+
+{style="table-layout:auto"}
 
 **Response**
 

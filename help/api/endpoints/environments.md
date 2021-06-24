@@ -19,6 +19,8 @@ Environments come in three types (or stages), with each type having a different 
 | Staging | One |
 | Production | One |
 
+{style="table-layout:auto"}
+
 These environment types have similar behavior, but are used at different stages of the [tag publishing workflow](../../launch-reference/publishing/publishing-flow.md).
 
 An environment belongs to exactly one [property](./properties.md).
@@ -42,6 +44,8 @@ GET /properties/{PROPERTY_ID}/environments
 | Parameter | Description |
 | --- | --- |
 | `PROPERTY_ID` | The `id` of the property that owns the environments. |
+
+{style="table-layout:auto"}
 
 >[!NOTE]
 >
@@ -164,6 +168,8 @@ GET /environments/{ENVIRONMENT_ID}
 | --- | --- |
 | `ENVIRONMENT_ID` | The `id` of the environment that you want to look up. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -270,6 +276,8 @@ POST /properties/{PROPERTY_ID}/environments
 | --- | --- |
 | `PROPERTY_ID` | The `id` of the [property](./properties.md) that you are defining the environment under. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 The following request creates a new environment for the specified property. The call also associates the environment with an existing host through the `relationships` property. See the guide on [relationships](../guides/relationships.md) for more information.
@@ -312,6 +320,8 @@ curl -X POST \
 | `attributes.stage` | The stage for the environment (development, staging, or production). |
 | `id` | The `id` of the environment you want to update. This should match the `{ENVIRONMENT_ID}` value provided in the request path. |
 | `type` | The type of resource being updated. For this endpoint, the value must be `environments`. |
+
+{style="table-layout:auto"}
 
 **Response**
 
@@ -408,6 +418,8 @@ PATCH /environments/{ENVIRONMENT_ID}
 | --- | --- |
 | `ENVIRONMENT_ID` | The `id` of the environment that you want to update. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 The following request updates the `name` for an existing environment.
@@ -435,6 +447,8 @@ curl -X PUT \
 | `attributes` | An object whose properties represent the attributes to be updated for the environment. The following environment attributes can be updated: <ul><li>`archive`</li><li>`archive_passphrase`</li><li>`include_debug_library`</li><li>`name`</li><li>`path`</li></ul> See the example call for [creating an environment](#create) for a list of attributes and their use case. |
 | `id` | The `id` of the environment you want to update. This should match the `{ENVIRONMENT_ID}` value provided in the request path. |
 | `type` | The type of resource being updated. For this endpoint, the value must be `environments`. |
+
+{style="table-layout:auto"}
 
 **Response**
 
@@ -531,6 +545,8 @@ DELETE /environments/{ENVIRONMENT_ID}
 | --- | --- |
 | `ENVIRONMENT_ID` | The `id` of the environment that you want to delete. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -564,6 +580,8 @@ GET  /environments/{ENVIRONMENT_ID}/builds
 | Parameter | Description |
 | --- | --- |
 | `{ENVIRONMENT_ID}` | The `id` of the environment whose builds you want to list. |
+
+{style="table-layout:auto"}
 
 **Request**
 
@@ -679,6 +697,8 @@ GET  /environments/{ENVIRONMENT_ID}/host
 | --- | --- |
 | `{ENVIRONMENT_ID}` | The `id` of the environment whose host you want to look up. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -742,6 +762,8 @@ GET  /environments/{ENVIRONMENT_ID}/library
 | Parameter | Description |
 | --- | --- |
 | `{ENVIRONMENT_ID}` | The `id` of the environment whose library you want to look up. |
+
+{style="table-layout:auto"}
 
 **Request**
 
@@ -854,6 +876,8 @@ GET  /environments/{ENVIRONMENT_ID}/property
 | Parameter | Description |
 | --- | --- |
 | `{ENVIRONMENT_ID}` | The `id` of the environment whose property you want to look up. |
+
+{style="table-layout:auto"}
 
 **Request**
 

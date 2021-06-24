@@ -215,6 +215,8 @@ GET /extension_packages/{EXTENSION_PACKAGE_ID}
 | --- | --- |
 | `EXTENSION_PACKAGE_ID` | The `id` of the extension package that you want to look up. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 ```shell
@@ -680,6 +682,8 @@ POST /extension_packages/{EXTENSION_PACKAGE_ID}
 | --- | --- |
 | `EXTENSION_PACKAGE_ID` | The `id` of the extension package that you want to update. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 As with [creating an extension package](#create), a local version of the updated package must be uploaded via form data.
@@ -916,6 +920,8 @@ PATCH /extension_packages/{EXTENSION_PACKAGE_ID}
 | Parameter | Description |
 | --- | --- |
 | `EXTENSION_PACKAGE_ID` | The `id` of the extension package that you want to privately release. |
+
+{style="table-layout:auto"}
 
 **Request**
 
@@ -1160,6 +1166,8 @@ PATCH /extension_packages/{EXTENSION_PACKAGE_ID}
 | --- | --- |
 | `EXTENSION_PACKAGE_ID` | The `id` of the extension package that you want to discontinue. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 A private release is achieved by supplying an `action` with a value of `release_private` in the `meta` of the request data.
@@ -1250,6 +1258,8 @@ GET /extension_packages/{EXTENSION_PACKAGE_ID}/versions
 | Parameter | Description |
 | --- | --- |
 | `EXTENSION_PACKAGE_ID` | The `id` of the extension package that whose versions you want to list. |
+
+{style="table-layout:auto"}
 
 **Request**
 
