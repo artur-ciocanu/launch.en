@@ -296,7 +296,7 @@ You can create a new rule component by making a POST request.
 **API format**
 
 ```http
-POST /company/{RULE_ID}/rule_components
+POST /rules/{RULE_ID}/rule_components
 ```
 
 | Parameter | Description |
@@ -747,6 +747,7 @@ A successful response returns a list of rules that use the specified rule compon
   ]
 }
 ```
+
 ### Look up the related extension for a rule component {#extension}
 
 You can look up the extension that provides a rule component by appending `/extension` to the path of a lookup request.
