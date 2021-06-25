@@ -161,6 +161,7 @@ git-repo: https://github.com/AdobeDocs/launch.en
     * [Delegate descriptor IDs](./api/guides/delegate-descriptor-ids.md)
     * [Filtering responses](./api/guides/filtering.md)
     * [Relationships](./api/guides/relationships.md)
+    * [Search](./api/guides/search.md)
   * Endpoints {#endpoints}
     * [App configurations](./api/endpoints/app-configurations.md)
     * [Audit events](./api/endpoints/audit-events.md)
@@ -178,6 +179,7 @@ git-repo: https://github.com/AdobeDocs/launch.en
     * [Properties](./api/endpoints/properties.md)
     * [Rule components](./api/endpoints/rule-components.md)
     * [Rules](./api/endpoints/rules.md)
+    * [Search](./api/endpoints/search.md)
 * [FAQ](./faq.md)
 * Release notes {#release-notes}
   * [Latest](release-notes/current.md)
