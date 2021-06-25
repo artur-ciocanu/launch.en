@@ -9,7 +9,7 @@ exl-id: 270c7ea0-a81f-4d3a-b728-ed46f14ed6cd
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-An extension is a packaged set of code that extends the Adobe Experience Platform Data Collection user interface and the tag library functionality.
+An extension is a packaged set of code that extends the Data Collection user interface and tag library functionality.
 
 Adding an extension adds new data elements and new options for creating rules.
 

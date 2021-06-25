@@ -29,7 +29,7 @@ If you are copying a rule or a data element, in the copy dialog you may use the 
 
 >[!NOTE]
 >
->In the Adobe Experience Platform Data Collection user interface, it is not possible to copy resources to another Property if one Property is configured for extension development and the other Property is not.
+>In the Data Collection UI for Adobe Experience Platform, it is not possible to copy resources to another Property if one Property is configured for extension development and the other Property is not.
 
 Once you've configured the behavior you want, select **[!UICONTROL Copy]**.
 

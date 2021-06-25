@@ -11,7 +11,7 @@ exl-id: 51365bb9-a877-448a-9287-f33c19b8ab83
 
 In web extensions, each event, condition, action, and data element type has both a view which allows users to modify settings and a library module to act upon those user-defined settings.
 
-As the following high-level diagram shows, the extension's event type view will be shown inside an iframe within the application integrated with Adobe Experience Platform data collection. The user then uses the view to modify settings which are then saved to data collection's data storage. When the tag runtime library is built, both the extension's event type library module as well as the user-defined settings will be included in the runtime library. At runtime, tags will inject the user-defined settings into the library module.
+As the following high-level diagram shows, the extension's event type view will be shown inside an iframe within the application integrated with Adobe Experience Platform. The user then uses the view to modify settings which are then saved within Platform. When the tag runtime library is built, both the extension's event type library module as well as the user-defined settings will be included in the runtime library. At runtime, Platform will inject the user-defined settings into the library module.
 
 ![extension flow diagram](../images/flow/web/extension-flow.png)
 

@@ -56,7 +56,7 @@ This section describes the data elements available in the Common Analytics Plugi
 
 ### getGeoCoordinates
 
-Allows users to leverage the native Adobe Experience Platform Data Collection UI to set up and configure the getGeoCoordinates plugin. 
+Allows users to leverage the native Data Collection UI in Adobe Experience Platform to set up and configure the getGeoCoordinates plugin. 
 
 ### getNewRepeat
 

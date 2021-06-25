@@ -38,7 +38,7 @@ module.exports = function(settings, trigger) {
 };
 ```
 
-If you want to make the duration configurable by the Adobe Experience Platform data collection user, then the option to input and save a duration to the settings object is required. The object might look something like this:
+If you want to make the duration configurable by the Adobe Experience Platform user, then the option to input and save a duration to the settings object is required. The object might look something like this:
 
 ```js
 {

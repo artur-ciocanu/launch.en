@@ -1,6 +1,6 @@
 ---
 title: Create an Exchange Listing for an Extension
-description: Learn how to add your extension in Adobe Experience Platform to the public catalog.
+description: Learn how to add your extension to the public catalog in Adobe Experience Platform.
 exl-id: 93e83a62-6089-48e9-b521-82f972b36ac4
 ---
 # Create an exchange listing for an extension
@@ -9,7 +9,7 @@ exl-id: 93e83a62-6089-48e9-b521-82f972b36ac4
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-Tags in Adobe Experience Platform has a single catalog where users can view extensions that are available for installation. This catalog is available within the product and contains extensions of three types:
+Adobe Experience Platform has a single unified catalog where users can view tag extensions that are available for installation. This catalog is available within the product and contains extensions of three types:
 
 1. **Public extensions**: These are completed extensions designed for production use by any user.
 2. **Private extensions**: These are completed extensions designed for production, but were developed by other users in your company and are only available to users within your company.
@@ -27,7 +27,7 @@ If you already have a company account, or if you do not plan on ever completing 
 
 >[!NOTE]
 >
->The following process details the creation of an application listing in the Adobe Exchange program. This is the term used for the various integrations, and extensions in Adobe Experience Platform data collection. 
+>The following process details the creation of an application listing in the Adobe Exchange program. This is the term used for the various integrations, and extensions in Adobe Experience Platform. 
 
 ![Experience Cloud App Manager link location](../images/getting-started/app-mgr-link.png)
 
@@ -35,13 +35,15 @@ If you already have a company account, or if you do not plan on ever completing 
 2. Select the **Create New Application** tab, and then select **Create New App** for a customized solution, or select an applicable template.
 3. Provide your listing information. For detailed information on App Manager check out the full [article](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360024197931). Listing information should be very clear about what the extension does and why it is useful. The listing functions as a marketing space for your app. Promote your extension here using clear descriptions, links to landing pages on your site, links to help docs or support email addresses, and so on. Although space in extension views is limited, the Exchange listing provides an opportunity to promote both your extension and your company. The following are suggestions to improve promotion of the extension:
    - **App Icon** – Make sure the icon for the Exchange listing has the appropriate dimensions, 512 x 512 for png or 1:1 aspect ratio for jpg. 
-  **Note**: This is a different file format than used in your extension code. The extension itself will contain an svg file as the [icon](../manifest.md).
+    >[!NOTE]
+    >
+    >This is a different file format than used in your extension code. The extension itself will contain an svg file as the [icon](../manifest.md).
    - **Featured Image** - Get attention by using an image that can stand alone and will show your brand and highlight your application. The Featured Image is the one shown when someone shares a link to your Exchange listing or posts about it on social media. It therefore needs to be a model representation of your brand.
    - **App Publisher's Logo** - This is your corporate logo, make sure the icon has the appropriate dimensions of 1280 x 720, or 2560 x 1440 (16:9) in png or jpg format.
    - **Configuration Instructions** – Inform customers how to configure your Adobe Experience Platform extension. Make sure they understand any required settings and next steps when your [configuration view](../configuration.md) appears immediately after installing your extension in a property. 
    - **Tags** - On the first page of editing your listing, please be sure to include the word "Launch" in the 'Custom Tags' field. This will make your listing appear in searches for Data Collection tags in the Exchange marketplace:
      ![](../images/getting-started/custom-tags.jpg)
-   - **Sandboxes** - Your access to Adobe Solutions is through a Sandbox account where you have access to a fully functioning version of Adobe Experience Platform. These Sandbox accounts are requested as you create your application listing. In the **Connections** section select the specific connections that are applicable for the application you created (your data collection extension), and when you hit **Save**, the sandbox request will be generated if needed.  
+   - **Sandboxes** - Your access to Adobe Solutions is through a Sandbox account where you have access to a fully functioning version of Adobe Experience Platform. These Sandbox accounts are requested as you create your application listing. In the **Connections** section select the specific connections that are applicable for the application you created (your tag extension), and when you hit **Save**, the sandbox request will be generated if needed.  
 4. Submit your listing. The Adobe Exchange team will review your application and provide feedback if updates are required. If you mark the **publish immediately** checkbox when you submit your listing, it will be published immediately upon approval. If you want to publish your application at a later time, leave the checkbox unchecked. When your extension listing is approved, a blue **Publish** button will appear next to it on your app (extension) listings page.
 
 ### Create an effective listing

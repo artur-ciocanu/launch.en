@@ -1,6 +1,6 @@
 ---
 title: Context in Edge Extension Modules
-description: Learn about the context object and the role it plays in interacting with library modules in Adobe Experience Platform tag edge extensions.
+description: Learn about the context object and the role it plays in interacting with library modules in tag extensions of edge properties.
 exl-id: 6f392d90-135b-4790-a733-f20effb23bfb
 ---
 # Context in edge extension modules
@@ -88,7 +88,9 @@ module.exports = (context) => {
 
 The first time this action is executed, `ruleStash` starts as `undefined` and is therefore initialized as an empty object. The next time when the action is executed, it receives `ruleStash` that was returned when the action was previously called. Using an object as `ruleStash` allows you to add new data without losing data previously set by other actions from our extension.
 
-**Note**: Be careful to always return the full extension rule stash when using this strategy. If you instead only return a value, it will overwrite any other properties you may have set.
+>[!NOTE]
+>
+>Be careful to always return the full extension rule stash when using this strategy. If you instead only return a value, it will overwrite any other properties you may have set.
 
 ## Utilities
 

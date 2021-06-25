@@ -1,6 +1,6 @@
 ---
 title: Action Types for Web Extensions
-description: Learn how to define an action-type library module for a tag web extension in Adobe Experience Platform.
+description: Learn how to define an action-type library module for a tag extension in a web property.
 exl-id: f322495b-341f-445d-b796-ec04efe43e30
 ---
 # Action types for web extensions

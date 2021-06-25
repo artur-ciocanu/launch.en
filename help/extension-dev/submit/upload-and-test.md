@@ -80,9 +80,11 @@ After you sign into the Data Collection UI, the Properties screen is displayed. 
 
 ![](../images/getting-started/properties-screen.png)
 
-You see 'AEP' and 'Demo Sandbox' properties here but you won't see any properties on your screen the first time you sign in. Select **New Property** to create one. Enter a name and a URL. Use the URL of your test site or the page where you'll be testing your extension. This domain field can be used by some extensions or by a condition using the Core extension. 
+You will not see any properties on your screen the first time you sign in. Select **New Property** to create one. Enter a name and a URL. Use the URL of your test site or the page where you'll be testing your extension. This domain field can be used by some extensions or by a condition using the Core extension. 
 
->**Note**: `localhost` will not work as a URL value. Instead, use any mock value for testing if you are using a `localhost` URL. For example, example.com.
+>[!NOTE]
+>
+>`localhost` will not work as a URL value. Instead, use any mock value for testing if you are using a `localhost` URL. For example, example.com.
 
 To use this property for extension development testing, you must expand the **ADVANCED OPTIONS** and make sure to check the box for **Configure for extension development**.
 
@@ -214,7 +216,9 @@ When you discover changes that need to be made to your extension package, the it
 1. Use the Packager tool to create a new .zip package
 1. Use the Uploader tool to upload your new .zip package. The process follows the same instructions as before regarding the initial upload. However, you will notice that because there is already an extension package of that name in development mode, this new package will overwrite the older version instead of creating a new one. 
    
-   **Note**: Arguments can be passed on the command line to save time by avoiding the repeated entering of credentials. For more information on this, read the [reactor-uploader documentation](https://www.npmjs.com/package/@adobe/reactor-uploader). 
+   >[!NOTE]
+   >
+   >Arguments can be passed on the command line to save time by avoiding the repeated entering of credentials. For more information on this, read the [reactor-uploader documentation](https://www.npmjs.com/package/@adobe/reactor-uploader). 
 1. The installation step can be skipped when updating an existing package.
 1. Modify resources - if the configuration for any of your extension components has been changed, you will need to update those resources in the Data Collection UI.
 1. Add your latest changes to your Library and build again.
@@ -223,5 +227,5 @@ When you discover changes that need to be made to your extension package, the it
 <!--
 ## Document {#document}
 
-Your [exchange listing](./create-listing.md) is a great place for marketing and support information for your extension, but our tags [Help Docs](https://docs.adobe.com/content/help/en/launch/using/overview.html) are used every day by our customers. We encourage you to submit a pull request to [add your extension documentation](https://github.com/AdobeDocs/launch.en/blob/master/help/extension-reference/3rd-party-extensions.md) into the tags user docs. Open source docs for the win! 🚀
+Your [exchange listing](./create-listing.md) is a great place for marketing and support information for your extension, but our tags [Help Docs](https://experienceleague.adobe.com/docs/launch/using/overview.html) are used every day by our customers. We encourage you to submit a pull request to [add your extension documentation](https://github.com/AdobeDocs/launch.en/blob/master/help/extension-reference/3rd-party-extensions.md) into the tags user docs. Open source docs for the win! 🚀
 -->

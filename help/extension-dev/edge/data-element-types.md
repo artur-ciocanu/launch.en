@@ -1,6 +1,6 @@
 ---
 title: Data Element Types for Edge Extensions
-description: Learn how to define an data-element-type library module for a tag edge extension in Adobe Experience Platform.
+description: Learn how to define an data-element-type library module for a tag extension in an edge property.
 exl-id: f12d6f0d-8504-4564-8ebb-01ac3e552238
 ---
 # Data-element types in edge extensions
@@ -26,7 +26,7 @@ module.exports = (context) => {
 };
 ```
 
-If you want to make the data returned for the data layer configurable by the Adobe Experience Platform data collection user, you can allow the user to input a key name and then save the name to the `settings` object. The object might look something like this.
+If you want to make the data returned for the data layer configurable by the Adobe Experience Platform user, you can allow the user to input a key name and then save the name to the `settings` object. The object might look something like this.
 
 ```js
 {

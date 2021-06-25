@@ -12,7 +12,7 @@ exl-id: 64e40955-82a7-4985-bf67-edc702a3eebb
 Once testing and documenting are complete, the extension is ready for release. There are currently two types of releases that you can perform:
 
 - **Private release**: The completed extension is available to all properties within your company, but is not available to any other companies in Adobe Experience Platform.
-- **Public release**: The completed extension is available in the public marketplace for all Adobe Experience Platform data collection users.
+- **Public release**: The completed extension is available in the public marketplace for all Adobe Experience Platform users.
 
 >[!NOTE]
 >

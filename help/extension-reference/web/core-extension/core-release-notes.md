@@ -34,7 +34,7 @@ v2.0.4
 
 * Added Data Element Support for various fields - Data Element support has been added to the following events: 'Time on Page', 'Enters Viewport', 'Hover' and 'Media Time Played'. As well as the following Conditions: 'Time on Site' and 'Value Comparison'
 * Adds support for default behavior for ctrl/cmd + click, and middle mouse click when using Link Delay
-* **Marked link delay on the click event as “no longer supported”.** - more information can be found on the [Adobe Exprience Platform Data Collection Blog](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/explainer-link-delay/ba-p/398403)
+* **Marked link delay on the click event as “no longer supported”.** - more information can be found on the [Data Collection Blog](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/explainer-link-delay/ba-p/398403) for Adobe Experience Platform
 
 ## January 6, 2021
 

@@ -11,7 +11,7 @@ exl-id: 1c026502-5d78-4ada-961b-c323125f8cfe
 
 In edge extensions, each condition, action, and data element type has both a view which allows users to modify settings and a library module to act upon those user-defined settings.
 
-As the following high-level diagram shows, the extension's action type view is shown inside an iframe within the application integrated with Adobe Experience Platform data collection. The view is then used to modify settings which are then saved within data collection. When the tag runtime library is built, both the extension's action type library module as well as the user-defined settings will be included in the runtime library that gets deployed to the edge node. User-defined settings from data collection are injected into the library module at runtime.
+As the following high-level diagram shows, the extension's action type view is shown inside an iframe within the application integrated with Adobe Experience Platform. The view is then used to modify settings which are then saved within Platform. When the tag runtime library is built, both the extension's action type library module as well as the user-defined settings will be included in the runtime library that gets deployed to the edge node. User-defined settings from Platform are injected into the library module at runtime.
 
 ![extension flow diagram](../images/flow/edge/event-processing-flow.png)
 
@@ -23,6 +23,6 @@ The rule processing flow contains the following phases:
 
 1. The `settings` and the `trigger` method are provided to the event library module at startup.
 2. When the event library module determines the event has occurred, the event library module calls `trigger`.
-3. Data collection passes `settings` into the rule’s condition-type library modules where conditions are then evaluated.
+3. Platform passes `settings` into the rule’s condition-type library modules where conditions are then evaluated.
 4. Each condition type returns whether a condition evaluates to true.
 5. If all conditions pass, the rule’s actions are executed.

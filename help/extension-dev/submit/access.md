@@ -34,7 +34,7 @@ Some of you may have access to more than one organization (Org). In order to add
 
 A product profile is a group. Individual rights are assigned to product profiles and any users in the profile will inherit those rights.
 
-Choose the **[!UICONTROL Products]** link at the top, and **[!UICONTROL Experience Cloud]** on the left. If you do not have Adobe Experience Platform Data Collection listed, customers should contact their account team and partners should email <ExchangeTechEC@adobe.com>.
+Choose the **[!UICONTROL Products]** link at the top, and **[!UICONTROL Experience Cloud]** on the left. If you do not have Adobe Experience Platform Launch listed, customers should contact their account team and partners should email <ExchangeTechEC@adobe.com>.
 
 ![Admin console Products tab](../images/getting-started/admin-console-products-launch.png)
 
@@ -79,4 +79,4 @@ This completes the required setup in Admin Console. You and your team members th
 
 ## Confirm provisioning
 
-After your company is provisioned with access to tags and your users are set up as described above, you should be able to access the [tags](https://launch.adobe.com/) production environment. If you have been provisioned for tags and have completed the Admin Console steps above, but still cannot sign in to the tags workspace, please contact your Adobe support representatives.
+After your company is provisioned with access to tags and your users are set up as described above, you should be able to access the production environment from the [Data Collection UI](https://launch.adobe.com/). If you have been provisioned for tags and have completed the Admin Console steps above, but still cannot sign in to the tags workspace, please contact your Adobe support representatives.

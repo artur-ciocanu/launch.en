@@ -1,6 +1,6 @@
 ---
 title: Action Types for Edge Extensions
-description: Learn how to define an action-type library module for a tag edge extension in Adobe Experience Platform.
+description: Learn how to define an action-type library module for a tag extension in an edge property.
 exl-id: 76c66d9c-cd40-40f1-a673-cac82e44e437
 ---
 # Action types for edge extensions

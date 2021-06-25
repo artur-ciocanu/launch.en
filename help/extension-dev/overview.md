@@ -1,6 +1,6 @@
 ---
 title: Extension development overview
-description: Learn about the primary components of different tag extension types and the extension development process in Adobe Experience Platform data collection.
+description: Learn about the primary components of different tag extension types and the extension development process in Adobe Experience Platform.
 exl-id: 0dd90fa7-91e5-4297-b2c2-5c52ee893357
 ---
 # Extension development overview
@@ -148,4 +148,4 @@ Each library module (the logic to be emitted within the tag runtime library) mus
 
 Each view must be an HTML file capable of being loaded into an iframe within the tags application. The view must include a script provided by tags and conform to a small API in order to communicate with the application. There are no restrictions as to what libraries are used within your views. In other words, you may use jQuery, Underscore, React, Angular, Bootstrap, or other libraries. We do, however, hope that you will make your extension have a similar look and feel to the application.
 
-It is recommended that you put all view-related files (HTML, CSS, JavaScript) within a single subdirectory that is isolated from the library module files. In `extension.json` you will describe where this view subdirectory is located. Tags will then serve this subdirectory (and only this subdirectory) from its web servers.
+It is recommended that you put all view-related files (HTML, CSS, JavaScript) within a single subdirectory that is isolated from the library module files. In `extension.json` you will describe where this view subdirectory is located. Platform will then serve this subdirectory (and only this subdirectory) from its web servers.

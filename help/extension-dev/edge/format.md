@@ -1,6 +1,6 @@
 ---
 title: Library Modules in Edge Extensions
-description: Format library modules for tag edge extensions in Adobe Experience Platform.
+description: Format library modules for tag extensions in an edge property.
 exl-id: 9264898d-c872-4089-ae3e-84a3ccc02f46
 ---
 # Library modules in edge extensions
