@@ -46,14 +46,10 @@ echo -n 'Example value' | gpg --armor --encrypt -r "Tags Data Encryption <launch
 
 This command can be broken down as follows:
 
-- Input is supplied to the `gpg` command.
-- `--armor` creates ASCII-armored output instead of binary. This simplifies
-  transferring the value through JSON.
-- `--encrypt` instructs GPG to encrypt the data.
-- `-r` sets the recipient for the data. Only the recipient (the holder of the
-  private key that corresponds to the public key) may decrypt the data. The
-  recipient name of the desired key may be found by examining the output of
-  `gpg --list-keys`.
+* Input is supplied to the `gpg` command.
+* `--armor` creates ASCII-armored output instead of binary. This simplifies transferring the value through JSON.
+* `--encrypt` instructs GPG to encrypt the data.
+* `-r` sets the recipient for the data. Only the recipient (the holder of the private key that corresponds to the public key) may decrypt the data. The recipient name of the desired key may be found by examining the output of `gpg --list-keys`.
 
 The above command uses the public key for `Tags Data Encryption <launch@adobe.com>` to encrypt the value, `Example value`, in ASCII-armored format.
 
