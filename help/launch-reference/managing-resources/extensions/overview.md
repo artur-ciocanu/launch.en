@@ -9,13 +9,9 @@ exl-id: 270c7ea0-a81f-4d3a-b728-ed46f14ed6cd
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-An extension is a packaged set of code that extends the Data Collection user interface and tag library functionality.
+An extension is a packaged set of code that extends the functionalities provided by tags or event forwarding.
 
 Adding an extension adds new data elements and new options for creating rules.
-
->[!NOTE]
->
->Extensions are similar to *tools* in the previous [!DNL Dynamic Tag Management].
 
 Extensions determine the elements that are available when building properties, rules, and data elements. They provide:
 
@@ -57,10 +53,10 @@ See [Extensions Reference](../../../extension-reference/web/overview.md) for det
 
 ## Add a new extension {#add-a-new-extension}
 
-Tags in Adobe Experience Platform is highly extendible. Extensions add core functionality to tags. A common use of extensions is to create integrations with other applications.
+Tags are highly extendible. Extensions add core functionality to tags. A common use of extensions is to create integrations with other applications.
 
 1. From a property's overview page, open the **[!UICONTROL Extensions]** tab.
-2. Select an extension.
+1. Select an extension.
 
    ![]()../../../images/extensions.png)
 

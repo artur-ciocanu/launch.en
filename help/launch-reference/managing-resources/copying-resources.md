@@ -29,7 +29,7 @@ If you are copying a rule or a data element, in the copy dialog you may use the 
 
 >[!NOTE]
 >
->In the Data Collection UI for Adobe Experience Platform, it is not possible to copy resources to another Property if one Property is configured for extension development and the other Property is not.
+>In the Data Collection UI, it is not possible to copy resources to another Property if one Property is configured for extension development and the other Property is not.
 
 Once you've configured the behavior you want, select **[!UICONTROL Copy]**.
 
@@ -61,5 +61,5 @@ All rules and data elements are provided by an extension, so when you copy acros
 The Copy dialog box provides an explanation of exactly what will take place before you begin copying. The above dialog is for a rule, but the same applies to data elements.
 
 1. **Extensions required by these rules are copied.** This lets you know that required extensions will go along with the rule.  These copies follow the same rules as a regular extension copy outlined above.
-2. **Extension settings will NOT be copied if the extension is already installed.** This means if the required extensions already exist on the destination property, the extension remains as is.  If you wish to copy the extension settings as well, you can use the **Replace extension settings on destination property** toggle and the explanation is updated accordingly.
-3. **Data Elements required by these Rules will NOT be copied.** This explanation only applies to rules.  Rules often rely on data elements to function correctly.  If you copy a rule to a new property, you'll also need to copy any required data elements as a separate action.
+1. **Extension settings will NOT be copied if the extension is already installed.** This means if the required extensions already exist on the destination property, the extension remains as is.  If you wish to copy the extension settings as well, you can use the **Replace extension settings on destination property** toggle and the explanation is updated accordingly.
+1. **Data Elements required by these Rules will NOT be copied.** This explanation only applies to rules.  Rules often rely on data elements to function correctly.  If you copy a rule to a new property, you'll also need to copy any required data elements as a separate action.

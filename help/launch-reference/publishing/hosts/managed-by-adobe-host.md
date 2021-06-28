@@ -13,7 +13,7 @@ Adobe-managed hosts are the default host setting for deploying your tag library 
 
 With Adobe-managed hosts, library builds are delivered to a third-party content delivery network (CDN) that Adobe has contracted with. These CDNs operate independently from Adobe, so even when Platform is undergoing maintenance or is otherwise down, your deployed code will continue to function as normal on your sites and applications. The embed code for an Adobe-managed host references the main library file on the CDN so a client device can retrieve the files at runtime.
 
-This document provides an overview of Adobe-managed hosts in Adobe Experience Platform and provides steps on how to create a new Adobe-managed host in the UI.
+This document provides an overview of Adobe-managed hosts in Platform and provides steps on how to create a new Adobe-managed host in the UI.
 
 ## Akamai
 
@@ -56,7 +56,7 @@ When an edge node receives a request for a specific file (such as your library b
 
 #### Edge cache invalidation {#invalidation}
 
-When you upload a new library build the caches on all applicable edge nodes are invalidated. This means that each node considers its cached version to be invalid, regardless of how recently it retrieved a fresh copy. The next time an edge node receives a request for that file, the node retrieves a fresh copy from the origin.
+When you upload a new library build, the caches on all applicable edge nodes are invalidated. This means that each node considers its cached version to be invalid, regardless of how recently it retrieved a fresh copy. The next time an edge node receives a request for that file, the node retrieves a fresh copy from the origin.
 
 Because Akamai has multiple origin servers that replicate files between each other, and because there is no way of knowing which origin received your file first, these node requests can hit an origin that does not have the latest version. It would then cache the older version again. To prevent this from occurring, multiple cache invalidations are performed for each new build on the following intervals:
 

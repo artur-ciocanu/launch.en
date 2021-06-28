@@ -61,8 +61,8 @@ Rule A → Rule B → Rule C → Rule D
 Although the order is always enforced, some rules might be executed immediately when the tag library finishes loading, while others might be executed later. The following occurs when the tag library finishes loading:
 
 1. Rule A is executed immediately.
-2. If the `DOMContentLoaded` browser event (DOM Ready) has already occurred, Rule B and Rule C are executed immediately. Otherwise, Rule B and Rule C are executed later when the [`DOMContentLoaded`](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded) browser event occurs.
-3. If the [`load`](https://developer.mozilla.org/en-US/docs/Web/Events/load) browser event (Window Loaded) has already occurred, Rule D is executed immediately. Otherwise, Rule D will be executed later when the [`load`](https://developer.mozilla.org/en-US/docs/Web/Events/load) browser event occurs. Note that if you've installed the tag library according to the instructions, the tag library *always* finishes loading before the [`load`](https://developer.mozilla.org/en-US/docs/Web/Events/load) browser event occurs.
+1. If the `DOMContentLoaded` browser event (DOM Ready) has already occurred, Rule B and Rule C are executed immediately. Otherwise, Rule B and Rule C are executed later when the [`DOMContentLoaded`](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded) browser event occurs.
+1. If the [`load`](https://developer.mozilla.org/en-US/docs/Web/Events/load) browser event (Window Loaded) has already occurred, Rule D is executed immediately. Otherwise, Rule D will be executed later when the [`load`](https://developer.mozilla.org/en-US/docs/Web/Events/load) browser event occurs. Note that if you've installed the tag library according to the instructions, the tag library *always* finishes loading before the [`load`](https://developer.mozilla.org/en-US/docs/Web/Events/load) browser event occurs.
 
 When applying these principles to your own website, consider the following:
 

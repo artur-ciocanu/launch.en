@@ -65,8 +65,8 @@ One tag rule can be set for every video event (the seven events listed above). C
 The rules have three actions:
 
 1. Set the Adobe Analytics variables. (Create data elements for all or some of the data elements listed above.)
-2. Send the Adobe Analytics beacon.
-3. Clear the Adobe Analytics variables.
+1. Send the Adobe Analytics beacon.
+1. Clear the Adobe Analytics variables.
 
 ## Example tag rule for "Video Start"
 

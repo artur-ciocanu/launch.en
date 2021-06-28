@@ -14,8 +14,8 @@ Adobe Experience Platform allows you to encapsulate changes to your tag-manageme
 At a basic level, each library undergoes the following publishing process:
 
 1. Create a new library (or edit an existing library) in a development environment.
-2. Test the functionality of the library in a staging environment where required.
-3. Deploy the library to your production environment.
+1. Test the functionality of the library in a staging environment where required.
+1. Deploy the library to your production environment.
 
 Consider a situation where you create a new "checkout" event, create a revenue data element related to that event, and make a change to the Adobe Analytics extension configuration to support the new event and data element. You can include all of these changes in a new library, and use the publishing process to test, approve, and publish them as a single unit.
 

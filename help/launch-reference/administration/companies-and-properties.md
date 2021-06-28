@@ -127,7 +127,7 @@ Follow the instructions to create a mobile property.
 
    * **Use HTTPS:** Choose if all data communication should be sent over HTTP or HTTPS.
 
-2. Select **[!UICONTROL Save]**.
+1. Select **[!UICONTROL Save]**.
 
 After your property is created, Platform automatically adds a default host, a set of environments (Development, Staging, and Production), and the default extensions.
 

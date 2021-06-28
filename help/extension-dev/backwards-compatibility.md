@@ -20,19 +20,19 @@ Updates to a tag extension in Adobe Experience Platform must be backward compati
 The following types of changes to your extension are allowed:
 
 1. You may add new components (event types, condition types, etc).
-2. You may add new optional fields to your extension configuration settings.
-3. You may change required fields to optional fields.
+1. You may add new optional fields to your extension configuration settings.
+1. You may change required fields to optional fields.
 
 ## Forbidden changes
 
 The following types of changes to your extension are not allowed:
 
 1. You may not rename a component.
-2. You may not remove a component.
-3. You may not remove a field from a component.
-4. You may not change optional fields to required fields.
-5. You may not add new required fields.
-6. You may not change the API of existing shared modules.
+1. You may not remove a component.
+1. You may not remove a field from a component.
+1. You may not change optional fields to required fields.
+1. You may not add new required fields.
+1. You may not change the API of existing shared modules.
 
 If you make any of these changes, anyone who has installed your extension in their property will immediately begin to have problems such as:
 
@@ -47,9 +47,9 @@ Particularly in this second case, users can be left without a remedy and no way 
 There may be scenarios when you have a valid business reason and you think you really do need to make a forbidden change (listed above).  You still can't do it, but here's what you can do instead:
 
 1. I want to remove a component => Make a new component and deprecate the old one
-2. I want to remove a field from a component => Make a new component with that field removed and deprecate the old one
-3. I want to change an optional field to be required => Make a new component requiring the desired field and deprecate the old one
-4. I want to change the API of a shared module => Make a new shared module and deprecate the old one
+1. I want to remove a field from a component => Make a new component with that field removed and deprecate the old one
+1. I want to change an optional field to be required => Make a new component requiring the desired field and deprecate the old one
+1. I want to change the API of a shared module => Make a new shared module and deprecate the old one
 
 You may be picking up on a common thread.  That's good.  When deprecating an old component, you'll want to notify users of your extension that it has been deprecated and that they need to switch to a new one.  A few suggestions on communicating with users:
 

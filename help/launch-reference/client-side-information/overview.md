@@ -1,6 +1,6 @@
 ---
 title: Client-Side Information
-description: Learn how to manage client-side tag operations in Adobe Experience Platform.
+description: Learn how to manage tag operations on the client-side of your web or mobile application.
 exl-id: 37481f22-3893-4b4c-9246-c51e95351861
 ---
 # Client-side information

@@ -14,12 +14,12 @@ Tags in Adobe Experience Platform is the next generation of Adobe's tag manageme
 The basic tags workflow:
 
 1. Set up groups and users.
-2. Log in.
-3. Create a property.
-4. Install extensions.
-5. Create data elements and rules.
-6. Test in your dev environment.
-7. Promote to production.
+1. Log in.
+1. Create a property.
+1. Install extensions.
+1. Create data elements and rules.
+1. Test in your dev environment.
+1. Promote to production.
 
 For an introductory video, see the [introductory videos](videos.md) documentation.
 
@@ -78,11 +78,11 @@ It is important to understand the relationship between your web page, your hosti
    
    Each environment has a relationship with a host, and the host provides an endpoint indicating where to deliver the build. The host can belong to only one property, although a property can have many hosts.
 
-2. An embed code is provided in the form  `<script>` tag that goes into the `<head>` sections of your website HTML.
+1. An embed code is provided in the form  `<script>` tag that goes into the `<head>` sections of your website HTML.
 
    When you create an environment and attach a host, the environment automatically generates a unique embed code that allows you to integrate its assigned build into your site. The `<script>` code is used to deploy the library build at runtime.
 
-3. When a user browses your site, the embed code `<script>` tag retrieves the build from your host server and performs your defined actions within the browser.
+1. When a user browses your site, the embed code `<script>` tag retrieves the build from your host server and performs your defined actions within the browser.
 
 ### Hosts
 
@@ -106,10 +106,10 @@ After you have saved your environment, it generates the embed code which you can
 The publishing process is described in the steps below.
 
 1. Create a host.
-2. Create a dev environment using the host you created.
-3. Deploy the embed code from your dev environment to your dev test site.
-4. Create a library and assign it to the dev environment you created.
-5. Build your library.
+1. Create a dev environment using the host you created.
+1. Deploy the embed code from your dev environment to your dev test site.
+1. Create a library and assign it to the dev environment you created.
+1. Build your library.
 
 ## 7. Promote to production 
 

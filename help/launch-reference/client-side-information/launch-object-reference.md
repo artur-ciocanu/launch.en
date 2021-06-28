@@ -1,9 +1,9 @@
 ---
-title: Tags _satellite Object Reference
+title: Tags Satellite Object Reference
 description: Learn about the client-side _satellite object and the various functions you can perform with it in Adobe Experience Platform.
 exl-id: 55af465c-4e14-4fe1-bbf8-14871f818f95
 ---
-# Adobe Experience Platform tags `_satellite` object reference
+# Adobe Experience Platform tags Satellite object reference
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ _satellite.track(identifier: string [, detail: *] )
 _satellite.track('contact_submit', { name: 'John Doe' });
 ```
 
-`track` fires all rules using the Direct Call event type that has been configured with the given identifier from the Core extension. The above example triggers all rules using a Direct Call event type where the configured identifier is `contact_submit`. An optional object containing related information is also passed. The detail object can be accessed by entering `%event.detail%` within a text field in a condition or action or `event.detail` inside the code editor in a Custom Code condition or action.
+`track` fires all rules using the Direct Call event type that has been configured with the given identifier from the Core tag extension. The above example triggers all rules using a Direct Call event type where the configured identifier is `contact_submit`. An optional object containing related information is also passed. The detail object can be accessed by entering `%event.detail%` within a text field in a condition or action or `event.detail` inside the code editor in a Custom Code condition or action.
 
 ## `getVar`
 

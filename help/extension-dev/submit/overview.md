@@ -12,12 +12,12 @@ exl-id: b8110384-16aa-4f5d-912f-f0ad1c63904e
 Submitting an extension to the data collection catalog in Adobe Experience Platform can appear to be a daunting task. This document provides a step by step guide to submitting your extension through the use of individual sequential guides. In order to submit your extension, you will need to complete the following steps:
 
 1. [Set up an Adobe Experience Cloud organization](./setup.md)
-2. [Grant user access for extension development](./access.md)
-3. [Develop an extension](./develop.md)
-4. [Create an exchange listing](./create-listing.md)
-5. Create your extension package
-6. [Upload and test your extension](./upload-and-test.md)
-7. [Release your extension](./release.md)
+1. [Grant user access for extension development](./access.md)
+1. [Develop an extension](./develop.md)
+1. [Create an exchange listing](./create-listing.md)
+1. Create your extension package
+1. [Upload and test your extension](./upload-and-test.md)
+1. [Release your extension](./release.md)
 
 Select the appropriate link for more information on each of these steps.
 

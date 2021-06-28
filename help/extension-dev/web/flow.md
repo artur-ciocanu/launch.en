@@ -22,7 +22,7 @@ In the following diagram you can see the link between events, conditions and act
 The rule processing flow contains the following phases:
 
 1. The `settings` and the `trigger` method are provided to the event library module at startup.
-2. When the event library module determines the event has occurred, the event library module calls `trigger`.
-3. Tags passes `settings` into the rule’s condition library modules where conditions are evaluated.
-4. Each condition library module returns whether a condition evaluates to true.
-5. If all conditions pass, the rule’s actions are executed.
+1. When the event library module determines the event has occurred, the event library module calls `trigger`.
+1. Tags passes `settings` into the rule’s condition library modules where conditions are evaluated.
+1. Each condition library module returns whether a condition evaluates to true.
+1. If all conditions pass, the rule’s actions are executed.

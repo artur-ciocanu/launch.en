@@ -22,7 +22,7 @@ The library module is structured as a [CommonJS module](http://wiki.commonjs.org
 A `require` function is available for you to access:
 
 1. Core modules provided by tags. These modules may be accessed by using `require('@adobe/reactor-name-of-module')`. See the document on available [core modules](./core.md) for more information.
-2. Other modules within your extension. Any module in your extension can be accessed via a relative path. The relative path must begin with `./` or `../`.
+1. Other modules within your extension. Any module in your extension can be accessed via a relative path. The relative path must begin with `./` or `../`.
 
 Example usage:
 

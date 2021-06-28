@@ -22,17 +22,17 @@ While their use cases compliment each other, SRI is different from a Content Sec
 The SRI validation process can be summarized as follows:
 
 1. You generate a cryptographic hash of the asset that you want to validate.
-2. On your website, the hash is placed in the `integrity` attribute of the HTML element that loads the file.
-3. When the browser sees the `integrity` attribute, the browser requests the resource and independently generates its own version of the cryptographic hash.
-4. The browser compares the `integrity` hash with the one it generated. If they match, the asset is allowed. If they do not match, the asset is blocked.
+1. On your website, the hash is placed in the `integrity` attribute of the HTML element that loads the file.
+1. When the browser sees the `integrity` attribute, the browser requests the resource and independently generates its own version of the cryptographic hash.
+1. The browser compares the `integrity` hash with the one it generated. If they match, the asset is allowed. If they do not match, the asset is blocked.
 
 ## Limitations in tag management systems
 
-As a tag management system (TMS), tags in Adobe Experience Platform provides a compiled JavaScript library build that you load onto your pages with a single `<script>` element (embed code). The dynamic functionality afforded by the TMS is accomplished by swapping out the contents of that script dynamically without requiring you to change anything else.
+As a tag-management system (TMS), tags in Adobe Experience Platform provide a compiled JavaScript library build that you load onto your pages with a single `<script>` element (embed code). The dynamic functionality afforded by the TMS is accomplished by swapping out the contents of that script dynamically without requiring you to change anything else.
 
 When the script contents change, however, so does the cryptographic hash of those contents. Therefore, the only way to make SRI work with a TMS is to update your embed code at the same time that you publish a new build. For many, this defeats the primary purpose of using a TMS in the first place.
 
-The next best security option for tags is to implement a Content Security Policy. For more information, see the guide on [CSPs in Adobe Experience Platform](./content-security-policy-csp.md).
+The next best security option for tags is to implement a Content Security Policy. For more information, see the guide on [CSPs and tags](./content-security-policy-csp.md).
 
 ## Integrating SRI into build deployment
 
@@ -50,4 +50,4 @@ Automating the process of updating your embed code will vary in complexity depen
 
 ## Next steps
 
-This document covered the limitations of using SRI in Adobe Experience Platform, and the steps required to integrate it into your library build deployments despite those limitations. If you have not already, it is strongly recommended that you read the guide on [CSPs in Adobe Experience Platform](./content-security-policy-csp.md) for an alternative security option.
+This document covered the limitations of using SRI with tags, and the steps required to integrate it into your library build deployments despite those limitations. If you have not already, it is strongly recommended that you read the guide on [CSPs and tags](./content-security-policy-csp.md) for an alternative security option.

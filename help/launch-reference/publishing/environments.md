@@ -9,21 +9,21 @@ exl-id: 5c7fd0bb-c4f1-468a-be91-14aa93c8d0bc
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-Tag environments in Adobe Experience Platform define several key aspects of the library builds you deploy on your website or app:
+Tag environments define several key aspects of the library builds you deploy on your website or app:
 
 * The filename of the build.
 * The domain and path of the build, depending on the environment's assigned host.
 * The file format of the build, depending on the archive option chosen.
 
-When you create a tag library build, you must assign it to an environment. The build's extensions, rules, and data elements are then compiled and placed into the assigned environment. Each environment provides a unique embed code that allows you to integrate its assigned build into your site.
+When you create a library build, you must assign it to an environment. The build's extensions, rules, and data elements are then compiled and placed into the assigned environment. Each environment provides a unique embed code that allows you to integrate its assigned build into your site.
 
-Different tag artifacts can exist in each Environment. This allows you to test different Libraries in different environments as you push them through your Workflow.
+Different artifacts can exist in each Environment. This allows you to test different Libraries in different environments as you push them through your Workflow.
 
 This document provides steps on how to install, configure, and create different environments in the Data Collection user interface.
 
 ## Environment types
 
-Tags supports three different environment types, each corresponding to a different state in the [publishing workflow](./publishing-flow.md):
+Tags support three different environment types, each corresponding to a different state in the [publishing workflow](./publishing-flow.md):
 
 | Environment type | Description |
 | --- | --- |
@@ -31,7 +31,7 @@ Tags supports three different environment types, each corresponding to a differe
 | Staging | This environment corresponds with the **Submitted** and **Approved** columns in the publishing workflow. |
 | Production | This environment corresponds with the **Published** column in the publishing workflow. |
 
-Different tag artifacts can exist in each environment. This allows you to test different libraries in different environments as you push them through the publishing workflow.
+Different artifacts can exist in each environment. This allows you to test different libraries in different environments as you push them through the publishing workflow.
 
 >[!NOTE]
 >

@@ -39,9 +39,9 @@ Within the [!DNL Experience Cloud], no rights or permissions are assigned to ind
 Within a Product Profile, permissions for tags are divided across four dimensions.
 
 1. Platforms
-2. Properties
-3. Property Rights
-4. Company Rights
+1. Properties
+1. Property Rights
+1. Company Rights
 
 #### Platforms
 

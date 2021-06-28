@@ -9,7 +9,7 @@ exl-id: 420c8c0b-3b3a-457a-993f-071ad0286674
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-Tags in Adobe Experience Platform follows a rule-based system. It looks for user interaction and associated data. When the criteria outlined in your rules are met, the rule triggers the extension, script, or client-side code you identified.
+Tags in Adobe Experience Platform follow a rule-based system. They look for user interaction  and associated data. When the criteria outlined in your rules are met, the rule triggers the extension, script, or client-side code you identified.
 
 Build rules to integrate the data and functionality of marketing and ad tech that unifies disparate products into a single solution.
 
@@ -39,10 +39,6 @@ If a specified event occurs, the conditions are evaluated, then the specified ac
 
 The events that are available depend on which extensions are installed. For information about the events in the Core extension, see [Core extension event types](../../extension-reference/web/core-extension/overview.md#core-extension-event-types).
 
->[!NOTE]
->
->[!DNL DTM] provided page load, event-based, and direct call rule types. Tag rules allow you to define the event that triggers the rule. The different [!DNL DTM] options are available to use in the Data Collection UI as event types.
-
 ### Actions (then)
 
 Actions are the *Then* portion of a rule. They define what you want to happen when the rule runs. When an event is triggered, if conditions evaluate to true and exceptions evaluate to false, the actions are performed. You can drag and drop actions to order them as desired.
@@ -65,7 +61,7 @@ Create a rule by specifying what actions occur if a condition is met.
 
    >[!IMPORTANT]
    >
-   >In a client-side rule, data elements are tokenized with a `%` at the beginning and end of the data element name. For example, `%viewportHeight%`. In an event forwarding rule, data elements are tokenized with `{{` at the beginning and `}}` at the end of the data element name. For example, `{{viewportHeight}}`. 
+   >In a client-side rule, data elements are tokenized with a `%` at the beginning and end of the data element name. For example, `%viewportHeight%`. In an event-forwarding rule, data elements are tokenized with `{{` at the beginning and `}}` at the end of the data element name. For example, `{{viewportHeight}}`. 
 
    To reference data from the Edge network, the data element path must be `arc.event._<element>_`.
     
@@ -127,7 +123,7 @@ It is often important to have your rules fire in a specific order. Examples: (1)
 
 Ultimately, the responsibility for executing actions in order lie with the extension developer of the event type that you're using. Adobe extension developers ensure their extensions work as intended. For 3rd-party extensions, Adobe provides guidance to extension developers to implement this properly, but it is up to them to do so.
 
-Adobe highly recommends that you order your rules with positive numbers between 1 and 100 (default is 50). Simpler is better. Remember you have to maintain your order. However, Adobe recognizes there might be edge cases where that will feel limiting, so other numbers are allowed. Tags supports numbers between +/- 2,147,483,648. You can also use about a dozen decimal places - but if you're in a scenario where you think you need to do that, you should rethink some of the decisions you've made to get to where you are now.
+Adobe highly recommends that you order your rules with positive numbers between 1 and 100 (default is 50). Simpler is better. Remember you have to maintain your order. However, Adobe recognizes there might be edge cases where that will feel limiting, so other numbers are allowed. Tags support numbers between +/- 2,147,483,648. You can also use about a dozen decimal places - but if you're in a scenario where you think you need to do that, you should rethink some of the decisions you've made to get to where you are now.
 
 >[!IMPORTANT]
 >
@@ -144,7 +140,7 @@ The load order for rules depends on whether the rule action is configured with J
 
 You can use `document.write` within your custom scripts regardless of the events configured for the rule.
 
-You can order different custom code types among each other. For example, you can now have a JavaScript custom code action, then an HTML custom code action, then a JavaScript custom code action. Tags ensures that they are executed in that order.
+You can order different custom code types among each other. For example, you can now have a JavaScript custom code action, then an HTML custom code action, then a JavaScript custom code action. Tags ensure that they are executed in that order.
 
 ## Rule Bundling
 
@@ -158,7 +154,7 @@ These events need to be executed almost always (unless conditions evaluate to fa
 
    >[!NOTE]
    >
-   >Tags in Adobe Experience Platform uses JavaScript version es5. Event forwarding uses version es6.
+   >Tags in Adobe Experience Platform uses ES5 JavaScript. Event forwarding uses ES6.
    
 * **HTML:** The HTML is embedded in the main tag library. `document.write` is used to write the HTML to the document. If the rule has multiple custom scripts, they're written in order.
 
@@ -175,7 +171,7 @@ The tag runtime environment's behavior depends on whether **[!UICONTROL Run rule
 
 ### Enabled
 
-If enabled, when an event is triggered at runtime, the rule's conditions and actions are added to a processing queue--based on the order you have defined--and processed one at a time on a FIFO basis. Tags waits for the completion of the component before moving onto the next one.
+If enabled, when an event is triggered at runtime, the rule's conditions and actions are added to a processing queue--based on the order you have defined--and processed one at a time on a FIFO basis. The tag waits for the completion of the component before moving onto the next one.
 
 If a condition evaluates as false or reaches its defined timeout, that rule's subsequent conditions and actions are removed from the queue.
 
@@ -189,4 +185,4 @@ If an action fails or reaches its defined timeout, that rule's subsequent action
 
 If disabled, when an event is triggered at runtime, the rule's conditions are immediately evaluated. Multiple conditions are evaluated in parallel.
 
-If all conditions return true (and exceptions return false), the rule's actions are immediately executed. The actions are called in order, but tags does not wait for one to complete before calling the next. If your actions are synchronous, they are still executed in order. If one or more actions are asynchronous, some actions will run in parallel.
+If all conditions return true (and exceptions return false), the rule's actions are immediately executed. The actions are called in order, but tags do not wait for one to complete before calling the next. If your actions are synchronous, they are still executed in order. If one or more actions are asynchronous, some actions will run in parallel.

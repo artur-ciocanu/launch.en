@@ -32,7 +32,7 @@ Using page name as an example, suppose you use a particular page-name schema by 
 Data elements are populated with data when they are used in rules or when manually called in a script. At a high level, you:
 
 1. [Create a data element](#create-a-data-element), if you haven't done so already.
-2. Use the data element in a [rule](./rules.md) or a custom script.
+1. Use the data element in a [rule](./rules.md) or a custom script.
 
 For an introductory video, see [Data elements](../../quick-start/videos.md).
 
@@ -56,7 +56,7 @@ Data elements are the building blocks for rules. Data elements let you create a 
 1. Name the data element.
 1. Select an extension and type.
 
-   The available data element types are determined by the extension. For information about the types available with the tags Core extension, refer to [Types of data elements](data-elements.md#types-of-data-elements).
+   The available data element types are determined by the extension. For information about the types available with the Core tag extension, refer to [Types of data elements](data-elements.md#types-of-data-elements).
 
 1. Provide any requested information about the chosen type in the fields provided.
 1. (Optional) Enter a default value.
@@ -152,7 +152,7 @@ Get the value of:
 
 Any available JavaScript object or variable can be referenced using the path field.
 
-If you want to collect JavaScript variables or object properties in your markup and use them with any of your extensions or rules, tag data elements can be used to capture these values. This way, you can refer to the data element throughout your rules, and if the source of the data ever changes, you only need to change your reference to the source (the data element) in one place within the Data Collection UI.
+If you want to collect JavaScript variables or object properties in your markup and use them with any of your extensions or rules, data elements can be used to capture these values. This way, you can refer to the data element throughout your rules, and if the source of the data ever changes, you only need to change your reference to the source (the data element) in one place within the Data Collection UI.
 
 For example, let's say your markup contains a JavaScript variable called `Page_Name`, like this:
 
@@ -163,7 +163,7 @@ For example, let's say your markup contains a JavaScript variable called `Page_N
 </script>
 ```
 
-You must provide the path to that variable when you create the tag data element.
+You must provide the path to that variable when you create the data element.
 
 If you use a data collector object as party of your data layer, simply use dot notation in the path to reference the object and property you want to capture into the data element, like `_myData.pageName`, or `digitalData.pageName`, etc.
 

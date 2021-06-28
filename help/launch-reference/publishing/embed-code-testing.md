@@ -22,7 +22,7 @@ This tutorial also requires that you have the Platform Debugger browser extensio
 
 ## Open Platform Debugger on your website
 
-Using your browser of choice, navigate to your website and open the Platform Debugger extension. The site that Platform Debugger is currently connected to is displayed at the bottom of the window. If tags is currently running on your site, it will be listed in the [!UICONTROL Summary] tab.
+Using your browser of choice, navigate to your website and open the Platform Debugger extension. The site that Platform Debugger is currently connected to is displayed at the bottom of the window. If tags are currently running on your site, it will be listed in the [!UICONTROL Summary] tab.
 
 ![](./images/embed-code-testing/summary.png)
 

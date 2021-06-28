@@ -66,12 +66,12 @@ To create your datastream in Adobe Experience Platform, use the Environment ID g
 
 1. Use the link in the left rail of the Data Collection UI to open the datastreams interface.
 
-2. Select **[!UICONTROL Datastreams]**.
+1. Select **[!UICONTROL Datastreams]**.
 
-3. Name the configuration and provide an optional description. 
+1. Name the configuration and provide an optional description. 
     The description helps to identify configurations in a list of several configurations. 
 
-4. Select **[!UICONTROL Save]**.
+1. Select **[!UICONTROL Save]**.
 
 
 
@@ -101,9 +101,9 @@ Create your property in the Data Collection UI, then use the Adobe Experience Pl
 
     You can have multiple instances of Alloy. For example, you might have different pre- and post-paywall tracking properties.
 
-2. Select the Org ID.
+1. Select the Org ID.
 
-3. Select the Edge Domain.
+1. Select the Edge Domain.
 
 See the [Web SDK extension documentation](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/aep-extension/overview.html) for more configuration options.
 
@@ -115,15 +115,15 @@ Create a page load rule using the Platform Web SDK extension and the “Send Eve
 
 1. Open the **[!UICONTROL Rules]** tab, then select **[!UICONTROL Create New Rule]**.
 
-2. Name the rule.
+1. Name the rule.
 
-3. Select **[!UICONTROL Events Add]**.
+1. Select **[!UICONTROL Events Add]**.
 
-4. Add an event by choosing an extension and one of the event types available for that extension, then configure the settings for the event. For example, select **[!UICONTROL Core - Window Loaded]**.
+1. Add an event by choosing an extension and one of the event types available for that extension, then configure the settings for the event. For example, select **[!UICONTROL Core - Window Loaded]**.
 
-5. Add an action using the Platform Web SDK extension. Select **[!UICONTROL Send Event]** from the **[!UICONTROL Action Type]** list, select the desired Instance (Alloy instance configured earlier), and then select a data element to add to the XDM Data block within the Alloy hit.
+1. Add an action using the Platform Web SDK extension. Select **[!UICONTROL Send Event]** from the **[!UICONTROL Action Type]** list, select the desired Instance (Alloy instance configured earlier), and then select a data element to add to the XDM Data block within the Alloy hit.
 
-6. Leave the rest of the settings as default for this example, and select **[!UICONTROL Save]**.
+1. Leave the rest of the settings as default for this example, and select **[!UICONTROL Save]**.
 
 For another example, you might create a rule that sends the data layer to Edge if the user hovers over a specified button.
 

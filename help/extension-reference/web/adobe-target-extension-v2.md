@@ -74,14 +74,14 @@ No configuration is needed.
 This action type allows parameters to be added to all Target requests. The Load Target action must be used earlier.
 
 1. Specify the name and value of any parameter you want to add.
-2. Select the add icon to add more parameters.
+1. Select the add icon to add more parameters.
 
 ### Add Params to Page Load Request
 
 This action type allows parameters to be added specifically to your page load requests. The Load Target action must be used earlier.
 
 1. Specify the name and value of any parameter you want to add.
-2. Select the add icon to add more parameters.
+1. Select the add icon to add more parameters.
 
 ### Fire Page Load Request
 
@@ -99,7 +99,7 @@ For more information, refer to the [Target online help documentation](https://ex
 The Trigger View action can be called whenever a new page is loaded or when a component on a page is re-rendered. Trigger view should be implemented for Single Page Applications.
 
 1. Specify the view name that must be triggered.
-2. Specify whether the triggering of the view should be attributed to an impression for reporting by checking the Page checkbox. If the view is correlated to a component that is re-rendered and does not attribute to an impression for reporting then leave the Page checkbox unchecked.
+1. Specify whether the triggering of the view should be attributed to an impression for reporting by checking the Page checkbox. If the view is correlated to a component that is re-rendered and does not attribute to an impression for reporting then leave the Page checkbox unchecked.
 
 For more information about triggering a view, please refer to the [`triggerView()` help documentation](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-triggerview-atjs-2.html).
 

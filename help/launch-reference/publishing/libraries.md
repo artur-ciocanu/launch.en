@@ -114,7 +114,7 @@ Extensions, rules, and data elements can now be saved directly to the library yo
 The following list provides more information on managing an active library.
 
 1. [Create a new library](libraries.md#create-a-library).
-2. Go to [Rules](../managing-resources/rules.md), [Data Elements](../managing-resources/data-elements.md), or [Extensions](../managing-resources/extensions/overview.md).
-3. Select your Active Library.
-4. Make your changes, then save and build the library.
-5. Test your changes, and repeat these steps as needed.
+1. Go to [Rules](../managing-resources/rules.md), [Data Elements](../managing-resources/data-elements.md), or [Extensions](../managing-resources/extensions/overview.md).
+1. Select your Active Library.
+1. Make your changes, then save and build the library.
+1. Test your changes, and repeat these steps as needed.
