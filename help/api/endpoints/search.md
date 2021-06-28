@@ -101,6 +101,8 @@ curl -X POST \
 | `sort` | An array of objects, indicating the order in which to sort results. Each object must contain a single property: the key represents the field path to sort by, and the value represents the sort order (`asc` for ascending, `desc` for descending). |
 | `resource_types` | An array of strings, indicating the specific resource types to search. |
 
+{style="table-layout:auto"}
+
 **Response**
 
 A successful response returns the results of the query.

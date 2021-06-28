@@ -160,6 +160,7 @@ git-repo: https://github.com/AdobeDocs/launch.en
   * Guides {#guides}
     * [Delegate descriptor IDs](./api/guides/delegate-descriptor-ids.md)
     * [Encrypting values](./api/guides/encrypting-values.md)
+    * [Error handling](./api/guides/error-handling.md)
     * [Filtering responses](./api/guides/filtering.md)
     * [Relationships](./api/guides/relationships.md)
     * [Search](./api/guides/search.md)
