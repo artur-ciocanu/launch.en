@@ -96,4 +96,4 @@ The following table lists the different errors that the API can return.
 | `unknown-error` | An unexpected error occurred. You can try again later or give Customer Care a call and explain what you were doing when it happened. |
 | `unsupported-custom-code-language` | A custom code language was supplied that is not supported. |
 | `upgraded-extension-required` | Once you've installed an extension upgrade, you must include it in all Libraries until the upgrade gets to Production. The only exception is if the extension has not been published yet. |
-| `upstream-build-required` | A successful Build for the upstream Library is required before you can build this one. 
+| `upstream-build-required` | A successful Build for the upstream Library is required before you can build this one. |
