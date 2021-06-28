@@ -42,7 +42,7 @@ A rule event is some activity that must occur before a rule fires.
 
 As an example, an extension could provide a "gesture" event type that watches for a certain mouse or touch gesture to occur. Once the gesture occurs, the event logic would fire the rule.
 
-Event types typically consist of (1) a view shown within the tags workspace that allows users to modify settings for the event and (2) a library module emitted within the tag runtime library to interpret the settings and watch for a certain activity to occur.
+Event types typically consist of (1) a view shown within the Data Collection UI that allows users to modify settings for the event and (2) a library module emitted within the tag runtime library to interpret the settings and watch for a certain activity to occur.
 
 [Learn more](./web/event-types.md)
 
@@ -52,7 +52,7 @@ A rule condition is evaluated after a rule event has occurred. All conditions mu
 
 As an example, an extension could provide a "viewport contains" condition type wherein the user could specify a CSS selector. When the condition is evaluated on the client's website, the extension would be able to find elements matching the CSS selector and return whether any of them are contained within the user's viewport.
 
-Condition types typically consist of (1) a view shown within the tags workspace that allows users to modify settings for the condition and (2) a library module emitted within the tag runtime library to interpret the settings and evaluate a condition.
+Condition types typically consist of (1) a view shown within the Data Collection UI that allows users to modify settings for the condition and (2) a library module emitted within the tag runtime library to interpret the settings and evaluate a condition.
 
 [Learn more](./web/condition-types.md)
 
@@ -62,7 +62,7 @@ A rule action is something that is performed after the rule event has occurred a
 
 As an example, an extension could provide a "show support chat" action type which could display a support chat dialog to help users who may be struggling while checking out.
 
-Action types typically consist of (1) a view shown within the tags workspace that allows users to modify settings for the action and (2) a library module emitted within the tag runtime library to interpret the settings and perform an action.
+Action types typically consist of (1) a view shown within the Data Collection UI that allows users to modify settings for the action and (2) a library module emitted within the tag runtime library to interpret the settings and perform an action.
 
 [Learn more](./web/action-types.md)
 
@@ -72,7 +72,7 @@ Data elements are essentially aliases to pieces of data on a page regardless of 
 
 A data element type enables users to configure data elements to access a piece of data in a particular way. As an example, an extension could provide a "local storage item" data element type wherein the user could specify a local storage item name. When the data element is referenced by a rule, the extension would be able to look up the local storage item value by using the local storage item name that the user had provided when configuring the data element.
 
-Data element types typically consist of (1) a view shown within the tags workspace that allows users to modify settings for the data element and (2) a library module emitted within the tag runtime library to interpret the settings and retrieve pieces of data.
+Data element types typically consist of (1) a view shown within the Data Collection UI that allows users to modify settings for the data element and (2) a library module emitted within the tag runtime library to interpret the settings and retrieve pieces of data.
 
 [Learn more](./web/data-element-types.md)
 
@@ -106,7 +106,7 @@ A rule condition is evaluated after a rule event has occurred. All conditions mu
 
 As an example, an extension could provide a "viewport contains" condition type wherein the user could specify a CSS selector. When the condition is evaluated on the client's website, the extension would be able to find elements matching the CSS selector and return whether any of them are contained within the user's viewport.
 
-Condition types typically consist of (1) a view shown within the tags workspace that allows users to modify settings for the condition and (2) a library module emitted within the tag runtime library to interpret the settings and evaluate a condition.
+Condition types typically consist of (1) a view shown within the Data Collection UI that allows users to modify settings for the condition and (2) a library module emitted within the tag runtime library to interpret the settings and evaluate a condition.
 
 [Learn more](./web/condition-types.md)
 
@@ -116,7 +116,7 @@ A rule action is something that is performed after the rule conditions have pass
 
 As an example, an extension could provide a "show support chat" action type which could display a support chat dialog to help users who may be struggling while checking out.
 
-Action types typically consist of (1) a view shown within the tags workspace that allows users to modify settings for the action and (2) a library module emitted within the tag runtime library to interpret the settings and perform an action.
+Action types typically consist of (1) a view shown within the Data Collection UI that allows users to modify settings for the action and (2) a library module emitted within the tag runtime library to interpret the settings and perform an action.
 
 [Learn more](./web/action-types.md)
 
@@ -124,7 +124,7 @@ Action types typically consist of (1) a view shown within the tags workspace tha
 
 Data elements are essentially aliases to pieces of data on a page regardless of where that data is found inside the event received by the server. A data element can be referenced by rules and acts as an abstraction for accessing these pieces of data. When the location of the data changes in the future (for example, the event key that contains the value is changed), a single data element can be reconfigured while all the rules referencing that data element can remain unchanged.
 
-Data element types typically consist of (1) a view shown within the tags workspace that allows users to modify settings for the data element and (2) a library module emitted within the tag runtime library to interpret the settings and retrieve pieces of data.
+Data element types typically consist of (1) a view shown within the Data Collection UI that allows users to modify settings for the data element and (2) a library module emitted within the tag runtime library to interpret the settings and retrieve pieces of data.
 
 [Learn more](./web/data-element-types.md)
 

@@ -27,7 +27,7 @@ For an introductory video, see the [introductory videos](videos.md) documentatio
 
 Tags in Adobe Experience Platform is fully integrated with your Adobe ID. User permissions are managed through the Admin Console with other Adobe products and solutions from the [!DNL Creative Cloud], [!DNL Document Cloud], and Experience Cloud.
 
-Tags have a rights-based user management system. This means that individual rights must be granted explicitly. These rights are assigned to groups, then users are added to the appropriate groups in order to gain access. Even if your organization has access to the tags workspace, individual users cannot do anything until an Org Administrator explicitly grants them some rights.
+Tags have a rights-based user management system. This means that individual rights must be granted explicitly. These rights are assigned to groups, then users are added to the appropriate groups in order to gain access. Even if your organization has access to the Data Collection UI, individual users cannot do anything until an Org Administrator explicitly grants them some rights.
 
 For detailed instructions on how to create groups and add users for tags, see the [user permissions](../launch-reference/administration/user-permissions.md) document.
 
@@ -62,7 +62,7 @@ What makes tags functionality in Adobe Experience Platform truly unique among ta
 * Session and local storage
 * Just about everything else
 
-After the data element is defined, you can use the element anywhere throughout the tags workspace for any extension. See the documentation on [Data Elements](../launch-reference/managing-resources/data-elements.md) for more detailed information.
+After the data element is defined, you can use the element anywhere throughout the Data Collection UI for any extension. See the documentation on [Data Elements](../launch-reference/managing-resources/data-elements.md) for more detailed information.
 
 **Rules** are at the logical core of your implementation and control the what, when, where, and how of all the tags on your site. Define an event, set conditions and exceptions, then define the actions and order. Finally, publish your changes to see the results. For more information, see [Rules](../launch-reference/managing-resources/rules.md).
 

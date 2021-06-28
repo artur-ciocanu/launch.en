@@ -14,7 +14,7 @@ exl-id: 43ed8522-452a-47fe-b316-564f80b012af
 There are two user permissions to understand for use with tags in Adobe Experience Platform:
 
 * **Experience Cloud Permissions:** Found in the Admin Console at the company level, [!DNL Experience Cloud] permissions govern who can control group permissions and group membership for all [!DNL Experience Cloud] products.
-* **Permissions for tags:** The permissions for tags are located in the Admin Console at the Product Profile level. Permissions for tags govern which users can actually perform certain actions when logged into the tags workspace.
+* **Permissions for tags:** The permissions for tags are located in the Admin Console at the Product Profile level. These permissions govern which users can actually perform certain actions when logged into the Data Collection UI.
 
 This article examines these different permissions types in detail.
 
@@ -26,7 +26,7 @@ This section discusses factors that are important to understand when using Platf
 
 Organization Administrators are often referred to as Org Admins. An Org Admin's main function is to assign permissions to other users. They do this by creating Product Profiles (or groups) that contain a specific set of rights within a specific product and then assigning users, existing or new, to that Product Profile.
 
-Enterprise Org Admins do not inherit any rights for tags in Adobe Experience Platform. They must add themselves to a Product Profile that has rights for tags if they want to do anything in the tags workspace.
+Enterprise Org Admins do not inherit any rights for tags in Platform. They must add themselves to a product profile that has the appropriate permissions if they want to do anything in the Data Collection UI.
 
 #### Product Administrator
 
@@ -53,27 +53,27 @@ This is a list of all Properties that exist within your company. You can use thi
 
 #### Property rights
 
-Any properties you create in the tags workspace become available in the Admin Console for you to assign permissions. If a given Product Profile does not have access to Property A1, users who belong to that profile cannot see or modify any settings within Property A1.
+Any properties you create in the Data Collection UI become available in the Admin Console for you to assign permissions. If a given Product Profile does not have access to Property A1, users who belong to that profile cannot see or modify any settings within Property A1.
 
 Assuming that a user belongs to a profile with access to Property A1, what they can do within Property A1 is determined by the rights they have been granted from this permission group. Users with permissions to Property A1, but no assigned rights, have read-only access.
 
 The permissions available within this group are:
 
-* **Develop:** This allows the creation of rules and data elements. You can also create libraries and build them in existing development environments. You can submit a library for approval when ready. Most day-to-day tasks in the tags workspace require this right.
-* **Approve:** This grants the ability to take a submitted library and build to the staging environment. You can also approve a library for publishing once testing has been completed.
-* **Publish:** This grants the ability to publish approved libraries to the production environment.
+* **Develop:** This allows you to create rules and data elements. You can also create libraries and build them in existing development environments. You can submit a library for approval when ready. Most day-to-day tasks in the Data Collection UI require this right.
+* **Approve:** This allows you to take a submitted library and build to the staging environment. You can also approve a library for publishing once testing has been completed.
+* **Publish:** This allows you to publish approved libraries to the production environment.
 * **Manage Extensions:** This grants the abilities to install new extensions to a property, to modify the extension configuration for an already installed extension, and to delete an extension. See the extensions overview documentation for [more information on extensions](../managing-resources/extensions/overview.md). This role typically belongs to IT or Marketing, depending on your organization.
-* **Manage Environments:** This grants the ability to create and modify environments. See the [environments documentation](../publishing/environments.md) for more information. This role typically belongs to the IT group.
+* **Manage Environments:** This allows you to create and modify environments. See the [environments documentation](../publishing/environments.md) for more information. This role typically belongs to the IT group.
 
 #### Company rights
 
 Company rights apply to permissions that span multiple properties.  There are currently three:
 
-* **Manage Properties:** This grants the ability to create new properties in the tags workspace and to modify the metadata and settings at the property level. You can also delete properties. Read the [properties documentation](companies-and-properties.md) for more information. Administrators usually perform this role.
+* **Manage Properties:** This allows you to create new properties in the Data Collection UI and to modify the metadata and settings at the property level. You can also delete properties. Read the [properties documentation](companies-and-properties.md) for more information. Administrators usually perform this role.
 * 
 * Grants the ability to create new properties in [!DNL Platform Launch] and to modify the metadata and settings at the property level. You can also delete properties.  Read more about properties [here](companies-and-properties.md). Administrators usually perform this role.
 * **Develop Extensions:** Grants the ability to create and modify extension packages that are owned by the company including private releases and requests for public release.
-* **Manage App Configurations:** This is only available to customers who have licensed Adobe Journey Optimizer, or some other solution that gives them access to mobile in-app and push messaging.  This grants the ability to manage the apps that Experience Cloud knows about along with the necessary push credentials needed to communicate with the Firebase Cloud Messaging service and the Apple Push Notification Service.
+* **Manage App Configurations:** This is only available to customers who have licensed Adobe Journey Optimizer, or some other solution that gives them access to mobile in-app and push messaging.  This allows you to manage the apps that Experience Cloud knows about along with the necessary push credentials needed to communicate with the Firebase Cloud Messaging service and the Apple Push Notification Service.
 
 ### Total user permissions
 
@@ -249,7 +249,7 @@ To assign users to be part of your group, open the [!UICONTROL Users] tab, then 
 
 ![](../../images/profile-user.png)
 
-Select the **[!UICONTROL ...]** (ellipsis) for additional options, such as bulk user operations.
+Select the ellipsis (...) for additional options, such as bulk user operations.
 
 >[!NOTE]
 >

@@ -9,7 +9,7 @@ exl-id: 657c1507-f005-49a8-a54a-26e6b9ff8b6f
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-The Core extension is the default extension released with tags in Adobe Experience Platform.
+The Core tag extension is the default extension released with Adobe Experience Platform.
 
 This document provides information regarding the options available when using the Core extension to build a rule.
 
@@ -41,19 +41,19 @@ The focus event triggers the action when a form gains the focus. See the [Option
 
 The submit event triggers the action when a form is submitted. See the [Options](#options) section for more information on customizable event settings.
 
-### Keyboard controlled events
+### Keyboard-controlled events
 
 #### Key Press
 
 The event triggers when a key is pressed. See the [Options](#options) section for more information on customizable event settings.
 
-### Media based events
+### Media-based events
 
 #### Media Ended
 
 The event triggers when the media ends. See the [Options](#options) section for more information on customizable event settings.
 
-#### Media Loaded Data
+#### Media-Loaded Data
 
 The event triggers when the media loads data. See the [Options](#options) section for more information on customizable event settings.
 
@@ -69,16 +69,16 @@ The event triggers when the media is played. See the [Options](#options) section
 
 The event triggers if the media stalls. See the [Options](#options) section for more information on customizable event settings.
 
-#### Media Time Played
+#### Media-Time Played
 
 The event triggers if the media is played for a specified length of time. You must specify the duration that the media must be played for in order to trigger the event. See the [Options](#options) section for more information on customizable event settings.
 
 
-#### Media Volume Changed
+#### Media-Volume Changed
 
 The event triggers if the volume is raised or lowered. See the [Options](#options) section for more information on customizable event settings.
 
-### Mobile device orientated events
+### Mobile-device-orientated events
 
 #### Orientation Change
 
@@ -88,7 +88,7 @@ The event triggers if the device’s orientation changes. You must specify the d
 
 The event triggers if the user zooms in or out. There are no settings for this event type.
 
-### Mouse controlled events
+### Mouse-controlled events
 
 #### Click
 
@@ -100,7 +100,7 @@ If the element is an anchor tag (`<a>`) to linked content, you can also specify 
 >
 >This option should be used with extreme caution due to the potential negative consequences it poses to the user experience if used incorrectly.
 
-When you use link delay, tags will actually prevent the browser from navigating off the page, then perform a JavaScript redirect to the original destination after the specified timeout. This is especially dangerous when when your page markup has `<a>` tags where the intended functionality does not actually navigate the user away from the page. If you cannot solve your problem in any other way, you should be extremely precise with your selector definition so that this event will trigger exactly where you need it and nowhere else.
+When you use link delay, Platform actually prevents the browser from navigating off the page. It then performs a JavaScript redirect to the original destination after the specified timeout. This is especially dangerous when when your page markup has `<a>` tags where the intended functionality does not actually navigate the user away from the page. If you cannot solve your problem in any other way, you should be extremely precise with your selector definition so that this event will trigger exactly where you need it and nowhere else.
 
 The default link delay value is 100 milliseconds. Please note that tags will always wait for the amount of time specified and is not connected to the execution of the rule’s actions in any way. It is possible that the delay will force the user to wait longer than is necessary, and also possible that the delay will not be long enough for all the rule’s actions to successfully complete. Longer delays provide more time for rule execution but also worsen the user experience.
 
@@ -140,11 +140,11 @@ See the [Options](#options) section for more information on customizable event s
 
 The event triggers if a pushState or a hashchange event occurs. There are no settings for this event type.
 
-#### Time Spent on Page
+#### Time-Spent on Page
 
 The event triggers if the user remains on the page for a specified number of seconds. You must specify the number of seconds that must pass before the event is triggered.
 
-### Page load events
+### Page-load events
 
 #### DOM Ready
 
@@ -676,7 +676,7 @@ Get the value of:
 
 Any available JavaScript object or variable can be referenced using the path field.
 
-Tag data elements can be used to capture your markup JavaScript variables or object properties. These values can then be used within your extensions or custom rules by referencing the tag data elements. If the source of the data changes, it is only necessary to update the reference to the source within the tags workspace.
+Tag data elements can be used to capture your markup JavaScript variables or object properties. These values can then be used within your extensions or custom rules by referencing the tag data elements. If the source of the data changes, it is only necessary to update the reference to the source within the Data Collection UI.
 
 In the example below, the markup contains a JavaScript variable called `Page_Name`.
 
@@ -687,7 +687,7 @@ In the example below, the markup contains a JavaScript variable called `Page_Nam
 </script>
 ```
 
-When you create the data element in tags, simply provide the path to that variable.
+When you create the data element in the Data Collection UI, simply provide the path to that variable.
 
 If you use a data collector object as party of your data layer, use dot notation in the path to reference the object and property you want to capture into the data element, like `_myData.pageName`, or `digitalData.pageName`, and so on.
 

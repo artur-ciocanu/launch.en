@@ -98,7 +98,7 @@ v1.6.2
 
 v1.6.1
 
-* **Support for CSP Nonce** - The Core extension now has an optional configuration parameter. You can add a data element that references a nonce. If configured, all inline scripts that tags adds to the page use the nonce that you’ve configured. This change supports the use of a Content Security Policy with a nonce so that Platform Launch scripts can still load in a CSP environment.  You can read more about using Platform Launch with a CSP [here](https://experienceleague.adobe.com/docs/launch/using/reference/client-side-info/content-security-policy-csp.html).
+* **Support for CSP Nonce** - The Core extension now has an optional configuration parameter. You can add a data element that references a nonce. If configured, all inline scripts that a tag adds to the page use the nonce that you’ve configured. This change supports the use of a Content Security Policy with a nonce so that Platform Launch scripts can still load in a CSP environment.  You can read more about using Platform Launch with a CSP [here](https://experienceleague.adobe.com/docs/launch/using/reference/client-side-info/content-security-policy-csp.html).
 
 ## June 18, 2019
 
@@ -126,7 +126,7 @@ v1.4.2
 ## November 8, 2018
 
 * **Persist Cohort option** - The option to persist a cohort has been added to the Sampling condition. This has the effect of keeping a user in or out of the sample cohort across sessions. For example, if the “persist cohort” checkbox is checked and the condition returns true the first time it is run for a given visitor, it will return true on all subsequent runs of the condition for the same visitor. Similarly, if the “persist cohort” checkbox is checked and the condition returns false the first time it is run for a given visitor, it will return false on all subsequent runs of the condition for the same visitor.
-* **Bug Fix** - Fixed an issue where a rule using a Page Bottom event and a Custom Code action on a page where tags was being loaded synchronously but improperly installed (no call to `_satellite.pageBottom()`) would clear website content.
+* **Bug Fix** - Fixed an issue where a rule using a Page Bottom event and a Custom Code action on a page where tags were being loaded synchronously but improperly installed (no call to `_satellite.pageBottom()`) would clear website content.
 * **Bug Fix** - Fixed an issue where the Enters Viewport would not function if the tags library was loaded asynchronously and finished loading after the browser’s DOMContentLoaded event was fired.
 
 ## May 24, 2018

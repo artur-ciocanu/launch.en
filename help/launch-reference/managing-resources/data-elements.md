@@ -248,7 +248,7 @@ Some common use cases include:
 
 ## Built-in data elements
 
-You must create custom data element in the tags workspace if you previously used any of the following data elements:
+You must create custom data element in the Data Collection UI if you previously used any of the following data elements:
 
 * URI
 * Protocol

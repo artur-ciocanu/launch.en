@@ -73,7 +73,7 @@ If you see things occurring out of order, it is likely that you have some timing
 
 ## Loading the tags embed code asynchronously
 
-Tags provides a toggle to turn on asynchronous loading when creating an embed code when you configure an [environment](../publishing/environments.md). You can also configure asynchronous loading yourself:
+Tags provide a toggle to turn on asynchronous loading when creating an embed code when you configure an [environment](../publishing/environments.md). You can also configure asynchronous loading yourself:
 
 1. Add an async attribute to the `<script>` tag to load the script asynchronously.
 

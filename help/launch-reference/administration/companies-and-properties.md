@@ -129,11 +129,11 @@ Follow the instructions to create a mobile property.
 
 2. Select **[!UICONTROL Save]**.
 
-After your property is created, tags automatically adds a default host, a set of environments (Development, Staging, and Production), and the default extensions.
+After your property is created, Platform automatically adds a default host, a set of environments (Development, Staging, and Production), and the default extensions.
 
 ## Delete a property
 
-Follow the instructions to delete a property from tags.
+Follow the steps below to delete a tag property.
 
 >[!NOTE]
 >

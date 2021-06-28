@@ -1,6 +1,6 @@
 ---
 title: Adobe Analytics Extension Overview
-description: Learn about the Adobe Analytics tags extension in Adobe Experience Platform.
+description: Learn about the Adobe Analytics tag extension in Adobe Experience Platform.
 exl-id: 71972939-cfc5-405f-8ffa-702167fb0ac7
 ---
 # Adobe Analytics extension overview

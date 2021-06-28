@@ -136,7 +136,7 @@ Extensions can define data element types if needed for your extension to operate
 
 When a user selects your extension from the **Extension** dropdown, the **Data Element Type** dropdown is populated with any data element types supplied by your extension. The user can then map each data element to its source value. Data elements can then be used when building rules in the Data Element Change Event or Custom Code Event to trigger a rule to execute. A data element can also be used in the Data Element Condition or other Conditions, Exceptions, or Actions in a rule.
 
-Once the data element is created (the mapping is set up), users can reference the source data simply by referencing the data element. If the source of the value ever changes (site re-designs, etc.) users only need to update the mapping once in the tags workspace and all the data elements will automatically receive the new source value.
+Once the data element is created (the mapping is set up), users can reference the source data simply by referencing the data element. If the source of the value ever changes (site re-designs, etc.) users only need to update the mapping once in the Data Collection UI and all the data elements will automatically receive the new source value.
 
 ### Rules
 
@@ -170,7 +170,7 @@ In the main navigation, select **Publishing**, then on **Add New Library** link:
 
 A library is a set of instructions for how extensions, data elements, and rules will interact with one another and with a website. Libraries are compiled into builds. A library can contain as many changes as a user is comfortable making or testing at once.
 
-On the **Create Library** screen, add a name in the **Name** text field. Tags provides a default development environment named **Development**. Select **Development** from the **Environment** dropdown list. For simplicity add all the available resources. Select **Add All Changed Resources**, then select **Save**.
+On the **Create Library** screen, add a name in the **Name** text field. Tags provide a default development environment named **Development**. Select **Development** from the **Environment** dropdown list. For simplicity add all the available resources. Select **Add All Changed Resources**, then select **Save**.
 
 >[!NOTE]
 >

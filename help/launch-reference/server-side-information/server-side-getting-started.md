@@ -109,28 +109,27 @@ See the [Web SDK extension documentation](https://experienceleague.adobe.com/doc
 
 ## Create a tag rule to send data to Platform Web SDK
 
-After the above is in place, build data definitions, rules, and so on, that use event forwarding and tags capabilities, but that need only a single request from the page.
+After the above is in place, build data definitions, rules, and so on, that use event forwarding and tags, but that need only a single request from the page.
 
 Create a page load rule using the Platform Web SDK extension and the “Send Event” action type:
 
 1. Open the **[!UICONTROL Rules]** tab, then select **[!UICONTROL Create New Rule]**.
 
-1. Name the rule.
+2. Name the rule.
 
-1. Select **[!UICONTROL Events Add]**.
+3. Select **[!UICONTROL Events Add]**.
 
-1. Add an event by choosing an extension and one of the event types available for that extension, then configure the settings for the event. For example, select **[!UICONTROL Core - Window Loaded]**.
+4. Add an event by choosing an extension and one of the event types available for that extension, then configure the settings for the event. For example, select **[!UICONTROL Core - Window Loaded]**.
 
-1. Add an action using the Platform Web SDK extension. Select **[!UICONTROL Send Event]** from the **[!UICONTROL Action Type]** list, select the desired Instance (Alloy instance configured earlier), and then select a data element to add to the XDM Data block within the Alloy hit.
+5. Add an action using the Platform Web SDK extension. Select **[!UICONTROL Send Event]** from the **[!UICONTROL Action Type]** list, select the desired Instance (Alloy instance configured earlier), and then select a data element to add to the XDM Data block within the Alloy hit.
 
-1. Leave the rest of the settings as default for this example, and select **[!UICONTROL Save]**.
+6. Leave the rest of the settings as default for this example, and select **[!UICONTROL Save]**.
 
 For another example, you might create a rule that sends the data layer to Edge if the user hovers over a specified button.
 
 ## Summary
 
-With the following in place, you can now create event forwarding rules to forward data to
-non-Adobe destinations.
+With the following in place, you can now create event forwarding rules to forward data to non-Adobe destinations.
 
 * Experience Data Model schema (Note the name that you gave it.)
 * An event forwarding property (Keep track of the property ID and environment IDs.)

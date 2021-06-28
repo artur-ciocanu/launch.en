@@ -1,15 +1,15 @@
 ---
-title: Server-side Core Extension Overview
+title: Core Event Forwarding Extension Overview
 description: Learn about the Core event forwarding extension in Adobe Experience Platform.
 exl-id: e3228a8b-abe9-48b5-b39c-6c3b1b955653
 ---
-# Server-side Core extension overview
+# Core event forwarding extension overview
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-The Core extension is the default extension released with event forwarding in Adobe Experience Platform. 
+The Core event-forwarding extension provides the default events, conditions, and data types for event forwarding in Adobe Experience Platform.
 
 Use this reference for information about the options available when using this extension to build a rule.
 

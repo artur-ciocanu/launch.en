@@ -22,9 +22,9 @@ The features of this extension are being ported over to new extension. Here is a
 | Ability to create a streaming connection | Opt-in Support |
 | | XDM Support as a data element | 
 | | First Party Domain Support | 
-| | Debugging tools built-in | 
+| | Debugging tools built in | 
 | | Automatically collects browser context | 
-| | Fully open-source | 
+| | Fully open source | 
 
 
 ## Configure the Adobe Experience Platform extension

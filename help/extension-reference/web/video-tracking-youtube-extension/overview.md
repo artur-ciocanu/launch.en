@@ -27,7 +27,7 @@ This extension is also designed to dynamically check for a unique ID attribute v
 
 >[!NOTE]
 >
->On pages with more than one video, each video uses the same configuration set in the tags rule executing on that page. For example, if you create a rule with an event that triggers on video 50% complete, each video on the page triggers the rule at the 50% cue point.
+>On pages with more than one video, each video uses the same configuration set in the tag rule executing on that page. For example, if you create a rule with an event that triggers on video 50% complete, each video on the page triggers the rule at the 50% cue point.
 
 The Extension relies on the following logic to rewrite the iFrames:
 
@@ -72,7 +72,7 @@ Rules have three actions:
 * **Send beacon:** Send the Adobe Analytics beacon as a custom link tracking call, and provide a ”Link Name” value.
 * **Clear variables:** Clear the Adobe Analytics variables.
 
-## Example tags rule for ”Video Start”
+## Example tag rule for ”Video Start”
 
 The following video extension objects are to be included.
 

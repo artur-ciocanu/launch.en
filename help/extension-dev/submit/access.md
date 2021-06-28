@@ -79,4 +79,4 @@ This completes the required setup in Admin Console. You and your team members th
 
 ## Confirm provisioning
 
-After your company is provisioned with access to tags and your users are set up as described above, you should be able to access the production environment from the [Data Collection UI](https://launch.adobe.com/). If you have been provisioned for tags and have completed the Admin Console steps above, but still cannot sign in to the tags workspace, please contact your Adobe support representatives.
+After your company is provisioned with access to tags and your users are set up as described above, you should be able to access the production environment from the [Data Collection UI](https://launch.adobe.com/). If you have been provisioned for tags and have completed the Admin Console steps above, but still cannot sign in to the Data Collection UI, please contact your Adobe support representatives.

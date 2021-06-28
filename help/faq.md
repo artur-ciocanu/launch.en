@@ -11,19 +11,19 @@ exl-id: 1192c0cd-fa2d-4c82-978c-af75a70d060b
 
 This document provides answers to frequently asked questions about tags in Adobe Experience Platform.
 
-## What are tags capabilities in Adobe Experience Platform?
+## What are tags in Adobe Experience Platform?
 
-Tags are the next-generation of the Adobe tag-management capability, built into the Adobe Experience Platform. Tags enables clients to:
+Tags are the next generation of tag-management capabilities provided by Adobe, built into Adobe Experience Platform. Tags enable clients to:
 
 - Deploy client-side web products using integrations called *extensions*
 - Dynamically deliver configuration to update client implementations in native mobile applications
 - Consistently capture, define, manage, and share data between marketing and advertising products from other vendors and from Adobe
 
-Tags is an advanced code and configuration delivery system that evaluates conditions and executes actions to efficiently and effectively deploy client-side libraries and products. It also provides a highly scalable approach to managing and building integrations and has a robust set of APIs for programmatic interaction.
+Tags are an advanced code and configuration delivery system that evaluates conditions and executes actions to efficiently and effectively deploy client-side libraries and products. They also provides a highly scalable approach to managing and building integrations and has a robust set of APIs for programmatic interaction.
 
 ## How much do tags in Adobe Experience Platform cost?
 
-There is no additional charge for tags capabilities. They are available for any [!DNL Adobe Experience Cloud] customer.
+There is no additional charge for tags. They are available for any [!DNL Adobe Experience Cloud] customer.
 
 ## I heard there are plug-ins now. What's that about?
 
@@ -65,7 +65,7 @@ Tags are designed to deliver and run marketing and advertising technologies on y
 
 ## Which browsers do tags support?
 
-Browser support in the tags client-side libraries:
+Browser support for tags:
 
 - [!DNL Chrome] (latest)
 - [!DNL Safari] (latest)
@@ -75,7 +75,7 @@ Browser support in the tags client-side libraries:
 - [!DNL iOS Safari] (latest)
 - [!DNL Android Chrome] (latest)
 
-Browser support in the tags application interface:
+Browser support for the tags application interface:
 
 - [!DNL Chrome] (latest)
 - [!DNL Safari] (latest)

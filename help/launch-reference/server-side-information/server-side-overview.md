@@ -53,7 +53,7 @@ It is important to note the following differences between event forwarding and t
 
 * Sequence of rule actions
 
-    In the Action section of a rule, event forwarding rules are always executed sequentially. Make sure the order of actions is correct when you save a rule. This execution sequence cannot be chosen like it can in the tags workspace.
+    In the Action section of a rule, event forwarding rules are always executed sequentially. Make sure the order of actions is correct when you save a rule. This execution sequence cannot be chosen like it can in the Data Collection UI.
 
 * Custom code JavaScript versions
 

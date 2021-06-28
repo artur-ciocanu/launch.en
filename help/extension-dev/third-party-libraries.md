@@ -133,7 +133,7 @@ module.exports = function() {
 
 Optionally, you can take additional steps to refactor this implementation. Since the variables `scriptElement` and `firstScriptElement` are now scoped to the exported function, you can remove the IIFE since these variables don't run the risk of becoming globals.
 
-In addition, tags provides several [core modules](./web/core.md) which are utilities that any extension can use. Specifically, the `@adobe/reactor-load-script` module loads a script from a remote location by creating a script element and adding it to the document. By using this module for the script loading process, you can refactor the action code even further:
+In addition, tags provide several [core modules](./web/core.md) which are utilities that any extension can use. Specifically, the `@adobe/reactor-load-script` module loads a script from a remote location by creating a script element and adding it to the document. By using this module for the script loading process, you can refactor the action code even further:
 
 ```js
 var loadScript = require('@adobe/reactor-load-script');

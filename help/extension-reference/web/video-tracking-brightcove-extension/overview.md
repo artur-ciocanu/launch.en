@@ -27,13 +27,13 @@ This extension version 1.1.0 supports embedding multiple BrightCove videos on a 
 
 If the webpage that uses this extension interacting with the video before the relevant script has completely loaded, there are two actions you can take to remedy the issue. Firstly the tag library can be loaded synchronously, and secondly, place the `<script type="text/javascript">\_satellite.pageBottom();\</script\>` element before the video embed on the page.
 
-See the [BrightCove API documentation](https://docs.brightcove.com/brightcove-player/1.x/Player.html#vjsplayer) for more information on the components methods and events used with this extension. 
+See the [BrightCove API documentation](https://docs.brightcove.com/brightcove-player/1.x/Player.html#vjsplayer) for more information on the components methods and events used in this extension. 
 
 ## Data elements
 
 There are seven data elements available within the extension, none of which require configuration.
 
-* **Playhead Position:** When this data element is called upon within a tags rule, it records in seconds, the place of the playhead position on the video timeline.
+* **Playhead Position:** When this data element is called upon within a tag rule, it records in seconds, the place of the playhead position on the video timeline.
 * **Video Account ID:** This data element records the ID of the Brightcove account that published the video.
 * **Video Duration:** This data element records the total duration, in seconds, of the video content. Additionally, a Calculated Metric can be created within Analytics to convert the number in seconds, to minutes or hours.
 * **Video Ad Support:** This data element specifies whether ads are supported within the video or not.
@@ -46,9 +46,11 @@ There are seven data elements available within the extension, none of which requ
 There are seven events available within the extension, only Custom Cue Point Tracking requires configuration.
 
 * **Custom Cue Point Tracking:** This event triggers when the video reaches the specified video threshold percentage. For example, if a video is 60 seconds long and the specified cue point is 50%, the event triggers at the 30-second mark.
-  >[!NOTE]
-  >
-  >Please note that this event triggers every time this cue point is reached. For example, if the user reaches the 50% mark, seeks the video before the 50% mark then reaches the 50% mark again, the trigger will fire again.
+
+>[!NOTE]
+>
+>Please note that this event triggers every time this cue point is reached. For example, if the user reaches the 50% mark, seeks the video before the 50% mark then reaches the 50% mark again, the trigger will fire again.
+
 * **Video Completed:** This event triggers when a video fully completes.
 * **Video Loaded Metadata:** This event is fired when the player has received initial duration and dimension information.
 * **Video Pause:** This event triggers when the video is paused.
@@ -66,7 +68,7 @@ The rules have three actions:
 2. Send the Adobe Analytics beacon.
 3. Clear the Adobe Analytics variables.
 
-## Example tags rule for "Video Start"
+## Example tag rule for "Video Start"
 
 The following video extension objects are to be included:
 
