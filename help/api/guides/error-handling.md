@@ -42,6 +42,8 @@ Error responses aim to conform to the [JSON:API errors specification](http://jso
 | `source` | An object containing references to the source of the error, optionally including any of the following members:<ul><li>`pointer`: a [JSON Pointer (RFC6901)](https://datatracker.ietf.org/doc/html/rfc6901) string that references the associated entity in the request document (such as `/data` for a primary data object, or `/data/attributes/title` for a specific attribute).</li></ul> |
 | `meta` | An object containing non-standard metadata about the error. |
 
+{style="table-layout:auto"}
+
 ## Error reference
 
 The following table lists the different errors that the API can return.
@@ -97,3 +99,5 @@ The following table lists the different errors that the API can return.
 | `unsupported-custom-code-language` | A custom code language was supplied that is not supported. |
 | `upgraded-extension-required` | Once you've installed an extension upgrade, you must include it in all Libraries until the upgrade gets to Production. The only exception is if the extension has not been published yet. |
 | `upstream-build-required` | A successful Build for the upstream Library is required before you can build this one. |
+
+{style="table-layout:auto"}

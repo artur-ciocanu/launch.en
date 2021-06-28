@@ -30,6 +30,8 @@ gpg --import {KEY_NAME}
 | --- | --- |
 | `{KEY_NAME}` | The name of the public key file. |
 
+{style="table-layout:auto"}
+
 **Example**
 
 ```shell
