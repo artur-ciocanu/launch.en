@@ -26,7 +26,7 @@ This section discusses factors that are important to understand when using Platf
 
 Organization Administrators are often referred to as Org Admins. An Org Admin's main function is to assign permissions to other users. They do this by creating Product Profiles (or groups) that contain a specific set of rights within a specific product and then assigning users, existing or new, to that Product Profile.
 
-Enterprise Org Admins do not inherit any rights for tags in Adobe Experience Platform. They must add themselves to a Product Profile that has rights for tags if they want to do anything in tags workspace.
+Enterprise Org Admins do not inherit any rights for tags in Adobe Experience Platform. They must add themselves to a Product Profile that has rights for tags if they want to do anything in the tags workspace.
 
 #### Product Administrator
 

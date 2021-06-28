@@ -33,7 +33,7 @@ Once the library finishes loading, the global function is replaced with a new on
 
 ### Base code example
 
-The following JavaScript is an example of an unminified base code for the [Pinterest conversion tag](https://developers.pinterest.com/docs/ad-tools/conversion-tag/?), which will be referenced later in this document to demonstrate how the base code be adapted for different implementation strategies in tags:
+The following JavaScript is an example of an unminified base code for the [Pinterest conversion tag](https://developers.pinterest.com/docs/ad-tools/conversion-tag/?), which will be referenced later in this document to demonstrate how the base code be adapted for different implementation strategies with tags:
 
 ```js
 !function(scriptUrl) {

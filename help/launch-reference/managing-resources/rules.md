@@ -41,7 +41,7 @@ The events that are available depend on which extensions are installed. For info
 
 >[!NOTE]
 >
->[!DNL DTM] provided page load, event-based, and direct call rule types. Tag rules allow you to define the event that triggers the rule. The different [!DNL DTM] options are available to use in tags as event types.
+>[!DNL DTM] provided page load, event-based, and direct call rule types. Tag rules allow you to define the event that triggers the rule. The different [!DNL DTM] options are available to use in the Data Collection UI as event types.
 
 ### Actions (then)
 
@@ -148,19 +148,19 @@ You can order different custom code types among each other. For example, you can
 
 ## Rule Bundling
 
-Rule events and conditions are always bundled into the main tags library. Actions may be bundled in the main library or loaded late as sub-resources as needed. Whether the actions are bundled or not is determined by the rule's event type.
+Rule events and conditions are always bundled into the main tag library. Actions may be bundled in the main library or loaded late as sub-resources as needed. Whether the actions are bundled or not is determined by the rule's event type.
 
 ### Rules with "Core - Library Loaded" or "Core - Page Top" events 
 
 These events need to be executed almost always (unless conditions evaluate to false), so for efficiency, they are bundled into the main library, the file referenced by your embed code.
 
-* **Javascript:** The JavaScript is embedded in the main tags library. The custom script is wrapped in a script tag and written to the document using `document.write`. If the rule has multiple custom scripts, they're written in order.
+* **Javascript:** The JavaScript is embedded in the main tag library. The custom script is wrapped in a script tag and written to the document using `document.write`. If the rule has multiple custom scripts, they're written in order.
 
    >[!NOTE]
    >
    >Tags in Adobe Experience Platform uses JavaScript version es5. Event forwarding uses version es6.
    
-* **HTML:** The HTML is embedded in the main tags library. `document.write` is used to write the HTML to the document. If the rule has multiple custom scripts, they're written in order.
+* **HTML:** The HTML is embedded in the main tag library. `document.write` is used to write the HTML to the document. If the rule has multiple custom scripts, they're written in order.
 
 ### Rules with any other event
 

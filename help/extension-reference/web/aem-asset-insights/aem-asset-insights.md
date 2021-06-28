@@ -27,7 +27,7 @@ There are also two metrics:
 
 These reports must be enabled using the Analytics Administrator (select **[!UICONTROL Analytics] > [!UICONTROL Admin] > [!UICONTROL Report Suites] > `<report suite>` > [!UICONTROL Edit Settings] > [!UICONTROL AEM] > [!UICONTROL AEM Assets Reporting]**) before they can be populated using this extension.
 
-The "*Adobe Analytics*" tag extension for Adobe Experience Platform must be installed into the same tags Web Property.
+The "*Adobe Analytics*" tag extension for Adobe Experience Platform must be installed into the same web property.
         
 ### Adobe Experience Manager (AEM)
                         
@@ -47,7 +47,7 @@ This section describes how to configure AEM with tags in Adobe Experience Platfo
 
 ### Integrate AEM with tags in Adobe Experience Platform
 
-The recommended integration of [tags](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) with Adobe Experience Manager is done via Adobe I/O.
+The recommended integration of [Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) with Adobe Experience Manager is done via Adobe I/O.
 
 1. [Connect AEM with tags in Adobe Experience Platform using Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
 

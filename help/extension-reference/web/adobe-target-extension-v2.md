@@ -128,7 +128,7 @@ Here are some things to keep in mind when using the pre-hiding snippet:
   * When the page load request times out
   * When the snippet itself times out
 * The "Fire Page Load Request” action should be used on all pages using the pre-hiding snippet to minimize the duration of the pre-hiding.
-* Body hiding must also be enabled in the Page Load Request action in the Page Load rule you use for Target in tags; otherwise, all Page loads remain hidden for the timeout period.
+* Body hiding must also be enabled in the Page Load Request action in the Page Load rule you use for Target in the Data Collection UI; otherwise, all Page Loads remain hidden for the timeout period.
 
 The pre-hiding code snippet is as follows and can be minified. The configurable options are at the end:
 

@@ -28,7 +28,7 @@ exl-id: b18889e8-a2a2-44bf-acb6-7693b4d1bbca
 ### Adobe Target v2 Extension 0.13.7
 
 - Fixed an issue with `targetPageParams` being included in mbox requests. `targetPageParams` should only be included in `pageLoad` requests.
-- Fixed an issue with document and window global objects in the tag extension by replacing the tags global object dependencies with direct references to them. 
+- Fixed an issue with document and window global objects in the tag extension by replacing global object dependencies with direct references to them. 
 - Updated at.js to 2.4.1.
 
 ## January 25, 2021

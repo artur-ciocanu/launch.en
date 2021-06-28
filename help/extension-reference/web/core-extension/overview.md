@@ -554,7 +554,7 @@ The Core extension, available to all Adobe Experience Platform users, contains a
 
 #### Rules using the page top or page bottom events
 
-Code from custom actions is embedded in the main tags library. The code is written to the document using document.write. If a rule has multiple Custom Code actions, the code is written in the order configured in the rule.
+Code from custom actions is embedded in the main tag library. The code is written to the document using document.write. If a rule has multiple Custom Code actions, the code is written in the order configured in the rule.
 
 #### Rules using any event other than page top or page bottom
 
@@ -676,7 +676,7 @@ Get the value of:
 
 Any available JavaScript object or variable can be referenced using the path field.
 
-Tag data elements can be used to capture your markup JavaScript variables or object properties. These values can then be used within your extensions or custom rules by referencing the tag data elements. If the source of the data changes, it is only necessary to update the reference to the source within tags.
+Tag data elements can be used to capture your markup JavaScript variables or object properties. These values can then be used within your extensions or custom rules by referencing the tag data elements. If the source of the data changes, it is only necessary to update the reference to the source within the tags workspace.
 
 In the example below, the markup contains a JavaScript variable called `Page_Name`.
 

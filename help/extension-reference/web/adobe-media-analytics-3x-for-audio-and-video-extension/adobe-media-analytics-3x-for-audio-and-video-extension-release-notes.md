@@ -23,4 +23,4 @@ exl-id: 59e08258-177d-46f6-bcd7-a4c818766beb
 * Uses Media Collection API for tracking media
 * Supports player state tracking
 
-The [Adobe Media Analytics (3.x SDK) for Audio and Video Extension](./overview.md) adds the core Media Analytics 3.x JavaScript library. This library provides the functionality for tracking media to a tags site or project.
+The [Adobe Media Analytics (3.x SDK) for Audio and Video Extension](./overview.md) adds the core Media Analytics 3.x JavaScript library. This library provides the functionality for tracking media to a tags-enabled site or project.

@@ -40,6 +40,6 @@ Look forward to more updates as Experience Platform and Data Collection continue
 
 ## January 13th, 2021
 
-**General Availability: Tags Event Forwarding** Send event-level data to the Adobe Experience Platform Edge Network then use tags event forwarding to transform, enrich, and send that data to a non-Adobe endpoint using Adobe's servers, not the client, with low latency.
+**General Availability: Event Forwarding** Send event-level data to the Adobe Experience Platform Edge Network then use tags event forwarding to transform, enrich, and send that data to a non-Adobe endpoint using Adobe's servers, not the client, with low latency.
 
-See [tags event forwarding overview](https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-overview.html?lang=en#server-side-info) and [Getting started with tags event forwarding](https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-getting-started.html?lang=en#server-side-info) for more information.
+See the [event forwarding overview](https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-overview.html?lang=en#server-side-info) and [Getting started with event forwarding](https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-getting-started.html?lang=en#server-side-info) documentation for more information.

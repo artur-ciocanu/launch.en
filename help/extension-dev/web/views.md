@@ -94,7 +94,7 @@ This settings object will later be emitted in the tag runtime library. The conte
 
 ## Leveraging shared views
 
-The `window.extensionBridge` object has several methods that allow you to take advantage of existing views available in tags so you don't have to reproduce them within your view. The available methods are as follows:
+The `window.extensionBridge` object has several methods that allow you to take advantage of existing views available through tags so you don't have to reproduce them within your view. The available methods are as follows:
 
 ### [!DNL openCodeEditor]
 

@@ -1,6 +1,6 @@
 ---
 title: Server-side Core Extension Overview
-description: Learn about the server-side Core extension in Adobe Experience Platform event forwarding.
+description: Learn about the Core event forwarding extension in Adobe Experience Platform.
 exl-id: e3228a8b-abe9-48b5-b39c-6c3b1b955653
 ---
 # Server-side Core extension overview
@@ -9,7 +9,7 @@ exl-id: e3228a8b-abe9-48b5-b39c-6c3b1b955653
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-The Core extension is the default extension released with Adobe Experience Platform event forwarding. 
+The Core extension is the default extension released with event forwarding in Adobe Experience Platform. 
 
 Use this reference for information about the options available when using this extension to build a rule.
 
@@ -19,7 +19,7 @@ This section describes the condition types available in the Core extension.  The
 
 ### Custom Code
 
-Specify any custom code that must exist as a condition of the event. Use the built-in code editor to enter the custom code. Adobe Experience Platform event forwarding supports ES6.  
+Specify any custom code that must exist as a condition of the event. Use the built-in code editor to enter the custom code. Event forwarding in Adobe Experience Platform supports ES6.  
 
 1. Select **[!UICONTROL Open Editor]**.
 1. Type the custom code.
@@ -148,7 +148,7 @@ This section describes the action types available in the Core extension.
 
 ### Custom Code
 
-Provide the code that runs after the event is triggered and conditions are evaluated. Platform event forwarding supports ES6.
+Provide the code that runs after the event is triggered and conditions are evaluated. Event forwarding in Adobe Experience Platform supports ES6.
 
 1. Name the action code.
 1. Select **[!UICONTROL Open Editor]**.
@@ -219,4 +219,4 @@ arc.event.xdm.page.pageName
 
 >[!NOTE]
 >
->The `interact` call from the client has `events`, but in Platform event forwarding you need `event`. This is because Platform event forwarding inspects each event individually, and not as a batch of multiple events as shown on the client.
+>The `interact` call from the client has `events`, but for event forwarding you need `event`. This is because event forwarding inspects each event individually, and not as a batch of multiple events as shown on the client.

@@ -1,6 +1,6 @@
 ---
 title: Condition Types for Web Extensions
-description: Learn how to define a condition-type library module for a tag extension ina web property.
+description: Learn how to define a condition-type library module for a tag extension in a web property.
 exl-id: 3a515c93-f453-49b6-8832-92a51699ced3
 ---
 # Condition types for web extensions

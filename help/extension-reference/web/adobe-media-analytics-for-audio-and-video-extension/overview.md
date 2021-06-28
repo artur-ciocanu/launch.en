@@ -172,7 +172,7 @@ The MA extension exposes the `get-instance` and `media-heartbeat` shared modules
 
 >[!NOTE]
 >
->**Testing:** For this release, to test your extension you must upload it to [tags](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/73a73bd5ff53162339ce5ded3f4bba4712146d20/extension-reference/launch.adobe.com), where you have access to all dependent extensions.
+>**Testing:** For this release, to test your extension you must upload it to [Platform](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/73a73bd5ff53162339ce5ded3f4bba4712146d20/extension-reference/launch.adobe.com), where you have access to all dependent extensions.
 
 
 <!--

@@ -66,12 +66,12 @@ Tags in Adobe Experience Platform have gone mobile!
 
 Used by thousands of customers for web tag management, the tag workspace can now be used to manage your mobile SDKs.
 
-Creating a mobile property in tags allows you to:
+Creating a mobile property in the Data Collection UI allows you to:
 
 * Create data elements and build sophisticated rules that can combine actions across multiple solutions.
 * Manage mobile extensions:
   * Mobile Core and Profile extensions are pre-installed with every mobile property.
-  * Extensions are available for other [!DNL Adobe] solutions including [!DNL Adobe Analytics], [!DNL Adobe Target], and [!DNL Adobe Audience Manager].
+  * Extensions are available for other Adobe solutions including [!DNL Adobe Analytics], [!DNL Adobe Target], and [!DNL Adobe Audience Manager].
 * Mobile Core extension and all additional extensions can be downloaded and installed through dependency managers such as Maven and CocoaPods.
 * When you add an extension, you must recompile your app and complete the app store submission/approval process.
 
@@ -309,7 +309,7 @@ Set a new or existing library as your active library. When creating/editing rule
 
 #### Multiple arguments in the logger
 
-You can now pass actual objects to the log function and view them as objects in the browser console when using `_satellite.debug()`. This makes the logger in tags behave a lot more like console.log. To enable this change, there is no longer a persistent history attached to the `_satellite.debug()` function, so when you call it for the first time, you'll no longer see a history of past events. You will see any debug messages from that point forward.
+You can now pass actual objects to the log function and view them as objects in the browser console when using `_satellite.debug()`. This makes the tag logger behave a lot more like console.log. To enable this change, there is no longer a persistent history attached to the `_satellite.debug()` function, so when you call it for the first time, you'll no longer see a history of past events. You will see any debug messages from that point forward.
 
 ## January 10, 2018
 
