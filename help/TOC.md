@@ -162,7 +162,7 @@ git-repo: https://github.com/AdobeDocs/launch.en
     * [Encrypting values](./api/guides/encrypting-values.md)
     * [Error handling](./api/guides/error-handling.md)
     * [Filtering responses](./api/guides/filtering.md)
-    * [Paginating responses](./api/guides/filtering.md)
+    * [Paginating responses](./api/guides/pagination.md)
     * [Relationships](./api/guides/relationships.md)
     * [Search](./api/guides/search.md)
   * Endpoints {#endpoints}
