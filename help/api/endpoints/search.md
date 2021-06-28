@@ -74,8 +74,10 @@ curl -X POST \
               "value": "Performance"
             },
             "attributes.revision_number": {
-              "lte": "2",
-              "gt": "0"
+              "range": {
+                "lte": "2",
+                "gt": "0"
+              }
             }
           },
           "sort": [
@@ -96,7 +98,7 @@ curl -X POST \
 | `from` | The number of results to offset the response by. |
 | `size` | The maximum amount of results to return. Results cannot exceed 100 items. |
 | `query` | An object that represents the search query. For each property in this object, the key must represent a field path to query by, and the value must be an object whose sub-properties determine what to query for.<br><br>For each field path, you can use the following sub-properties:<ul><li>`exists`: Returns true if the field exists in the resource.</li><li>`value`: Returns true if the field's value matches the value of this property.</li><li>`value_operator`: Boolean logic used to determine how a `value` query should be treated with other `value` queries under the `query` object. Allowed values are `AND` and `OR`. When excluded, `AND` logic is assumed.</li><li>`range` Returns true if the field's value falls within a specific numerical range. The range itself is determined by the following sub-properties:<ul><li>`gt`: Greater than the supplied value, non-inclusive.</li><li>`gte`: Greater than or equal to the supplied value.</li><li>`lt`: Less than the supplied value, non-inclusive.</li><li>`lte`: Less than or equal to the supplied value.</li></ul></li></ul> |
-| `sort` | An array of objects, indicating the order in which to sort results. Each object must contain a single property, the key representing the field path to sort by, and the value representing the sort order (`asc` for ascending, `desc` for descending). |
+| `sort` | An array of objects, indicating the order in which to sort results. Each object must contain a single property: the key represents the field path to sort by, and the value represents the sort order (`asc` for ascending, `desc` for descending). |
 | `resource_types` | An array of strings, indicating the specific resource types to search. |
 
 **Response**
