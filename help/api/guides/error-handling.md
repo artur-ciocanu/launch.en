@@ -54,7 +54,7 @@ The following table lists the different errors that the API can return.
 | `connection-refused` | A connection to the server could not be established. |
 | `decrypt-bad-passphrase` | The data could not be decrypted with the provided passphrase. |
 | `decrypt-failed` | The data could not be decrypted with the provided private key. Ensure the key works locally and that whitespace has been trimmed. |
-| `decrypt-no-data` | The data cannot be decrypted without a private key. Please provide an encryped private key. |
+| `decrypt-no-data` | The data cannot be decrypted without a private key. Please provide an encrypted private key. |
 | `delegate-descriptor-unresolved` | The extension did not provide the expected definition of this delegate descriptor. The extension may need to be updated. |
 | `deleted-resources` | The resources that you are trying to add to your Library have been deleted. |
 | `environment-in-use` | An Environment can only be assigned to one Library at a time. Option 1 is to choose a different environment. Option 2 is to free up this Environment by moving the Library to another Environment or deleting the Library. |
