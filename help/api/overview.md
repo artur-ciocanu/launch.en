@@ -98,11 +98,11 @@ A callback is a message that Platform sends to a URL host whenever a new audit e
 
 Notes are textual annotations that you can add to certain tag resources, such as data elements, extensions, libraries, properties, rules, and rule components. See the [notes endpoint guide](./endpoints/notes.md) to learn how to manage notes in the API.
 
-## Profiles
+## Profile
 
 A profile contains all the information about the logged-in user, including all the Adobe Orgs to which they belong, the product profiles they belong to within each Org, and the rights they have from each product profile.
 
-See the [profiles endpoint guide](./endpoints/profiles.md) to learn how to view this information in the API.
+See the [profile endpoint guide](./endpoints/profile.md) to learn how to view this information in the API.
 
 ## Search
 
