@@ -7,7 +7,7 @@ exl-id: de3ee753-e524-44c7-b6de-72f017c40956
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 An event type library module is designed to detect when an activity happens and then call a function to fire an associated rule. The event being detected is customizable. It could detect when a user makes a certain gesture, scrolls rapidly, or interacts with something?
 

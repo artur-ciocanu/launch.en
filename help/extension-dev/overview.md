@@ -7,7 +7,7 @@ exl-id: 0dd90fa7-91e5-4297-b2c2-5c52ee893357
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../launch-term-updates.md) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 One of the primary goals of Adobe Experience Platform is to create an open ecosystem where engineers outside of the core engineering team can expose additional functionality through tags. This is done through Reactor extensions. Once an extension has been installed on a tag property by a user, that extension's functionality then becomes available for use by all users of the property.
 

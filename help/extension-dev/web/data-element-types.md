@@ -7,7 +7,7 @@ exl-id: 72c43ac3-4672-4eb5-a062-550537bdb686
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 The purpose of a data element type library module is to retrieve a piece of data. The method for this retrieval is customizable. Different data element types allow Adobe Experience Platform users to retrieve data from local storage, a cookie, or a DOM element.
 
