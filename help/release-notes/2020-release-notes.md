@@ -106,7 +106,7 @@ exl-id: c4e4f72c-7fdb-4937-b555-444e390d0072
 
 ### Updates
 
-* The Data Collection UI sign-in and sign-out UI has been significantly improved. Switching between tags in Adobe Experience Platform and other Adobe products is now also much smoother. Finally, if you have a single account with rights to multiple companies, this is also dramatically improved.
+* The Data Collection UI sign-in and sign-out UI has been significantly improved. Switching between tags and other Adobe products is now also much smoother. Finally, if you have a single account with rights to multiple companies, this is also dramatically improved.
 * The structure of tags URLs is now more consistent with other Adobe products. The new URL format replaces `https://launch.adobe.com` with `https://experience.adobe.com/#/@companyID/launch/`. The old URLs redirect to the new ones, but you should update your bookmarks to save a few seconds each time you access the Data Collection UI.
 
 ## February 19, 2020

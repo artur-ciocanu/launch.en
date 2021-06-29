@@ -25,7 +25,7 @@ Retrieval options for mobile properties are not yet available.
 
 ## Republishing
 
-Each tag environment provides a link to a tag library file. Any library that you build in that environment can be referenced with that link.
+Each tag environment provides a link to a library file. Any library that you build in that environment can be referenced with that link.
 
 When you build to a development or staging environment, the old build is cleaned up and the new build is deployed. For your production environment, this link is updated to point to the latest build, but the five most recent builds are kept around before they are cleaned up.
 

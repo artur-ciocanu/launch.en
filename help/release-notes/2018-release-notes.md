@@ -247,7 +247,7 @@ You can delete data elements, rules, and extensions. See [Delete Resources](../l
 
 #### Link DTM embed code to tags
 
-When you link your [!DNL DTM] embed code to tags in Adobe Experience Platform, you can keep your [!DNL DTM] production embed code on a page, but serve tag files there instead of [!DNL DTM]. 
+When you link your [!DNL DTM] embed code to tags, you can keep your [!DNL DTM] production embed code on a page, but serve tag files there instead of [!DNL DTM]. 
 
 ## March 6, 2018
 
@@ -350,11 +350,11 @@ Release date: **November 8, 2017**
 
 This is the first release of tags in Adobe Experience Platform.
 
-Tags in Adobe Experience Platform is the next generation of tag management capabilities produced by Adobe. It gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising tags necessary to power relevant customer experiences.
+Tags is the next generation of tag management capabilities produced by Adobe. It gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising tags necessary to power relevant customer experiences.
 
 Tags empower anyone to build and maintain their own integrations by using extensions. These extensions are available to Platform customers in an app-store experience so they can quickly install, configure, and deploy their tags.
 
-Tags are provided to Adobe Experience Cloud customers as an included, value-add feature. Tags in Adobe Experience Platform is an entirely new product with a new code base, designed to replace the previous [!DNL Dynamic Tag Management (DTM)] service. However, [!DNL DTM] will continue to be supported for the foreseeable future. [!DNL Adobe] will continue to fix any significant bugs and ensure consistent performance. At this time, no major feature enhancements are planned for legacy [!DNL DTM].
+Tags are provided to Adobe Experience Cloud customers as an included, value-add feature. Tags is an entirely new product with a new code base, designed to replace the previous [!DNL Dynamic Tag Management (DTM)] service. However, [!DNL DTM] will continue to be supported for the foreseeable future. [!DNL Adobe] will continue to fix any significant bugs and ensure consistent performance. At this time, no major feature enhancements are planned for legacy [!DNL DTM].
 
 ### Key benefits
 
@@ -410,11 +410,11 @@ Automate implementations  or a group of technologies.
 
 #### Light, modular container tag
 
-The container tag created by tags in Adobe Experience Platform is 60% lighter than [!DNL Adobe Tag Manager] and 40% lighter than [!DNL Google Tag Manager]. The content of your container is minified, including your custom code. Everything is modular. If you don't need an item, it is not included in your library. The result is an implementation that is fast and compact.
+The container tag created by tags is 60% lighter than [!DNL Adobe Tag Manager] and 40% lighter than [!DNL Google Tag Manager]. The content of your container is minified, including your custom code. Everything is modular. If you don't need an item, it is not included in your library. The result is an implementation that is fast and compact.
 
 ## Other highlights
 
-Tags in Adobe Experience Platform provide several improvements over similar systems. These include:
+Tags provide several improvements over similar systems. These include:
 
 * No use of `document.write ()` where [!DNL Chrome] doesn't allow it ​
 * The Page Top and Page Bottom rules are bundled into the main library to minimize unnecessary HTTP calls ​ ​

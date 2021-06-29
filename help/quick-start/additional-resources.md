@@ -13,4 +13,4 @@ The tags community of Adobe Experience Platform is full of talented professional
 
 ## General Usage
 
-The [Awesome Adobe Launch](https://github.com/MisterPhilip/awesome-adobe-launch) GitHub repository provides a community-curated list of material related to tags in Adobe Experience Platform.
+The [Awesome Adobe Launch](https://github.com/MisterPhilip/awesome-adobe-launch) GitHub repository provides a community-curated list of material related to tags.

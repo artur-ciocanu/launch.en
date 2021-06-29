@@ -1,6 +1,6 @@
 ---
 title: Implementation Guides
-description: Learn how to implement Adobe Experience Cloud solutions with Adobe Experience Platform.
+description: Learn how to implement Adobe Experience Cloud solutions with tags.
 exl-id: 19dc15ee-3780-41cb-b5b6-18b9cf337554
 ---
 # Implementation Guides

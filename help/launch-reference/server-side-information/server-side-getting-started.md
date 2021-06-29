@@ -3,17 +3,17 @@ title: Getting Started With Event Forwarding
 description: Follow this step-by-step tutorial to get started using event forwarding in Adobe Experience Platform.
 exl-id: b565af18-2208-4c36-9d0f-1939b4c623aa
 ---
-# Getting started with event forwarding in Adobe Experience Platform
+# Getting started with event forwarding
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-To use event forwarding in Adobe Experience Platform, data must be sent to Adobe Experience Platform Edge Network using one or more of these three options:
+To use event forwarding in Adobe Experience Platform, data must be sent to Adobe Experience Platform Edge Network using one or more of the following three options:
 
-* Adobe Experience Platform Web SDK
-* Adobe Experience Platform Mobile SDK (coming in H2 2021)
-* Server-to-Server API (coming in H2 2021)
+* [Adobe Experience Platform Web SDK](../../extension-reference/web/aep-web-sdk/overview.md)
+* [Adobe Experience Platform Mobile SDK](https://sdkdocs.com)
+* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)
 
 >[!NOTE]
 >The Platform Web SDK and Platform Mobile SDK do not require deployment through tags in Adobe Experience Platform. However, using tags to deploy these SDKs is the recommended approach.
@@ -25,7 +25,7 @@ After you send data to Edge network, you can toggle on Adobe solutions to send d
 * Adobe Experience Platform Collection Enterprise (Contact your account manager for pricing)
 * Event forwarding in Adobe Experience Platform
 * Adobe Experience Platform Web or Mobile SDK, configured to send data to Edge Network
-* Map data to Experience Data Model (XDM) (This mapping can be done using tags in Adobe Experience Platform)
+* Map data to Experience Data Model (XDM) (This mapping can be done using tags)
 
 ## Create an XDM schema
 

@@ -11,7 +11,7 @@ exl-id: 1192c0cd-fa2d-4c82-978c-af75a70d060b
 
 This document provides answers to frequently asked questions about tags in Adobe Experience Platform.
 
-## What are tags in Adobe Experience Platform?
+## What are tags?
 
 Tags are the next generation of tag-management capabilities provided by Adobe, built into Adobe Experience Platform. Tags enable clients to:
 
@@ -21,7 +21,7 @@ Tags are the next generation of tag-management capabilities provided by Adobe, b
 
 Tags are an advanced code and configuration delivery system that evaluates conditions and executes actions to efficiently and effectively deploy client-side libraries and products. They also provides a highly scalable approach to managing and building integrations and has a robust set of APIs for programmatic interaction.
 
-## How much do tags in Adobe Experience Platform cost?
+## How much do tags cost?
 
 There is no additional charge for tags. They are available for any [!DNL Adobe Experience Cloud] customer.
 
@@ -39,15 +39,15 @@ Tags have opened its virtually self-service portal, which extension developers c
 
 We have many customers who also choose to build their own private extensions for use only within their own companies using the same extension development methods.
 
-## Do tags in Adobe Experience Platform meet my company's security standards?
+## Do tags meet my company's security standards?
 
 Tags are SOC-2 and Gramm-Leach-Bliley Act ready. Tags also offer the capability of being self-hosted. JavaScript libraries and mobile configurations can be served from your own servers or the CDN of your choice. For I.T. and security teams, this gives you the ability to run automated testing, to check the files into your own version control system, and to fully comply with any internal production migration processes, security-related or otherwise.
 
 ## When can I move to tags?
 
-Now is the best time to move over to tags in Adobe Experience Platform. The migration process makes it easy to copy your DTM properties into tags. We recommend extensive testing, but we've automated as much as we can (no on-page embed code changes, and automated migration of rules and data elements).
+Now is the best time to move over to tags. The migration process makes it easy to copy your DTM properties into tags. We recommend extensive testing, but we've automated as much as we can (no on-page embed code changes, and automated migration of rules and data elements).
 
-## Do tags in Adobe Experience Platform support single-page apps and my favorite framework?
+## Do tags support single-page apps and my favorite framework?
 
 Yes. Tags have the capabilities to give users and extension developers flexibility in collecting, managing, and distributing data within single-page application experiences or Ajax-heavy pages or sites. This applies regardless of your development framework preferences, whether that's Angular, React.js, Ember, Meteor, etc.
 

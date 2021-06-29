@@ -9,14 +9,14 @@ exl-id: a349ee6c-9854-43d0-adca-2d8f086b63b8
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-Event forwarding in Adobe Experience Platform decreases web page and app weight by using Adobe Experience Platform Edge Network to execute tasks normally done on the client. Event forwarding rules can transform and send data to new destinations without changing tag implementations.
+Event forwarding in Adobe Experience Platform decreases web page and app weight by using Adobe Experience Platform Edge Network to execute tasks normally done on the client. Event forwarding rules can transform and send data to new destinations without changing client-side implementations.
 
 Event forwarding combined with the Adobe Experience Platform Web and Mobile SDKs makes it possible to:
 
 * Make a single call from the page that contains a payload of data. The data then federates server-side to reduce client-side network traffic and deliver a faster experience for customers.
 * Decrease the amount of time it takes for web pages to load so your site conforms to industry best practices around performance.
-* Increase transparency and control across all tag properties of which types of data are sent where.
-* Create an event forwarding rule to send previously tracked data to a new destination.
+* Increase transparency and control over which data types are sent where across all tag properties.
+* Create an event-forwarding rule to send previously tracked data to a new destination.
 
 ## Improved performance
 
@@ -53,7 +53,7 @@ It is important to note the following differences between event forwarding and t
 
 * Sequence of rule actions
 
-    In the Action section of a rule, event forwarding rules are always executed sequentially. Make sure the order of actions is correct when you save a rule. This execution sequence cannot be chosen like it can in the Data Collection UI.
+    In the Action section of a rule, event forwarding rules are always executed sequentially. Make sure the order of actions is correct when you save a rule. This execution sequence cannot be chosen like it can with tags.
 
 * Custom code JavaScript versions
 

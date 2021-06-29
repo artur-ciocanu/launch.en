@@ -154,7 +154,7 @@ These events need to be executed almost always (unless conditions evaluate to fa
 
    >[!NOTE]
    >
-   >Tags in Adobe Experience Platform uses ES5 JavaScript. Event forwarding uses ES6.
+   >Tags uses ES5 JavaScript. Event forwarding uses ES6.
    
 * **HTML:** The HTML is embedded in the main tag library. `document.write` is used to write the HTML to the document. If the rule has multiple custom scripts, they're written in order.
 

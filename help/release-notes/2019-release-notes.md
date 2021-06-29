@@ -104,7 +104,7 @@ You can read more about cache invalidations on the [Managed by Adobe Host](/help
 
 ### Updates
 
-* Libraries that use the [!DNL Managed by Adobe] host and a non-archived environment now reference all sub files directly with `https://` instead of inheriting the underlying page protocol. This enables you to use tag capabilities in embedded HTML scenarios (mobile and set-top-box environment in particular) without self-hosting.
+* Libraries that use the [!DNL Managed by Adobe] host and a non-archived environment now reference all sub files directly with `https://` instead of inheriting the underlying page protocol. This enables you to use tags in embedded HTML scenarios (mobile and set-top-box environment in particular) without self-hosting.
 * You can now unset your Working Library.
 * The Edit Library screen now has a button to [!UICONTROL Remove All Resources].
 * The size of the click target has increased to remove individual resources from a library
@@ -155,7 +155,7 @@ You can read more about cache invalidations on the [Managed by Adobe Host](/help
 
 ## May 8, 2019
 
-The [!DNL Reactor] API that powers tags in Adobe Experience Platform is officially reaching 1.0 status today. This comes with a commitment to maintaining backward compatibility within this major version (the 1.x series). To get started working with the [!DNL Reactor] API, please visit [https://developer.adobelaunch.com/api/\#](https://developer.adobelaunch.com/api/#).
+The [!DNL Reactor] API that powers tags is officially reaching 1.0 status today. This comes with a commitment to maintaining backward compatibility within this major version (the 1.x series). To get started working with the [!DNL Reactor] API, please visit [https://developer.adobelaunch.com/api/\#](https://developer.adobelaunch.com/api/#).
 
 ### Updates
 
