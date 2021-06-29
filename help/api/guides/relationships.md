@@ -33,6 +33,8 @@ POST /properties/{PROPERTY_ID}/{RESOURCE_TYPE}
 | `{PROPERTY_ID}` | The ID of the property to which the resource belongs. |
 | `{RESOURCE_TYPE}` | The type of resource to be created. |
 
+{style="table-layout:auto"}
+
 **Request**
 
 The following request creates a new `rule_component`, establishing relationships with `rules` and an `extension`.
@@ -80,6 +82,8 @@ curl -X POST \
 | `id` | The unique ID of a resource. Each `id` must be accompanied with a sibling `type` property, indicating the type of resource in question. |
 | `type` | The type of resource as referenced by a sibling `id` field. Accepted values include `data_elements`, `rules`, `extensions`, and `environments`. |
 
+{style="table-layout:auto"}
+
 ## Create a relationship by URL {#url}
 
 Unlike other resources, libraries establish relationships through their own dedicated `/relationship` endpoints. Examples include:
@@ -125,6 +129,8 @@ curl -X POST \
 | `id` | The unique ID of a resource. Each `id` must be accompanied with a sibling `type` property, indicating the type of resource in question. |
 | `type` | The type of resource as referenced by a sibling `id` field. Accepted values include `data_elements`, `rules`, `extensions`, and `environments`. |
 
+{style="table-layout:auto"}
+
 ## Relationship requirements by resource {#requirements}
 
 The following tables outline the available relationships for each resource type, whether or not those relationships are required, and the accepted method to manually create the relationship where applicable.
@@ -140,6 +146,8 @@ The following tables outline the available relationships for each resource type,
 | `property` | &#x2713; | | |
 | `entity` | &#x2713; | | |
 
+{style="table-layout:auto"}
+
 ### Builds
 
 | Relationship | Required | Create by payload | Create by URL |
@@ -151,17 +159,23 @@ The following tables outline the available relationships for each resource type,
 | `library` | &#x2713; | | |
 | `property` | &#x2713; | | |
 
+{style="table-layout:auto"}
+
 ### Callbacks
 
 | Relationship | Required | Create by payload | Create by URL |
 | :--- | :---: | :---: | :---: |
 | `property` | &#x2713; | | |
 
+{style="table-layout:auto"}
+
 ### Companies
 
 | Relationship | Required | Create by payload | Create by URL |
 | :--- | :---: | :---: | :---: |
 | `properties` | | | |
+
+{style="table-layout:auto"}
 
 ### Data elements
 
@@ -176,6 +190,8 @@ The following tables outline the available relationships for each resource type,
 | `updated_with_extension` | &#x2713; | | |
 | `updated_with_extension_package` | &#x2713; | | |
 
+{style="table-layout:auto"}
+
 ### Environments
 
 | Relationship | Required | Create by payload | Create by URL |
@@ -184,6 +200,8 @@ The following tables outline the available relationships for each resource type,
 | `builds` | | | |
 | `host` | &#x2713; | &#x2713; | |
 | `property` | &#x2713; | | |
+
+{style="table-layout:auto"}
 
 ### Extensions
 
@@ -197,11 +215,15 @@ The following tables outline the available relationships for each resource type,
 | `extension_package` | &#x2713; | &#x2713; | |
 | `updated_with_extension_package` | &#x2713; | | |
 
+{style="table-layout:auto"}
+
 ### Hosts
 
 | Relationship | Required | Create by payload | Create by URL |
 | :--- | :---: | :---: | :---: |
 | `property` | &#x2713; | | |
+
+{style="table-layout:auto"}
 
 ### Libraries
 
@@ -217,11 +239,15 @@ The following tables outline the available relationships for each resource type,
 | `property` | &#x2713; | | |
 | `last_build` | | | |
 
+{style="table-layout:auto"}
+
 ### Notes
 
 | Relationship | Required | Create by payload | Create by URL |
 | :--- | :---: | :---: | :---: |
 | `resource` | &#x2713; | | |
+
+{style="table-layout:auto"}
 
 ### Properties
 
@@ -235,6 +261,8 @@ The following tables outline the available relationships for each resource type,
 | `extensions` | | | |
 | `extensions` | | | |
 
+{style="table-layout:auto"}
+
 ### Rule components
 
 | Relationship | Required | Create by payload | Create by URL |
@@ -247,6 +275,8 @@ The following tables outline the available relationships for each resource type,
 | `property` | &#x2713; | | |
 | `rules` | &#x2713; | &#x2713; | |
 | `revisions` | &#x2713; | | |
+
+{style="table-layout:auto"}
 
 ### Rules
 

@@ -97,7 +97,7 @@ curl -X POST \
 | --- | --- |
 | `from` | The number of results to offset the response by. |
 | `size` | The maximum amount of results to return. Results cannot exceed 100 items. |
-| `query` | An object that represents the search query. For each property in this object, the key must represent a field path to query by, and the value must be an object whose sub-properties determine what to query for.<br><br>For each field path, you can use the following sub-properties:<ul><li>`exists`: Returns true if the field exists in the resource.</li><li>`value`: Returns true if the field's value matches the value of this property.</li><li>`value_operator`: Boolean logic used to determine how a `value` query should be treated with other `value` queries under the `query` object. Allowed values are `AND` and `OR`. When excluded, `AND` logic is assumed.</li><li>`range` Returns true if the field's value falls within a specific numerical range. The range itself is determined by the following sub-properties:<ul><li>`gt`: Greater than the supplied value, non-inclusive.</li><li>`gte`: Greater than or equal to the supplied value.</li><li>`lt`: Less than the supplied value, non-inclusive.</li><li>`lte`: Less than or equal to the supplied value.</li></ul></li></ul> |
+| `query` | An object that represents the search query. For each property in this object, the key must represent a field path to query by, and the value must be an object whose sub-properties determine what to query for.<br><br>For each field path, you can use the following sub-properties:<ul><li>`exists`: Returns true if the field exists in the resource.</li><li>`value`: Returns true if the field's value matches the value of this property.</li><li>`value_operator`: Boolean logic used to determine how a `value` query should handled. Allowed values are `AND` and `OR`. When excluded, `AND` logic is assumed. See the section on [value operator logic](#value-operator) for more information.</li><li>`range` Returns true if the field's value falls within a specific numerical range. The range itself is determined by the following sub-properties:<ul><li>`gt`: Greater than the supplied value, non-inclusive.</li><li>`gte`: Greater than or equal to the supplied value.</li><li>`lt`: Less than the supplied value, non-inclusive.</li><li>`lte`: Less than or equal to the supplied value.</li></ul></li></ul> |
 | `sort` | An array of objects, indicating the order in which to sort results. Each object must contain a single property: the key represents the field path to sort by, and the value represents the sort order (`asc` for ascending, `desc` for descending). |
 | `resource_types` | An array of strings, indicating the specific resource types to search. |
 
@@ -105,7 +105,7 @@ curl -X POST \
 
 **Response**
 
-A successful response returns the results of the query.
+A successful response returns a list of matching resources for the query. For details on how the API determines matches for specific values, see the appendix section on [matching conventions](#conventions).
 
 ```json
 {
@@ -209,3 +209,40 @@ A successful response returns the results of the query.
   }
 }
 ```
+
+## Appendix
+
+The following section contains additional information about using the `/search` endpoint.
+
+### Value operator logic {#value-operator}
+
+Search query values are split into terms to match against indexed documents. Between each term, an `AND` relationship is assumed.
+
+When using `AND` as the `value_operator`, a query value of `My Rule Holiday Sale` is interpreted as documents with a field containing `My AND Rule AND Holiday AND Sale`.
+
+When using `OR` as the `value_operator`, a query value of `My Rule Holiday Sale` is interpreted as documents with a field containing `My OR Rule OR Holiday OR Sale`. The more terms that match, the higher the `match_score`. Due to the nature of partial term matching, when nothing closely matches the desired value, you can obtain a result set where the value is matched only on a very basic level, such as a few characters of text.
+
+### Matching conventions {#conventions}
+
+Search is concerned with answering how relevant a document is to a supplied query. The way document data is analyzed and indexed directly affects this. 
+
+The following table breaks down the match conventions for common field types:
+
+| Field type | Match conventions |
+| --- | --- |
+| Strings | Text with a partial term analysis, case-insensitive |
+| Enum values | Exact match, case-sensitive |
+| Integers | Exact match |
+| Floats | Exact match |
+| Timestamps | Exact match (DateTime format) |
+| Display names | Text with a partial term analysis, case-insensitive |
+
+There are additional conventions for specific fields that appear in the API:
+
+| Field | Match conventions |
+| --- | --- |
+| `id` | Exact match, case-sensitive |
+| `delegate_descriptor_id` | Exact match, case-sensitive, with terms split on `::` |
+| `name` | Exact match, case-sensitive |
+| `settings` | Text with a partial term analysis, case-insensitive |
+| `type` | Exact match, case-sensitive |
