@@ -7,7 +7,7 @@ exl-id: 928d1cbc-c6ab-4fa9-a875-0be8e4b699c4
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 Performance and non-blocking deployment of the JavaScript libraries required by our products is increasingly important to Adobe Experience Cloud users. Tools like [[!DNL Google PageSpeed]](https://developers.google.com/speed/pagespeed/insights/) recommend that users change they way they deploy the Adobe libraries on their site. This article explains how to use the Adobe JavaScript libraries in an asynchronous fashion.
 

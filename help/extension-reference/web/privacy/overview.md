@@ -7,7 +7,7 @@ exl-id: 6120365e-1c46-4a4c-aeb4-5f07ecec717e
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 The Adobe Privacy extension provides functionality for collecting and removing user IDs assigned to end users by Adobe solutions.
 

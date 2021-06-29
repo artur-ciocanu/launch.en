@@ -7,7 +7,7 @@ exl-id: 93e83a62-6089-48e9-b521-82f972b36ac4
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 Adobe Experience Platform has a single unified catalog where users can view tag extensions that are available for installation. This catalog is available within the product and contains extensions of three types:
 

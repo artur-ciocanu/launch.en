@@ -7,7 +7,7 @@ exl-id: c4e4f72c-7fdb-4937-b555-444e390d0072
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../launch-term-updates.md) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 ## October 26th, 2020
 
