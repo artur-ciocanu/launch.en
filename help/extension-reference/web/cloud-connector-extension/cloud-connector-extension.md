@@ -1,6 +1,6 @@
 ---
 title: Cloud Connector Extension Overview
-description: Learn about the Server Side Cloud Connector extension in Adobe Experience Platform Launch.
+description: Learn about the Cloud Connector event forwarding extension in Adobe Experience Platform.
 exl-id: 1cf39661-c5ef-4dd6-a6c0-d8cda6daa07d
 ---
 # Cloud Connector extension overview
@@ -9,7 +9,7 @@ exl-id: 1cf39661-c5ef-4dd6-a6c0-d8cda6daa07d
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-The Adobe Experience Platform Launch Server Side Cloud Connector extension allows you to create custom HTTP requests to send data to a destination or retrieve data from a destination. The Cloud Connector extension is like having Postman on Adobe Experience Platform Edge Network and can be used to send data to an endpoint that does not have a dedicated extension yet. 
+The Cloud Connector event forwarding extension allows you to create custom HTTP requests to send data to a destination or retrieve data from a destination. The Cloud Connector extension is like having Postman on Adobe Experience Platform Edge Network and can be used to send data to an endpoint that does not have a dedicated extension yet. 
 
 Use this reference for information about the options available when using this extension to build a rule. 
 
@@ -39,13 +39,13 @@ Use each of these tabs (Query Params, Headers, and Body Data Elements) to contro
 
 #### Query Params
 
-Define a key and value for each key-value pair you want to send as a query string parameter. To manually enter a data element, use the curly brace data element tokenization for Platform Launch Server Side. To reference the value of a data element named “siteSection” as a key or value, enter `{{siteSection}}`. Or, select the previously-created data element by selecting it in the dropdown menu. 
+Define a key and value for each key-value pair you want to send as a query string parameter. To manually enter a data element, use the curly brace data element tokenization for event forwarding. To reference the value of a data element named “siteSection” as a key or value, enter `{{siteSection}}`. Or, select the previously-created data element by selecting it in the dropdown menu. 
 
 To add more query parameters, select **[!UICONTROL Add Another]**.
 
 #### Headers
 
-Define a key and value for each key-value pair you want to send as a header. To manually enter a data element, use the curly brace data element tokenization for Platform Launch Server Side. To reference the value of a data element named “pageName” as a key or value, enter `{{pageName}}`. Or, select the previously created data element by selecting it in the dropdown menu.  
+Define a key and value for each key-value pair you want to send as a header. To manually enter a data element, use the curly brace data element tokenization for event forwarding. To reference the value of a data element named “pageName” as a key or value, enter `{{pageName}}`. Or, select the previously created data element by selecting it in the dropdown menu.  
 
 To add more headers, select **[!UICONTROL Add Another]**. 
 
@@ -98,17 +98,17 @@ The following table lists the predefined headers. You are not limited to these h
 
 #### Body as JSON
 
-Define a key and value for each key-value pair you want to send in the body of the request. To manually enter a data element, use the curly brace data element tokenization for Platform Launch Server Side. To reference the value of a data element named “appSection” as a key or value, enter `{{appSection}}`. Or, select the previously-created data element by selecting it in the dropdown menu.  
+Define a key and value for each key-value pair you want to send in the body of the request. To manually enter a data element, use the curly brace data element tokenization for event forwarding. To reference the value of a data element named “appSection” as a key or value, enter `{{appSection}}`. Or, select the previously-created data element by selecting it in the dropdown menu.  
 
 To add additional key-value pairs, select **[!UICONTROL Add Another]**. 
 
 #### Body as Raw 
 
-Define a key and value for each key-value pair you want to send in the body of the request. To manually enter a data element, use the curly brace data element tokenization for Platform Launch Server Side. To reference the value of a data element named “appSection” as a key or value, enter `{{appSection}}`. Or, select the previously created data element by selecting it in the dropdown menu. You can add one or more data elements.
+Define a key and value for each key-value pair you want to send in the body of the request. To manually enter a data element, use the curly brace data element tokenization for event forwarding. To reference the value of a data element named “appSection” as a key or value, enter `{{appSection}}`. Or, select the previously created data element by selecting it in the dropdown menu. You can add one or more data elements.
 
 ### Advanced 
 
-Actions within rules in Platform Launch Server Side execute sequentially. There could be situations where you want to retrieve data from an external source that is not present on the incoming event from the client and then take this response and either transform or send this data to a final destination in a subsequent action within a single rule. The “Save the request response” in the advanced section enables this.  
+Actions within rules in event forwarding execute sequentially. There could be situations where you want to retrieve data from an external source that is not present on the incoming event from the client and then take this response and either transform or send this data to a final destination in a subsequent action within a single rule. The “Save the request response” in the advanced section enables this.  
 
 To save the response body from an endpoint check the **[!UICONTROL Save the request response]** box and define a response key in the text field.  
 

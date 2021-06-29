@@ -1,6 +1,6 @@
 ---
 title: Implementing Third-Party Libraries
-description: Learn about the different methods of hosting third-party libraries within your Adobe Experience Platform Launch extensions.
+description: Learn about the different methods of hosting third-party libraries within your Adobe Experience Platform tag extensions.
 exl-id: d8d79147-a07b-4564-a866-a95616038f10
 ---
 # Implementing third-party libraries
@@ -9,17 +9,17 @@ exl-id: d8d79147-a07b-4564-a866-a95616038f10
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-One of the main purposes of extensions in Adobe Experience Platform Launch is to enable you to easily implement existing marketing technologies (libraries) into your website. By using extensions, you can implement libraries provided by third-party content delivery networks (CDNs) without having to manually edit your website's HTML.
+One of the main purposes of tag extensions in Adobe Experience Platform is to enable you to easily implement existing marketing technologies (libraries) into your website. By using extensions, you can implement libraries provided by third-party content delivery networks (CDNs) without having to manually edit your website's HTML.
 
-There are several methods to host third-party (vendor) libraries within your extensions in Platform Launch. This document provides an overview of these different implementation methods, including the pros and cons of each.
+There are several methods to host third-party (vendor) libraries within your extensions. This document provides an overview of these different implementation methods, including the pros and cons of each.
 
 ## Prerequisites
 
-This document requires a working understanding of extensions within Platform Launch, including what they can do and how they are composed. See the [extension development overview](./overview.md) for more information.
+This document requires a working understanding of extensions within tags, including what they can do and how they are composed. See the [extension development overview](./overview.md) for more information.
 
 ## Base code loading process
 
-Outside of the context of Platform Launch, it is important to understand how marketing technologies typically load on a website. Third-party library vendors provide a snippet of code (called a base code) that must be embedded within your website's HTML in order to load the library's functionalities.
+Outside of the context of tags, it is important to understand how marketing technologies typically load on a website. Third-party library vendors provide a snippet of code (called a base code) that must be embedded within your website's HTML in order to load the library's functionalities.
 
 In general, base codes for marketing technologies execute some variant of the following process when loading on your site:
 
@@ -27,13 +27,13 @@ In general, base codes for marketing technologies execute some variant of the fo
 1. Load the vendor library.
 1. Make a series of queued initial calls to the global function for configuration and tracking purposes.
 
-When the global function is initially set up, you can still make calls to the function before the library has finished loading. Any calls you make are added to the base code's queueing mechanism, and are then executed in sequential order once the library loads.
+When the global function is initially set up, you can still make calls to the function before the library has finished loading. Any calls you make are added to the base code's queueing mechanism and are then executed in sequential order once the library loads.
 
 Once the library finishes loading, the global function is replaced with a new one that bypasses the queue and instead immediately processes any future calls to the function.
 
 ### Base code example
 
-The following JavaScript is an example of an unminified base code for the [Pinterest conversion tag](https://developers.pinterest.com/docs/ad-tools/conversion-tag/?), which will be referenced later in this document to demonstrate how the base code be adapted for different implementation strategies in Platform Launch:
+The following JavaScript is an example of an unminified base code for the [Pinterest conversion tag](https://developers.pinterest.com/docs/ad-tools/conversion-tag/?), which will be referenced later in this document to demonstrate how the base code be adapted for different implementation strategies with tags:
 
 ```js
 !function(scriptUrl) {
@@ -76,13 +76,13 @@ firstScriptElement.parentNode.insertBefore(
 
 The base code creates a script element, sets it to load asynchronously, and sets the `src` URL to `https://s.pinimg.com/ct/core.js`. It then adds the script element to the document by inserting it before the first script element already in the document.
 
-## Implementation options in Platform Launch
+## Tags implementation options
 
-The sections below demonstrate the different ways you can load vendor libraries in your extensions, using the Pinterest base code shown previously as an example. Each of these examples involve creating an [action type for a web extension](./web/action-types.md) that loads the library on your website.
+The sections below demonstrate the different ways you can load vendor libraries in your extensions, using the Pinterest base code shown previously as an example. Each of these examples involves creating an [action type for a web extension](./web/action-types.md) that loads the library on your website.
 
 >[!NOTE]
 >
->While the examples below use action types for demonstration purposes, you can apply the same principles to any function that loads the Platform Launch library on your site.
+>While the examples below use action types for demonstration purposes, you can apply the same principles to any function that loads the tag library on your site.
 
 
 The following methods are covered:
@@ -91,9 +91,9 @@ The following methods are covered:
   - [Prerequisites](#prerequisites)
   - [Base code loading process](#base-code-loading-process)
     - [Base code example](#base-code-example)
-  - [Implementation options in Platform Launch](#implementation-options-in-platform-launch)
+  - [Tags implementation options](#tags-implementation-options)
     - [Load at runtime from the vendor host {#vendor-host}](#load-at-runtime-from-the-vendor-host-vendor-host)
-    - [Load at runtime from the Platform Launch library host](#load-at-runtime-from-the-platform-launch-library-host)
+    - [Load at runtime from the tag library host](#load-at-runtime-from-the-tag-library-host)
     - [Embed the library directly](#embed-the-library-directly)
   - [Next steps](#next-steps)
 
@@ -101,7 +101,7 @@ The following methods are covered:
 
 The most common method for vendor library hosting is to use the vendor's CDN.  As the base code for most vendor libraries is already configured to load the library from the vendor's CDN, you can set up your extension to load the library from the same location.
 
-This approach is usually the easiest to maintain, since any updates that are made to the file on the CDN will automatically be loaded by the extension.
+This approach is usually the easiest to maintain since any updates that are made to the file on the CDN will automatically be loaded by the extension.
 
 When using this method, you can simply paste the entire base code directly into an action type like so:
 
@@ -133,7 +133,7 @@ module.exports = function() {
 
 Optionally, you can take additional steps to refactor this implementation. Since the variables `scriptElement` and `firstScriptElement` are now scoped to the exported function, you can remove the IIFE since these variables don't run the risk of becoming globals.
 
-In addition, Platform Launch provides several [core modules](./web/core.md) which are utilities that any extension can use. Specifically, the `@adobe/reactor-load-script` module loads a script from a remote location by creating a script element and adding it to the document. By using this module for the script loading process, you can refactor the action code even further:
+In addition, tags provide several [core modules](./web/core.md) which are utilities that any extension can use. Specifically, the `@adobe/reactor-load-script` module loads a script from a remote location by creating a script element and adding it to the document. By using this module for the script loading process, you can refactor the action code even further:
 
 ```js
 var loadScript = require('@adobe/reactor-load-script');
@@ -154,11 +154,11 @@ module.exports = function() {
 };
 ```
 
-### Load at runtime from the Platform Launch library host
+### Load at runtime from the tag library host
 
 Using a vendor CDN for library hosting poses several risks: the CDN may fail, the file may be updated with a critical bug at any time, or the file could be compromised for nefarious purposes.
 
-To address these concerns, you can choose to include the vendor library as a separate file within your extension. The extension can then be configured so that the file is hosted alongside the main Platform Launch library. At runtime, the extension loads the vendor library from the same sever that delivered the main library to the website.
+To address these concerns, you can choose to include the vendor library as a separate file within your extension. The extension can then be configured so that the file is hosted alongside the main tag library. At runtime, the extension loads the vendor library from the same sever that delivered the main library to the website.
 
 >[!IMPORTANT]
 >
@@ -166,7 +166,7 @@ To address these concerns, you can choose to include the vendor library as a sep
 
 To implement this, you must first download the vendor library onto your machine. In the case of Pinterest, the vendor library is found at [https://s.pinimg.com/ct/core.js](https://s.pinimg.com/ct/core.js). Once you have downloaded the file, you must place it within your extension project. In the example below, the file is named `pinterest.js` and is located within a `vendor` folder in the project directory.
 
-Once the library file is in your project, you must update your [extension manifest](./manifest.md) (`extension.json`) to indicate that the vendor library should be delivered alongside the main Platform Launch library. This is done by adding the path to the library file within a `hostedLibFiles` array:
+Once the library file is in your project, you must update your [extension manifest](./manifest.md) (`extension.json`) to indicate that the vendor library should be delivered alongside the main tag library. This is done by adding the path to the library file within a `hostedLibFiles` array:
 
 ```json
 {
@@ -195,11 +195,11 @@ module.exports = function() {
 };
 ```
 
-It is important to note that when using this method, you must manually update your downloaded vendor file whenever the library gets updated on their CDN, and release the changes a new version of your extension.
+It is important to note that when using this method, you must manually update your downloaded vendor file whenever the library gets updated on their CDN, and release the changes to a new version of your extension.
 
 ### Embed the library directly
 
-You can bypass having to load the vendor library entirely by directly embedding the library code into the action code itself, which effectively makes it part of the main Platform Launch library. Using this method increases the size of the main library, but avoids the need to make an additional HTTP request to retrieve a separate file.
+You can bypass having to load the vendor library entirely by directly embedding the library code into the action code itself, which effectively makes it part of the main tag library. Using this method increases the size of the main library, but avoids the need to make an additional HTTP request to retrieve a separate file.
 
 Using the action code built in the [previous section](#vendor-host) as a starting point, you can replace the line where the script is loaded with the content of the script itself:
 
@@ -222,6 +222,6 @@ module.exports = function() {
 
 ## Next steps
 
-This document provided an overview of the different methods for hosting third-party libraries in your Platform Launch extensions. While the examples provided were focused on libraries, these techniques apply to any piece of code that your extension can utilize.
+This document provided an overview of the different methods for hosting third-party libraries in your tag extensions. While the examples provided were focused on libraries, these techniques apply to any piece of code that your extension can utilize.
 
 Refer to the documentation linked to throughout this guide to learn more about the tools for configuring your extensions, including action types, the extension manifest, core modules, and the turbine object.

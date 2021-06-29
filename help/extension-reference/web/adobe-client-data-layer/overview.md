@@ -18,7 +18,9 @@ In order to install the extension, navigate to the extension catalog in the Data
 <!-- (GitHub link?)
 There is also the possibility to fork this project. You can download this github project, realize the change that you deem required for your specific use-case and re-upload it on your Organization as a private extension.
 This installation will not be supported on our end.<br>
-**Note** : _Consider renaming the extension name in the extension.json file_ -->
+>[!NOTE]
+>
+> _Consider renaming the extension name in the extension.json file_ -->
 
 ## Extension View
 

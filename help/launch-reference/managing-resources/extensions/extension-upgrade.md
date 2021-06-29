@@ -1,6 +1,6 @@
 ---
 title: Extension Upgrades
-description: Learn how extension upgrades are packaged and represented in the Adobe Experience Platform Launch catalog.
+description: Learn how extension upgrades are packaged and represented in the extension catalog.
 exl-id: 956508e6-8780-43b0-b2de-6da4a6541025
 ---
 # Extension upgrades
@@ -9,7 +9,7 @@ exl-id: 956508e6-8780-43b0-b2de-6da4a6541025
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-Extension developers continually add new features to their extensions, and frequently fix bugs. These updates are packaged into new versions of an extension and made available in the [!DNL Adobe Experience Platform Launch] catalog as upgrades.
+Extension developers continually add new features to their extensions, and frequently fix bugs. These updates are packaged into new versions of an extension and made available in the extensions catalog as upgrades.
 
 ## Extension Catalog
 

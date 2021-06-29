@@ -1,6 +1,6 @@
 ---
 title: Adobe Target v2 Extension Overview
-description: Learn about the Adobe Target v2 extension in Adobe Experience Platform Launch.
+description: Learn about the Adobe Target v2 tag extension in Adobe Experience Platform.
 exl-id: 46d652f7-4b27-40f7-8fb1-56de3afa6055
 ---
 # Adobe Target v2 extension overview
@@ -21,29 +21,25 @@ If the Adobe Target extension is not yet installed, open your property, then sel
 
 To configure the extension, open the Extensions tab, hover over the extension, and then select **[!UICONTROL Configure]**.
 
-![](/help/images/targetv2config.png)
+![](../../images/targetv2config.png)
 
 ### at.js settings
 
-All of your at.js settings, with the exception of the Timeout, are automatically retrieved from your at.js configuration in the Target user interface. The extension only retrieves settings from the Target user interface when it is first added, so all settings should be managed in the Adobe Experience Platform Launch interface if additional updates are needed.
+All of your at.js settings, with the exception of the Timeout, are automatically retrieved from your at.js configuration in the Target UI. The extension only retrieves settings from the Target UI when it is first added, so all settings should be managed in the Data Collection UI if additional updates are needed.
 
 The following configuration options are available:
 
 #### Client Code
 
-The client code is Target’s account identifier. This should almost always be left as the default value.
-
-Can be changed using data elements.
+The client code is Target’s account identifier. This should almost always be left as the default value. It can be changed using data elements.
 
 #### Organization ID
 
-This ID ties your implementation to your Adobe Experience Cloud account. This should almost always be left as the default value.
-
-Can be changed using data elements.
+This ID ties your implementation to your Adobe Experience Cloud account. This should almost always be left as the default value. It can be changed using data elements.
 
 #### Server Domain
 
-The domain where Target requests are sent. This should almost always be left as the default value.
+The server domain refers to the domain where the Target requests are sent. This should almost always be left as the default value.
 
 #### GDPR Opt-In
 
@@ -63,37 +59,35 @@ The Target extension provides the following actions in the Then portion of a rul
 
 ### Load Target
 
-Add this action to your Platform Launch rule where it makes sense to load Target in the context of your rule. This loads the at.js library into the page. In most implementations, Target should be loaded on every page of your site. Adobe recommends using the Load Target action only if it is preceded by a Target call. Otherwise, you might run into issues like the Analytics call being delayed.
+Add this action to your tag rule where it makes sense to load Target in the context of your rule. This loads the at.js library into the page. In most implementations, Target should be loaded on every page of your site. Adobe recommends using the Load Target action only if it is preceded by a Target call. Otherwise, you might run into issues like the Analytics call being delayed.
 
 No configuration is needed.
 
 ### Load Target with On-Device Decisioning
 
-Add this action to your Platform Launch rule where it makes sense to load Target with [on-device decisioning](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/on-device-decisioning/on-device-decisioning.html) enabled in the context of your rule. This loads the at.js library with on-device decisioning enabled into the page. In most implementations, Target should be loaded on every page of your site. Adobe recommends using the Load Target with On-Device Decisioning action only if it is preceded by a Target call. Otherwise, you might run into issues like the Analytics call being delayed.
+Add this action to your tag rule where it makes sense to load Target with [on-device decisioning](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/on-device-decisioning/on-device-decisioning.html) enabled in the context of your rule. This loads the at.js library with on-device decisioning enabled into the page. In most implementations, Target should be loaded on every page of your site. Adobe recommends using the Load Target with On-Device Decisioning action only if it is preceded by a Target call. Otherwise, you might run into issues like the Analytics call being delayed.
 
 No configuration is needed.
 
 ### Add Params to All Requests
 
-Add parameters to all Target requests. The Load Target action must be used earlier.
+This action type allows parameters to be added to all Target requests. The Load Target action must be used earlier.
 
 1. Specify the name and value of any parameter you want to add.
-2. Select the add icon to add more parameters.
+1. Select the add icon to add more parameters.
 
 ### Add Params to Page Load Request
 
-Add parameters only to your page load requests. The Load Target action must be used earlier.
+This action type allows parameters to be added specifically to your page load requests. The Load Target action must be used earlier.
 
 1. Specify the name and value of any parameter you want to add.
-2. Select the add icon to add more parameters.
+1. Select the add icon to add more parameters.
 
 ### Fire Page Load Request
 
-Fire a Target request when your page loads. The Load Target action must be used earlier.
+This action type allows Target to fire a request when your page loads. The Load Target action must be used earlier.
 
-Specify whether to enable body hiding to prevent flickering, and the style used when hiding your body element.
-
-The following options are available:
+You must specify whether to enable body hiding to prevent flickering, and the style used when hiding your body element. The following options are available:
 
 * **Body Hiding:** You can enable or disable this setting. The default value is Enabled, which means HTML BODY is hidden.
 * **Body Hidden Style:** The default value is body{opacity:0}. This value can be changed to something different, like body{display:none}.
@@ -102,10 +96,10 @@ For more information, refer to the [Target online help documentation](https://ex
 
 ### Trigger View
 
-Trigger a view for your Single Page Applications.
+The Trigger View action can be called whenever a new page is loaded or when a component on a page is re-rendered. Trigger view should be implemented for Single Page Applications.
 
 1. Specify the view name that must be triggered.
-2. Specify whether the triggering of the view should be attributed to an impression for reporting by checking the Page checkbox. If the view is correlated to a component that is re-rendered and does not attribute to an impression for reporting then leave the Page checkbox unchecked.
+1. Specify whether the triggering of the view should be attributed to an impression for reporting by checking the Page checkbox. If the view is correlated to a component that is re-rendered and does not attribute to an impression for reporting then leave the Page checkbox unchecked.
 
 For more information about triggering a view, please refer to the [`triggerView()` help documentation](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-triggerview-atjs-2.html).
 
@@ -115,26 +109,26 @@ Once the Target Extension is installed, create at least one rule to properly dep
 
 A Target rule with this basic implementation looks like this:
 
-![](/help/images/targetv2deploy.png)
+![](../../images/targetv2deploy.png)
 
-After you have saved this rule, you'll need to add it to a Library and build/deploy so that you can test the behavior.
+After you have saved this rule, you'll need to add it to a Library and build/deploy it so that you can test the behavior.
 
 ## Adobe Target extension with an asynchronous deployment
 
-Platform Launch can be deployed asynchronously. If you are loading the Platform Launch library asynchronously with Target inside it, then Target will also be loaded asynchronously. This is a fully supported scenario, but there is one additional consideration that must be handled.
+Tags can be deployed asynchronously. If you are loading the tag library asynchronously with Target inside it, then Target will also be loaded asynchronously. This is a fully supported scenario, but there is one additional consideration that must be handled.
 
-In asynchronous deployments, it is possible for the page to finish rendering the default content before the Target library is fully loaded and has performed the content swap. This can lead to what is known as "flicker" where the default content shows up briefly before being replaced by the personalized content specified by Target. If you want to avoid this flicker, we suggest you use a pre-hiding snippet and load the Platform Launch bundle asynchronously to avoid any content flicker.
+In asynchronous deployments, it is possible for the page to finish rendering the default content before the Target library is fully loaded and has performed the content swap. This can lead to what is known as "flicker" where the default content shows up briefly before being replaced by the personalized content specified by Target. If you want to avoid this flicker, we suggest you use a pre-hiding snippet and load the tag bundle asynchronously to avoid any content flicker.
 
 Here are some things to keep in mind when using the pre-hiding snippet:
 
-* The snippet must be added before loading the Platform Launch header embed code.
-* This code can't be managed by Platform Launch, so it must be added to the page directly.
+* The snippet must be added before loading the tag header embed code.
+* This code can't be managed by tags, so it must be added to the page directly.
 * The page displays when the earliest of the following events occur:
   * When the page load response has been received
   * When the page load request times out
   * When the snippet itself times out
 * The "Fire Page Load Request” action should be used on all pages using the pre-hiding snippet to minimize the duration of the pre-hiding.
-* Body hiding must also be enabled in the Page Load Request action in the Page Load rule you use for Target in Platform Launch; otherwise, all Page loads remain hidden for the timeout period.
+* Body hiding must also be enabled in the Page Load Request action in the Page Load rule you use for Target in the Data Collection UI; otherwise, all Page Loads remain hidden for the timeout period.
 
 The pre-hiding code snippet is as follows and can be minified. The configurable options are at the end:
 

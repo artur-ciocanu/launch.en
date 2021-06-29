@@ -1,6 +1,6 @@
 ---
 title: Adobe Target Extension Overview
-description: Learn about the Adobe Target extension in Adobe Experience Platform Launch.
+description: Learn about the tag extension for Adobe Target in Adobe Experience Platform.
 exl-id: b816bbab-34c6-4d6c-8f27-5643328fd9ca
 ---
 # Adobe Target extension overview
@@ -25,7 +25,7 @@ To configure the extension, open the [!UICONTROL Extensions] tab, hover over the
 
 ### at.js Settings
 
-All of your at.js settings, with the exception of the Timeout. are automatically retrieved from your at.js configuration in the Target user interface. The extension only retrieves settings from the Target user interface when it is first added, so all settings should be managed in the Adobe Experience Platform Launch interface if additional updates are needed.
+All of your at.js settings, with the exception of the Timeout are automatically retrieved from your at.js configuration in the Target user interface. The extension only retrieves settings from the Target user interface when it is first added, so all settings should be managed in the Data Collection UI if additional updates are needed.
 
 The following configuration options are available:
 
@@ -66,7 +66,7 @@ For more information about how the Timeout setting works, refer to the [Adobe Ta
 
 #### Other at.js settings available in the Target user interface
 
-Several settings that are available on the [!UICONTROL Edit at.js settings] page of the Target user interface are not part of the Target extension. Here are suggested workarounds:
+Several settings that are available on the [!UICONTROL Edit at.js settings] page of the Target UI are not part of the Target extension. Here are suggested workarounds:
 
 * Auto-create global mbox This setting is replaced by the Fire Global Mbox action in the Target extension.
 * Library Header This setting is not part of the Target extension. Put code that needs to load before at.js in a Core Extension>Custom Code action before using the Load Target action.
@@ -80,7 +80,7 @@ The Target extension provides the following actions in the Then portion of a rul
 
 ### Load Target
 
-Add this action to your Platform Launch rule where it makes sense to load Target in the context of your rule. This loads the at.js library into the page. In most implementations, Target should be loaded on every page of your site.
+Add this action to your tag rule where it makes sense to load Target in the context of your rule. This loads the at.js library into the page. In most implementations, Target should be loaded on every page of your site.
 
 No configuration is needed.
 
@@ -123,14 +123,14 @@ Once you have saved this rule, you'll need to add it to a Library and build/depl
 
 ## Adobe Target extension with an asynchronous deployment
 
-Platform Launch can be deployed asynchronously. If you are loading the Platform Launch library asynchronously with Target inside it, then Target will also be loaded asynchronously. This is a fully supported scenario, but there is one additional consideration that must be handled.
+Tags can be deployed asynchronously. If you are loading the tag library asynchronously with Target inside it, then Target will also be loaded asynchronously. This is a fully supported scenario, but there is one additional consideration that must be handled.
 
-In asynchronous deployments, it is possible for the page to finish rendering the default content before the Target library is fully loaded and has performed the content swap. This can lead to what is known as "flicker" where the default content shows up briefly before being replaced by the personalized content specified by Target. If you want to avoid this flicker, we suggest you use a pre-hiding snippet and load the Platform Launch bundle asynchronously to avoid any content flicker.
+In asynchronous deployments, the page can finish rendering the default content before the Target library is fully loaded and has performed the content swap. This can lead to what is known as "flicker" where the default content shows up briefly before being replaced by the personalized content specified by Target. If you want to avoid this flicker, we suggest you use a pre-hiding snippet and load the tag bundle asynchronously to avoid any content flicker.
 
 Here are some things to keep in mind when using the pre-hiding snippet:
 
-* The snippet must be added before loading the Platform Launch header embed code.
-* This code can't be managed by Platform Launch, so it must be added to the page directly.
+* The snippet must be added before loading the tag header embed code.
+* This code can't be managed by tags, so it must be added to the page directly.
 * The page will be displayed when the earliest of the following events occur:
   * When the global mbox response has been received
   * When the global mbox request times out

@@ -1,6 +1,6 @@
 ---
 title: Release Notes for the Adobe Analytics Extension
-description: The latest release notes for the Adobe Analytics extension in Adobe Experience Platform Launch.
+description: The latest release notes for the Adobe Analytics tag extension in Adobe Experience Platform.
 exl-id: 9eb3827c-bc97-481c-a1f4-a554f543f562
 ---
 # Adobe Analytics extension release notes
@@ -250,7 +250,7 @@ exl-id: 9eb3827c-bc97-481c-a1f4-a554f543f562
 #### **Features**
 
 * AppMeasurement has been updated to version 2.6
-* The initialized Analytics tracker is now exposed through a shared module in the Adobe Experience Platform Launch extension so other extensions can include code to interact with it.
+* The initialized Analytics tracker is now exposed through a shared module in the Adobe Experience Platform tag extension so other extensions can include code to interact with it.
 
 #### **Bug fixes**
 

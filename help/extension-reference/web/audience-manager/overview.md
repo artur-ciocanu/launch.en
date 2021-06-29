@@ -1,6 +1,6 @@
 ---
 title: Adobe Audience Manager Extension Overview
-description: Learn about the Adobe Audience Manager extension in Adobe Experience Platform Launch.
+description: Learn about the Adobe Audience Manager tag extension in Adobe Experience Platform.
 exl-id: e3619761-f45c-44a9-96d1-77b7666abb75
 ---
 # Adobe Audience Manager extension overview
@@ -9,13 +9,13 @@ exl-id: e3619761-f45c-44a9-96d1-77b7666abb75
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-With the Audience Manager extension, you can integrate the DIL code used by Audience Manager with your properties in Adobe Experience Platform Launch.
+With the Audience Manager tag extension, you can integrate the DIL code used by Audience Manager with your properties in Adobe Experience Platform.
 
 Use this reference for information about the options available when using this extension to build a rule.
 
 >[!NOTE]
 >
->This extension is not meant to be used for server-side forwarding of Adobe Analytics data. For server-side forwarding, use the [Adobe Analytics extension](/help/extension-reference/web/adobe-analytics-extension/overview.md).
+>This extension is not meant to be used for event forwarding of Adobe Analytics data. For event forwarding, use the [Adobe Analytics extension](/help/extension-reference/web/adobe-analytics-extension/overview.md).
 
 ## Configure the Adobe Audience Manager extension
 

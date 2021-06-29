@@ -1,6 +1,6 @@
 ---
 title: Turbine Free Variable
-description: Learn about the turbine object, a free variable which provides information and utilities specific to the Adobe Experience Platform Launch runtime.
+description: Learn about the turbine object, a free variable which provides information and utilities specific to the Adobe Experience Platform tag runtime.
 exl-id: f91fd053-09bd-4c26-9559-701701b58050
 ---
 # Turbine free variable
@@ -9,7 +9,7 @@ exl-id: f91fd053-09bd-4c26-9559-701701b58050
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-The `turbine` object is a "free variable" within the scope of your extension's library modules. It provides information and utilities specific to the Adobe Experience Platform Launch runtime and is always available to library modules without using `require()`.
+The `turbine` object is a "free variable" within the scope of your extension's library modules. It provides information and utilities specific to the Adobe Experience Platform tag runtime and is always available to library modules without using `require()`.
 
 ## [!DNL buildInfo]
 
@@ -17,7 +17,7 @@ The `turbine` object is a "free variable" within the scope of your extension's l
 console.log(turbine.buildInfo.turbineBuildDate);
 ```
 
-`turbine.buildInfo` is an object containing build information about the current Platform Launch runtime library.
+`turbine.buildInfo` is an object containing build information about the current tag runtime library.
 
 ```js
 {
@@ -38,9 +38,9 @@ console.log(turbine.buildInfo.turbineBuildDate);
 
 ## [!DNL debugEnabled]
 
-Whether Platform Launch debugging is currently enabled.
+Whether tag debugging is currently enabled.
 
-If you are simply attempting to log messages, it's unlikely you will need to use this. Instead, always log messages using `turbine.logger` and Platform Launch will ensure your messages are only printed to the console when Platform Launch debugging is enabled.
+If you are simply attempting to log messages, it's unlikely you will need to use this. Instead, always log messages using `turbine.logger` to ensure your messages are only printed to the console when tag debugging is enabled.
 
 ### [!DNL getDataElementValue]
 
@@ -58,7 +58,7 @@ var extensionSettings = turbine.getExtensionSettings();
 
 Returns the settings object that was last saved from the [extension configuration](./configuration.md) view.
 
-Please note that values within the returned settings objects may be coming from data elements. Because of this, calling `getExtensionSettings()` at different times may yield different results if the values of the data elements have changed. To get the most up-to-date values, please wait until as late as possible before calling `getExtensionSettings()`.
+Please note that values within the returned settings objects may be coming from data elements. Because of this, calling `getExtensionSettings()` at different times may yield different results if the values of the data elements have changed. To get the most up-to-date values, please wait as long as possible before calling `getExtensionSettings()`.
 
 ### [!DNL getHostedLibFileUrl] {#get-hosted-lib-file}
 
@@ -69,7 +69,7 @@ loadScript(turbine.getHostedLibFileUrl('AppMeasurement.js')).then(function() {
 })
 ```
 
-The [hostedLibFiles](./manifest.md) property can be defined inside the extension manifest in order to host various files along with the Platform Launch runtime library. This module returns the URL where the given library file is hosted.
+The [hostedLibFiles](./manifest.md) property can be defined inside the extension manifest in order to host various files along with the tag runtime library. This module returns the URL where the given library file is hosted.
 
 ### [!DNL getSharedModule] {#shared}
 
@@ -77,7 +77,7 @@ The [hostedLibFiles](./manifest.md) property can be defined inside the extension
 var mcidInstance = turbine.getSharedModule('adobe-mcid', 'mcid-instance');
 ```
 
-Retrieves a module which has been shared from another extension. If no matching module is found, `undefined` will be returned. See [Implementing Shared Modules](./web/shared.md) for more information regarding shared modules.
+Retrieves a module that has been shared from another extension. If no matching module is found, `undefined` will be returned. See [Implementing Shared Modules](./web/shared.md) for more information regarding shared modules.
 
 ### [!DNL logger]
 
@@ -85,7 +85,7 @@ Retrieves a module which has been shared from another extension. If no matching 
 turbine.logger.error('Error!');
 ```
 
-Logging utility used to log messages to the console. Messages will only show in the console if debugging is turned on by the user. The recommended way to turn on debugging is to use the [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj?src=propaganda) or the [Platform Launch and DTM Switch](https://chrome.google.com/webstore/detail/adobe-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk) Chrome extension. As an alternative, the user can run the following command `_satellite.setDebug(true)` inside the browser development console. The logger has the following methods:
+The logging utility is used to log messages to the console. Messages will only show in the console if debugging is turned on by the user. The recommended way to turn on debugging is to use the [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj?src=propaganda) or the [Launch and DTM Switch](https://chrome.google.com/webstore/detail/adobe-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk) Chrome extension. As an alternative, the user can run the following command `_satellite.setDebug(true)` inside the browser developer console. The logger has the following methods:
 
 * `logger.log(message: string)`: Logs a message to the console.
 * `logger.info(message: string)`: Logs an informational message to the console.
@@ -95,9 +95,9 @@ Logging utility used to log messages to the console. Messages will only show in 
 
 ### [!DNL onDebugChanged]
 
-By passing a callback function into `turbine.onDebugChanged`, Platform Launch will call your callback whenever debugging is toggled. Platform Launch will pass a boolean to the callback function which will be true if debugging was enabled or false if debugging was disabled.
+By passing a callback function into `turbine.onDebugChanged`, tags will call your callback whenever debugging is toggled. Tags will pass a boolean to the callback function which will be true if debugging was enabled or false if debugging was disabled.
 
-If you are simply attempting to log messages, it's unlikely you will need to use this. Instead, always log messages using `turbine.logger` and Platform Launch will ensure your messages are only printed to the console when Platform Launch debugging is enabled. 
+If you are simply attempting to log messages, it's unlikely you will need to use this. Instead, always log messages using `turbine.logger` and tags will ensure your messages are only printed to the console when tag debugging is enabled. 
 
 ### [!DNL propertySettings] {#property-settings}
 
@@ -105,7 +105,7 @@ If you are simply attempting to log messages, it's unlikely you will need to use
 console.log(turbine.propertySettings.domains);
 ```
 
-An object containing the following settings which are defined by the user for the property of the current Platform Launch runtime library:
+An object containing the following settings which are defined by the user for the property of the current tag runtime library:
 
 * `propertySettings.domains: Array<String>`
 

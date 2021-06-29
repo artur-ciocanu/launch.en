@@ -1,6 +1,6 @@
 ---
 title: Delete Resources
-description: Learn how to delete resources in Adobe Experience Platform Launch.
+description: Learn how to delete tag resources in Adobe Experience Platform.
 exl-id: bc24f3f8-bb85-4eae-aacd-65933500a8c4
 ---
 # Delete resources
@@ -9,7 +9,7 @@ exl-id: bc24f3f8-bb85-4eae-aacd-65933500a8c4
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-Deleting a resource is a permanent removal of that resource from [!DNL Adobe Experience Platform Launch]. If you still want the resource to appear in [!DNL Platform Launch], but not be in your library, see [Remove Resources from a Library](remove-resources-from-library.md).
+Deleting a resource is a permanent removal of that resource from Adobe Experience Platform. If you still want the resource to appear in the Data Collection UI, but not be in your tag library, see [Remove Resources from a Library](remove-resources-from-library.md).
 
 You can delete data elements, rules, extensions, hosts, environments, and properties. Once deleted, these resources are not recoverable.
 
@@ -44,7 +44,7 @@ You can resolve these dependencies before or after you delete the data element.
 
 All other resources (rules, rule components, and data elements) are provided by extensions.
 
-Rule components and data elements depend on extensions for their behavior, but also just to be displayed in the [!DNL Platform Launch] interface. If you delete the extension before you resolve dependencies, you'll no longer be able to view these orphaned resources. These orphaned resources appear in list views, but you'll receive an error when you try to open the detail view.
+Rule components and data elements depend on extensions for their behavior, but also just to be displayed in the Data Collection user interface. If you delete the extension before you resolve dependencies, you'll no longer be able to view these orphaned resources. These orphaned resources appear in list views, but you'll receive an error when you try to open the detail view.
 
 For this reason, you should be very careful when deleting extensions and you should resolve dependencies before you delete them.
 

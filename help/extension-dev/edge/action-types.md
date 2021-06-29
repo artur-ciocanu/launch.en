@@ -1,6 +1,6 @@
 ---
 title: Action Types for Edge Extensions
-description: Learn how to define an action-type library module for an edge extension in Adobe Experience Platform Launch.
+description: Learn how to define an action-type library module for a tag extension in an edge property.
 exl-id: 76c66d9c-cd40-40f1-a673-cac82e44e437
 ---
 # Action types for edge extensions
@@ -9,15 +9,15 @@ exl-id: 76c66d9c-cd40-40f1-a673-cac82e44e437
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-An action-type library module is intended to take an action--any action. What this action does is entirely up to you. Would you like to send a beacon or perhaps transform some data from the event?
+An action-type library module is designed to take a predefined action. The effect of this action is entirely defined by the author. The module could be created as a beacon or even transform some data from the event.
 
 >[!IMPORTANT]
 >
 >This document covers action types for edge extensions. If you are developing a web extension, see the guide on [action types for web extensions](../web/action-types.md) instead.
 >
->This document also assumes you are familiar with library modules and how they are integrated in Platform Launch extensions. If you require an introduction, see the overview on [library module formatting](./format.md) before returning to this guide.
+>This document also assumes you are familiar with library modules and how they are integrated in tag extensions. If you require an introduction, see the overview on [library module formatting](./format.md) before returning to this guide.
 
-For example, if you wanted to forward some data to a third-party party endpoint, your module may look like this:
+For example, a module to forward some data to a third-party party endpoint may look like this.
 
 ```js
 module.exports = (context) {
@@ -34,7 +34,7 @@ module.exports = (context) {
 };
 ```
 
-Now, consider a situation where you want to make the endpoint configurable by the Adobe Experience Platform Launch user. You could allow the user to input an endpoint and then save the endpoint to the settings object, with the object looking something like this:
+If you want to make the endpoint configurable by the user, and allow the input and persistence of an endpoint to the settings object within the module, the object would look similar to this.
 
 ```json
 {
@@ -42,7 +42,7 @@ Now, consider a situation where you want to make the endpoint configurable by th
 }
 ```
 
-In order to operate on the user-defined endpoint, your module would need to change to this:
+In order to operate on the user-defined endpoint, your module would need to change to the following example.
 
 ```js
 module.exports = (context) {
