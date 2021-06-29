@@ -33,7 +33,7 @@ There are also a number of npm tools to help you with your extension package dev
 * [Tag Extension Scaffold Tool](https://www.npmjs.com/package/@adobe/reactor-scaffold) helps you easily create a starter project on your local machine.
 * [Tag Extension Sandbox](https://www.npmjs.com/package/@adobe/reactor-sandbox) helps you validate your extension views and modules on your local machine.
 * [Tag Extension Packager](https://www.npmjs.com/package/@adobe/reactor-packager) is a command-line utility for packaging a tag extension into a zip file.
-* [Tag Extension Uploader](https://www.npmjs.com/package/@adobe/reactor-uploader) is an interactive command line tool to help you input your technical account credentials and upload your extension package to tags in Adobe Experience Platform.
+* [Tag Extension Uploader](https://www.npmjs.com/package/@adobe/reactor-uploader) is an interactive command line tool to help you input your technical account credentials and upload your extension package to tags.
 * [Tag Extension Releaser](https://www.npmjs.com/package/@adobe/reactor-releaser) is an interactive command line tool to help you release your extension to private availability.
 
 ## Example extensions
