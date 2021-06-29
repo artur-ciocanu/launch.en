@@ -17,7 +17,7 @@ git-repo: https://github.com/AdobeDocs/launch.en
   * [Quickstart guide](quick-start/quick-start.md)
   * [Implementation guides](quick-start/implementation-guides.md)
   * [Videos](quick-start/videos.md)
-* Platform Launch UI {#ui}
+* Data Collection UI {#ui}
   * [Overview](launch-reference/managing-resources/overview.md)
   * Extensions {#extensions}
     * [Overview](launch-reference/managing-resources/extensions/overview.md)
