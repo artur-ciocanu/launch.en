@@ -156,6 +156,7 @@ git-repo: https://github.com/AdobeDocs/launch.en
   * [Turbine free variable](./extension-dev/turbine.md)
   * [Backwards compatibility standard](./extension-dev/backwards-compatibility.md)
 * Reactor API {#api}
+  * [Overview](./api/overview.md)
   * [Getting started](./api/getting-started.md)
   * Guides {#guides}
     * [Delegate descriptor IDs](./api/guides/delegate-descriptor-ids.md)
