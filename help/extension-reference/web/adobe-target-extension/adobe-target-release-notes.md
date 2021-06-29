@@ -1,6 +1,6 @@
 ---
 title: Release Notes for the Adobe Target Extension
-description: The latest release notes for the Adobe Target extension in Adobe Experience Platform Launch.
+description: The latest release notes for the Adobe Target tag extension in Adobe Experience Platform.
 exl-id: 9fe1e6c2-e895-4d36-97b6-29f3ccd8a1bc
 ---
 # Adobe Target release notes
@@ -37,13 +37,13 @@ exl-id: 9fe1e6c2-e895-4d36-97b6-29f3ccd8a1bc
 * Previously, the ECID library made two blocking calls before at.js could fetch experiences. This has been reduced to a single call, which significantly improves performance.
 
 >[!NOTE]
->Please upgrade your ECID extension for Adobe Experience Platform Launch to v4.4.1 to take advantage of this performance enhancement.
+>Please upgrade your ECID tag extension for Adobe Experience Platform to v4.4.1 to take advantage of this performance enhancement.
 
 ## July 31, 2019
 
 ### Adobe Target Extension 0.10.1
 
-* Hotfix for parameters handling for Adobe Target extension for Platform Launch
+* Hotfix for parameters handling the tag extension for Adobe Target
 
 ## May 4, 2019
 
@@ -69,7 +69,7 @@ exl-id: 9fe1e6c2-e895-4d36-97b6-29f3ccd8a1bc
 
 #### **Features**
 
-* Updated Extension to use at.js 1.7.0 that has Opt-in privacy functionality supported via Adobe Experience Platform Launch to control how and when the Target tag is fired. Please check Platform Launch documentation on how to setup your implementation of Opt-in. Added possibility to customize if an mbox parameter that has an empty value should be sent to Target or not.
+* Updated Extension to use at.js 1.7.0 that has Opt-in privacy functionality supported via tags to control how and when the Target tag is fired. Please check tags documentation on how to setup your implementation of Opt-in. Added possibility to customize if an mbox parameter that has an empty value should be sent to Target or not.
 
 ## January 23, 2019
 
@@ -135,7 +135,7 @@ exl-id: 9fe1e6c2-e895-4d36-97b6-29f3ccd8a1bc
 
 #### **Bug fixes**
 
-* Fixed an error in the Adobe Target Extension that prevented the Visual Experience Composer from unhiding the page when deployed through Platform Launch.
+* Fixed an error in the Adobe Target Extension that prevented the Visual Experience Composer from unhiding the page when deployed through tags.
 
 ## February 8, 2018
 

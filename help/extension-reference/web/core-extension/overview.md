@@ -1,6 +1,6 @@
 ---
 title: Core Extension Overview
-description: Learn about the Core extension in Adobe Experience Platform Launch.
+description: Learn about the Core tag extension in Adobe Experience Platform.
 exl-id: 657c1507-f005-49a8-a54a-26e6b9ff8b6f
 ---
 # Core extension overview
@@ -9,225 +9,158 @@ exl-id: 657c1507-f005-49a8-a54a-26e6b9ff8b6f
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-The Core extension is the default extension released with Adobe Experience Platform Launch.
+The Core tag extension is the default extension released with Adobe Experience Platform.
 
-Use this reference for information about the options available when using this extension to build a rule.
+This document provides information regarding the options available when using the Core extension to build a rule.
 
 ## Core extension event types {#core-extension-event-types}
 
-This topic describes the event types available in the Core extension.
+This topic describes the event types available in the Core extension. For information about the options that can be set for several different event types, see the [Options](#options) section.
 
-For information about options that can be set for several different event types, see [Options](#options).
-
-### Browser
+### Browser based events
 
 #### Tab Blur
 
-Trigger the action when a tab loses the focus.
-
-There are no settings for this event type.
+The tab-blur event triggers the action when a tab loses the focus. There are no settings for this event type.
 
 #### Tab Focus
 
-Trigger the action when a tab gains the focus.
-
-There are no settings for this event type.
+The tab-focus event triggers the action when a tab gains the focus. There are no settings for this event type.
 
 ### Form
 
 #### Blur
 
-Trigger the action when a form loses the focus.
-
-See [Options](#options), below.
+The blur event triggers the action when a form loses the focus. See the [Options](#options) section for more information on customizable event settings.
 
 #### Focus
 
-Trigger the action when a form gains the focus.
-
-See [Options](#options), below.
+The focus event triggers the action when a form gains the focus. See the [Options](#options) section for more information on customizable event settings.
 
 #### Submit
 
-Trigger the action when a form is submitted.
+The submit event triggers the action when a form is submitted. See the [Options](#options) section for more information on customizable event settings.
 
-See [Options](#options), below.
-
-### Keyboard
+### Keyboard-controlled events
 
 #### Key Press
 
-Trigger the event if a key is pressed.
+The event triggers when a key is pressed. See the [Options](#options) section for more information on customizable event settings.
 
-See [Options](#options), below.
-
-### Media
+### Media-based events
 
 #### Media Ended
 
-Trigger the event when the media ends.
+The event triggers when the media ends. See the [Options](#options) section for more information on customizable event settings.
 
-See [Options](#options), below.
+#### Media-Loaded Data
 
-#### Media Loaded Data
-
-Trigger the event when the media loads data.
-
-See [Options](#options), below.
+The event triggers when the media loads data. See the [Options](#options) section for more information on customizable event settings.
 
 #### Media Pause
 
-Trigger the event when the media is paused.
-
-See [Options](#options), below.
+The event triggers when the media is paused. See the [Options](#options) section for more information on customizable event settings.
 
 #### Media Play
 
-Trigger the even when the media is played.
-
-See [Options](#options), below.
+The event triggers when the media is played. See the [Options](#options) section for more information on customizable event settings.
 
 #### Media Stalled
 
-Trigger the event if the media stalls.
+The event triggers if the media stalls. See the [Options](#options) section for more information on customizable event settings.
 
-See [Options](#options), below.
+#### Media-Time Played
 
-#### Media Time Played
+The event triggers if the media is played for a specified length of time. You must specify the duration that the media must be played for in order to trigger the event. See the [Options](#options) section for more information on customizable event settings.
 
-Trigger the event if the media is played for a specified length of time.
 
-See [Options](#options), below.
+#### Media-Volume Changed
 
-In addition, specify that the event is triggered after a specific amount of time.
+The event triggers if the volume is raised or lowered. See the [Options](#options) section for more information on customizable event settings.
 
-#### Media Volume Changed
-
-Trigger the event if the volume is raised or lowered.
-
-See [Options](#options), below.
-
-### Mobile
+### Mobile-device-orientated events
 
 #### Orientation Change
 
-Trigger the event if the device’s orientation changes.
-
-There are no settings for this event type.
-
-In addition, specify that the event is triggered after a specific amount of time.
+The event triggers if the device’s orientation changes. You must specify the duration that the orientation must change for in order to trigger the event. There are no settings for this event type.
 
 #### Zoom Change
 
-Trigger the event if the user zooms in or out.
+The event triggers if the user zooms in or out. There are no settings for this event type.
 
-There are no settings for this event type.
-
-### Mouse
+### Mouse-controlled events
 
 #### Click
 
-Trigger the event if the specified element is selected (clicked).
+The event triggers if the specified element is selected (clicked). Optionally, you can specify property values that must be true for the element before the event is triggered.
 
-Optionally, you can specify property values that must be true for the element before the event is triggered.
-
-If the element is a link (an `<a>` tag), you can also specify whether to delay navigation for a period of time.  This can be useful if your rule requires extra time to execute and would not normally complete before page navigation takes place.
+If the element is an anchor tag (`<a>`) to linked content, you can also specify whether to delay navigation for a period of time. This can be useful if your rule requires extra time to execute and would not normally complete before page navigation takes place.
 
 >[!WARNING]
 >
 >This option should be used with extreme caution due to the potential negative consequences it poses to the user experience if used incorrectly.
 
-When you use link delay, Platform Launch will actually prevent the browser from navigating off the page, then perform a JavaScript redirect to the original destination after the specified timeout.  This is especially dangerous when when your page markup has `<a>` tags where the intended functionality does not actually navigate the user away from the page.  If you cannot solve your problem in any other way, you should be extremely precise with your selector definition so that this event will trigger exactly where you need it and nowhere else.
+When you use link delay, Platform actually prevents the browser from navigating off the page. It then performs a JavaScript redirect to the original destination after the specified timeout. This is especially dangerous when when your page markup has `<a>` tags where the intended functionality does not actually navigate the user away from the page. If you cannot solve your problem in any other way, you should be extremely precise with your selector definition so that this event will trigger exactly where you need it and nowhere else.
 
-The default link delay value is 100 milliseconds. Please note that Platform Launch will always wait for the amount of time specified and is not connected to the execution of the rule’s actions in any way. It is possible that the delay will force the user to wait longer than is necessary, and also possible that the delay will not be long enough for all the rule’s actions to successfully complete.  Longer delays provide more time for rule execution, but also make for a worse user experience.  
+The default link delay value is 100 milliseconds. Please note that tags will always wait for the amount of time specified and is not connected to the execution of the rule’s actions in any way. It is possible that the delay will force the user to wait longer than is necessary, and also possible that the delay will not be long enough for all the rule’s actions to successfully complete. Longer delays provide more time for rule execution but also worsen the user experience.
 
-In addition, specify that the event is triggered after a specific amount of time.
+To enact the delay it is necessary to provide both the selected element that triggers the event, and the specific amount of time before the event is triggered.
 
-For advanced options, see [Options](#options), below.
+For the advanced options see the [Options](#options) section for more information.
 
 #### Hover
 
-Trigger the event if the user hovers over a specified element.
+The event triggers if the user hovers over a specified element. You must also configure whether the rule is triggered immediately or after a specified number of milliseconds. See the [Options](#options) section for more information on customizable event settings.
 
-See [Options](#options), below.
-
-In addition, configure whether the rule is triggered immediately or after a specified number of milliseconds.
-
-### Other
+### Other events
 
 #### Custom Event
 
-Trigger the event if a custom event type occurs.
-
-You can name a JavaScript function that you’ve defined elsewhere and use it for the event.
-
-Specify the name of the custom event type, then configure the other settings as described in [Options](#options), below.
+The event triggers if a custom event type occurs. Named JavaScript functions that are defined elsewhere in the codebase can be used as a custom event type. You must specify the name of the custom event type and configure any other settings as described in [Options](#options) section below.
 
 #### Data Element Changed
 
-Trigger the event if a specified data element changes.
-
-Enter the data element name. You can select the data element from a list by selecting  the icon and then selecting the data element.
+The event triggers if a specified data element changes. You must provide a name for the data element. You can select the data element by either typing its name into the text field, or selecting the data element icon to the right side of the text field and choosing from a list provided within the dialogue that appears.
 
 #### Direct Call
 
-Designed to bypass event detection and lookup systems.
-
-Direct call rules are ideal for situations where you want to tell Platform Launch exactly what is happening. Also, they are ideal when Platform Launch cannot detect an event in the DOM, such as with Adobe Flash.
-
-Specify the `_satellite.track` string.
+The direct-call event bypasses event detection and lookup systems. Direct-call rules are ideal for situations where you want to tell Platform exactly what is happening. Also, they are ideal when Platform cannot detect an event in the DOM, such as with Adobe Flash. Specify the `_satellite.track` string in the identifier text field.
 
 #### Element Exists
 
-Trigger the event if a specified element exists.
-
-See [Options](#options), below.
+The event triggers if a specified element exists. See the [Options](#options) section for more information on customizable event settings.
 
 #### Enters Viewport
 
-Trigger the event if the user enters a specified viewport.
+The event triggers if the user enters a specified viewport. You must provide a CSS selector as a criteria to target matching elements. You must also configure whether the rule is triggered immediately or after a specified number of milliseconds, and whether the event should trigger every time the event occurs or only the first time.
 
-See [Options](#options), below.
-
-In addition, configure whether the rule is triggered immediately or after a specified number of milliseconds.
+See the [Options](#options) section for more information on customizable event settings.
 
 #### History Change
 
-Trigger the event if a pushState or hashchange occurs.
+The event triggers if a pushState or a hashchange event occurs. There are no settings for this event type.
 
-There are no settings for this event type.
+#### Time-Spent on Page
 
-#### Time Spent on Page
+The event triggers if the user remains on the page for a specified number of seconds. You must specify the number of seconds that must pass before the event is triggered.
 
-Trigger the event if the user remains on the page for a specified number of seconds.
-
-Specify the number of seconds that must pass before the event is triggered.
-
-### Page load
+### Page-load events
 
 #### DOM Ready
 
-Trigger when the DOM is ready and the user can interact with the page
-
-There are no settings for this event type.
+The event triggers when the DOM is ready and the user can interact with the page. There are no settings for this event type.
 
 #### Library Loaded (Page Top) {#library-loaded-page-top}
 
-Trigger the event as soon as the Platform Launch library is loaded.
-
-There are no settings for this event type.
+The event triggers as soon as the tag library is loaded. There are no settings for this event type.
 
 #### Page Bottom {#page-bottom}
 
-Trigger the event once `_satellite.pageBottom();` has been called. When loading the Platform Launch library asynchronously, this event type should not be used.
-
-There are no settings for this event type.
+The event triggers once `_satellite.pageBottom();` has been called. When loading the tag library asynchronously, this event type should not be used. There are no settings for this event type.
 
 #### Window Loaded
 
-Trigger the event when onLoad is called by the browser and the page has finished loading.
-
-There are no settings for this event type.
+The event triggers when onLoad is called by the browser and the page has finished loading. There are no settings for this event type.
 
 ### Options {#options}
 
@@ -266,7 +199,7 @@ If you select this option, the following parameters become available:
 
 ## Core extension condition types
 
-This section describes the condition types available in the Core extension.  These condition types can be used with either the regular or exception logic type.
+This section describes the condition types available in the Core extension. These condition types can be used with either the regular or exception logic type.
 
 ### Data
 
@@ -299,7 +232,7 @@ Run the rule in a browser and inspect the logged event object in the browser’s
 
 When the “Run rule components in sequence” option from property settings is enabled you can have subsequent rule components wait while your condition performs an asynchronous task.
 
-When the condition returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), the next condition in the rule will not execute until the returned promise is resolved. If the promise is rejected, Platform Launch considers that condition as failed and no further conditions or actions from that rule will be executed.
+When the condition returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), the next condition in the rule will not execute until the returned promise is resolved. If the promise is rejected, tags considers that condition as failed and no further conditions or actions from that rule will be executed.
 
 An example of a condition that returns a promise:
 
@@ -617,11 +550,11 @@ Run the rule in a browser and inspect the logged event object in the browser’s
 
 ### Custom Code action processing
 
-The Core extension, available to all Platform Launch users, contains a Custom Code action for executing user-provided JavaScript or HTML. It is often helpful for users to understand how rules with Custom Code actions are processed.
+The Core extension, available to all Adobe Experience Platform users, contains a Custom Code action for executing user-provided JavaScript or HTML. It is often helpful for users to understand how rules with Custom Code actions are processed.
 
 #### Rules using the page top or page bottom events
 
-Code from custom actions is embedded in the main Platform Launch library. The code is written to the document using document.write. If a rule has multiple Custom Code actions, the code is written in the order configured in the rule.
+Code from custom actions is embedded in the main tag library. The code is written to the document using document.write. If a rule has multiple Custom Code actions, the code is written in the order configured in the rule.
 
 #### Rules using any event other than page top or page bottom
 
@@ -631,7 +564,7 @@ While using document.write after a page has loaded would typically present probl
 
 #### Custom Code Validation
 
-The validator used in the Platform Launch code editor is designed to identify issues with developer-written code. Code that has gone through a minification process—such as the AppMeasurement.js code downloaded from the Code Manager—might be falsely flagged as having issues by the validator, which can usually be ignored.
+The validator used in the tags code editor is designed to identify issues with developer-written code. Code that has gone through a minification process—such as the AppMeasurement.js code downloaded from the Code Manager—might be falsely flagged as having issues by the validator, which can usually be ignored.
 
 #### Action sequencing
 
@@ -641,7 +574,9 @@ When the “Run rule components in sequence” option from property settings is 
 
 When creating a JavaScript custom code action, you may return a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) from your action. The next action in the rule will be executed only when the returned promise is resolved. If the promise is rejected, the next actions from the rule will not be executed.
 
-*Note*: This only works when your JavaScript is not set to execute globally.  If you are executing your custom code action in the global scope, Platform Launch will treat the promise as immediatly resolved and move on to the next item in the processing queue.
+>[!NOTE]
+>
+>This only works when your JavaScript is not set to execute globally. If you are executing your custom code action in the global scope, tags will treat the promise as immediately resolved and move on to the next item in the processing queue.
 
 An example of a JavaScript custom code action that returns a promise:
 
@@ -659,7 +594,7 @@ return new Promise(function(resolve, reject) {
 
 *HTML*
 
-When creating an HTML custom code action, a function named `onCustomCodeSuccess()` will be available to use within your custom code. You may call this function to indicate that your custom code has completed and that Platform Launch may move on to executing subsequent actions. On the other hand, if your custom code failed in some way, you may call `onCustomCodeFailure()`. That will inform Platform Launch to not execute the subsequent actions from that rule.
+When creating an HTML custom code action, a function named `onCustomCodeSuccess()` will be available to use within your custom code. You may call this function to indicate that your custom code has completed and that tags may move on to executing subsequent actions. On the other hand, if your custom code failed in some way, you may call `onCustomCodeFailure()`. That will inform tags to not execute the subsequent actions from that rule.
 
 An example of an HTML custom code action that uses the new callbacks:
 
@@ -741,9 +676,9 @@ Get the value of:
 
 Any available JavaScript object or variable can be referenced using the path field.
 
-When you have JavaScript variables, or object properties in your markup, and you want to collect those values in Platform Launch to use with any of your extensions or rules, one way to capture those values is to use data elements in Platform Launch. This way, you can refer to the data element throughout your Rules, and if the source of the data ever changes, you only need to change your reference to the source (the data element) in one place in Platform Launch.
+Tag data elements can be used to capture your markup JavaScript variables or object properties. These values can then be used within your extensions or custom rules by referencing the tag data elements. If the source of the data changes, it is only necessary to update the reference to the source within the Data Collection UI.
 
-For example, let’s say your markup contains a JavaScript variable called `Page_Name`, like this:
+In the example below, the markup contains a JavaScript variable called `Page_Name`.
 
 ```markup
 <script>
@@ -752,9 +687,9 @@ For example, let’s say your markup contains a JavaScript variable called `Page
 </script>
 ```
 
-When you create the data element in Launch, simply provide the path to that variable.
+When you create the data element in the Data Collection UI, simply provide the path to that variable.
 
-If you use a data collector object as party of your data layer, simply use dot notation in the Path to reference the object and property you want to capture into the data element, like `_myData.pageName`, or `digitalData.pageName`, etc.
+If you use a data collector object as party of your data layer, use dot notation in the path to reference the object and property you want to capture into the data element, like `_myData.pageName`, or `digitalData.pageName`, and so on.
 
 #### Example:
 
@@ -816,7 +751,7 @@ Session storage is similar to local storage, except the data is discarded after 
 
 ### Visitor behavior
 
-Similar to Page Info, this data element uses common behavior types to enrich logic within rules or data collection.
+Similar to Page Info, this data element uses common behavior types to enrich logic within rules and other Platform solutions.
 
 Select one of the following visitor behavior attributes:
 

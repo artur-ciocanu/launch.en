@@ -1,6 +1,6 @@
 ---
 title: 2018 Release Notes
-description: 2018 release notes for Adobe Experience Platform Launch.
+description: 2018 release notes for tags in Adobe Experience Platform.
 exl-id: 73cbb140-965f-4404-98df-ef176177550e
 ---
 # 2018 release notes
@@ -34,14 +34,14 @@ You can now make a copy of a rule within the same property. Before you ask, the 
 #### Core extension:
 
 * **Persist Cohort option** The option to persist a cohort has been added to the Sampling condition. This has the effect of keeping a user in or out of the sample cohort across sessions. For example, if the “persist cohort” checkbox is checked and the condition returns true the first time it is run for a given visitor, it will return true on all subsequent runs of the condition for the same visitor. Similarly, if the “persist cohort” checkbox is checked and the condition returns false the first time it is run for a given visitor, it will return false on all subsequent runs of the condition for the same visitor.
-* **Bug fix** Fixed an issue where a rule using a Page Bottom event and a Custom Code action on a page where [!DNL Adobe Experience Platform Launch] was being loaded synchronously but improperly installed (no call to `_satellite.pageBottom()`) would clear website content.
-* **Bug fix** Fixed an issue where the Enters Viewport would not function if the [!DNL Platform Launch] library was loaded asynchronously and finished loading after the browser's DOMContentLoaded event was fired.
+* **Bug fix** Fixed an issue where a rule using a Page Bottom event and a Custom Code action on a page where tags were being loaded synchronously but improperly installed (no call to `_satellite.pageBottom()`) would clear website content.
+* **Bug fix** Fixed an issue where the Enters Viewport would not function if the tag library was loaded asynchronously and finished loading after the browser's DOMContentLoaded event was fired.
 
 ### Bug fixes
 
 * Fixed an issue where attempting to use scrollbars within some dropdowns would close the dropdown.
 * Fixed an issue in Safari that prevented removing an item from a publishing library.
-* Fixed an issue where some buttons in [!DNL Platform Launch] extensions were not spaced properly.
+* Fixed an issue where some buttons in tag extensions were not spaced properly.
 * Fixed an issue where a rule using a Library Loaded event could not successfully trigger a separate rule (usually attempting to trigger a separate rule by using `_satellite.track()`).
 
 ## October 9, 2018
@@ -62,17 +62,17 @@ You can now make a copy of a rule within the same property. Before you ask, the 
 
 ### Features
 
-[!DNL Platform Launch] has gone mobile!!
+Tags have gone mobile!
 
-Used by thousands of customers for web tag management, [!DNL Adobe Experience Platform Launch] can now be used to manage your mobile SDKs.
+Used by thousands of customers for web tag management, the tag workspace can now be used to manage your mobile SDKs.
 
-Creating a mobile property in [!DNL Platform Launch] allows you to:
+Creating a mobile property in the Data Collection UI allows you to:
 
 * Create data elements and build sophisticated rules that can combine actions across multiple solutions.
 * Manage mobile extensions:
   * Mobile Core and Profile extensions are pre-installed with every mobile property.
-  * Extensions are available for other [!DNL Adobe] solutions including [!DNL Adobe Analytics], [!DNL Adobe Target], and [!DNL Adobe Audience Manager].
-* Mobile Core extension and all additional extensions can be downloaded and installed through a dependency managers such as Maven and CocoaPods.
+  * Extensions are available for other Adobe solutions including [!DNL Adobe Analytics], [!DNL Adobe Target], and [!DNL Adobe Audience Manager].
+* Mobile Core extension and all additional extensions can be downloaded and installed through dependency managers such as Maven and CocoaPods.
 * When you add an extension, you must recompile your app and complete the app store submission/approval process.
 
   Data elements, rules, and extension configs are delivered to your application dynamically, are updated at app launch, and do not require app store updates.
@@ -83,7 +83,7 @@ For more information about getting started with mobile properties, see [Mobile](
 
 ### Features
 
-When you save a library, [!DNL Platform Launch] now checks all the resources in it and prompts you to add any required extensions that are missing.
+When you save a library, all the resources in it are now checked and tags prompt you to add any required extensions that are missing.
 
 ### Updates
 
@@ -98,7 +98,7 @@ There were some edge cases where the rule builder would not display rule compone
 
 ### Features
 
-Newly created [!DNL Platform Launch] properties now come with a [!DNL "Managed by Adobe"] host and three environments (one of each type) by default.
+Newly created tag properties now come with a [!DNL "Managed by Adobe"] host and three environments (one of each type) by default.
 
 ## August 14, 2018
 
@@ -117,7 +117,7 @@ The extension catalog is now sorted by display name rather than name.
 
 #### Extension upgrade
 
-[!DNL Platform Launch] users are now notified when new versions of extensions are available and can install them on their own. Read more [here](../launch-reference/managing-resources/extensions/extension-upgrade.md).
+Adobe Experience Platform users are now notified when new versions of extensions are available and can install them on their own. Read more [here](../launch-reference/managing-resources/extensions/extension-upgrade.md).
 
 ### Updates
 
@@ -127,7 +127,7 @@ Embed codes have moved from the Environment detail page to an installation instr
 
 ### Bug fixes
 
-* In some scenarios, rules saved through the UI were not being saved with the correct order.  This has now been fixed.  In a future update, a data migration will fix all affected rules, but in the meantime manually editing the rule, making a change, and saving will fix an impacted rule.
+* In some scenarios, rules saved through the UI were not being saved in the correct order.  This has now been fixed.  In a future update, a data migration will fix all affected rules, but in the meantime manually editing the rule, making a change, and saving will fix an impacted rule.
 
 ## July 10, 2018
 
@@ -140,9 +140,9 @@ Embed codes have moved from the Environment detail page to an installation instr
 
 ### Features
 
-#### [!DNL Platform Launch]  and DTM libraries are now live in China
+#### Tags and DTM libraries are now live in China
 
-The [!DNL Platform Launch] and [!DNL DTM] libraries using [!DNL Akamai] are now available on CDN edge nodes in China. This provides much faster library load speeds for end users in China.
+The tags and [!DNL DTM] libraries using [!DNL Akamai] are now available on CDN edge nodes in China. This provides much faster library load speeds for end-users in China.
 
 #### Improved error messages
 
@@ -172,7 +172,7 @@ Environment pages now display async embed codes as the default. Toggling between
 
 ### Documentation
 
-Open source documentation for [!DNL Platform Launch] available at [https://experienceleague.adobe.com/docs/launch/using/overview.html](https://experienceleague.adobe.com/docs/launch/using/overview.html).
+Open-source documentation for tags is available at [Experience League](https://experienceleague.adobe.com/docs/launch/using/overview.html).
 
 ## April 24, 2018
 
@@ -200,7 +200,7 @@ Improved warning messages.
 
 #### Rule ID enhancement
 
-Rule ID is now emitted for each rule in a build, and can be referenced in the browser.
+Rule ID is now emitted for each rule in a build and can be referenced in the browser.
 
 #### Page Load event order
 
@@ -223,7 +223,7 @@ Minor style improvements.
 * Active Library has been moved to the top right to make more space for content
 * Action buttons moved to the top right
 * Bulk Edit now lists smarter actions, collapsed into a More menu on smaller screens
-* Form fields now have default focus
+* Form fields now have a default focus
 
 ## March 20, 2018
 
@@ -245,9 +245,9 @@ Event details are copied to the top-level event object (`%event.detail%` in text
 
 You can delete data elements, rules, and extensions. See [Delete Resources](../launch-reference/managing-resources/delete-resources.md).
 
-#### Link DTM Embed Code to Platform Launch
+#### Link DTM embed code to tags
 
-When you link your [!DNL DTM] embed code to [!DNL Platform Launch], you can keep your [!DNL DTM] production embed code on a page, but serve [!DNL Platform Launch] files there instead of [!DNL DTM]. 
+When you link your [!DNL DTM] embed code to tags, you can keep your [!DNL DTM] production embed code on a page, but serve tag files there instead of [!DNL DTM]. 
 
 ## March 6, 2018
 
@@ -271,7 +271,7 @@ Fixed an issue that caused a database query to take a long time to run and cause
 #### Active Library enhancements
 
 * Enable/Disable actions ask if you want to add to your Active Library
-* Create a new library from the Active Library drop down
+* Create a new library from the Active Library dropdown
 
 ## February 1, 2018
 
@@ -279,21 +279,21 @@ Fixed an issue that caused a database query to take a long time to run and cause
 
 #### Akamai cache control headers
 
-Cache control headers are now automatically set for libraries hosted on [!DNL Akamai] (assets.adobedtm.com). Previously, we did not set cache control headers for any files hosted on assets.adobedtm.com.
+Cache-control headers are now automatically set for libraries hosted on [!DNL Akamai] (assets.adobedtm.com). Previously, we did not set cache-control headers for any files hosted on assets.adobedtm.com.
 
-* Production builds: Cache control headers are set to 60 minutes
-* Staging builds with "-staging" in the filename: Cache control headers are set to 0 minutes
-* Dev builds with "-development" in the filename: Cache control headers are set to 0 minutes
-* [!DNL Platform Launch]  Staging builds without "-staging" in the filename: The default of 60 minutes is inherited
-* [!DNL Platform Launch]  Development builds without "-development" in the filename: The default of 60 minutes is inherited
+* Production builds: Cache-control headers are set to 60 minutes
+* Staging builds with "-staging" in the filename: Cache-control headers are set to 0 minutes
+* Dev builds with "-development" in the filename: Cache-control headers are set to 0 minutes
+* Tags Staging builds without "-staging" in the filename: The default of 60 minutes is inherited
+* Tags Development builds without "-development" in the filename: The default of 60 minutes is inherited
 
 >[!NOTE]
 >
->It is up to browsers to receive and respect the cache control headers. Some browsers might ignore them.
+>It is up to browsers to receive and respect the cache-control headers. Some browsers might ignore them.
 
 >[!IMPORTANT]
 >
->[!DNL Platform Launch]  developers who do not have `-development` or `-staging` in their Environment embed codes need to re-create their Development and Staging environments to get the 0 cache control header. If you don't re-create the environments, you'll have the same 60-minute cache control as the production libraries.
+>Tags developers who do not have `-development` or `-staging` in their Environment embed codes need to re-create their Development and Staging environments to get the 0 cache-control header. If you don't re-create the environments, you'll have the same 60-minute cache control as the production libraries.
 
 ## January 18, 2018
 
@@ -301,9 +301,7 @@ Cache control headers are now automatically set for libraries hosted on [!DNL Ak
 
 #### Rule ordering {#rule-ordering}
 
-Events in rules can now be assigned an order. When an event is triggered, any rules that use that event are executed in the order defined. Lower numbers run first (1 comes before 10). See [Rule ordering](2018-release-notes.md#rule-ordering) for more information.
-
-<!-- The above link points to itself-->
+Events in rules can now be assigned an order. When an event is triggered, any rules that use that event are executed in the order defined. Lower numbers run first (1 comes before 10). See [Rule ordering](../launch-reference/managing-resources/rules.md#rule-ordering) for more information.
 
 #### Set active library
 
@@ -311,17 +309,17 @@ Set a new or existing library as your active library. When creating/editing rule
 
 #### Multiple arguments in the logger
 
-You can now pass actual objects to the log function and view them as objects in the browser console when using `_satellite.debug()`. This makes the Platform Launch logger behave a lot more like console.log. To enable this change, there is no longer a persistent history attached to the `_satellite.debug()` function, so when you call it for the first time, you'll no longer see a history of past events. You will see any debug messages from that point forward.
+You can now pass actual objects to the log function and view them as objects in the browser console when using `_satellite.debug()`. This makes the tag logger behave a lot more like console.log. To enable this change, there is no longer a persistent history attached to the `_satellite.debug()` function, so when you call it for the first time, you'll no longer see a history of past events. You will see any debug messages from that point forward.
 
 ## January 10, 2018
 
 ### Features
 
-#### Asynchronous deploy of Platform Launch
+#### Asynchronous deployment of tags
 
 * On-page
 
-  The [!DNL Platform Launch] library now includes support for running asynchronously. There are important ramifications for how this changes what happens in your library. You should read the [Async documentation](../launch-reference/client-side-information/asynchronous-deployment.md) before you do anything.
+  The tag library now includes support for running asynchronously. There are important ramifications for how this changes what happens in your library. You should read the [Async documentation](../launch-reference/client-side-information/asynchronous-deployment.md) before you do anything.
 
 * Async Toggle on Environments
 
@@ -341,7 +339,7 @@ The following changes were made to be more descriptive of the actual behavior in
 
 ### Bug fixes and enhancements
 
-* Fixed an issue where the [!DNL Platform Launch] library would load twice in certain edge cases.
+* Fixed an issue where the tag library would load twice in certain edge cases.
 * There are now audit log entries for Property Delete.
 * Improved the load speed of the Revision Selector when you quickly navigate from one entry to another.
 * Help links now open in a new tab.
@@ -350,17 +348,13 @@ The following changes were made to be more descriptive of the actual behavior in
 
 Release date: **November 8, 2017**
 
->[!IMPORTANT] 
->
->[!DNL Platform Launch]  is being rolled out incrementally to Adobe Experience Cloud customers. If you have would like a chance to get early access, please put let us know by entering the required information in the [!DNL Platform Launch] Release Form.
+This is the first release of tags in Adobe Experience Platform.
 
-This is the first release of [!DNL Platform Launch].
+Tags is the next generation of tag management capabilities produced by Adobe. It gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising tags necessary to power relevant customer experiences.
 
-[!DNL Platform Launch] is the next-generation of tag management capabilities from [!DNL Adobe]. [!DNL Platform Launch] gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising tags necessary to power relevant customer experiences.
+Tags empower anyone to build and maintain their own integrations by using extensions. These extensions are available to Platform customers in an app-store experience so they can quickly install, configure, and deploy their tags.
 
-[!DNL Platform Launch] empowers anyone to build and maintain their own integrations with [!DNL Platform Launch], called extensions. These extensions are available to [!DNL Platform Launch] customers in an app-store experience so they can quickly install, configure, and deploy their tags.
-
-[!DNL Platform Launch] is offered to [!DNL Adobe Experience Cloud] customers as an included, value-add feature. [!DNL Platform Launch] is an entirely new product with a new code base, designed to replace the previous [!DNL Dynamic Tag Management (DTM)] service. However, [!DNL DTM] will continue to be supported for the foreseeable future. [!DNL Adobe] will continue to fix any significant bugs and ensure consistent performance. At this time, no major feature enhancements are planned for legacy [!DNL DTM].
+Tags are provided to Adobe Experience Cloud customers as an included, value-add feature. Tags is an entirely new product with a new code base, designed to replace the previous [!DNL Dynamic Tag Management (DTM)] service. However, [!DNL DTM] will continue to be supported for the foreseeable future. [!DNL Adobe] will continue to fix any significant bugs and ensure consistent performance. At this time, no major feature enhancements are planned for legacy [!DNL DTM].
 
 ### Key benefits
 
@@ -372,7 +366,7 @@ This is the first release of [!DNL Platform Launch].
 
 #### Extensions
 
-An extension is a package of code (JavaScript, HTML, and CSS) that extends the [!DNL Platform Launch] UI and client functionality. ​Build, manage, and update your integrations using a virtually self-service interface. You can think of [!DNL Platform Launch] as an operating system, and extensions are the apps you use to achieve your tasks.
+An extension is a package of code (JavaScript, HTML, and CSS) that extends the Data Collection UI and client functionality. ​Build, manage, and update your integrations using a virtually self-service interface. You can think of a tag as an operating system, and extensions are the apps you use to achieve your tasks.
 
 #### Extension catalog
 
@@ -407,20 +401,20 @@ The publishing process enables teams to publish code to pages. Different people 
 
 #### Open APIs
 
-Automate implementations of individual technologies, or a group of technologies.
+Automate implementations  or a group of technologies.
 
-* [!DNL Platform Launch] interacts with the [!DNL Reactor] APIs ​
+* Tags interacts with the [!DNL Reactor] APIs ​
 * Deployments can be automated through APIs ​
-* Integrate the [!DNL Platform Launch] APIs with your own internal systems ​
-* You can build your own user interface, if desired ​
+* Integrate the tags APIs with your own internal systems ​
+* You can build your own user interface if desired ​
 
 #### Light, modular container tag
 
-The [!DNL Platform Launch] container tag is 60% lighter than [!DNL Adobe Tag Manager] and 40% lighter than [!DNL Google Tag Manager]. The content of your container is minified, including your custom code. Everything is modular. If you don't need an item, it is not included in your library. The result is an implementation that is fast and compact.
+The container tag created by tags is 60% lighter than [!DNL Adobe Tag Manager] and 40% lighter than [!DNL Google Tag Manager]. The content of your container is minified, including your custom code. Everything is modular. If you don't need an item, it is not included in your library. The result is an implementation that is fast and compact.
 
 ## Other highlights
 
-[!DNL Platform Launch] provides several improvements over similar systems, including:
+Tags provide several improvements over similar systems. These include:
 
 * No use of `document.write ()` where [!DNL Chrome] doesn't allow it ​
 * The Page Top and Page Bottom rules are bundled into the main library to minimize unnecessary HTTP calls ​ ​

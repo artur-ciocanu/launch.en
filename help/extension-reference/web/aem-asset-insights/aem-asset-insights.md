@@ -1,6 +1,6 @@
 ---
 title: AEM Asset Insights Extension Overview
-description: Learn about the AEM Asset Insights extension in Adobe Experience Platform Launch.
+description: Learn about the AEM Asset Insights tag extension in Adobe Experience Platform.
 exl-id: 1bd8b45b-f194-4201-b2d4-050084ce8bed
 ---
 # AEM Asset Insights extension overview
@@ -27,7 +27,7 @@ There are also two metrics:
 
 These reports must be enabled using the Analytics Administrator (select **[!UICONTROL Analytics] > [!UICONTROL Admin] > [!UICONTROL Report Suites] > `<report suite>` > [!UICONTROL Edit Settings] > [!UICONTROL AEM] > [!UICONTROL AEM Assets Reporting]**) before they can be populated using this extension.
 
-The "*Adobe Analytics*" extension for Adobe Experience Platform Launch must be installed into the same Platform Launch Web Property.
+The "*Adobe Analytics*" tag extension for Adobe Experience Platform must be installed into the same web property.
         
 ### Adobe Experience Manager (AEM)
                         
@@ -43,15 +43,15 @@ The "*Adobe Analytics*" extension for Adobe Experience Platform Launch must be i
     
 ## Configure Adobe Experience Manager (AEM)
 
-This section describes how to configure AEM with Platform Launch, how to enable Asset Insight in AEM, and how to Enable UUID tracking for Assets.
+This section describes how to configure AEM with tags in Adobe Experience Platform, how to enable Asset Insight in AEM, and how to Enable UUID tracking for Assets.
 
-### Integrate AEM with Platform Launch
+### Integrate AEM with tags
 
-The recommended integration of [Platform Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) with Adobe Experience Manager is done via Adobe I/O.
+The recommended integration of [Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) with Adobe Experience Manager is done via Adobe I/O.
 
-1. [Connect AEM with Platform Launch using Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
+1. [Connect AEM with tags using Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
 
-1. [Create a Platform Launch Cloud Service configuration](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/create-launch-cloud-service.html).
+2. [Create an Adobe Experience Platform Cloud Service configuration](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/create-launch-cloud-service.html).
 
 ### Enable Asset Insight in AEM
 
@@ -81,7 +81,7 @@ This extension has two events and one action.
 
 ### Asset impressions
     
-Add the "Set AA Variables" action to a new or existing Platform Launch rule that fires on every page and sends an Analytics image request. The "Set AA Variables" action must appear **before** the "Adobe Analytics - Send Beacon" action. Additonal actions can be added as required.
+Add the "Set AA Variables" action to a new or existing tag rule that fires on every page and sends an Analytics image request. The "Set AA Variables" action must appear **before** the "Adobe Analytics - Send Beacon" action. Additonal actions can be added as required.
     
 In the **[Set AA Variables]** config page, select the **[Viewed Assets]** (default) option. This only sets the Impressions event for assets that are actually seen by the visitor.
 

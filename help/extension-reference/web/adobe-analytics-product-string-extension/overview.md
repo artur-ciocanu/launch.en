@@ -1,6 +1,6 @@
 ---
 title: Adobe Analytics Product String Extension Overview
-description: Learn about the Adobe Analytics Product String extension in Adobe Experience Platform Launch.
+description: Learn about the Adobe Analytics Product String tag extension in Adobe Experience Platform.
 exl-id: a2236a39-3fcd-4d5a-8d79-a57a22818146
 ---
 # Adobe Analytics Product String extension overview
@@ -21,7 +21,7 @@ The [!DNL Adobe Analytics Product String Builder] extension automatically sets t
 Category;Product;Quantity;Price;eventN=X|eventN2=X2;eVarN=merch_category|eVarN2=merch_category2
 ```
 
-For complete documentation, visit [Products](https://experienceleague.adobe.com/docs/analytics/components/variables/dimensions-reports/reports-products.html).
+For complete documentation, visit [Products](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html).
 
 ## Extension Instructions
 

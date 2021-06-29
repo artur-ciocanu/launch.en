@@ -1,6 +1,6 @@
 ---
 title: Common Analytics Extension Overview
-description: Learn about the Common Analytics extension in Adobe Experience Platform Launch.
+description: Learn about the Common Analytics tag extension in Adobe Experience Platform.
 exl-id: 2766cb4d-42a8-4940-b5b0-a2491eb6c477
 ---
 # Common Analytics Plugins extension overview
@@ -56,32 +56,32 @@ This section describes the data elements available in the Common Analytics Plugi
 
 ### getGeoCoordinates
 
-Allows users to leverage the native Adobe Experience Platform Launch UI to set up and configure the getGeoCoordinates plugin. 
+Allows users to leverage the native Data Collection UI in Adobe Experience Platform to set up and configure the getGeoCoordinates plugin. 
 
 ### getNewRepeat
 
-Allows users to leverage the native Platform Launch UI to set up and configure the getNewRepeat plugin. 
+Allows users to leverage the native Data Collection UI to set up and configure the getNewRepeat plugin. 
 
 ### getPageName
 
-Allows users to leverage the native Platform Launch UI to set up and configure the getPageName plugin. 
+Allows users to leverage the native Data Collection UI to set up and configure the getPageName plugin. 
 
 ### getResponsiveLayout
 
-Allows users to leverage the native Platform Launch UI to set up and configure the getResponsiveLayout plugin. 
+Allows users to leverage the native Data Collection UI to set up and configure the getResponsiveLayout plugin. 
 
 ### getTimeParting
 
-Allows users to leverage the native Platform Launch UI to set up and configure the getTimeParting plugin. 
+Allows users to leverage the native Data Collection UI to set up and configure the getTimeParting plugin. 
 
 ### getTimeSinceLastVisit
 
-Allows users to leverage the native Platform Launch UI to set up and configure the getTimeSinceLastVisit plugin. 
+Allows users to leverage the native Data Collection UI to set up and configure the getTimeSinceLastVisit plugin. 
 
 ### getVisitDuration
 
-Allows users to leverage the native Platform Launch UI to set up and configure the getVisitDuration plugin. 
+Allows users to leverage the native Data Collection UI to set up and configure the getVisitDuration plugin. 
 
 ### getVisitNum
 
-Allows users to leverage the native Platform Launch UI to set up and configure the getVisitNum plugin.
+Allows users to leverage the native Data Collection UI to set up and configure the getVisitNum plugin.

@@ -1,6 +1,6 @@
 ---
 title: Remove Resources from a Library
-description: Learn how to remove resources from an Adobe Experience Platform Launch library.
+description: Learn how to remove resources from a tag library.
 exl-id: fd0df7a8-3fd9-462a-b4c2-6d09b9cf97d7
 ---
 # Remove resources from a library
@@ -41,7 +41,7 @@ Instead, you must disable the resource. This disabling is a change that you then
 
 1. Disable the resource.
    1. Select the resource from the list view.
-   2. Select **[!UICONTROL Disable]**.
+   1. Select **[!UICONTROL Disable]**.
 1. Create a new Development library.
 1. Add the `latest` version of the disabled resource.
 1. Save and Build.

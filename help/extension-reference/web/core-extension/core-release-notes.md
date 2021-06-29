@@ -1,6 +1,6 @@
 ---
 title: Release Notes for the Core Extension
-description: The latest release notes for the Core extension in Adobe Experience Platform Launch.
+description: The latest release notes for the Core extension in Adobe Experience Platform.
 exl-id: e366b5ef-d9b8-4424-b026-a0a8df1dacfc
 ---
 # Core Extension release notes
@@ -34,7 +34,7 @@ v2.0.4
 
 * Added Data Element Support for various fields - Data Element support has been added to the following events: 'Time on Page', 'Enters Viewport', 'Hover' and 'Media Time Played'. As well as the following Conditions: 'Time on Site' and 'Value Comparison'
 * Adds support for default behavior for ctrl/cmd + click, and middle mouse click when using Link Delay
-* **Marked link delay on the click event as “no longer supported”.** - more information can be found on the [Adobe Exprience Platform Launch Blog](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/explainer-link-delay/ba-p/398403)
+* **Marked link delay on the click event as “no longer supported”.** - more information can be found on the [Data Collection Blog](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/explainer-link-delay/ba-p/398403) for Adobe Experience Platform
 
 ## January 6, 2021
 
@@ -98,7 +98,7 @@ v1.6.2
 
 v1.6.1
 
-* **Support for CSP Nonce** - The Core extension now has an optional configuration parameter. You can add a data element that references a nonce. If configured, all inline scripts that Adobe Experience Platform Launch adds to the page use the nonce that you’ve configured. This change supports the use of a Content Security Policy with a nonce so that Platform Launch scripts can still load in a CSP environment.  You can read more about using Platform Launch with a CSP [here](https://experienceleague.adobe.com/docs/launch/using/reference/client-side-info/content-security-policy-csp.html).
+* **Support for CSP Nonce** - The Core extension now has an optional configuration parameter. You can add a data element that references a nonce. If configured, all inline scripts that a tag adds to the page use the nonce that you’ve configured. This change supports the use of a Content Security Policy with a nonce so that Platform Launch scripts can still load in a CSP environment.  You can read more about using Platform Launch with a CSP [here](https://experienceleague.adobe.com/docs/launch/using/reference/client-side-info/content-security-policy-csp.html).
 
 ## June 18, 2019
 
@@ -126,8 +126,8 @@ v1.4.2
 ## November 8, 2018
 
 * **Persist Cohort option** - The option to persist a cohort has been added to the Sampling condition. This has the effect of keeping a user in or out of the sample cohort across sessions. For example, if the “persist cohort” checkbox is checked and the condition returns true the first time it is run for a given visitor, it will return true on all subsequent runs of the condition for the same visitor. Similarly, if the “persist cohort” checkbox is checked and the condition returns false the first time it is run for a given visitor, it will return false on all subsequent runs of the condition for the same visitor.
-* **Bug Fix** - Fixed an issue where a rule using a Page Bottom event and a Custom Code action on a page where Platform Launch was being loaded synchronously but improperly installed (no call to `_satellite.pageBottom()`) would clear website content.
-* **Bug Fix** - Fixed an issue where the Enters Viewport would not function if the Platform Launch library was loaded asynchronously and finished loading after the browser’s DOMContentLoaded event was fired.
+* **Bug Fix** - Fixed an issue where a rule using a Page Bottom event and a Custom Code action on a page where tags were being loaded synchronously but improperly installed (no call to `_satellite.pageBottom()`) would clear website content.
+* **Bug Fix** - Fixed an issue where the Enters Viewport would not function if the tag library was loaded asynchronously and finished loading after the browser’s DOMContentLoaded event was fired.
 
 ## May 24, 2018
 
