@@ -9,20 +9,14 @@ index: yes
 git-repo: https://github.com/AdobeDocs/launch.en
 ---
 
-# Experience Platform Launch {#using}
+# Tags {#using}
 
-* [[!DNL Platform Launch] overview](./home.md)
+* [Tags overview](./home.md)
 * [Terminology updates](./launch-term-updates.md)
 * Getting started {#get-started}
   * [Quickstart guide](quick-start/quick-start.md)
   * [Implementation guides](quick-start/implementation-guides.md)
   * [Videos](quick-start/videos.md)
-  * Upgrade from DTM to [!DNL Platform Launch] {#upgrade}
-    * [Overview](launch-reference/upgrade-from-dtm-to-launch/overview.md)
-    * [Preparation guide](launch-reference/upgrade-from-dtm-to-launch/upgrade-preparation-guide.md)
-    * [Link DTM embed code](launch-reference/upgrade-from-dtm-to-launch/link-dtm-embed-code.md)
-    * [Link DTM to Experience Cloud](launch-reference/upgrade-from-dtm-to-launch/link-dtm-to-experience-cloud.md)
-    * [FAQ](launch-reference/upgrade-from-dtm-to-launch/upgrade-faq.md)
 * Platform Launch UI {#ui}
   * [Overview](launch-reference/managing-resources/overview.md)
   * Extensions {#extensions}
