@@ -28,7 +28,7 @@ As the technology stack grows and data is sent to more and more destinations, th
 
 Event forwarding helps marketing teams grow their business while controlling data. It decreases the number of client-side technologies that marketers need to use to reach their target market and send data to non-Adobe destinations. This makes it easier for implementation teams to manage the data flowing from the client to various destinations.
 
-## Differences between event forwarding and tags in Adobe Experience Platform
+## Differences between event forwarding and tags
 
 It is important to note the following differences between event forwarding and tags:
 

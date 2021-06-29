@@ -62,7 +62,7 @@ You can now make a copy of a rule within the same property. Before you ask, the 
 
 ### Features
 
-Tags in Adobe Experience Platform have gone mobile!
+Tags have gone mobile!
 
 Used by thousands of customers for web tag management, the tag workspace can now be used to manage your mobile SDKs.
 
