@@ -50,7 +50,7 @@ git-repo: https://github.com/AdobeDocs/launch.en
   * [Deploy JavaScript tags to opt in to [!DNL Platform Launch]](launch-reference/client-side-information/deploy-javascript-tags-to-opt-in-to-launch.md)
   * [Content Security Policy (CSP) support](launch-reference/client-side-information/content-security-policy-csp.md)
   * [Subresource Integrity (SRI) support](./launch-reference/client-side-information/sri.md)
-* Server-side information {#server-side-info}
+* Event forwarding information {#server-side-info}
     * [Overview](launch-reference/server-side-information/server-side-overview.md)
     * [Getting started](launch-reference/server-side-information/server-side-getting-started.md)
 * Administration {#admin}
@@ -106,7 +106,7 @@ git-repo: https://github.com/AdobeDocs/launch.en
       * [Release notes](extension-reference/web/common-analytics-plugins-extension/common-analytics-plugins-release-notes.md)
     * [!DNL Platform Launch] core extension {#core-extension}
       * [Overview](extension-reference/web/core-extension/overview.md)
-      * [Server-side core extension](extension-reference/web/core-extension/overview-launch-server-side.md)
+      * [Core event forwarding extension](extension-reference/web/core-extension/overview-launch-server-side.md)
       * [Release notes](extension-reference/web/core-extension/core-release-notes.md)
     * [!DNL Marketo Munchkin] extension {#marketo-extension}
       * [Overview](extension-reference/web/marketo-munchkin-extension/overview.md)
