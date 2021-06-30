@@ -1,8 +1,8 @@
 ---
 audience: end-user
 product: adobe launch
-user-guide-title: Experience Platform Launch User Guide
-breadcrumb-title: Adobe Experience Platform Launch Guide
+user-guide-title: Tags in Experience Platform
+breadcrumb-title: Tags
 user-guide-description: Learn to deploy and manage analytics, marketing, and advertising tags to power customer experiences.
 landing-page-description: Learn to deploy and manage analytics, marketing, and advertising tags to power customer experiences.
 index: yes
@@ -45,8 +45,8 @@ git-repo: https://github.com/AdobeDocs/launch.en
 * Client-side information {#client-side-info}
   * [Overview](launch-reference/client-side-information/overview.md)
   * [Asynchronous deployment](launch-reference/client-side-information/asynchronous-deployment.md)
-  * [[!DNL Platform Launch] object reference](launch-reference/client-side-information/launch-object-reference.md)
-  * [Deploy JavaScript tags to opt in to [!DNL Platform Launch]](launch-reference/client-side-information/deploy-javascript-tags-to-opt-in-to-launch.md)
+  * [Satellite object reference](launch-reference/client-side-information/launch-object-reference.md)
+  * [Deploy JavaScript tags to manage customer consent](launch-reference/client-side-information/deploy-javascript-tags-to-opt-in-to-launch.md)
   * [Content Security Policy (CSP) support](launch-reference/client-side-information/content-security-policy-csp.md)
   * [Subresource Integrity (SRI) support](./launch-reference/client-side-information/sri.md)
 * Event forwarding information {#server-side-info}
@@ -103,7 +103,7 @@ git-repo: https://github.com/AdobeDocs/launch.en
     * Common Analytics Plugins extension {#plugins-extension}
       * [Overview](extension-reference/web/common-analytics-plugins-extension/common-analytics-plugins.md)
       * [Release notes](extension-reference/web/common-analytics-plugins-extension/common-analytics-plugins-release-notes.md)
-    * [!DNL Platform Launch] core extension {#core-extension}
+    * Core extension {#core-extension}
       * [Overview](extension-reference/web/core-extension/overview.md)
       * [Core event forwarding extension](extension-reference/web/core-extension/overview-launch-server-side.md)
       * [Release notes](extension-reference/web/core-extension/core-release-notes.md)
