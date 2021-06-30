@@ -12,7 +12,6 @@ git-repo: https://github.com/AdobeDocs/launch.en
 # Tags {#using}
 
 * [Tags overview](./home.md)
-* [Terminology updates](./launch-term-updates.md)
 * Getting started {#get-started}
   * [Quickstart guide](quick-start/quick-start.md)
   * [Implementation guides](quick-start/implementation-guides.md)
@@ -183,6 +182,7 @@ git-repo: https://github.com/AdobeDocs/launch.en
     * [Relationships](./api/guides/relationships.md)
     * [Searching resources](./api/guides/search.md)
 * [FAQ](./faq.md)
+* [Terminology updates](./launch-term-updates.md)
 * Release notes {#release-notes}
   * [Latest](release-notes/current.md)
   * [2020 release notes](release-notes/2020-release-notes.md)
