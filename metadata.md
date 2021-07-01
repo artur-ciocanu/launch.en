@@ -1,16 +1,9 @@
 ---
 cloud: Experience Cloud
-solution: Experience Platform Launch, Data Collection
+solution: Tags, Experience Platform Launch, Data Collection
 type: Documentation
-feature-set: Data Collection
-solution-title: Learn & Support
-solution-hub-url: https://helpx.adobe.com/support/experience-cloud/core-services.html
-solution-image: help/images/experience-cloud-logo-24.png
-getting-started-title: Getting Started
-getting-started-url: https://helpx.adobe.com/experience-cloud-core-services/get-started.html
-tutorials-title: Tutorials
-tutorials-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/overview.html
-git-repo: https://git.corp.adobe.com/AdobeDocs/launch.en
+feature-set: Tags
+git-repo: https://github.com/AdobeDocs/launch.en
 index: yes
 ---
 
