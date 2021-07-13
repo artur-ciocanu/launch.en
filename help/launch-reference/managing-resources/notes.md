@@ -1,15 +1,15 @@
 ---
 title: Notes
-description: Learn how to textual annotations to certain resources in Adobe Experience Platform Launch.
+description: Learn how to add textual annotations to certain tag resources in Adobe Experience Platform.
 exl-id: 47bc15ea-8bff-42fc-8011-5498ab11e400
 ---
 # Notes
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-Notes are textual annotations that you can add to certain Adobe Experience Platform Launch resources.  Notes can be attached to the following resources:
+Notes are textual annotations that you can add to certain tag resources in Adobe Experience Platform. Notes can be attached to the following resources:
 
 * Extensions
 * Data elements
@@ -20,7 +20,7 @@ Notes are textual annotations that you can add to certain Adobe Experience Platf
 
 Notes can contain up to 512 Unicode characters.  
 
-Notes are comments that have no impact on the behavior of the resources they are attached to.  They are not included in built libraries.  You might use notes to:
+Notes are comments that have no impact on the behavior of the resources they are attached to. They are not included in built libraries.  You might use notes to:
 
 * Provide background information on a resource
 * Function as a to-do list for future enhancements
@@ -37,6 +37,6 @@ Select **[!UICONTROL Notes]** to expand the right rail and display the notes, wi
 
 ## Other
 
-* Notes in Platform Launch match the behavior of notes in DTM, in that they are immutable and cannot be edited or deleted.
+* Notes on tag resources match the behavior of notes in DTM, in that they are immutable and cannot be edited or deleted.
 * When viewing older revisions of a resource, only the notes that were created prior to that revision's `created_at` date are displayed.
 * When you delete a resource, all notes attached to the resource are also deleted.

@@ -1,19 +1,21 @@
 ---
 title: Data Element Types for Web Extensions
-description: Learn how to define a data-element-type library module for a web extension in Adobe Experience Platform Launch.
+description: Learn how to define a data-element-type library module for a tag extension in a web property.
 exl-id: 72c43ac3-4672-4eb5-a062-550537bdb686
 ---
 # Data element types for edge extensions
 
->**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-A data element type library module has one goal: retrieve a piece of data. How this piece of data is retrieved is up to you. For example, you can use a data element type to allow Adobe Experience Platform Launch users to retrieve a piece of data from local storage, a cookie, or a DOM element.
+The purpose of a data element type library module is to retrieve a piece of data. The method for this retrieval is customizable. Different data element types allow Adobe Experience Platform users to retrieve data from local storage, a cookie, or a DOM element.
 
 >[!IMPORTANT]
 >
->This document covers data-element types for web extensions. If you are developing an edge extension, see the guide on [data-element types for edge extensions](../edge/data-element-types.md) instead.
+>This document provides information on data-element types for web extensions. If you are developing an edge extension, see the guide on [data-element types for edge extensions](../edge/data-element-types.md) instead.
 >
->This document also assumes you are familiar with library modules and how they are integrated in Platform Launch extensions. If you require an introduction, see the overview on [library module formatting](./format.md) before returning to this guide.
+>This document also assumes you are familiar with library modules and how they are integrated in tag extensions. If you require an introduction, see the overview on [library module formatting](./format.md) before returning to this guide.
 
 Consider a situation where you want to allow users to retrieve a piece of data from a local storage item named `productName`. Your module may look like this:
 
@@ -23,7 +25,7 @@ module.exports = function(settings) {
 }
 ```
 
-If you want to make the local storage item name configurable by the Platform Launch user, you can allow the user to input a name and then save the name to the `settings` object. The object might look something like this:
+If you want to make the local storage item name configurable by the Adobe Experience Platform user, you can allow the user to input a name and then save the name to the `settings` object. The object might look something like this:
 
 ```js
 {

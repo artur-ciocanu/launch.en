@@ -1,29 +1,22 @@
 ---
 audience: end-user
 product: adobe launch
-user-guide-title: Experience Platform Launch User Guide
-breadcrumb-title: Adobe Experience Platform Launch Guide
+user-guide-title: Tags in Experience Platform
+breadcrumb-title: Tags
 user-guide-description: Learn to deploy and manage analytics, marketing, and advertising tags to power customer experiences.
 landing-page-description: Learn to deploy and manage analytics, marketing, and advertising tags to power customer experiences.
 index: yes
 git-repo: https://github.com/AdobeDocs/launch.en
 ---
 
-# Experience Platform Launch {#using}
+# Tags {#using}
 
-* [[!DNL Platform Launch] overview](./home.md)
-* [Terminology updates](./launch-term-updates.md)
+* [Tags overview](./home.md)
 * Getting started {#get-started}
   * [Quickstart guide](quick-start/quick-start.md)
   * [Implementation guides](quick-start/implementation-guides.md)
   * [Videos](quick-start/videos.md)
-  * Upgrade from DTM to [!DNL Platform Launch] {#upgrade}
-    * [Overview](launch-reference/upgrade-from-dtm-to-launch/overview.md)
-    * [Preparation guide](launch-reference/upgrade-from-dtm-to-launch/upgrade-preparation-guide.md)
-    * [Link DTM embed code](launch-reference/upgrade-from-dtm-to-launch/link-dtm-embed-code.md)
-    * [Link DTM to Experience Cloud](launch-reference/upgrade-from-dtm-to-launch/link-dtm-to-experience-cloud.md)
-    * [FAQ](launch-reference/upgrade-from-dtm-to-launch/upgrade-faq.md)
-* Platform Launch UI {#ui}
+* Data Collection UI {#ui}
   * [Overview](launch-reference/managing-resources/overview.md)
   * Extensions {#extensions}
     * [Overview](launch-reference/managing-resources/extensions/overview.md)
@@ -52,11 +45,11 @@ git-repo: https://github.com/AdobeDocs/launch.en
 * Client-side information {#client-side-info}
   * [Overview](launch-reference/client-side-information/overview.md)
   * [Asynchronous deployment](launch-reference/client-side-information/asynchronous-deployment.md)
-  * [[!DNL Platform Launch] object reference](launch-reference/client-side-information/launch-object-reference.md)
-  * [Deploy JavaScript tags to opt in to [!DNL Platform Launch]](launch-reference/client-side-information/deploy-javascript-tags-to-opt-in-to-launch.md)
+  * [Satellite object reference](launch-reference/client-side-information/launch-object-reference.md)
+  * [Deploy JavaScript tags to manage customer consent](launch-reference/client-side-information/deploy-javascript-tags-to-opt-in-to-launch.md)
   * [Content Security Policy (CSP) support](launch-reference/client-side-information/content-security-policy-csp.md)
   * [Subresource Integrity (SRI) support](./launch-reference/client-side-information/sri.md)
-* Server-side information {#server-side-info}
+* Event forwarding information {#server-side-info}
     * [Overview](launch-reference/server-side-information/server-side-overview.md)
     * [Getting started](launch-reference/server-side-information/server-side-getting-started.md)
 * Administration {#admin}
@@ -76,6 +69,9 @@ git-repo: https://github.com/AdobeDocs/launch.en
       * [Release notes](extension-reference/web/adobe-analytics-product-string-extension/adobe-analytics-product-string-release-notes.md)    
     * Adobe Audience Manager extension {#audience-manager}
       * [Overview](./extension-reference/web/audience-manager/overview.md)
+    * Adobe Client Data Layer extension {#acdl}
+      * [Overview](./extension-reference/web/adobe-client-data-layer/overview.md)
+      * [Release notes](./extension-reference/web/adobe-client-data-layer/release-notes.md)
     * Adobe ContextHub extension {#contexthub}
       * [Overview](./extension-reference/web/contexthub/overview.md)
     * Adobe Experience Cloud ID Service extension {#id-service-extension}
@@ -107,9 +103,9 @@ git-repo: https://github.com/AdobeDocs/launch.en
     * Common Analytics Plugins extension {#plugins-extension}
       * [Overview](extension-reference/web/common-analytics-plugins-extension/common-analytics-plugins.md)
       * [Release notes](extension-reference/web/common-analytics-plugins-extension/common-analytics-plugins-release-notes.md)
-    * [!DNL Platform Launch] core extension {#core-extension}
+    * Core extension {#core-extension}
       * [Overview](extension-reference/web/core-extension/overview.md)
-      * [Server-side core extension](extension-reference/web/core-extension/overview-launch-server-side.md)
+      * [Core event forwarding extension](extension-reference/web/core-extension/overview-launch-server-side.md)
       * [Release notes](extension-reference/web/core-extension/core-release-notes.md)
     * [!DNL Marketo Munchkin] extension {#marketo-extension}
       * [Overview](extension-reference/web/marketo-munchkin-extension/overview.md)
@@ -155,7 +151,38 @@ git-repo: https://github.com/AdobeDocs/launch.en
   * [Hosting third-party libraries](./extension-dev/third-party-libraries.md)
   * [Turbine free variable](./extension-dev/turbine.md)
   * [Backwards compatibility standard](./extension-dev/backwards-compatibility.md)
+* Reactor API {#api}
+  * [Overview](./api/overview.md)
+  * [Getting started](./api/getting-started.md)
+  * Endpoints {#endpoints}
+    * [Companies](./api/endpoints/companies.md)
+    * [Properties](./api/endpoints/properties.md)
+    * [Data elements](./api/endpoints/data-elements.md)
+    * [Rules](./api/endpoints/rules.md)
+    * [Rule components](./api/endpoints/rule-components.md)
+    * [Extension packages](./api/endpoints/extension-packages.md)
+    * [Extensions](./api/endpoints/extensions.md)
+    * [Libraries](./api/endpoints/libraries.md)
+    * [Builds](./api/endpoints/builds.md)
+    * [Environments](./api/endpoints/environments.md)
+    * [Hosts](./api/endpoints/hosts.md)
+    * [App configurations](./api/endpoints/app-configurations.md)
+    * [Audit events](./api/endpoints/audit-events.md)
+    * [Callbacks](./api/endpoints/callbacks.md)
+    * [Notes](./api/endpoints/notes.md)
+    * [Profile](./api/endpoints/profile.md)
+    * [Search](./api/endpoints/search.md)
+  * Guides {#guides}
+    * [Delegate descriptor IDs](./api/guides/delegate-descriptor-ids.md)
+    * [Encrypting values](./api/guides/encrypting-values.md)
+    * [Error handling](./api/guides/error-handling.md)
+    * [Filtering responses](./api/guides/filtering.md)
+    * [Paginating responses](./api/guides/pagination.md)
+    * [Sorting responses](./api/guides/sorting.md)
+    * [Relationships](./api/guides/relationships.md)
+    * [Searching resources](./api/guides/search.md)
 * [FAQ](./faq.md)
+* [Terminology updates](./launch-term-updates.md)
 * Release notes {#release-notes}
   * [Latest](release-notes/current.md)
   * [2020 release notes](release-notes/2020-release-notes.md)

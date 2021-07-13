@@ -1,13 +1,13 @@
 ---
 title: Adobe Analytics Extension Overview
-description: Learn about the Adobe Analytics extension in Adobe Experience Platform Launch.
+description: Learn about the Adobe Analytics tag extension in Adobe Experience Platform.
 exl-id: 71972939-cfc5-405f-8ffa-702167fb0ac7
 ---
 # Adobe Analytics extension overview
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 Use this reference for information about configuring the Adobe Analytics extension, and the options available when using this extension to build a rule.
 
@@ -19,7 +19,7 @@ If the Adobe Analytics extension is not yet installed, open your property, then 
 
 To configure the extension, open the Extensions tab, hover over the extension, and then select **[!UICONTROL Configure]**.
 
-![](/help/assets/ext-analytics-config.png)
+![](/help/images/ext-analytics-config.png)
 
 ## Library Management
 
@@ -79,11 +79,11 @@ Specify the tracker object to be used globally.
 
 #### Open Editor
 
-Lets you [insert core AppMeasurement code](https://experienceleague.adobe.com/docs/analytics/implementation/other/dtm/analytics-tool/t-appmeasurement-code.html). This code is populated automatically when using the automatic configuration method.
+Lets you insert core [AppMeasurement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) code. This code is populated automatically when using the automatic configuration method.
 
 >[!NOTE]
 >
->The validator used in the Adobe Experience Platform Launch code editor is designed to identify issues with developer-written code. Code that has gone through a minification process--such as the AppMeasurement.js code downloaded from the Code Manager--might be falsely flagged as having issues by the Platform Launch validator, which can usually be ignored.
+>The validator used in the tags code editor is designed to identify issues with developer-written code. Code that has gone through a minification process--such as the AppMeasurement.js code downloaded from the Code Manager--might be falsely flagged as having issues by the tags validator, which can usually be ignored.
 
 #### Set the following report suites on tracker
 
@@ -105,7 +105,7 @@ Select an option from the General section of the configuration page. The followi
 
 Enables or disables tracking based on the EU privacy cookie.
 
-When you check the EU Compliance check box, the [!UICONTROL Tracking Cookie Name] field appears. The Tracking Cookie overrides the default tracking cookie name. You can customize the name that Platform Launch uses to track your opt-out status for receiving other cookies.
+When you check the EU Compliance check box, the [!UICONTROL Tracking Cookie Name] field appears. The Tracking Cookie overrides the default tracking cookie name. You can customize the name that tags uses to track your opt-out status for receiving other cookies.
 
 When a page is loaded, the system checks to see if a cookie called sat\_track is set (or the custom cookie name specified on the Edit Property page). Consider the following information:
 
@@ -261,13 +261,13 @@ Enable **Automatically share Analytics data with Audience Manager**.
 
 The following options appear:
 
-![](/help/assets/an-ext-aam.png)
+![](/help/images/an-ext-aam.png)
 
 The Audience Manager subdomain is assigned by Adobe Audience Manager. It is sometimes referred to as your "Partner Name" or "Partner Subdomain." Contact your Adobe consultant or Customer Care if you do not know your Partner Name.
 
-You can configure advanced settings by showing the advanced settings and entering your preferences.
+You can configure advanced settings by selecting **Show advanced settings** and entering your preferences.
 
-![](/help/assets/an-ext-aam-adv.png)
+![](/help/images/an-ext-aam-adv.png)
 
 For information about each setting, select the info icon, or refer to the [Adobe Audience Manager documentation](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html).
 

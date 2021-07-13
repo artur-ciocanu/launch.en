@@ -1,13 +1,13 @@
 ---
 title: Release Notes for the Adobe Media Analytics for Audio and Video Extension
-description: The latest release notes for the Adobe Media Analytics for Audio and Video extension in Adobe Experience Platform Launch.
+description: The latest release notes for the Adobe Media Analytics for Audio and Video tag extension in Adobe Experience Platform.
 exl-id: 00b93df0-765b-4fe2-9eb0-c34464425c6d
 ---
 # Adobe Media Analytics for Audio and Video release notes
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 ## October 25, 2019
 
@@ -36,7 +36,7 @@ exl-id: 00b93df0-765b-4fe2-9eb0-c34464425c6d
 
 #### **Features**
 
-The [Adobe Analytics for Video Extension](/help/extension-reference/web/adobe-media-analytics-for-audio-and-video-extension/overview.md) adds the core Video Analytics JavaScript library. This library provides the functionality for adding the mediaHeartbeat instance to an Adobe Experience Platform Launch site or project. The Adobe Analytics for Video Extension (VA Extension) requires two additional extensions:
+The [Adobe Analytics for Video Extension](/help/extension-reference/web/adobe-media-analytics-for-audio-and-video-extension/overview.md) adds the core Video Analytics JavaScript library. This library provides the functionality for adding the mediaHeartbeat instance to a tags-enabled site or project. The Adobe Analytics for Video Extension (VA Extension) requires two additional extensions:
 
 * Analytics Extension
 * Experience Cloud ID Extension

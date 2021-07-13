@@ -1,11 +1,13 @@
 ---
 title: Condition Types for Web Extensions
-description: Learn how to define a condition-type library module for a web extension in Adobe Experience Platform Launch.
+description: Learn how to define a condition-type library module for a tag extension in a web property.
 exl-id: 3a515c93-f453-49b6-8832-92a51699ced3
 ---
 # Condition types for web extensions
 
->**Note**: Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 A condition type library module has one goal: evaluate whether something is true or false. What it evaluates is up to you.
 
@@ -13,7 +15,7 @@ A condition type library module has one goal: evaluate whether something is true
 >
 >This document covers condition types for web extensions. If you are developing an edge extension, see the guide on [condition types for edge extensions](../edge/condition-types.md) instead.
 >
->This document also assumes you are familiar with library modules and how they are integrated in Platform Launch extensions. If you require an introduction, see the overview on [library module formatting](./format.md) before returning to this guide.
+>This document also assumes you are familiar with library modules and how they are integrated in tag extensions. If you require an introduction, see the overview on [library module formatting](./format.md) before returning to this guide.
 
 For example, if you wanted to evaluate whether the user is on the host `example.com`, your module may look like this:
 
@@ -23,7 +25,7 @@ module.exports = function(settings) {
 };
 ```
 
-Now, consider a situation where you want to make the hostname configurable by the Adobe Experience Platform Launch user. You may allow the user to input a hostname and then save the hostname to the settings object. The object might look something like this:
+Now, consider a situation where you want to make the hostname configurable by the Adobe Experience Platform user. You may allow the user to input a hostname and then save the hostname to the settings object. The object might look something like this:
 
 ```js
 {

@@ -1,13 +1,13 @@
 ---
 title: Marketo Munchkin Extension Overview
-description: Learn about the Marketo Munchkin extension in Adobe Experience Platform Launch.
+description: Learn about the Marketo Munchkin tag extension in Adobe Experience Platform.
 exl-id: 3811a44f-fbb1-4c0d-9e12-97346cb7a496
 ---
 # Marketo Munchkin extension overview
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 Use this extension to integrate the [!DNL Marketo Munchkin] JavaScript tracking code with your property. [!DNL Marketo Munchkin] JavaScript allows for tracking of end-user page visits and navigates to your Marketo landing pages and external web pages.
 
@@ -19,11 +19,11 @@ This extension has no necessary configuration.
 
 ## Marketo Munchkin extension action types
 
-This section describes the action types available int he  [!DNL Marketo Munchkin] extension.
+This section describes the action types available int he [!DNL Marketo Munchkin] extension.
 
 ### Initialize
 
-![](/help/assets/munchkin-Init.png)
+![](../../../images/munchkin-Init.png)
 
 **Munchkin ID: (required)** Munchkin Account ID found under Admin > Integration > Munchkin menu.
 
@@ -31,7 +31,7 @@ This section describes the action types available int he  [!DNL Marketo Munchkin
 
 ### Visit web page
 
-![](/help/assets/munchkin-visit-page.png)
+![](../../../images/munchkin-visit-page.png)
 
 **url: (required)** The URL file path used to record a page visit.
 
@@ -41,6 +41,6 @@ This section describes the action types available int he  [!DNL Marketo Munchkin
 
 ### Click link
 
-![](/help/assets/munchkin-click-link.png)
+![](../../../images/munchkin-click-link.png)
 
 **href: (required)** The URL file path used to record a link select.

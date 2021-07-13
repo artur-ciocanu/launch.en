@@ -1,13 +1,13 @@
 ---
 title: Context in Edge Extension Modules
-description: Learn about the context object and the role it plays in interacting with library modules in Adobe Experience Platform Launch edge extensions.
+description: Learn about the context object and the role it plays in interacting with library modules in tag extensions of edge properties.
 exl-id: 6f392d90-135b-4790-a733-f20effb23bfb
 ---
 # Context in edge extension modules
 
 >[!NOTE]
 >
-> Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+> Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 All library modules in edge extensions are provided a `context` object when they are executed. This document covers the properties provided by the `context` object and the role they play in library modules.
 
@@ -88,15 +88,17 @@ module.exports = (context) => {
 
 The first time this action is executed, `ruleStash` starts as `undefined` and is therefore initialized as an empty object. The next time when the action is executed, it receives `ruleStash` that was returned when the action was previously called. Using an object as `ruleStash` allows you to add new data without losing data previously set by other actions from our extension.
 
-You must be careful to always return the full extension rule stash when using this strategy. If you were to return only a value instead, it will overwrite any other properties you may have set.
+>[!NOTE]
+>
+>Be careful to always return the full extension rule stash when using this strategy. If you instead only return a value, it will overwrite any other properties you may have set.
 
 ## Utilities
 
-The `utils` property represents an object that provides utilities specific to the Platform Launch runtime.
+The `utils` property represents an object that provides utilities specific to the tag runtime.
 
 ### [!DNL logger]
 
-The `logger` utility allows you to log messages that will be shown during debugging sessions when using [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj?src=propaganda).
+The `logger` utility allows you to log messages that will be shown during debugging sessions when using [Adobe Experience Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob).
 
 ```js
 context.utils.logger.error('Error!');
@@ -123,7 +125,7 @@ context.utils.fetch('http://example.com/movies.json')
 
 ### [!DNL getBuildInfo]
 
-This utility returns an object containing information about the build of the current Platform Launch runtime library. 
+This utility returns an object containing information about the build of the current tag runtime library. 
 
 ```js
 logger.log(context.utils.getBuildInfo().turbineBuildDate);

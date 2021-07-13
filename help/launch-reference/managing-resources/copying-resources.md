@@ -1,15 +1,15 @@
 ---
 title: Copy Resources
-description: Learn how to create a new resource using the settings of an existing resource in Adobe Experience Platform Launch.
+description: Learn how to create a new tag resource using the settings of an existing tag resource in Adobe Experience Platform.
 exl-id: 05228e4c-e49c-441b-b897-5a5cb89487c0
 ---
 # Copy resources
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-Sometimes, it is convenient to make a new resource using the settings of an existing resource.  In these cases, you can make a copy.
+Sometimes, it is convenient to make a new resource using the settings of an existing resource. In these cases, you can make a copy.
 
 Properties, Extensions, Rules, and Data Elements can all be copied.
 
@@ -19,17 +19,17 @@ Copying a resource creates a duplicate of that resource in the specified destina
 
 You can initiate a copy of an extension by viewing your installed extensions, selecting  the drop-down arrow on the **[!UICONTROL Configure]** button and selecting **[!UICONTROL Copy]**.
 
-![Copying the Analytics extension](/help/assets/copy-initiate-extension.png)
+![Copying the Analytics extension](../../images/copy-initiate-extension.png)
 
 For properties, rules, and data elements, simply select the resource you want to copy and then select **[!UICONTROL Copy]** in the actions menu.
 
-![Copying my Analytics rule](/help/assets/copy-initiate-rule.png)
+![Copying my Analytics rule](../../images/copy-initiate-rule.png)
 
 If you are copying a rule or a data element, in the copy dialog you may use the drop-down menu to select a Destination Property you want to copy to (default setting is the current property). Extensions cannot be copied to the same property, so those will not provide that option.
 
 >[!NOTE]
 >
->In the Adobe Experience Platform Launch user interface, it is not possible to copy resources to another Property if one Property is configured for extension development and the other Property is not.
+>In the Data Collection UI, it is not possible to copy resources to another Property if one Property is configured for extension development and the other Property is not.
 
 Once you've configured the behavior you want, select **[!UICONTROL Copy]**.
 
@@ -54,11 +54,11 @@ When you copy an extension to another property, there are a few things that you 
 
 ## Copying rules and data elements
 
-All rules and data elements are provided by an extension, so when you copy across properties, [!DNL Platform Launch] must account for these underlying extensions.
+All rules and data elements are provided by an extension, so when you copy across properties, Platform must account for these underlying extensions.
 
-![Copying a Rule to my Demo Property](/help/assets/copy-rules-dialog1.png)
+![Copying a Rule to my Demo Property](../../images/copy-rules-dialog1.png)
 
-An explanation of exactly what [!DNL Platform Launch] is planning to do is available inside the Copy dialog before you actually begin copying.  The above dialog is for a rule, but the same applies to data elements.
+The Copy dialog box provides an explanation of exactly what will take place before you begin copying. The above dialog is for a rule, but the same applies to data elements.
 
 1. **Extensions required by these rules are copied.** This lets you know that required extensions will go along with the rule.  These copies follow the same rules as a regular extension copy outlined above.
 1. **Extension settings will NOT be copied if the extension is already installed.** This means if the required extensions already exist on the destination property, the extension remains as is.  If you wish to copy the extension settings as well, you can use the **Replace extension settings on destination property** toggle and the explanation is updated accordingly.

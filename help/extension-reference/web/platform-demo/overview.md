@@ -1,20 +1,24 @@
 ---
 title: Adobe Experience Platform Demo Extension Overview
-description: Learn about the Adobe Experience Platform Demo extension in Adobe Experience Platform Launch.
+description: Learn about the Adobe Experience Platform Demo extension in Adobe Experience Platform.
 exl-id: 94bd5c84-cca2-4d46-888f-d106da362817
 ---
 # Adobe Experience Platform Demo Extension
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-This extension will be deprecated in favor of the [Adobe Experience Platform Web SDK](../aep-web-sdk/overview.md). The features of this extension are being ported over to new extension. Here is a quick comparison of current features. 
+>[!NOTE]
+>
+>This extension has been deprecated in favor of the [Adobe Experience Platform Web SDK](../aep-web-sdk/overview.md).
+
+The features of this extension are being ported over to new extension. Here is a quick comparison of current features. 
 
 | Platform Demo Extension | Platform Web SDK |
 | ------------------ | ----------- |
 | Support for Custom Customer IDs | Support for Custom Cusotmer IDs|
-| Client Side Mapping UI for XDM | Build in ECID (No need for visitor.js)|
+| Client-Side Mapping UI for XDM | Build in ECID (No need for visitor.js)|
 | Ability to create a streaming connection | Opt-in Support |
 | | XDM Support as a data element | 
 | | First Party Domain Support | 
@@ -31,7 +35,7 @@ If the Adobe Experience Platform extension is not yet installed, open your prope
 
 To configure the extension, open the [!UICONTROL Extensions] tab, hover over the extension, and then select **[!UICONTROL Configure]**.
 
-![](/help/assets/adobe_experience_platform_extension_configuration.png)
+![](../../../images/adobe-experience-platform-extension-configuration.png)
 
 ### Streaming Connection
 
@@ -39,13 +43,13 @@ Choosing a streaming connection is the first step for you to start streaming dat
 
 If you select **[!UICONTROL Create a streaming connection]** a modal window will appear.
 
-![](/help/assets/adobe_experienc_platform_create_streaming_connection.png)
+![](../../../images/adobe-experienc-platform-create-streaming-connection.png)
 
-The modal contains fields with pre-populated values that can be changed to suit your needs. If you plan to create more that one streaming connection, you should be aware that the **[!UICONTROL Data Source]** field needs to be unique. Trying to create another streaming connection using a **[!UICONTROL Data Source]** already used on another connection will fail.
+The modal contains fields with pre-populated values that can be changed to suit your needs. If you plan to create more than one streaming connection, you should be aware that the **[!UICONTROL Data Source]** field needs to be unique. Trying to create another streaming connection using a **[!UICONTROL Data Source]** already used on another connection will fail.
 
 Once you selected a streaming endpoint, you will the streaming endpoint URL and source.
 
-![](/help/assets/adobe_experience_platform_streaming_endpoint_selected.png)
+![](../../../images/adobe-experience-platform-streaming-endpoint-selected.png)
 
 ## Adobe Experience Platform extension action types
 
@@ -55,11 +59,11 @@ This section describes the action types available in the Adobe Experience Platfo
 
 This is the action type you will use in order to send data to the Adobe Experience Platform.
 
-![](/help/assets/adobe_experience_platform_send_beacon_dataset.png)
+![](../../../images/adobe-experience-platform-send-beacon-dataset.png)
 
 You first need to select the dataset where the data will be stored. Generally, datasets represent a table that will store the data sent via the streaming connection. You need to create the datasets inside the Adobe Experience Platform before using this action type.
 
-![](/help/assets/adobe_experience_platform_send_beacon_dataset_selected1.png)
+![](../../../images/adobe-experience-platform-send-beacon-dataset-selected1.png)
 
 After you select the dataset where the data will be stored, you will see details about the schema that is linked to the selected dataset.
 
@@ -67,21 +71,21 @@ After you select the dataset where the data will be stored, you will see details
 
 After selecting the dataset you can define your schema mapping.
 
-![](/help/assets/adobe_experience_platform_send_beacon_schema_mapping.png)
+![](../../../images/adobe-experience-platform-send-beacon-schema-mapping.png)
 
 The source value field accepts a value or a data element. You can add a data element by selecting the data element button that is located next to the source value field.
 
-The target schema field contains the path of a XDM field defined in the dataset schema. For fields defined deeper in the schema hierarchy you can use the dot as a separator between the path parts  (eg. timeSeriesEvents.eventType).
+The target schema field contains the path of an XDM field defined in the dataset schema. For fields defined deeper in the schema hierarchy, you can use the dot as a separator between the path parts  (eg. timeSeriesEvents.eventType).
 
 ### Schema Field Selector
 
 The extension offers also the possibility to select a target schema field using a visual selector. If you select the target button that sits next to the target schema field input, a modal will be shown where you will see the dataset's schema tree. You can choose a field, then select the **Select** button and the target schema field input will be updated the contain the correct XDM path.
 
-![](/help/assets/adobe_experience_platform_send_beacon_schema_field_selector.png)
+![](../../../images/adobe-experience-platform-send-beacon-schema-field-selector.png)
 
 ### Identity fields inside the Adobe Experience Platform
 
-Record data schemas and time series data schemas may contain one or more identity fields. Identity fields stitch together to form a single identity representation of a subject and include information such as a CRM identifier, Experience Cloud ID (ECID), browser cookie, AdvertisingId, or other IDs in different domains.
+Record data schemas and time-series data schemas may contain one or more identity fields. Identity fields stitch together to form a single identity representation of a subject and include information such as a CRM identifier, Experience Cloud ID (ECID), browser cookie, AdvertisingId, or other IDs in different domains.
 
 Identity fields can be defined in two ways inside the schema:
 
@@ -92,30 +96,30 @@ Identity fields can be defined in two ways inside the schema:
 
 For each schema field defined as an identity field, a row will be added to the schema mapping section. Each added row will contain the target schema field already filled in with its corresponding XDM schema path. You can recognize if a schema field is also an identity field if you see a profile icon near the field.
 
-![](/help/assets/adobe_experience_platform_send_beacon_identity_field.png)
+![](../../../images/adobe-experience-platform-send-beacon-identity-field.png)
 
 The primary identity fields are always required, so you can not delete the rows containing them from the schema mapping section.
 
 A schema field that is defined as a non-primary identity field, will be automatically added to the schema mapping section, but the source value input can remain empty. That field can be deleted. The field will get discarded if its corresponding source value input is empty.
 
-![](/help/assets/adobe_experience_platform_send_beacon_identity_field_warning.png)
+![](../../../images/adobe-experience-platform-send-beacon-identity-field-warning.png)
 
 You will see a warning icon near each non-primary identity field that doesn't contain a value.
 
 An identity section will be visible if your schema contains an `xdm:identityMap` field. You can use this section if you prefer to send data related to identities using the `xdm:identityMap`.
 
-![](/help/assets/adobe_experience_platform_send_beacon_identity_section.png)
+![](../../../images/adobe-experience-platform-send-beacon-identity-section.png)
 
-The identity mapping section can contain multiple rows. Each row can define a certain identity type. You can define the following attributes for an identity: type, authenticated state, primary and value.
+The identity mapping section can contain multiple rows. Each row can define a certain identity type. You can define the following attributes for an identity: type, authenticated state, primary, and value.
 
 If you have multiple identities inside the identity mapping section, only one identity can be marked as primary.
 
-If you have a schema that has an `xdm:identityMap` field and at the same time another field is marked an a primary identity field, the primary column from inside the identity mapping section will not be visible.
+If you have a schema that has an `xdm:identityMap` field and at the same time another field is marked as a primary identity field, the primary column from inside the identity mapping section will not be visible.
 
-![](/help/assets/adobe_experience_platform_send_beacon_identity_section_not_primary.png)
+![](../../../images/adobe-experience-platform-send-beacon-identity-section-not-primary.png)
 
 ### Required fields
 
-Some schemas will have top level required fields. The most commons ones are `timestamp` and `_id`. Without defining these fields, the beacon will fail. You can defined them inside the schema mapping section.
+Some schemas will have top-level required fields. The most commons ones are `timestamp` and `_id`. Without defining these fields, the beacon will fail. You can define them inside the schema mapping section.
 
 If your schema mapping section won't contain `timestamp` or `_id`, but the dataset schema requires them, the Adobe Experience Platform extension will send a beacon containing automatically generated values so that the beacon will not fail. The automatically generated values will be added to the beacon data only if you haven't defined those fields inside the schema mapping section.

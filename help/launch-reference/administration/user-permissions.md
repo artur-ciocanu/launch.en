@@ -1,76 +1,79 @@
 ---
 title: User Permissions
-description: Learn about the different available permissions for Adobe Experience Platform Launch users.
+description: Learn about the different available tag permissions for Adobe Experience Platform users.
 exl-id: 43ed8522-452a-47fe-b316-564f80b012af
 ---
 # User permissions
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 ## Permission types
 
-To work in [!DNL Adobe Experience Platform Launch], there are two user permissions to understand:
+There are two user permissions to understand for use with tags in Adobe Experience Platform:
 
 * **Experience Cloud Permissions:** Found in the Admin Console at the company level, [!DNL Experience Cloud] permissions govern who can control group permissions and group membership for all [!DNL Experience Cloud] products.
-* **Platform Launch Permissions:** The permissions for [!DNL Platform Launch], one of the [!DNL Experience Cloud] products, are found in the Admin Console at the Product Profile level. [!DNL Platform Launch] permissions govern which users can actually perform certain actions when logged into [!DNL Platform Launch].
+* **Permissions for tags:** The permissions for tags are located in the Admin Console at the Product Profile level. These permissions govern which users can actually perform certain actions when logged into the Data Collection UI.
 
 This article examines these different permissions types in detail.
 
 ### Experience Cloud permissions
 
-This section discusses factors that are important to understand when using [!DNL Platform Launch]. See [Administrative Roles in the Enterprise User Guide](https://helpx.adobe.com/au/enterprise/using/admin-roles.html) for a comprehensive view of [!DNL Experience Cloud] permissions.
+This section discusses factors that are important to understand when using Platform. See [Administrative Roles in the Enterprise User Guide](https://helpx.adobe.com/au/enterprise/using/admin-roles.html) for a comprehensive view of [!DNL Experience Cloud] permissions.
 
 #### Organization Administrator
 
 Organization Administrators are often referred to as Org Admins. An Org Admin's main function is to assign permissions to other users. They do this by creating Product Profiles (or groups) that contain a specific set of rights within a specific product and then assigning users, existing or new, to that Product Profile.
 
-Enterprise Org Admins do not inherit any rights in [!DNL Platform Launch]. They must add themselves to a Product Profile that has [!DNL Platform Launch] rights if they want to do anything in [!DNL Platform Launch].
+Enterprise Org Admins do not inherit any rights for tags in Platform. They must add themselves to a product profile that has the appropriate permissions if they want to do anything in the Data Collection UI.
 
 #### Product Administrator
 
 A Product Administrator (or Product Admin) is similar to an Org Admin, but is narrower in scope. A Product Admin only has the permission to modify Product Profiles for a specific [!DNL Adobe] product, rather than all [!DNL Adobe] products the company has access to.
 
-### Platform Launch permissions
+### Permissions for tags
 
 Within the [!DNL Experience Cloud], no rights or permissions are assigned to individual users. They are assigned to a Product Profile (see "Experience Cloud Permissions" above). Individual users are then assigned to one or more Product Profiles.
 
-Within a Product Profile, [!DNL Platform Launch] permissions are divided across four dimensions.
+Within a Product Profile, permissions for tags are divided across four dimensions.
 
 1. Platforms
-2. Properties
-3. Property Rights
-4. Company Rights
+1. Properties
+1. Property Rights
+1. Company Rights
 
 #### Platforms
 
-Each property has a platform.  There are currently two platforms that you can use in [!DNL Platform Launch]: *Web* and *Mobile*.  You can use this permission type to restrict or grant access to a particular type of property.  This can be useful when the team that manages your mobile apps is different from the one that manages your web sites.
+Each property has a platform. There are currently two platforms that you can use for tags: *Web* and *Mobile*. You can use this permission type to restrict or grant access to a particular type of property. This can be useful when the team that manages your mobile apps is different from the one that manages your web sites.
 
 #### Properties
 
-This is a list of all Properties that exist within your company.  You can use this permission type to restrict or grant access to specific existing properties (by name).
+This is a list of all Properties that exist within your company. You can use this permission type to restrict or grant access to specific existing properties (by name).
 
 #### Property rights
 
-Any properties you create in [!DNL Platform Launch] become available in the Admin Console for you to assign permissions. If a given Product Profile does not have access to Property A1, users who belong to that profile cannot see or modify any settings within Property A1.
+Any properties you create in the Data Collection UI become available in the Admin Console for you to assign permissions. If a given Product Profile does not have access to Property A1, users who belong to that profile cannot see or modify any settings within Property A1.
 
 Assuming that a user belongs to a profile with access to Property A1, what they can do within Property A1 is determined by the rights they have been granted from this permission group. Users with permissions to Property A1, but no assigned rights, have read-only access.
 
 The permissions available within this group are:
 
-* **Develop:** Grants the ability to create rules and data elements. You can also create libraries and build them in existing development environments. You can submit a library for approval when ready.  Most day-to-day tasks in [!DNL Platform Launch] require this right.
-* **Approve:** Grants the ability to take a submitted library and build to the staging environment.  You can also approve a library for publishing once testing has been completed.
-* **Publish:** Grants the ability to publish approved libraries to the production environment.
-* **Manage Extensions:** Grants the abilities to install new extensions to a property, to modify the extension configuration for an already installed extension, and to delete an extension.  More information on extensions is available [here](../managing-resources/extensions/overview.md). This role typically belongs to IT or Marketing, depending on your organization.
-* **Manage Environments:** Grants the ability to create and modify environments. Read more about environments [here](../publishing/environments.md). This role typically belongs to the IT group.
+* **Develop:** This allows you to create rules and data elements. You can also create libraries and build them in existing development environments. You can submit a library for approval when ready. Most day-to-day tasks in the Data Collection UI require this right.
+* **Approve:** This allows you to take a submitted library and build to the staging environment. You can also approve a library for publishing once testing has been completed.
+* **Publish:** This allows you to publish approved libraries to the production environment.
+* **Manage Extensions:** This grants the abilities to install new extensions to a property, to modify the extension configuration for an already installed extension, and to delete an extension. See the extensions overview documentation for [more information on extensions](../managing-resources/extensions/overview.md). This role typically belongs to IT or Marketing, depending on your organization.
+* **Manage Environments:** This allows you to create and modify environments. See the [environments documentation](../publishing/environments.md) for more information. This role typically belongs to the IT group.
 
 #### Company rights
 
-Company rights apply to permissions that span multiple properties.  There are currently two:
+Company rights apply to permissions that span multiple properties.  There are currently three:
 
-* **Manage Properties:** Grants the ability to create new properties in [!DNL Platform Launch] and to modify the metadata and settings at the property level. You can also delete properties.  Read more about properties [here](companies-and-properties.md). Administrators usually perform this role.
+* **Manage Properties:** This allows you to create new properties in the Data Collection UI and to modify the metadata and settings at the property level. You can also delete properties. Read the [properties documentation](companies-and-properties.md) for more information. Administrators usually perform this role.
+* 
+* Grants the ability to create new properties in [!DNL Platform Launch] and to modify the metadata and settings at the property level. You can also delete properties.  Read more about properties [here](companies-and-properties.md). Administrators usually perform this role.
 * **Develop Extensions:** Grants the ability to create and modify extension packages that are owned by the company including private releases and requests for public release.
+* **Manage App Configurations:** This is only available to customers who have licensed Adobe Journey Optimizer, or some other solution that gives them access to mobile in-app and push messaging.  This allows you to manage the apps that Experience Cloud knows about along with the necessary push credentials needed to communicate with the Firebase Cloud Messaging service and the Apple Push Notification Service.
 
 ### Total user permissions
 
@@ -128,7 +131,7 @@ Here are a few descriptions of different roles that could apply in your organiza
 |--- |--- |--- |--- |
 |The Manager|Auto-include|||
 |The Marketer|Auto-include|Manage Properties|Develop<br>Manage Extensions|
-|The Mobile App Developer|Auto-include|Manage Properties|Develop<br>Manage Extensions|
+|The Mobile App Developer|Auto-include|Manage Properties<br>Manage App Configurations|Develop<br>Manage Extensions|
 |The IT Team|Auto-include|Approve<br>Publish<br>Manage Environments|
 |The Jack of All Trades|Auto-include|Manage Properties|Develop<br>Approve<br>Publish<br>Manage Extensions<br>Manage Environments|
 |The Extension Developer|Auto-include|Manage Properties<br>Develop Extensions|Develop|
@@ -141,20 +144,20 @@ Steps 1-3 below can be bypassed by navigating directly to [Adobe Admin Console](
 
 ### 1. Sign in to Experience Cloud
 
-Sign in to [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/) with your [!DNL Adobe] ID, then choose the organization to use within [!DNL Platform Launch] from the [!UICONTROL Navigation] menu.
+Sign in to [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/) with your Adobe ID, then choose the organization to use within the Data Collection UI from the [!UICONTROL Navigation] menu.
 
-![](/help/assets/nav-menu.png)
+![](../../images/nav-menu.png)
 
-Open the solution picker by selecting  the 9-dots icon from the [!UICONTROL Navigation] menu, then select [!UICONTROL Administration].
+Open the solution picker by selecting the 9-dots icon from the [!UICONTROL Navigation] menu, then select **[!UICONTROL Administration]**.
 
-![](/help/assets/choose-admin.png)
+![](../../images/choose-admin.png)
 
 If you can't see this link, both of the following conditions are true:
 
 * You are not an org admin.
 * You are not a product admin for any [!DNL Experience Cloud] products.
 
-In either case, ask an org admin to perform these steps for you, or to make you a product admin for [!DNL Platform Launch] so you can do it yourself.
+In either case, ask an org admin to perform these steps for you, or to make you a product admin for tags so you can do it yourself.
 
 >[!NOTE]
 >
@@ -162,25 +165,25 @@ In either case, ask an org admin to perform these steps for you, or to make you 
 
 ### 2. Open Admin Console
 
-Select **Platform Launch Admin Console**.
+Select **Admin Console**.
 
-![](/help/assets/launch-admin-console-button.png)
+![](../../images/launch-admin-console-button.png)
 
 Select the **[!DNL Experience Platform Launch] - `Company Name`** card.
 
-![](/help/assets/launch-card.png)
+![](../../images/launch-card.png)
 
 <!-- Scott, update above image. Rebranding. -->
 
-You can also select [!UICONTROL Products] in the top nav, then select **[!DNL Experience Platform Launch] - `Company Name`** from the left nav.
+You can also select **[!UICONTROL Products]** in the top nav, then select **[!DNL Experience Platform Launch] - `Company Name`** from the left nav.
 
-![](/help/assets/products-select-launch.png)
+![](../../images/products-select-launch.png)
 
 If you do not see a [!DNL Experience Platform Launch] card and or if [!DNL Experience Platform Launch] does not appear in this list, then you are not an Org Admin, but you are a Product Admin for other Experience Cloud products. Because you are not an Administrator for Experience Platform Launch, you need to find an Org Admin who can perform these steps for you or who can make you a Product Admin for [!DNL Platform Launch].
 
 After you select Platform Launch, a list of product profiles displays. Think of these profiles as permission groups. One profile is created for you and is named "[!DNL Platform Launch] - `Company Name`."
 
-![](/help/assets/product-profiles.png)
+![](../../images/product-profiles.png)
 
 ### 3. Create your product profile
 
@@ -188,57 +191,54 @@ If you are editing an existing product profile, skip this step.
 
 Choose to edit this product profile, or create a new one.
 
-To create a new product profile, select [!UICONTROL New Profile].
+To create a new product profile, select **[!UICONTROL New Profile]**.
 
-Give your new profile a name and a description, configure whether users should receive emails when they are added or removed from this profile, and then select [!UICONTROL Done].
+Give your new profile a name and a description, configure whether users should receive emails when they are added or removed from this profile, and then select **[!UICONTROL Done]**.
 
-![](/help/assets/profile-new.png)
+![](../../images/profile-new.png)
 
 ### 4. Edit your product profile
 
-Select the product profile from the list, then open the [!UICONTROL Permissions] tab. You can assign permissions across two dimensions: Properties and Rights.
+Select the product profile from the list, then open the **[!UICONTROL Permissions]** tab. You can assign permissions across two dimensions: Properties and Rights.
 
-![](/help/assets/profile-permissions.png)
+![](../../images/profile-permissions.png)
 
-To assign properties to this group definition, open the [!UICONTROL Properties] section.
+To assign properties to this group definition, open the **[!UICONTROL Properties]** section.
 
-![](/help/assets/profile-properties-select.png)
+![](../../images/profile-properties-select.png)
 
-A list shows your [!DNL Platform Launch] properties.
+A list shows your tag properties.
 
-![](/help/assets/profile-properties.png)
+![](../../images/profile-properties.png)
 
 By default, new product configurations automatically include properties. This means that all properties (present and future) are included in the group definition.
 
-If Auto-include is disabled, all currently available properties are listed on the left. You can move properties into this group definition by selecting  [!UICONTROL Add].
+If Auto-include is disabled, all currently available properties are listed on the left. You can move properties into this group definition by selecting **[!UICONTROL Add]**.
 
-![](/help/assets/profile-properties-add.png)
+![](../../images/profile-properties-add.png)
 
-Select [!UICONTROL Save] when finished.
+Select **[!UICONTROL Save]** when finished.
 
 ### 5. Assign rights
 
-Assign the rights you want to be part of your group definition. Open the [!UICONTROL Rights] section.
+Assign the rights you want to be part of your group definition. Open the **[!UICONTROL Rights]** section.
 
-![](/help/assets/profile-rights-select.png)
+![](../../images/profile-rights-select.png)
 
-Rights are not automatically included. You must assign each right to your profile. You can quickly add all rights to this profile by using the [!UICONTROL + Add All] button or you can assign individual rights by using the individual + buttons. For more information on what permissions are associated with each right, see [Rights scenarios](#rights-scenarios). Select [!UICONTROL Save] when finished. If [!UICONTROL Save] is not available, you didn't make any changes and the profile won't give you any rights.
+Rights are not automatically included. You must assign each right to your profile. You can quickly add all rights to this profile by using the [!UICONTROL + Add All] button or you can assign individual rights by using the individual + (add) buttons. For more information on what permissions are associated with each right, see [Rights scenarios](#rights-scenarios). Select **[!UICONTROL Save]** when finished. If [!UICONTROL Save] is not available then no changes were made and you will not be assigned any new rights.
 
 First, assign Property Rights:
 
-![](/help/assets/rights-property.png)
+![](../../images/rights-property.png)
 
 Then, assign Company Rights.
 
-![](/help/assets/rights-company.png)
+![](../../images/rights-company.png)
 
-Some important notes:
+Some important notes to bear in mind about assigning rights:
 
-* Lack of rights means read-only access.
-
-  If you belong to a product configuration with Auto-include properties and no rights, then you have read-only access to all properties in Platform Launch.
-
-* If you don't at least assign the Manage Properties right, you won't be able to add any properties when you log in.
+* Lack of rights means read-only access. If you belong to a product configuration with Auto-include properties and no rights, then you have read-only access to all tag properties.
+* If you do not assign the Manage Properties correctly, you will not be able to add any properties when you log in.
 * A user can belong to multiple groups, but the rights from those groups are not combined into a master permission set. That user still has only the rights explicitly granted by each group.
 
   For example, if Group 1 gives access to Property A with the Develop right and Group 2 gives access to Property B with the Publish right, Develop and Publish rights are not combined for Property A and Property B. You can only develop on Property A and publish on Property B.
@@ -247,17 +247,17 @@ Some important notes:
 
 To assign users to be part of your group, open the [!UICONTROL Users] tab, then select [!UICONTROL Add User].
 
-![](/help/assets/profile-user.png)
+![](../../images/profile-user.png)
 
-Select [!UICONTROL ...] for additional options, such as bulk user operations.
+Select the ellipsis (...) for additional options, such as bulk user operations.
 
 >[!NOTE]
 >
->Being an Org Admin or a Product Admin does not grant you any rights within the [!DNL Platform Launch] product. You must belong to at least one product profile.
+>Being an Org Admin or a Product Admin does not grant you any rights within the tag product. You must belong to at least one product profile.
 
 Search for the user you'd like to add to the group. You can search by name or by email address. This auto-populates from existing users in your Org. Once you have found the user you want, select their name.
 
-Once you've added users, they receive an email letting them know that they now have rights to [!DNL Platform Launch]. They can login to [!DNL Platform Launch] at [https://launch.adobe.com](https://launch.adobe.com).
+Once you've added users, they receive an email letting them know that they now have rights. To login, follow the link to the [Data Collection UI](https://launch.adobe.com).
 
 >[!NOTE]
 >
@@ -267,11 +267,11 @@ Once you've added users, they receive an email letting them know that they now h
 
 ### Error loading account
 
-When you log in to [!DNL Platform Launch], you receive a message saying "Error Loading Account".
+When you log in to the Data COllection UI, you receive a message saying "Error Loading Account".
 
-![](/help/assets/profile-error.png)
+![](../../images/profile-error.png)
 
-Resolution: Your user does not belong to any [!DNL Platform Launch] product profiles. See the steps above to create a profile and assign rights to it, and to assign a user to a profile.
+Resolution: Your user does not belong to any tag product profiles. See the steps above to create a profile and assign rights to it, and to assign a user to a profile.
 
 ### Grayed-out Property button
 

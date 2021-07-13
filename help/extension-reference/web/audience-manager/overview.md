@@ -1,21 +1,21 @@
 ---
 title: Adobe Audience Manager Extension Overview
-description: Learn about the Adobe Audience Manager extension in Adobe Experience Platform Launch.
+description: Learn about the Adobe Audience Manager tag extension in Adobe Experience Platform.
 exl-id: e3619761-f45c-44a9-96d1-77b7666abb75
 ---
 # Adobe Audience Manager extension overview
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-With the Audience Manager extension, you can integrate the DIL code used by Audience Manager with your properties in Adobe Experience Platform Launch.
+With the Audience Manager tag extension, you can integrate the DIL code used by Audience Manager with your properties in Adobe Experience Platform.
 
 Use this reference for information about the options available when using this extension to build a rule.
 
 >[!NOTE]
 >
->This extension is not meant to be used for server-side forwarding of Adobe Analytics data. For server-side forwarding, use the [Adobe Analytics extension](/help/extension-reference/web/adobe-analytics-extension/overview.md).
+>This extension is not meant to be used for event forwarding of Adobe Analytics data. For event forwarding, use the [Adobe Analytics extension](/help/extension-reference/web/adobe-analytics-extension/overview.md).
 
 ## Configure the Adobe Audience Manager extension
 
@@ -27,7 +27,7 @@ To configure the extension, open the [!UICONTROL Extensions] tab, hover over the
 
 Configure your DIL settings. The following configuration options are available:
 
-![](/help/assets/ext-aam-config.png)
+![](/help/images/ext-aam-config.png)
 
 #### DIL Version
 
@@ -77,6 +77,6 @@ Run the custom code configured in the code editor.
 
 Enter the desired code in the Code Editor, then provide a name for the code. This code will become available in the Then portion of the rule builder.
 
-![](/help/assets/ext-aam-then.png)
+![](/help/images/ext-aam-then.png)
 
 You can also add a note with information about the configuration.

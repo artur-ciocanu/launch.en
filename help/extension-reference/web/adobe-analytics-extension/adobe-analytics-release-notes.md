@@ -1,13 +1,13 @@
 ---
 title: Release Notes for the Adobe Analytics Extension
-description: The latest release notes for the Adobe Analytics extension in Adobe Experience Platform Launch.
+description: The latest release notes for the Adobe Analytics tag extension in Adobe Experience Platform.
 exl-id: 9eb3827c-bc97-481c-a1f4-a554f543f562
 ---
 # Adobe Analytics extension release notes
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 ## August 6, 2020
 
@@ -119,7 +119,8 @@ exl-id: 9eb3827c-bc97-481c-a1f4-a554f543f562
 #### Features
 
 * Updated the Adobe Analytics extension to support DIL 9.2 for Audience Manager
-* Updated extension to support [AppMeasurement 2.15.0](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-release-notes/c-release-notes-mjs.html)    
+
+* Updated extension to support [AppMeasurement 2.15.0](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-updates.html#version-2.15.0)    
 * Removed the following checkbox since it’s not supported anymore: "Do not attach the destination publishing IFRAME to the DOM or fire destinations"
  
 ## June 4, 2019
@@ -128,7 +129,7 @@ exl-id: 9eb3827c-bc97-481c-a1f4-a554f543f562
 
 #### Features
 
-* Updated the Adobe Analytics Extension to [AppMeasurement 2.14.0](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-release-notes/c-release-notes-mjs.html) which includes a fix to a known clearVars issue
+* Updated the Adobe Analytics Extension to [AppMeasurement 2.14.0](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-updates.html?lang=en#version-2.14.0) which includes a fix to a known clearVars issue
 * Added an Exchange link to the extension. The Exchange listing can be reached by selecting the dropdown and choosing "extension info"
 
 #### Bug fixes
@@ -249,7 +250,7 @@ exl-id: 9eb3827c-bc97-481c-a1f4-a554f543f562
 #### **Features**
 
 * AppMeasurement has been updated to version 2.6
-* The initialized Analytics tracker is now exposed through a shared module in the Adobe Experience Platform Launch extension so other extensions can include code to interact with it.
+* The initialized Analytics tracker is now exposed through a shared module in the Adobe Experience Platform tag extension so other extensions can include code to interact with it.
 
 #### **Bug fixes**
 

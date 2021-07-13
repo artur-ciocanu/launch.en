@@ -1,13 +1,13 @@
 ---
 title: Release Notes for the Marketo Munchkin Extension
-description: The latest release notes for the Marketo Munchkin extension in Adobe Experience Platform Launch.
+description: The latest release notes for the Marketo Munchkin tag extension in Adobe Experience Platform.
 exl-id: 95d27872-8f25-4172-b96c-ab7687c18a6b
 ---
 # Marketo Munchkin Extension release notes
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
 ## December 2, 2020
 

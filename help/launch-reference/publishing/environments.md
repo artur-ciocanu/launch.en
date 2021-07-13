@@ -1,29 +1,29 @@
 ---
 title: Environments
-description: Learn about the concept of environments and how they function within Adobe Experience Platform Launch.
+description: Learn about the concept of tag environments and how they function within Adobe Experience Platform.
 exl-id: 5c7fd0bb-c4f1-468a-be91-14aa93c8d0bc
 ---
 # Environments
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. These changes will be rolling out across all product documentation in the coming weeks. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
+>Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
-Environments in Adobe Experience Platform Launch define several key aspects of the library builds you deploy on your website or app:
+Tag environments define several key aspects of the library builds you deploy on your website or app:
 
 * The filename of the build.
 * The domain and path of the build, depending on the environment's assigned host.
 * The file format of the build, depending on the archive option chosen.
 
-When you create a library build in [!DNL Platform Launch], you must assign it to an environment. The build's extensions, rules, and data elements are then compiled and placed into the assigned environment. Each environment provides a unique embed code that allows you to integrate its assigned build into your site.
+When you create a library build, you must assign it to an environment. The build's extensions, rules, and data elements are then compiled and placed into the assigned environment. Each environment provides a unique embed code that allows you to integrate its assigned build into your site.
 
-Different Adobe Experience Platform Launch artifacts can exist in each Environment. This allows you to test different Libraries in different environments as you push them through your Workflow.
+Different artifacts can exist in each Environment. This allows you to test different Libraries in different environments as you push them through your Workflow.
 
-This document provides steps on how to install, configure, and create different environments in the Launch user interface.
+This document provides steps on how to install, configure, and create different environments in the Data Collection user interface.
 
 ## Environment types
 
-[!DNL Platform Launch] supports three different environment types, each corresponding to a different state in the [publishing workflow](./publishing-flow.md):
+Tags support three different environment types, each corresponding to a different state in the [publishing workflow](./publishing-flow.md):
 
 | Environment type | Description |
 | --- | --- |
@@ -31,7 +31,7 @@ This document provides steps on how to install, configure, and create different 
 | Staging | This environment corresponds with the **Submitted** and **Approved** columns in the publishing workflow. |
 | Production | This environment corresponds with the **Published** column in the publishing workflow. |
 
-Different [!DNL Platform Launch] artifacts can exist in each environment. This allows you to test different libraries in different environments as you push them through the publishing workflow.
+Different artifacts can exist in each environment. This allows you to test different libraries in different environments as you push them through the publishing workflow.
 
 >[!NOTE]
 >
@@ -49,27 +49,27 @@ Each environment has a set of instructions used to connect it to your applicatio
 
 To access the installation instructions for an environment, navigate to the **[!UICONTROL Environments]** tab for your property, and then select the **[!UICONTROL Install]** icon for that environment.
 
-![](./assets/environments/install-buttons.png)
+![](./images/environments/install-buttons.png)
 
 If using a web property, you are given an embed code to be used in the `<head>` tag of your document. You are also presented with the option to deploy library files synchronously or asynchronously at runtime. Depending on the setting you choose, the displayed install instructions will be different. Embed codes are explained in further detail later in this document.
 
-![](./assets/environments/web-instructions.png)
+![](./images/environments/web-instructions.png)
 
 If you are using a mobile property, you are given separate instructions for installing dependencies for Android (via [Gradle](https://gradle.org/)) and iOS (via [CocoaPods](https://cocoapods.org/)).
 
-![](./assets/environments/mobile-instructions.png)
+![](./images/environments/mobile-instructions.png)
 
 ## Mobile configuration
 
 For mobile properties, you can view the configuration options for an environment by selecting it from the list. From here, you can change the name of the environment. Mobile environments currently can only use Adobe-managed hosts.
 
-![](./assets/environments/mobile-config.png)
+![](./images/environments/mobile-config.png)
 
 See the overview on [hosts](./hosts/hosts-overview.md) for more information.
 
 ## Web configuration
 
-For web properties, [!DNL Platform Launch] uses the settings from the assigned environment to determine the following:
+The settings from the assigned environment determine the following for web properties:
 
 * **Host**: The server location where you want your build to be deployed.
 * **Archive setting**: Whether the system should output a deployable set of files or have them compressed in an archive format.
@@ -77,15 +77,15 @@ For web properties, [!DNL Platform Launch] uses the settings from the assigned e
 
 In the [!UICONTROL Environments] tab, select a listed environment to display its configuration controls.
 
-![](./assets/environments/environment-config.png)
+![](./images/environments/environment-config.png)
 
 ### Host {#host}
 
 Select **[!UICONTROL Host]** to choose a pre-configured host for the environment from the dropdown menu.
 
-![](./assets/environments/select-host.png)
+![](./images/environments/select-host.png)
 
-When a build is created, [!DNL Platform Launch] delivers that build to the location you specified for the assigned host. For information on how to create and configure hosts in [!DNL Platform Launch], refer to the [hosts overview](./hosts/hosts-overview.md).
+When a build is created, that build is delivered to the location you specified for the assigned host. For information on how to create and configure hosts in the Data Collection UI, refer to the [hosts overview](./hosts/hosts-overview.md).
 
 ### Archive setting {#archive}
 
@@ -95,7 +95,7 @@ The **[!UICONTROL Create archive]** button allows you to toggle the environment'
 
 If you choose to turn the archive setting on, additional configuration settings appear in the UI, enabling you to optionally encrypt the archive file and define a path to the library if you are using self-hosting.
 
-![](./assets/environments/archive-settings.png)
+![](./images/environments/archive-settings.png)
 
 The path can be either a full URL or a relative path that can be used across multiple domains. This is important because most builds have multiple files that contain internal references to each other.
 
@@ -107,13 +107,13 @@ If you use the archive option, all build files are delivered as a ZIP file inste
 
 ### Embed code {#embed-code}
 
-An embed code is a `<script>` tag that must be placed in the `<head>` sections of your website pages in order to load and execute the code you build in [!DNL Platform Launch]. Each environment configuration automatically generates its own embed code, so you only need to copy and paste it into your site on the pages where you want [!DNL Platform Launch] to run.
+An embed code is a `<script>` tag that must be placed in the `<head>` sections of your website pages in order to load and execute the code you build. Each environment configuration automatically generates its own embed code, so you only need to copy and paste it into your site on the pages where you want tags to run.
 
-When you view the installation instructions, you can choose to have the script load the library files synchronously or asynchronously. This setting is not persistent and does not reflect how you actually have implemented [!DNL Platform Launch] on your site. Rather, it is only meant to show the appropriate way to install the environment.
+When you view the installation instructions, you can choose to have the script load the library files synchronously or asynchronously. This setting is not persistent and does not reflect how you actually have implemented tags on your site. Rather, it is only meant to show the appropriate way to install the environment.
 
 >[!WARNING]
 >
->Depending on the contents of your [!DNL Platform Launch] library, the behavior of your rules and other elements can change between synchronous and asynchronous deployment. It is therefore important to thoroughly test any changes you make.
+>Depending on the contents of your tag library, the behavior of your rules and other elements can change between synchronous and asynchronous deployment. It is therefore important to thoroughly test any changes you make.
 
 #### Asynchronous deployment
 
@@ -123,7 +123,7 @@ For more information on this setting, see the guide on [asynchronous deployment]
 
 #### Synchronous deployment
 
-When the browser reads an embed code using synchronous deployment, it retrieves the [!DNL Platform Launch] library and executes it before continuing to load the page. This is also how [Dynamic Tag Management (DTM)](https://experienceleague.adobe.com/docs/dtm/using/dtm-home.html) works.
+When the browser reads an embed code using synchronous deployment, it retrieves the tag library and executes it before continuing to load the page. This is also how [Dynamic Tag Management (DTM)](https://experienceleague.adobe.com/docs/dtm/using/dtm-home.html) works.
 
 Synchronous embed codes consist of two `<script>` tags that must be placed within the HTML of your website. One `<script>` tag must be placed in the document `<head>`, while the other must be placed just before the closing `</body>` tag.
 
@@ -137,7 +137,7 @@ Since embed codes are generated based on your environment configurations, some c
 
 >[!WARNING]
 >
->When an environment's embed code changes in [!DNL Platform Launch], you must manually to update the embed codes in your HTML. To avoid costly maintenance, you should only update your embed code(s) when absolutely necessary.
+>When a tag environment's embed code changes, you must manually to update the embed codes in your HTML. To avoid costly maintenance, you should only update your embed code(s) when absolutely necessary.
 
 ## Create an environment
 
@@ -145,19 +145,19 @@ Three environments are automatically assigned to a property when that property i
 
 On the [!UICONTROL Environments] tab for your property, select **[!UICONTROL Add Environment]**.
 
-![](./assets/environments/create-new.png)
+![](./images/environments/create-new.png)
 
 On the next screen, select the **[!UICONTROL Development]** option.
 
-![](./assets/environments/create-development.png)
+![](./images/environments/create-development.png)
 
 The next screen allows you to name the new environment, select a host, and choose an archive setting. When finished, select **[!UICONTROL Save]** to create the environment.
 
-![](./assets/environments/create-config.png)
+![](./images/environments/create-config.png)
 
 The [!UICONTROL Environments] tab reappears, with the install instructions for the new environment displayed.
 
-![](./assets/environments/create-install.png)
+![](./images/environments/create-install.png)
 
 ## Next steps
 
