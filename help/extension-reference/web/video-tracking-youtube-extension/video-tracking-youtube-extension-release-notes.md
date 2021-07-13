@@ -9,6 +9,15 @@ exl-id: 182c970a-aa78-4254-ac56-b7fd9f00841e
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
+## June 4, 2021
+
+### YouTube Video Tracking extension 2.0.1
+
+#### Features
+
+* Bug fixes for pages with multiple iFrames
+* Name change for branding
+
 ## April 23, 2021
 
 ### YouTube Video Tracking extension 2.0.0
