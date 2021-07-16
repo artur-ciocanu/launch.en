@@ -69,8 +69,8 @@ https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extens
 https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/adobe-contexthub-extension.html,https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/contexthub/overview.html
 https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/adobe-audience-manager-extension.html,https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/audience-manager/overview.html
 https://experienceleague.adobe.com/docs/launch/using/intro/release-notes/current.html,https://experienceleague.adobe.com/docs/launch/using/release-notes/current.html
-https://experienceleague.adobe.com/docs/launch/using/intro/release-notes/2019-release-notes.html,https://experienceleague.adobe.com/docs/launch/using/release-notes/2019-release-notes.html
-https://experienceleague.adobe.com/docs/launch/using/intro/release-notes/2018-release-notes.html,https://experienceleague.adobe.com/docs/launch/using/release-notes/2018-release-notes.html
+https://experienceleague.adobe.com/docs/launch/using/intro/release-notes/2019-release-notes.html,https://experienceleague.adobe.com/docs/launch/using/release-notes/2019.html
+https://experienceleague.adobe.com/docs/launch/using/intro/release-notes/2018-release-notes.html,https://experienceleague.adobe.com/docs/launch/using/release-notes/2018.html
 https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html,https://experienceleague.adobe.com/docs/launch/using/get-started/quick-start.html
 https://experienceleague.adobe.com/docs/launch/using/intro/get-started/implementation-guides.html,https://experienceleague.adobe.com/docs/launch/using/get-started/implementation-guides.html
 https://experienceleague.adobe.com/docs/launch/using/intro/get-started/videos.html,https://experienceleague.adobe.com/docs/launch/using/get-started/videos.html
@@ -99,11 +99,11 @@ https://experienceleague.adobe.com/docs/launch/using/reference/publish/self-host
 https://experienceleague.adobe.com/docs/launch/using/reference/publish/republish.html,https://experienceleague.adobe.com/docs/launch/using/publish/republish.html
 https://experienceleague.adobe.com/docs/launch/using/reference/client-side-info/overview.html,https://experienceleague.adobe.com/docs/launch/using/client-side-info/overview.html
 https://experienceleague.adobe.com/docs/launch/using/reference/client-side-info/asynchronous-deployment.html,https://experienceleague.adobe.com/docs/launch/using/client-side-info/asynchronous-deployment.html
-https://experienceleague.adobe.com/docs/launch/using/reference/client-side-info/launch-object-reference.html,https://experienceleague.adobe.com/docs/launch/using/client-side-info/launch-object-reference.html
-https://experienceleague.adobe.com/docs/launch/using/reference/client-side-info/deploy-javascript-tags-to-opt-in-to-launch.html,https://experienceleague.adobe.com/docs/launch/using/client-side-info/deploy-javascript-tags-to-opt-in-to-launch.html
-https://experienceleague.adobe.com/docs/launch/using/reference/client-side-info/content-security-policy-csp.html,https://experienceleague.adobe.com/docs/launch/using/client-side-info/content-security-policy-csp.html
-https://experienceleague.adobe.com/docs/launch/using/reference/server-side-info/server-side-overview.html,https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-overview.html
-https://experienceleague.adobe.com/docs/launch/using/reference/server-side-info/server-side-getting-started.html,https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-getting-started.html
+https://experienceleague.adobe.com/docs/launch/using/reference/client-side-info/launch-object-reference.html,https://experienceleague.adobe.com/docs/experience-platform/tags/client-side/satellite-object.html
+https://experienceleague.adobe.com/docs/launch/using/reference/client-side-info/deploy-javascript-tags-to-opt-in-to-launch.html,https://experienceleague.adobe.com/docs/experience-platform/tags/client-side/consent.html
+https://experienceleague.adobe.com/docs/launch/using/reference/client-side-info/content-security-policy-csp.html,https://experienceleague.adobe.com/docs/experience-platform/tags/client-side/content-security-policy.html
+https://experienceleague.adobe.com/docs/launch/using/reference/server-side-info/server-side-overview.html,https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html
+https://experienceleague.adobe.com/docs/launch/using/reference/server-side-info/server-side-getting-started.html,https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html
 https://experienceleague.adobe.com/docs/launch/using/reference/server-side-info/sri.html,https://experienceleague.adobe.com/docs/launch/using/client-side-info/sri.html
 https://experienceleague.adobe.com/docs/launch/using/reference/client-side-info/sri.html,https://experienceleague.adobe.com/docs/launch/using/client-side-info/sri.html
 https://experienceleague.adobe.com/docs/launch/using/reference/server-side-info/admin/sri.html,https://experienceleague.adobe.com/docs/launch/using/client-side-info/sri.html
