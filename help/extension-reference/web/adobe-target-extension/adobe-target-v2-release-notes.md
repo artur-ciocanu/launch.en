@@ -9,6 +9,17 @@ exl-id: b18889e8-a2a2-44bf-acb6-7693b4d1bbca
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
+## July 16, 2021
+
+### Adobe Target v2 Extension 0.15.0
+
+- Add secure attribute to cookies whenever at.js settings `secureOnly` is set to `true`
+- Response tokens are now available when using `triggerView()`
+- Fixed a bug related to `CONTENT_RENDERING_NO_OFFERS` event. Now it is triggered correctly whenever there is not content returned from Target
+- A4T click metrics details are correctly returned when using `prefetch` requests
+- UUID generation no longer uses `Math.random()`, but relies on `window.crypto`
+- `sessionId` cookie expiry is correctly extended on every network call
+- SPA view cache initialization is now correctly handled and it honors `viewsEnable` settings
 ## June 2, 2021
 
 ### Adobe Target v2 Extension 0.14.2
