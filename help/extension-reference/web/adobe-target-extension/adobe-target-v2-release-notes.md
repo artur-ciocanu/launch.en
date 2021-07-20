@@ -9,6 +9,12 @@ exl-id: b18889e8-a2a2-44bf-acb6-7693b4d1bbca
 >
 >Adobe Experience Platform Launch is being rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](../../../launch-term-updates.md) for a consolidated reference of the terminology changes.
 
+## July 20, 2021
+
+### Adobe Target v2 Extension 0.15.1
+
+- Fixing an issue with `stringify` function name clash, which lead to incorrect UUID value being generated for `sessionId`, `requestId`, etc
+
 ## July 16, 2021
 
 ### Adobe Target v2 Extension 0.15.0
